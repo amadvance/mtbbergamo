@@ -1,0 +1,9 @@
+.leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow {
+	padding : 0 !important;
+	border : 0 !important;
+	-moz-box-shadow : 0 0 0 !important;
+	-webkit-box-shadow : 0 0 0 !important;
+	box-shadow : 0 0 0 !important;
+	background: 0 !important;
+}
+
