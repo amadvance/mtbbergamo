@@ -542,7 +542,7 @@ L.GPX = L.FeatureGroup.extend({
     }
 
     // add track
-    var l = new L.Polyline(coords, this._merge_objs(polyline_options, options.polyline_options));
+    var l = new L.Hotline(coords, this._merge_objs(polyline_options, options.polyline_options));
     this.fire('addline', { line: l, element: line });
     layers.push(l);
 
