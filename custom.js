@@ -31,6 +31,10 @@ function create_track(map, control, url)
 			startIconUrl: 'http://ftp.mtbbergamo.it/img/pin-icon-start.png',
 			endIconUrl: 'http://ftp.mtbbergamo.it/img/pin-icon-end.png',
 			shadowUrl: 'http://ftp.mtbbergamo.it/img/pin-shadow.png'
+		},
+		polyline_options: {
+			color: 'blue',
+			slope: false
 		}
 	}).on('loaded', function(e) {
 		var gpx = e.target;
@@ -58,3 +62,4 @@ function create_track(map, control, url)
 		control.addOverlay(gpx, gpx.get_name());
 	}).addTo(map);
 }
+
