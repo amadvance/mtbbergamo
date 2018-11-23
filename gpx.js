@@ -412,6 +412,7 @@ L.GPX = L.FeatureGroup.extend({
     var markers = [];
     var layers = [];
     var last = null;
+    var measure = [];
 
     for (var i = 0; i < el.length; i++) {
       var _, ll = new L.LatLng(
@@ -475,6 +476,33 @@ L.GPX = L.FeatureGroup.extend({
 
       this._info.elevation._points.push([this._info.length, ll.meta.ele]);
       this._info.duration.end = ll.meta.time;
+
+      // store the slope in the "alt" field
+      if (last != null) {
+        // store current step
+        var step_dh = this._dist2d(last, ll);
+        var step_dv = ll.meta.ele - last.meta.ele;
+        measure.splice(0, 0, { dh: step_dh, dv: step_dv });
+
+        // do not keep more than 10 measure
+        measure.splice(10, 1);
+
+        // compute the slope of the past 20 meters
+        var segment_dh = 0.0;
+        var segment_dv = 0.0;
+        for (var j = 0; j < measure.length && segment_dh < 20.0; j++) {
+          segment_dh += measure[j].dh;
+          segment_dv += measure[j].dv;
+        }
+
+        try {
+          ll.alt = Math.floor(segment_dv / segment_dh * 100);
+        } catch (err) {
+          ll.alt = last.alt; // for division by 0
+        }
+      } else {
+        ll.alt = 0.0;
+      }
 
       if (last != null) {
         this._info.length += this._dist3d(last, ll);
