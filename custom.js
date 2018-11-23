@@ -10,6 +10,10 @@ function create_map(id) {
 
 	mytile.addTo(mymap);
 
+	var myscale = new L.control.scale({ metric: true, imperial: false });
+
+	myscale.addTo(mymap);
+
 	return mymap;
 }
 
