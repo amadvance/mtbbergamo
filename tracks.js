@@ -1,0 +1,36 @@
+/* mtbbergamo TRACKS */
+
+var TRACKS = [
+{ zone: 'maresana', name: '532', kind: 'down', file: 'M_532_REC.gpx' },
+{ zone: 'maresana', name: '604', kind: 'down', file: 'M_604_REC.gpx' },
+{ zone: 'maresana', name: 'Bruna', kind: 'down', file: 'M_Bruna.gpx' },
+{ zone: 'maresana', name: '401 / Filoncino', kind: 'down', file: 'M_Filoncino_REC.gpx' },
+{ zone: 'maresana', name: 'Filone Easy', kind: 'down', file: 'M_FiloneEasy_REC.gpx' },
+{ zone: 'maresana', name: '533 Filone', kind: 'down', file: 'M_Filone_REC.gpx' },
+{ zone: 'maresana', name: '533 Illegale', kind: 'down', file: 'M_IllegaleRoscianoPS3_REC.gpx' },
+{ zone: 'maresana', name: 'Salita da Ranica', kind: 'up', file: 'M_SalitaRanica_REC.gpx' },
+{ zone: 'maresana', name: '502 / San Rocco', kind: 'down', file: 'M_SanRocco_REC.gpx' },
+{ zone: 'maresana', name: '409 / Tornantini', kind: 'down', file: 'M_Tornantini_REC.gpx' },
+{ zone: 'imagna', name: 'Brumano, Passo Porta, Rota, Selino', kind: 'down', file: 'T_BrumanoPassoPortaRotaSelino.gpx' },
+{ zone: 'imagna', name: 'Ceresola, Roccoli Passata, Partigiano, Costa Cavallina, Clanezzo', kind: 'down', file: 'T_CeresolaRoccoliPassataPartigianoCostaCavallinaClanezzo.gpx' },
+{ zone: 'imagna', name: 'Palio, Canti, Tre Faggi', kind: 'down', file: 'T_SbarraPalioCantiTreFaggi.gpx' },
+{ zone: 'imagna', name: 'Palio, Rifugio Resegone, Passo Porta, 575, Valsecca', kind: 'down', file: 'T_SbarraPalioRifugioResegonePassoPorta575Valsecca.gpx' },
+{ zone: 'imagna', name: 'Tre Faggi, 580, Locatello, Selino', kind: 'down', file: 'T_TreFaggi580LocatelloSelino.gpx' },
+{ zone: 'imagna', name: 'Tre Faggi, Corna, Blello, Selino Alto, Ponte Pietra', kind: 'down', file: 'T_TreFaggiCornaBlelloSelinoAltoPontePietra.gpx' },
+{ zone: 'imagna, valcava', name: 'Forcella Alta, 573, Mazzoleni, Selino', kind: 'down', file: 'T_ForcellaAlta573CostaMazzoleniSelino.gpx' },
+{ zone: 'imagna, valcava', name: 'Forcella Alta, 574, Valsecca, Selino', kind: 'down', file: 'T_ForcellaAlta574ValseccaSelino.gpx' },
+{ zone: 'imagna, valcava', name: 'Linzone Roncola Alta, Amagno', kind: 'down', file: 'T_LinzoneRoncolaAltaAmagno.gpx' },
+{ zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Baia, Spino, Burligo', kind: 'down', file: 'T_LinzonePiaccaBaitaSpinoBurligo.gpx' },
+{ zone: 'martino, valcava', name: 'Valcava, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'T_ValcavaColdaraPedrinoOprenoBurligo.gpx' },
+{ zone: 'canto', name: 'Genestaro', kind: 'down', file: 'C_Genestaro_REC.gpx' },
+{ zone: 'canto', name: 'Guendalina', kind: 'down', file: 'C_Guendalina_REC.gpx' } ,
+{ zone: 'canto', name: 'Kompressor', kind: 'down', file: 'C_Kompressor_REC.gpx' },
+{ zone: 'canto', name: 'Pietra Sant Albero', kind: 'down', file: 'C_PietraSAlbero_REC.gpx' },
+{ zone: 'canto', name: 'Salita da Caneve', kind: 'up', file: 'C_SalitaCaneve_REC.gpx' },
+{ zone: 'canto', name: 'Salita al Monte Canto', kind: 'up', file: 'C_SalitaMonteCanto_REC.gpx' },
+{ zone: 'canto', name: 'Salita da Pontida', kind: 'up', file: 'C_SalitaPontida_REC.gpx' },
+{ zone: 'canto', name: 'Scalette', kind: 'down', file: 'C_Scalette_REC.gpx' },
+{ zone: 'canto', name: 'Uccellaia', kind: 'down', file: 'C_Uccellaia_REC.gpx' },
+{ zone: 'canto', name: 'Zandona', kind: 'down', file: 'C_Zandona_REC.gpx' }
+];
+

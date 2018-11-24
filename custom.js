@@ -29,7 +29,7 @@ function create_control(map) {
 	return control;
 }
 
-function create_track(map, control, url, track_options)
+function create_track(map, control, url, name, track_options)
 {
 	var _DEFAULT_TRACK_OPTS = {
 		color: 'blue',
@@ -63,7 +63,7 @@ function create_track(map, control, url, track_options)
 			map.fitBounds(gpx.getBounds());
 		}
 
-		var desc = gpx.get_name();
+		var desc = name;
 		desc += "<br/>";
 		var space = "";
 		if (gpx.get_elevation_gain() > 100) {
@@ -76,7 +76,67 @@ function create_track(map, control, url, track_options)
 		desc += "<br/>";
 		desc += "Download <a href=" + url + ">GPX</a>";
 		gpx.bindPopup(desc);
-		control.addOverlay(gpx, gpx.get_name());
+		control.addOverlay(gpx, name);
 	}).addTo(map);
 }
+
+// misc colors for down
+// from https://en.wikipedia.org/wiki/Web_colors
+var COLORS_DOWN = [
+"Crimson",
+"HotPink",
+"Orange",
+"Gold",
+"Sienna",
+"ForestGreen",
+"Turquoise",
+"RoyalBlue",
+"Purple",
+"GreenYellow",
+"MediumAquamarine",
+"DarkRed"
+];
+
+// black colors for up
+var COLORS_UP = [
+"DimGray",
+"DimGray",
+"DimGray",
+"DimGray",
+"DimGray"
+//"DarkSlateGray",
+//"Black",
+//"SlateGray",
+//"Gray"
+];
+
+function create_zone(map, control, zone) {
+	var color_d = 0;
+	var color_u = 0;
+
+	for (i = 0; i < TRACKS.length; i++) {
+		if (TRACKS[i].zone.search(zone) < 0)
+			continue;
+
+		var color;
+
+		// select the color from the two UP/DOWN selections
+		if (TRACKS[i].kind == "up") {
+			color = COLORS_UP[color_u]
+			++color_u;
+		} else {
+			color = COLORS_DOWN[color_d]
+			++color_d;
+		}
+
+		create_track(map, control,
+			"http://ftp.mtbbergamo.it/gpx/" + TRACKS[i].file,
+			TRACKS[i].name,
+			{
+				color: color
+			}
+		);
+	}
+}
+
 
