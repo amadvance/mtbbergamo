@@ -54,6 +54,39 @@ function create_control(map) {
 	return control;
 }
 
+function create_gpx_info(map, control, gpx, url, name, link)
+{
+	try {
+		// extend the bounds to add the new track
+		var bounds = map.getBounds();
+		bounds.extend(gpx.getBounds());
+		map.fitBounds(bounds);
+	} catch (err) {
+		// if the bounds are not set, it's the first track
+		map.fitBounds(gpx.getBounds());
+	}
+
+	var desc;
+
+	if (link)
+		desc = "<b><a href=\"http://www.mtbbergamo.it/" + link + ".html\">" + name + "</a></b>";
+	else
+		desc = "<b>" + name + "</b>";
+
+	desc += "<br/>";
+	desc += "&harr; " + (gpx.get_distance() / 1000).toFixed(1) + " km";
+	if (gpx.get_elevation_gain() > 100) {
+		desc += ", &uarr; "+ Math.floor(gpx.get_elevation_gain()) + "m";
+	}
+	if (gpx.get_elevation_loss() > 100) {
+		desc += ", &darr; "+ Math.floor(gpx.get_elevation_loss()) + "m";
+	}
+	desc += "<br/>";
+	desc += "<a href=\"" + url + "\">Download GPX</a>";
+	gpx.bindPopup(desc);
+	control.addOverlay(gpx, name);
+}
+
 function create_track(map, control, url, name, track_options)
 {
 	var _DEFAULT_TRACK_OPTS = {
@@ -69,6 +102,7 @@ function create_track(map, control, url, name, track_options)
 	{
 		async: true,
 		marker_options: {
+			// full icons
 			startIconUrl: 'http://ftp.mtbbergamo.it/img/pin-icon-start.png',
 			endIconUrl: 'http://ftp.mtbbergamo.it/img/pin-icon-end.png',
 			shadowUrl: 'http://ftp.mtbbergamo.it/img/pin-shadow.png'
@@ -80,28 +114,42 @@ function create_track(map, control, url, name, track_options)
 		}
 	}).on('loaded', function(e) {
 		var gpx = e.target;
-		try {
-			var bounds = map.getBounds();
-			bounds.extend(gpx.getBounds());
-			map.fitBounds(bounds); 
-		} catch (err) {
-			map.fitBounds(gpx.getBounds());
-		}
+		create_gpx_info(map, control, gpx, url, name, null);
+	}).addTo(map);
+}
 
-		var desc = name;
-		desc += "<br/>";
-		var space = "";
-		if (gpx.get_elevation_gain() > 100) {
-			 desc += "Salita "+ Math.floor(gpx.get_elevation_gain()) + "m";
-			 space = ", ";
+function create_zone_track(map, control, url, name, link, track_options)
+{
+	var _DEFAULT_TRACK_OPTS = {
+		color: 'blue',
+		weight: 5,
+		slope: false
+	};
+
+	// set default options
+	track_options = _merge_fields(_DEFAULT_TRACK_OPTS, track_options || {});
+
+	new L.GPX(url,
+	{
+		async: true,
+		marker_options: {
+			// half icons
+			startIconUrl: 'http://ftp.mtbbergamo.it/img/pin-icon-start-50.png',
+			endIconUrl: 'http://ftp.mtbbergamo.it/img/pin-icon-end-50.png',
+			shadowUrl: 'http://ftp.mtbbergamo.it/img/pin-shadow-50.png',
+			iconSize: [16, 25],
+			shadowSize: [25, 25],
+			iconAnchor: [8, 22],
+			shadowAnchor: [8, 23]
+		},
+		polyline_options: {
+			color: track_options.color,
+			weight: track_options.weight,
+			slope: track_options.slope
 		}
-		if (gpx.get_elevation_loss() > 100) {
-				 desc += space + "Discesa "+ Math.floor(gpx.get_elevation_loss()) + "m";
-		}
-		desc += "<br/>";
-		desc += "Download <a href=" + url + ">GPX</a>";
-		gpx.bindPopup(desc);
-		control.addOverlay(gpx, name);
+	}).on('loaded', function(e) {
+		var gpx = e.target;
+		create_gpx_info(map, control, gpx, url, name, link);
 	}).addTo(map);
 }
 
@@ -113,8 +161,8 @@ var COLORS_DOWN = [
 "Orange",
 "Gold",
 "Sienna",
+"DodgerBlue",
 "ForestGreen",
-"Turquoise",
 "RoyalBlue",
 "Purple",
 "GreenYellow",
@@ -154,9 +202,10 @@ function create_zone(map, control, zone) {
 			++color_d;
 		}
 
-		create_track(map, control,
+		create_zone_track(map, control,
 			"http://ftp.mtbbergamo.it/gpx/" + TRACKS[i].file,
 			TRACKS[i].name,
+			TRACKS[i].link,
 			{
 				color: color
 			}
