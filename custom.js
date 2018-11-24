@@ -24,6 +24,31 @@ function create_map(id) {
 	return mymap;
 }
 
+function create_map_zone(id) {
+	return create_map(id);
+}
+
+function create_map_track(id) {
+	var mymap = create_map_zone(id);
+
+	var myimage = L.control.custom({
+		position: 'bottomleft',
+		content : '<img src="http://ftp.mtbbergamo.it/img/slope.png" class="leaflet-slope-img" id="demoImage">',
+		classes : '',
+		style   :
+		{
+			margin: '0',
+			padding: '0',
+			background: '0',
+			border: '0'
+		},
+	});
+
+	myimage.addTo(mymap);
+
+	return mymap;
+}
+
 function create_control(map) {
 	var control = L.control.layers(null, null).addTo(map);
 	return control;
