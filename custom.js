@@ -1,5 +1,12 @@
 /* mtbbergamo JS */
 
+function _merge_fields(a, b) {
+	var _ = {};
+	for (var attr in a) { _[attr] = a[attr]; }
+	for (var attr in b) { _[attr] = b[attr]; }
+	return _;
+}
+
 function create_map(id) {
 	var mymap = L.map(id, { fullscreenControl: true } );
 
@@ -22,8 +29,17 @@ function create_control(map) {
 	return control;
 }
 
-function create_track(map, control, url)
+function create_track(map, control, url, track_options)
 {
+	var _DEFAULT_TRACK_OPTS = {
+		color: 'blue',
+		weight: 5,
+		slope: false
+	};
+
+	// set default options
+	track_options = _merge_fields(_DEFAULT_TRACK_OPTS, track_options || {});
+
 	new L.GPX(url,
 	{
 		async: true,
@@ -33,8 +49,9 @@ function create_track(map, control, url)
 			shadowUrl: 'http://ftp.mtbbergamo.it/img/pin-shadow.png'
 		},
 		polyline_options: {
-			color: 'blue',
-			slope: false
+			color: track_options.color,
+			weight: track_options.weight,
+			slope: track_options.slope
 		}
 	}).on('loaded', function(e) {
 		var gpx = e.target;
