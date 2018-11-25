@@ -434,6 +434,10 @@ L.GPX = L.FeatureGroup.extend({
         ll.meta.ele = parseFloat(_[0].textContent);
       }
 
+      // avoid issues for points missing elevation info
+      if (ll.meta.ele == null && last != null)
+        ll.meta.ele = last.meta.ele;
+
       _ = el[i].getElementsByTagName('name');
       if (_.length > 0) {
         var name = _[0].textContent;
