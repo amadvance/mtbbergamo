@@ -156,18 +156,23 @@ function create_zone_track(map, control, url, name, link, track_options)
 // misc colors for down
 // from https://en.wikipedia.org/wiki/Web_colors
 var COLORS_DOWN = [
-"Crimson",
-"HotPink",
-"Orange",
-"Gold",
-"Sienna",
-"DodgerBlue",
-"ForestGreen",
-"RoyalBlue",
-"Purple",
-"GreenYellow",
-"MediumAquamarine",
-"DarkRed"
+"HotPink", // pink
+"Crimson", // red
+"Orange", // orange
+"Gold", // yellow
+"Sienna", // brown
+"ForestGreen", // green
+"Teal", // cyan
+"DodgerBlue", // blue
+"Purple", // mangenta
+"DeepPink", // pink
+"DarkRed", // red
+"Coral", // orange
+"DarkGoldenrod", // brown
+"MediumSeaGreen", // green
+"LightSeaGreen", // cyan
+"RoyalBlue", // blue
+"MediumOrchid" // magenta
 ];
 
 // black colors for up
