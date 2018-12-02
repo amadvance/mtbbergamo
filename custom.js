@@ -210,4 +210,23 @@ function create_zone(map, control, zone) {
 	}
 }
 
+function create_climb(map, control, zone) {
+	for (i = 0; i < TRACKS.length; i++) {
+		if (TRACKS[i].zone.search(zone) < 0)
+			continue;
+
+		if (TRACKS[i].kind != "up")
+			continue;
+
+		create_zone_track(map, control,
+			"http://ftp.mtbbergamo.it/gpx/" + TRACKS[i].file,
+			TRACKS[i].name,
+			TRACKS[i].link,
+			{
+				slope: true,
+				weight: 7
+			}
+		);
+	}
+}
 
