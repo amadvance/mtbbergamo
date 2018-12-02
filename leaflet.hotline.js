@@ -379,7 +379,8 @@
 				0.50: 'green', // 0%
 				0.55: 'yellow', // 10%
 				0.60: 'red', // 20%
-				1.0: 'red'
+				0.65: 'white', // 30%
+				1.0: 'white'
 			},
 			weight: 7,
 			outlineColor: 'black',
