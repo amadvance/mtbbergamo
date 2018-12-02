@@ -176,34 +176,25 @@ var COLORS_DOWN = [
 ];
 
 // black colors for up
-var COLORS_UP = [
-"DimGray",
-"DimGray",
-"DimGray",
-"DimGray",
-"DimGray"
-//"DarkSlateGray",
-//"Black",
-//"SlateGray",
-//"Gray"
-];
+var COLORS_UP = "Gray";
 
 function create_zone(map, control, zone) {
 	var color_d = 0;
-	var color_u = 0;
 
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].zone.search(zone) < 0)
 			continue;
 
 		var color;
+		var weight;
 
 		// select the color from the two UP/DOWN selections
 		if (TRACKS[i].kind == "up") {
-			color = COLORS_UP[color_u]
-			++color_u;
+			color = COLORS_UP;
+			weight = 3;
 		} else {
 			color = COLORS_DOWN[color_d]
+			weight = 7;
 			++color_d;
 		}
 
@@ -212,7 +203,8 @@ function create_zone(map, control, zone) {
 			TRACKS[i].name,
 			TRACKS[i].link,
 			{
-				color: color
+				color: color,
+				weight: weight
 			}
 		);
 	}
