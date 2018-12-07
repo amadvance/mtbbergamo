@@ -45,6 +45,22 @@ var TRACKS = [
 { zone: 'canto', name: 'Salita da Ambivere', kind: 'up', file: 'C_SalitaAmbivere_REC.gpx' },
 { zone: 'canto', name: 'Scalette', kind: 'down', file: 'C_Scalette_REC.gpx' },
 { zone: 'canto', name: 'Uccellaia', kind: 'down', file: 'C_Uccellaia_REC.gpx' },
-{ zone: 'canto', name: 'Zandona', kind: 'down', file: 'C_Zandona_REC.gpx' }
+{ zone: 'canto', name: 'Zandona', kind: 'down', file: 'C_Zandona_REC.gpx' },
+{ zone: 'colli', name: '712 Nord', kind: 'down', file: 'PC_712Nord_REC.gpx' },
+{ zone: 'colli', name: '712 Sud', kind: 'down', file: 'PC_712Sud_REC.gpx' },
+{ zone: 'colli', name: '713 Partigiano', kind: 'down', file: 'PC_713Partigiano_REC.gpx' },
+{ zone: 'colli', name: '910', kind: 'down', file: 'PC_910_REC.gpx' },
+{ zone: 'colli', name: 'Allegrezza', kind: 'down', file: 'PC_Allegrezza_REC.gpx' },
+{ zone: 'colli', name: 'Gussa Est', kind: 'down', file: 'PC_GussaEst_REC.gpx' },
+{ zone: 'colli', name: 'Gussa Nord', kind: 'down', file: 'PC_GussaNord_REC.gpx' },
+{ zone: 'colli', name: 'Gussa Ovest', kind: 'down', file: 'PC_GussaOvest_REC.gpx' },
+{ zone: 'colli', name: 'Gussa Sud', kind: 'down', file: 'PC_GussaSud_REC.gpx' },
+{ zone: 'colli', name: 'Quadrifoglio', kind: 'down', file: 'PC_Quadrifoglio_REC.gpx' },
+{ zone: 'colli', name: 'Roccolone', kind: 'down', file: 'PC_Roccolone_REC.gpx' },
+{ zone: 'colli', name: 'Salita da Astino', kind: 'up', file: 'PC_Salita_Astino_REC.gpx' },
+{ zone: 'colli', name: 'Salita al Monte Gussa', kind: 'up', file: 'PC_Salita_Gussa_REC.gpx' },
+{ zone: 'colli', name: 'Salita dal Pascolo Dei Tedeschi', kind: 'up', file: 'PC_Salita_PascoloTedeschi_REC.gpx' },
+{ zone: 'colli', name: 'Salida dal Roccolone', kind: 'up', file: 'PC_Salita_Roccolone_REC.gpx' },
+{ zone: 'colli', name: 'Torre', kind: 'down', file: 'PC_Torre_REC.gpx' }
 ];
 
