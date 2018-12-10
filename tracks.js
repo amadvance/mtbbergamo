@@ -30,11 +30,15 @@ var TRACKS = [
 { zone: 'imagna, valcava', name: 'Forcella Alta, 573, Mazzoleni, Selino', kind: 'down', file: 'I_ForcellaAlta573CostaMazzoleniSelino.gpx' },
 { zone: 'imagna, valcava', name: 'Forcella Alta, 574, Valsecca, Selino', kind: 'down', file: 'I_ForcellaAlta574ValseccaSelino.gpx' },
 { zone: 'imagna, valcava', name: 'Linzone Roncola Alta, Amagno', kind: 'down', file: 'I_LinzoneRoncolaAltaAmagno.gpx' },
-{ zone: 'imagna, valcava', name: 'Linzone Roncola, Barlino', kind: 'down', file: 'I_LinzoneRoncolaBarlino.gpx', link: '2018/11/linzone-roncola-barlino' },
+{ zone: 'martino, imagna, valcava', name: 'Linzone Roncola, Barlino', kind: 'down', file: 'I_LinzoneRoncolaBarlino.gpx', link: '2018/11/linzone-roncola-barlino' },
 { zone: 'martino, imagna, valcava', name: 'Salita da Valcava al Linzone', kind: 'up', file: 'N_ValcavaLinzone_REC.gpx' },
 { zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Baia, Spino, Burligo', kind: 'down', file: 'N_LinzonePiaccaBaitaSpinoBurligo_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
 { zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Spino, Ciacallo, Burligo', kind: 'down', file: 'N_LinzonePiaccaSpinoCiacallo807Burligo_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
-{ zone: 'martino, valcava', name: 'Valcava, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'N_ValcavaColdaraPedrinoOprenoBurligo.gpx' },
+{ zone: 'martino, valcava', name: 'Valcava, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'N_ValcavaColdaraPedrinoOprenoBurligo_REC.gpx' },
+{ zone: 'martino, valcava', name: 'Salita da Torre De Busi a Valcava', kind: 'up', file: 'N_SalitaBusiValcava.gpx', link: '2018/12/salite-san-martino' },
+{ zone: 'martino, valcava', name: 'Salita da Carenno alla Forcella Alta', kind: 'up', file: 'N_SalitaForcellaAlta_REC.gpx', link: '2018/12/salite-san-martino' },
+{ zone: 'martino, valcava', name: 'Salita da Palazzago alla Cava', kind: 'up', file: 'N_SalitaPalazzagoCava_REC.gpx', link: '2018/12/salite-san-martino' },
+{ zone: 'martino, valcava', name: 'Valcava, 823, Colle di Sogno, Corna Martinella, Torre de Busi', kind: 'down', file: 'N_Valcava823SognoMartinellaClassicaFlow_REC.gpx', link: '2018/12/valcava-colle-di-sogno-corna-martinella' },
 { zone: 'canto', name: 'Genestaro', kind: 'down', file: 'C_Genestaro_REC.gpx' },
 { zone: 'canto', name: 'Guendalina', kind: 'down', file: 'C_Guendalina_REC.gpx' } ,
 { zone: 'canto', name: 'Kompressor', kind: 'down', file: 'C_Kompressor_REC.gpx' },
@@ -60,7 +64,8 @@ var TRACKS = [
 { zone: 'colli', name: 'Salita da Astino', kind: 'up', file: 'PC_Salita_Astino_REC.gpx' },
 { zone: 'colli', name: 'Salita al Monte Gussa', kind: 'up', file: 'PC_Salita_Gussa_REC.gpx' },
 { zone: 'colli', name: 'Salita dal Pascolo Dei Tedeschi', kind: 'up', file: 'PC_Salita_PascoloTedeschi_REC.gpx' },
-{ zone: 'colli', name: 'Salida dal Roccolone', kind: 'up', file: 'PC_Salita_Roccolone_REC.gpx' },
+{ zone: 'colli', name: 'Salita dal Roccolone', kind: 'up', file: 'PC_Salita_Roccolone_REC.gpx' },
 { zone: 'colli', name: 'Torre', kind: 'down', file: 'PC_Torre_REC.gpx' }
 ];
+
 
