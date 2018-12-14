@@ -87,6 +87,7 @@ function create_gpx_info(map, control, gpx, url, name, link)
 	control.addOverlay(gpx, name);
 }
 
+// create a track for a post with full size icons
 function create_track(map, control, url, name, track_options)
 {
 	var _DEFAULT_TRACK_OPTS = {
@@ -118,6 +119,7 @@ function create_track(map, control, url, name, track_options)
 	}).addTo(map);
 }
 
+// create a track for a zone post, with half size icons and link to the specific post
 function create_zone_track(map, control, url, name, link, track_options)
 {
 	var _DEFAULT_TRACK_OPTS = {
@@ -178,6 +180,44 @@ var COLORS_DOWN = [
 // black colors for up
 var COLORS_UP = "Gray";
 
+// create a post down track
+function create_down(map, control, file)
+{
+	for (i = 0; i < TRACKS.length; i++) {
+		if (TRACKS[i].file == file) {
+			create_track(map, control,
+				"http://ftp.mtbbergamo.it/gpx/" + TRACKS[i].file,
+				TRACKS[i].name,
+				{
+					weight: 7,
+					slope: true
+				}
+			);
+			break;
+		}
+	}
+}
+
+// create a post up track
+function create_up(map, control, file)
+{
+	for (i = 0; i < TRACKS.length; i++) {
+		if (TRACKS[i].file == file) {
+			create_zone_track(map, control,
+				"http://ftp.mtbbergamo.it/gpx/" + TRACKS[i].file,
+				TRACKS[i].name,
+				TRACKS[i].link,
+				{
+					color: COLORS_UP,
+					weight: 3
+				}
+			);
+			break;
+		}
+	}
+}
+
+// create a zone post including all the up and down tracks
 function create_zone(map, control, zone) {
 	var color_d = 0;
 
@@ -210,6 +250,7 @@ function create_zone(map, control, zone) {
 	}
 }
 
+// create a climp post including all the up tracks
 function create_climb(map, control, zone) {
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].zone.search(zone) < 0)
