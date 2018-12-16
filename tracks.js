@@ -16,7 +16,7 @@ var TRACKS = [
 { zone: 'maresana', name: 'Luca West', kind: 'down', file: 'M_LucaWest_REC.gpx', link: '2018/11/lucawest' },
 { zone: 'maresana', name: 'Salita da Ranica', kind: 'up', file: 'M_SalitaRanica_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana', name: 'Salita da Ponteranica', kind: 'up', file: 'M_SalitaPonteranica_REC.gpx', link: '2018/11/salite-maresana' },
-{ zone: 'maresana', name: 'Salita dal Castello Della Moretta alla Maresana', kind: 'up', file: 'M_SalitaLegnaiaMorettaMaresana_REC.gpx', link: '2018/11/salite-maresana' },
+{ zone: 'maresana', name: 'Salita da Ponteranica Alta', kind: 'up', file: 'M_SalitaPonteranicaAlta_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'imagna', name: 'Brumano, Passo Porta, Rota, Selino', kind: 'down', file: 'I_BrumanoPassoPortaRotaSelino_REC.gpx', link: '2018/12/brumano-passo-porta-rota-selino' },
 { zone: 'imagna', name: 'Ceresola, Roccoli Passata, Partigiano, Costa Cavallina, Clanezzo', kind: 'down', file: 'I_CeresolaRoccoliPassataPartigianoCostaCavallinaClanezzo_REC.gpx' },
 { zone: 'imagna', name: 'Palio, Canti, Tre Faggi', kind: 'down', file: 'I_PalioCantiTreFaggi_REC.gpx', link: '2018/12/palio-canti-tre-faggi' },
