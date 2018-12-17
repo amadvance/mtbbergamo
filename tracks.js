@@ -2,13 +2,13 @@
 
 var TRACKS = [
 { zone: 'maresana', name: '532', kind: 'down', file: 'M_532_REC.gpx' },
-{ zone: 'maresana', name: '604', kind: 'down', file: 'M_604_REC.gpx', link: '2018/11/604' },
+{ zone: 'maresana', name: '604 / Vertigo', kind: 'down', file: 'M_604_REC.gpx', link: '2018/11/604' },
 { zone: 'maresana', name: 'Bruna', kind: 'down', file: 'M_Bruna.gpx', link: '2018/11/bruna' },
 { zone: 'maresana', name: 'FarWest', kind: 'down', file: 'M_FarWest_REC.gpx', link: '2018/11/farwest' },
 { zone: 'maresana', name: '401 / Filoncino', kind: 'down', file: 'M_Filoncino_REC.gpx', link: '2018/11/401-filoncino' },
 { zone: 'maresana', name: 'Filone Easy', kind: 'down', file: 'M_FiloneEasy_REC.gpx', link: '2018/11/filone-easy' },
 { zone: 'maresana', name: '533 / Filone', kind: 'down', file: 'M_Filone_REC.gpx', link:'2018/11/533-filone' },
-{ zone: 'maresana', name: '533 / Illegale / Veloce', kind: 'down', file: 'M_Illegale_REC.gpx', link: '2018/11/533-illegale' },
+{ zone: 'maresana', name: '533 / Veloce / Illegale', kind: 'down', file: 'M_Illegale_REC.gpx', link: '2018/11/533-illegale' },
 { zone: 'maresana', name: 'Rosciano', kind: 'down', file: 'M_Rosciano_REC.gpx', link: '2018/11/rosciano' },
 { zone: 'maresana', name: '402 / San Rocco', kind: 'down', file: 'M_SanRocco_REC.gpx', link: '2018/11/402-san-rocco' },
 { zone: 'maresana', name: '409 / Tornantini', kind: 'down', file: 'M_Tornantini_REC.gpx', link: '2018/11/tornantini' },
