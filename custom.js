@@ -75,12 +75,17 @@ function create_gpx_info(map, control, gpx, url, name, link)
 
 	desc += "<br/>";
 	desc += "&harr; " + (gpx.get_distance() / 1000).toFixed(1) + " km";
+
 	if (gpx.get_elevation_gain() > 100) {
 		desc += ", &uarr; "+ Math.floor(gpx.get_elevation_gain()) + "m";
 	}
 	if (gpx.get_elevation_loss() > 100) {
 		desc += ", &darr; "+ Math.floor(gpx.get_elevation_loss()) + "m";
 	}
+	if (gpx.get_moving_time() > 1000 * 60) {
+		desc += ", "+ Math.floor(gpx.get_moving_time() / 1000 / 60) + "min";
+	}
+
 	desc += "<br/>";
 	desc += "<a href=\"" + url + "\">Download GPX</a>";
 	gpx.bindPopup(desc);
