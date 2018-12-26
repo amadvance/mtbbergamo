@@ -25,8 +25,8 @@ var TRACKS = [
 { zone: 'maresana', name: 'Salita da Ponteranica Alta', kind: 'up', file: 'M_SalitaPonteranicaAlta_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana', name: 'Salita da Olera', kind: 'up', file: 'M_SalitaOlera_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'sorisole', name: 'Bacino', kind: 'down', file: 'SR_Bacino_REC.gpx' },
-{ zone: 'sorisole', name: 'Pista Downhill', kind: 'down', file: 'SR_DH_REC.gpx' },
-{ zone: 'sorisole', name: 'Galusu', kind: 'down', file: 'SR_Galusu_REC.gpx' },
+{ zone: 'sorisole', name: 'Pista Downhill', kind: 'down', file: 'SR_PistaDH_REC.gpx', link: '2018/12/pista-downhill' },
+{ zone: 'sorisole', name: 'Galusu', kind: 'down', file: 'SR_Galusu_REC.gpx', link: '2018/12/galusu' },
 { zone: 'sorisole', name: 'Giongo', kind: 'down', file: 'SR_Giongo_REC.gpx' },
 { zone: 'sorisole', name: 'Salita alla Forcella di Rua', kind: 'up', file: 'SR_SalitaForcellaDiRua_REC.gpx' },
 { zone: 'sorisole', name: 'Salita al Galusu', kind: 'up', file: 'SR_SalitaGalusu_REC.gpx' },
@@ -76,7 +76,7 @@ var TRACKS = [
 { zone: 'colli', name: 'Gussa Nord', kind: 'down', file: 'PC_GussaNord_REC.gpx' },
 { zone: 'colli', name: 'Gussa Ovest', kind: 'down', file: 'PC_GussaOvest_REC.gpx' },
 { zone: 'colli', name: 'Gussa Sud', kind: 'down', file: 'PC_GussaSud_REC.gpx' },
-{ zone: 'colli', name: 'Quadrifoglio', kind: 'down', file: 'PC_Quadrifoglio_REC.gpx' },
+{ zone: 'colli', name: 'Pistino', kind: 'down', file: 'PC_Pistino_REC.gpx' },
 { zone: 'colli', name: 'Roccolone', kind: 'down', file: 'PC_Roccolone_REC.gpx', link: '2018/12/roccolone' },
 { zone: 'colli', name: 'Allegrezza', kind: 'down', file: 'PC_Allegrezza_REC.gpx', link: '2018/12/allegrezza' },
 { zone: 'colli', name: 'Allegrezza Variante Sud', kind: 'down', file: 'PC_AllegrezzaSud_VAR.gpx', link: '2018/12/allegrezza' },
@@ -86,5 +86,4 @@ var TRACKS = [
 { zone: 'colli', name: 'Salita dalla Madonna del Bosco', kind: 'up', file: 'PC_SalitaMadonnaDelBosco_REC.gpx', link:'2018/12/salite-colli.bergamo' },
 { zone: 'colli', name: 'Salita dal Roccolone', kind: 'up', file: 'PC_SalitaRoccolone_REC.gpx', link:'2018/12/salite-colli.bergamo' },
 ];
-
 
