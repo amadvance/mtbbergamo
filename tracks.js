@@ -15,11 +15,12 @@ var TRACKS = [
 { zone: 'maresana', name: 'Legnaia', kind: 'down', file: 'M_Legnaia_REC.gpx', link: '2018/11/legnaia' },
 { zone: 'maresana', name: 'Legnaia Variante Sud', kind: 'down', file: 'M_LegnaiaSud_VAR.gpx', link: '2018/11/legnaia' },
 { zone: 'maresana', name: 'Luca West', kind: 'down', file: 'M_LucaWest_REC.gpx', link: '2018/11/lucawest' },
-{ zone: 'maresana, sorisole', name: '229', kind: 'down', file: 'M_229_Premerlino_REC.gpx' },
+{ zone: 'maresana, sorisole', name: '229', kind: 'down', file: 'M_229_REC.gpx', link: '2018/12/229' },
+{ zone: 'maresana, sorisole', name: '229 Variante Premerlino', kind: 'down', file: 'M_229_Premerlino_VAR.gpx', link: '2018/12/229' },
 { zone: 'maresana', name: '532A', kind: 'down', file: 'M_532A_Olera_REC.gpx' },
 { zone: 'maresana', name: 'Trasferimento da Ca Del Lacc alla Forcella Del Sorriso', kind: 'up', file: 'M_CaDelLaccForcellaDelSorriso_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana', name: 'Trasferimento dal Castello della Moretta alla Maresana', kind: 'up', file: 'M_MorettaMaresana_REC.gpx', link: '2018/11/salite-maresana' },
-{ zone: 'maresana, sorisole', name: 'Trasferimento da Sorisole a Ponteranica Alta', kind: 'up', file: 'M_SorisolePonteranicaAlta_REC.gpx', link: '2018/11/salite-maresana' },
+{ zone: 'maresana, sorisole', name: 'Trasferimento da Premerlino a Ponteranica Alta', kind: 'up', file: 'M_PremerlinoPonteranicaAlta_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana', name: 'Salita da Ranica', kind: 'up', file: 'M_SalitaRanica_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana', name: 'Salita da Ponteranica', kind: 'up', file: 'M_SalitaPonteranica_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana', name: 'Salita da Ponteranica Alta', kind: 'up', file: 'M_SalitaPonteranicaAlta_REC.gpx', link: '2018/11/salite-maresana' },
@@ -31,6 +32,7 @@ var TRACKS = [
 { zone: 'sorisole', name: 'Salita alla Forcella di Rua', kind: 'up', file: 'SR_SalitaForcellaDiRua_REC.gpx' },
 { zone: 'sorisole', name: 'Salita al Galusu', kind: 'up', file: 'SR_SalitaGalusu_REC.gpx' },
 { zone: 'sorisole', name: 'Salita al Giongo', kind: 'up', file: 'SR_SalitaGiongo_REC.gpx' },
+{ zone: 'sorisole', name: 'Trasferimento da Premerlino al Pisgiù', kind: 'up', file: 'SR_PremerlinoPisgiu_REC.gpx' },
 { zone: 'imagna', name: 'Brumano, Passo Porta, Rota, Selino', kind: 'down', file: 'I_BrumanoPassoPortaRotaSelino_REC.gpx', link: '2018/12/brumano-passo-porta-rota-selino' },
 { zone: 'imagna', name: 'Ceresola, Roccoli Passata, Partigiano, Costa Cavallina, Clanezzo', kind: 'down', file: 'I_CeresolaRoccoliPassataPartigianoCostaCavallinaClanezzo_REC.gpx' },
 { zone: 'imagna', name: 'Palio, Canti, Tre Faggi', kind: 'down', file: 'I_PalioCantiTreFaggi_REC.gpx', link: '2018/12/palio-canti-tre-faggi' },
@@ -88,4 +90,5 @@ var TRACKS = [
 { zone: 'colli', name: 'Salita dalla Madonna del Bosco', kind: 'up', file: 'PC_SalitaMadonnaDelBosco_REC.gpx', link:'2018/12/salite-colli.bergamo' },
 { zone: 'colli', name: 'Salita dal Roccolone', kind: 'up', file: 'PC_SalitaRoccolone_REC.gpx', link:'2018/12/salite-colli.bergamo' },
 ];
+
 
