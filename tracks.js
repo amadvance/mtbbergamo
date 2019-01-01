@@ -1,5 +1,13 @@
 /* mtbbergamo TRACKS */
 
+/*
+\u00E0 à
+\u00E8 è
+\u00EC ì
+\u00F2 ò
+\u00F9 ù
+*/
+
 var TRACKS = [
 { zone: 'maresana', name: '532', kind: 'down', file: 'M_532_REC.gpx' },
 { zone: 'maresana', name: '604 / Vertigo', kind: 'down', file: 'M_604_REC.gpx', link: '2018/11/604' },
@@ -27,12 +35,13 @@ var TRACKS = [
 { zone: 'maresana', name: 'Salita da Olera', kind: 'up', file: 'M_SalitaOlera_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'sorisole', name: 'Bacino', kind: 'down', file: 'SR_Bacino_REC.gpx' },
 { zone: 'sorisole', name: 'Pista Downhill', kind: 'down', file: 'SR_PistaDH_REC.gpx', link: '2018/12/pista-downhill' },
-{ zone: 'sorisole', name: 'Galusu', kind: 'down', file: 'SR_Galusu_REC.gpx', link: '2018/12/galusu' },
+{ zone: 'sorisole', name: 'Galus\u00F9', kind: 'down', file: 'SR_Galusu_REC.gpx', link: '2018/12/galusu' },
 { zone: 'sorisole', name: 'Giongo', kind: 'down', file: 'SR_Giongo_REC.gpx' },
 { zone: 'sorisole', name: 'Salita alla Forcella di Rua', kind: 'up', file: 'SR_SalitaForcellaDiRua_REC.gpx' },
-{ zone: 'sorisole', name: 'Salita al Galusu', kind: 'up', file: 'SR_SalitaGalusu_REC.gpx' },
+{ zone: 'sorisole', name: 'Salita al Galus\u00F9', kind: 'up', file: 'SR_SalitaGalusu_REC.gpx' },
 { zone: 'sorisole', name: 'Salita al Giongo', kind: 'up', file: 'SR_SalitaGiongo_REC.gpx' },
-{ zone: 'sorisole', name: 'Trasferimento da Premerlino al Pisgiù', kind: 'up', file: 'SR_PremerlinoPisgiu_REC.gpx' },
+{ zone: 'sorisole', name: 'Trasferimento da Premerlino al Pisgi\u00F9', kind: 'up', file: 'SR_PremerlinoPisgiu_REC.gpx' },
+{ zone: 'sorisole', name: 'Trasferimento alla Pista Downhill', kind: 'up', file: 'SR_203_REC.gpx' },
 { zone: 'imagna', name: 'Brumano, Passo Porta, Rota, Selino', kind: 'down', file: 'I_BrumanoPassoPortaRotaSelino_REC.gpx', link: '2018/12/brumano-passo-porta-rota-selino' },
 { zone: 'imagna', name: 'Ceresola, Roccoli Passata, Partigiano, Costa Cavallina, Clanezzo', kind: 'down', file: 'I_CeresolaRoccoliPassataPartigianoCostaCavallinaClanezzo_REC.gpx' },
 { zone: 'imagna', name: 'Palio, Canti, Tre Faggi', kind: 'down', file: 'I_PalioCantiTreFaggi_REC.gpx', link: '2018/12/palio-canti-tre-faggi' },
