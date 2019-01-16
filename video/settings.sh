@@ -36,10 +36,10 @@ VF_STAB=deshake=rx=64:ry=64
 VF_NORMALIZE=normalize=blackpt=black:whitept=white:smoothing=6000
 
 # Reduce blue
-VF_CURVE=curves=blue='0/0 0.5/0.45 1/1':red='0/0 0.5/0.55 1/1'
+VF_CURVE=curves=blue='0/0 0.5/0.45 1/1'
 
 # Increase saturation, contrast and bright a little
-VF_FLAT=eq=brightness=0.1:contrast=1.3:saturation=3
+VF_FLAT=eq=brightness=0.1:contrast=1.2:saturation=3
 
 #######################################################
 # Filter for FLAT color mode with EV=0, SHARPNESS=HIGH
