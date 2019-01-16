@@ -58,7 +58,7 @@ var TRACKS = [
 { zone: 'imagna, valcava', name: 'Linzone Roncola Alta, Amagno', kind: 'down', file: 'I_LinzoneRoncolaAltaAmagno_REC.gpx' },
 { zone: 'martino, imagna, valcava', name: 'Linzone Roncola, Barlino', kind: 'down', file: 'I_LinzoneRoncolaBarlino_REC.gpx', link: '2018/11/linzone-roncola-barlino' },
 { zone: 'martino, imagna, valcava', name: 'Salita da Valcava al Linzone', kind: 'up', file: 'N_ValcavaLinzone_REC.gpx' },
-{ zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Baia, Spino, Burligo', kind: 'down', file: 'N_LinzonePiaccaBaitaSpinoBurligo_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
+{ zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Baia, Spino, Palazzago', kind: 'down', file: 'N_LinzonePiaccaBaitaSpinoPalazzago_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
 { zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Spino, Ciacallo, Burligo', kind: 'down', file: 'N_LinzonePiaccaSpinoCiacallo807Burligo_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
 { zone: 'martino, valcava', name: 'Valcava, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'N_ValcavaColdaraPedrinoOprenoBurligo_REC.gpx' },
 { zone: 'martino, valcava', name: 'Valcava, 823, Colle di Sogno, Corna Martinella, Torre de Busi', kind: 'down', file: 'N_Valcava823SognoMartinellaClassicaFlow_REC.gpx', link: '2018/12/valcava-colle-di-sogno-corna-martinella' },
