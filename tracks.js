@@ -15,7 +15,7 @@ var TRACKS = [
 { zone: 'maresana', name: 'FarWest', kind: 'down', file: 'M_FarWest_REC.gpx', link: '2018/11/farwest' },
 { zone: 'maresana', name: '401 / Filoncino / Calvarola', kind: 'down', file: 'M_Filoncino_REC.gpx', link: '2018/11/401-filoncino' },
 { zone: 'maresana', name: 'Filone Easy', kind: 'down', file: 'M_FiloneEasy_REC.gpx', link: '2018/11/filone-easy' },
-{ zone: 'maresana', name: '533 / Filone', kind: 'down', file: 'M_Filone_REC.gpx', link:'2018/11/533-filone' },
+{ zone: 'maresana', name: '533 / Filone / Agostini', kind: 'down', file: 'M_Filone_REC.gpx', link:'2018/11/533-filone' },
 { zone: 'maresana', name: '533 / Veloce / Illegale', kind: 'down', file: 'M_Illegale_REC.gpx', link: '2018/11/533-illegale' },
 { zone: 'maresana', name: 'Rosciano', kind: 'down', file: 'M_Rosciano_REC.gpx', link: '2018/11/rosciano' },
 { zone: 'maresana', name: '402 / San Rocco', kind: 'down', file: 'M_SanRocco_REC.gpx', link: '2018/11/402-san-rocco' },
