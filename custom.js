@@ -179,7 +179,11 @@ var COLORS_DOWN = [
 "MediumSeaGreen", // green
 "LightSeaGreen", // cyan
 "RoyalBlue", // blue
-"MediumOrchid" // magenta
+"MediumOrchid", // magenta
+"PaleVioletRed", // pink
+"Red", // red
+"OrangeRed", // orange
+"Brown" // brown
 ];
 
 // black colors for up
