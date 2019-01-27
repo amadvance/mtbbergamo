@@ -26,6 +26,7 @@ var TRACKS = [
 { zone: 'maresana, sorisole', name: '229', kind: 'down', file: 'M_229_REC.gpx', link: '2018/12/229' },
 { zone: 'maresana, sorisole', name: '229 Variante Premerlino', kind: 'down', file: 'M_229_Premerlino_VAR.gpx', link: '2018/12/229' },
 { zone: 'maresana', name: '532A', kind: 'down', file: 'M_532A_Olera_REC.gpx' },
+{ zone: 'maresana', name: 'Flying Dutchman', kind: 'down', file: 'M_FlyingDutchman_REC.gpx', link: '2019/01/flying-dutchman' },
 { zone: 'maresana', name: 'Trasferimento da Ca Del Lacc alla Forcella Del Sorriso', kind: 'up', file: 'M_CaDelLaccForcellaDelSorriso_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana', name: 'Trasferimento dal Castello della Moretta alla Maresana', kind: 'up', file: 'M_MorettaMaresana_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana, sorisole', name: 'Trasferimento da Premerlino a Ponteranica Alta', kind: 'up', file: 'M_PremerlinoPonteranicaAlta_REC.gpx', link: '2018/11/salite-maresana' },
@@ -102,5 +103,6 @@ var TRACKS = [
 { zone: 'colli', name: 'Salita dalla Madonna del Bosco', kind: 'up', file: 'PC_SalitaMadonnaDelBosco_REC.gpx', link:'2018/12/salite-colli.bergamo' },
 { zone: 'colli', name: 'Salita dal Roccolone', kind: 'up', file: 'PC_SalitaRoccolone_REC.gpx', link:'2018/12/salite-colli.bergamo' },
 ];
+
 
 
