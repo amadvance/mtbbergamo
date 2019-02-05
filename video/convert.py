@@ -17,7 +17,7 @@ GENERATION=5
 # - force 2K7x30
 
 # gen5
-# - force 4Kx30
+# - add sharpness
 
 # Video Encoding
 # "-pix_fmt yuvj420p" is for compatibility with LG TV
@@ -52,8 +52,11 @@ VF_GOPRO="eq=saturation=1.4"
 # Bright a little
 VF_BRIGHT="eq=brightness=0.1:contrast=1.3"
 
-# Blur to remove the sharpness of the gopro default setting
-VF_BLUR="unsharp=7:7:-1.0"
+# Blur to remove the sharpness of the gopro default HIGH setting
+VF_BLUR="unsharp=7:7:-0.5"
+
+# Sharp to add sharpness with the gopro LOW setting
+VF_SHARP="unsharp=7:7:1.0"
 
 # Alternative filter for FLAT
 VF_LEVEL="colorlevels=rimin=0.1:gimin=0.1:rimin=0.1:rimax=0.7:gimax=0.7:bimax=0.7,eq=contrast=1.3:saturation=3,eq=saturation=1.3"
@@ -90,6 +93,8 @@ for arg in sys.argv[1:]:
 		ev = 0
 	elif arg == '/sharphigh':
 		sharpness = 'high'
+	elif arg == '/sharpmed':
+		sharpness = 'med'
 	elif arg == '/4k':
 		resolution = '4k'
 	elif arg == '/shaky':
@@ -157,11 +162,13 @@ if color == 'flat':
 else:
 	cmdline += VF_GOPRO
 
-if sharpness == 'high':
-	cmdline += ',' + VF_BLUR
-
 if shaky:
 	cmdline += ',' + VF_STAB
+
+if sharpness == 'high':
+	cmdline += ',' + VF_BLUR
+elif sharpness == 'low':
+	cmdline += ',' + VF_SHARP
 
 cmdline += '"'
 
@@ -172,7 +179,10 @@ if not play:
 	# "-s 2704x1520" - Scale 2K7
 	# "-s 3840x2160" - Scale 4K
 	if youtube:
-		cmdline += ' -s 3840x2160'
+		if resolution == '4k':
+			cmdline += ' -s 3840x2160'
+		else:
+			cmdline += ' -s 2704x1520'
 
 	cmdline += ' ' + ENCODE_264
 
