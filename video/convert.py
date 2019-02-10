@@ -47,7 +47,7 @@ VF_FLAT_EV1="eq=brightness=0.1:contrast=1.2:saturation=3,curves=blue='0/0 0.5/0.
 VF_FLAT_EV0="eq=contrast=1.3:saturation=3"
 
 # Color adjust for GOPRO: Increase saturation
-VF_GOPRO="eq=saturation=1.4"
+VF_GOPRO="eq=saturation=1.8"
 
 # Bright a little
 VF_BRIGHT="eq=brightness=0.1:contrast=1.3"
