@@ -58,6 +58,9 @@ VF_BLUR="unsharp=7:7:-0.5"
 # Sharp to add sharpness with the gopro LOW setting
 VF_SHARP="unsharp=7:7:1.0"
 
+# Flip
+VF_FLIP="hflip,vflip"
+
 # Alternative filter for FLAT
 VF_LEVEL="colorlevels=rimin=0.1:gimin=0.1:rimin=0.1:rimax=0.7:gimax=0.7:bimax=0.7,eq=contrast=1.3:saturation=3,eq=saturation=1.3"
 VF_PP="pp=al,eq=contrast=1.3:saturation=3,eq=saturation=1.3"
@@ -84,6 +87,7 @@ panning = False
 dark = False
 test = False
 play = False
+flip = False
 youtube = True
 
 for arg in sys.argv[1:]:
@@ -103,6 +107,8 @@ for arg in sys.argv[1:]:
 		panning = True
 	elif arg == '/dark':
 		dark = True
+	elif arg == '/flip':
+		flip = True
 	elif arg == '/test':
 		test = True
 	elif arg == '/play':
@@ -169,6 +175,9 @@ if sharpness == 'high':
 	cmdline += ',' + VF_BLUR
 elif sharpness == 'low':
 	cmdline += ',' + VF_SHARP
+
+if flip:
+	cmdline += ',' + VF_FLIP
 
 cmdline += '"'
 
