@@ -41,10 +41,10 @@ VF_NORMALIZE="normalize=blackpt=black:whitept=white:smoothing=6000"
 VF_FIXED="curves=r='0.1/0 1/1':g='0.1/0 1/1':b='0.1/0 1/1'"
 
 # Color adjust for FLAT EV=-1: Increase saturation, contrast and bright a little, and decrease blue
-VF_FLAT_EV1="eq=brightness=0.1:contrast=1.2:saturation=3,curves=blue='0/0 0.5/0.45 1/1'"
+VF_FLAT_EV1="eq=brightness=0.1:contrast=1.2:saturation=2.0,curves=blue='0/0 0.5/0.45 1/1'"
 
 # Color adjust for FLAT EV=0: Normalize and increase saturation and contrast, a little more contranst than EV=-1
-VF_FLAT_EV0="eq=contrast=1.3:saturation=3"
+VF_FLAT_EV0="eq=contrast=1.3:saturation=2.0"
 
 # Color adjust for GOPRO: Increase saturation
 VF_GOPRO="eq=saturation=1.8"
