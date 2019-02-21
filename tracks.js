@@ -25,6 +25,7 @@ var TRACKS = [
 { zone: 'maresana', name: 'Luca West', kind: 'down', file: 'M_LucaWest_REC.gpx', link: '2018/11/lucawest' },
 { zone: 'maresana, sorisole', name: '229', kind: 'down', file: 'M_229_REC.gpx', link: '2018/12/229' },
 { zone: 'maresana, sorisole', name: '229 Variante Premerlino', kind: 'down', file: 'M_229_Premerlino_VAR.gpx', link: '2018/12/229' },
+{ zone: 'maresana', name: 'Birondina', kind: 'down', file: 'M_Birondina_REC.gpx', link:'2019/02/birondina' },
 { zone: 'maresana', name: '532A', kind: 'down', file: 'M_532A_Olera_REC.gpx' },
 { zone: 'maresana', name: 'Flying Dutchman', kind: 'down', file: 'M_FlyingDutchman_REC.gpx', link: '2019/01/flying-dutchman' },
 { zone: 'maresana', name: 'Trasferimento da Ca Del Lacc alla Forcella Del Sorriso', kind: 'up', file: 'M_CaDelLaccForcellaDelSorriso_REC.gpx', link: '2018/11/salite-maresana' },

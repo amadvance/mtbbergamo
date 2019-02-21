@@ -41,4 +41,8 @@ python convert.py /flip gussa_est_busto.mp4
 python convert.py /flip gussa_nord_busto.mp4
 python convert.py /flip gussa_sud_busto.mp4
 python convert.py /flip allegrezza_sud_busto.mp4
+python convert.py /flip fall.mp4
+python convert.py /flip illegale.mp4
+python convert.py /flip /dark birondina.mp4
+
 
