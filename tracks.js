@@ -9,7 +9,7 @@
 */
 
 var TRACKS = [
-{ zone: 'maresana', name: '532', kind: 'down', file: 'M_532_REC.gpx' },
+{ zone: 'maresana', name: '532, San Rocco', kind: 'down', file: 'M_532_REC.gpx', link: '2019/02/532' },
 { zone: 'maresana', name: '604 / Vertigo', kind: 'down', file: 'M_604_REC.gpx', link: '2018/11/604' },
 { zone: 'maresana', name: 'Bruna', kind: 'down', file: 'M_Bruna.gpx', link: '2018/11/bruna' },
 { zone: 'maresana', name: 'FarWest', kind: 'down', file: 'M_FarWest_REC.gpx', link: '2018/11/farwest' },
@@ -26,7 +26,7 @@ var TRACKS = [
 { zone: 'maresana, sorisole', name: '229', kind: 'down', file: 'M_229_REC.gpx', link: '2018/12/229' },
 { zone: 'maresana, sorisole', name: '229 Variante Premerlino', kind: 'down', file: 'M_229_Premerlino_VAR.gpx', link: '2018/12/229' },
 { zone: 'maresana', name: 'Birondina', kind: 'down', file: 'M_Birondina_REC.gpx', link:'2019/02/birondina' },
-{ zone: 'maresana', name: '532A', kind: 'down', file: 'M_532A_Olera_REC.gpx' },
+{ zone: 'maresana', name: '532A, Olera', kind: 'down', file: 'M_532A_Olera_REC.gpx' },
 { zone: 'maresana', name: 'Flying Dutchman', kind: 'down', file: 'M_FlyingDutchman_REC.gpx', link: '2019/01/flying-dutchman' },
 { zone: 'maresana', name: 'Trasferimento da Ca Del Lacc alla Forcella Del Sorriso', kind: 'up', file: 'M_CaDelLaccForcellaDelSorriso_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana', name: 'Trasferimento dal Castello della Moretta alla Maresana', kind: 'up', file: 'M_MorettaMaresana_REC.gpx', link: '2018/11/salite-maresana' },

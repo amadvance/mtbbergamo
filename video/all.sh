@@ -44,5 +44,6 @@ python convert.py /flip allegrezza_sud_busto.mp4
 python convert.py /flip fall.mp4
 python convert.py /flip illegale.mp4
 python convert.py /flip /dark birondina.mp4
+python convert.py /flip /dark 532.mp4
 
 
