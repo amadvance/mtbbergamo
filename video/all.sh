@@ -45,5 +45,8 @@ python convert.py /flip fall.mp4
 python convert.py /flip illegale.mp4
 python convert.py /flip /dark birondina.mp4
 python convert.py /flip /dark 532.mp4
-
+python convert.py /4k santabarbara_panorama.mp4
+python convert.py /flip uccellaia.mp4
+python convert.py /flip kompressor.mp4
+python convert.py /flip zandona.mp4
 
