@@ -63,7 +63,7 @@ var TRACKS = [
 { zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Baia, Spino, Palazzago', kind: 'down', file: 'N_LinzonePiaccaBaitaSpinoPalazzago_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
 { zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Spino, Ciacallo, Burligo', kind: 'down', file: 'N_LinzonePiaccaSpinoCiacallo807Burligo_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
 { zone: 'martino, valcava', name: 'Valcava, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'N_ValcavaColdaraPedrinoOprenoBurligo_REC.gpx', link: '2019/01/funivia-coldara-colle-pedrino-opreno' },
-{ zone: 'martino, valcava', name: 'Valcava, Coldara, Col Fopa, Opreno, Burligo', kind: 'down', file: 'N_ValcavaColdaraColFopaOprenoBurligo_REC.gpx', link: '2019/01/funivia-coldara-colle-pedrino-opreno' },
+{ zone: 'martino, valcava', name: 'Valcava, Zuccherone, Coldara, Col Fopa, Opreno, Burligo', kind: 'down', file: 'N_ValcavaZuccheroneColdaraColFopaOprenoBurligo_REC.gpx', link: '2019/03/zuccherone-coldara-col-fopa-opreno' },
 { zone: 'martino, valcava', name: 'Valcava, 823, Colle di Sogno, Corna Martinella, Torre de Busi', kind: 'down', file: 'N_Valcava823SognoMartinellaClassicaFlow_REC.gpx', link: '2018/12/valcava-colle-di-sogno-corna-martinella' },
 { zone: 'martino, valcava', name: 'Forcella Alta, 817, Carenno', kind: 'down', file: 'N_ForcellaAlta817Carenno_REC.gpx', link: '2018/12/forcella-alta-817-carenno' },
 { zone: 'martino, valcava', name: 'Forcella Alta, 815, Carenno', kind: 'down', file: 'N_ForcellaAlta815Carenno_REC.gpx', link: '2019/01/forcella-alta-815-carenno' },
@@ -88,15 +88,16 @@ var TRACKS = [
 { zone: 'canto', name: 'Salita da Pontida', kind: 'up', file: 'C_SalitaPontida_REC.gpx', link:'2019/02/salite-monte-canto' },
 { zone: 'canto', name: 'Salita da Ambivere', kind: 'up', file: 'C_SalitaAmbivere_REC.gpx', link:'2019/02/salite-monte-canto' },
 { zone: 'canto', name: 'Salita da Fontanella', kind: 'up', file: 'C_SalitaFontanella_REC.gpx', link:'2019/02/salite-monte-canto' },
-{ zone: 'colli', name: '712 Nord', kind: 'down', file: 'PC_712Nord_REC.gpx' },
+{ zone: 'colli', name: '712 Nord', kind: 'down', file: 'PC_712Nord_REC.gpx', link: '2019/03/roccolone-nord' },
 { zone: 'colli', name: '712 Sud', kind: 'down', file: 'PC_712Sud_REC.gpx', link: '2019/01/roccolone-sud' },
-{ zone: 'colli', name: '713 Partigiano', kind: 'down', file: 'PC_713Partigiano_REC.gpx' },
+{ zone: 'colli', name: '713 / Partigiano', kind: 'down', file: 'PC_713Partigiano_REC.gpx', link: '2019/03/roccolone-nord' },
+{ zone: 'colli', name: 'Roccolo Nord', kind: 'down', file: 'PC_RoccoloNord_REC.gpx', link: '2019/03/roccolone-nord' },
 { zone: 'colli', name: '910 / Alpini', kind: 'down', file: 'PC_910_REC.gpx', link: '2018/12/910' },
 { zone: 'colli', name: 'Gussa Est', kind: 'down', file: 'PC_GussaEst_REC.gpx', link: '2019/01/monte-gussa' },
 { zone: 'colli', name: 'Gussa Nord', kind: 'down', file: 'PC_GussaNord_REC.gpx', link: '2019/01/monte-gussa' },
 { zone: 'colli', name: 'Gussa Ovest', kind: 'down', file: 'PC_GussaOvest_REC.gpx', link: '2019/01/monte-gussa' },
 { zone: 'colli', name: 'Gussa Sud', kind: 'down', file: 'PC_GussaSud_REC.gpx', link: '2019/01/monte-gussa' },
-{ zone: 'colli', name: 'Pistino', kind: 'down', file: 'PC_Pistino_REC.gpx' },
+{ zone: 'colli', name: 'Pistino', kind: 'down', file: 'PC_Pistino_REC.gpx', link: '2019/03/roccolone-nord' },
 { zone: 'colli', name: 'Roccolone', kind: 'down', file: 'PC_Roccolone_REC.gpx', link: '2018/12/roccolone' },
 { zone: 'colli', name: 'Allegrezza', kind: 'down', file: 'PC_Allegrezza_REC.gpx', link: '2018/12/allegrezza' },
 { zone: 'colli', name: 'Allegrezza Variante Sud', kind: 'down', file: 'PC_AllegrezzaSud_REC.gpx', link: '2018/12/allegrezza' },
@@ -106,6 +107,4 @@ var TRACKS = [
 { zone: 'colli', name: 'Salita dalla Madonna del Bosco', kind: 'up', file: 'PC_SalitaMadonnaDelBosco_REC.gpx', link:'2018/12/salite-colli-bergamo' },
 { zone: 'colli', name: 'Salita dal Roccolone', kind: 'up', file: 'PC_SalitaRoccolone_REC.gpx', link:'2018/12/salite-colli-bergamo' },
 ];
-
-
 

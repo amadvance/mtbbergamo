@@ -49,4 +49,13 @@ python convert.py /4k santabarbara_panorama.mp4
 python convert.py /flip uccellaia.mp4
 python convert.py /flip kompressor.mp4
 python convert.py /flip zandona.mp4
+python convert.py zuccherone.mp4
+python convert.py coldara_fopa_opreno.mp4
+python convert.py opreno_burligo_ebike.mp4
+python convert.py 712_nord_roccolo.mp4
+python convert.py 713_partigiano.mp4
+python convert.py 910.mp4
+python convert.py pistino.mp4
+python convert.py roccolo_nord.mp4
+python convert.py allegrezza_forato.mp4
 
