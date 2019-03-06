@@ -138,7 +138,7 @@ if test:
 if play:
 	cmdline = 'ffplay'
 else:
-	cmdline = 'ffmpeg -y'
+	cmdline = 'nice ffmpeg -y'
 
 # Test
 if test:
