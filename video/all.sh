@@ -1,7 +1,7 @@
 python convert.py /gopro /sharphigh /4k /panning forcella_alta_panorama.mp4
 #NUKED python convert.py /gopro /sharphigh roccolone_parziale.mp4
-python convert.py /gopro /sharphigh 712sud.mp4
-python convert.py /gopro /sharphigh torre.mp4
+#NUKED python convert.py /gopro /sharphigh 712sud.mp4
+#NUKED python convert.py /gopro /sharphigh torre.mp4
 python convert.py /gopro /sharphigh allegrezza.mp4
 python convert.py /gopro /sharphigh 229.mp4
 python convert.py /gopro /sharphigh pistadh.mp4
@@ -58,4 +58,14 @@ python convert.py 910.mp4
 python convert.py pistino.mp4
 python convert.py roccolo_nord.mp4
 python convert.py allegrezza_forato.mp4
+python convert.py 532a_olera.mp4
+python convert.py canto_basso_forcella_sorriso.mp4
+python convert.py castello_canto_basso.mp4
+python convert.py monte_cavallo_canto_basso.mp4
+python convert.py passaggio_canto_basso.mp4
+python convert.py 712_sud_busto.mp4
+python convert.py pistino_nuovo.mp4
+python convert.py gradoni.mp4
+python convert.py roccolone_sud.mp4
+python convert.py torre_busto.mp4
 
