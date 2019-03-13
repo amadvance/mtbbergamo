@@ -56,16 +56,20 @@ python convert.py 712_nord_roccolo.mp4
 python convert.py 713_partigiano.mp4
 python convert.py 910.mp4
 python convert.py pistino.mp4
-python convert.py roccolo_nord.mp4
+#NUKED python convert.py roccolo_nord.mp4
 python convert.py allegrezza_forato.mp4
 python convert.py 532a_olera.mp4
 python convert.py canto_basso_forcella_sorriso.mp4
 python convert.py castello_canto_basso.mp4
 python convert.py monte_cavallo_canto_basso.mp4
-python convert.py passaggio_canto_basso.mp4
+#NUKED python convert.py passaggio_canto_basso.mp4
 python convert.py 712_sud_busto.mp4
-python convert.py pistino_nuovo.mp4
-python convert.py gradoni.mp4
+#NUKED python convert.py pistino_nuovo.mp4
+#NUKED python convert.py gradoni.mp4
 python convert.py roccolone_sud.mp4
 python convert.py torre_busto.mp4
+python convert.py gradoni_fast.mp4
+python convert.py pistino_nuovo_fast.mp4
+python convert.py roccolone.mp4
+python convert.py roccolone_nord.mp4
 
