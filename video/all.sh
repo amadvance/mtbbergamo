@@ -55,7 +55,7 @@ python convert.py opreno_burligo_ebike.mp4
 python convert.py 712_nord_roccolo.mp4
 python convert.py 713_partigiano.mp4
 python convert.py 910.mp4
-python convert.py pistino.mp4
+python convert.py expistino.mp4
 #NUKED python convert.py roccolo_nord.mp4
 python convert.py allegrezza_forato.mp4
 python convert.py 532a_olera.mp4
@@ -72,4 +72,9 @@ python convert.py gradoni_fast.mp4
 python convert.py pistino_nuovo_fast.mp4
 python convert.py roccolone.mp4
 python convert.py roccolone_nord.mp4
+python convert.py 540a.mp4
+python convert.py burro_531_nese.mp4
+python convert.py olera_532_burro.mp4
+
+
 
