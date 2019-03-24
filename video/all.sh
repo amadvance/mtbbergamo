@@ -75,6 +75,8 @@ python convert.py roccolone_nord.mp4
 python convert.py 540a.mp4
 python convert.py burro_531_nese.mp4
 python convert.py olera_532_burro.mp4
-
-
-
+python convert.py trote.mp4
+python convert.py /4k monte_poieto_panorama.mp4
+python convert.py 520.mp4
+python convert.py passaggio_poieto.mp4
+python convert.py poieto_dh.mp4
