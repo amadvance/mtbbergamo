@@ -112,7 +112,6 @@ var TRACKS = [
 { zone: 'colli', name: 'Salita al Colle Roccolone', kind: 'up', file: 'PC_SalitaCimaRoccolone_REC.gpx', link:'2018/12/salite-colli-bergamo' },
 { zone: 'seriana', name: 'Canto Basso, 533, Forcella del Sorriso', kind: 'down', file: 'S_CantoBassoForcellaSorriso_REC.gpx', link:'2019/03/canto-basso-533-forcella-del-sorriso' },
 /* { zone: 'seriana', name: 'Cavlera, 528', kind: 'down', file: 'S_Cavlera528_REC.gpx' }, */
-{ zone: 'seriana', name: 'Ganda, 520, Ganzzaniga', kind: 'down', file: 'S_Ganda520DHGazzaniga_REC.gpx' },
 { zone: 'seriana', name: 'Lonno, Val del Luio', kind: 'down', file: 'S_LonnoLuio_REC.gpx' },
 { zone: 'seriana', name: 'Monte Cavallo, Canto Basso', kind: 'down', file: 'S_MonteCavallo_REC.gpx' },
 { zone: 'seriana', name: 'Poieto, Gazzaniga', kind: 'down', file: 'S_PoietoGazzaniga_REC.gpx' },
@@ -122,10 +121,13 @@ var TRACKS = [
 { zone: 'seriana', name: 'Selvino, Mulattiera, Albino', kind: 'down', file: 'S_SelvinoMulattieraAlbino_REC.gpx' },
 { zone: 'seriana', name: 'Selvino, Purito, Trevasco', kind: 'down', file: 'S_SelvinoPuritoTrevasco_REC.gpx' },
 { zone: 'seriana', name: 'Selvino, Trote, Albino', kind: 'down', file: 'S_TroteSegniRossi_REC.gpx' },
-{ zone: 'seriana', name: '540A, Olera', kind: 'down', file: 'S_540A_REC.gpx', link:'2019/03/canto-basso-540a-olera' },
+{ zone: 'seriana', name: 'Canto Basso, 540A, Olera', kind: 'down', file: 'S_540A_REC.gpx', link:'2019/03/canto-basso-540a-olera' },
 { zone: 'seriana', name: 'Olera, 532, Burro, 531, Nese', kind: 'down', file: 'S_Olera532Burro531Nese_REC.gpx' },
+{ zone: 'seriana', name: 'Ganda, 520, Gazzaniga', kind: 'down', file: 'S_520_REC.gpx' },
+{ zone: 'seriana', name: 'Pista Downhill Poieto', kind: 'down', file: 'S_PoietoDH_REC.gpx' },
 { zone: 'seriana', name: 'Trasferimento da Castello, Forcella, al Canto Basso', kind: 'up', file: 'S_CastelloForcellaCantoBasso_REC.gpx', link:'2019/03/salite-valle-seriana' },
-{ zone: 'seriana', name: 'Salita da Selvino al Poieto', kind: 'up', file: 'S_SalitaSelvinoPoieto_REC.gpx', link:'2019/03/salite-valle-seriana' },
+{ zone: 'seriana', name: 'Salita da Selvino al Monte Poieto', kind: 'up', file: 'S_SalitaSelvinoPoieto_REC.gpx', link:'2019/03/salite-valle-seriana' },
+{ zone: 'seriana', name: 'Salita da Ganda al Monte Poieto', kind: 'up', file: 'S_SalitaGandaPoieto_REC.gpx', link:'2019/03/salite-valle-seriana' },
 /* { zone: 'seriana', name: 'Salita da Vertova al Cavlera', kind: 'up', file: 'S_SalitaCavlera_REC.gpx', link:'2019/03/salite-valle-seriana' }, */
 { zone: 'seriana', name: 'Salita da Alzano a Lonno', kind: 'up', file: 'S_SalitaLonno_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Salita da Nebro a Selvino', kind: 'up', file: 'S_SalitaNembroSelvino_REC.gpx', link:'2019/03/salite-valle-seriana' },
@@ -135,4 +137,6 @@ var TRACKS = [
 { zone: 'seriana', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'S_CiclabileValleSeriana_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Ciclovia delle Rogge', kind: 'up', file: 'S_CicloviaDelleRogge_REC.gpx', link:'2019/03/salite-valle-seriana' },
 ];
+
+
 
