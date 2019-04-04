@@ -81,3 +81,11 @@ python convert.py 520.mp4
 python convert.py passaggio_poieto.mp4
 python convert.py poieto_dh.mp4
 python convert.py mulattiera_albino.mp4
+python convert.py linzone_ripetute.mp4
+python convert.py linzone_roncola.mp4
+python convert.py roncola_cava.mp4
+python convert.py pedrino_muracca.mp4
+python convert.py pedrinodh_faggeta_perlupario.mp4
+python convert.py roncola_barlino.mp4
+python convert.py roncola_caliger_almenno.mp4
+python convert.py roncola_cross_571.mp4
