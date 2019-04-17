@@ -47,6 +47,7 @@ var TRACKS = [
 { zone: 'imagna', name: 'Brumano, Passo Porta, Rota, Selino', kind: 'down', file: 'I_BrumanoPassoPortaRotaSelino_REC.gpx', link: '2018/12/brumano-passo-porta-rota-selino' },
 { zone: 'imagna', name: 'Ceresola, Roccoli Passata, Partigiano, Costa Cavallina, Clanezzo', kind: 'down', file: 'I_CeresolaRoccoliPassataPartigianoCostaCavallinaClanezzo_REC.gpx' },
 { zone: 'imagna', name: 'Palio, Canti, Tre Faggi', kind: 'down', file: 'I_PalioCantiTreFaggi_REC.gpx', link: '2018/12/palio-canti-tre-faggi' },
+{ zone: 'imagna', name: 'Palio, Fuipiano', kind: 'down', file: 'I_PalioCrestaFuipiano_REC.gpx' },
 { zone: 'imagna', name: 'Palio, Rifugio Resegone, Passo Porta, 575, Valsecca', kind: 'down', file: 'I_PalioRifugioResegonePassoPorta575Valsecca_REC.gpx' },
 { zone: 'imagna', name: 'Tre Faggi, 580, Locatello, Selino', kind: 'down', file: 'I_TreFaggi580LocatelloSelino_REC.gpx' },
 { zone: 'imagna', name: 'Tre Faggi, Corna, Blello, Selino Alto, Ponte Pietra', kind: 'down', file: 'I_TreFaggiCornaBlelloSelinoAltoPontePietra_REC.gpx', link: '2018/11/tra-faggi-corna-blello-selino-alto' },
