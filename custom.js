@@ -87,7 +87,7 @@ function create_gpx_info(map, control, gpx, url, name, link)
 	}
 
 	desc += "<br/>";
-	desc += "<a href=\"" + url + "\">Download GPX</a>";
+	desc += "<a href=\"" + url + "\" download>Download GPX</a>";
 	gpx.bindPopup(desc);
 	control.addOverlay(gpx, name);
 }
