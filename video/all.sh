@@ -94,3 +94,7 @@ python convert.py sbarra_palio_nebbia.mp4
 python convert.py roncola_albenza.mp4
 python convert.py roncola_botto_corobais.mp4
 python convert.py roncola_vari.mp4
+python convert.py salmezza_ripetute.mp4
+python convert.py salmezza.mp4
+python convert.py lonno_vita.mp4
+

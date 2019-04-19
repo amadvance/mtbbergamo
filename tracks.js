@@ -131,7 +131,8 @@ var TRACKS = [
 { zone: 'seriana', name: 'Monte Cavallo, Canto Basso', kind: 'down', file: 'S_MonteCavallo_REC.gpx' },
 { zone: 'seriana', name: 'Poieto, Gazzaniga', kind: 'down', file: 'S_PoietoGazzaniga_REC.gpx' },
 { zone: 'seriana', name: 'Lonno, Pizzo', kind: 'down', file: 'S_LonnoPizzo_REC.gpx' },
-{ zone: 'seriana', name: 'Lonno, Percorso Vita', kind: 'down', file: 'S_LonnoPercorsoVita_REC.gpx' },
+{ zone: 'seriana', name: 'Lonno, Percorso Vita', kind: 'down', file: 'S_LonnoPercorsoVita_REC.gpx', link: '2019/04/lonno' },
+{ zone: 'seriana', name: 'Salmezza', kind: 'down', file: 'S_534Salmezza_REC.gpx', link: '2019/04/534-salmezza' },
 { zone: 'seriana', name: 'Selvino, Lonno', kind: 'down', file: 'S_SelvinoLonno_REC.gpx' },
 { zone: 'seriana', name: 'Selvino, 550 / Mulattiera, Albino', kind: 'down', file: 'S_550MulattieraAlbino_REC.gpx', link:'2019/03/550-mulattiera' },
 { zone: 'seriana', name: 'Selvino, Purito, Trevasco', kind: 'down', file: 'S_SelvinoPuritoTrevasco_REC.gpx' },
@@ -141,6 +142,7 @@ var TRACKS = [
 { zone: 'seriana', name: 'Ganda, 520, Gazzaniga', kind: 'down', file: 'S_520_REC.gpx', link: '2019/03/520' },
 { zone: 'seriana', name: 'Pista Downhill Poieto', kind: 'down', file: 'S_PoietoDH_REC.gpx', link: '2019/03/poieto-dh' },
 { zone: 'seriana', name: 'Trasferimento da Castello, Forcella, al Canto Basso', kind: 'up', file: 'S_CastelloForcellaCantoBasso_REC.gpx', link:'2019/03/salite-valle-seriana' },
+{ zone: 'seriana', name: 'Salita da Selvino a Salmezza', kind: 'up', file: 'S_SalitaSalmezza_REC.gpx' },
 { zone: 'seriana', name: 'Salita da Selvino al Monte Poieto', kind: 'up', file: 'S_SalitaSelvinoPoieto_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Salita da Ganda al Monte Poieto', kind: 'up', file: 'S_SalitaGandaPoieto_REC.gpx', link:'2019/03/salite-valle-seriana' },
 /* { zone: 'seriana', name: 'Salita da Vertova al Cavlera', kind: 'up', file: 'S_SalitaCavlera_REC.gpx', link:'2019/03/salite-valle-seriana' }, */
@@ -152,5 +154,4 @@ var TRACKS = [
 { zone: 'seriana', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'S_CiclabileValleSeriana_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Ciclovia delle Rogge', kind: 'up', file: 'S_CicloviaDelleRogge_REC.gpx', link:'2019/03/salite-valle-seriana' },
 ];
-
 
