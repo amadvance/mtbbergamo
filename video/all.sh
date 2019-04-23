@@ -97,4 +97,8 @@ python convert.py roncola_vari.mp4
 python convert.py salmezza_ripetute.mp4
 python convert.py salmezza.mp4
 python convert.py lonno_vita.mp4
+python convert.py trevasco.mp4
+python convert.py bruna.mp4
+python convert.py lonno_luio.mp4
+python convert.py pizzo_lonno_monte_ganda.mp4
 
