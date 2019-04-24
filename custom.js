@@ -86,8 +86,10 @@ function create_gpx_info(map, control, gpx, url, name, link)
 		desc += ", "+ Math.floor(gpx.get_moving_time() / 1000 / 60) + "min";
 	}
 
+	var zip = url.replace(/gpx/g,"zip");
+
 	desc += "<br/>";
-	desc += "<a href=\"" + url + "\" download>Download GPX</a>";
+	desc += "<a href=\"" + zip + "\" download>Download GPX</a>";
 	gpx.bindPopup(desc);
 	control.addOverlay(gpx, name);
 }
