@@ -101,4 +101,9 @@ python convert.py trevasco.mp4
 python convert.py bruna.mp4
 python convert.py lonno_luio.mp4
 python convert.py pizzo_lonno_monte_ganda.mp4
+python convert.py sbarra_palio.mp4
+python convert.py costa_del_palio.mp4
+python convert.py /4k costa_del_palio_panorama_imagna.mp4
+python convert.py /4k costa_del_palio_panorama_taleggio.mp4
+python convert.py /4k purito_panorama.mp4
 
