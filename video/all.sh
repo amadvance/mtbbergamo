@@ -106,4 +106,7 @@ python convert.py costa_del_palio.mp4
 python convert.py /4k costa_del_palio_panorama_imagna.mp4
 python convert.py /4k costa_del_palio_panorama_taleggio.mp4
 python convert.py /4k purito_panorama.mp4
+python convert.py nembro_trail.mp4
+python convert.py purito_cereto.mp4
+python convert.py purito_salita.mp4
 
