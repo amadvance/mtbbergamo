@@ -130,7 +130,7 @@ var TRACKS = [
 /* { zone: 'seriana', name: 'Cavlera, 528', kind: 'down', file: 'S_Cavlera528_REC.gpx' }, */
 { zone: 'seriana', name: 'Lonno, Val del Luio, Alzano', kind: 'down', file: 'S_LonnoLuio_REC.gpx', link: '2019/04/lonno' },
 { zone: 'seriana', name: 'Monte Cavallo, Canto Basso', kind: 'down', file: 'S_MonteCavallo_REC.gpx' },
-{ zone: 'seriana', name: 'Poieto, Gazzaniga', kind: 'down', file: 'S_PoietoGazzaniga_REC.gpx' },
+{ zone: 'seriana', name: 'Poieto, 523, Gazzaniga', kind: 'down', file: 'S_Poieto523Gazzaniga_REC.gpx', link: '2019/05/poieto-gazzaniga' },
 { zone: 'seriana', name: 'Lonno, Pizzo di Lonno, Monte Ganda, Alzano', kind: 'down', file: 'S_LonnoPizzoMonteGanda_REC.gpx', link: '2019/04/lonno' },
 { zone: 'seriana', name: 'Lonno, Percorso Vita', kind: 'down', file: 'S_LonnoPercorsoVita_REC.gpx', link: '2019/04/lonno' },
 { zone: 'seriana', name: '534 / Salmezza', kind: 'down', file: 'S_534Salmezza_REC.gpx', link: '2019/04/534-salmezza' },
@@ -146,7 +146,7 @@ var TRACKS = [
 { zone: 'seriana', name: 'Nembro Trail', kind: 'down', file: 'S_NembroTrail_REC.gpx', link: '2019/05/nembro-trail' },
 { zone: 'seriana', name: 'Trasferimento da Castello, Forcella, al Canto Basso', kind: 'up', file: 'S_CastelloForcellaCantoBasso_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Salita da Selvino a Salmezza', kind: 'up', file: 'S_SalitaSalmezza_EBIKE.gpx' },
-{ zone: 'seriana', name: 'Salita da Selvino al Monte Poieto', kind: 'up', file: 'S_SalitaSelvinoPoieto_REC.gpx', link:'2019/03/salite-valle-seriana' },
+{ zone: 'seriana', name: 'Salita da Aviatico, al Monte Poieto', kind: 'up', file: 'S_SalitaAviaticoForcaPoieto_EBIKE.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Salita da Ganda al Monte Poieto', kind: 'up', file: 'S_SalitaGandaPoieto_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Salita da Selvino al Monte Purito', kind: 'up', file: 'S_SalitaPurito_EBIKE.gpx', link:'2019/03/salite-valle-seriana' },
 /* { zone: 'seriana', name: 'Salita da Vertova al Cavlera', kind: 'up', file: 'S_SalitaCavlera_REC.gpx', link:'2019/03/salite-valle-seriana' }, */

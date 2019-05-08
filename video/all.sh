@@ -109,4 +109,14 @@ python convert.py /4k purito_panorama.mp4
 python convert.py nembro_trail.mp4
 python convert.py purito_cereto.mp4
 python convert.py purito_salita.mp4
+python convert.py poieto_salita_forcella.mp4
+python convert.py poieto_gazzaniga.mp4
+python convert.py arnosto.mp4
+python convert.py zuc_valmana_panorama_360.mp4
+python convert.py bolla_piccola_sbarra.mp4
+python convert.py passo_palio_sbarra.mp4
+python convert.py zuc_valmana_passo_palio.mp4
+python convert.py zuc_valmana_salita.mp4
+python convert.py sbarra_palio_fast.mp4
+python convert.py passo_palio_costa_palio.mp4
 
