@@ -119,4 +119,6 @@ python convert.py zuc_valmana_passo_palio.mp4
 python convert.py zuc_valmana_salita.mp4
 python convert.py sbarra_palio_fast.mp4
 python convert.py passo_palio_costa_palio.mp4
+python convert.py valtrusa.mp4
+python convert.py lonno_vita_variante.mp4
 
