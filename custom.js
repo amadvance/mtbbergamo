@@ -282,3 +282,25 @@ function create_climb(map, control, zone) {
 	}
 }
 
+function count_tracks()
+{
+	var count = 0;
+	for (i = 0; i < TRACKS.length; i++) {
+		if (TRACKS[i].kind != "down")
+			continue;
+		++count;
+	}
+
+	return count.toString();
+}
+
+function count_pages()
+{
+	var pages = new Set()
+	for (i = 0; i < TRACKS.length; i++) {
+		pages.add(TRACKS[i].link);
+	}
+
+	return pages.size.toString();
+}
+
