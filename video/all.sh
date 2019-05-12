@@ -121,4 +121,6 @@ python convert.py sbarra_palio_fast.mp4
 python convert.py passo_palio_costa_palio.mp4
 python convert.py valtrusa.mp4
 python convert.py lonno_vita_variante.mp4
+python convert.py forcella_nese_burro.mp4
+python convert.py salmezza_533_forcella_nese.mp4
 
