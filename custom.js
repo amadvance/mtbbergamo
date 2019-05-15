@@ -294,6 +294,18 @@ function count_tracks()
 	return count.toString();
 }
 
+function count_ups()
+{
+	var count = 0;
+	for (i = 0; i < TRACKS.length; i++) {
+		if (TRACKS[i].kind != "up")
+			continue;
+		++count;
+	}
+
+	return count.toString();
+}
+
 function count_pages()
 {
 	var pages = new Set()
