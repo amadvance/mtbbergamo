@@ -2002,7 +2002,7 @@ head.appendChild(script);
 <b:section-contents id='sidebar-right-1'>
   <b:widget id='PageList1' locked='false' title='Zone' type='PageList'>
     <b:widget-settings>
-      <b:widget-setting name='pageListJson'><![CDATA[{'7456450945174822363': {'href': 'http://www.mtbbergamo.it/p/colli-di-bergamo.html', 'title': 'Colli di Bergamo', 'position': 0}, '8333227843128009505': {'href': 'http://www.mtbbergamo.it/p/maresana.html', 'title': 'Maresana', 'position': 1}, '644484164600315902': {'href': 'http://www.mtbbergamo.it/p/sorisole.html', 'title': 'Sorisole', 'position': 2}, '671321837611946696': {'href': 'http://www.mtbbergamo.it/p/monte-canto.html', 'title': 'Monte Canto', 'position': 3}, '8071814843114685363': {'href': 'http://www.mtbbergamo.it/p/valle-imagna.html', 'title': 'Valle Imagna', 'position': 4}, '8996960218431449059': {'href': 'http://www.mtbbergamo.it/p/valle-san-martino.html', 'title': 'Valle San Martino', 'position': 5}}]]></b:widget-setting>
+      <b:widget-setting name='pageListJson'><![CDATA[{'7456450945174822363': {'href': 'http://www.mtbbergamo.it/p/colli-di-bergamo.html', 'title': 'Colli di Bergamo', 'position': 0}, '8333227843128009505': {'href': 'http://www.mtbbergamo.it/p/maresana.html', 'title': 'Maresana', 'position': 1}, '644484164600315902': {'href': 'http://www.mtbbergamo.it/p/sorisole.html', 'title': 'Sorisole', 'position': 2}, '671321837611946696': {'href': 'http://www.mtbbergamo.it/p/monte-canto.html', 'title': 'Monte Canto', 'position': 3}, '8996960218431449059': {'href': 'http://www.mtbbergamo.it/p/valle-san-martino.html', 'title': 'Valle San Martino', 'position': 4}, '8071814843114685363': {'href': 'http://www.mtbbergamo.it/p/valle-imagna.html', 'title': 'Valle Imagna', 'position': 5}, '6438529019463434628': {'href': 'http://www.mtbbergamo.it/p/valle-seriana.html', 'title': 'Valle Seriana', 'position': 6}}]]></b:widget-setting>
       <b:widget-setting name='homeTitle'>Home page</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
@@ -2030,6 +2030,31 @@ head.appendChild(script);
     </b:if>
     <b:include name='quickedit'/>
   </div>
+</b:includable>
+  </b:widget>
+  <b:widget id='LinkList1' locked='false' title='Risorse' type='LinkList'>
+    <b:widget-settings>
+      <b:widget-setting name='link-3'>https://www.youtube.com/channel/UCRFCbs4PtzDjUtHeCQ3claA</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='text-1'>Mappe</b:widget-setting>
+      <b:widget-setting name='link-1'>http://www.mtbbergamo.it/p/mappe.html</b:widget-setting>
+      <b:widget-setting name='text-0'>Difficoltà</b:widget-setting>
+      <b:widget-setting name='link-2'>http://www.mtbbergamo.it/p/guide.html</b:widget-setting>
+      <b:widget-setting name='text-3'>Canale YouTube</b:widget-setting>
+      <b:widget-setting name='link-0'>http://www.mtbbergamo.it/p/difficolta.html</b:widget-setting>
+      <b:widget-setting name='text-2'>Guide</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+
+<b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+ <div class='widget-content'>
+   <ul>
+     <b:loop values='data:links' var='link'>
+       <li><a expr:href='data:link.target'><data:link.name/></a></li>
+     </b:loop>
+   </ul>
+   <b:include name='quickedit'/>
+ </div>
 </b:includable>
   </b:widget>
   <b:widget id='Label1' locked='false' title='Etichette' type='Label'>
@@ -2078,29 +2103,84 @@ head.appendChild(script);
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='LinkList1' locked='false' title='Risorse' type='LinkList'>
+  <b:widget id='BlogArchive1' locked='false' title='Archivio' type='BlogArchive'>
     <b:widget-settings>
-      <b:widget-setting name='link-3'>https://www.youtube.com/channel/UCRFCbs4PtzDjUtHeCQ3claA</b:widget-setting>
-      <b:widget-setting name='sorting'>NONE</b:widget-setting>
-      <b:widget-setting name='text-1'>Mappe</b:widget-setting>
-      <b:widget-setting name='link-1'>http://www.mtbbergamo.it/p/mappe.html</b:widget-setting>
-      <b:widget-setting name='text-0'>Difficoltà</b:widget-setting>
-      <b:widget-setting name='link-2'>http://www.mtbbergamo.it/p/guide.html</b:widget-setting>
-      <b:widget-setting name='text-3'>Canale YouTube</b:widget-setting>
-      <b:widget-setting name='link-0'>http://www.mtbbergamo.it/p/difficolta.html</b:widget-setting>
-      <b:widget-setting name='text-2'>Guide</b:widget-setting>
+      <b:widget-setting name='showStyle'>HIERARCHY</b:widget-setting>
+      <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+      <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+      <b:widget-setting name='monthPattern'>MMMM</b:widget-setting>
+      <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+      <b:widget-setting name='weekPattern'>MMMM d</b:widget-setting>
+      <b:widget-setting name='chronological'>false</b:widget-setting>
+      <b:widget-setting name='showPosts'>true</b:widget-setting>
+      <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
-
-<b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
- <div class='widget-content'>
-   <ul>
-     <b:loop values='data:links' var='link'>
-       <li><a expr:href='data:link.target'><data:link.name/></a></li>
-     </b:loop>
-   </ul>
-   <b:include name='quickedit'/>
- </div>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+  <div id='ArchiveList'>
+  <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+    <b:include cond='data:style == &quot;HIERARCHY&quot;' data='data' name='interval'/>
+    <b:include cond='data:style == &quot;FLAT&quot;' data='data' name='flat'/>
+    <b:include cond='data:style == &quot;MENU&quot;' data='data' name='menu'/>
+  </div>
+  </div>
+  <b:include name='quickedit'/>
+  </div>
+</b:includable>
+    <b:includable id='flat' var='data'>
+  <ul class='flat'>
+    <b:loop values='data:data' var='i'>
+      <li class='archivedate'>
+        <a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
+      </li>
+    </b:loop>
+  </ul>
+</b:includable>
+    <b:includable id='interval' var='intervalData'>
+  <b:loop values='data:intervalData' var='interval'>
+    <ul class='hierarchy'>
+      <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
+        <b:include cond='data:interval.toggleId' data='interval' name='toggle'/>
+        <a class='post-count-link' expr:href='data:interval.url'>
+          <data:interval.name/>
+        </a>
+        <span class='post-count' dir='ltr'>(<data:interval.post-count/>)</span>
+        <b:include cond='data:interval.data' data='interval.data' name='interval'/>
+        <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
+      </li>
+    </ul>
+  </b:loop>
+</b:includable>
+    <b:includable id='menu' var='data'>
+  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+    <option value=''><data:title/></option>
+    <b:loop values='data:data' var='i'>
+      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
+    </b:loop>
+  </select>
+</b:includable>
+    <b:includable id='posts' var='posts'>
+  <ul class='posts'>
+    <b:loop values='data:posts' var='post'>
+      <li><a expr:href='data:post.url'><data:post.title/></a></li>
+    </b:loop>
+  </ul>
+</b:includable>
+    <b:includable id='toggle' var='interval'>
+  <a class='toggle' href='javascript:void(0)'>
+    <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
+      <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+        &#9660;&#160;
+      <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;'/>
+        &#9668;&#160;
+      <b:else/>
+        &#9658;&#160;
+      </b:if>
+    </span>
+  </a>
 </b:includable>
   </b:widget>
 </b:section-contents><b:section-contents id='sidebar-right-2-1'/><b:section-contents id='sidebar-right-2-2'/><b:section-contents id='sidebar-right-3'/><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'/><b:section-contents id='footer-2-2'/></html>
