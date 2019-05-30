@@ -138,8 +138,10 @@ var TRACKS = [
 { zone: 'seriana', name: 'Lonno, Pizzo di Lonno, Monte Ganda, Alzano', kind: 'down', file: 'S_LonnoPizzoMonteGanda_REC.gpx', link: '2019/04/lonno' },
 { zone: 'seriana', name: 'Lonno, Percorso Vita, Valbona', kind: 'down', file: 'S_LonnoPercorsoVita_REC.gpx', link: '2019/04/lonno' },
 { zone: 'seriana', name: 'Lonno, Percorso Vita, Luio', kind: 'down', file: 'S_LonnoPercorsoVitaLuio_REC.gpx', link: '2019/04/lonno' },
+{ zone: 'seriana', name: 'Lonno, Colle Bastia, Percorso Vita, Viana', kind: 'down', file: 'S_LonnoColleBastia_REC.gpx', link: '2019/04/lonno' },
 { zone: 'seriana', name: '534 / Salmezza', kind: 'down', file: 'S_534Salmezza_REC.gpx', link: '2019/04/534-salmezza' },
 { zone: 'seriana', name: 'Salmezza, 533, Forcella di Nese', kind: 'down', file: 'S_Salmezza533ForcellaNese_REC.gpx', link: '2019/05/salmezza-533-forcella-di-nese' },
+{ zone: 'seriana', name: 'Salmezza, Baita GAP, Lonno', kind: 'down', file: 'S_SalmezzaBaitaGAPLonno_REC.gpx', link: '2019/05/salmezza-gap-lonno' },
 { zone: 'seriana', name: 'Forcella di Nese, 531, Nese', kind: 'down', file: 'S_ForcellaNese531Nese_REC.gpx', link: '2019/05/forcella-di-nese-531-nese' },
 { zone: 'seriana', name: 'Selvino, 535, Lonno', kind: 'down', file: 'S_535Lonno_REC.gpx', link:'2019/05/monte-valtrusa' },
 { zone: 'seriana', name: 'Selvino, 535, Monte Valtrusa, Lonno', kind: 'down', file: 'S_535Valtrusa_REC.gpx', link:'2019/05/monte-valtrusa' },
@@ -167,4 +169,6 @@ var TRACKS = [
 { zone: 'seriana', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'S_CiclabileValleSeriana_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Ciclovia delle Rogge', kind: 'up', file: 'S_CicloviaDelleRogge_REC.gpx', link:'2019/03/salite-valle-seriana' },
 ];
+
+
 
