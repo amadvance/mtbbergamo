@@ -27,7 +27,7 @@ cmd = open(name + ".sh", "w+")
 lst = open(name + ".lst", "w+")
 
 for a in clips:
-	print >>lst, "file " + a["reader"]["path"]
+	print >>lst, "file " + a["reader"]["path"].replace("./","")
 	print >>lst, "inpoint", float(a["start"])
 	print >>lst, "outpoint", float(a["end"])
 
