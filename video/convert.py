@@ -3,7 +3,7 @@ import sys
 import os
 
 # Generation to mark difference in settings
-GENERATION=5
+GENERATION=6
 
 # gen2
 # - 1080px60
@@ -18,6 +18,10 @@ GENERATION=5
 
 # gen5
 # - add sharpness
+
+# gen6
+# - a little less saturation
+
 
 # Video Encoding
 # "-pix_fmt yuvj420p" is for compatibility with LG TV
@@ -35,16 +39,16 @@ ENCODE_AUDIO="-codec:a copy"
 VF_STAB="deshake=rx=64:ry=64"
 
 # Normalize with adaptive transformation
-VF_NORMALIZE="normalize=blackpt=black:whitept=white:smoothing=6000"
+VF_NORMALIZE="normalize=blackpt=black:whitept=white:smoothing=6000:strength=1.0"
 
 # Normalize with fixed transformation for a typical gopro
 VF_FIXED="curves=r='0.1/0 1/1':g='0.1/0 1/1':b='0.1/0 1/1'"
 
 # Color adjust for FLAT EV=-1: Increase saturation, contrast and bright a little, and decrease blue
-VF_FLAT_EV1="eq=brightness=0.1:contrast=1.2:saturation=2.0,curves=blue='0/0 0.5/0.45 1/1'"
+VF_FLAT_EV1="eq=brightness=0.1:contrast=1.2:saturation=1.8,curves=blue='0/0 0.5/0.45 1/1'"
 
 # Color adjust for FLAT EV=0: Normalize and increase saturation and contrast, a little more contranst than EV=-1
-VF_FLAT_EV0="eq=contrast=1.3:saturation=2.0"
+VF_FLAT_EV0="eq=contrast=1.3:saturation=1.8"
 
 # Color adjust for GOPRO: Increase saturation
 VF_GOPRO="eq=saturation=1.8"
