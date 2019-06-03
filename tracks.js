@@ -50,6 +50,8 @@ var TRACKS = [
 { zone: 'imagna', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'I_PassoPalio571Basso579Fuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 { zone: 'imagna', name: 'Passo del Palio, 571 Cresta, 579B, Fuipiano', kind: 'down', file: 'I_PassoPalio571Cresta579BFuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 { zone: 'imagna', name: 'Passo del Palio, Rifugio Resegone, Passo Porta, 575, Valsecca', kind: 'down', file: 'I_PalioRifugioResegonePassoPorta575Valsecca_REC.gpx' },
+{ zone: 'imagna', name: 'Colletto di Brumano, Rifugio Resegone, Brumano', kind: 'down', file: 'I_CollettoBrumanoRifResegoneBrumano_REC.gpx', link: '2019/05/colletto-di-brumano-rifugio-resegone' },
+{ zone: 'imagna', name: 'Resegone, Bocchetta del Palio, Grande Faggio', kind: 'down', file: 'I_ResegoneGrandeFaggio_REC.gpx', link: '2019/06/resegone' },
 { zone: 'imagna', name: 'Tre Faggi, 580, Locatello, Selino', kind: 'down', file: 'I_TreFaggi580LocatelloSelino_REC.gpx' },
 { zone: 'imagna', name: 'Tre Faggi, Corna, Blello, Selino Alto, Ponte Pietra', kind: 'down', file: 'I_TreFaggiCornaBlelloSelinoAltoPontePietra_REC.gpx', link: '2018/11/tra-faggi-corna-blello-selino-alto' },
 { zone: 'imagna', name: 'Passo di Valbona, Sbarra di Brumano', kind: 'down', file: 'I_PassoValbonaSbarra_REC.gpx', link: '2019/05/zuc-de-valmana' },
@@ -59,6 +61,8 @@ var TRACKS = [
 { zone: 'imagna', name: 'Trasferimento da Valsecca a Rota Imagna e a Locatello', kind: 'up', file: 'I_ValseccaRotaLocatello_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Ciclabile Valle Imagna', kind: 'up', file: 'I_CiclabileValleImagna_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'I_SalitaSbarraPalio_REC.gpx', link: '2018/12/salite-imagna' },
+{ zone: 'imagna', name: 'Salita dal Passo del Palio, a Forbesette, e al Colletto di Brumano', kind: 'up', file: 'I_SalitaPalioForbesetteCollettoBrumano_REC.gpx', link: '2018/12/salite-imagna' },
+{ zone: 'imagna', name: 'Salita dal Passo del Palio al Resegone', kind: 'up', file: 'I_SalitaPalioResegone_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Salita da Selino a Fuipiano e ai Tre Faggi', kind: 'up', file: 'I_SalitaSelinoFuipianoTreFaggi_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Salita da Almenno a Roncola e Valcava', kind: 'up', file: 'I_SalitaAlmennoRoncolaValcava_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'noshow', name: 'Salita da Almenno a Roncola', kind: 'up', file: 'I_SalitaRoncola_REC.gpx' },
@@ -169,6 +173,5 @@ var TRACKS = [
 { zone: 'seriana', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'S_CiclabileValleSeriana_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Ciclovia delle Rogge', kind: 'up', file: 'S_CicloviaDelleRogge_REC.gpx', link:'2019/03/salite-valle-seriana' },
 ];
-
 
 

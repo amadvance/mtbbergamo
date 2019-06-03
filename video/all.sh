@@ -2,7 +2,7 @@ python convert.py /gopro /sharphigh /4k /panning forcella_alta_panorama.mp4
 #NUKED python convert.py /gopro /sharphigh roccolone_parziale.mp4
 #NUKED python convert.py /gopro /sharphigh 712sud.mp4
 #NUKED python convert.py /gopro /sharphigh torre.mp4
-python convert.py /gopro /sharphigh allegrezza.mp4
+#NUKED python convert.py /gopro /sharphigh allegrezza.mp4
 python convert.py /gopro /sharphigh 229.mp4
 python convert.py /gopro /sharphigh pistadh.mp4
 python convert.py /gopro /sharphigh collesogno.mp4
@@ -20,7 +20,7 @@ python convert.py /dark strada_per_blello_selino.mp4
 #NUKED python convert.py tornantini_passaggi.mp4
 python convert.py filoncino_passaggi.mp4
 #NUKED python convert.py gussa_nord_parziale.mp4
-python convert.py gussa_ovest.mp4
+#NUKED python convert.py gussa_ovest.mp4
 #NUKED python convert.py allegrezza_sud.mp4
 python convert.py linzone_piacca.mp4
 python convert.py piacca_baita_palazzago.mp4
@@ -126,4 +126,14 @@ python convert.py salmezza_533_forcella_nese.mp4
 python convert.py ganda_521.mp4
 python convert.py lonno_colle_bastia_viana.mp4
 python convert.py salmezza_gap_lonno.mp4
+python convert.py colletto_brunano_rif_resegone.mp4
+python convert.py rif_resegone_brumano.mp4
+python convert.py palio_forbesette.mp4
+python convert.py forbesette_colletto_brumano.mp4
+python convert.py allegrezza_busto.mp4
+python convert.py gussa_ovest_busto.mp4
+python convert.py /4k resegone_panorama_imagna.mp4
+python convert.py /4k resegone_panorama_lecco.mp4
+python convert.py resegone_faggio.mp4
+python convert.py palio_resegone.mp4
 
