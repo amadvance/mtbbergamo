@@ -126,14 +126,14 @@ python convert.py salmezza_533_forcella_nese.mp4
 python convert.py ganda_521.mp4
 python convert.py lonno_colle_bastia_viana.mp4
 python convert.py salmezza_gap_lonno.mp4
-python convert.py colletto_brunano_rif_resegone.mp4
-python convert.py rif_resegone_brumano.mp4
-python convert.py palio_forbesette.mp4
-python convert.py forbesette_colletto_brumano.mp4
-python convert.py allegrezza_busto.mp4
-python convert.py gussa_ovest_busto.mp4
-python convert.py /4k resegone_panorama_imagna.mp4
-python convert.py /4k resegone_panorama_lecco.mp4
-python convert.py resegone_faggio.mp4
-python convert.py palio_resegone.mp4
+python convert.py /sunny colletto_brunano_rif_resegone.mp4
+python convert.py /sunny rif_resegone_brumano.mp4
+python convert.py /sunny palio_forbesette.mp4
+python convert.py /sunny forbesette_colletto_brumano.mp4
+python convert.py /sunny allegrezza_busto.mp4
+python convert.py /sunny gussa_ovest_busto.mp4
+python convert.py /4k /sunny resegone_panorama_imagna.mp4
+python convert.py /4k /sunny resegone_panorama_lecco.mp4
+python convert.py /sunny resegone_faggio.mp4
+python convert.py /sunny palio_resegone.mp4
 
