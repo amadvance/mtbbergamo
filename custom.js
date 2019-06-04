@@ -165,6 +165,7 @@ function create_zone_track(map, control, url, name, link, track_options)
 // misc colors for down
 // from https://en.wikipedia.org/wiki/Web_colors
 var COLORS_DOWN = [
+// 1st set
 "HotPink", // pink
 "Crimson", // red
 "Orange", // orange
@@ -174,18 +175,61 @@ var COLORS_DOWN = [
 "Teal", // cyan
 "DodgerBlue", // blue
 "Purple", // mangenta
+// 2nd set
 "DeepPink", // pink
 "DarkRed", // red
 "Coral", // orange
+"DarkKhaki", // yellow
 "DarkGoldenrod", // brown
 "MediumSeaGreen", // green
 "LightSeaGreen", // cyan
 "RoyalBlue", // blue
 "MediumOrchid", // magenta
+// 3td set
 "PaleVioletRed", // pink
 "Red", // red
 "OrangeRed", // orange
-"Brown" // brown
+"Peru", // yellow (brown in true)
+"Brown", // brown
+"LimeGreen", // green
+"Turquoise", // cyan
+"MediumBlue", // blue
+"DarkViolet", // magenta
+// 4th set
+"LightPink", // pink
+"LightCoral", // red
+"Coral", // orange
+"Chocolate", // yellow (brown in true)
+"SandyBrown", // brown
+"LightGreen", // green
+"Aquamarine", // cyan
+"DeepSkyBlue", // blue
+"Indigo", // magenta
+// black colors to ensure to show something
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black",
+"Black"
 ];
 
 // black colors for up
