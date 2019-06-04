@@ -47,14 +47,17 @@ VF_FIXED="curves=r='0.1/0 1/1':g='0.1/0 1/1':b='0.1/0 1/1'"
 # Color adjust for FLAT EV=-1: Increase saturation, contrast and bright a little, and decrease blue
 VF_FLAT_EV1="eq=brightness=0.1:contrast=1.2:saturation=1.8,curves=blue='0/0 0.5/0.45 1/1'"
 
+# Color SUNNY adjust for FLAT EV=-1: Increase saturation and contrast little, and decrease blue. No bright increase.
+VF_FLAT_EV1_SUNNY="eq=contrast=1.1:saturation=1.8,curves=blue='0/0 0.5/0.45 1/1'"
+
+# Color DARK adjust for FLAT EV=-1: Increase saturation, contrast and bright a little, and decrease blue
+VF_FLAT_EV1_DARK="eq=brightness=0.2:contrast=1.4:saturation=1.8,curves=blue='0/0 0.5/0.45 1/1'"
+
 # Color adjust for FLAT EV=0: Normalize and increase saturation and contrast, a little more contranst than EV=-1
 VF_FLAT_EV0="eq=contrast=1.3:saturation=1.8"
 
 # Color adjust for GOPRO: Increase saturation
 VF_GOPRO="eq=saturation=1.8"
-
-# Bright a little
-VF_BRIGHT="eq=brightness=0.1:contrast=1.3"
 
 # Blur to remove the sharpness of the gopro default HIGH setting
 VF_BLUR="unsharp=7:7:-0.5"
@@ -89,6 +92,7 @@ ev = -1
 shaky = False
 panning = False
 dark = False
+sunny = False
 test = False
 play = False
 flip = False
@@ -111,6 +115,8 @@ for arg in sys.argv[1:]:
 		panning = True
 	elif arg == '/dark':
 		dark = True
+	elif arg == '/sunny':
+		sunny = True
 	elif arg == '/flip':
 		flip = True
 	elif arg == '/test':
@@ -166,9 +172,12 @@ if color == 'flat':
 	if ev == 0:
 		cmdline += ',' + VF_FLAT_EV0
 	else:
-		cmdline += ',' + VF_FLAT_EV1
-	if dark:
-		cmdline += ',' + VF_BRIGHT
+		if dark:
+			cmdline += ',' + VF_FLAT_EV1_DARK
+		elif sunny:
+			cmdline += ',' + VF_FLAT_EV1_SUNNY
+		else:
+			cmdline += ',' + VF_FLAT_EV1
 else:
 	cmdline += VF_GOPRO
 
