@@ -2,7 +2,10 @@
 <!DOCTYPE html>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
-    <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
+    <link href='http://ftp.mtbbergamo.it/favicon-192x192.png' rel='icon' sizes='192x192' type='image/png'/>
+    <link href='http://ftp.mtbbergamo.it/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'/>
+    <link href='http://ftp.mtbbergamo.it/favicon-96x96.png' rel='icon' sizes='96x96' type='image/png'/>
+        <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
 
