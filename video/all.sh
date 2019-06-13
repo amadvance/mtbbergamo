@@ -136,4 +136,9 @@ python convert.py /4k /sunny resegone_panorama_imagna.mp4
 python convert.py /4k /sunny resegone_panorama_lecco.mp4
 python convert.py /sunny resegone_faggio.mp4
 python convert.py /sunny palio_resegone.mp4
+python convert.py /4k /sunny cantoalto_panorama_bergamo.mp4
+python convert.py /4k /sunny cantoalto_panorama_brembana.mp4
+python convert.py /sunny cantoalto_parini_sedrina.mp4
+python convert.py /sunny cantobasso_cantoalto.mp4
+python convert.py /sunny montedinese_cantobasso.mp4
 

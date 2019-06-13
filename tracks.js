@@ -28,7 +28,7 @@ var TRACKS = [
 { zone: 'maresana', name: 'Birondina', kind: 'down', file: 'M_Birondina_REC.gpx', link:'2019/02/birondina' },
 { zone: 'maresana, seriana', name: '532A, Olera', kind: 'down', file: 'M_532A_Olera_REC.gpx', link:'2019/03/532a-olera' },
 { zone: 'maresana', name: 'Flying Dutchman', kind: 'down', file: 'M_FlyingDutchman_REC.gpx', link: '2019/01/flying-dutchman' },
-{ zone: 'maresana', name: 'Trasferimento da Ca Del Lacc alla Forcella Del Sorriso', kind: 'up', file: 'M_CaDelLaccForcellaDelSorriso_REC.gpx', link: '2018/11/salite-maresana' },
+{ zone: 'maresana, sorisole', name: 'Trasferimento da Ca Del Lacc alla Forcella Del Sorriso', kind: 'up', file: 'M_CaDelLaccForcellaDelSorriso_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana', name: 'Trasferimento dal Castello della Moretta alla Maresana', kind: 'up', file: 'M_MorettaMaresana_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana, sorisole', name: 'Trasferimento da Premerlino a Ponteranica Alta', kind: 'up', file: 'M_PremerlinoPonteranicaAlta_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'maresana', name: 'Salita da Ranica', kind: 'up', file: 'M_SalitaRanica_REC.gpx', link: '2018/11/salite-maresana' },
@@ -39,6 +39,8 @@ var TRACKS = [
 { zone: 'sorisole', name: 'Pista Downhill', kind: 'down', file: 'SR_PistaDH_REC.gpx', link: '2018/12/pista-downhill' },
 { zone: 'sorisole', name: 'Galus\u00F9', kind: 'down', file: 'SR_Galusu_REC.gpx', link: '2018/12/galusu' },
 { zone: 'sorisole', name: 'Giongo', kind: 'down', file: 'SR_Giongo_REC.gpx' },
+{ zone: 'sorisole', name: 'Canto Alto, Prati Parini, Sedrina', kind: 'down', file: 'SR_CantoAltoPratiPariniSedrina_REC.gpx', link: '2019/06/canto-alto-prati-parini-sedrina' },
+{ zone: 'sorisole', name: 'Salita dal Canto Basso al Canto Alto', kind: 'up', file: 'SR_SalitaCantoBassoCantoAlto_REC.gpx' },
 { zone: 'sorisole', name: 'Salita alla Forcella di Rua', kind: 'up', file: 'SR_SalitaForcellaDiRua_REC.gpx' },
 { zone: 'sorisole', name: 'Salita al Galus\u00F9', kind: 'up', file: 'SR_SalitaGalusu_REC.gpx' },
 { zone: 'sorisole', name: 'Salita al Giongo', kind: 'up', file: 'SR_SalitaGiongo_REC.gpx' },
@@ -136,7 +138,7 @@ var TRACKS = [
 { zone: 'colli', name: 'Salita dalla Madonna del Bosco', kind: 'up', file: 'PC_SalitaMadonnaDelBosco_REC.gpx', link:'2018/12/salite-colli-bergamo' },
 { zone: 'colli', name: 'Salita dal Roccolone', kind: 'up', file: 'PC_SalitaRoccolone_REC.gpx', link:'2018/12/salite-colli-bergamo' },
 { zone: 'colli', name: 'Salita al Colle Roccolone', kind: 'up', file: 'PC_SalitaCimaRoccolone_REC.gpx', link:'2018/12/salite-colli-bergamo' },
-{ zone: 'seriana', name: 'Canto Basso, 533, Forcella del Sorriso', kind: 'down', file: 'S_CantoBassoForcellaSorriso_REC.gpx', link:'2019/03/canto-basso-533-forcella-del-sorriso' },
+{ zone: 'seriana, sorisole', name: 'Canto Basso, 533, Forcella del Sorriso', kind: 'down', file: 'S_CantoBassoForcellaSorriso_REC.gpx', link:'2019/03/canto-basso-533-forcella-del-sorriso' },
 /* { zone: 'seriana', name: 'Cavlera, 528', kind: 'down', file: 'S_Cavlera528_REC.gpx' }, */
 { zone: 'seriana', name: 'Lonno, Val del Luio, Alzano', kind: 'down', file: 'S_LonnoLuio_REC.gpx', link: '2019/04/lonno' },
 { zone: 'seriana', name: 'Monte Cavallo, Canto Basso', kind: 'down', file: 'S_MonteCavallo_REC.gpx' },
@@ -162,7 +164,8 @@ var TRACKS = [
 { zone: 'seriana', name: 'Pista Downhill Poieto', kind: 'down', file: 'S_PoietoDH_REC.gpx', link: '2019/03/poieto-dh' },
 { zone: 'seriana', name: 'Nembro Trail', kind: 'down', file: 'S_NembroTrail_REC.gpx', link: '2019/05/nembro-trail' },
 { zone: 'seriana', name: 'Trasferimento dalla Forcella di Nese al Canto Basso', kind: 'up', file: 'S_ForcellaNese533BCantoBasso_REC.gpx', link:'2019/03/salite-valle-seriana' },
-{ zone: 'seriana', name: 'Salita da Selvino a Salmezza', kind: 'up', file: 'S_SalitaSalmezza_REC.gpx' },
+{ zone: 'seriana', name: 'Salita da Monte di Nese al Canto Basso', kind: 'up', file: 'S_SalitaMonteDiNeseCantoBasso_REC.gpx', link:'2019/03/salite-valle-seriana' },
+{ zone: 'seriana', name: 'Salita da Selvino a Salmezza', kind: 'up', file: 'S_SalitaSalmezza_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Salita da Aviatico, al Monte Poieto', kind: 'up', file: 'S_SalitaAviaticoForcaPoieto_EBIKE.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Salita da Ganda al Monte Poieto', kind: 'up', file: 'S_SalitaGandaPoieto_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Salita da Selvino al Monte Purito', kind: 'up', file: 'S_SalitaPurito_EBIKE.gpx', link:'2019/03/salite-valle-seriana' },
@@ -175,5 +178,4 @@ var TRACKS = [
 { zone: 'seriana', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'S_CiclabileValleSeriana_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Ciclovia delle Rogge', kind: 'up', file: 'S_CicloviaDelleRogge_REC.gpx', link:'2019/03/salite-valle-seriana' },
 ];
-
 
