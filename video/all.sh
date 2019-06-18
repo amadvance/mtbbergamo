@@ -136,9 +136,15 @@ python convert.py /4k /sunny resegone_panorama_imagna.mp4
 python convert.py /4k /sunny resegone_panorama_lecco.mp4
 python convert.py /sunny resegone_faggio.mp4
 python convert.py /sunny palio_resegone.mp4
-python convert.py /4k /sunny cantoalto_panorama_bergamo.mp4
-python convert.py /4k /sunny cantoalto_panorama_brembana.mp4
-python convert.py /sunny cantoalto_parini_sedrina.mp4
-python convert.py /sunny cantobasso_cantoalto.mp4
-python convert.py /sunny montedinese_cantobasso.mp4
+python convert.py /4k /sunny canto_alto_panorama_bergamo.mp4
+python convert.py /4k /sunny canto_alto_panorama_brembana.mp4
+python convert.py /sunny canto_alto_parini_sedrina.mp4
+python convert.py /sunny canto_basso_canto_alto_hard.mp4
+python convert.py /sunny montedinese_canto_basso.mp4
+python convert.py /sunny canto_alto_pisgiu_sorisole.mp4
+python convert.py /sunny sorisole_pistino.mp4
+python convert.py /sunny canto_basso_canto_alto.mp4
+python convert.py /sunny forcella_sorriso_canto_basso.mp4
+python convert.py /sunny bdc_berbenno.mp4
+python convert.py /sunny bdc_valle_imagna.mp4
 
