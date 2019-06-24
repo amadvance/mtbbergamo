@@ -147,4 +147,10 @@ python convert.py /sunny canto_basso_canto_alto.mp4
 python convert.py /sunny forcella_sorriso_canto_basso.mp4
 python convert.py /sunny bdc_berbenno.mp4
 python convert.py /sunny bdc_valle_imagna.mp4
+python convert.py cascine_zucchero_passo_porta.mp4
+python convert.py passo_porta_586_rota.mp4
+python convert.py passo_porta_pramagnone.mp4
+python convert.py rota_fucine_selino.mp4
+python convert.py /4k /sunny valcava_panorama_imagna.mp4
+python convert.py /sunny bdc_valcava.mp4
 
