@@ -95,7 +95,7 @@ var TRACKS = [
 { zone: 'noshow', name: '807 / Palestra', kind: 'down', file: 'N_807Palestra_REC.gpx', link: '2019/04/colle-pedrino' },
 { zone: 'noshow', name: 'Mulattiera', kind: 'down', file: 'N_PedrinoMulattieraOpreno_REC.gpx', link: '2019/04/colle-pedrino'  },
 { zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Baia, Spino, Palazzago', kind: 'down', file: 'N_LinzonePiaccaBaitaSpinoPalazzago_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
-{ zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Spino, Ciacallo, Burligo', kind: 'down', file: 'N_LinzonePiaccaSpinoCiacallo807Burligo_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
+{ zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Col Pedrino, Palestra / 807, Burligo', kind: 'down', file: 'N_LinzonePiaccaColPedrinoPalestraBurligo_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
 { zone: 'martino, valcava', name: 'Valcava, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'N_ValcavaColdaraPedrinoOprenoBurligo_REC.gpx', link: '2019/01/funivia-coldara-colle-pedrino-opreno' },
 { zone: 'martino, valcava', name: 'Valcava, Zuccherone, Coldara, Col Fopa, Opreno, Burligo', kind: 'down', file: 'N_ValcavaZuccheroneColdaraColFopaOprenoBurligo_REC.gpx', link: '2019/03/zuccherone-coldara-col-fopa-opreno' },
 { zone: 'martino, valcava', name: 'Valcava, 823, Colle di Sogno, Corna Martinella, Torre de Busi', kind: 'down', file: 'N_Valcava823SognoMartinellaClassicaFlow_REC.gpx', link: '2018/12/valcava-colle-di-sogno-corna-martinella' },

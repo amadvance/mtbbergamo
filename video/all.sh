@@ -153,4 +153,7 @@ python convert.py passo_porta_pramagnone.mp4
 python convert.py rota_fucine_selino.mp4
 python convert.py /4k /sunny valcava_panorama_imagna.mp4
 python convert.py /sunny bdc_valcava.mp4
+python convert.py /sunny linzone_piacca_estate.mp4
+python convert.py /sunny pedrino_palestra_burligo.mp4
+python convert.py /sunny piacca_spino_pedrino.mp4
 
