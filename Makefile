@@ -21,4 +21,8 @@ up: all
 	cp -urv www/gpx ftp/
 	cp -urv www/zip ftp/
 
+rm:
+	rm ftp/all.js
+
+ov: rm up
 

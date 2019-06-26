@@ -24,12 +24,21 @@ function create_map(id) {
 	return mymap;
 }
 
+var ZONE_TITLE = "<div class='maptitle'>Per scaricare la traccia GPX e la descrizione cliccate sul percorso colorato nella mappa</div>"
+var TRACK_TITLE = "<div class='maptitle'>Per scaricare la traccia GPX cliccate sul percorso colorato nella mappa</div>"
+
 function create_map_zone(id) {
-	return create_map(id);
+	var mymap = create_map(id);
+
+	document.getElementById(id).insertAdjacentHTML('beforebegin', ZONE_TITLE);
+
+	return mymap;
 }
 
 function create_map_track(id) {
-	var mymap = create_map_zone(id);
+	var mymap = create_map(id);
+
+	document.getElementById(id).insertAdjacentHTML('beforebegin', TRACK_TITLE);
 
 	var myimage = L.control.custom({
 		position: 'bottomleft',
