@@ -156,4 +156,9 @@ python convert.py /sunny bdc_valcava.mp4
 python convert.py /sunny linzone_piacca_estate.mp4
 python convert.py /sunny pedrino_palestra_burligo.mp4
 python convert.py /sunny piacca_spino_pedrino.mp4
+python convert.py /sunny forcella_alta_573_selino.mp4
+python convert.py /sunny tre_faggi_580_selino.mp4
+python convert.py /sunny fuipiano_tre_faggi_ebike.mp4
+python convert.py /sunny rota_campi.mp4
+python convert.py /sunny rota_caprospero.mp4
 
