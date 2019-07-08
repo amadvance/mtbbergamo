@@ -93,10 +93,12 @@ function create_gpx_info(map, control, gpx, url, name, link)
 	}
 	if (gpx.get_moving_time() > 1000 * 60) {
 		desc += ", "+ Math.floor(gpx.get_moving_time() / 1000 / 60) + "min";
-		if (url.indexOf("_EBIKE") != -1)
-			desc += " (E-Bike)";
-		else
-			desc += " (muscolare)";
+		if (url.indexOf("Salita") != -1) {
+			if (url.indexOf("_EBIKE") != -1)
+				desc += " (E-Bike)";
+			else
+				desc += " (muscolare)";
+		}
 	}
 
 	var zip = url.replace(/gpx/g,"zip");
