@@ -159,6 +159,19 @@ python convert.py /sunny piacca_spino_pedrino.mp4
 python convert.py /sunny forcella_alta_573_selino.mp4
 python convert.py /sunny tre_faggi_580_selino.mp4
 python convert.py /sunny fuipiano_tre_faggi_ebike.mp4
-python convert.py /sunny rota_campi.mp4
+#NUKED python convert.py /sunny rota_campi.mp4
 python convert.py /sunny rota_caprospero.mp4
+python convert.py bdc_roncola.mp4
+python convert.py /sunny fuipiano_orso_chignolo.mp4
+python convert.py /sunny chignolo_enel.mp4
+python convert.py /sunny brumano_vanzarolo_capiatone.mp4
+python convert.py /sunny rota_campi_selino_2.mp4
+#NUKED python convert.py /sunny rota_fucine_selino_2.mp4
+python convert.py /sunny enel_coegia_selino.mp4
+python convert.py /sunny enel_bustoseta_selino.mp4
+python convert.py /sunny rota_foppe_enel.mp4
+python convert.py /sunny rota_foppe_fallo_selino.mp4
+python convert.py /sunny brumano_vanzarolo_chignolo.mp4
+python convert.py /sunny capiatone_chignolo.mp4
+python convert.py /sunny chignolo_frontale_foppe_enel.mp4
 

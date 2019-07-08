@@ -50,11 +50,17 @@ var TRACKS = [
 { zone: 'sorisole', name: 'Trasferimento da Premerlino al Pisgi\u00F9', kind: 'up', file: 'SR_PremerlinoPisgiu_REC.gpx', link: '2019/06/salite-sorisole' },
 { zone: 'sorisole', name: 'Trasferimento alla Pista Downhill', kind: 'up', file: 'SR_203_REC.gpx', link: '2019/06/salite-sorisole' },
 { zone: 'sorisole', name: 'Salita dalla Forcella del Sorriso al Canto Basso', kind: 'up', file: 'SR_SalitaForcellaDelSorrisoCantoBasso_REC.gpx', link: '2019/06/salite-sorisole' },
-{ zone: 'imagna', name: 'Passo Porta, 586, Rota Imagna', kind: 'down', file: 'I_PassoPorta586Rota_REC.gpx', link: '2019/06/passo-porta' },
-{ zone: 'imagna', name: 'Pra d\'Alet, Pramagnone, Brumano', kind: 'down', file: 'I_PraDAletPramagnoneBrumano_REC.gpx', link: '2019/06/passo-porta' },
+{ zone: 'imagna', name: 'Bustoseta, Selino', kind: 'down', file: 'I_BustosetaSelino_REC.gpx', link: '2019/07/locatello' },
+{ zone: 'noshow', name: 'Buonanome, Selino', kind: 'down', file: 'I_BuonanomeSelino_REC.gpx', link: '2019/07/locatello' },
+{ zone: 'noshow', name: 'Coegia, Selino', kind: 'down', file: 'I_CoegiaSelino_REC.gpx', link: '2019/07/locatello' },
+{ zone: 'imagna', name: 'Passo Porta, 586, Ca Prospero, Foppe, Selino', kind: 'down', file: 'I_PassoPorta586CaPiatoneCaProsperoSelino_REC.gpx', link: '2019/06/passo-porta' },
+{ zone: 'imagna', name: 'Passo Porta, Pra d\'Alet, Pramagnone, Ponte Vanzarolo, Ca Piatone, Foppe, Selino', kind: 'down', file: 'I_PassoPortaPraDAletPramagnoneCaPiatoneFoppeSelino_REC.gpx', link: '2019/06/passo-porta' },
 { zone: 'imagna', name: 'Rota d\'Imagna, Fucine, Selino', kind: 'down', file: 'I_RotaFucineSelino_REC.gpx', link: '2019/06/rota-imagna' },
 { zone: 'imagna', name: 'Rota d\'Imagna, CaProspero, Selino', kind: 'down', file: 'I_RotaCaProsperoSelino_REC.gpx', link: '2019/06/rota-imagna' },
 { zone: 'imagna', name: 'Rota d\'Imagna, Campi, Selino', kind: 'down', file: 'I_RotaCampiSelino_REC.gpx', link: '2019/06/rota-imagna' },
+{ zone: 'imagna', name: 'Ca Piatone, Foppe, Selino', kind: 'down', file: 'I_CaPiatoneFoppeSelino_REC.gpx', link: '2019/06/rota-imagna' },
+{ zone: 'noshow', name: 'Frontale, Foppe, Enel', kind: 'down', file: 'I_FrontaleFoppeEnel_REC.gpx', link: '2019/06/rota-imagna' },
+{ zone: 'imagna', name: 'Chignolo, Frontale, Foppe, Enel', kind: 'down', file: 'I_ChignoloFrontaleFoppeEnel_REC.gpx', link: '2019/07/orso' },
 { zone: 'imagna', name: 'Ceresola, Roccoli Passata, Partigiano, Costa Cavallina, Clanezzo', kind: 'down', file: 'I_CeresolaRoccoliPassataPartigianoCostaCavallinaClanezzo_REC.gpx' },
 { zone: 'imagna', name: 'Passo del Palio, Canti, Tre Faggi', kind: 'down', file: 'I_PalioCantiTreFaggi_REC.gpx', link: '2018/12/palio-canti-tre-faggi' },
 { zone: 'imagna', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'I_PassoPalio571Basso579Fuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
@@ -67,6 +73,7 @@ var TRACKS = [
 { zone: 'imagna', name: 'Passo di Valbona, Sbarra di Brumano', kind: 'down', file: 'I_PassoValbonaSbarra_REC.gpx', link: '2019/05/zuc-de-valmana' },
 { zone: 'imagna', name: 'Passo del Palio, Sbarra di Brumano', kind: 'down', file: 'I_PassoPalioSbarra_REC.gpx', link: '2019/05/zuc-de-valmana' },
 { zone: 'imagna', name: 'Zuc de Valmana, Cresta, Passo del Palio', kind: 'down', file: 'I_ZucDeValmanaCrestaPassoPalio_REC.gpx', link: '2019/05/zuc-de-valmana' },
+{ zone: 'imagna', name: 'Galzaniga, Orso, Chignolo, Ex Centrale Enel, Coegia, Selino', kind: 'down', file: 'I_GalzanigaOrsoChignoloEnelCoegiaSelino_REC.gpx', link: '2019/07/orso' },
 { zone: 'imagna', name: 'Salita da Fuipiano allo Zuc De Valmana', kind: 'up', file: 'I_SalitaZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Trasferimento dal Rifugio Resegone al Passo Porta', kind: 'up', file: 'I_RifResegonePassoPorta_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Trasferimento da Valsecca a Rota Imagna e a Locatello', kind: 'up', file: 'I_ValseccaRotaLocatello_REC.gpx', link: '2018/12/salite-imagna' },
@@ -187,6 +194,5 @@ var TRACKS = [
 { zone: 'seriana', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'S_CiclabileValleSeriana_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Ciclovia delle Rogge', kind: 'up', file: 'S_CicloviaDelleRogge_REC.gpx', link:'2019/03/salite-valle-seriana' },
 ];
-
 
 
