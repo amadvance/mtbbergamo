@@ -57,7 +57,7 @@ python convert.py 713_partigiano.mp4
 python convert.py 910.mp4
 python convert.py expistino.mp4
 #NUKED python convert.py roccolo_nord.mp4
-python convert.py allegrezza_forato.mp4
+#NUKED python convert.py allegrezza_forato.mp4
 python convert.py 532a_olera.mp4
 python convert.py canto_basso_forcella_sorriso.mp4
 python convert.py castello_canto_basso.mp4
@@ -149,8 +149,8 @@ python convert.py /sunny bdc_berbenno.mp4
 python convert.py /sunny bdc_valle_imagna.mp4
 python convert.py cascine_zucchero_passo_porta.mp4
 python convert.py passo_porta_586_rota.mp4
-python convert.py passo_porta_pramagnone.mp4
-python convert.py rota_fucine_selino.mp4
+#NUKED python convert.py passo_porta_pramagnone.mp4
+#NUKED python convert.py rota_fucine_selino.mp4
 python convert.py /4k /sunny valcava_panorama_imagna.mp4
 python convert.py /sunny bdc_valcava.mp4
 python convert.py /sunny linzone_piacca_estate.mp4
@@ -169,9 +169,17 @@ python convert.py /sunny rota_campi_selino_2.mp4
 #NUKED python convert.py /sunny rota_fucine_selino_2.mp4
 python convert.py /sunny enel_coegia_selino.mp4
 python convert.py /sunny enel_bustoseta_selino.mp4
-python convert.py /sunny rota_foppe_enel.mp4
-python convert.py /sunny rota_foppe_fallo_selino.mp4
-python convert.py /sunny brumano_vanzarolo_chignolo.mp4
+#NUKED python convert.py /sunny rota_foppe_enel.mp4
+python convert.py /sunny capiatone_foppe_fallo_selino.mp4
+python convert.py /sunny vanzarolo_chignolo.mp4
 python convert.py /sunny capiatone_chignolo.mp4
 python convert.py /sunny chignolo_frontale_foppe_enel.mp4
+python convert.py /sunny passo_porta_575_valsecca-YOUTUBE.mp4
+python convert.py /sunny valsecca_scuderia_mazzoleni_selino.mp4
+python convert.py /sunny valsecca_fonti.mp4
+python convert.py /sunny rota_fucine_selino_3.mp4
+python convert.py /sunny capiatone_campi_selino.mp4
+python convert.py /sunny cascine_zucchero_pramagnone.mp4
+python convert.py pramagnone_vanzarolo.mp4
+python convert.py /sunny pramagnone_pra_d_alet.mp4
 
