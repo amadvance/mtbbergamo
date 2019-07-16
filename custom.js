@@ -347,6 +347,8 @@ function count_tracks()
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].kind != "down")
 			continue;
+		if (TRACKS[i].zone == "hidden")
+			continue;
 		++count;
 	}
 
@@ -358,6 +360,8 @@ function count_ups()
 	var count = 0;
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].kind != "up")
+			continue;
+		if (TRACKS[i].zone == "hidden")
 			continue;
 		++count;
 	}
