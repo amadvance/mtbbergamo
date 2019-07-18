@@ -64,6 +64,7 @@ var TRACKS = [
 { zone: 'imagna', name: 'Ca Piatone, Foppe, Selino', kind: 'down', file: 'I_CaPiatoneFoppeSelino_REC.gpx', link: '2019/06/rota-imagna' },
 { zone: 'hidden', name: 'Frontale, Foppe, Enel', kind: 'down', file: 'I_FrontaleFoppeEnel_REC.gpx', link: '2019/06/rota-imagna' },
 { zone: 'hidden', name: 'Chignolo, Frontale, Foppe, Enel', kind: 'down', file: 'I_ChignoloFrontaleFoppeEnel_REC.gpx', link: '2019/07/vanzarolo' },
+{ zone: 'hidden', name: 'Chignolo, Enel', kind: 'down', file: 'I_ChignoloEnel_REC.gpx', link: '2019/07/vanzarolo' },
 { zone: 'imagna', name: 'Ceresola, Roccoli Passata, Partigiano, Costa Cavallina, Clanezzo', kind: 'down', file: 'I_CeresolaRoccoliPassataPartigianoCostaCavallinaClanezzo_REC.gpx' },
 { zone: 'imagna', name: 'Zuc De Valmana, Canti, Tre Faggi', kind: 'down', file: 'I_ZucDeValmanaCantiTreFaggi_REC.gpx', link: '2018/12/palio-canti-tre-faggi' },
 { zone: 'imagna', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'I_PassoPalio571Basso579Fuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
