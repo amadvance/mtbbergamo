@@ -67,7 +67,9 @@ var TRACKS = [
 { zone: 'hidden', name: 'Chignolo, Enel', kind: 'down', file: 'I_ChignoloEnel_REC.gpx', link: '2019/07/vanzarolo' },
 { zone: 'imagna', name: 'Ceresola, Roccoli Passata, Partigiano, Costa Cavallina, Clanezzo', kind: 'down', file: 'I_CeresolaRoccoliPassataPartigianoCostaCavallinaClanezzo_REC.gpx' },
 { zone: 'imagna', name: 'Zuc De Valmana, Canti, Tre Faggi', kind: 'down', file: 'I_ZucDeValmanaCantiTreFaggi_REC.gpx', link: '2018/12/palio-canti-tre-faggi' },
+/*
 { zone: 'imagna', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'I_PassoPalio571Basso579Fuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
+*/
 { zone: 'imagna', name: 'Passo del Palio, 571 Cresta, 579B, Fuipiano', kind: 'down', file: 'I_PassoPalio571Cresta579BFuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 { zone: 'imagna', name: 'Passo Porta, 575, Valsecca, Scuderia, Mazzoleni, Selino', kind: 'down', file: 'I_PassoPorta575ValseccaScuderiaMazzoleniSelino_REC.gpx', link: '2019/07/passo-porta-575-valsecca' },
 { zone: 'hidden', name: 'Valsecca, Fonti', kind: 'down', file: 'I_ValseccaFonti_REC.gpx' },
@@ -80,7 +82,9 @@ var TRACKS = [
 { zone: 'imagna', name: 'Passo del Palio, Sbarra di Brumano', kind: 'down', file: 'I_PassoPalioSbarra_REC.gpx', link: '2019/05/zuc-de-valmana' },
 { zone: 'imagna', name: 'Zuc de Valmana, Cresta, Passo del Palio', kind: 'down', file: 'I_ZucDeValmanaCrestaPassoPalio_REC.gpx', link: '2019/05/zuc-de-valmana' },
 { zone: 'imagna', name: 'Galzaniga, Orso, Chignolo, Ex Centrale Enel, Coegia, Selino', kind: 'down', file: 'I_GalzanigaOrsoChignoloEnelCoegiaSelino_REC.gpx', link: '2019/07/orso' },
+/*
 { zone: 'imagna', name: 'Salita da Fuipiano allo Zuc De Valmana', kind: 'up', file: 'I_SalitaZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
+*/
 { zone: 'imagna', name: 'Trasferimento dal Rifugio Resegone al Passo Porta', kind: 'up', file: 'I_RifResegonePassoPorta_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Trasferimento da Valsecca a Rota Imagna e a Locatello', kind: 'up', file: 'I_ValseccaRotaLocatello_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Ciclabile Valle Imagna', kind: 'up', file: 'I_CiclabileValleImagna_REC.gpx', link: '2018/12/salite-imagna' },
