@@ -150,7 +150,7 @@ python convert.py /sunny bdc_valle_imagna.mp4
 python convert.py cascine_zucchero_passo_porta.mp4
 python convert.py passo_porta_586_rota.mp4
 #NUKED python convert.py passo_porta_pramagnone.mp4
-NUKED python convert.py pra_d_alet_pramagnone.mp4
+python convert.py pra_d_alet_pramagnone.mp4
 #NUKED python convert.py rota_fucine_selino.mp4
 python convert.py /4k /sunny valcava_panorama_imagna.mp4
 python convert.py /sunny bdc_valcava.mp4

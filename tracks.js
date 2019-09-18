@@ -65,7 +65,7 @@ var TRACKS = [
 { zone: 'hidden', name: 'Frontale, Foppe, Enel', kind: 'down', file: 'I_FrontaleFoppeEnel_REC.gpx', link: '2019/06/rota-imagna' },
 { zone: 'hidden', name: 'Chignolo, Frontale, Foppe, Enel', kind: 'down', file: 'I_ChignoloFrontaleFoppeEnel_REC.gpx', link: '2019/07/vanzarolo' },
 { zone: 'hidden', name: 'Chignolo, Enel', kind: 'down', file: 'I_ChignoloEnel_REC.gpx', link: '2019/07/vanzarolo' },
-{ zone: 'imagna', name: 'Ceresola, Roccoli Passata, Partigiano, Costa Cavallina, Clanezzo', kind: 'down', file: 'I_CeresolaRoccoliPassataPartigianoCostaCavallinaClanezzo_REC.gpx' },
+{ zone: 'imagna', name: 'Costa Cavallina', kind: 'down', file: 'I_CostaCavallina_REC.gpx', link: '2019/09/costa-cavallina' },
 { zone: 'imagna', name: 'Zuc De Valmana, Canti, Tre Faggi', kind: 'down', file: 'I_ZucDeValmanaCantiTreFaggi_REC.gpx', link: '2018/12/palio-canti-tre-faggi' },
 /*
 { zone: 'imagna', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'I_PassoPalio571Basso579Fuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
@@ -98,6 +98,8 @@ var TRACKS = [
 { zone: 'imagna', name: 'Salita da Almenno a Roncola e Valcava', kind: 'up', file: 'I_SalitaAlmennoRoncolaValcava_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'hidden', name: 'Salita da Almenno a Roncola', kind: 'up', file: 'I_SalitaRoncola_REC.gpx' },
 { zone: 'imagna', name: 'Salita da Almenno a Costa Imagna e Valcava', kind: 'up', file: 'I_SalitaAlmennoCostaValcava_REC.gpx', link: '2018/12/salite-imagna' },
+{ zone: 'imagna', name: 'Salita dalla ciclabile del Chito alla Corna Marcia', kind: 'up', file: 'I_SalitaChitoBottaCornaMarcia_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ zone: 'imagna', name: 'Salita dalla ciclabile del Chito ai Roccoli Passata', kind: 'up', file: 'I_SalitaChitoCeresolaCantoPassata.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna, valcava', name: 'Forcella Alta, 573, Selino', kind: 'down', file: 'I_ForcellaAlta573Selino_REC.gpx', link:'2019/06/forcella-alta-573-selino' },
 { zone: 'imagna, valcava', name: 'Forcella Alta, 574, Valsecca, Selino', kind: 'down', file: 'I_ForcellaAlta574ValseccaSelino_REC.gpx' },
 { zone: 'hidden', name: 'Roncola, 571, Almenno', kind: 'down', file: 'I_Roncola571Almenno_REC.gpx', link: '2019/04/roncola' },
