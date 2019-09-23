@@ -66,6 +66,7 @@ var TRACKS = [
 { zone: 'hidden', name: 'Chignolo, Frontale, Foppe, Enel', kind: 'down', file: 'I_ChignoloFrontaleFoppeEnel_REC.gpx', link: '2019/07/vanzarolo' },
 { zone: 'hidden', name: 'Chignolo, Enel', kind: 'down', file: 'I_ChignoloEnel_REC.gpx', link: '2019/07/vanzarolo' },
 { zone: 'imagna', name: 'Costa Cavallina', kind: 'down', file: 'I_CostaCavallina_REC.gpx', link: '2019/09/costa-cavallina' },
+{ zone: 'imagna', name: 'Corna Marcia, Coyote Scamburtit, Ca Bonor\u00E8', kind: 'down', file: 'I_CoyoteScamburtit_REC.gpx', link: '2019/09/coyote-scamburtit' },
 { zone: 'imagna', name: 'Zuc De Valmana, Canti, Tre Faggi', kind: 'down', file: 'I_ZucDeValmanaCantiTreFaggi_REC.gpx', link: '2018/12/palio-canti-tre-faggi' },
 /*
 removed for request of the owner
