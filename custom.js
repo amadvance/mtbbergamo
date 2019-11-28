@@ -304,7 +304,7 @@ function create_zone(map, control, zone) {
 			weight = 3;
 		} else {
 			color = COLORS_DOWN[color_d]
-			weight = 7;
+			weight = 9;
 			++color_d;
 		}
 
