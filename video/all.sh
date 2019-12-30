@@ -183,4 +183,32 @@ python convert.py /sunny capiatone_campi_selino.mp4
 python convert.py /sunny cascine_zucchero_pramagnone.mp4
 python convert.py pramagnone_vanzarolo.mp4
 python convert.py /sunny pramagnone_pra_d_alet.mp4
+python convert.py /sunny costa_cavallina.mp4
+python convert.py /sunny coyote_scamburtit.mp4
+python convert.py /sunny chito_passo_canto_corna_marcia.mp4
+python convert.py /sunny double_u.mp4
+python convert.py /sunny electric_line.mp4
+python convert.py /sunny infinity.mp4
+python convert.py /sunny portavescovo_rosso.mp4
+python convert.py /sunny bec_de_roches.mp4
+python convert.py /sunny valcava_funivia_coldara_easy.mp4
+python convert.py /4k /sunny valcava_cava_panorama.mp4
+python convert.py /sunny ciacallo_burligo.mp4
+python convert.py /sunny valcava_821.mp4
+python convert.py /sunny torre_de_busi_opreno.mp4
+python convert.py /4k /sunny costa_del_palio_panorama_neve.mp4
+python convert.py /4k /sunny costa_del_palio_panorama_passo_neve.mp4
+python convert.py /4k /sunny costa_del_palio_panorama_salita_neve.mp4
+python convert.py /4k /sunny costa_del_palio_panorama_taleggio_neve.mp4
+python convert.py /sunny costa_del_palio_neve.mp4
+python convert.py /sunny tommy_e_luca_a_sciare_2019.mp4
+python convert.py /4k /sunny valcava_tornante_panorama.mp4
+python convert.py /sunny valcava_823.mp4
+python convert.py /sunny colle_di_sogno_corna_martinella.mp4
+python convert.py /sunny corna_martinella_flow.mp4
+python convert.py galusu.mp4
+python convert.py galusu_salita.mp4
+python convert.py pistadh_2.mp4
+python convert.py colle_di_sogno_corna_martinella_short.mp4
+python convert.py corna_martinella_cristai_super_flow.mp4
 
