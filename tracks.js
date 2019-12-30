@@ -45,7 +45,7 @@ var TRACKS = [
 { zone: 'sorisole', name: 'Sorisole, Ponteranica Alta', kind: 'down', file: 'SR_SorisolePonteranicaAlta_REC.gpx' },
 { zone: 'sorisole', name: 'Salita dal Canto Basso al Canto Alto', kind: 'up', file: 'SR_SalitaCantoBassoCantoAlto_REC.gpx', link: '2019/06/salite-sorisole' },
 { zone: 'sorisole', name: 'Salita alla Forcella di Rua', kind: 'up', file: 'SR_SalitaForcellaDiRua_REC.gpx', link: '2019/06/salite-sorisole' },
-{ zone: 'sorisole', name: 'Salita al Galus\u00F9', kind: 'up', file: 'SR_SalitaGalusu_REC.gpx', link: '2019/06/salite-sorisole' },
+{ zone: 'sorisole', name: 'Salita al Galus\u00F9', kind: 'up', file: 'SR_SalitaGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
 { zone: 'sorisole', name: 'Salita al Giongo', kind: 'up', file: 'SR_SalitaGiongo_REC.gpx', link: '2019/06/salite-sorisole' },
 { zone: 'sorisole', name: 'Trasferimento da Premerlino al Pisgi\u00F9', kind: 'up', file: 'SR_PremerlinoPisgiu_REC.gpx', link: '2019/06/salite-sorisole' },
 { zone: 'sorisole', name: 'Trasferimento alla Pista Downhill', kind: 'up', file: 'SR_203_REC.gpx', link: '2019/06/salite-sorisole' },
