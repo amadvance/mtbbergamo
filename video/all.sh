@@ -211,4 +211,9 @@ python convert.py galusu_salita.mp4
 python convert.py pistadh_2.mp4
 python convert.py colle_di_sogno_corna_martinella_short.mp4
 python convert.py corna_martinella_cristai_super_flow.mp4
+python convert.py /sunny colle_di_sogno_823.mp4
+python convert.py /sunny colle_di_sogno_819.mp4
+python convert.py /4k /sunny coldara_panorama.mp4
+python convert.py /sunny coldara_pizzo_pec.mp4
+python convert.py /sunny coldara_san_marco.mp4
 
