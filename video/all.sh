@@ -216,4 +216,13 @@ python convert.py /sunny colle_di_sogno_819.mp4
 python convert.py /4k /sunny coldara_panorama.mp4
 python convert.py /sunny coldara_pizzo_pec.mp4
 python convert.py /sunny coldara_san_marco.mp4
+python convert.py /4k /sunny colle_di_sogno_panorama.mp4
+python convert.py /sunny coldara_val_braita.mp4
+python convert.py /sunny colle_di_sogno_corna_martinella_explo.mp4
+python convert.py /sunny corna_martinella_classica.mp4
+python convert.py /sunny forcella_alta_811.mp4
+python convert.py /sunny colle_di_sogno_811.mp4
+python convert.py /sunny corna_martinella_822_801a.mp4
+python convert.py /sunny carenno_819.mp4
+python convert.py /sunny corna_martinella_cristai_super_flow_bis.mp4
 
