@@ -287,6 +287,22 @@ function create_up(map, control, file)
 	}
 }
 
+// create a dog marker
+function create_dog(map, control, pos_x, pos_y, msg)
+{
+	var DogIcon = L.Icon.extend({
+		options: {
+		iconSize:     [32, 26],
+		iconAnchor:   [16, 13],
+		popupAnchor:  [-3, -20]
+	}
+	});
+
+	var dogIcon = new DogIcon({iconUrl: 'http://ftp.mtbbergamo.it/img/dog-icon.png'});
+
+	L.marker([pos_x, pos_y], {icon: dogIcon}).addTo(map).bindPopup(msg);
+}
+
 // create a zone post including all the up and down tracks
 function create_zone(map, control, zone) {
 	var color_d = 0;
