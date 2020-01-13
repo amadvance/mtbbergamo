@@ -73,6 +73,7 @@ removed for request of the owner
 { zone: 'imagna', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'I_PassoPalio571Basso579Fuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 */
 { zone: 'imagna', name: 'Passo del Palio, 571 Cresta, 579B, Fuipiano', kind: 'down', file: 'I_PassoPalio571Cresta579BFuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
+{ zone: 'imagna', name: 'Passo di Valbona, 579B, Prati, Fuipiano', kind: 'down', file: 'I_PassoValbona579BPrati_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 { zone: 'imagna', name: 'Passo Porta, 575, Valsecca, Scuderia, Mazzoleni, Selino', kind: 'down', file: 'I_PassoPorta575ValseccaScuderiaMazzoleniSelino_REC.gpx', link: '2019/07/passo-porta-575-valsecca' },
 { zone: 'hidden', name: 'Valsecca, Fonti', kind: 'down', file: 'I_ValseccaFonti_REC.gpx' },
 { zone: 'hidden', name: 'Valsecca, Scuderia, Mazzoleni, Selino', kind: 'down', file: 'I_ValseccaScuderiaMazzoleniSelino_REC.gpx' },
@@ -110,8 +111,13 @@ removed for request of the owner
 { zone: 'imagna, valcava', name: 'Roncola, Barlino', kind: 'down', file: 'I_RoncolaBarlino_REC.gpx', link: '2019/04/roncola' },
 { zone: 'imagna, valcava', name: 'Roncola, CaLiger, Almenno', kind: 'down', file: 'I_RoncolaCaLigerAlmenno_REC.gpx', link: '2019/04/roncola' },
 { zone: 'imagna, valcava', name: 'Roncola, CaLiger, Cava di Strozza', kind: 'down', file: 'I_RoncolaCava_REC.gpx', link: '2019/04/roncola' },
+/*
 { zone: 'martino, valcava', name: 'Roncola, Palazzago', kind: 'down', file: 'N_RoncolaPalazzago_REC.gpx', link: '2019/04/roncola' },
 { zone: 'martino, valcava', name: 'Roncola, Baita, Spino, Palazzago', kind: 'down', file: 'N_RoncolaBaitaSpinoPalazzago_REC.gpx', link: '2019/04/roncola' },
+*/
+{ zone: 'martino, valcava', name: 'Baita, Camutaglio, Longa, Golf', kind: 'down', file: 'N_BaitaCamutaglioLongaGolf_REC.gpx', link: '2019/04/roncola' },
+{ zone: 'martino, valcava', name: 'Prabacioc, San Rocco', kind: 'down', file: 'N_PrabaciocSanRocco_REC.gpx', link: '2019/04/roncola' },
+{ zone: 'martino, valcava', name: 'Trasferimento da Roncola alla Baita', kind: 'up', file: 'N_RoncolaBaita_REC.gpx', link: '2018/12/salite-san-martino' },
 { zone: 'imagna, valcava', name: 'Roncola, Selino', kind: 'down', file: 'I_RoncolaSelino_REC.gpx', link: '2019/04/roncola' },
 { zone: 'imagna, valcava', name: 'Linzone Roncola Alta, Amagno', kind: 'down', file: 'I_LinzoneRoncolaAltaAmagno_REC.gpx' },
 { zone: 'martino, imagna, valcava', name: 'Linzone, 571, Roncola, 571, Almenno', kind: 'down', file: 'I_Linzone571Roncola571Almenno_REC.gpx', link: '2018/11/linzone-roncola' },

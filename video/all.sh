@@ -225,4 +225,11 @@ python convert.py /sunny colle_di_sogno_811.mp4
 python convert.py /sunny corna_martinella_822_801a.mp4
 python convert.py /sunny carenno_819.mp4
 python convert.py /sunny corna_martinella_cristai_super_flow_bis.mp4
-
+python convert.py valcava_tesoro.mp4
+python convert.py /4k /sunny fuipiano_panorama_monte.mp4
+python convert.py /4k /sunny fuipiano_panorama_valle.mp4
+python convert.py /sunny costa_del_palio_diretta.mp4
+python convert.py /sunny baita_camutaglio.mp4
+python convert.py /sunny longa_golf.mp4
+python convert.py /sunny prabacioc_san_rocco.mp4
+python convert.py /sunny roncola_baita.mp4
