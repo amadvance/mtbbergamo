@@ -108,13 +108,10 @@ removed for request of the owner
 { zone: 'imagna, valcava', name: 'Forcella Alta, 573, Selino', kind: 'down', file: 'I_ForcellaAlta573Selino_REC.gpx', link:'2019/06/forcella-alta-573-selino' },
 { zone: 'imagna, valcava', name: 'Forcella Alta, 574, Valsecca, Selino', kind: 'down', file: 'I_ForcellaAlta574ValseccaSelino_REC.gpx' },
 { zone: 'hidden', name: 'Roncola, 571, Almenno', kind: 'down', file: 'I_Roncola571Almenno_REC.gpx', link: '2019/04/roncola' },
-{ zone: 'imagna, valcava', name: 'Roncola, Barlino', kind: 'down', file: 'I_RoncolaBarlino_REC.gpx', link: '2019/04/roncola' },
+{ zone: 'martino, imagna, valcava', name: 'Roncola, Barlino', kind: 'down', file: 'I_RoncolaBarlino_REC.gpx', link: '2019/04/roncola' },
 { zone: 'imagna, valcava', name: 'Roncola, CaLiger, Almenno', kind: 'down', file: 'I_RoncolaCaLigerAlmenno_REC.gpx', link: '2019/04/roncola' },
 { zone: 'imagna, valcava', name: 'Roncola, CaLiger, Cava di Strozza', kind: 'down', file: 'I_RoncolaCava_REC.gpx', link: '2019/04/roncola' },
-/*
-{ zone: 'martino, valcava', name: 'Roncola, Palazzago', kind: 'down', file: 'N_RoncolaPalazzago_REC.gpx', link: '2019/04/roncola' },
-{ zone: 'martino, valcava', name: 'Roncola, Baita, Spino, Palazzago', kind: 'down', file: 'N_RoncolaBaitaSpinoPalazzago_REC.gpx', link: '2019/04/roncola' },
-*/
+{ zone: 'martino, valcava', name: 'Roncola, San Rocco', kind: 'down', file: 'N_RoncolaSanRocco_REC.gpx', link: '2019/04/roncola' },
 { zone: 'martino, valcava', name: 'Baita, Camutaglio, Longa, Golf', kind: 'down', file: 'N_BaitaCamutaglioLongaGolf_REC.gpx', link: '2019/04/roncola' },
 { zone: 'martino, valcava', name: 'Prabacioc, San Rocco', kind: 'down', file: 'N_PrabaciocSanRocco_REC.gpx', link: '2019/04/roncola' },
 { zone: 'martino, valcava', name: 'Trasferimento da Roncola alla Baita', kind: 'up', file: 'N_RoncolaBaita_REC.gpx', link: '2018/12/salite-san-martino' },
