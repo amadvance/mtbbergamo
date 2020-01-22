@@ -1,7 +1,8 @@
 /* mtbbergamo JS */
 
 var WEB = 'http://www.mtbbergamo.it/';
-var ARCHIVE = 'http://ftp.mtbbergamo.it/';
+var ARCHIVE_BACKUP = 'http://ftp.mtbbergamo.it/';
+var ARCHIVE = 'https://raw.githubusercontent.com/amadvance/mtbbergamo/master/www/';
 
 function _merge_fields(a, b) {
 	var _ = {};
