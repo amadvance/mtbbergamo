@@ -233,3 +233,6 @@ python convert.py /sunny baita_camutaglio.mp4
 python convert.py /sunny longa_golf.mp4
 python convert.py /sunny prabacioc_san_rocco.mp4
 python convert.py /sunny roncola_baita.mp4
+python convert.py /sunny costa_del_palio_neve_bis.mp4
+python convert.py /sunny costa_del_palio_neve_explo.mp4
+python convert.py /sunny sbarra_palio_neve.mp4

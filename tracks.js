@@ -73,6 +73,7 @@ removed for request of the owner
 { zone: 'imagna', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'I_PassoPalio571Basso579Fuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 */
 { zone: 'imagna', name: 'Passo del Palio, 571 Cresta, 579B, Fuipiano', kind: 'down', file: 'I_PassoPalio571Cresta579BFuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
+{ zone: 'hidden', name: '579B, Fuipiano, Variante per Neve', kind: 'down', file: 'I_FuipianoVarianteNeve_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 { zone: 'imagna', name: 'Passo di Valbona, 579B, Prati, Fuipiano', kind: 'down', file: 'I_PassoValbona579BPrati_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 { zone: 'imagna', name: 'Passo Porta, 575, Valsecca, Scuderia, Mazzoleni, Selino', kind: 'down', file: 'I_PassoPorta575ValseccaScuderiaMazzoleniSelino_REC.gpx', link: '2019/07/passo-porta-575-valsecca' },
 { zone: 'hidden', name: 'Valsecca, Fonti', kind: 'down', file: 'I_ValseccaFonti_REC.gpx' },
