@@ -1,5 +1,8 @@
 /* mtbbergamo JS */
 
+var WEB = 'http://www.mtbbergamo.it/';
+var ARCHIVE = 'http://ftp.mtbbergamo.it/';
+
 function _merge_fields(a, b) {
 	var _ = {};
 	for (var attr in a) { _[attr] = a[attr]; }
@@ -42,7 +45,7 @@ function create_map_track(id) {
 
 	var myimage = L.control.custom({
 		position: 'bottomleft',
-		content : '<img src="http://ftp.mtbbergamo.it/img/slope.png" class="leaflet-slope-img" id="demoImage">',
+		content : '<img src="' + ARCHIVE + 'img/slope.png" class="leaflet-slope-img" id="demoImage">',
 		classes : '',
 		style   :
 		{
@@ -78,7 +81,7 @@ function create_gpx_info(map, control, gpx, url, name, link)
 	var desc;
 
 	if (link)
-		desc = "<b><a href=\"http://www.mtbbergamo.it/" + link + ".html\">" + name + "</a></b>";
+		desc = '<b><a href="' + WEB + link + '.html">' + name + "</a></b>";
 	else
 		desc = "<b>" + name + "</b>";
 
@@ -126,9 +129,9 @@ function create_track(map, control, url, name, track_options)
 		async: true,
 		marker_options: {
 			// full icons
-			startIconUrl: 'http://ftp.mtbbergamo.it/img/pin-icon-start.png',
-			endIconUrl: 'http://ftp.mtbbergamo.it/img/pin-icon-end.png',
-			shadowUrl: 'http://ftp.mtbbergamo.it/img/pin-shadow.png'
+			startIconUrl: ARCHIVE + 'img/pin-icon-start.png',
+			endIconUrl: ARCHIVE + 'img/pin-icon-end.png',
+			shadowUrl: ARCHIVE + 'img/pin-shadow.png'
 		},
 		polyline_options: {
 			color: track_options.color,
@@ -158,9 +161,9 @@ function create_zone_track(map, control, url, name, link, track_options)
 		async: true,
 		marker_options: {
 			// half icons
-			startIconUrl: 'http://ftp.mtbbergamo.it/img/pin-icon-start-50.png',
-			endIconUrl: 'http://ftp.mtbbergamo.it/img/pin-icon-end-50.png',
-			shadowUrl: 'http://ftp.mtbbergamo.it/img/pin-shadow-50.png',
+			startIconUrl: ARCHIVE + 'img/pin-icon-start-50.png',
+			endIconUrl: ARCHIVE + 'img/pin-icon-end-50.png',
+			shadowUrl: ARCHIVE + 'img/pin-shadow-50.png',
 			iconSize: [16, 25],
 			shadowSize: [25, 25],
 			iconAnchor: [8, 22],
@@ -256,7 +259,7 @@ function create_down(map, control, file)
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].file == file) {
 			create_track(map, control,
-				"http://ftp.mtbbergamo.it/gpx/" + TRACKS[i].file,
+				ARCHIVE + 'gpx/' + TRACKS[i].file,
 				TRACKS[i].name,
 				{
 					weight: 7,
@@ -274,7 +277,7 @@ function create_up(map, control, file)
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].file == file) {
 			create_zone_track(map, control,
-				"http://ftp.mtbbergamo.it/gpx/" + TRACKS[i].file,
+				ARCHIVE + 'gpx/' + TRACKS[i].file,
 				TRACKS[i].name,
 				TRACKS[i].link,
 				{
@@ -298,7 +301,7 @@ function create_dog(map, control, pos_x, pos_y, msg)
 	}
 	});
 
-	var dogIcon = new DogIcon({iconUrl: 'http://ftp.mtbbergamo.it/img/dog-icon.png'});
+	var dogIcon = new DogIcon({iconUrl: ARCHIVE + 'img/dog-icon.png'});
 
 	L.marker([pos_x, pos_y], {icon: dogIcon}).addTo(map).bindPopup(msg);
 }
@@ -325,7 +328,7 @@ function create_zone(map, control, zone) {
 		}
 
 		create_zone_track(map, control,
-			"http://ftp.mtbbergamo.it/gpx/" + TRACKS[i].file,
+			ARCHIVE + 'gpx/' + TRACKS[i].file,
 			TRACKS[i].name,
 			TRACKS[i].link,
 			{
@@ -346,7 +349,7 @@ function create_climb(map, control, zone) {
 			continue;
 
 		create_zone_track(map, control,
-			"http://ftp.mtbbergamo.it/gpx/" + TRACKS[i].file,
+			ARCHIVE + 'gpx/' + TRACKS[i].file,
 			TRACKS[i].name,
 			TRACKS[i].link,
 			{
