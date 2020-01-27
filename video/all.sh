@@ -236,3 +236,7 @@ python convert.py /sunny roncola_baita.mp4
 python convert.py /sunny costa_del_palio_neve_bis.mp4
 python convert.py /sunny costa_del_palio_neve_explo.mp4
 python convert.py /sunny sbarra_palio_neve.mp4
+python convert.py /4k /sunny artavaggio_panorama_cazzaniga.mp4
+python convert.py /sunny cazzaniga_artavaggio_vasca_neve.mp4
+python convert.py /sunny moggio_artavaggio_cazzaniga.mp4
+
