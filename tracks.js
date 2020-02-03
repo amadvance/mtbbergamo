@@ -235,6 +235,8 @@ removed for request of the owner
 { zone: 'seriana', name: 'Ciclovia delle Rogge', kind: 'up', file: 'S_CicloviaDelleRogge_REC.gpx', link:'2019/03/salite-valle-seriana' },
 { zone: 'valsassina', name: 'Arvaggio 2000, Piani di Artavaggio, Vasca, Moggio', kind: 'down', file: 'SA_CazzanigaArtavaggioVascaNeve_REC.gpx', link: '2020/01/artavaggio' },
 { zone: 'valsassina', name: 'Moggio, Piani di Artavaggio, Arvaggio 2000', kind: 'up', file: 'SA_MoggioArtavaggioCazzaniga_REC.gpx', link:'2020/01/artavaggio' },
+{ zone: 'gandino', name: 'Pizzo Formico, Monte Farno, Gandino', kind: 'down', file: 'GA_PizzoFormicoMonteFarno_REC.gpx', link: '2020/02/pizzo_formico' },
+{ zone: 'gandino', name: 'Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'GA_SalitaGandinoRifugioParafulmine_EBIKE.gpx', link:'2020/02/pizzo_formico' },
+{ zone: 'gandino', name: 'Rifugio Parafulmine, Pizzo Formico', kind: 'up', file: 'GA_SalitaRifugioParafulminePizzoFormico_EBIKE.gpx', link:'2020/02/pizzo_formico' },
 ];
-
 

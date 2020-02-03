@@ -239,4 +239,11 @@ python convert.py /sunny sbarra_palio_neve.mp4
 python convert.py /4k /sunny artavaggio_panorama_cazzaniga.mp4
 python convert.py /sunny cazzaniga_artavaggio_vasca_neve.mp4
 python convert.py /sunny moggio_artavaggio_cazzaniga.mp4
+python convert.py /4k /sunny rifugio_parafulmine_panorama.mp4
+python convert.py /4k /sunny pizzo_formico_panorama.mp4
+python convert.py /sunny pizzo_formico_monte_farno.mp4
+python convert.py /sunny rifugio_parafulmine_pizzo_formico.mp4
+python convert.py /sunny monte_farno_rifugio_parafulmine.mp4
+python convert.py /sunny 545_barzizza.mp4
+python convert.py /sunny gandino_monte_farno_asfalto.mp4
 
