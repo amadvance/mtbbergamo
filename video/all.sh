@@ -246,4 +246,15 @@ python convert.py /sunny rifugio_parafulmine_pizzo_formico.mp4
 python convert.py /sunny monte_farno_rifugio_parafulmine.mp4
 python convert.py /sunny 545_barzizza.mp4
 python convert.py /sunny gandino_monte_farno_asfalto.mp4
+python convert.py /sunny fuipiano_ponte_coegia.mp4
+python convert.py /sunny tre_faggi_traverso_ovest.mp4
+python convert.py /4k /sunny canti_panorama.mp4
+python convert.py /sunny canti_tre_faggi.mp4
+python convert.py /sunny tre_faggi_fuipiano.mp4
+python convert.py /sunny zuc_valmana_canti.mp4
+python convert.py /sunny ponte_coegia_coegia_selino.mp4
+python convert.py /sunny fuipiano_neverola.mp4
+python convert.py /sunny neverola_ponte_coegia.mp4
+python convert.py /sunny sopracorna_fuipiano.mp4
+python convert.py /sunny valle_casello_fuipiano.mp4
 

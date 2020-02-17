@@ -82,7 +82,7 @@ removed for request of the owner
 { zone: 'imagna', name: 'Resegone, Bocchetta del Palio, Grande Faggio', kind: 'down', file: 'I_ResegoneGrandeFaggio_REC.gpx', link: '2019/06/resegone' },
 { zone: 'imagna', name: 'Tre Faggi, 580, Disdiroli, Selino', kind: 'down', file: 'I_TreFaggi580DisdiroliSelino_REC.gpx', link: '2019/06/tre-faggi-580-disdiroli-selino' },
 { zone: 'imagna', name: 'Tre Faggi, Corna, Blello, Selino Alto, Ponte Pietra', kind: 'down', file: 'I_TreFaggiCornaBlelloSelinoAltoPontePietra_REC.gpx', link: '2018/11/tra-faggi-corna-blello-selino-alto' },
-{ zone: 'imagna', name: 'Tre Faggi, Traverso Ovest, Fuipiano. Locatello, Selino', kind: 'down', file: 'I_TreFaggiTraversoFuipianoBustoseta_REC.gpx', link: '2020/02/tre-faggi-traverso-ovest' },
+{ zone: 'imagna', name: 'Tre Faggi, Traverso Ovest, Fuipiano. Coegia, Selino', kind: 'down', file: 'I_TreFaggiTraversoFuipianoCoegia_REC.gpx', link: '2020/02/tre-faggi-traverso-ovest' },
 { zone: 'imagna', name: 'Passo di Valbona, Sbarra di Brumano', kind: 'down', file: 'I_PassoValbonaSbarra_REC.gpx', link: '2019/05/zuc-de-valmana' },
 { zone: 'imagna', name: 'Passo del Palio, Sbarra di Brumano', kind: 'down', file: 'I_PassoPalioSbarra_REC.gpx', link: '2019/05/zuc-de-valmana' },
 { zone: 'imagna', name: 'Zuc de Valmana, Cresta, Passo del Palio', kind: 'down', file: 'I_ZucDeValmanaCrestaPassoPalio_REC.gpx', link: '2019/05/zuc-de-valmana' },
