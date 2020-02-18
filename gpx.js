@@ -487,7 +487,7 @@ L.GPX = L.FeatureGroup.extend({
       var delta_v = 0; // delta vertical movement (signed)
       var distance_v = 0; // vertical movement (always positive)
       var distance_tot = 0; // total movement (always positive)
-      var elapsed_time = 0; // time
+      var elapsed_time = 0; // time (milliseconds)
 
       if (last != null) {
         // compute the distance from the previous point
@@ -529,9 +529,18 @@ L.GPX = L.FeatureGroup.extend({
           this._info.elevation.loss -= delta_v;
         }
 
-        // increase the duration
+        // increase the duration (milliseconds)
         this._info.duration.total += elapsed_time;
-        if (elapsed_time < options.max_point_interval) {
+
+
+        // compute the speed if the elapsed time is big (meter/sec)
+        var speed_ms = 0;
+        if (elapsed_time >= options.max_point_interval) {
+          speed_ms = distance_tot * 1000.0 / elapsed_time;
+        }
+
+        // increase the moving time (milliseconds). 1ms is 3.6km/h
+        if (elapsed_time < options.max_point_interval || speed_ms > 1) {
           this._info.duration.moving += elapsed_time;
         }
       } else {
