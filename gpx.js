@@ -483,12 +483,23 @@ L.GPX = L.FeatureGroup.extend({
       this._info.elevation._points.push([this._info.length, ll.meta.ele]);
       this._info.duration.end = ll.meta.time;
 
-      // store the slope in the "alt" field
+      var distance_h = 0; // planar movement (always positive)
+      var delta_v = 0; // delta vertical movement (signed)
+      var distance_v = 0; // vertical movement (always positive)
+      var distance_tot = 0; // total movement (always positive)
+      var elapsed_time = 0; // time
+
       if (last != null) {
-        // store current step
-        var step_dh = this._dist2d(last, ll);
-        var step_dv = ll.meta.ele - last.meta.ele;
-        measure.splice(0, 0, { dh: step_dh, dv: step_dv });
+        // compute the distance from the previous point
+        distance_h = this._dist2d(last, ll);
+        delta_v = ll.meta.ele - last.meta.ele;
+        distance_tot = Math.sqrt(Math.pow(distance_h, 2) + Math.pow(Math.abs(delta_v), 2));
+
+        // compute the time elapsed from the previous point
+        elapsed_time = Math.abs(ll.meta.time - last.meta.time);
+
+        // add the new measure
+        measure.splice(0, 0, { dh: distance_h, dv: delta_v });
 
         // do not keep more than 10 measure
         measure.splice(10, 1);
@@ -501,32 +512,34 @@ L.GPX = L.FeatureGroup.extend({
           segment_dv += measure[j].dv;
         }
 
+        // store the slope in the "alt" field
         try {
           ll.alt = Math.floor(segment_dv / segment_dh * 100);
         } catch (err) {
           ll.alt = last.alt; // for division by 0
         }
-      } else {
-        ll.alt = 0.0;
-      }
 
-      if (last != null) {
-        this._info.length += this._dist3d(last, ll);
+        // increase the distance
+        this._info.length += distance_tot;
 
-        var t = ll.meta.ele - last.meta.ele;
-        if (t > 0) {
-          this._info.elevation.gain += t;
+        // increase the elevation
+        if (delta_v > 0) {
+          this._info.elevation.gain += delta_v;
         } else {
-          this._info.elevation.loss += Math.abs(t);
+          this._info.elevation.loss -= delta_v;
         }
 
-        t = Math.abs(ll.meta.time - last.meta.time);
-        this._info.duration.total += t;
-        if (t < options.max_point_interval) {
-          this._info.duration.moving += t;
+        // increase the duration
+        this._info.duration.total += elapsed_time;
+        if (elapsed_time < options.max_point_interval) {
+          this._info.duration.moving += elapsed_time;
         }
-      } else if (this._info.duration.start == null) {
-        this._info.duration.start = ll.meta.time;
+      } else {
+        // setup the initial point
+        ll.alt = 0.0;
+        if (this._info.duration.start == null) {
+          this._info.duration.start = ll.meta.time;
+        }
       }
 
       last = ll;
