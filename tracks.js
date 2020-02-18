@@ -98,8 +98,12 @@ removed for request of the owner
 { zone: 'imagna', name: 'Salita da Brumano al Passo Porta', kind: 'up', file: 'I_SalitaBrumanoPassoPorta_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { zone: 'hidden', name: 'Salita da Brumano alle Cascine Zucchero', kind: 'up', file: 'I_SalitaBrumanoCascineZucchero_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Salita da Brumano ai Pra d\'Alet', kind: 'up', file: 'I_SalitaBrumanoPraDAlet_EBIKE.gpx', link: '2018/12/salite-imagna' },
-{ zone: 'imagna', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'I_SalitaSbarraPalio_REC.gpx', link: '2018/12/salite-imagna' },
-{ zone: 'imagna', name: 'Salita dal Passo del Palio, a Forbesette, e al Colletto di Brumano', kind: 'up', file: 'I_SalitaPalioForbesetteCollettoBrumano_REC.gpx', link: '2018/12/salite-imagna' },
+{ zone: 'imagna', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'I_SalitaSbarraPalio_EBIKE.gpx', link: '2018/12/salite-imagna' },
+/* used for completing the MTB tracks */
+{ zone: 'hidden', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'I_SalitaSbarraPalio_REC.gpx', link: '2018/12/salite-imagna' },
+/* used for the Zuc De Valmana climbing without splitting */
+{ zone: 'hidden', name: 'Salita dalla Sbarra di Brumano allo Zuc De Valmana', kind: 'up', file: 'I_SalitaSbarraPalioZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ zone: 'imagna', name: 'Salita dal Passo del Palio, a Forbesette, e al Colletto di Brumano', kind: 'up', file: 'I_SalitaPalioForbesetteCollettoBrumano_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Salita dal Passo del Palio al Resegone', kind: 'up', file: 'I_SalitaPalioResegone_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Salita da Selino a Fuipiano e ai Tre Faggi', kind: 'up', file: 'I_SalitaSelinoFuipianoTreFaggi_REC.gpx', link: '2018/12/salite-imagna' },
 { zone: 'imagna', name: 'Salita da Almenno a Roncola e Valcava', kind: 'up', file: 'I_SalitaAlmennoRoncolaValcava_REC.gpx', link: '2018/12/salite-imagna' },
