@@ -257,4 +257,10 @@ python convert.py /sunny fuipiano_neverola.mp4
 python convert.py /sunny neverola_ponte_coegia.mp4
 python convert.py /sunny sopracorna_fuipiano.mp4
 python convert.py /sunny valle_casello_fuipiano.mp4
+python convert.py /sunny uccellaia_1_e_2.mp4
+python convert.py /sunny guendalina.mp4
+python convert.py /sunny biglietto_da_visita.mp4
+python convert.py /sunny crocione.mp4
+python convert.py /sunny salita_pontida.mp4
+python convert.py /sunny salita_sotto_il_monte.mp4
 
