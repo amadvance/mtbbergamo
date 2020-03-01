@@ -662,6 +662,8 @@ body.mobile  {
 
     <b:include data='blog' name='google-analytics'/>
     <meta content='h5i5Di5GbNo179bnuGejrBVvRPnPfytX4Jyu6gQhuUQ' name='google-site-verification'/>
+    <link href='http://ftp.mtbbergamo.it/all.css' rel='stylesheet'/>
+    <script src='http://ftp.mtbbergamo.it/all.js'/>
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -2066,7 +2068,7 @@ head.appendChild(script);
       <b:widget-setting name='display'>LIST</b:widget-setting>
       <b:widget-setting name='selectedLabelsList'/>
       <b:widget-setting name='showType'>ALL</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
