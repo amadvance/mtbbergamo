@@ -257,6 +257,9 @@ var COLORS_UP = "Gray";
 // create a post down track
 function create_down(map, control, file)
 {
+	// the HotLine support doesn't work with multiple maps
+	var enable_slope = window.location.href.search("/search/") < 0;
+
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].file == file) {
 			create_track(map, control,
@@ -264,7 +267,7 @@ function create_down(map, control, file)
 				TRACKS[i].name,
 				{
 					weight: 7,
-					slope: true
+					slope: enable_slope
 				}
 			);
 			break;
