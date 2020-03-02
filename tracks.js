@@ -164,7 +164,7 @@ removed for request of the owner
 { zone: 'martino, valcava', name: 'Salita da Torre De Busi ad Opreno', kind: 'up', file: 'N_SalitaBusiOpreno_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { zone: 'martino, valcava', name: 'Salita da Palazzago alla Cava', kind: 'up', file: 'N_SalitaPalazzagoCava_REC.gpx', link: '2018/12/salite-san-martino' },
 { zone: 'martino, valcava', name: 'Trasferimento da Opreno a Burligo', kind: 'up', file: 'N_OprenoBurligo_REC.gpx', link: '2018/12/salite-san-martino' },
-{ zone: 'canto', name: 'Radici, Genestaro', kind: 'down', file: 'C_RadiciGenestaro_REC.gpx', link: '2020/02/radici-genestaro' },
+{ zone: 'canto', name: 'Radici, Genestaro', kind: 'down', file: 'C_RadiciGenestaro_REC.gpx', link: '2020/03/radici-genestaro' },
 { zone: 'canto', name: 'Crocione, Guendalina', kind: 'down', file: 'C_CrocioneGuendalina_REC.gpx', link: '2020/02/crocione-guendalina' },
 { zone: 'canto', name: 'Biglietto da Visita', kind: 'down', file: 'C_BigliettoDaVisita_REC.gpx', link: '2020/02/biglietto-da-visita' },
 { zone: 'canto', name: 'Kompressor', kind: 'down', file: 'C_Kompressor_REC.gpx', link: '2019/02/kompressor' },
