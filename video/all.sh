@@ -267,7 +267,7 @@ python convert.py /sunny pietra_sant_albero.mp4
 python convert.py /sunny porcile_san_giovanni.mp4
 python convert.py /sunny radici_genestaro.mp4
 python convert.py /sunny salita_somasca.mp4
-python convert.py /sunny uccellaia.mp4
-python convert.py androli_chignolo.mp4
-python convert.py cagavaggio_calcinone.mp4
+python convert.py /sunny uccellaia_bis.mp4
+python convert.py /sunny androli_chignolo.mp4
+python convert.py /sunny cagavaggio_calcinone.mp4
 
