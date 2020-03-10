@@ -270,4 +270,6 @@ python convert.py /sunny salita_somasca.mp4
 python convert.py /sunny uccellaia_bis.mp4
 python convert.py /sunny androli_chignolo.mp4
 python convert.py /sunny cagavaggio_calcinone.mp4
+python convert.py /sunny chignolo_pagafone_coegia.mp4
+python convert.py /sunny fuipiano_pagafone_chignolo.mp4
 
