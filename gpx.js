@@ -612,16 +612,19 @@ L.GPX = L.FeatureGroup.extend({
     return layers;
   },
 
+  /*
+   * From http://www.movable-type.co.uk/scripts/latlong.html
+   * This uses the 'haversine' formula to calculate the great-circle distance between two
+   * points - that is, the shortest distance over the earth's surface - giving an
+   * 'as-the-crow-flies' distance between the points
+   * (ignoring any hills they fly over, of course!).
+   */
   _dist2d: function(a, b) {
-    var R = 6371000;
+    var R = 6371000; /* earth radius */
     var dLat = this._deg2rad(b.lat - a.lat);
     var dLon = this._deg2rad(b.lng - a.lng);
-    var r = Math.sin(dLat/2) *
-      Math.sin(dLat/2) +
-      Math.cos(this._deg2rad(a.lat)) *
-      Math.cos(this._deg2rad(b.lat)) *
-      Math.sin(dLon/2) *
-      Math.sin(dLon/2);
+    var r = Math.sin(dLat/2) * Math.sin(dLat/2)
+          + Math.cos(this._deg2rad(a.lat)) * Math.cos(this._deg2rad(b.lat)) * Math.sin(dLon/2) * Math.sin(dLon/2);
     var c = 2 * Math.atan2(Math.sqrt(r), Math.sqrt(1-r));
     var d = R * c;
     return d;
