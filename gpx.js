@@ -413,30 +413,69 @@ L.GPX = L.FeatureGroup.extend({
     var coords = [];
     var markers = [];
     var layers = [];
-    var last = null;
-    var measure = [];
+    var delta = [];
+    var last_ll = null;
+    var last_ele = null;
+    var last_time = null;
 
+    // preprocess all the points to compute a centered slope
+    for (var i = 0; i < el.length; i++) {
+        var ll = new L.LatLng(el[i].getAttribute('lat'),el[i].getAttribute('lon'));
+
+        var elevation = 0; // elevation (always positive)
+        var distance_h = 0; // planar movement (always positive)
+        var delta_v = 0; // delta vertical movement (signed)
+        var distance_tot = 0; // total movement (always positive)
+        var point_time = 0; // absolute time of the point (milliseconds)
+        var elapsed_time = 0; // elapsed time from the previous point (milliseconds)
+
+        _ = el[i].getElementsByTagName('time');
+        if (_.length > 0) {
+            point_time = new Date(Date.parse(_[0].textContent));
+        } else {
+            point_time = new Date('1970-01-01T00:00:00');
+        }
+
+        _ = el[i].getElementsByTagName('ele');
+        if (_.length > 0) {
+            elevation = parseFloat(_[0].textContent);
+        }
+
+        // avoid issues for points missing elevation info
+        if (elevation == 0 && last_elevation != null) {
+            elevation = last_ele;
+        }
+
+        if (last_ll != null) {
+            // compute the distance from the previous point
+            distance_h = this._dist2d(last_ll, ll);
+            delta_v = elevation - last_ele;
+            distance_tot = Math.sqrt(Math.pow(distance_h, 2) + Math.pow(Math.abs(delta_v), 2));
+            elapsed_time = Math.abs(point_time - last_time);
+        }
+
+        // store in the delta vector
+        delta.push({distance_h:distance_h, ele:elevation, delta_v:delta_v, distance_tot:distance_tot, point_time:point_time, elapsed_time:elapsed_time});
+
+        last_ll = ll;
+        last_ele = elevation;
+        last_time = point_time;
+    }
+
+    last_ll = null;
+    last_ele = null;
+    last_time = null;
+
+    // reprocess all the points
     for (var i = 0; i < el.length; i++) {
       var _, ll = new L.LatLng(
         el[i].getAttribute('lat'),
         el[i].getAttribute('lon'));
       ll.meta = { time: null, ele: null, hr: null, cad: null, atemp: null };
 
-      _ = el[i].getElementsByTagName('time');
-      if (_.length > 0) {
-        ll.meta.time = new Date(Date.parse(_[0].textContent));
-      } else {
-        ll.meta.time = new Date('1970-01-01T00:00:00');
-      }
-
-      _ = el[i].getElementsByTagName('ele');
-      if (_.length > 0) {
-        ll.meta.ele = parseFloat(_[0].textContent);
-      }
-
-      // avoid issues for points missing elevation info
-      if (ll.meta.ele == null && last != null)
-        ll.meta.ele = last.meta.ele;
+      // already computed fields
+      ll.meta.ele = delta[i].ele;
+      ll.meta.time = delta[i].point_time;
 
       _ = el[i].getElementsByTagName('name');
       if (_.length > 0) {
@@ -450,7 +489,6 @@ L.GPX = L.FeatureGroup.extend({
           }
         }
       }
-
       _ = el[i].getElementsByTagNameNS('*', 'hr');
       if (_.length > 0) {
         ll.meta.hr = parseInt(_[0].textContent);
@@ -483,40 +521,49 @@ L.GPX = L.FeatureGroup.extend({
       this._info.elevation._points.push([this._info.length, ll.meta.ele]);
       this._info.duration.end = ll.meta.time;
 
-      var distance_h = 0; // planar movement (always positive)
-      var delta_v = 0; // delta vertical movement (signed)
-      var distance_v = 0; // vertical movement (always positive)
-      var distance_tot = 0; // total movement (always positive)
-      var elapsed_time = 0; // time (milliseconds)
+      if (last_ll != null) {
+        var delta_v = delta[i].delta_v; // delta vertical movement (signed)
+        var distance_tot = delta[i].distance_tot; // total movement (always positive)
+        var elapsed_time = delta[i].elapsed_time; // elapsed time from the previous point (milliseconds)
 
-      if (last != null) {
-        // compute the distance from the previous point
-        distance_h = this._dist2d(last, ll);
-        delta_v = ll.meta.ele - last.meta.ele;
-        distance_tot = Math.sqrt(Math.pow(distance_h, 2) + Math.pow(Math.abs(delta_v), 2));
+        // compute the slope of a segment of 30 meters centered on the current point
+        var segment_limit = 30.0; // segment
 
-        // compute the time elapsed from the previous point
-        elapsed_time = Math.abs(ll.meta.time - last.meta.time);
-
-        // add the new measure
-        measure.splice(0, 0, { dh: distance_h, dv: delta_v });
-
-        // do not keep more than 10 measure
-        measure.splice(10, 1);
-
-        // compute the slope of the past 20 meters
+        // previous half segment
         var segment_dh = 0.0;
         var segment_dv = 0.0;
-        for (var j = 0; j < measure.length && segment_dh < 20.0; j++) {
-          segment_dh += measure[j].dh;
-          segment_dv += measure[j].dv;
+        var segment_sum = segment_limit / 2;
+        var prev_i = i; // previous position starting from current point
+        for (var j = 0; segment_sum > 0.0; j++) {
+            // early exit
+            if (prev_i <= 0 || j > 40)
+                break;
+            // add the previous point
+            segment_dh += delta[prev_i].distance_h;
+            segment_dv += delta[prev_i].delta_v;
+            segment_sum -= delta[prev_i].distance_tot;
+            --prev_i;
+        }
+
+        // following half segment
+        segment_sum = segment_limit / 2;
+        var next_i = i + 1; // next position
+        for (var j = 0; segment_sum > 0.0; j++) {
+            // early exit
+            if (next_i >= el.length || j > 40)
+                break;
+            // add the following point
+            segment_dh += delta[next_i].distance_h;
+            segment_dv += delta[next_i].delta_v;
+            segment_sum -= delta[next_i].distance_tot;
+            ++next_i;
         }
 
         // store the slope in the "alt" field
         try {
           ll.alt = Math.floor(segment_dv / segment_dh * 100);
         } catch (err) {
-          ll.alt = last.alt; // for division by 0
+          ll.alt = last_ll.alt; // for division by 0
         }
 
         // increase the distance
@@ -551,7 +598,7 @@ L.GPX = L.FeatureGroup.extend({
         }
       }
 
-      last = ll;
+      last_ll = ll;
       coords.push(ll);
     }
 
