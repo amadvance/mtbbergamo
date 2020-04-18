@@ -68,7 +68,7 @@ var TRACKS = [
 { zone: 'imagna', name: 'Costa Cavallina', kind: 'down', file: 'I_CostaCavallina_REC.gpx', link: '2019/09/costa-cavallina' },
 { zone: 'imagna', name: 'Corna Marcia, Coyote Scamburtit, Ca Bonor\u00E8', kind: 'down', file: 'I_CoyoteScamburtit_REC.gpx', link: '2019/09/coyote-scamburtit' },
 { zone: 'imagna', name: 'Zuc De Valmana, Canti, 579, Tre Faggi, Fuipiano', kind: 'down', file: 'I_ZucDeValmanaCanti579TreFaggiFuipiano_REC.gpx', link: '2020/02/canti' },
-{ zone: 'imagna', name: 'Otto di Pagafone', kind: 'down', file: 'I_PagafoneOtto_REC.gpx' },
+{ zone: 'imagna', name: 'Otto di Pagafone', kind: 'down', file: 'I_PagafoneOtto_REC.gpx', link: '2020/03/otto-pagafone' },
 /*
 removed for request of the owner
 { zone: 'imagna', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'I_PassoPalio571Basso579Fuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
