@@ -4,7 +4,7 @@ python convert.py /gopro /sharphigh /4k /panning forcella_alta_panorama.mp4
 #NUKED python convert.py /gopro /sharphigh torre.mp4
 #NUKED python convert.py /gopro /sharphigh allegrezza.mp4
 python convert.py /gopro /sharphigh 229.mp4
-python convert.py /gopro /sharphigh pistadh.mp4
+#NUKED python convert.py /gopro /sharphigh pistadh.mp4
 python convert.py /gopro /sharphigh collesogno.mp4
 python convert.py /gopro /sharphigh tesoro.mp4
 python convert.py /gopro /sharphigh 815.mp4
@@ -18,7 +18,7 @@ python convert.py trefaggi.mp4
 python convert.py /dark strada_per_blello_selino.mp4
 #NUKED python convert.py gussa_sud.mp4
 #NUKED python convert.py tornantini_passaggi.mp4
-python convert.py filoncino_passaggi.mp4
+#NUKED python convert.py filoncino_passaggi.mp4
 #NUKED python convert.py gussa_nord_parziale.mp4
 #NUKED python convert.py gussa_ovest.mp4
 #NUKED python convert.py allegrezza_sud.mp4
@@ -28,7 +28,7 @@ python convert.py /4k linzone_panorama.mp4
 python convert.py valcava_funivia_coldara.mp4
 python convert.py coldara_pedrino_opreno.mp4
 python convert.py opreno_burligo.mp4
-python convert.py filone_easy.mp4
+#NUKED python convert.py filone_easy.mp4
 python convert.py flying_dutchman.mp4
 #NUKED python convert.py /flip 604_busto_bad.mp4
 python convert.py /flip 817_neve_busto.mp4
@@ -46,7 +46,7 @@ python convert.py /flip illegale.mp4
 python convert.py /flip /dark birondina.mp4
 python convert.py /flip /dark 532.mp4
 python convert.py /4k santabarbara_panorama.mp4
-python convert.py /flip uccellaia.mp4
+#NUKED python convert.py /flip uccellaia.mp4
 python convert.py /flip kompressor.mp4
 python convert.py /flip zandona.mp4
 python convert.py zuccherone.mp4
@@ -273,4 +273,9 @@ python convert.py /sunny cagavaggio_calcinone.mp4
 python convert.py /sunny chignolo_pagafone_coegia.mp4
 python convert.py /sunny fuipiano_pagafone_chignolo.mp4
 python convert.py /sunny androli_chignolo_bis.mp4
+python convert.py /sunny filoncino_bis.mp4
+python convert.py /sunny filone_easy_bis.mp4
+python convert.py /sunny rosciano.mp4
+python convert.py /sunny clanezzo_roccoli_passata.mp4
+python convert.py /sunny sopracorna.mp4
 
