@@ -278,4 +278,8 @@ python convert.py /sunny filone_easy_bis.mp4
 python convert.py /sunny rosciano.mp4
 python convert.py /sunny clanezzo_roccoli_passata.mp4
 python convert.py /sunny sopracorna.mp4
+python convert.py /4k /sunny misma_nord_panorama.mp4
+python convert.py /4k /sunny misma_sud_panorama.mp4
+python convert.py /sunny misma_pradale.mp4
+python convert.py /sunny morosini_misma.mp4
 
