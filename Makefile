@@ -16,13 +16,13 @@ www/zip/%.zip : www/gpx/%.gpx
 zip: $(ZIP)
 
 up: all
-	cp -u www/all.js ftp/all.js
-	cp -u www/all.css ftp/all.css
-	cp -urv www/gpx ftp/
-	cp -urv www/zip ftp/
+	cp -u www/all.js ftp/www/all.js
+	cp -u www/all.css ftp/www/all.css
+	cp -urv www/gpx ftp/www/
+	cp -urv www/zip ftp/www/
 
 rm:
-	rm ftp/all.js
+	rm ftp/www/all.js
 
 ov: rm up
 
