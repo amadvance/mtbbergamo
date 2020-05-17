@@ -22,6 +22,8 @@ GENERATION=6
 # gen6
 # - a little less saturation
 
+# gen7
+# - 60fps (do not force 30fps on youtube)
 
 # Video Encoding
 # "-pix_fmt yuvj420p" is for compatibility with LG TV
@@ -156,10 +158,6 @@ if test:
 
 # File
 cmdline += ' -i ' + file
-
-# On YOUTUBE force 30 FPS
-if not play and youtube:
-	cmdline += ' -r 30'
 
 # Filter
 cmdline += ' -vf "'
