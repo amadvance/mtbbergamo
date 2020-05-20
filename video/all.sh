@@ -285,4 +285,5 @@ python convert.py /sunny morosini_misma.mp4
 python convert.py /4k /sunny tironi_panorama_resegone.mp4
 python convert.py /4k /sunny tironi_panorama_valle.mp4
 python convert.py /sunny costa_del_palio_bis.mp4
+python convert.py /sunny pista_dh_variante.mp4
 
