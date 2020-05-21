@@ -74,8 +74,7 @@ var TRACKS = [
 removed for request of the owner
 { zone: 'imagna', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'I_PassoPalio571Basso579Fuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 */
-{ zone: 'imagna', name: 'Passo del Palio, 571 Cresta, 579B, Fuipiano', kind: 'down', file: 'I_PassoPalio571Cresta579BFuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
-{ zone: 'hidden', name: '579B, Fuipiano, Variante per Neve', kind: 'down', file: 'I_FuipianoVarianteNeve_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
+{ zone: 'imagna', name: 'Costa del Palio, 579B, Fuipiano', kind: 'down', file: 'I_CostaDelPalio579B_EBIKE.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 { zone: 'imagna', name: 'Passo di Valbona, 579B, Prati, Fuipiano', kind: 'down', file: 'I_PassoValbona579BPrati_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
 { zone: 'imagna', name: 'Passo Porta, 575, Valsecca, Scuderia, Mazzoleni, Selino', kind: 'down', file: 'I_PassoPorta575ValseccaScuderiaMazzoleniSelino_REC.gpx', link: '2019/07/passo-porta-575-valsecca' },
 { zone: 'hidden', name: 'Valsecca, Fonti', kind: 'down', file: 'I_ValseccaFonti_REC.gpx' },
@@ -249,7 +248,8 @@ removed for request of the owner
 { zone: 'seriana', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'S_CiclabileValleSeriana_REC.gpx', link: '2019/03/salite-valle-seriana' },
 { zone: 'seriana', name: 'Ciclovia delle Rogge', kind: 'up', file: 'S_CicloviaDelleRogge_REC.gpx', link: '2019/03/salite-valle-seriana' },
 { zone: 'seriana, misma', name: 'Misma, Pradale', kind: 'down', file: 'S_MismaPradale_REC.gpx', link: '2020/05/misma' },
-{ zone: 'seriana, misma', name: 'Salita da Pradalunga, Morosini, Monte Misma', kind: 'up', file: 'S_SalitaMorosiniMisma_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+{ zone: 'seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'S_SalitaMismaRipetitori_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+{ zone: 'seriana, misma', name: 'Salita da Pradalunga, Morosini, 511, Monte Misma', kind: 'up', file: 'S_SalitaMisma511_REC.gpx', link: '2019/03/salite-valle-seriana' },
 { zone: 'valsassina', name: 'Arvaggio 2000, Piani di Artavaggio, Vasca, Moggio', kind: 'down', file: 'SA_CazzanigaArtavaggioVascaNeve_REC.gpx', link: '2020/01/artavaggio' },
 { zone: 'valsassina', name: 'Moggio, Piani di Artavaggio, Arvaggio 2000', kind: 'up', file: 'SA_MoggioArtavaggioCazzaniga_REC.gpx', link: '2020/01/artavaggio' },
 { zone: 'gandino', name: 'Pizzo Formico, Monte Farno, Gandino', kind: 'down', file: 'GA_PizzoFormicoMonteFarno_REC.gpx', link: '2020/02/pizzo-formico' },
