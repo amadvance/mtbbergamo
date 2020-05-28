@@ -37,6 +37,7 @@ var TRACKS = [
 { zone: 'maresana', name: 'Salita da Olera', kind: 'up', file: 'M_SalitaOlera_REC.gpx', link: '2018/11/salite-maresana' },
 { zone: 'sorisole', name: 'Bacino', kind: 'down', file: 'SR_Bacino_REC.gpx' },
 { zone: 'sorisole', name: 'Pista Downhill', kind: 'down', file: 'SR_PistaDH_REC.gpx', link: '2018/12/pista-downhill' },
+{ zone: 'sorisole', name: 'Pista Downhill Hard', kind: 'down', file: 'SR_PistaDHHard_REC.gpx', link: '2018/12/pista-downhill' },
 { zone: 'sorisole', name: 'Galus\u00F9', kind: 'down', file: 'SR_Galusu_REC.gpx', link: '2018/12/galusu' },
 { zone: 'sorisole', name: 'Giongo', kind: 'down', file: 'SR_Giongo_REC.gpx' },
 { zone: 'sorisole', name: 'Canto Alto, Prati Parini, Sedrina', kind: 'down', file: 'SR_CantoAltoPratiPariniSedrina_REC.gpx', link: '2019/06/canto-alto-prati-parini-sedrina' },

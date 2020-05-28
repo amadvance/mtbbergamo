@@ -185,7 +185,7 @@ python convert.py pramagnone_vanzarolo.mp4
 python convert.py /sunny pramagnone_pra_d_alet.mp4
 python convert.py /sunny costa_cavallina.mp4
 python convert.py /sunny coyote_scamburtit.mp4
-python convert.py /sunny chito_passo_canto_corna_marcia.mp4
+python convert.py /sunny chito_passo_canto_corna_marcia_salita.mp4
 python convert.py /sunny double_u.mp4
 python convert.py /sunny electric_line.mp4
 python convert.py /sunny infinity.mp4
@@ -276,7 +276,7 @@ python convert.py /sunny androli_chignolo_bis.mp4
 python convert.py /sunny filoncino_bis.mp4
 python convert.py /sunny filone_easy_bis.mp4
 python convert.py /sunny rosciano.mp4
-python convert.py /sunny clanezzo_roccoli_passata.mp4
+python convert.py /sunny clanezzo_roccoli_passata_salita.mp4
 python convert.py /sunny sopracorna.mp4
 python convert.py /4k /sunny misma_nord_panorama.mp4
 python convert.py /4k /sunny misma_sud_panorama.mp4
@@ -286,4 +286,11 @@ python convert.py /4k /sunny tironi_panorama_resegone.mp4
 python convert.py /4k /sunny tironi_panorama_valle.mp4
 python convert.py /sunny costa_del_palio_bis.mp4
 python convert.py /sunny pista_dh_variante.mp4
+python convert.py /sunny capizzone_passo_del_canto_roccoli_passata_salita.mp4
+python convert.py /sunny sopracorna_sud.mp4
+python convert.py /sunny ciclabile_del_chito.mp4
+python convert.py /sunny botta.mp4
+python convert.py /sunny gallo.mp4
+python convert.py /sunny forcella_valmana_explo.mp4
+python convert.py /sunny tre_faggi_est.mp4
 
