@@ -11,6 +11,44 @@ function _merge_fields(a, b) {
 	return _;
 }
 
+function get_track_vote(index)
+{
+	if (index == -1)
+		return "";
+
+	if (TRACKS[index].vote == 0)
+		return "";
+
+	if (TRACKS[index].vote == 5)
+		return "Eccellente";
+	if (TRACKS[index].vote == 4)
+		return "Ottimo";
+	if (TRACKS[index].vote == 3)
+		return "Buono";
+	if (TRACKS[index].vote == 2)
+		return "Discreto";
+	if (TRACKS[index].vote == 1)
+		return "Sufficiente";
+
+	return "";
+}
+
+function get_track_rate(index)
+{
+	if (index == -1)
+		return "";
+
+	if (TRACKS[index].rate == 0)
+		return "";
+
+	rate = "S" + TRACKS[index].rate.toString();
+
+	if (TRACKS[index].rate_max != 0)
+		rate = rate + " (massima S" + TRACKS[index].rate_max.toString() + ")";
+
+	return rate;
+}
+
 function create_map(id) {
 	var mymap = L.map(id, { fullscreenControl: true } );
 
@@ -67,7 +105,7 @@ function create_control(map) {
 	return control;
 }
 
-function create_gpx_info(map, control, gpx, url, name, link)
+function create_gpx_info(map, control, gpx, url, index, link)
 {
 	try {
 		// extend the bounds to add the new track
@@ -81,10 +119,24 @@ function create_gpx_info(map, control, gpx, url, name, link)
 
 	var desc;
 
+	name = TRACKS[index].name;
+
 	if (link)
 		desc = '<b><a href="' + WEB + link + '.html">' + name + "</a></b>";
 	else
 		desc = "<b>" + name + "</b>";
+
+	vote = get_track_vote(index);
+	if (vote != "") {
+		desc += "<br/>";
+		desc += "Giudizio: <b>" + vote + "</b>";
+	}
+
+	rate = get_track_rate(index);
+	if (rate != "") {
+		desc += "<br/>";
+		desc += "Difficolt\u00E0: <b>" + rate + "</b>";
+	}
 
 	desc += "<br/>";
 	desc += "&harr; " + (gpx.get_distance() / 1000).toFixed(1) + " km";
@@ -114,7 +166,7 @@ function create_gpx_info(map, control, gpx, url, name, link)
 }
 
 // create a track for a post with full size icons
-function create_track(map, control, url, name, track_options)
+function create_track(map, control, url, index, track_options)
 {
 	var _DEFAULT_TRACK_OPTS = {
 		color: 'blue',
@@ -141,12 +193,12 @@ function create_track(map, control, url, name, track_options)
 		}
 	}).on('loaded', function(e) {
 		var gpx = e.target;
-		create_gpx_info(map, control, gpx, url, name, null);
+		create_gpx_info(map, control, gpx, url, index, null);
 	}).addTo(map);
 }
 
 // create a track for a zone post, with half size icons and link to the specific post
-function create_zone_track(map, control, url, name, link, track_options)
+function create_zone_track(map, control, url, index, track_options)
 {
 	var _DEFAULT_TRACK_OPTS = {
 		color: 'blue',
@@ -177,7 +229,7 @@ function create_zone_track(map, control, url, name, link, track_options)
 		}
 	}).on('loaded', function(e) {
 		var gpx = e.target;
-		create_gpx_info(map, control, gpx, url, name, link);
+		create_gpx_info(map, control, gpx, url, index, TRACKS[index].link);
 	}).addTo(map);
 }
 
@@ -254,6 +306,9 @@ var COLORS_DOWN = [
 // black colors for up
 var COLORS_UP = "Gray";
 
+// track info
+var track_index = -1;
+
 // create a post down track
 function create_down(map, control, file)
 {
@@ -264,12 +319,25 @@ function create_down(map, control, file)
 		if (TRACKS[i].file == file) {
 			create_track(map, control,
 				ARCHIVE + 'gpx/' + TRACKS[i].file,
-				TRACKS[i].name,
+				i,
 				{
 					weight: 7,
 					slope: enable_slope
 				}
 			);
+
+			// store the first down track
+			if (track_index == -1) {
+				track_index = i;
+
+				// set elements in the page
+				element = document.getElementById("track_vote");
+				if (element != null)
+					element.textContent = get_track_vote(track_index);
+				element = document.getElementById("track_rate");
+				if (element != null)
+					element.textContent = get_track_rate(track_index);
+			}
 			break;
 		}
 	}
@@ -282,14 +350,37 @@ function create_up(map, control, file)
 		if (TRACKS[i].file == file) {
 			create_zone_track(map, control,
 				ARCHIVE + 'gpx/' + TRACKS[i].file,
-				TRACKS[i].name,
-				TRACKS[i].link,
+				i,
 				{
 					color: COLORS_UP,
 					weight: 3
 				}
 			);
 			break;
+		}
+	}
+}
+
+// create a post including all the up and down tracks matching a specific locality
+function create_post(map, control, zone)
+{
+	// first down
+	for (i = 0; i < TRACKS.length; i++) {
+		if (TRACKS[i].zone.search(zone) < 0)
+			continue;
+
+		if (TRACKS[i].kind == "down") {
+			create_down(map, control, TRACKS[i].file);
+		}
+	}
+
+	// then up
+	for (i = 0; i < TRACKS.length; i++) {
+		if (TRACKS[i].zone.search(zone) < 0)
+			continue;
+
+		if (TRACKS[i].kind == "up") {
+			create_up(map, control, TRACKS[i].file);
 		}
 	}
 }
@@ -333,8 +424,7 @@ function create_zone(map, control, zone) {
 
 		create_zone_track(map, control,
 			ARCHIVE + 'gpx/' + TRACKS[i].file,
-			TRACKS[i].name,
-			TRACKS[i].link,
+			i,
 			{
 				color: color,
 				weight: weight
@@ -354,8 +444,7 @@ function create_climb(map, control, zone) {
 
 		create_zone_track(map, control,
 			ARCHIVE + 'gpx/' + TRACKS[i].file,
-			TRACKS[i].name,
-			TRACKS[i].link,
+			i,
 			{
 				slope: true,
 				weight: 7
