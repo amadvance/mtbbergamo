@@ -41,7 +41,7 @@ ENCODE_AUDIO="-codec:a copy"
 VF_STAB="deshake=rx=64:ry=64"
 
 # Normalize with adaptive transformation
-VF_NORMALIZE="normalize=blackpt=black:whitept=white:smoothing=6000:strength=1.0"
+VF_NORMALIZE="normalize=blackpt=black:whitept=white:smoothing=600:strength=1.0"
 
 # Normalize with fixed transformation for a typical gopro
 VF_FIXED="curves=r='0.1/0 1/1':g='0.1/0 1/1':b='0.1/0 1/1'"
