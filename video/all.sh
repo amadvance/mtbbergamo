@@ -293,4 +293,6 @@ python convert.py /sunny botta.mp4
 python convert.py /sunny gallo.mp4
 python convert.py /sunny forcella_valmana_explo.mp4
 python convert.py /sunny tre_faggi_est.mp4
+python convert.py tre_faggi_corna_rifatto.mp4
+
 
