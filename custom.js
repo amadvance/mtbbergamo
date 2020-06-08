@@ -41,12 +41,34 @@ function get_track_rate(index)
 	if (TRACKS[index].rate == 0)
 		return "";
 
-	rate = "S" + TRACKS[index].rate.toString();
+	return "S" + TRACKS[index].rate.toString();
+}
+
+function get_track_rate_max(index)
+{
+	if (index == -1)
+		return "";
+
+	if (TRACKS[index].rate == 0)
+		return "";
+
+	rate = "";
 
 	if (TRACKS[index].rate_max != 0)
-		rate = rate + " (massima S" + TRACKS[index].rate_max.toString() + ")";
+		rate = " (massima S" + TRACKS[index].rate_max.toString() + ")";
 
 	return rate;
+}
+
+function get_track_cycle(index)
+{
+	if (index == -1)
+		return "";
+
+	if (TRACKS[index].cycle == 0)
+		return "";
+
+	return TRACKS[index].cycle.toString() + "%";
 }
 
 function create_map(id) {
@@ -136,6 +158,11 @@ function create_gpx_info(map, control, gpx, url, index, link)
 	if (rate != "") {
 		desc += "<br/>";
 		desc += "Difficolt\u00E0: <b>" + rate + "</b>";
+	}
+
+	rate = get_track_rate_max(index);
+	if (rate != "") {
+		desc += rate;
 	}
 
 	desc += "<br/>";
@@ -337,6 +364,12 @@ function create_down(map, control, file)
 				element = document.getElementById("track_rate");
 				if (element != null)
 					element.textContent = get_track_rate(track_index);
+				element = document.getElementById("track_rate_max");
+				if (element != null)
+					element.textContent = get_track_rate_max(track_index);
+				element = document.getElementById("track_cycle");
+				if (element != null)
+					element.textContent = get_track_cycle(track_index);
 			}
 			break;
 		}
