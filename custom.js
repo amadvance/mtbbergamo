@@ -262,72 +262,135 @@ function create_zone_track(map, control, url, index, track_options)
 
 // misc colors for down
 // from https://en.wikipedia.org/wiki/Web_colors
-var COLORS_DOWN = [
-// 1st set
-"HotPink", // pink
-"Crimson", // red
-"Orange", // orange
-"Gold", // yellow
-"Sienna", // brown
-"ForestGreen", // green
-"Teal", // cyan
-"DodgerBlue", // blue
-"Purple", // mangenta
-// 2nd set
-"DeepPink", // pink
-"DarkRed", // red
-"Coral", // orange
-"DarkKhaki", // yellow
-"DarkGoldenrod", // brown
-"MediumSeaGreen", // green
-"LightSeaGreen", // cyan
-"RoyalBlue", // blue
-"MediumOrchid", // magenta
-// 3td set
-"PaleVioletRed", // pink
-"Red", // red
-"OrangeRed", // orange
-"Peru", // yellow (brown in true)
-"Brown", // brown
-"LimeGreen", // green
-"Turquoise", // cyan
-"MediumBlue", // blue
-"DarkViolet", // magenta
-// 4th set
-"LightPink", // pink
-"LightCoral", // red
-"Coral", // orange
-"Chocolate", // yellow (brown in true)
-"SandyBrown", // brown
-"LightGreen", // green
-"Aquamarine", // cyan
-"DeepSkyBlue", // blue
-"Indigo", // magenta
-// black colors to ensure to show something
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black",
-"Black"
+
+var COLORS_5 = [
+"Red",
+"Firebrick",
+"Crimson",
+"IndianRed",
+"LightCoral",
+"DarkSalmon",
+"Salmon",
+"DarkRed", // dark
+"LightSalmon", // too light
+"Red",
+"Red",
+"Red",
+"Red",
+"Red",
+"Red",
+"Red",
+"Red",
+"Red"
+];
+
+var COLORS_4 = [
+"DarkGreen",
+"Green",
+"ForestGreen",
+"SeaGreen",
+"MediumSeaGreen",
+//"MediumAquamarine",  like blue
+//"DarkSeaGreen", like openstreetmap background
+//"PaleGreen", too ligth
+//"LightGreen", too ligth
+//"MediumSpringGreen", too strong
+//"SpringGreen", too strong
+//"GreenYellow", too strong
+//"Chartreuse", too strong
+//"LawnGreen", too strong
+//"Lime", too strong
+"LimeGreen",
+"YellowGreen",
+"OliveDrab",
+"Olive",
+"DarkOliveGreen",
+"Green",
+"Green",
+"Green",
+"Green",
+"Green",
+"Green",
+"Green",
+"Green",
+"Green"
+];
+
+var COLORS_3 = [
+"MidnightBlue",
+"DarkBlue",
+"Blue",
+"RoyalBlue",
+"SteelBlue",
+"CornflowerBlue",
+"DodgerBlue",
+"DeepSkyBlue",
+"MediumBlue", // dark
+"Navy", // dark
+//"LightSkyBlue", too light
+//"SkyBlue", too light
+//"LightBlue", too light
+//"PowderBlue", too light
+//"LightSteelBlue", too light
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+"Blue",
+];
+
+var COLORS_2 = [
+"Indigo",
+"Purple",
+"DarkOrchid",
+"DarkViolet",
+"BlueViolet",
+"MediumPurple",
+"MediumOrchid",
+"Magenta",
+"Orchid",
+"Violet",
+"Plum",
+"Purple",
+"Purple",
+"Purple",
+"Purple",
+"Purple",
+"Purple",
+"Purple",
+"Purple",
+"Purple",
+"Purple"
+];
+
+var COLORS_1 = [
+"DarkSlateGray",
+"SlateGray",
+"DimGray",
+"Gray",
+"DarkGray",
+"Silver",
+"LightGray",
+"Gray",
+"Gray",
+"Gray",
+"Gray",
+"Gray",
+"Gray",
+"Gray",
+"Gray",
+"Gray",
+"Gray",
+"Gray"
 ];
 
 // black colors for up
@@ -436,7 +499,7 @@ function create_dog(map, control, pos_x, pos_y, msg)
 
 // create a zone post including all the up and down tracks
 function create_zone(map, control, zone) {
-	var color_d = 0;
+	var color_d = [0, 0, 0, 0, 0, 0];
 
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].zone.search(zone) < 0)
@@ -450,9 +513,17 @@ function create_zone(map, control, zone) {
 			color = COLORS_UP;
 			weight = 3;
 		} else {
-			color = COLORS_DOWN[color_d]
 			weight = 9;
-			++color_d;
+			if (TRACKS[i].vote == 5)
+				color = COLORS_5[color_d[5]++]
+			else if (TRACKS[i].vote == 4)
+				color = COLORS_4[color_d[4]++]
+			else if (TRACKS[i].vote == 3)
+				color = COLORS_3[color_d[3]++]
+			else if (TRACKS[i].vote == 2)
+				color = COLORS_2[color_d[2]++]
+			else
+				color = COLORS_1[color_d[1]++]
 		}
 
 		create_zone_track(map, control,
