@@ -40,8 +40,8 @@ var TRACKS = [
 { vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'sorisole,pisgiu_dh', name: 'Pista Downhill Hard', kind: 'down', file: 'SR_PistaDHHard_REC.gpx', link: '2018/12/pista-downhill' },
 { vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Galus\u00F9', kind: 'down', file: 'SR_Galusu_REC.gpx', link: '2018/12/galusu' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'sorisole', name: 'Giongo', kind: 'down', file: 'SR_Giongo_REC.gpx' },
-{ vote: 4, rate: 1, rate_max: 3, cycle: 100, zone: 'sorisole', name: 'Canto Alto, Prati Parini, Sedrina', kind: 'down', file: 'SR_CantoAltoPratiPariniSedrina_REC.gpx', link: '2019/06/canto-alto-prati-parini-sedrina' },
-{ vote: 5, rate: 3, rate_max: 4, cycle: 100, zone: 'sorisole', name: 'Canto Alto, Forcella di Cambli, Pisgiu, Sorisole', kind: 'down', file: 'SR_CantoAlto220113Sorisole_REC.gpx', link: '2019/06/canto-alto-forcella-di-cambli-pisgiu' },
+{ vote: 4, rate: 1, rate_max: 3, cycle: 100, comm: "10% dal Canto Basso al Canto Alto con spallaggio", zone: 'sorisole', name: 'Canto Alto, 507, Prati Parini, 113, Sedrina', kind: 'down', file: 'SR_CantoAltoPratiPariniSedrina_REC.gpx', link: '2019/06/canto-alto-prati-parini-sedrina' },
+{ vote: 5, rate: 3, rate_max: 4, cycle: 100, comm: "10% dal Canto Basso al Canto Alto con spallaggio", zone: 'sorisole', name: 'Canto Alto, 220, Forcella di Cambli, 113, Pisgiu, Sorisole', kind: 'down', file: 'SR_CantoAlto220113Sorisole_REC.gpx', link: '2019/06/canto-alto-forcella-di-cambli-pisgiu' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Sorisole, Pistino Scuola MTB', kind: 'down', file: 'SR_SorisolePistinoScuolaMTB_REC.gpx', link: '2019/06/pistino-scuola-mtb-sorisole' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Sorisole, Ponteranica Alta', kind: 'down', file: 'SR_SorisolePonteranicaAlta_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita dal Canto Basso al Canto Alto', kind: 'up', file: 'SR_SalitaCantoBassoCantoAlto_REC.gpx', link: '2019/06/salite-sorisole' },
@@ -70,7 +70,7 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Roccoli Passata, Sopracorna', kind: 'down', file: 'I_Sopracorna_REC.gpx', link: '2020/05/sopracorna' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Roccoli Passata, Sopracorna Sud', kind: 'down', file: 'I_SopracornaSud_REC.gpx', link: '2020/05/sopracorna' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Corna Marcia, Coyote Scamburtit, Ca Bonor\u00E8', kind: 'down', file: 'I_CoyoteScamburtit_REC.gpx', link: '2019/09/coyote-scamburtit' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 97, zone: 'imagna', name: 'Zuc De Valmana, Canti, 579, Tre Faggi, Fuipiano', kind: 'down', file: 'I_ZucDeValmanaCanti579TreFaggiFuipiano_REC.gpx', link: '2020/02/canti' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, comm: "97% nella salita ai Canti", zone: 'imagna', name: 'Zuc De Valmana, Canti, 579, Tre Faggi, Fuipiano', kind: 'down', file: 'I_ZucDeValmanaCanti579TreFaggiFuipiano_REC.gpx', link: '2020/02/canti' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Otto di Pagafone', kind: 'down', file: 'I_PagafoneOtto_REC.gpx', link: '2020/03/otto-pagafone' },
 /*
 removed for request of the owner
@@ -82,7 +82,7 @@ removed for request of the owner
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Valsecca, Fonti', kind: 'down', file: 'I_ValseccaFonti_REC.gpx' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Valsecca, Scuderia, Mazzoleni, Selino', kind: 'down', file: 'I_ValseccaScuderiaMazzoleniSelino_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna', name: 'Colletto di Brumano, Rifugio Resegone, Brumano', kind: 'down', file: 'I_CollettoBrumanoRifResegoneBrumano_REC.gpx', link: '2019/05/colletto-di-brumano-rifugio-resegone' },
-{ vote: 5, rate: 3, rate_max: 4, cycle: 100, zone: 'imagna', name: 'Resegone, Bocchetta del Palio, Grande Faggio', kind: 'down', file: 'I_ResegoneGrandeFaggio_REC.gpx', link: '2019/06/resegone' },
+{ vote: 5, rate: 3, rate_max: 4, cycle: 100, comm: "70% la salita dal Passo del Palio alla cima", zone: 'imagna', name: 'Resegone, Bocchetta del Palio, Grande Faggio', kind: 'down', file: 'I_ResegoneGrandeFaggio_REC.gpx', link: '2019/06/resegone' },
 { vote: 3, rate: 2, rate_max: 4, cycle: 100, zone: 'imagna', name: 'Tre Faggi, 580, Disdiroli, Selino', kind: 'down', file: 'I_TreFaggi580DisdiroliSelino_REC.gpx', link: '2019/06/tre-faggi-580-disdiroli-selino' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Tre Faggi, 571, Selino Alto, Selino', kind: 'down', file: 'I_TreFaggi571SelinoAlto_REC.gpx', link: '2020/05/tre-faggi-571-selino-alto' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Tre Faggi, 581, Locatello, Selino', kind: 'down', file: 'I_TreFaggi581Locatello_REC.gpx', link: '2020/05/tre-faggi-581-locatello' },
@@ -225,7 +225,7 @@ removed for request of the owner
 { vote: 2, rate: 3, rate_max: 0, cycle: 95, zone: 'seriana', name: 'Salmezza, Baita GAP, Lonno', kind: 'down', file: 'S_SalmezzaBaitaGAPLonno_REC.gpx', link: '2019/05/salmezza-gap-lonno' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Forcella di Nese, 531, Nese', kind: 'down', file: 'S_ForcellaNese531Nese_REC.gpx', link: '2019/05/forcella-di-nese-531-nese' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 99, zone: 'seriana', name: 'Selvino, 535, Lonno', kind: 'down', file: 'S_535Lonno_REC.gpx', link: '2019/05/monte-valtrusa' },
-{ vote: 2, rate: 2, rate_max: 0, cycle: 95, zone: 'seriana', name: 'Selvino, 535, Monte Valtrusa, Lonno', kind: 'down', file: 'S_535Valtrusa_REC.gpx', link: '2019/05/monte-valtrusa' },
+{ vote: 2, rate: 2, rate_max: 0, cycle: 100, comm: "95% la salita al Valtrusa", zone: 'seriana', name: 'Selvino, 535, Monte Valtrusa, Lonno', kind: 'down', file: 'S_535Valtrusa_REC.gpx', link: '2019/05/monte-valtrusa' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana', name: 'Selvino, 550 / Mulattiera, Albino', kind: 'down', file: 'S_550MulattieraAlbino_REC.gpx', link: '2019/03/550-mulattiera' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana', name: 'Selvino, 536 / Trevasco, Nembro', kind: 'down', file: 'S_Trevasco_REC.gpx', link: '2019/04/trevasco' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Selvino, Monte Purito, Monte Cereto, Nembro', kind: 'down', file: 'S_PuritoCereto_REC.gpx', link: '2019/04/purito-cereto' },
@@ -255,8 +255,8 @@ removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana, misma', name: 'Salita da Pradalunga, Morosini, 511, Monte Misma', kind: 'up', file: 'S_SalitaMisma511_REC.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'valsassina', name: 'Arvaggio 2000, Piani di Artavaggio, Vasca, Moggio', kind: 'down', file: 'SA_CazzanigaArtavaggioVascaNeve_REC.gpx', link: '2020/01/artavaggio' },
 { vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'valsassina', name: 'Moggio, Piani di Artavaggio, Artavaggio 2000', kind: 'up', file: 'SA_MoggioArtavaggioCazzaniga_REC.gpx', link: '2020/01/artavaggio' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'gandino', name: 'Pizzo Formico, Monte Farno, Gandino', kind: 'down', file: 'GA_PizzoFormicoMonteFarno_REC.gpx', link: '2020/02/pizzo-formico' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, comm: "35% la salita dalla Baita Cornei al Formico", zone: 'gandino', name: 'Pizzo Formico, Monte Farno, Gandino', kind: 'down', file: 'GA_PizzoFormicoMonteFarno_REC.gpx', link: '2020/02/pizzo-formico' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'GA_SalitaGandinoRifugioParafulmine_EBIKE.gpx', link: '2020/02/pizzo-formico' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 35, zone: 'gandino', name: 'Rifugio Parafulmine, Pizzo Formico', kind: 'up', file: 'GA_SalitaRifugioParafulminePizzoFormico_EBIKE.gpx', link: '2020/02/pizzo-formico' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Rifugio Parafulmine, Pizzo Formico', kind: 'up', file: 'GA_SalitaRifugioParafulminePizzoFormico_EBIKE.gpx', link: '2020/02/pizzo-formico' },
 ];
 
