@@ -28,7 +28,9 @@ function get_track_vote(index)
 	if (TRACKS[index].vote == 2)
 		return "Discreto";
 	if (TRACKS[index].vote == 1)
-		return "Sufficiente";
+		return "Scarso";
+	if (TRACKS[index].vote == 0)
+		return "Sconsigliato";
 
 	return "";
 }
@@ -396,8 +398,42 @@ var COLORS_1 = [
 // black colors for up
 var COLORS_UP = "Gray";
 
+function setup_down(index)
+{
+	var element = document.getElementById("info_header");
+	if (element == null)
+		return;
+
+	var html = "";
+
+	html += "<b>Giudizio: " + get_track_vote(index) + "</b><br/>";
+	html += "<b>Difficolt\u00E0: " + get_track_rate(index) + "</b>" + get_track_rate_max(index) + "<br/>";
+	html += "<b>Ciclabilit\u00E0: " + get_track_cycle(index) + "</b><br/>";
+
+	element.outerHTML = html;
+}
+
 // track info
-var track_index = -1;
+var multi_set = [];
+
+function setup_multi()
+{
+	var element = document.getElementById("info_header");
+	if (element == null)
+		return;
+
+	var html = "";
+
+	for (var i = 0; i < multi_set.length; ++i) {
+		var index = multi_set[i];
+		html += "<b>" + TRACKS[index].name + "</b><br/>";
+		html += "&nbsp;&nbsp;&nbsp;&nbsp;" + get_track_vote(index) + ", ";
+		html += get_track_rate(index) + get_track_rate_max(index);
+		html += "</br>";
+	}
+
+	element.outerHTML = html;
+}
 
 // create a post down track
 function create_down(map, control, file)
@@ -416,24 +452,30 @@ function create_down(map, control, file)
 				}
 			);
 
-			// store the first down track
-			if (track_index == -1) {
-				track_index = i;
+			setup_down(i);
+			break;
+		}
+	}
+}
 
-				// set elements in the page
-				element = document.getElementById("track_vote");
-				if (element != null)
-					element.textContent = get_track_vote(track_index);
-				element = document.getElementById("track_rate");
-				if (element != null)
-					element.textContent = get_track_rate(track_index);
-				element = document.getElementById("track_rate_max");
-				if (element != null)
-					element.textContent = get_track_rate_max(track_index);
-				element = document.getElementById("track_cycle");
-				if (element != null)
-					element.textContent = get_track_cycle(track_index);
-			}
+// create a multi down track
+function create_multi(map, control, file)
+{
+	// the HotLine support doesn't work with multiple maps
+	var enable_slope = window.location.href.search("/search/") < 0;
+
+	for (i = 0; i < TRACKS.length; i++) {
+		if (TRACKS[i].file == file) {
+			create_track(map, control,
+				ARCHIVE + 'gpx/' + TRACKS[i].file,
+				i,
+				{
+					weight: 7,
+					slope: enable_slope
+				}
+			);
+
+			multi_set.push(i);
 			break;
 		}
 	}
@@ -466,9 +508,11 @@ function create_post(map, control, zone)
 			continue;
 
 		if (TRACKS[i].kind == "down") {
-			create_down(map, control, TRACKS[i].file);
+			create_multi(map, control, TRACKS[i].file);
 		}
 	}
+
+	setup_multi();
 
 	// then up
 	for (i = 0; i < TRACKS.length; i++) {
