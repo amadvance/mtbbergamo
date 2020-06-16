@@ -425,15 +425,22 @@ function setup_multi()
 	if (element == null)
 		return;
 
-	var html = "";
+	var html = "<p>";
 
 	for (var i = 0; i < multi_set.length; ++i) {
 		var index = multi_set[i];
 		html += "<b>" + TRACKS[index].name + "</b><br/>";
 		html += "&nbsp;&nbsp;&nbsp;&nbsp;" + get_track_vote(index) + ", ";
 		html += get_track_rate(index) + get_track_rate_max(index);
+
+		var url = ARCHIVE + 'gpx/' + TRACKS[index].file;
+		var zip = url.replace(/gpx/g,"zip");
+
+		html += ", <a href=\"" + zip + "\" download>download GPX</a>";
 		html += "</br>";
 	}
+
+	html += "</p>";
 
 	element.outerHTML = html;
 }
