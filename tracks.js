@@ -73,7 +73,10 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, comm: "97% nella salita ai Canti", zone: 'imagna,canti', name: 'Zuc De Valmana, Canti, 579A, Tre Faggi, Fuipiano', kind: 'down', file: 'I_ZucDeValmanaCanti579ATreFaggiFuipiano_REC.gpx', link: '2020/02/canti' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'canti', name: 'Canti Sud, Tre Faggi', kind: 'down', file: 'I_CantiSudTreFaggi_REC.gpx', link: '2020/02/canti' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 95, zone: 'canti', name: 'Canti, 571, Tre Faggi', kind: 'down', file: 'I_Canti571TreFaggi_REC.gpx', link: '2020/02/canti' },
-{ vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Otto di Pagafone', kind: 'down', file: 'I_PagafoneOtto_REC.gpx', link: '2020/03/otto-pagafone' },
+/* next two replaced with the third */
+{ vote: 3, rate: 2, rate_max: 3, cycle: 97, zone: 'hidden', name: 'Galzaniga, Orso, Chignolo, Ex Centrale Enel, Coegia, Selino', kind: 'down', file: 'I_GalzanigaOrsoChignoloEnelCoegiaSelino_REC.gpx', link: '2019/07/orso' },
+{ vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Otto di Pagafone', kind: 'down', file: 'I_PagafoneOtto_REC.gpx', link: '2020/03/otto-pagafone' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 99, zone: 'imagna', name: 'Passo del Palio, Orso, Pagafone, Coegia', kind: 'down', file: 'I_PassoPalioOrsoPagafoneCoegia_REC.gpx', link: '2020/06/orso' },
 /*
 removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna,costa_del_palio', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'I_PassoPalio571Basso579Fuipiano_REC.gpx', link: '2019/04/costa-del-palio-fuipiano' },
@@ -92,7 +95,6 @@ removed for request of the owner
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Passo di Valbona, Sbarra di Brumano', kind: 'down', file: 'I_PassoValbonaSbarra_REC.gpx', link: '2019/05/zuc-de-valmana' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Passo del Palio, Sbarra di Brumano', kind: 'down', file: 'I_PassoPalioSbarra_REC.gpx', link: '2019/05/zuc-de-valmana' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Zuc de Valmana, Cresta, Passo del Palio', kind: 'down', file: 'I_ZucDeValmanaCrestaPassoPalio_REC.gpx', link: '2019/05/zuc-de-valmana' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 97, zone: 'imagna', name: 'Galzaniga, Orso, Chignolo, Ex Centrale Enel, Coegia, Selino', kind: 'down', file: 'I_GalzanigaOrsoChignoloEnelCoegiaSelino_REC.gpx', link: '2019/07/orso' },
 /*
 removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Salita da Fuipiano allo Zuc De Valmana', kind: 'up', file: 'I_SalitaZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
