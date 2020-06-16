@@ -296,4 +296,8 @@ python convert.py /sunny tre_faggi_est.mp4
 python convert.py tre_faggi_corna_rifatto.mp4
 python convert.py /sunny palio_orso_pagafone.mp4
 python convert.py /sunny 577.mp4
-
+python convert.py canti_tre_faggi_sud.mp4
+python convert.py tre_faggi_fuipiano_bis.mp4
+python convert.py /sunny 815_busto.mp4
+python convert.py /sunny 817_busto.mp4
+python convert.py /sunny carenno_forcella_alta.mp4

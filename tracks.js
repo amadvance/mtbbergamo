@@ -108,7 +108,7 @@ removed for request of the owner
 /* used for completing the MTB tracks */
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'costa_del_palio', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'I_SalitaSbarraPalio_REC.gpx', link: '2018/12/salite-imagna' },
 /* used for the Zuc De Valmana climbing without splitting */
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'zuc_de_valmana', name: 'Salita dalla Sbarra di Brumano allo Zuc De Valmana', kind: 'up', file: 'I_SalitaSbarraPalioZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'zuc_de_valmana,canti', name: 'Salita dalla Sbarra di Brumano allo Zuc De Valmana', kind: 'up', file: 'I_SalitaSbarraPalioZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita dal Passo del Palio, a Forbesette, e al Colletto di Brumano', kind: 'up', file: 'I_SalitaPalioForbesetteCollettoBrumano_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita dal Passo del Palio al Resegone', kind: 'up', file: 'I_SalitaPalioResegone_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Selino a Fuipiano e ai Tre Faggi', kind: 'up', file: 'I_SalitaSelinoFuipianoTreFaggi_REC.gpx', link: '2018/12/salite-imagna' },
