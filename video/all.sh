@@ -301,3 +301,6 @@ python convert.py tre_faggi_fuipiano_bis.mp4
 python convert.py /sunny 815_busto.mp4
 python convert.py /sunny 817_busto.mp4
 python convert.py /sunny carenno_forcella_alta.mp4
+python convert.py /sunny forcella_alta_tesoro.mp4
+python convert.py /sunny tesoro_colle_di_sogno_busto.mp4
+python convert.py /sunny 802.mp4
