@@ -180,12 +180,15 @@ function create_gpx_info(map, control, gpx, url, index, link)
 		desc += ", &darr; "+ Math.floor(gpx.get_elevation_loss()) + "m";
 	}
 	if (gpx.get_moving_time() > 1000 * 60) {
-		desc += ", "+ Math.floor(gpx.get_moving_time() / 1000 / 60) + "min";
+		desc += ", "+ Math.floor(gpx.get_moving_time() / (1000*60)) + "min";
 		if (url.indexOf("Salita") != -1) {
 			if (url.indexOf("_EBIKE") != -1)
 				desc += " (E-Bike)";
 			else
 				desc += " (muscolare)";
+			desc += ", VAM ";
+			desc += Math.floor(gpx.get_elevation_gain() / gpx.get_moving_time() * (1000*60*60));
+			desc += " m/h";
 		}
 	}
 
