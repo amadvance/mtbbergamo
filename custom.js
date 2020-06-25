@@ -216,10 +216,18 @@ function create_track(map, control, url, index, track_options)
 	{
 		async: true,
 		marker_options: {
+			// half icon
+			startIconUrl: ARCHIVE + 'img/pin-icon-start-50.png',
+			endIconUrl: ARCHIVE + 'img/pin-icon-end-50.png',
+			shadowUrl: ARCHIVE + 'img/pin-shadow-50.png',
+			iconSize: [16, 25],
+			shadowSize: [25, 25],
+			iconAnchor: [8, 22],
+			shadowAnchor: [8, 23]
 			// full icons
-			startIconUrl: ARCHIVE + 'img/pin-icon-start.png',
-			endIconUrl: ARCHIVE + 'img/pin-icon-end.png',
-			shadowUrl: ARCHIVE + 'img/pin-shadow.png'
+			//startIconUrl: ARCHIVE + 'img/pin-icon-start.png',
+			//endIconUrl: ARCHIVE + 'img/pin-icon-end.png',
+			//shadowUrl: ARCHIVE + 'img/pin-shadow.png'
 		},
 		polyline_options: {
 			color: track_options.color,
