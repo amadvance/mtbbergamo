@@ -71,7 +71,7 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Sopracorna Sud', kind: 'down', file: 'I_SopracornaSud_REC.gpx', link: '2020/05/sopracorna' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Corna Marcia, Coyote Scamburtit, Ca Bonor\u00E8', kind: 'down', file: 'I_CoyoteScamburtit_REC.gpx', link: '2019/09/coyote-scamburtit' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, comm: "97% nella salita ai Canti", zone: 'imagna,canti', name: 'Zuc De Valmana, Canti, 579A, Tre Faggi, Fuipiano', kind: 'down', file: 'I_ZucDeValmanaCanti579ATreFaggiFuipiano_REC.gpx', link: '2020/02/canti' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'canti', name: 'Canti Sud, Tre Faggi', kind: 'down', file: 'I_CantiSudTreFaggi_REC.gpx', link: '2020/02/canti' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'canti', name: 'Canti, Freeride, Tre Faggi', kind: 'down', file: 'I_CantiFreerideTreFaggi_REC.gpx', link: '2020/02/canti' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 95, zone: 'canti', name: 'Canti, 571, Tre Faggi', kind: 'down', file: 'I_Canti571TreFaggi_REC.gpx', link: '2020/02/canti' },
 /* next two replaced with the third */
 { vote: 3, rate: 2, rate_max: 3, cycle: 97, zone: 'hidden', name: 'Galzaniga, Orso, Chignolo, Ex Centrale Enel, Coegia, Selino', kind: 'down', file: 'I_GalzanigaOrsoChignoloEnelCoegiaSelino_REC.gpx', link: '2019/07/orso' },
