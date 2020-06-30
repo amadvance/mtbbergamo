@@ -149,7 +149,7 @@ removed for request of the owner
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Forcella Alta, 815, Carenno', kind: 'down', file: 'N_ForcellaAlta815Carenno_REC.gpx', link: '2019/01/forcella-alta-815-carenno' },
 { vote: 4, rate: 4, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Forcella Alta, 812, Carenno', kind: 'down', file: 'N_ForcellaAlta812Carenno_REC.gpx', link: '2019/01/forcella-alta-812-carenno' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Forcella Alta, 811, Carenno', kind: 'down', file: 'N_ForcellaAlta811Carenno_REC.gpx', link: '2020/01/forcella-alta-811-carenno' },
-{ vote: 2, rate: 3, rate_max: 4, cycle: 100, zone: 'martino, valcava', name: 'Forcella Alta, 802, Carenno', kind: 'down', file: 'N_ForcellaAlta802Carenno_REC.gpx' },
+{ vote: 2, rate: 3, rate_max: 4, cycle: 100, zone: 'martino, valcava', name: 'Forcella Alta, 802, Carenno', kind: 'down', file: 'N_ForcellaAlta802Carenno_REC.gpx', link: '2020/06/forcella-alta-802-carenno' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, valcava, tesoro', name: 'Monte Tesoro, Direttissima, Colle Di Sogno, Corna Martinella, Cristai Super Flow, Torre de Busi', kind: 'down', file: 'N_TesoroDirSognoMartinellaCristaiSuperFlow_REC.gpx', link: '2018/12/monte-tesoro-direttissima-colle-di' },
 { vote: 1, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, sogno', name: 'Colle Di Sogno, 819, Torre de Busi', kind: 'down', file: 'N_ColleDiSogno819_REC.gpx', link: '2019/12/colle-di-sogno' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, sogno', name: 'Colle Di Sogno, 823, Torre de Busi', kind: 'down', file: 'N_ColleDiSogno823_REC.gpx', link: '2019/12/colle-di-sogno' },
