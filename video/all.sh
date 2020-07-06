@@ -308,4 +308,10 @@ python convert.py /sunny linzone_roncola_estate.mp4
 python convert.py /sunny roncola_571_almenno.mp4
 python convert.py /sunny cava_linzone.mp4
 python convert.py /sunny tre_faggi_brunone.mp4
+python convert.py /4k /sunny castello_dell_innominato_panorama.mp4
+python convert.py /4k /sunny croce_vicerola_panorama.mp4
+python convert.py /4k /sunny madonna_del_corno_panorama.mp4
+python convert.py /sunny saina_somasca.mp4
+python convert.py /sunny convento_pertus_erve.mp4
+python convert.py /sunny caversano_convento_pertus.mp4
 
