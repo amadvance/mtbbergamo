@@ -314,4 +314,6 @@ python convert.py /4k /sunny madonna_del_corno_panorama.mp4
 python convert.py /sunny saina_somasca.mp4
 python convert.py /sunny convento_pertus_erve.mp4
 python convert.py /sunny caversano_convento_pertus.mp4
+python convert.py /sunny forcella_alta_574.mp4
+
 
