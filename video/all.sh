@@ -315,5 +315,11 @@ python convert.py /sunny saina_somasca.mp4
 python convert.py /sunny convento_pertus_erve.mp4
 python convert.py /sunny caversano_convento_pertus.mp4
 python convert.py /sunny forcella_alta_574.mp4
-
+python convert.py /sunny valcava_572.mp4
+python convert.py /sunny s_antonio_casarielli.mp4
+python convert.py /sunny s_antonio_taverna.mp4
+python convert.py /sunny berbenno_ripe.mp4
+python convert.py /sunny brembilla_s_antonio.mp4
+python convert.py /sunny s_antonio_truca.mp4
+python convert.py /sunny valcava_roncola_alta_ponte_giurino.mp4
 

@@ -272,5 +272,12 @@ removed for request of the owner
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, comm: "35% la salita dalla Baita Cornei al Formico", zone: 'gandino', name: 'Pizzo Formico, Monte Farno, Gandino', kind: 'down', file: 'GA_PizzoFormicoMonteFarno_REC.gpx', link: '2020/02/pizzo-formico' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'GA_SalitaGandinoRifugioParafulmine_EBIKE.gpx', link: '2020/02/pizzo-formico' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Rifugio Parafulmine, Pizzo Formico', kind: 'up', file: 'GA_SalitaRifugioParafulminePizzoFormico_EBIKE.gpx', link: '2020/02/pizzo-formico' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Forcella di Berbenno, Ripe, Brembilla', kind: 'down', file: 'B_BerbennoRipe_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'B_CatremerioTruca_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'S. Antonio Abbandonato, Casarielli, Zogno', kind: 'down', file: 'B_SAntonioCasarielli_REC.gpx' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'S. Antonio Abbandonato, Strada Taverna, Ponti', kind: 'down', file: 'B_SAntonioTaverna_REC.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx' },
 ];
 
