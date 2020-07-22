@@ -125,6 +125,7 @@ removed for request of the owner
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, 573, Selino', kind: 'down', file: 'I_ForcellaAlta573Selino_REC.gpx', link: '2019/06/forcella-alta-573-selino' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, 574, Valsecca, Selino', kind: 'down', file: 'I_ForcellaAlta574Selino_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, valcava', name: 'Valcava, 572, Selino', kind: 'down', file: 'I_Valcava572Selino_REC.gpx' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Valcava, Roncola Alta, Ponte Giurino', kind: 'down', file: 'I_ValcavaPonteGiurino_REC.gpx' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'hidden, roncola', name: 'Roncola, 571, Almenno', kind: 'down', file: 'I_Roncola571Almenno_REC.gpx', link: '2019/04/roncola' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava, roncola', name: 'Roncola, Barlino', kind: 'down', file: 'I_RoncolaBarlino_REC.gpx', link: '2019/04/roncola' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava, roncola', name: 'Roncola, CaLiger, Almenno', kind: 'down', file: 'I_RoncolaCaLigerAlmenno_REC.gpx', link: '2019/04/roncola' },
@@ -133,7 +134,10 @@ removed for request of the owner
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Baita, Camutaglio, Longa, Golf', kind: 'down', file: 'N_BaitaCamutaglioLongaGolf_REC.gpx', link: '2019/04/roncola' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Prabacioc, San Rocco', kind: 'down', file: 'N_PrabaciocSanRocco_REC.gpx', link: '2019/04/roncola' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Trasferimento da Roncola alla Baita', kind: 'up', file: 'N_RoncolaBaita_REC.gpx', link: '2018/12/salite-san-martino' },
+/*
+removed as almost duplicated by others
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna, valcava, roncola', name: 'Roncola, Selino', kind: 'down', file: 'I_RoncolaSelino_REC.gpx', link: '2019/04/roncola' },
+*/
 { vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'imagna, valcava', name: 'Linzone Roncola Alta, Amagno', kind: 'down', file: 'I_LinzoneRoncolaAltaAmagno_REC.gpx' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava', name: 'Linzone, 571, Roncola, 571, Almenno', kind: 'down', file: 'I_Linzone571Roncola571Almenno_REC.gpx', link: '2018/11/linzone-roncola' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava', name: 'Salita da Valcava al Linzone', kind: 'up', file: 'N_ValcavaLinzone_REC.gpx', link: '2018/12/salite-imagna' },
@@ -280,4 +284,5 @@ removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx' },
 ];
+
 
