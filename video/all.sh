@@ -322,4 +322,8 @@ python convert.py /sunny berbenno_ripe.mp4
 python convert.py /sunny brembilla_s_antonio.mp4
 python convert.py /sunny s_antonio_truca.mp4
 python convert.py /sunny valcava_roncola_alta_ponte_giurino.mp4
+python convert.py /sunny catremerio_crosnello.mp4
+python convert.py /sunny crosnello_sussia_vettarola_pellegrino.mp4
+python convert.py /sunny taverna_catremerio.mp4
+python convert.py /sunny vettarola_panorama.mp4
 
