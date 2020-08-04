@@ -25,11 +25,14 @@ GENERATION=6
 # gen7
 # - 60fps (do not force 30fps on youtube)
 
+# gen8
+# - different quality settings
+
 # Video Encoding
 # "-pix_fmt yuvj420p" is for compatibility with LG TV
 # "-preset veryfast" favor speed over size
 # For LG TV also disable TrueMotion from Settings/Picture/Options
-ENCODE_264="-preset veryfast -codec:v libx264 -crf 22 -pix_fmt yuvj420p"
+ENCODE_264="-preset veryfast -codec:v libx264 -crf 22 -maxrate 90M -bufsize 30M -pix_fmt yuvj420p"
 ENCODE_265="-codec:v libx265 -crf 28 -pix_fmt yuvj420p"
 
 # Audio encoding
@@ -99,7 +102,6 @@ sunny = False
 test = False
 play = False
 flip = False
-youtube = True
 
 for arg in sys.argv[1:]:
 	if arg == '/gopro':
@@ -126,8 +128,6 @@ for arg in sys.argv[1:]:
 		test = True
 	elif arg == '/play':
 		play = True
-	elif arg == '/best':
-		youtube = False
 	elif arg[0] == '/':
 		print "Unknown option " + arg
 		sys.exit(1)
@@ -140,9 +140,8 @@ if len(file) == 0:
 name, extension = os.path.splitext(file)
 
 # Tag for the filename
-tag = ''
-if youtube:
-	tag += 'YOUTUBE'
+tag = 'YOUTUBE'
+
 if test:
 	if len(tag) != 0:
 		tag += '-'
@@ -194,17 +193,6 @@ if flip:
 cmdline += '"'
 
 if not play:
-	# On YOUTUBE increase the resolution to get more bandwidth allocation and for VP9 conversion
-	# Scaler (automatically added at the end of the filters list)
-	# "-s hd1080"
-	# "-s 2704x1520" - Scale 2K7
-	# "-s 3840x2160" - Scale 4K
-	if youtube:
-		if resolution == '4k':
-			cmdline += ' -s 3840x2160'
-		else:
-			cmdline += ' -s 2704x1520'
-
 	cmdline += ' ' + ENCODE_264
 
 	cmdline += ' ' + ENCODE_AUDIO
