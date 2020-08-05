@@ -67,8 +67,9 @@ function get_track_cycle(index)
 	if (index == -1)
 		return "";
 
-	if ('comm' in TRACKS[index])
+	if ('comm' in TRACKS[index]) {
 		return TRACKS[index].comm;
+	}
 
 	if (TRACKS[index].cycle == 0)
 		return "";
@@ -162,12 +163,13 @@ function create_gpx_info(map, control, gpx, url, index, link)
 	rate = get_track_rate(index);
 	if (rate != "") {
 		desc += "<br/>";
-		desc += "Difficolt\u00E0: <b>" + rate + "</b>";
+		desc += "Difficolt\u00E0: <b>" + rate + "</b>" + get_track_rate_max(index);
 	}
 
-	rate = get_track_rate_max(index);
-	if (rate != "") {
-		desc += rate;
+	cycle = get_track_cycle(index);
+	if (cycle != "" && cycle != "100%") {
+		desc += "<br/>";
+		desc += "Ciclabilit\u00E0: <b>" + cycle + "</b>";
 	}
 
 	desc += "<br/>";
