@@ -117,7 +117,10 @@ removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "70% da Forbesette", zone: 'imagna', name: 'Salita dal Passo del Palio, a Forbesette, e al Colletto di Brumano', kind: 'up', file: 'I_SalitaPalioForbesetteCollettoBrumano_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "40% e ultimi 400m di dislivello a spalla", zone: 'imagna', name: 'Salita dal Passo del Palio al Resegone', kind: 'up', file: 'I_SalitaPalioResegone_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Selino a Fuipiano e ai Tre Faggi', kind: 'up', file: 'I_SalitaSelinoFuipianoTreFaggi_REC.gpx', link: '2018/12/salite-imagna' },
+/*
+removed as not significative
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Almenno a Roncola e Valcava', kind: 'up', file: 'I_SalitaAlmennoRoncolaValcava_REC.gpx', link: '2018/12/salite-imagna' },
+*/
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, roncola', name: 'Salita da Almenno a Roncola', kind: 'up', file: 'I_SalitaRoncola_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Almenno a Costa Imagna e Valcava', kind: 'up', file: 'I_SalitaAlmennoCostaValcava_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito alla Corna Marcia', kind: 'up', file: 'I_SalitaChitoBottaCornaMarcia_EBIKE.gpx', link: '2018/12/salite-imagna' },
@@ -126,6 +129,7 @@ removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "60% e ultimi 100m di dislivello a spalla", zone: 'imagna, ubione', name: 'Salita da Clanezzo all\'Ubione', kind: 'up', file: 'I_SalitaClanezzoUbione_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, 573, Selino', kind: 'down', file: 'I_ForcellaAlta573Selino_REC.gpx', link: '2019/06/forcella-alta-573-selino' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, 574, Valsecca, Selino', kind: 'down', file: 'I_ForcellaAlta574Selino_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, Rizzolo, Selino', kind: 'down', file: 'I_ForcellaAltaRizzolo_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, valcava', name: 'Valcava, 572, Selino', kind: 'down', file: 'I_Valcava572Selino_REC.gpx', link: '2020/07/valcava-cornabusa-selino'  },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Valcava, Roncola Alta, Ponte Giurino', kind: 'down', file: 'I_ValcavaPonteGiurino_REC.gpx' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'hidden, roncola', name: 'Roncola, 571, Almenno', kind: 'down', file: 'I_Roncola571Almenno_REC.gpx', link: '2019/04/roncola' },
@@ -286,5 +290,4 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx' },
 ];
-
 
