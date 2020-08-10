@@ -290,7 +290,16 @@ var COLORS_5 = [
 "DarkSalmon",
 "Salmon",
 "DarkRed", // dark
-"LightSalmon", // too light
+//"LightSalmon", // too light
+// repeat
+"Red",
+"Firebrick",
+"Crimson",
+"IndianRed",
+"LightCoral",
+"DarkSalmon",
+"Salmon",
+"DarkRed", // dark
 "Red",
 "Red",
 "Red",
@@ -323,6 +332,17 @@ var COLORS_4 = [
 "OliveDrab",
 "Olive",
 "DarkOliveGreen",
+// repeat
+"DarkGreen",
+"Green",
+"ForestGreen",
+"SeaGreen",
+"MediumSeaGreen",
+"LimeGreen",
+"YellowGreen",
+"OliveDrab",
+"Olive",
+"DarkOliveGreen",
 "Green",
 "Green",
 "Green",
@@ -350,6 +370,17 @@ var COLORS_3 = [
 //"LightBlue", too light
 //"PowderBlue", too light
 //"LightSteelBlue", too light
+// repeat
+"MidnightBlue",
+"DarkBlue",
+"Blue",
+"RoyalBlue",
+"SteelBlue",
+"CornflowerBlue",
+"DodgerBlue",
+"DeepSkyBlue",
+"MediumBlue", // dark
+"Navy", // dark
 "Blue",
 "Blue",
 "Blue",
@@ -367,6 +398,18 @@ var COLORS_3 = [
 ];
 
 var COLORS_2 = [
+"Indigo",
+"Purple",
+"DarkOrchid",
+"DarkViolet",
+"BlueViolet",
+"MediumPurple",
+"MediumOrchid",
+"Magenta",
+"Orchid",
+"Violet",
+"Plum",
+// repeat
 "Indigo",
 "Purple",
 "DarkOrchid",
