@@ -32,7 +32,7 @@ GENERATION=6
 # "-pix_fmt yuvj420p" is for compatibility with LG TV
 # "-preset veryfast" favor speed over size
 # For LG TV also disable TrueMotion from Settings/Picture/Options
-ENCODE_264="-preset veryfast -codec:v libx264 -crf 22 -maxrate 90M -bufsize 30M -pix_fmt yuvj420p"
+ENCODE_264="-preset veryfast -codec:v libx264 -crf 23 -maxrate 90M -bufsize 30M -pix_fmt yuvj420p"
 ENCODE_265="-codec:v libx265 -crf 28 -pix_fmt yuvj420p"
 
 # Audio encoding
