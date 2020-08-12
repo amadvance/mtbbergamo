@@ -290,5 +290,8 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx' },
+{ vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Terza dell\'Avaro', kind: 'down', file: 'B_AvaroTerza_REC.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo ai Piani dell\'Avaro', kind: 'up', file: 'B_SalitaAvaro_EBIKE.gpx' },
 ];
+
 

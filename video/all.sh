@@ -330,4 +330,5 @@ python convert.py /4k /sunny 910_alpini_bis.mp4
 python convert.py /4k /sunny ubione_571.mp4
 python convert.py /4k /sunny clanezzo_ubione.mp4
 python convert.py /4k /sunny forcella_alta_rizzolo.mp4
+python convert.py /4k /sunny avaro_terza.mp4
 
