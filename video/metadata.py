@@ -1,3 +1,5 @@
+# Export a openshot project without encoding and with ancillary information
+
 import json
 import sys
 import os
