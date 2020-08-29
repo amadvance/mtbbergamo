@@ -218,7 +218,7 @@ function create_track(map, control, url, index, track_options)
 	{
 		async: true,
 		marker_options: {
-			// half icon
+			// half icons
 			startIconUrl: ARCHIVE + 'img/pin-icon-start-50.png',
 			endIconUrl: ARCHIVE + 'img/pin-icon-end-50.png',
 			shadowUrl: ARCHIVE + 'img/pin-shadow-50.png',
@@ -226,10 +226,6 @@ function create_track(map, control, url, index, track_options)
 			shadowSize: [25, 25],
 			iconAnchor: [8, 22],
 			shadowAnchor: [8, 23]
-			// full icons
-			//startIconUrl: ARCHIVE + 'img/pin-icon-start.png',
-			//endIconUrl: ARCHIVE + 'img/pin-icon-end.png',
-			//shadowUrl: ARCHIVE + 'img/pin-shadow.png'
 		},
 		polyline_options: {
 			color: track_options.color,
@@ -242,7 +238,7 @@ function create_track(map, control, url, index, track_options)
 	}).addTo(map);
 }
 
-// create a track for a zone post, with half size icons and link to the specific post
+// create a track for a zone post, with link to the specific post
 function create_zone_track(map, control, url, index, track_options)
 {
 	var _DEFAULT_TRACK_OPTS = {
@@ -541,6 +537,7 @@ function create_multi(map, control, file)
 				}
 			);
 
+			// insert in the header list
 			multi_set.push(i);
 			break;
 		}
@@ -566,6 +563,7 @@ function create_up(map, control, file)
 }
 
 // create a post including all the up and down tracks matching a specific locality
+// use slope as color
 function create_post(map, control, zone)
 {
 	// first down
@@ -607,7 +605,38 @@ function create_dog(map, control, pos_x, pos_y, msg)
 	L.marker([pos_x, pos_y], {icon: dogIcon}).addTo(map).bindPopup(msg);
 }
 
+function setup_zone()
+{
+	var element = document.getElementById("info_header");
+	if (element == null)
+		return;
+
+	var html = "<p><table>";
+
+	html += '<tr><th style="text-align:left;">Discesa</th><th style="text-align:left;">Giudizio</th><th style="text-align:left;">Difficolt\u00E0</th></tr>';
+
+	for (var i = 0; i < multi_set.length; ++i) {
+		var index = multi_set[i];
+
+		html += '<tr><td>';
+		if (TRACKS[index].link)
+			html += '<b><a href="' + WEB + TRACKS[index].link + '.html">' + TRACKS[index].name + "</a></b>&nbsp;&nbsp;";
+		else
+			html += TRACKS[index].name + "&nbsp;&nbsp;";
+		html += '</td><td style="white-space:nowrap">';
+		html += get_track_vote(index);
+		html += '</td><td style="white-space:nowrap">';
+		html += get_track_rate(index) + get_track_rate_max(index);
+		html += "</td></tr>";
+	}
+
+	html += "</table></p>";
+
+	element.outerHTML = html;
+}
+
 // create a zone post including all the up and down tracks
+// use rank as color
 function create_zone(map, control, zone) {
 	var color_d = [0, 0, 0, 0, 0, 0];
 
@@ -634,6 +663,9 @@ function create_zone(map, control, zone) {
 				color = COLORS_2[color_d[2]++]
 			else
 				color = COLORS_1[color_d[1]++]
+
+			// insert in the header list
+			multi_set.push(i);
 		}
 
 		create_zone_track(map, control,
@@ -645,6 +677,8 @@ function create_zone(map, control, zone) {
 			}
 		);
 	}
+
+	setup_zone();
 }
 
 // create a climp post including all the up tracks
