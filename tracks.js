@@ -150,7 +150,7 @@ removed as not significative
 removed as almost duplicated by others
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna, valcava, roncola', name: 'Roncola, Selino', kind: 'down', file: 'I_RoncolaSelino_REC.gpx', link: '2019/04/roncola' },
 */
-{ vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'imagna, valcava', name: 'Linzone Roncola Alta, Amagno', kind: 'down', file: 'I_LinzoneRoncolaAltaAmagno_REC.gpx' },
+{ vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'imagna, valcava', name: 'Linzone, Roncola Alta, Amagno', kind: 'down', file: 'I_LinzoneRoncolaAltaAmagno_REC.gpx' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava', name: 'Linzone, 571, Roncola, 571, Almenno', kind: 'down', file: 'I_Linzone571Roncola571Almenno_REC.gpx', link: '2018/11/linzone-roncola' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava', name: 'Salita da Valcava al Linzone', kind: 'up', file: 'N_ValcavaLinzone_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Pedrino DH, Faggeta, Perlupario', kind: 'down', file: 'N_PedrinoDHFaggetaPerlupario_REC.gpx', link: '2019/04/colle-pedrino'  },
