@@ -295,11 +295,15 @@ removed as almost duplicated by others
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Crosnello, Sussia, Vettarola', kind: 'down', file: 'B_CrosnelloSussiaVettarola_REC.gpx', link: '2020/08/crosnello-sussia-vettarola-san' },
 { vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Terza dell\'Avaro', kind: 'down', file: 'B_AvaroTerza_REC.gpx', link: '2020/08/terza-avaro' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Monte Torcola, Piazza Brembana', kind: 'down', file: 'B_TorcolaPiazzaBrembana_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Passo San Marco, 113, via del Ferro', kind: 'down', file: 'B_SanMarco113Ferro_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da S. Antonio Abbandonato a Catremerio e Crosnello', kind: 'up', file: 'B_SalitaSAntonioCrosnello_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo ai Piani dell\'Avaro', kind: 'up', file: 'B_SalitaAvaro_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Piazza Brembana al Monte Torcola', kind: 'up', file: 'B_SalitaPiazzaBrembanaTorcola_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Passo San Marco', kind: 'up', file: 'B_SalitaSanMarco_EBIKE.gpx' },
 ];
+
+
 
