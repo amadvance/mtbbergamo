@@ -66,6 +66,7 @@ var TRACKS = [
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Frontale, Foppe, Enel', kind: 'down', file: 'I_FrontaleFoppeEnel_REC.gpx', link: '2019/06/rota-imagna' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'vanzarolo', name: 'Chignolo, Frontale, Foppe, Enel', kind: 'down', file: 'I_ChignoloFrontaleFoppeEnel_REC.gpx', link: '2019/07/vanzarolo' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'vanzarolo', name: 'Chignolo, Enel', kind: 'down', file: 'I_ChignoloEnel_REC.gpx', link: '2019/07/vanzarolo' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Passo del Canto, Capizzone', kind: 'down', file: 'I_PassoCantoCapizzone_REC.gpx' },
 { vote: 3, rate: 2, rate_max: 4, cycle: 100, comm: "97%, tratto iniziale con passaggi a piedi", zone: 'imagna, ubione', name: 'Ubione, 571, Belved\u00EC, Clanezzo', kind: 'down', file: 'I_Ubione571_REC.gpx', link: '2020/08/ubione-571' },
 { vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, ubione', name: 'Roccoli Passata, Costa Cavallina', kind: 'down', file: 'I_CostaCavallina_REC.gpx', link: '2019/09/costa-cavallina' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Sopracorna', kind: 'down', file: 'I_Sopracorna_REC.gpx', link: '2020/05/sopracorna' },
@@ -130,6 +131,9 @@ removed as not significative
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, roncola', name: 'Salita da Almenno a Roncola', kind: 'up', file: 'I_SalitaRoncola_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Almenno a Costa Imagna e Valcava', kind: 'up', file: 'I_SalitaAlmennoCostaValcava_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito alla Corna Marcia', kind: 'up', file: 'I_SalitaChitoBottaCornaMarcia_EBIKE.gpx', link: '2018/12/salite-imagna' },
+/*
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito al Passo del Canto diretta', kind: 'up', file: 'I_SalitaChitoCantoDiretta_EBIKE.gpx', link: '2018/12/salite-imagna' },
+*/
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito ai Roccoli Passata', kind: 'up', file: 'I_SalitaChitoCeresolaCantoPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, ubione, sopracorna', name: 'Salita da Clanezzo ai Roccoli Passata', kind: 'up', file: 'I_SalitaClanezzoRoccoliPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "60% e ultimi 100m di dislivello a spalla", zone: 'imagna, ubione', name: 'Salita da Clanezzo all\'Ubione', kind: 'up', file: 'I_SalitaClanezzoUbione_REC.gpx', link: '2018/12/salite-imagna' },
@@ -295,6 +299,7 @@ removed as almost duplicated by others
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Crosnello, Sussia, Vettarola', kind: 'down', file: 'B_CrosnelloSussiaVettarola_REC.gpx', link: '2020/08/crosnello-sussia-vettarola-san' },
 { vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Terza dell\'Avaro', kind: 'down', file: 'B_AvaroTerza_REC.gpx', link: '2020/08/terza-avaro' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Monte Torcola, Piazza Brembana', kind: 'down', file: 'B_TorcolaPiazzaBrembana_REC.gpx', link: '2020/09/monte-torcola-piazza-brembana' },
+{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Monte Torcola, Bolli Arancio, Piazzolo', kind: 'down', file: 'B_TorcolaBolliArancioPiazzolo_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Passo San Marco, 113, via del Ferro', kind: 'down', file: 'B_SanMarco113Ferro_REC.gpx', link: '2020/09/passo-san-marco-113-via-del-ferro' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
@@ -303,7 +308,6 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo ai Piani dell\'Avaro', kind: 'up', file: 'B_SalitaAvaro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Piazza Brembana al Monte Torcola', kind: 'up', file: 'B_SalitaPiazzaBrembanaTorcola_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Passo San Marco', kind: 'up', file: 'B_SalitaSanMarco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Monte Torcola', kind: 'up', file: 'B_SalitaOlmoPiazzatorreTorcola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
-
-
 
