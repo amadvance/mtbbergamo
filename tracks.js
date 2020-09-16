@@ -100,7 +100,10 @@ removed for request of the owner
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Passo del Palio, Sbarra di Brumano', kind: 'down', file: 'I_PassoPalioSbarra_REC.gpx', link: '2019/05/zuc-de-valmana' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Zuc de Valmana, Cresta, Passo del Palio', kind: 'down', file: 'I_ZucDeValmanaCrestaPassoPalio_REC.gpx', link: '2019/05/zuc-de-valmana' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 70, zone: 'imagna', name: 'Anello del Resegone', kind: 'down', file: 'I_AnelloResegone_REC.gpx', link: '2020/08/anello-resegone' },
+/*
+removed for not so relevant
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Passo del Palio, Rifugio Resegone', kind: 'down', file: 'I_PassoPalioBocchettaRifResegone_EBIKE.gpx' },
+*/
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna', name: 'Passo del Palio, Forbesette, Morterone', kind: 'down', file: 'I_PassoPalioForbesetteMorterone_REC.gpx' },
 { vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'imagna', name: 'Passo del Palio, Freeride, Morterone', kind: 'down', file: 'I_PassoPalioFreerideMorterone_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Morterone al Passo del Palio', kind: 'up', file: 'I_SalitaMorteronePassoPalio_EBIKE.gpx', link: '2018/12/salite-imagna' },
