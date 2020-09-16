@@ -66,7 +66,7 @@ var TRACKS = [
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Frontale, Foppe, Enel', kind: 'down', file: 'I_FrontaleFoppeEnel_REC.gpx', link: '2019/06/rota-imagna' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'vanzarolo', name: 'Chignolo, Frontale, Foppe, Enel', kind: 'down', file: 'I_ChignoloFrontaleFoppeEnel_REC.gpx', link: '2019/07/vanzarolo' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'vanzarolo', name: 'Chignolo, Enel', kind: 'down', file: 'I_ChignoloEnel_REC.gpx', link: '2019/07/vanzarolo' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Passo del Canto, Capizzone', kind: 'down', file: 'I_PassoCantoCapizzone_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Passo del Canto, Capizzone', kind: 'down', file: 'I_PassoCantoCapizzone_REC.gpx', link: '2020/09/passo-canto-capizzone' },
 { vote: 3, rate: 2, rate_max: 4, cycle: 100, comm: "97%, tratto iniziale con passaggi a piedi", zone: 'imagna, ubione', name: 'Ubione, 571, Belved\u00EC, Clanezzo', kind: 'down', file: 'I_Ubione571_REC.gpx', link: '2020/08/ubione-571' },
 { vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, ubione', name: 'Roccoli Passata, Costa Cavallina', kind: 'down', file: 'I_CostaCavallina_REC.gpx', link: '2019/09/costa-cavallina' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Sopracorna', kind: 'down', file: 'I_Sopracorna_REC.gpx', link: '2020/05/sopracorna' },
@@ -134,9 +134,7 @@ removed as not significative
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, roncola', name: 'Salita da Almenno a Roncola', kind: 'up', file: 'I_SalitaRoncola_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Almenno a Costa Imagna e Valcava', kind: 'up', file: 'I_SalitaAlmennoCostaValcava_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito alla Corna Marcia', kind: 'up', file: 'I_SalitaChitoBottaCornaMarcia_EBIKE.gpx', link: '2018/12/salite-imagna' },
-/*
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito al Passo del Canto diretta', kind: 'up', file: 'I_SalitaChitoCantoDiretta_EBIKE.gpx', link: '2018/12/salite-imagna' },
-*/
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita diretta dalla ciclabile del Chito al Passo del Canto', kind: 'up', file: 'I_SalitaChitoCantoDiretta_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito ai Roccoli Passata', kind: 'up', file: 'I_SalitaChitoCeresolaCantoPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, ubione, sopracorna', name: 'Salita da Clanezzo ai Roccoli Passata', kind: 'up', file: 'I_SalitaClanezzoRoccoliPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "60% e ultimi 100m di dislivello a spalla", zone: 'imagna, ubione', name: 'Salita da Clanezzo all\'Ubione', kind: 'up', file: 'I_SalitaClanezzoUbione_REC.gpx', link: '2018/12/salite-imagna' },
@@ -144,7 +142,7 @@ removed as not significative
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, 574, Valsecca, Selino', kind: 'down', file: 'I_ForcellaAlta574Selino_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, Rizzolo, Selino', kind: 'down', file: 'I_ForcellaAltaRizzolo_REC.gpx', link: '2020/08/forcella-alta-rizzolo-selino' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, valcava', name: 'Valcava, 572, Selino', kind: 'down', file: 'I_Valcava572Selino_REC.gpx', link: '2020/07/valcava-cornabusa-selino'  },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Valcava, Roncola Alta, Ponte Giurino', kind: 'down', file: 'I_ValcavaPonteGiurino_REC.gpx' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Valcava, Roncola Alta, Ponte Giurino', kind: 'down', file: 'I_ValcavaPonteGiurino_REC.gpx', link: '2020/08/valcava-roncola-alta-ponte-giurino' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'hidden, roncola', name: 'Roncola, 571, Almenno', kind: 'down', file: 'I_Roncola571Almenno_REC.gpx', link: '2019/04/roncola' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava, roncola', name: 'Roncola, Barlino', kind: 'down', file: 'I_RoncolaBarlino_REC.gpx', link: '2019/04/roncola' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava, roncola', name: 'Roncola, CaLiger, Almenno', kind: 'down', file: 'I_RoncolaCaLigerAlmenno_REC.gpx', link: '2019/04/roncola' },
