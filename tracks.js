@@ -131,6 +131,10 @@ removed for request of the owner
 removed as not significative
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Almenno a Roncola e Valcava', kind: 'up', file: 'I_SalitaAlmennoRoncolaValcava_REC.gpx', link: '2018/12/salite-imagna' },
 */
+/*
+to be used
+I_SalitaAmagnoValcavaLinzone_EBIKE.gpx
+*/
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, roncola', name: 'Salita da Almenno a Roncola', kind: 'up', file: 'I_SalitaRoncola_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Almenno a Costa Imagna e Valcava', kind: 'up', file: 'I_SalitaAlmennoCostaValcava_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito alla Corna Marcia', kind: 'up', file: 'I_SalitaChitoBottaCornaMarcia_EBIKE.gpx', link: '2018/12/salite-imagna' },
@@ -155,7 +159,7 @@ removed as not significative
 removed as almost duplicated by others
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna, valcava, roncola', name: 'Roncola, Selino', kind: 'down', file: 'I_RoncolaSelino_REC.gpx', link: '2019/04/roncola' },
 */
-{ vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'imagna, valcava', name: 'Linzone, Roncola Alta, Amagno', kind: 'down', file: 'I_LinzoneRoncolaAltaAmagno_REC.gpx' },
+{ vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Linzone, Roncola Alta, Amagno', kind: 'down', file: 'I_LinzoneRoncolaAltaAmagno_REC.gpx' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava', name: 'Linzone, 571, Roncola, 571, Almenno', kind: 'down', file: 'I_Linzone571Roncola571Almenno_REC.gpx', link: '2018/11/linzone-roncola' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava', name: 'Salita da Valcava al Linzone', kind: 'up', file: 'N_ValcavaLinzone_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Pedrino DH, Faggeta, Perlupario', kind: 'down', file: 'N_PedrinoDHFaggetaPerlupario_REC.gpx', link: '2019/04/colle-pedrino'  },
@@ -302,6 +306,7 @@ removed as almost duplicated by others
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Monte Torcola, Piazza Brembana', kind: 'down', file: 'B_TorcolaPiazzaBrembana_REC.gpx', link: '2020/09/monte-torcola-piazza-brembana' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Monte Torcola, Bolli Arancio, Piazzolo', kind: 'down', file: 'B_TorcolaBolliArancioPiazzolo_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Passo San Marco, 113, via del Ferro', kind: 'down', file: 'B_SanMarco113Ferro_REC.gpx', link: '2020/09/passo-san-marco-113-via-del-ferro' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Baita Campo, 127, Olmo al Brembo', kind: 'down', file: 'B_BaitaCampoOlmo_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
@@ -310,5 +315,7 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Piazza Brembana al Monte Torcola', kind: 'up', file: 'B_SalitaPiazzaBrembanaTorcola_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Passo San Marco', kind: 'up', file: 'B_SalitaSanMarco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Monte Torcola', kind: 'up', file: 'B_SalitaOlmoPiazzatorreTorcola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita alla Baita Campo', kind: 'up', file: 'B_SalitaBaitaCampo_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
+
 
