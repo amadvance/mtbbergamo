@@ -304,7 +304,7 @@ removed as almost duplicated by others
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Crosnello, Sussia, Vettarola', kind: 'down', file: 'B_CrosnelloSussiaVettarola_REC.gpx', link: '2020/08/crosnello-sussia-vettarola-san' },
 { vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Terza dell\'Avaro', kind: 'down', file: 'B_AvaroTerza_REC.gpx', link: '2020/08/terza-avaro' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Monte Torcola, Piazza Brembana', kind: 'down', file: 'B_TorcolaPiazzaBrembana_REC.gpx', link: '2020/09/monte-torcola-piazza-brembana' },
-{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Monte Torcola, Bolli Arancio, Piazzolo', kind: 'down', file: 'B_TorcolaBolliArancioPiazzolo_REC.gpx' },
+{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Rifugio Torcole, Bolli Arancio, Piazzolo', kind: 'down', file: 'B_TorcolaBolliArancioPiazzolo_REC.gpx', link: '2020/09/rifugio-torcole-bolli-arancio-piazzolo' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Passo San Marco, 113, via del Ferro', kind: 'down', file: 'B_SanMarco113Ferro_REC.gpx', link: '2020/09/passo-san-marco-113-via-del-ferro' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Baita Campo, 127, Olmo al Brembo', kind: 'down', file: 'B_BaitaCampoOlmo_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
