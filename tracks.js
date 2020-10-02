@@ -50,7 +50,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole,pisgiu_dh', name: 'Salita alla Forcella di Rua', kind: 'up', file: 'SR_SalitaForcellaDiRua_REC.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita al Galus\u00F9', kind: 'up', file: 'SR_SalitaGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita al Giongo', kind: 'up', file: 'SR_SalitaGiongo_REC.gpx', link: '2019/06/salite-sorisole' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Trasferimento da Premerlino al Pisgi\u00F9', kind: 'up', file: 'SR_PremerlinoPisgiu_REC.gpx', link: '2019/06/salite-sorisole' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Trasferimento da Catene al Pisgi\u00F9', kind: 'up', file: 'SR_CatenePisgiu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole,pisgiu_dh', name: 'Trasferimento alla Pista Downhill', kind: 'up', file: 'SR_203_REC.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita dalla Forcella del Sorriso al Canto Basso', kind: 'up', file: 'SR_SalitaForcellaDelSorrisoCantoBasso_REC.gpx', link: '2019/06/salite-sorisole' },
 { vote: 2, rate: 1, rate_max: 2, cycle: 100, zone: 'locatello', name: 'Bustoseta, Selino', kind: 'down', file: 'I_BustosetaSelino_REC.gpx', link: '2019/07/locatello' },
