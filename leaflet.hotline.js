@@ -456,11 +456,13 @@
 	});
 
 	L.hotline = function (latlngs, options) {
+		return new L.Hotline(latlngs, options);
+	};
+
+	L.hotline_force_renderer = function (force_renderer, latlngs, options) {
 		return new L.Hotline(latlngs,
-		// always pass new options to ensure that a new renderer() is created
-		// at every call, allowing multiple maps in the same pages
 		{
-			renderer: renderer(),
+			renderer: force_renderer,
 			min: -100,
 			max: 100,
 			palette: {
@@ -482,6 +484,9 @@
 		);
 	};
 
+	L.hotline_create_new_renderer = function () {
+		return renderer();
+	}
 
 	return L;
 }));

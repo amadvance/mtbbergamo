@@ -63,8 +63,7 @@ var _DEFAULT_MARKER_OPTS = {
 };
 var _DEFAULT_POLYLINE_OPTS = {
   color: 'blue',
-  weight: 5,
-  slope: false
+  weight: 5
 };
 var _DEFAULT_GPX_OPTS = {
   parseElements: ['track', 'route', 'waypoint']
@@ -618,9 +617,12 @@ L.GPX = L.FeatureGroup.extend({
 
     // add track
     var l;
-    if (options.polyline_options.slope)
-      l = new L.hotline(coords, this._merge_objs(polyline_options, options.polyline_options));
-    else
+    if (options.polyline_options.slope) {
+      if (options.polyline_options.force_renderer != null)
+        l = new L.hotline_force_renderer(options.polyline_options.force_renderer, coords, this._merge_objs(polyline_options, options.polyline_options));
+      else
+        l = new L.hotline(coords, this._merge_objs(polyline_options, options.polyline_options));
+    } else
       l = new L.Polyline(coords, this._merge_objs(polyline_options, options.polyline_options));
     this.fire('addline', { line: l, element: line });
     layers.push(l);

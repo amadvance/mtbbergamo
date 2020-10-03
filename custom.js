@@ -93,6 +93,11 @@ function get_track_cycle(index)
 function create_map(id) {
 	var mymap = L.map(id, { fullscreenControl: true } );
 
+	// Create the renderer to use for hotlines
+	// To have multiple tracks clickable ne the same map only one renderer for map must be used
+	// To support multiple map on the same page, each map should have its renderer
+	mymap.hotline_renderer = L.hotline_create_new_renderer();
+
 	var OPENSTREETMAP = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 	var CYCLOSM = 'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png';
 
@@ -226,7 +231,8 @@ function create_track(map, control, url, index, track_options)
 	var _DEFAULT_TRACK_OPTS = {
 		color: 'blue',
 		weight: 5,
-		slope: false
+		slope: false,
+		force_renderer: map.hotline_renderer
 	};
 
 	// set default options
@@ -248,7 +254,8 @@ function create_track(map, control, url, index, track_options)
 		polyline_options: {
 			color: track_options.color,
 			weight: track_options.weight,
-			slope: track_options.slope
+			slope: track_options.slope,
+			force_renderer: map.hotline_renderer
 		}
 	}).on('loaded', function(e) {
 		var gpx = e.target;
@@ -262,7 +269,8 @@ function create_zone_track(map, control, url, index, track_options)
 	var _DEFAULT_TRACK_OPTS = {
 		color: 'blue',
 		weight: 5,
-		slope: false
+		slope: false,
+		force_renderer: map.hotline_renderer
 	};
 
 	// set default options
@@ -284,7 +292,8 @@ function create_zone_track(map, control, url, index, track_options)
 		polyline_options: {
 			color: track_options.color,
 			weight: track_options.weight,
-			slope: track_options.slope
+			slope: track_options.slope,
+			force_renderer: map.hotline_renderer
 		}
 	}).on('loaded', function(e) {
 		var gpx = e.target;
@@ -524,7 +533,8 @@ function create_down(map, control, file)
 				i,
 				{
 					weight: 7,
-					slope: true
+					slope: true,
+					force_renderer: map.hotline_renderer
 				}
 			);
 
@@ -544,7 +554,8 @@ function create_multi(map, control, file)
 				i,
 				{
 					weight: 7,
-					slope: true
+					slope: true,
+					force_renderer: map.hotline_renderer
 				}
 			);
 
