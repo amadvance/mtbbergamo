@@ -80,7 +80,12 @@ function get_track_cycle(index)
 function create_map(id) {
 	var mymap = L.map(id, { fullscreenControl: true } );
 
-	var mytile = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	var OPENSTREETMAP = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+	var CYCLOSM = 'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png';
+
+	var mytile = new L.tileLayer(
+	CYCLOSM,
+	{
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	});
@@ -450,8 +455,10 @@ var COLORS_1 = [
 "Gray"
 ];
 
-// black colors for up
-var COLORS_UP = "Gray";
+// Colors for up track.
+// Gray for Openstreetmap
+// Black for Cyclosm
+var COLORS_UP = "#1F1F1F";
 
 function setup_down(index)
 {
