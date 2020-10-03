@@ -456,7 +456,30 @@
 	});
 
 	L.hotline = function (latlngs, options) {
-		return new L.Hotline(latlngs, options);
+		return new L.Hotline(latlngs,
+		// always pass new options to ensure that a new renderer() is created
+		// at every call, allowing multiple maps in the same pages
+		{
+			renderer: renderer(),
+			min: -100,
+			max: 100,
+			palette: {
+				0.0: 'black',
+				0.10: 'black', // -80%
+				0.20: 'magenta', // -60%
+				0.30: 'blue', // -40%
+				0.40: 'cyan', // -20%
+				0.50: 'green', // 0%
+				0.55: 'yellow', // 10%
+				0.60: 'red', // 20%
+				0.65: 'white', // 30%
+				1.0: 'white'
+			},
+			weight: 7,
+			outlineColor: 'black',
+			outlineWidth: 1
+		}
+		);
 	};
 
 

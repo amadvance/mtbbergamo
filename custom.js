@@ -507,9 +507,6 @@ function setup_multi()
 // create a post down track
 function create_down(map, control, file)
 {
-	// the HotLine support doesn't work with multiple maps
-	var enable_slope = window.location.href.search("/search/") < 0;
-
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].file == file) {
 			create_track(map, control,
@@ -517,7 +514,7 @@ function create_down(map, control, file)
 				i,
 				{
 					weight: 7,
-					slope: enable_slope
+					slope: true
 				}
 			);
 
@@ -530,9 +527,6 @@ function create_down(map, control, file)
 // create a multi down track
 function create_multi(map, control, file)
 {
-	// the HotLine support doesn't work with multiple maps
-	var enable_slope = window.location.href.search("/search/") < 0;
-
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].file == file) {
 			create_track(map, control,
@@ -540,7 +534,7 @@ function create_multi(map, control, file)
 				i,
 				{
 					weight: 7,
-					slope: enable_slope
+					slope: true
 				}
 			);
 
