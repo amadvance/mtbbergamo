@@ -11,6 +11,19 @@ function _merge_fields(a, b) {
 	return _;
 }
 
+function get_track_name(index)
+{
+	return TRACKS[index].name;
+}
+
+function get_track_zip(index)
+{
+	var url = ARCHIVE + 'gpx/' + TRACKS[index].file;
+	var zip = url.replace(/gpx/g,"zip");
+
+	return zip;
+}
+
 function get_track_vote(index)
 {
 	if (index == -1)
@@ -471,6 +484,7 @@ function setup_down(index)
 	html += "<b>Giudizio: " + get_track_vote(index) + "</b><br/>";
 	html += "<b>Difficolt\u00E0: " + get_track_rate(index) + "</b>" + get_track_rate_max(index) + "<br/>";
 	html += "<b>Ciclabilit\u00E0: " + get_track_cycle(index) + "</b><br/>";
+	html += "<b>Download GPX: </b><a href=\"" + get_track_zip(index) + "\" download>" + get_track_name(index) + "</a><br/>";
 
 	element.outerHTML = html;
 }
@@ -488,14 +502,10 @@ function setup_multi()
 
 	for (var i = 0; i < multi_set.length; ++i) {
 		var index = multi_set[i];
-		html += "<b>" + TRACKS[index].name + "</b><br/>";
+		html += "<b>" + get_track_name(index) + "</b><br/>";
 		html += "&nbsp;&nbsp;&nbsp;&nbsp;" + get_track_vote(index) + ", ";
 		html += get_track_rate(index) + get_track_rate_max(index);
-
-		var url = ARCHIVE + 'gpx/' + TRACKS[index].file;
-		var zip = url.replace(/gpx/g,"zip");
-
-		html += ", <a href=\"" + zip + "\" download>download GPX</a>";
+		html += ", <a href=\"" + get_track_zip(index) + "\" download>download GPX</a>";
 		html += "</br>";
 	}
 
