@@ -368,21 +368,14 @@
 
 		options: {
 			renderer: renderer(),
-			min: -100,
-			max: 100,
+			min: 0,
+			max: 1,
 			palette: {
-				0.0: 'black',
-				0.10: 'black', // -80%
-				0.20: 'magenta', // -60%
-				0.30: 'blue', // -40%
-				0.40: 'cyan', // -20%
-				0.50: 'green', // 0%
-				0.55: 'yellow', // 10%
-				0.60: 'red', // 20%
-				0.65: 'white', // 30%
-				1.0: 'white'
+				0.0: 'green',
+				0.5: 'yellow',
+				1.0: 'red'
 			},
-			weight: 7,
+			weight: 5,
 			outlineColor: 'black',
 			outlineWidth: 1
 		},
