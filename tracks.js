@@ -171,8 +171,9 @@ removed as almost duplicated by others
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'hidden, pedrino', name: 'Mulattiera', kind: 'down', file: 'N_PedrinoMulattieraOpreno_REC.gpx', link: '2019/04/colle-pedrino'  },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Baita, Spino, Palazzago', kind: 'down', file: 'N_LinzonePiaccaBaitaSpinoPalazzago_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Col Pedrino, Palestra / 807, Burligo', kind: 'down', file: 'N_LinzonePiaccaColPedrinoPalestraBurligo_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
-{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'martino, valcava', name: 'Valcava, Funivia, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'N_ValcavaColdaraPedrinoOprenoBurligo_REC.gpx', link: '2019/01/funivia-coldara-colle-pedrino-opreno' },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 98, zone: 'martino, valcava', name: 'Valcava, Zuccherone, Coldara, Col Fopa, Opreno, Burligo', kind: 'down', file: 'N_ValcavaZuccheroneColdaraColFopaOprenoBurligo_REC.gpx', link: '2019/03/zuccherone-coldara-col-fopa-opreno' },
+{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'martino, valcava', name: 'Valcava, Funivia, Coldara, Col Fopa, Opreno, Burligo', kind: 'down', file: 'N_AntenneValcavaFuniviaColFopaBurligo_REC.gpx', link: '2019/01/funivia-coldara-colle-pedrino-opreno' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 98, zone: 'martino, valcava', name: 'Valcava, Zuccherone, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'N_AntenneValcavaZuccheroneColPedrinoBurligo_REC.gpx', link: '2019/03/zuccherone-coldara-col-fopa-opreno' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Burligo alle antenne di Valcava', kind: 'up', file: 'N_SalitaBurligoCavaAntenneValcava_EBIKE.gpx' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Valcava, 823, Colle di Sogno, Corna Martinella, Classica', kind: 'down', file: 'N_Valcava823SognoMartinellaClassica_REC.gpx', link: '2018/12/valcava-colle-di-sogno-corna-martinella' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'martino, valcava', name: 'Valcava, 821, Torre de Busi', kind: 'down', file: 'N_Valcava821Busi_REC.gpx', link: '2019/12/valcava-821-busi' },
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Forcella Alta, 817, Carenno', kind: 'down', file: 'N_ForcellaAlta817Carenno_REC.gpx', link: '2018/12/forcella-alta-817-carenno' },
@@ -319,5 +320,8 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Monte Torcola', kind: 'up', file: 'B_SalitaOlmoPiazzatorreTorcola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita alla Baita Campo', kind: 'up', file: 'B_SalitaBaitaCampo_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
+
+
+
 
 
