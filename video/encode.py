@@ -1,4 +1,4 @@
-# Encode a openshot project with encoding
+# Encode a openshot project
 
 import json
 import sys

@@ -1,9 +1,8 @@
+# Encode a flat video
+
 import json
 import sys
 import os
-
-# Generation to mark difference in settings
-GENERATION=6
 
 # gen2
 # - 1080px60
@@ -28,6 +27,9 @@ GENERATION=6
 # gen8
 # - different quality settings
 
+# gen9
+# - removed various unused options
+
 # Video Encoding
 # "-pix_fmt yuvj420p" is for compatibility with LG TV
 # "-preset veryfast" favor speed over size
@@ -41,40 +43,34 @@ ENCODE_AUDIO="-codec:a copy"
 #######################################################
 # Filter for FLAT color mode with EV=-1, SHARPNESS=LOW
 
-# Stabilization
+# Stabilization (NOT USED)
 VF_STAB="deshake=rx=64:ry=64"
 
 # Normalize with adaptive transformation
 VF_NORMALIZE="normalize=blackpt=black:whitept=white:smoothing=600:strength=1.0"
 
-# Normalize with fixed transformation for a typical gopro
+# Normalize with fixed transformation for a typical gopro (NOT USED)
 VF_FIXED="curves=r='0.1/0 1/1':g='0.1/0 1/1':b='0.1/0 1/1'"
 
-# Color adjust for FLAT EV=-1: Increase saturation, contrast and bright a little, and decrease blue
-VF_FLAT_EV1="eq=brightness=0.1:contrast=1.2:saturation=1.8,curves=blue='0/0 0.5/0.45 1/1'"
-
 # Color SUNNY adjust for FLAT EV=-1: Increase saturation and contrast little, and decrease blue. No bright increase.
-VF_FLAT_EV1_SUNNY="eq=contrast=1.1:saturation=1.8,curves=blue='0/0 0.5/0.45 1/1'"
+VF_FLAT_EV1="eq=contrast=1.1:saturation=1.8,curves=blue='0/0 0.5/0.45 1/1'"
 
 # Color DARK adjust for FLAT EV=-1: Increase saturation, contrast and bright a little, and decrease blue
-VF_FLAT_EV1_DARK="eq=brightness=0.2:contrast=1.4:saturation=1.8,curves=blue='0/0 0.5/0.45 1/1'"
+VF_FLAT_EV1_DARK="eq=brightness=0.1:contrast=1.2:saturation=1.8,curves=blue='0/0 0.5/0.45 1/1'"
 
-# Color adjust for FLAT EV=0: Normalize and increase saturation and contrast, a little more contranst than EV=-1
-VF_FLAT_EV0="eq=contrast=1.3:saturation=1.8"
-
-# Color adjust for GOPRO: Increase saturation
+# Color adjust for GOPRO: Increase saturation (NOT USED)
 VF_GOPRO="eq=saturation=1.8"
-
-# Blur to remove the sharpness of the gopro default HIGH setting
-VF_BLUR="unsharp=7:7:-0.5"
 
 # Sharp to add sharpness with the gopro LOW setting
 VF_SHARP="unsharp=7:7:1.0"
 
+# Blur to remove the sharpness of the gopro default HIGH setting (NOT USED)
+VF_BLUR="unsharp=7:7:-0.5"
+
 # Flip
 VF_FLIP="hflip,vflip"
 
-# Alternative filter for FLAT
+# Alternative filter for FLAT (NOT USED)
 VF_LEVEL="colorlevels=rimin=0.1:gimin=0.1:rimin=0.1:rimax=0.7:gimax=0.7:bimax=0.7,eq=contrast=1.3:saturation=3,eq=saturation=1.3"
 VF_PP="pp=al,eq=contrast=1.3:saturation=3,eq=saturation=1.3"
 
@@ -91,37 +87,14 @@ if len(sys.argv) < 2:
 file = '';
 
 # Default attributes
-color = 'flat'
-sharpness = 'low'
-resolution = '2k7'
-ev = -1
-shaky = False
-panning = False
 dark = False
-sunny = False
 test = False
 play = False
 flip = False
 
 for arg in sys.argv[1:]:
-	if arg == '/gopro':
-		color = 'gopro'
-	elif arg == '/ev0':
-		ev = 0
-	elif arg == '/sharphigh':
-		sharpness = 'high'
-	elif arg == '/sharpmed':
-		sharpness = 'med'
-	elif arg == '/4k':
-		resolution = '4k'
-	elif arg == '/shaky':
-		shaky = True
-	elif arg == '/panning':
-		panning = True
-	elif arg == '/dark':
+	if arg == '/dark':
 		dark = True
-	elif arg == '/sunny':
-		sunny = True
 	elif arg == '/flip':
 		flip = True
 	elif arg == '/test':
@@ -162,30 +135,14 @@ cmdline += ' -i ' + file
 # Filter
 cmdline += ' -vf "'
 
-if color == 'flat':
-	if panning:
-		cmdline += VF_FIXED
-	else:
-		cmdline += VF_NORMALIZE
-	if ev == 0:
-		cmdline += ',' + VF_FLAT_EV0
-	else:
-		if dark:
-			cmdline += ',' + VF_FLAT_EV1_DARK
-		elif sunny:
-			cmdline += ',' + VF_FLAT_EV1_SUNNY
-		else:
-			cmdline += ',' + VF_FLAT_EV1
+cmdline += VF_NORMALIZE
+
+if dark:
+	cmdline += ',' + VF_FLAT_EV1_DARK
 else:
-	cmdline += VF_GOPRO
+	cmdline += ',' + VF_FLAT_EV1
 
-if shaky:
-	cmdline += ',' + VF_STAB
-
-if sharpness == 'high':
-	cmdline += ',' + VF_BLUR
-elif sharpness == 'low':
-	cmdline += ',' + VF_SHARP
+cmdline += ',' + VF_SHARP
 
 if flip:
 	cmdline += ',' + VF_FLIP

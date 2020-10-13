@@ -1,4 +1,4 @@
-# Export a openshot project without encoding
+# Export an openshot project without encoding
 #
 # This has the limitation of being able to seek only to I-frames
 # and then you cannot have precise cut positions
