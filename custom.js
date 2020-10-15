@@ -482,6 +482,11 @@ var COLORS_1 = [
 // Black for Cyclosm
 var COLORS_UP = "#1F1F1F";
 
+// multi track info
+var multi_down_set = [];
+var multi_up_set = [];
+
+// setup the info header adding the info of the down, assume a single call
 function setup_down(index)
 {
 	var element = document.getElementById("info_header");
@@ -493,13 +498,34 @@ function setup_down(index)
 	html += "<b>Giudizio: " + get_track_vote(index) + "</b><br/>";
 	html += "<b>Difficolt\u00E0: " + get_track_rate(index) + "</b>" + get_track_rate_max(index) + "<br/>";
 	html += "<b>Ciclabilit\u00E0: " + get_track_cycle(index) + "</b><br/>";
-	html += "<b>Download GPX: </b><a href=\"" + get_track_zip(index) + "\" download>" + get_track_name(index) + "</a><br/>";
+	html += "<b>Download GPX: </b><a href=\"" + get_track_zip(index) + "\" download><b>" + get_track_name(index) + "</b></a>";
 
-	element.outerHTML = html;
+	element.innerHTML = html;
 }
 
-// track info
-var multi_set = [];
+// setup the info header adding the GPX of the up
+function setup_up(index)
+{
+	var element = document.getElementById("info_header");
+	if (element == null) {
+		return;
+	}
+
+	var html = "";
+
+	html += ", <a href=\"" + get_track_zip(index) + "\" download>" + get_track_name(index) + "</a>";
+
+	element.innerHTML += html; // concatenate
+}
+
+function sort_by_vote(a, b)
+{
+	if (TRACKS[a].vote > TRACKS[b].vote)
+		return -1;
+	if (TRACKS[a].vote < TRACKS[b].vote)
+		return 1;
+	return 0;
+}
 
 function setup_multi()
 {
@@ -509,8 +535,10 @@ function setup_multi()
 
 	var html = "<p>";
 
-	for (var i = 0; i < multi_set.length; ++i) {
-		var index = multi_set[i];
+	multi_down_set.sort(sort_by_vote);
+
+	for (var i = 0; i < multi_down_set.length; ++i) {
+		var index = multi_down_set[i];
 		html += "<b>" + get_track_name(index) + "</b><br/>";
 		html += "&nbsp;&nbsp;&nbsp;&nbsp;" + get_track_vote(index) + ", ";
 		html += get_track_rate(index) + get_track_rate_max(index);
@@ -518,9 +546,17 @@ function setup_multi()
 		html += "</br>";
 	}
 
+	for (var i = 0; i < multi_up_set.length; ++i) {
+		var index = multi_up_set[i];
+		html += "<b>" + get_track_name(index) + "</b><br/>";
+		html += "&nbsp;&nbsp;&nbsp;&nbsp;";
+		html += "<a href=\"" + get_track_zip(index) + "\" download>download GPX</a>";
+		html += "</br>";
+	}
+
 	html += "</p>";
 
-	element.outerHTML = html;
+	element.innerHTML = html;
 }
 
 // create a post down track
@@ -538,29 +574,8 @@ function create_down(map, control, file)
 				}
 			);
 
+			// setup info directly
 			setup_down(i);
-			break;
-		}
-	}
-}
-
-// create a multi down track
-function create_multi(map, control, file)
-{
-	for (i = 0; i < TRACKS.length; i++) {
-		if (TRACKS[i].file == file) {
-			create_track(map, control,
-				ARCHIVE + 'gpx/' + TRACKS[i].file,
-				i,
-				{
-					weight: 7,
-					slope: true,
-					force_renderer: map.hotline_renderer
-				}
-			);
-
-			// insert in the header list
-			multi_set.push(i);
 			break;
 		}
 	}
@@ -579,6 +594,9 @@ function create_up(map, control, file)
 					weight: 3
 				}
 			);
+
+			// setup info directly
+			setup_up(i);
 			break;
 		}
 	}
@@ -593,22 +611,45 @@ function create_post(map, control, zone)
 		if (TRACKS[i].zone.search(zone) < 0)
 			continue;
 
-		if (TRACKS[i].kind == "down") {
-			create_multi(map, control, TRACKS[i].file);
-		}
-	}
+		if (TRACKS[i].kind != "down")
+			continue;
 
-	setup_multi();
+		create_track(map, control,
+			ARCHIVE + 'gpx/' + TRACKS[i].file,
+			i,
+			{
+				weight: 7,
+				slope: true,
+				force_renderer: map.hotline_renderer
+			}
+		);
+
+		// insert in the header list
+		multi_down_set.push(i);
+	}
 
 	// then up
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].zone.search(zone) < 0)
 			continue;
 
-		if (TRACKS[i].kind == "up") {
-			create_up(map, control, TRACKS[i].file);
-		}
+		if (TRACKS[i].kind != "up")
+			continue;
+
+		create_zone_track(map, control,
+			ARCHIVE + 'gpx/' + TRACKS[i].file,
+			i,
+			{
+				color: COLORS_UP,
+				weight: 3
+			}
+		);
+
+		// insert in the header list
+		multi_up_set.push(i);
 	}
+
+	setup_multi();
 }
 
 // create a dog marker
@@ -637,8 +678,8 @@ function setup_zone()
 
 	html += '<tr><th style="text-align:left;">Discesa</th><th style="text-align:left;">Giudizio</th><th style="text-align:left;">Difficolt\u00E0</th></tr>';
 
-	for (var i = 0; i < multi_set.length; ++i) {
-		var index = multi_set[i];
+	for (var i = 0; i < multi_down_set.length; ++i) {
+		var index = multi_down_set[i];
 
 		html += '<tr><td>';
 		if (TRACKS[index].link)
@@ -654,7 +695,7 @@ function setup_zone()
 
 	html += "</table></p>";
 
-	element.outerHTML = html;
+	element.innerHTML = html;
 }
 
 // create a zone post including all the up and down tracks
@@ -687,7 +728,7 @@ function create_zone(map, control, zone) {
 				color = COLORS_1[color_d[1]++]
 
 			// insert in the header list
-			multi_set.push(i);
+			multi_down_set.push(i);
 		}
 
 		create_zone_track(map, control,
