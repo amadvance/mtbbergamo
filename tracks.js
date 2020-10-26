@@ -169,6 +169,7 @@ removed as almost duplicated by others
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Pedrino DH, Faggeta, Perlupario', kind: 'down', file: 'N_PedrinoDHFaggetaPerlupario_REC.gpx', link: '2019/04/colle-pedrino'  },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Ciacallo, Burligo', kind: 'down', file: 'N_Ciacallo_REC.gpx', link: '2019/04/colle-pedrino'  },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Pedrino, Ca Muracca, Forcella di Burligo', kind: 'down', file: 'N_PedrinoMuraccaForcella_REC.gpx', link: '2019/04/colle-pedrino' },
+{ vote: 1, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Pedrino, Cavatori', kind: 'down', file: 'N_PedrinoCavatori_REC.gpx', link: '2019/04/colle-pedrino' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'hidden, pedrino', name: '807 / Palestra', kind: 'down', file: 'N_807Palestra_REC.gpx', link: '2019/04/colle-pedrino' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'hidden, pedrino', name: 'Mulattiera', kind: 'down', file: 'N_PedrinoMulattieraOpreno_REC.gpx', link: '2019/04/colle-pedrino'  },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, pedrino', name: 'Salita da Burligo a Colle Pedrino', kind: 'up', file: 'N_SalitaBurligoCollePedrino_REC.gpx', link: '2018/12/salite-san-martino' },
@@ -178,7 +179,15 @@ removed as almost duplicated by others
 { vote: 4, rate: 3, rate_max: 0, cycle: 98, zone: 'martino, valcava', name: 'Valcava, Zuccherone, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'N_AntenneValcavaZuccheroneColPedrinoBurligo_REC.gpx', link: '2019/03/zuccherone-coldara-col-fopa-opreno' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Burligo alle antenne di Valcava', kind: 'up', file: 'N_SalitaBurligoCavaAntenneValcava_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, piacca', name: 'Salita da Burligo al Monte Linzone', kind: 'up', file: 'N_SalitaBurligoCavaLinzone_REC.gpx', link: '2018/12/salite-san-martino' },
-{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'martino', name: 'Colli di Palazzago', kind: 'down', file: 'N_ColliPalazzago_EBIKE.gpx' },
+{ vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Crinale dei colli di Palazzago', kind: 'down', file: 'N_ColliPalazzago_EBIKE.gpx', link: '2020/10/colli-di-palazzago' },
+{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Cadimaggio, Acqua, Borghetto', kind: 'down', file: 'N_CrinaleCadimaggioAcquaBorghetto_REC.gpx', link: '2020/10/colli-di-palazzago' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Monte Valmora, Borghetto', kind: 'down', file: 'N_CrinaleMonteValmoraBorghetto_REC.gpx', link: '2020/10/colli-di-palazzago' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Picco Alto, Palazzago', kind: 'down', file: 'N_CrinalePiccoAltoPalazzago_REC.gpx', link: '2020/10/colli-di-palazzago' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Pracerito, Ca Zucchetti', kind: 'down', file: 'N_CrinalePraceritoCaZucchetti_REC.gpx', link: '2020/10/colli-di-palazzago' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Pracerito, Fomorone', kind: 'down', file: 'N_CrinalePraceritoFomorone_REC.gpx', link: '2020/10/colli-di-palazzago' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Salita al Crinale da Borghetto', kind: 'up', file: 'N_SalitaCrinaleBorghetto_EBIKE.gpx', link: '2018/12/salite-san-martino' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Salita al Crinale da Ca Zucchetti', kind: 'up', file: 'N_SalitaCrinaleCaZucchetti_EBIKE.gpx', link: '2018/12/salite-san-martino' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Salita al Crinale da Palazzago', kind: 'up', file: 'N_SalitaCrinalePalazzago_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Valcava, 823, Colle di Sogno, Corna Martinella, Classica', kind: 'down', file: 'N_Valcava823SognoMartinellaClassica_REC.gpx', link: '2018/12/valcava-colle-di-sogno-corna-martinella' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'martino, valcava', name: 'Valcava, 821, Torre de Busi', kind: 'down', file: 'N_Valcava821Busi_REC.gpx', link: '2019/12/valcava-821-busi' },
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Forcella Alta, 817, Carenno', kind: 'down', file: 'N_ForcellaAlta817Carenno_REC.gpx', link: '2018/12/forcella-alta-817-carenno' },
@@ -325,6 +334,8 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Monte Torcola', kind: 'up', file: 'B_SalitaOlmoPiazzatorreTorcola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita alla Baita Campo', kind: 'up', file: 'B_SalitaBaitaCampo_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
+
+
 
 
 
