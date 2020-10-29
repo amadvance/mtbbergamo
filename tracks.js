@@ -183,8 +183,11 @@ removed as almost duplicated by others
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Cadimaggio, Acqua, Borghetto', kind: 'down', file: 'N_CrinaleCadimaggioAcquaBorghetto_REC.gpx', link: '2020/10/colli-di-palazzago' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Monte Valmora, Borghetto', kind: 'down', file: 'N_CrinaleMonteValmoraBorghetto_REC.gpx', link: '2020/10/colli-di-palazzago' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Picco Alto, Palazzago', kind: 'down', file: 'N_CrinalePiccoAltoPalazzago_REC.gpx', link: '2020/10/colli-di-palazzago' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Pracerito, Ca Zucchetti', kind: 'down', file: 'N_CrinalePraceritoCaZucchetti_REC.gpx', link: '2020/10/colli-di-palazzago' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'martino, crinale', name: 'Pracerito, Ca Zucchetti', kind: 'down', file: 'N_CrinalePraceritoCaZucchetti_REC.gpx', link: '2020/10/colli-di-palazzago' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Pracerito, Fomorone', kind: 'down', file: 'N_CrinalePraceritoFomorone_REC.gpx', link: '2020/10/colli-di-palazzago' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Ca Maggio, Borghetto', kind: 'down', file: 'N_CrinaleBorghetto_REC.gpx', link: '2020/10/colli-di-palazzago' },
+{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Gronfaleggio, Bressanone, Bund\u00E8', kind: 'down', file: 'N_GronfaleggioBressanoneBunde_REC.gpx', link: '2020/10/colli-di-palazzago' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Gronfaleggio, Colle dei Frati, Pontida', kind: 'down', file: 'N_GronfaleggioColleDeiFratiPontida_REC.gpx', link: '2020/10/colli-di-palazzago' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Salita al Crinale da Borghetto', kind: 'up', file: 'N_SalitaCrinaleBorghetto_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Salita al Crinale da Ca Zucchetti', kind: 'up', file: 'N_SalitaCrinaleCaZucchetti_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Salita al Crinale da Palazzago', kind: 'up', file: 'N_SalitaCrinalePalazzago_EBIKE.gpx', link: '2018/12/salite-san-martino' },
@@ -334,10 +337,4 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Monte Torcola', kind: 'up', file: 'B_SalitaOlmoPiazzatorreTorcola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita alla Baita Campo', kind: 'up', file: 'B_SalitaBaitaCampo_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
-
-
-
-
-
-
 
