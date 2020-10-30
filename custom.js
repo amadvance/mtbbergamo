@@ -301,6 +301,22 @@ function create_zone_track(map, control, url, index, track_options)
 	}).addTo(map);
 }
 
+// detect if the page shown contains multiple blog pages
+// with multiple pages, the "info_header" cannot be used because we have many of them
+function is_multi_page()
+{
+	// it's a tag page
+	if (window.location.href.search("/search/") >= 0)
+		return true;
+
+	// it's a single page
+	if (window.location.href.search(".html") >= 0)
+		return false;
+
+	// it's a list, like month one
+	return true;
+}
+
 // misc colors for down
 // from https://en.wikipedia.org/wiki/Web_colors
 
@@ -493,6 +509,11 @@ function setup_down(index)
 	if (element == null)
 		return;
 
+	if (is_multi_page()) {
+		element.innerHTML = "";
+		return;
+	}
+
 	var html = "";
 
 	html += "<b>Giudizio: " + get_track_vote(index) + "</b><br/>";
@@ -507,7 +528,11 @@ function setup_down(index)
 function setup_up(index)
 {
 	var element = document.getElementById("info_header");
-	if (element == null) {
+	if (element == null)
+		return;
+
+	if (is_multi_page()) {
+		element.innerHTML = "";
 		return;
 	}
 
@@ -532,6 +557,11 @@ function setup_multi()
 	var element = document.getElementById("info_header");
 	if (element == null)
 		return;
+
+	if (is_multi_page()) {
+		element.innerHTML = "";
+		return;
+	}
 
 	var html = "<p>";
 
@@ -673,6 +703,11 @@ function setup_zone()
 	var element = document.getElementById("info_header");
 	if (element == null)
 		return;
+
+	if (is_multi_page()) {
+		element.innerHTML = "";
+		return;
+	}
 
 	var html = "<p><table>";
 
