@@ -16,6 +16,7 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Filoncino / Calvarola / 401', kind: 'down', file: 'M_Filoncino_REC.gpx', link: '2018/11/401-filoncino' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Filone Easy', kind: 'down', file: 'M_FiloneEasy_REC.gpx', link: '2018/11/filone-easy' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Filone / Agostini / 533', kind: 'down', file: 'M_Filone_REC.gpx', link: '2018/11/533-filone' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Tremana', kind: 'down', file: 'M_Tremana_REC.gpx' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Veloce / Illegale / 533', kind: 'down', file: 'M_Illegale_REC.gpx', link: '2018/11/533-illegale' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Rosciano', kind: 'down', file: 'M_Rosciano_REC.gpx', link: '2018/11/rosciano' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 99, zone: 'maresana', name: 'San Rocco / 402', kind: 'down', file: 'M_SanRocco_REC.gpx', link: '2018/11/402-san-rocco' },
@@ -31,6 +32,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana, sorisole', name: 'Trasferimento da Premerlino a Ponteranica Alta', kind: 'up', file: 'M_PremerlinoPonteranicaAlta_REC.gpx', link: '2018/11/salite-maresana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Salita da Ranica', kind: 'up', file: 'M_SalitaRanica_REC.gpx', link: '2018/11/salite-maresana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Salita da Ponteranica', kind: 'up', file: 'M_SalitaPonteranica_REC.gpx', link: '2018/11/salite-maresana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Salita al Colle Alto', kind: 'up', file: 'M_SalitaColleAlto_EBIKE.gpx', link: '2018/11/salite-maresana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana, sorisole', name: 'Salita da Ponteranica Alta', kind: 'up', file: 'M_SalitaPonteranicaAlta_REC.gpx', link: '2018/11/salite-maresana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Salita da Olera', kind: 'up', file: 'M_SalitaOlera_REC.gpx', link: '2018/11/salite-maresana' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'sorisole', name: 'Bacino', kind: 'down', file: 'SR_Bacino_REC.gpx' },
@@ -342,5 +344,4 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita alla Baita Campo', kind: 'up', file: 'B_SalitaBaitaCampo_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 75, zone: 'brembana', name: 'Salita da SantaCroce al Pizzo di Spino', kind: 'up', file: 'B_SalitaSantaCrocePizzoSpino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
-
 
