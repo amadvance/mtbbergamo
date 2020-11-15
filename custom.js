@@ -698,6 +698,22 @@ function create_dog(map, control, pos_x, pos_y, msg)
 	L.marker([pos_x, pos_y], {icon: dogIcon}).addTo(map).bindPopup(msg);
 }
 
+// create a tree marker
+function create_tree(map, control, pos_x, pos_y, msg)
+{
+	var TreeIcon = L.Icon.extend({
+		options: {
+		iconSize:     [32, 32],
+		iconAnchor:   [16, 16],
+		popupAnchor:  [-3, -20]
+	}
+	});
+
+	var treeIcon = new TreeIcon({iconUrl: ARCHIVE + 'img/tree-icon.png'});
+
+	L.marker([pos_x, pos_y], {icon: treeIcon}).addTo(map).bindPopup(msg);
+}
+
 function setup_zone()
 {
 	var element = document.getElementById("info_header");
