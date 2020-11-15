@@ -149,7 +149,7 @@ I_SalitaAmagnoValcavaLinzone_EBIKE.gpx
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, ubione, sopracorna', name: 'Salita da Clanezzo ai Roccoli Passata', kind: 'up', file: 'I_SalitaClanezzoRoccoliPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "60% e ultimi 100m di dislivello a spalla", zone: 'imagna, ubione', name: 'Salita da Clanezzo all\'Ubione', kind: 'up', file: 'I_SalitaClanezzoUbione_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, 573, Selino', kind: 'down', file: 'I_ForcellaAlta573Selino_REC.gpx', link: '2019/06/forcella-alta-573-selino' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, 574, Valsecca, Selino', kind: 'down', file: 'I_ForcellaAlta574Selino_REC.gpx' },
+{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, 574, Valsecca, Selino', kind: 'down', file: 'I_ForcellaAlta574Selino_REC.gpx', link: '2020/11/forcella-alta-574-valsecca' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, valcava', name: 'Forcella Alta, Rizzolo, Selino', kind: 'down', file: 'I_ForcellaAltaRizzolo_REC.gpx', link: '2020/08/forcella-alta-rizzolo-selino' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, valcava', name: 'Valcava, 572, Selino', kind: 'down', file: 'I_Valcava572Selino_REC.gpx', link: '2020/07/valcava-cornabusa-selino'  },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Valcava, Roncola Alta, Ponte Giurino', kind: 'down', file: 'I_ValcavaPonteGiurino_REC.gpx', link: '2020/08/valcava-roncola-alta-ponte-giurino' },
