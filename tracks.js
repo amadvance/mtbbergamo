@@ -17,6 +17,7 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Filone Easy', kind: 'down', file: 'M_FiloneEasy_REC.gpx', link: '2018/11/filone-easy' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Filone / Agostini / 533', kind: 'down', file: 'M_Filone_REC.gpx', link: '2018/11/533-filone' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Tremana', kind: 'down', file: 'M_Tremana_REC.gpx' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Scabia', kind: 'down', file: 'M_Scabia_REC.gpx' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Veloce / Illegale / 533', kind: 'down', file: 'M_Illegale_REC.gpx', link: '2018/11/533-illegale' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Rosciano', kind: 'down', file: 'M_Rosciano_REC.gpx', link: '2018/11/rosciano' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 99, zone: 'maresana', name: 'San Rocco / 402', kind: 'down', file: 'M_SanRocco_REC.gpx', link: '2018/11/402-san-rocco' },
@@ -138,10 +139,6 @@ removed for request of the owner
 removed as not significative
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Almenno a Roncola e Valcava', kind: 'up', file: 'I_SalitaAlmennoRoncolaValcava_REC.gpx', link: '2018/12/salite-imagna' },
 */
-/*
-to be used
-I_SalitaAmagnoValcavaLinzone_EBIKE.gpx
-*/
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, roncola', name: 'Salita da Almenno a Roncola', kind: 'up', file: 'I_SalitaRoncola_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Almenno a Costa Imagna e Valcava', kind: 'up', file: 'I_SalitaAlmennoCostaValcava_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito alla Corna Marcia', kind: 'up', file: 'I_SalitaChitoBottaCornaMarcia_EBIKE.gpx', link: '2018/12/salite-imagna' },
@@ -166,7 +163,8 @@ I_SalitaAmagnoValcavaLinzone_EBIKE.gpx
 removed as almost duplicated by others
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna, valcava, roncola', name: 'Roncola, Selino', kind: 'down', file: 'I_RoncolaSelino_REC.gpx', link: '2019/04/roncola' },
 */
-{ vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Linzone, Roncola Alta, Amagno', kind: 'down', file: 'I_LinzoneRoncolaAltaAmagno_REC.gpx' },
+{ vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna, valcava', name: 'Linzone, Roncola Alta, Amagno', kind: 'down', file: 'I_LinzoneRoncolaAltaAmagno_REC.gpx', link: '2020/11/linzone-roncola-alta-amagno' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Amagno al Linzone', kind: 'up', file: 'I_SalitaAmagnoValcavaLinzone_EBIKE.gpx' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava', name: 'Linzone, 571, Roncola, 571, Almenno', kind: 'down', file: 'I_Linzone571Roncola571Almenno_REC.gpx', link: '2018/11/linzone-roncola' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava', name: 'Salita da Valcava al Linzone', kind: 'up', file: 'N_ValcavaLinzone_REC.gpx', link: '2018/12/salite-imagna' },
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Pedrino DH, Faggeta, Perlupario', kind: 'down', file: 'N_PedrinoDHFaggetaPerlupario_REC.gpx', link: '2019/04/colle-pedrino'  },
