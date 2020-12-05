@@ -112,9 +112,9 @@ removed for request of the owner
 removed for not so relevant
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Passo del Palio, Rifugio Resegone', kind: 'down', file: 'I_PassoPalioBocchettaRifResegone_EBIKE.gpx' },
 */
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna', name: 'Passo del Palio, Forbesette, Morterone', kind: 'down', file: 'I_PassoPalioForbesetteMorterone_REC.gpx' },
-{ vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'imagna', name: 'Passo del Palio, Freeride, Morterone', kind: 'down', file: 'I_PassoPalioFreerideMorterone_REC.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Morterone al Passo del Palio', kind: 'up', file: 'I_SalitaMorteronePassoPalio_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, morterone', name: 'Passo del Palio, Forbesette, Morterone', kind: 'down', file: 'I_PassoPalioForbesetteMorterone_REC.gpx', link: '2020/12/morterone' },
+{ vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'imagna, morterone', name: 'Passo del Palio, Freeride, Morterone', kind: 'down', file: 'I_PassoPalioFreerideMorterone_REC.gpx', link: '2020/12/morterone' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, morterone', name: 'Salita da Morterone al Passo del Palio', kind: 'up', file: 'I_SalitaMorteronePassoPalio_EBIKE.gpx', link: '2020/12/morterone' },
 /*
 removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Salita da Fuipiano allo Zuc De Valmana', kind: 'up', file: 'I_SalitaZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
@@ -126,7 +126,7 @@ removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Brumano al Passo Porta', kind: 'up', file: 'I_SalitaBrumanoPassoPorta_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Brumano alle Cascine Zucchero', kind: 'up', file: 'I_SalitaBrumanoCascineZucchero_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Brumano ai Pra d\'Alet', kind: 'up', file: 'I_SalitaBrumanoPraDAlet_EBIKE.gpx', link: '2018/12/salite-imagna' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'I_SalitaSbarraPalio_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna. morterone', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'I_SalitaSbarraPalio_EBIKE.gpx', link: '2018/12/salite-imagna' },
 /* used for completing the MTB tracks */
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'costa_del_palio', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'I_SalitaSbarraPalio_REC.gpx', link: '2018/12/salite-imagna' },
 /* used for the Zuc De Valmana climbing without splitting */
@@ -322,7 +322,7 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'GA_SalitaGandinoRifugioParafulmine_EBIKE.gpx', link: '2020/02/pizzo-formico' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Rifugio Parafulmine, Pizzo Formico', kind: 'up', file: 'GA_SalitaRifugioParafulminePizzoFormico_EBIKE.gpx', link: '2020/02/pizzo-formico' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Forcella di Berbenno, Ripe, Brembilla', kind: 'down', file: 'B_BerbennoRipe_REC.gpx' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'B_CatremerioTruca_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'B_CatremerioTruca_REC.gpx', link: '2020/11/catremerio-truca-brembilla' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'S. Antonio Abbandonato, Casarielli, Zogno', kind: 'down', file: 'B_SAntonioCasarielli_REC.gpx', link: '2020/07/casarielli' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'S. Antonio Abbandonato, Strada Taverna, Ponti', kind: 'down', file: 'B_SAntonioTaverna_REC.gpx', link: '2020/07/strada-taverna' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Crosnello, Sussia, Vettarola', kind: 'down', file: 'B_CrosnelloSussiaVettarola_REC.gpx', link: '2020/08/crosnello-sussia-vettarola-san' },
@@ -330,7 +330,7 @@ removed as almost duplicated by others
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Monte Torcola, Piazza Brembana', kind: 'down', file: 'B_TorcolaPiazzaBrembana_REC.gpx', link: '2020/09/monte-torcola-piazza-brembana' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Rifugio Torcole, Bolli Arancio, Piazzolo', kind: 'down', file: 'B_TorcolaBolliArancioPiazzolo_REC.gpx', link: '2020/09/rifugio-torcole-bolli-arancio-piazzolo' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Passo San Marco, 113, via del Ferro', kind: 'down', file: 'B_SanMarco113Ferro_REC.gpx', link: '2020/09/passo-san-marco-113-via-del-ferro' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Baita Campo, 127, Olmo al Brembo', kind: 'down', file: 'B_BaitaCampoOlmo_REC.gpx' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Baita Campo, 127, Olmo al Brembo', kind: 'down', file: 'B_BaitaCampoOlmo_REC.gpx', link: '2020/09/baita-campo-olmo-al-brembo' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo di Spino, San Pellegrino', kind: 'down', file: 'B_PizzoSpinoSanPellegrino_REC.gpx', link: '2020/11/pizzo-spino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
