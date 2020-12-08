@@ -13,8 +13,10 @@ var TRACKS = [
 { vote: 5, rate: 3, rate_max: 0, cycle: 98, zone: 'maresana', name: 'Vertigo / 604', kind: 'down', file: 'M_604_REC.gpx', link: '2018/11/604' },
 { vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'maresana', name: 'Bruna', kind: 'down', file: 'M_Bruna_REC.gpx', link: '2018/11/bruna' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'FarWest', kind: 'down', file: 'M_FarWest_REC.gpx', link: '2018/11/farwest' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Filoncino / Calvarola / 401', kind: 'down', file: 'M_Filoncino_REC.gpx', link: '2018/11/401-filoncino' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Calvarola / Filoncino / 401', kind: 'down', file: 'M_Filoncino_REC.gpx', link: '2018/11/401-filoncino' },
+{ vote: 3, rate: 2, rate_max: 2, cycle: 100, zone: 'maresana', name: 'Calvarola 2', kind: 'down', file: 'M_Calvarola2_REC.gpx' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Filone Easy', kind: 'down', file: 'M_FiloneEasy_REC.gpx', link: '2018/11/filone-easy' },
+{ vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Colle Alto, Magnati', kind: 'down', file: 'M_ColleAltoMagnati_REC.gpx' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Filone / Agostini / 533', kind: 'down', file: 'M_Filone_REC.gpx', link: '2018/11/533-filone' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Tremana', kind: 'down', file: 'M_Tremana_REC.gpx' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Scabla', kind: 'down', file: 'M_Scabla_REC.gpx' },
@@ -343,4 +345,5 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita alla Baita Campo', kind: 'up', file: 'B_SalitaBaitaCampo_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 75, zone: 'brembana', name: 'Salita da SantaCroce al Pizzo di Spino', kind: 'up', file: 'B_SalitaSantaCrocePizzoSpino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
+
 
