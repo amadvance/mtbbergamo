@@ -18,7 +18,7 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Filone Easy', kind: 'down', file: 'M_FiloneEasy_REC.gpx', link: '2018/11/filone-easy' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Colle Alto, Magnati', kind: 'down', file: 'M_ColleAltoMagnati_REC.gpx' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Filone / Agostini / 533', kind: 'down', file: 'M_Filone_REC.gpx', link: '2018/11/533-filone' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Tremana', kind: 'down', file: 'M_Tremana_REC.gpx' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Colle Alto, Tremana', kind: 'down', file: 'M_Tremana_REC.gpx', link: '2020/12/colle-alto-tremana' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Scabla', kind: 'down', file: 'M_Scabla_REC.gpx' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Veloce / Illegale / 533', kind: 'down', file: 'M_Illegale_REC.gpx', link: '2018/11/533-illegale' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Rosciano', kind: 'down', file: 'M_Rosciano_REC.gpx', link: '2018/11/rosciano' },
@@ -334,6 +334,7 @@ removed as almost duplicated by others
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Passo San Marco, 113, via del Ferro', kind: 'down', file: 'B_SanMarco113Ferro_REC.gpx', link: '2020/09/passo-san-marco-113-via-del-ferro' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Baita Campo, 127, Olmo al Brembo', kind: 'down', file: 'B_BaitaCampoOlmo_REC.gpx', link: '2020/09/baita-campo-olmo-al-brembo' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo di Spino, San Pellegrino', kind: 'down', file: 'B_PizzoSpinoSanPellegrino_REC.gpx', link: '2020/11/pizzo-spino' },
+{ vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Forcella di Spettino, Molini, San Pellegrino', kind: 'down', file: 'B_ForcellaSpettinoMolini_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
@@ -344,6 +345,6 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Monte Torcola', kind: 'up', file: 'B_SalitaOlmoPiazzatorreTorcola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita alla Baita Campo', kind: 'up', file: 'B_SalitaBaitaCampo_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 75, zone: 'brembana', name: 'Salita da SantaCroce al Pizzo di Spino', kind: 'up', file: 'B_SalitaSantaCrocePizzoSpino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 75, zone: 'brembana', name: 'Salita da SantaCroce alla Forcella di Spettino', kind: 'up', file: 'B_SalitaForcellaSpettino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
-
 
