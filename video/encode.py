@@ -31,7 +31,7 @@ files = set()
 print >>cmd, "set -e"
 
 # Generate the list file for the concat
-print >>cmd, "echo # Concat", "> " + output_lst
+print >>cmd, "rm -f " + output_lst
 for a in clips:
 	clip_mp4 = a["reader"]["path"].replace("./","")
 	clip_mkv = clip_mp4.replace(".mp4",".tmp.mkv")
@@ -47,11 +47,12 @@ for a in files:
 	clip_mp4 = a
 	clip_mkv = clip_mp4.replace(".mp4",".tmp.mkv")
 	tmp_glob += " " + clip_mkv
-	print >>cmd, "ffmpeg -i", clip_mp4, "-c copy -map 0:0 -map 0:1", clip_mkv
+	print >>cmd, "ffmpeg -y -i", clip_mp4, "-c copy -map 0:0 -map 0:1", clip_mkv
 
 # Concatenate the video with encoding
 PLAIN='-c copy -bsf:a aac_adtstoasc'
 FILTER='-vf "normalize=blackpt=black:whitept=white:smoothing=600:strength=1.0,eq=contrast=1.1:saturation=1.8,curves=blue=\'0/0 0.5/0.45 1/1\',unsharp=7:7:1.0,hflip,vflip"'
+FILTER_DARK='-vf "normalize=blackpt=black:whitept=white:smoothing=600:strength=1.0,eq=brightness=0.1:contrast=1.2:saturation=1.8,curves=blue=\'0/0 0.5/0.45 1/1\',unsharp=7:7:1.0,hflip,vflip"'
 ENCODE='-preset veryfast -codec:v libx264 -crf 24 -maxrate 90M -bufsize 30M -pix_fmt yuvj420p -codec:a aac -b:a 192k'
 print >>cmd, "ffmpeg -y -f concat -i " + name + ".lst", FILTER, ENCODE, output_mp4
 
