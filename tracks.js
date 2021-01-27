@@ -79,7 +79,7 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Passo del Canto, Capizzone', kind: 'down', file: 'I_PassoCantoCapizzone_REC.gpx', link: '2020/09/passo-canto-capizzone' },
 { vote: 3, rate: 2, rate_max: 4, cycle: 100, comm: "97%, tratto iniziale con passaggi a piedi", zone: 'imagna, ubione', name: 'Ubione, 571, Belved\u00EC, Clanezzo', kind: 'down', file: 'I_Ubione571_REC.gpx', link: '2020/08/ubione-571' },
 { vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, ubione', name: 'Roccoli Passata, Costa Cavallina', kind: 'down', file: 'I_CostaCavallina_REC.gpx', link: '2019/09/costa-cavallina' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Sopracorna', kind: 'down', file: 'I_Sopracorna_REC.gpx', link: '2020/05/sopracorna' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Final, Sopracorna', kind: 'down', file: 'I_Sopracorna_REC.gpx', link: '2020/05/sopracorna' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Postiera', kind: 'down', file: 'I_Postiera_REC.gpx', link: '2020/05/sopracorna' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Final, Postiera', kind: 'down', file: 'I_FinalPostiera_REC.gpx', link: '2020/05/sopracorna' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Corna Marcia, Coyote Scamburtit, Ca Bonor\u00E8', kind: 'down', file: 'I_CoyoteScamburtit_REC.gpx', link: '2019/09/coyote-scamburtit' },
