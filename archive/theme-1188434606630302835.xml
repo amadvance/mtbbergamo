@@ -867,7 +867,7 @@ head.appendChild(script);
       <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'>
         <b:widget id='PageList2' locked='false' title='Zone' type='PageList'>
           <b:widget-settings>
-            <b:widget-setting name='pageListJson'><![CDATA[{'7456450945174822363': {'href': 'http://www.mtbbergamo.it/p/colli-di-bergamo.html', 'title': 'Colli di Bergamo', 'position': 0}, '8333227843128009505': {'href': 'http://www.mtbbergamo.it/p/maresana.html', 'title': 'Maresana', 'position': 1}, '644484164600315902': {'href': 'http://www.mtbbergamo.it/p/sorisole.html', 'title': 'Sorisole', 'position': 2}, '671321837611946696': {'href': 'http://www.mtbbergamo.it/p/monte-canto.html', 'title': 'Monte Canto', 'position': 3}, '8996960218431449059': {'href': 'http://www.mtbbergamo.it/p/valle-san-martino.html', 'title': 'Valle San Martino', 'position': 4}, '8071814843114685363': {'href': 'http://www.mtbbergamo.it/p/valle-imagna.html', 'title': 'Valle Imagna', 'position': 5}, '6438529019463434628': {'href': 'http://www.mtbbergamo.it/p/valle-seriana.html', 'title': 'Valle Seriana', 'position': 6}}]]></b:widget-setting>
+            <b:widget-setting name='pageListJson'><![CDATA[{'7456450945174822363': {'href': 'http://www.mtbbergamo.it/p/colli-di-bergamo.html', 'title': 'Colli di Bergamo', 'position': 0}, '8333227843128009505': {'href': 'http://www.mtbbergamo.it/p/maresana.html', 'title': 'Maresana', 'position': 1}, '644484164600315902': {'href': 'http://www.mtbbergamo.it/p/sorisole.html', 'title': 'Sorisole', 'position': 2}, '671321837611946696': {'href': 'http://www.mtbbergamo.it/p/monte-canto.html', 'title': 'Monte Canto', 'position': 3}, '8996960218431449059': {'href': 'http://www.mtbbergamo.it/p/valle-san-martino.html', 'title': 'Valle San Martino', 'position': 4}, '8071814843114685363': {'href': 'http://www.mtbbergamo.it/p/valle-imagna.html', 'title': 'Valle Imagna', 'position': 5}, '6438529019463434628': {'href': 'http://www.mtbbergamo.it/p/valle-seriana.html', 'title': 'Valle Seriana', 'position': 6}, '8020907678493114285': {'href': 'http://www.mtbbergamo.it/p/valle-brembana.html', 'title': 'Valle Brembana', 'position': 7}}]]></b:widget-setting>
             <b:widget-setting name='homeTitle'>Home page</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
@@ -1052,39 +1052,8 @@ head.appendChild(script);
 
   <b:include cond='data:top.showPlusOne' name='googlePlusBootstrap'/>
 </b:includable>
-              <b:includable id='backlinkDeleteIcon' var='backlink'>
-  <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
-    <a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>
-      <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
-    </a>
-  </span>
-</b:includable>
-              <b:includable id='backlinks' var='post'>
-  <a name='links'/><h4><data:post.backlinksLabel/></h4>
-  <b:if cond='data:post.numBacklinks != 0'>
-    <dl class='comments-block' id='comments-block'>
-      <b:loop values='data:post.backlinks' var='backlink'>
-        <div class='collapsed-backlink backlink-control'>
-          <dt class='comment-title'>
-            <span class='backlink-toggle-zippy'>&#160;</span>
-            <a expr:href='data:backlink.url' rel='nofollow'><data:backlink.title/></a>
-            <b:include data='backlink' name='backlinkDeleteIcon'/>
-          </dt>
-          <dd class='comment-body collapseable'>
-            <data:backlink.snippet/>
-          </dd>
-          <dd class='comment-footer collapseable'>
-            <span class='comment-author'><data:post.authorLabel/> <data:backlink.author/></span>
-            <span class='comment-timestamp'><data:post.timestampLabel/> <data:backlink.timestamp/></span>
-          </dd>
-        </div>
-      </b:loop>
-    </dl>
-  </b:if>
-  <p class='comment-footer'>
-    <a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &quot;_backlinks-create-link&quot;' target='_blank'><data:post.createLinkLabel/></a>
-  </p>
-</b:includable>
+              <b:includable id='backlinkDeleteIcon' var='backlink'/>
+              <b:includable id='backlinks' var='post'/>
               <b:includable id='comment-form' var='post'>
   <div class='comment-form'>
     <a name='comment-form'/>
@@ -1237,11 +1206,6 @@ head.appendChild(script);
       </div>
     </b:if>
 
-    <div id='backlinks-container'>
-    <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
-       <b:include cond='data:post.showBacklinks' data='post' name='backlinks'/>
-    </div>
-    </div>
   </div>
 </b:includable>
               <b:includable id='feedLinks'>
@@ -1548,13 +1512,6 @@ head.appendChild(script);
       <span class='post-comment-link'>
         <b:include cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}                          and data:post.allowComments' data='post' name='comment_count_picker'/>
       </span>
-
-       <!-- backlinks -->
-       <span class='post-backlinks post-comment-link'>
-         <b:if cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}                      and data:post.showBacklinks'>
-           <a class='comment-link' expr:href='data:post.url + &quot;#links&quot;'><data:top.backlinkLabel/></a>
-         </b:if>
-       </span>
 
       <span class='post-icons'>
         <!-- email post links -->
@@ -2025,7 +1982,7 @@ head.appendChild(script);
 <b:section-contents id='sidebar-right-1'>
   <b:widget id='PageList1' locked='false' title='Zone' type='PageList'>
     <b:widget-settings>
-      <b:widget-setting name='pageListJson'><![CDATA[{'7456450945174822363': {'href': 'http://www.mtbbergamo.it/p/colli-di-bergamo.html', 'title': 'Colli di Bergamo', 'position': 0}, '8333227843128009505': {'href': 'http://www.mtbbergamo.it/p/maresana.html', 'title': 'Maresana', 'position': 1}, '644484164600315902': {'href': 'http://www.mtbbergamo.it/p/sorisole.html', 'title': 'Sorisole', 'position': 2}, '671321837611946696': {'href': 'http://www.mtbbergamo.it/p/monte-canto.html', 'title': 'Monte Canto', 'position': 3}, '8996960218431449059': {'href': 'http://www.mtbbergamo.it/p/valle-san-martino.html', 'title': 'Valle San Martino', 'position': 4}, '8071814843114685363': {'href': 'http://www.mtbbergamo.it/p/valle-imagna.html', 'title': 'Valle Imagna', 'position': 5}, '6438529019463434628': {'href': 'http://www.mtbbergamo.it/p/valle-seriana.html', 'title': 'Valle Seriana', 'position': 6}}]]></b:widget-setting>
+      <b:widget-setting name='pageListJson'><![CDATA[{'7456450945174822363': {'href': 'http://www.mtbbergamo.it/p/colli-di-bergamo.html', 'title': 'Colli di Bergamo', 'position': 0}, '8333227843128009505': {'href': 'http://www.mtbbergamo.it/p/maresana.html', 'title': 'Maresana', 'position': 1}, '644484164600315902': {'href': 'http://www.mtbbergamo.it/p/sorisole.html', 'title': 'Sorisole', 'position': 2}, '671321837611946696': {'href': 'http://www.mtbbergamo.it/p/monte-canto.html', 'title': 'Monte Canto', 'position': 3}, '8996960218431449059': {'href': 'http://www.mtbbergamo.it/p/valle-san-martino.html', 'title': 'Valle San Martino', 'position': 4}, '8071814843114685363': {'href': 'http://www.mtbbergamo.it/p/valle-imagna.html', 'title': 'Valle Imagna', 'position': 5}, '6438529019463434628': {'href': 'http://www.mtbbergamo.it/p/valle-seriana.html', 'title': 'Valle Seriana', 'position': 6}, '8020907678493114285': {'href': 'http://www.mtbbergamo.it/p/valle-brembana.html', 'title': 'Valle Brembana', 'position': 7}}]]></b:widget-setting>
       <b:widget-setting name='homeTitle'>Home page</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
