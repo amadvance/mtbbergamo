@@ -336,7 +336,7 @@ removed as almost duplicated by others
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Baita Campo, 127, Olmo al Brembo', kind: 'down', file: 'B_BaitaCampoOlmo_REC.gpx', link: '2020/09/baita-campo-olmo-al-brembo' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo di Spino, San Pellegrino', kind: 'down', file: 'B_PizzoSpinoSanPellegrino_REC.gpx', link: '2020/11/pizzo-spino' },
 { vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Forcella di Spettino, Molini, San Pellegrino', kind: 'down', file: 'B_ForcellaSpettinoMolini_REC.gpx' },
-{ vote: 2, rate: 2, rate_max: 3, cycle: 98, zone: 'brembana', name: 'Periplo del Monte Gioco', kind: 'down', file: 'B_PeriploMonteGioco_EBIKE.gpx' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 99, zone: 'brembana', name: 'Periplo del Monte Gioco', kind: 'down', file: 'B_PeriploMonteGioco_EBIKE.gpx', link: '2021/02/periplo-monte-gioco' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
