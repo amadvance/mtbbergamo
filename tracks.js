@@ -337,6 +337,8 @@ removed as almost duplicated by others
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo di Spino, San Pellegrino', kind: 'down', file: 'B_PizzoSpinoSanPellegrino_REC.gpx', link: '2020/11/pizzo-spino' },
 { vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Forcella di Spettino, Molini, San Pellegrino', kind: 'down', file: 'B_ForcellaSpettinoMolini_REC.gpx' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 99, zone: 'brembana', name: 'Periplo del Monte Gioco', kind: 'down', file: 'B_PeriploMonteGioco_EBIKE.gpx', link: '2021/02/periplo-monte-gioco' },
+{ vote: 1, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Sussia Alta, Frasnito, San Pellegrino', kind: 'down', file: 'B_SussiaFrasnito_REC.gpx' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Vetta, Frasnito', kind: 'down', file: 'B_VettaFrasnito_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
@@ -349,5 +351,8 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 75, zone: 'brembana', name: 'Salita da San Pellegrino al Pizzo di Spino', kind: 'up', file: 'B_SalitaSantaCrocePizzoSpino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da San Pellegrino alla Forcella di Spettino', kind: 'up', file: 'B_SalitaForcellaSpettino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da San Pellegrino a Salvarizza', kind: 'up', file: 'B_SalitaSalvarizza_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da San Pellegrino a Frasnito e Sussia', kind: 'up', file: 'B_SalitaFrasnitoSussia_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
+
+
 
