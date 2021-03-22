@@ -16,7 +16,7 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Calvarola / Filoncino / 401', kind: 'down', file: 'M_Filoncino_REC.gpx', link: '2018/11/401-filoncino' },
 { vote: 3, rate: 2, rate_max: 2, cycle: 100, zone: 'maresana', name: 'Calvarola 2', kind: 'down', file: 'M_Calvarola2_REC.gpx' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Filone Easy', kind: 'down', file: 'M_FiloneEasy_REC.gpx', link: '2018/11/filone-easy' },
-{ vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Colle Alto, Magnati', kind: 'down', file: 'M_ColleAltoMagnati_REC.gpx' },
+{ vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Colle Alto, Magnati', kind: 'down', file: 'M_ColleAltoMagnati_REC.gpx', link: '2021/03/colle-alto-magnati' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Filone / Agostini / 533', kind: 'down', file: 'M_Filone_REC.gpx', link: '2018/11/533-filone' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Colle Alto, Tremana', kind: 'down', file: 'M_Tremana_REC.gpx', link: '2020/12/colle-alto-tremana' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Scabla', kind: 'down', file: 'M_Scabla_REC.gpx' },
