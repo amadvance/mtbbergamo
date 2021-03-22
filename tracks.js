@@ -316,8 +316,8 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita da Nese alla Forcella', kind: 'up', file: 'S_SalitaNeseForcella_REC.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'S_CiclabileValleSeriana_REC.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Ciclovia delle Rogge', kind: 'up', file: 'S_CicloviaDelleRogge_REC.gpx', link: '2019/03/salite-valle-seriana' },
-{ vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Pradale, Sorgenti, Cornale', kind: 'down', file: 'S_PradaleCornaleSorgenti_REC.gpx' },
-{ vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Pradale, Val Coler, Cornale', kind: 'down', file: 'S_PradaleColerRinnovata_REC.gpx' },
+{ vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Pradale, Costa Sorgenti, Cornale', kind: 'down', file: 'S_PradaleCostaSorgenti_REC.gpx' },
+{ vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Pradale, Val Coler, Rinnovata', kind: 'down', file: 'S_PradaleColerRinnovata_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana, misma', name: 'Misma, Pradale', kind: 'down', file: 'S_MismaPradale_REC.gpx', link: '2020/05/misma' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana, misma', name: 'Misma, Pratolina', kind: 'down', file: 'S_MismaPratolina_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'S_SalitaMismaRipetitori_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
@@ -360,4 +360,5 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana, frasnito', name: 'Salita da San Pellegrino a Frasnito e Sussia', kind: 'up', file: 'B_SalitaFrasnitoSussia_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'brembana', name: 'Salita da San Giovanni Bianco al Monte Molinasco', kind: 'up', file: 'B_SalitaMolinasco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
+
 
