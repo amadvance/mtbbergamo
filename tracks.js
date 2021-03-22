@@ -320,9 +320,19 @@ removed as almost duplicated by others
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Pradale, Val Coler, Rinnovata', kind: 'down', file: 'S_PradaleColerRinnovata_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana, misma', name: 'Misma, Pradale', kind: 'down', file: 'S_MismaPradale_REC.gpx', link: '2020/05/misma' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana, misma', name: 'Misma, Pratolina', kind: 'down', file: 'S_MismaPratolina_REC.gpx' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Val Coler, Sant Antonio', kind: 'down', file: 'S_ColerSantAntonio_REC.gpx' },
+{ vote: 5, rate: 3, rate_max: 4, cycle: 100, zone: 'seriana', name: 'Val Coler, Vertical', kind: 'down', file: 'S_ColerVertical_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana, bastia', name: 'Bastia, Carezzola', kind: 'down', file: 'S_BastiaCarezzola_REC.gpx' },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'seriana, bastia', name: 'Bastia, Carezzola', kind: 'down', file: 'S_BastiaCarezzola2_REC.gpx' },
+{ vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'seriana, bastia', name: 'Bastia, Centrale', kind: 'down', file: 'S_BastiaCentrale_REC.gpx' },
+{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana, bastia', name: 'Bastia, Fola', kind: 'down', file: 'S_BastiaFola_REC.gpx' },
+{ vote: 4, rate: 3, rate_max: 4, cycle: 100, zone: 'seriana, bastia', name: 'Bastia, Fola', kind: 'down', file: 'S_BastiaGianino_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana, bastia', name: 'Bastia, Valbona', kind: 'down', file: 'S_BastiaValbona_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'S_SalitaMismaRipetitori_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana, misma', name: 'Salita da Pradalunga, Morosini, 511, Monte Misma', kind: 'up', file: 'S_SalitaMisma511_REC.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'seriana, misma', name: 'Salita da Pradalunga, Forcella, Monte Misma', kind: 'up', file: 'S_SalitaForcellaMisma_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita al Monte Bastia', kind: 'up', file: 'S_SalitaBastia_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita alla Val Coler', kind: 'up', file: 'S_SalitaTribulinaColer_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita da Cornale, Pradale', kind: 'up', file: 'S_SalitaCornalePradale_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'valsassina', name: 'Arvaggio 2000, Piani di Artavaggio, Vasca, Moggio', kind: 'down', file: 'SA_CazzanigaArtavaggioVascaNeve_REC.gpx', link: '2020/01/artavaggio' },
 { vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'valsassina', name: 'Moggio, Piani di Artavaggio, Artavaggio 2000', kind: 'up', file: 'SA_MoggioArtavaggioCazzaniga_REC.gpx', link: '2020/01/artavaggio' },
@@ -360,5 +370,4 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana, frasnito', name: 'Salita da San Pellegrino a Frasnito e Sussia', kind: 'up', file: 'B_SalitaFrasnitoSussia_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'brembana', name: 'Salita da San Giovanni Bianco al Monte Molinasco', kind: 'up', file: 'B_SalitaMolinasco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 ];
-
 
