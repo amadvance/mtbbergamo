@@ -30,7 +30,7 @@ var TRACKS = [
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Birondina', kind: 'down', file: 'M_Birondina_REC.gpx', link: '2019/02/birondina' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana, seriana', name: '532A, Olera', kind: 'down', file: 'M_532A_Olera_REC.gpx', link: '2019/03/532a-olera' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Flying Dutchman', kind: 'down', file: 'M_FlyingDutchman_REC.gpx', link: '2019/01/flying-dutchman' },
-{ vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Gaito', kind: 'down', file: 'M_Gaito_REC.gpx' },
+{ vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Gaito', kind: 'down', file: 'M_Gaito_REC.gpx', link: '2021/03/gaito' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana, sorisole', name: 'Trasferimento da Ca Del Lacc alla Forcella Del Sorriso', kind: 'up', file: 'M_CaDelLaccForcellaDelSorriso_REC.gpx', link: '2018/11/salite-maresana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Trasferimento dal Castello della Moretta alla Maresana', kind: 'up', file: 'M_MorettaMaresana_REC.gpx', link: '2018/11/salite-maresana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana, sorisole', name: 'Trasferimento da Premerlino a Ponteranica Alta', kind: 'up', file: 'M_PremerlinoPonteranicaAlta_REC.gpx', link: '2018/11/salite-maresana' },
