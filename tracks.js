@@ -336,7 +336,7 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'S_SalitaMismaRipetitori_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana, misma', name: 'Salita da Pradalunga, Morosini, 511, Monte Misma', kind: 'up', file: 'S_SalitaMisma511_REC.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'seriana, misma', name: 'Salita da Pradalunga, Forcella, Monte Misma', kind: 'up', file: 'S_SalitaForcellaMisma_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 99, zone: 'seriana, misma', name: 'Salita da Pradalunga, Forcella, Ripetitori, Monte Misma', kind: 'up', file: 'S_PradalungaForcellaRipetitoriMisma_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 99, zone: 'seriana, misma', name: 'Salita da Pradalunga, Forcella, Ripetitori, Monte Misma', kind: 'up', file: 'S_SalitaForcellaRipetitoriMisma_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana, bastia', name: 'Salita al Monte Bastia', kind: 'up', file: 'S_SalitaBastia_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita alla Val Coler', kind: 'up', file: 'S_SalitaTribulinaColer_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita da Cornale, Pradale', kind: 'up', file: 'S_SalitaCornalePradale_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
