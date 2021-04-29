@@ -336,7 +336,7 @@ removed as not significative
 Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegue per il 511, pedalabile fino all'incrocio con il sentiero per la Santa Maria di Misma. Da qui occorre spingere o spallare per 200 metri di dislivello. 
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana, misma', name: 'Salita da Pradalunga, Morosini, 511, Monte Misma', kind: 'up', file: 'S_SalitaMisma511_REC.gpx', link: '2019/03/salite-valle-seriana' },
 */
-{ vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'seriana, misma, cavallina', name: 'Salita da Pradalunga, Forcella, Monte Misma', kind: 'up', file: 'S_SalitaForcellaMisma_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'seriana, misma', name: 'Salita da Pradalunga, Forcella, Monte Misma', kind: 'up', file: 'S_SalitaForcellaMisma_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 99, zone: 'seriana, misma', name: 'Salita da Pradalunga, Forcella, Ripetitori, Monte Misma', kind: 'up', file: 'S_SalitaForcellaRipetitoriMisma_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana, bastia', name: 'Salita al Monte Bastia', kind: 'up', file: 'S_SalitaBastia_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita alla Val Coler', kind: 'up', file: 'S_SalitaTribulinaColer_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
@@ -383,11 +383,11 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'cavallina', name: 'Sentiero della Luna', kind: 'down', file: 'A_ArgonSentieroDellaLuna_REC.gpx' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Vertical', kind: 'down', file: 'A_ArgonVertical_REC.gpx' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Welcome to the Jungle', kind: 'down', file: 'A_ArgonWelcomeToTheJungle_REC.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita all\' Eremo', kind: 'up', file: 'A_ArgonSalitaPastaEremo_EBIKE.gpx', link: '2020/08/salite-valle-cavallina' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita al Colle di Pasta', kind: 'up', file: 'A_ArgonSalitaPasta_EBIKE.gpx', link: '2020/08/salite-valle-cavallina' },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 99, zone: 'cavallina, misma', name: 'Misma, Cenate', kind: 'down', file: 'A_MismaCenate_REC.gpx', link: '2021/04/misma-santa-maria-cenate-sopra' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita all\' Eremo', kind: 'up', file: 'A_ArgonSalitaPastaEremo_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita al Colle di Pasta', kind: 'up', file: 'A_ArgonSalitaPasta_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 99, zone: 'cavallina, misma', name: 'Misma, Santa Maria, Cenate', kind: 'down', file: 'A_MismaCenate_REC.gpx', link: '2021/04/misma-santa-maria-cenate-sopra' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'cavallina, misma', name: 'Prati Alti, Sant\'Ambrogio', kind: 'down', file: 'A_PratiAltiSantAmbrogio_REC.gpx' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'S_ValpredinaCenateSopra_REC.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'A_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2020/08/salite-valle-cavallina' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'A_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
 
