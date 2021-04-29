@@ -295,9 +295,8 @@ removed as almost duplicated by others
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana', name: 'Selvino, 550 / Mulattiera, Albino', kind: 'down', file: 'S_550MulattieraAlbino_REC.gpx', link: '2019/03/550-mulattiera' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana', name: 'Selvino, 536 / Trevasco, Nembro', kind: 'down', file: 'S_Trevasco_REC.gpx', link: '2019/04/trevasco' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Selvino, Monte Purito, Monte Cereto, Nembro', kind: 'down', file: 'S_PuritoCereto_REC.gpx', link: '2019/04/purito-cereto' },
-/* { vote: 4, rate: 2, rate_max: 3, cycle: 99, zone: 'seriana', name: 'Selvino, Ama, Trote, Albino', kind: 'down', file: 'S_TroteSegniRossi_REC.gpx', link: '2019/03/trote' }, */
 { vote: 4, rate: 2, rate_max: 3, cycle: 99, zone: 'seriana', name: 'Selvino, Ama, Trote, Albino', kind: 'down', file: 'S_Trote_REC.gpx', link: '2019/03/trote' },
-{ vote: 4, rate: 4, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Selvino, Ama, Nigromo, Vertical, Albino', kind: 'down', file: 'S_NigromoVertical_REC.gpx' },
+{ vote: 4, rate: 4, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Selvino, Ama, Nigromo, Vertical, Albino', kind: 'down', file: 'S_NigromoVertical_REC.gpx', link: '2021/04/nigromo-vertical' },
 { vote: 4, rate: 4, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Canto Basso, 540A, Olera', kind: 'down', file: 'S_540A_REC.gpx', link: '2019/03/canto-basso-540a-olera' },
 { vote: 1, rate: 1, rate_max: 0, cycle: 98, zone: 'seriana', name: 'Olera, 532, Burro, 531, Nese', kind: 'down', file: 'S_Olera532Burro531Nese_REC.gpx', link: '2019/03/olera-532-burro-531-nese' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana', name: 'Ganda, 520, Gazzaniga', kind: 'down', file: 'S_Ganda520_REC.gpx', link: '2019/03/520' },
