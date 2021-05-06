@@ -94,7 +94,7 @@ function create_map(id) {
 	var mymap = L.map(id, { fullscreenControl: true } );
 
 	// Create the renderer to use for hotlines
-	// To have multiple tracks clickable ne the same map only one renderer for map must be used
+	// To have multiple tracks clickable on the same map only one renderer for map must be used
 	// To support multiple map on the same page, each map should have its renderer
 	mymap.hotline_renderer = L.hotline_create_new_renderer();
 
