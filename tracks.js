@@ -385,9 +385,11 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'cavallina, argon', name: 'Welcome to the Jungle', kind: 'down', file: 'A_ArgonWelcomeToTheJungle_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, argon', name: 'Salita al Colle di Pasta e Monte d\'Argon', kind: 'up', file: 'A_ArgonSalitaPastaArgon_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, argon', name: 'Salita al Colle di Pasta', kind: 'up', file: 'A_ArgonSalitaPasta_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, argon', name: 'Salita al Monte d\'Argon', kind: 'up', file: 'A_ArgonSalitaMonteArgon_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 99, zone: 'cavallina, misma', name: 'Misma, Santa Maria, Cenate', kind: 'down', file: 'A_MismaCenate_REC.gpx', link: '2021/04/misma-santa-maria-cenate-sopra' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'cavallina, misma', name: 'Prati Alti, Sant\'Ambrogio', kind: 'down', file: 'A_PratiAltiSantAmbrogio_REC.gpx' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'S_ValpredinaCenateSopra_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'A_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
+
 
