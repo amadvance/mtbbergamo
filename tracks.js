@@ -235,6 +235,9 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Salita da Palazzago alla Cava', kind: 'up', file: 'N_SalitaPalazzagoCava_REC.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Almenno al Monte Lizone', kind: 'up', file: 'N_SalitaAlmennoPalazzagoLinzone_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Trasferimento da Opreno a Burligo', kind: 'up', file: 'N_OprenoBurligo_REC.gpx', link: '2018/12/salite-san-martino' },
+{ vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'canto', name: 'Tronchi, Canyon', kind: 'down', file: 'C_Canyon_REC.gpx', link: '2021/05/canyon' },
+{ vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'canto', name: 'Traliccio', kind: 'down', file: 'C_Traliccio_REC.gpx', link: '2021/05/traliccio' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'GEP', kind: 'down', file: 'C_GEP_REC.gpx', link: '2021/05/gep' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'Radici, Genestaro', kind: 'down', file: 'C_RadiciGenestaro_REC.gpx', link: '2020/03/radici-genestaro' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'Crocione, Guendalina', kind: 'down', file: 'C_CrocioneGuendalina_REC.gpx', link: '2020/02/crocione-guendalina' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'canto', name: 'Biglietto da Visita', kind: 'down', file: 'C_BigliettoDaVisita_REC.gpx', link: '2020/02/biglietto-da-visita' },
@@ -359,6 +362,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo di Spino, San Pellegrino', kind: 'down', file: 'B_PizzoSpinoSanPellegrino_REC.gpx', link: '2020/11/pizzo-spino' },
 { vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Forcella di Spettino, Molini, San Pellegrino', kind: 'down', file: 'B_ForcellaSpettinoMolini_REC.gpx', link: '2021/02/forcella-di-spettino-molini' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 99, zone: 'brembana', name: 'Periplo del Monte Gioco', kind: 'down', file: 'B_PeriploMonteGioco_EBIKE.gpx', link: '2021/02/periplo-monte-gioco' },
+{ vote: 5, rate: 4, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Valcumina', kind: 'down', file: 'B_Valcumina_REC.gpx' },
 { vote: 1, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana, frasnito', name: 'Sussia Alta, Frasnito, San Pellegrino', kind: 'down', file: 'B_SussiaFrasnito_REC.gpx', link: '2021/03/sussia-frasnito' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana, frasnito', name: 'Vetta, Frasnito', kind: 'down', file: 'B_VettaFrasnito_REC.gpx', link: '2021/03/sussia-frasnito' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Monte Molinasco, San Giovanni Bianco', kind: 'down', file: 'B_MolinascoSanGiovanniBianco_REC.gpx', link: '2021/03/monte-molinasco' },
@@ -376,6 +380,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da San Pellegrino a Salvarizza', kind: 'up', file: 'B_SalitaSalvarizza_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana, frasnito', name: 'Salita da San Pellegrino a Frasnito e Sussia', kind: 'up', file: 'B_SalitaFrasnitoSussia_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'brembana', name: 'Salita da San Giovanni Bianco al Monte Molinasco', kind: 'up', file: 'B_SalitaMolinasco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'brembana', name: 'Salita da Salvarizza alla Forcella della Valcumina', kind: 'up', file: 'B_SalvarizzaForcellaValcumina_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'cavallina, argon', name: 'Percorso Vita', kind: 'down', file: 'A_ArgonPercorsoVita_REC.gpx' },
 { vote: 2, rate: 1, rate_max: 3, cycle: 100, zone: 'cavallina, argon', name: 'Pietria dell\'Eremo', kind: 'down', file: 'A_ArgonPietraiaEremo_REC.gpx' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'cavallina, argon', name: 'San Giorgio, Valle d\'Albano', kind: 'down', file: 'A_ArgonSanGiorgioValleAlbano_REC.gpx' },
@@ -391,5 +396,4 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'S_ValpredinaCenateSopra_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'A_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
-
 
