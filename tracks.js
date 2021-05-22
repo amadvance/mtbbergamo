@@ -362,7 +362,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo di Spino, San Pellegrino', kind: 'down', file: 'B_PizzoSpinoSanPellegrino_REC.gpx', link: '2020/11/pizzo-spino' },
 { vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Forcella di Spettino, Molini, San Pellegrino', kind: 'down', file: 'B_ForcellaSpettinoMolini_REC.gpx', link: '2021/02/forcella-di-spettino-molini' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 99, zone: 'brembana', name: 'Periplo del Monte Gioco', kind: 'down', file: 'B_PeriploMonteGioco_EBIKE.gpx', link: '2021/02/periplo-monte-gioco' },
-{ vote: 5, rate: 4, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Valcumina', kind: 'down', file: 'B_Valcumina_REC.gpx' },
+{ vote: 5, rate: 4, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Valcumina', kind: 'down', file: 'B_Valcumina_REC.gpx', link: '2021/05/valcumina' },
 { vote: 1, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana, frasnito', name: 'Sussia Alta, Frasnito, San Pellegrino', kind: 'down', file: 'B_SussiaFrasnito_REC.gpx', link: '2021/03/sussia-frasnito' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana, frasnito', name: 'Vetta, Frasnito', kind: 'down', file: 'B_VettaFrasnito_REC.gpx', link: '2021/03/sussia-frasnito' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Monte Molinasco, San Giovanni Bianco', kind: 'down', file: 'B_MolinascoSanGiovanniBianco_REC.gpx', link: '2021/03/monte-molinasco' },
