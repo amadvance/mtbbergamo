@@ -162,6 +162,7 @@ removed as not significative
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Baita, Camutaglio, Longa, Golf', kind: 'down', file: 'N_BaitaCamutaglioLongaGolf_REC.gpx', link: '2019/04/roncola' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Prabacioc, San Rocco', kind: 'down', file: 'N_PrabaciocSanRocco_REC.gpx', link: '2019/04/roncola' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Trasferimento da Roncola alla Baita', kind: 'up', file: 'N_RoncolaBaita_REC.gpx', link: '2018/12/salite-san-martino' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Salita da Roncola al Monte Piacca', kind: 'up', file: 'N_RoncolaPiacca_REC.gpx', link: '2018/12/salite-san-martino' },
 /*
 removed as almost duplicated by others
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna, valcava, roncola', name: 'Roncola, Selino', kind: 'down', file: 'I_RoncolaSelino_REC.gpx', link: '2019/04/roncola' },
@@ -181,6 +182,7 @@ removed as almost duplicated by others
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, valcava, piacca', name: 'Linzone, Monte Piacca, Col Pedrino, Palestra / 807, Burligo', kind: 'down', file: 'N_LinzonePiaccaColPedrinoPalestraBurligo_REC.gpx', link: '2018/11/linzone-monte-piacca-baita-burligo' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'martino, valcava', name: 'Valcava, Funivia, Coldara, Col Fopa, Opreno, Burligo', kind: 'down', file: 'N_AntenneValcavaFuniviaColFopaBurligo_REC.gpx', link: '2019/01/funivia-coldara-colle-pedrino-opreno' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 98, zone: 'martino, valcava', name: 'Valcava, Zuccherone, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'N_AntenneValcavaZuccheroneColPedrinoBurligo_REC.gpx', link: '2019/03/zuccherone-coldara-col-fopa-opreno' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'martino, valcava', name: 'Monte Piacca, Dusnale', kind: 'down', file: 'N_PiaccaDusnale_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Burligo alle antenne di Valcava', kind: 'up', file: 'N_SalitaBurligoCavaAntenneValcava_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, piacca', name: 'Salita da Burligo al Monte Linzone', kind: 'up', file: 'N_SalitaBurligoCavaLinzone_REC.gpx', link: '2018/12/salite-san-martino' },
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, crinale', name: 'Crinale dei colli di Palazzago', kind: 'down', file: 'N_ColliPalazzago_EBIKE.gpx', link: '2020/10/colli-di-palazzago' },
@@ -396,4 +398,5 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'S_ValpredinaCenateSopra_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'A_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
+
 
