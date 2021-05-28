@@ -297,7 +297,10 @@ removed as almost duplicated by others
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Forcella di Nese, 531, Nese', kind: 'down', file: 'S_ForcellaNese531Nese_REC.gpx', link: '2019/05/forcella-di-nese-531-nese' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 99, zone: 'seriana', name: 'Selvino, 535, Lonno', kind: 'down', file: 'S_535Lonno_REC.gpx', link: '2019/05/monte-valtrusa' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, comm: "95% la salita al Valtrusa", zone: 'seriana', name: 'Selvino, 535, Monte Valtrusa, Lonno', kind: 'down', file: 'S_535Valtrusa_REC.gpx', link: '2019/05/monte-valtrusa' },
+/*
+rimosso su richiesta del CAI Albino
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana', name: 'Selvino, 550 / Mulattiera, Albino', kind: 'down', file: 'S_550MulattieraAlbino_REC.gpx', link: '2019/03/550-mulattiera' },
+*/
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana', name: 'Selvino, 536 / Trevasco, Nembro', kind: 'down', file: 'S_Trevasco_REC.gpx', link: '2019/04/trevasco' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Selvino, Monte Purito, Monte Cereto, Nembro', kind: 'down', file: 'S_PuritoCereto_REC.gpx', link: '2019/04/purito-cereto' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 99, zone: 'seriana', name: 'Selvino, Ama, Trote, Albino', kind: 'down', file: 'S_Trote_REC.gpx', link: '2019/03/trote' },
