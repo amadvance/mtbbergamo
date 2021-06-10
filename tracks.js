@@ -331,7 +331,7 @@ rimosso su richiesta del CAI Albino
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Pradale, Val Coler, Rinnovata', kind: 'down', file: 'S_PradaleColerRinnovata_REC.gpx', link: '2021/03/pradale-val-coler-rinnovata' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana, misma', name: 'Misma, Pradale', kind: 'down', file: 'S_MismaPradale_REC.gpx', link: '2020/05/misma' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana, misma', name: 'Misma, Pratolina', kind: 'down', file: 'S_MismaPratolina_REC.gpx', link: '2021/03/misma-pratolina' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Val Coler, Sant Antonio', kind: 'down', file: 'S_ColerSantAntonio_REC.gpx' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Val Coler, Sant Antonio', kind: 'down', file: 'S_ColerSantAntonio_REC.gpx', link: '2021/06/val-coler-sant-antonio' },
 { vote: 5, rate: 3, rate_max: 4, cycle: 100, zone: 'seriana', name: 'Val Coler, Vertical', kind: 'down', file: 'S_ColerVertical_REC.gpx', link: '2021/04/val-coler-vertical' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Val Coler, Biroli, Cornale', kind: 'down', file: 'S_ColerBiroliCornale_REC.gpx', link: '2021/04/val-coler-biroli-cornale' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'seriana, bastia', name: 'Bastia, Carezzola', kind: 'down', file: 'S_BastiaCarezzola_REC.gpx', link: '2021/04/scanzorosciate' },
