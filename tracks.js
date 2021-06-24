@@ -82,6 +82,7 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Final, Sopracorna', kind: 'down', file: 'I_FinalSopracorna_REC.gpx', link: '2020/05/sopracorna' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Postiera', kind: 'down', file: 'I_Postiera_REC.gpx', link: '2020/05/sopracorna' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Final, Postiera', kind: 'down', file: 'I_FinalPostiera_REC.gpx', link: '2020/05/sopracorna' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Final, Valle Mori', kind: 'down', file: 'I_FinalValleMori_REC.gpx', link: '2020/05/sopracorna' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Corna Marcia, Coyote Scamburtit, Ca Bonor\u00E8', kind: 'down', file: 'I_CoyoteScamburtit_REC.gpx', link: '2019/09/coyote-scamburtit' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, comm: "97% nella salita ai Canti", zone: 'imagna,canti', name: 'Zuc De Valmana, Canti, 579A, Tre Faggi, Fuipiano', kind: 'down', file: 'I_ZucDeValmanaCanti579ATreFaggiFuipiano_REC.gpx', link: '2020/02/canti' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'canti', name: 'Canti, Freeride, Tre Faggi', kind: 'down', file: 'I_CantiFreerideTreFaggi_REC.gpx', link: '2020/02/canti' },
