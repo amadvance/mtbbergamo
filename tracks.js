@@ -163,7 +163,7 @@ removed as not significative
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Baita, Camutaglio, Longa, Golf', kind: 'down', file: 'N_BaitaCamutaglioLongaGolf_REC.gpx', link: '2019/04/roncola' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Prabacioc, San Rocco', kind: 'down', file: 'N_PrabaciocSanRocco_REC.gpx', link: '2019/04/roncola' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Trasferimento da Roncola alla Baita', kind: 'up', file: 'N_RoncolaBaita_REC.gpx', link: '2018/12/salite-san-martino' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Salita da Roncola al Monte Piacca', kind: 'up', file: 'N_RoncolaPiacca_REC.gpx', link: '2018/12/salite-san-martino' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Salita da Palazzago al Monte Piacca', kind: 'up', file: 'N_SalitaPalazzagoMontePiacca_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 /*
 removed as almost duplicated by others
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna, valcava, roncola', name: 'Roncola, Selino', kind: 'down', file: 'I_RoncolaSelino_REC.gpx', link: '2019/04/roncola' },
