@@ -365,7 +365,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'B_CatremerioTruca_REC.gpx', link: '2020/11/catremerio-truca-brembilla' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'S. Antonio Abbandonato, Casarielli, Zogno', kind: 'down', file: 'B_SAntonioCasarielli_REC.gpx', link: '2020/07/casarielli' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'S. Antonio Abbandonato, Strada Taverna, Ponti', kind: 'down', file: 'B_SAntonioTaverna_REC.gpx', link: '2020/07/strada-taverna' },
-{ vote: 2, rate: 2, rate_max: 4, cycle: 100, zone: 'brembana', name: 'Ca del C\u00E8co, Sonzogno, Pernice, Zogno', kind: 'down', file: 'B_CecoSonzognoPerniceZogno_REC.gpx' },
+{ vote: 2, rate: 2, rate_max: 4, cycle: 100, zone: 'brembana', name: 'Ca del C\u00E8co, Sonzogno, Pernice, Zogno', kind: 'down', file: 'B_CecoSonzognoPerniceZogno_REC.gpx', link: '2021/06/ceco-sonzogno-pernice' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: '505A, Zogno', kind: 'down', file: 'B_505AZogno_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'brembana', name: 'Salita da S. Antonio Abbandonato a Ca del C\u00E8co', kind: 'up', file: 'B_SalitaSantAntonioCeco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Monte Castello, Algua, Zogno', kind: 'down', file: 'B_MonteCastelloAlguaZogno_REC.gpx', link: '2021/06/monte-castello' },
