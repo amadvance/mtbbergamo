@@ -210,6 +210,9 @@ removed as almost duplicated by others
 { vote: 2, rate: 3, rate_max: 4, cycle: 100, zone: 'martino, valcava', name: 'Forcella Alta, 802, Carenno', kind: 'down', file: 'N_ForcellaAlta802Carenno_REC.gpx', link: '2020/06/forcella-alta-802-carenno' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Convento Pertus, Erve, Saina, Somasca', kind: 'down', file: 'N_ConventoPertusErveSainaSomasca_EBIKE.gpx', link: '2020/07/convento-pertus-erve-saina-somasca' },
 { vote: 3, rate: 4, rate_max: 0, cycle: 85, zone: 'martino, valcava', name: 'Convento Pertus, Nesolio, Madonna del Corno', kind: 'down', file: 'N_ConventoPertusNesolioCorno_REC.gpx', link: '2021/06/nesolio' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, martino, valcava', name: 'Salita Madonna del Corno, Convento del Pertus', kind: 'up', file: 'N_SalitaCornoConventoPertus_EBIKE.gpx', link: '2018/12/salite-san-martino' },
+{ vote: 1, rate: 4, rate_max: 0, cycle: 75, zone: 'martino, valcava', name: 'Convento Pertus, Pian Munik, Madonna del Corno', kind: 'down', file: 'N_ConventoPertusMunikCorno_REC.gpx', link: '2021/07/munik' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, martino, valcava', name: 'Salita Madonna del Corno, Oneta, Convento del Pertus', kind: 'up', file: 'N_SalitaCornoOnetaConventoPertus_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, valcava, tesoro', name: 'Monte Tesoro, Direttissima, Colle Di Sogno, Corna Martinella, Cristai Super Flow, Torre de Busi', kind: 'down', file: 'N_TesoroDirSognoMartinellaCristaiSuperFlow_REC.gpx', link: '2018/12/monte-tesoro-direttissima-colle-di' },
 { vote: 1, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, sogno', name: 'Colle Di Sogno, 819, Torre de Busi', kind: 'down', file: 'N_ColleDiSogno819_REC.gpx', link: '2019/12/colle-di-sogno' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, sogno', name: 'Colle Di Sogno, 823, Torre de Busi', kind: 'down', file: 'N_ColleDiSogno823_REC.gpx', link: '2019/12/colle-di-sogno' },
@@ -228,7 +231,6 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, tesoro', name: 'Salita da Torre De Busi a Valcava', kind: 'up', file: 'N_SalitaBusiValcava_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Salita da Carenno alla Forcella Alta', kind: 'up', file: 'N_SalitaCarennoForcellaAlta_REC.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Salita da Somasca al Convento del Pertus', kind: 'up', file: 'N_SalitaSomascaCarennoConventoPertus_EBIKE.gpx', link: '2018/12/salite-san-martino' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, martino, valcava', name: 'Salita dalla Madonna del Corno al Convento del Pertus', kind: 'up', file: 'N_SalitaCornoConventoPertus_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'tesoro', name: 'Salita da Carenno alla Forcella Alta', kind: 'up', file: 'N_SalitaCarennoForcellaAlta_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, martinella', name: 'Salita da Carenno alla Corna Martinella', kind: 'up', file: 'N_SalitaCarenno819CornaMartinella_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Salita dalla Forcella Alta al Monte Tesoro', kind: 'up', file: 'N_SalitaForcellaAltaMonteTesoro_REC.gpx', link: '2018/12/salite-san-martino' },
@@ -416,4 +418,5 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'A_ValpredinaCenateSopra_REC.gpx', link: '2021/05/valpredina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'A_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
+
 
