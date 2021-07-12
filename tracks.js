@@ -363,6 +363,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'brembana', name: 'Salita da Brembilla ai Tre Faggi', kind: 'up', file: 'B_SalitaBrembillaTreFaggi_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Piazzacava, Gerosa, Foppa, Brembilla', kind: 'down', file: 'B_PiazzacavaFoppaBrembilla_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'brembana', name: 'Salita da Brembilla a Piazzacava', kind: 'up', file: 'B_SalitaBrembillaPiazzacava_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo Cerro, Rudino, Brembilla', kind: 'down', file: 'B_PizzoCerroRudinoBrembilla_REC.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'brembana', name: 'Salita da Brembilla a Catremerio e al Pizzo Cerro', kind: 'up', file: 'B_SalitaBrembillaPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Forcella di Berbenno, Ripe, Brembilla', kind: 'down', file: 'B_BerbennoRipe_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'B_CatremerioTruca_REC.gpx', link: '2020/11/catremerio-truca-brembilla' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'S. Antonio Abbandonato, Casarielli, Zogno', kind: 'down', file: 'B_SAntonioCasarielli_REC.gpx', link: '2020/07/casarielli' },
@@ -387,7 +389,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana, pradai', name: 'Panchina Gigante, Pradai, Frasnadello', kind: 'down', file: 'B_PanchinaGigantePradaiFrasnadello_REC.gpx', link: '2021/06/panchina-gigante-pradai-frasnadello' },
 { vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana, pradai', name: 'Campel, Cresta, Frasnadello', kind: 'down', file: 'B_CampelCrestaFrasnadello_REC.gpx', link: '2021/06/panchina-gigante-pradai-frasnadello' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana, pradai', name: 'Salita da Spettino alla Panchina Gigante', kind: 'up', file: 'B_SalitaSpettinoPanchinaGigante_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno al Monte Castello', kind: 'up', file: 'B_SalitaZognoMonteCastello_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
@@ -418,5 +420,4 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'A_ValpredinaCenateSopra_REC.gpx', link: '2021/05/valpredina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'A_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
-
 
