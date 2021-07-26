@@ -363,7 +363,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'brembana', name: 'Salita da Brembilla ai Tre Faggi', kind: 'up', file: 'B_SalitaBrembillaTreFaggi_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Piazzacava, Gerosa, Foppa, Brembilla', kind: 'down', file: 'B_PiazzacavaFoppaBrembilla_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'brembana', name: 'Salita da Brembilla a Piazzacava', kind: 'up', file: 'B_SalitaBrembillaPiazzacava_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo Cerro, Piane, Brembilla', kind: 'down', file: 'B_PizzoCerroPianeBrembilla_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo Cerro, Piane, Brembilla', kind: 'down', file: 'B_PizzoCerroPianeBrembilla_REC.gpx', link: '2021/07/pizzo-cerro-piane-brembilla' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'brembana', name: 'Salita da Brembilla a Crosnello e al Pizzo Cerro', kind: 'up', file: 'B_SalitaBrembillaCrosnelloPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Pizzo Cerro, Fienili, Brembilla', kind: 'down', file: 'B_PizzoCerroFieniliBrembilla_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'hidden', name: 'Salita da Brembilla al Pizzo Cerro', kind: 'up', file: 'B_SalitaBrembillaPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
