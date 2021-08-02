@@ -367,6 +367,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'brembana', name: 'Salita da Brembilla a Crosnello e al Pizzo Cerro', kind: 'up', file: 'B_SalitaBrembillaCrosnelloPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Pizzo Cerro, Fienili, Brembilla', kind: 'down', file: 'B_PizzoCerroFieniliBrembilla_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'hidden', name: 'Salita da Brembilla al Pizzo Cerro', kind: 'up', file: 'B_SalitaBrembillaPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 2, rate: 2, rate_max: 3, cycle: 98, zone: 'brembana', name: 'Pizzo Cerro, Cavaglia, Brembilla', kind: 'down', file: 'B_PizzoCerroCavaglia_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Forcella di Berbenno, Ripe, Brembilla', kind: 'down', file: 'B_BerbennoRipe_REC.gpx' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'B_CatremerioTruca_REC.gpx', link: '2020/11/catremerio-truca-brembilla' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'S. Antonio Abbandonato, Casarielli, Zogno', kind: 'down', file: 'B_SAntonioCasarielli_REC.gpx', link: '2020/07/casarielli' },
@@ -422,4 +423,6 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'A_ValpredinaCenateSopra_REC.gpx', link: '2021/05/valpredina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'A_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
+
+
 
