@@ -9,6 +9,35 @@
 */
 
 var TRACKS = [
+//
+// COLLI DI BERGAMO
+//
+{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord', name: '712 Nord', kind: 'down', file: 'PC_712Nord_REC.gpx', link: '2019/03/roccolone-nord' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: '712 Sud', kind: 'down', file: 'PC_712Sud_REC.gpx', link: '2019/01/roccolone-sud' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord', name: '713 / Partigiano', kind: 'down', file: 'PC_713Partigiano_REC.gpx', link: '2019/03/roccolone-nord' },
+{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord', name: 'Roccolone Nord', kind: 'down', file: 'PC_RoccoloneNord_REC.gpx', link: '2019/03/roccolone-nord' },
+{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'colli', name: '910 / Alpini', kind: 'down', file: 'PC_910_REC.gpx', link: '2018/12/910' },
+{ vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Gussa Est', kind: 'down', file: 'PC_GussaEst_REC.gpx', link: '2019/01/monte-gussa' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Gussa Nord', kind: 'down', file: 'PC_GussaNord_REC.gpx', link: '2019/01/monte-gussa' },
+{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Gussa Ovest', kind: 'down', file: 'PC_GussaOvest_REC.gpx', link: '2019/01/monte-gussa' },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'colli,gussa', name: 'Gussa Sud', kind: 'down', file: 'PC_GussaSud_REC.gpx', link: '2019/01/monte-gussa' },
+{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord', name: 'ExPistino', kind: 'down', file: 'PC_ExPistino_REC.gpx', link: '2019/03/roccolone-nord' },
+{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: 'Pistino Downhill', kind: 'down', file: 'PC_PistinoDownhill_REC.gpx', link: '2019/03/pistino-downhill' },
+{ vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'colli', name: 'Roccolone', kind: 'down', file: 'PC_Roccolone_REC.gpx', link: '2018/12/roccolone' },
+{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: 'Roccolone Sud', kind: 'down', file: 'PC_RoccoloneSud_REC.gpx', link: '2019/01/roccolone-sud' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: 'Gradoni', kind: 'down', file: 'PC_Gradoni_REC.gpx', link: '2019/01/roccolone-sud' },
+{ vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,allegrezza', name: 'Allegrezza', kind: 'down', file: 'PC_Allegrezza_REC.gpx', link: '2018/12/allegrezza' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,allegrezza', name: 'Allegrezza Sud', kind: 'down', file: 'PC_AllegrezzaSud_REC.gpx', link: '2018/12/allegrezza' },
+{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: 'Torre', kind: 'down', file: 'PC_Torre_REC.gpx', link: '2019/01/roccolone-sud' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'colli', name: 'Salita da Astino', kind: 'up', file: 'PC_SalitaAstino_REC.gpx', link: '2018/12/salite-colli-bergamo' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Salita al Monte Gussa', kind: 'up', file: 'PC_SalitaGussa_REC.gpx', link: '2018/12/salite-colli-bergamo' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'colli', name: 'Salita dalla Madonna del Bosco', kind: 'up', file: 'PC_SalitaMadonnaDelBosco_REC.gpx', link: '2018/12/salite-colli-bergamo' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord,roccolone_sud', name: 'Salita dal Roccolone', kind: 'up', file: 'PC_SalitaRoccolone_REC.gpx', link: '2018/12/salite-colli-bergamo' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord,roccolone_sud', name: 'Salita al Colle Roccolone', kind: 'up', file: 'PC_SalitaCimaRoccolone_REC.gpx', link: '2018/12/salite-colli-bergamo' },
+
+//
+// MARESANA E SORISOLE
+//
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: '532, San Rocco', kind: 'down', file: 'M_532_REC.gpx', link: '2019/02/532' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 98, zone: 'maresana', name: 'Vertigo / 604', kind: 'down', file: 'M_604_REC.gpx', link: '2018/11/604' },
 { vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'maresana', name: 'Bruna', kind: 'down', file: 'M_Bruna_REC.gpx', link: '2018/11/bruna' },
@@ -61,6 +90,11 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Trasferimento da Catene al Pisgi\u00F9', kind: 'up', file: 'SR_CatenePisgiu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Trasferimento alla Pista Downhill', kind: 'up', file: 'SR_203_REC.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita dalla Forcella del Sorriso al Canto Basso', kind: 'up', file: 'SR_SalitaForcellaDelSorrisoCantoBasso_REC.gpx', link: '2019/06/salite-sorisole' },
+
+
+//
+// IMAGNA
+//
 { vote: 2, rate: 1, rate_max: 2, cycle: 100, zone: 'locatello', name: 'Bustoseta, Selino', kind: 'down', file: 'I_BustosetaSelino_REC.gpx', link: '2019/07/locatello' },
 { vote: 2, rate: 1, rate_max: 2, cycle: 100, zone: 'locatello', name: 'Buonanome, Selino', kind: 'down', file: 'I_BuonanomeSelino_REC.gpx', link: '2019/07/locatello' },
 { vote: 2, rate: 1, rate_max: 2, cycle: 100, zone: 'locatello', name: 'Coegia, Selino', kind: 'down', file: 'I_CoegiaSelino_REC.gpx', link: '2019/07/locatello' },
@@ -159,6 +193,11 @@ removed as not significative
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, imagna, valcava, roncola', name: 'Roncola, Barlino', kind: 'down', file: 'I_RoncolaBarlino_REC.gpx', link: '2019/04/roncola' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava, roncola', name: 'Roncola, CaLiger, Almenno', kind: 'down', file: 'I_RoncolaCaLigerAlmenno_REC.gpx', link: '2019/04/roncola' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, valcava, roncola', name: 'Roncola, CaLiger, Cava di Strozza', kind: 'down', file: 'I_RoncolaCava_REC.gpx', link: '2019/04/roncola' },
+
+
+//
+// SAN MARTINO
+//
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Roncola, San Rocco', kind: 'down', file: 'N_RoncolaSanRocco_REC.gpx', link: '2019/04/roncola' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Baita, Camutaglio, Longa, Golf', kind: 'down', file: 'N_BaitaCamutaglioLongaGolf_REC.gpx', link: '2019/04/roncola' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Prabacioc, San Rocco', kind: 'down', file: 'N_PrabaciocSanRocco_REC.gpx', link: '2019/04/roncola' },
@@ -242,6 +281,10 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Salita da Palazzago alla Cava', kind: 'up', file: 'N_SalitaPalazzagoCava_REC.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Almenno al Monte Lizone', kind: 'up', file: 'N_SalitaAlmennoPalazzagoLinzone_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Trasferimento da Opreno a Burligo', kind: 'up', file: 'N_OprenoBurligo_REC.gpx', link: '2018/12/salite-san-martino' },
+
+//
+// MONTE CANTO
+//
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'canto', name: 'Tronchi, Canyon', kind: 'down', file: 'C_Canyon_REC.gpx', link: '2021/05/canyon' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'canto', name: 'Traliccio', kind: 'down', file: 'C_Traliccio_REC.gpx', link: '2021/05/traliccio' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'GEP', kind: 'down', file: 'C_GEP_REC.gpx', link: '2021/05/gep' },
@@ -265,28 +308,11 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Pontida', kind: 'up', file: 'C_SalitaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Ambivere', kind: 'up', file: 'C_SalitaAmbivere_REC.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Fontanella', kind: 'up', file: 'C_SalitaFontanella_REC.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord', name: '712 Nord', kind: 'down', file: 'PC_712Nord_REC.gpx', link: '2019/03/roccolone-nord' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: '712 Sud', kind: 'down', file: 'PC_712Sud_REC.gpx', link: '2019/01/roccolone-sud' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord', name: '713 / Partigiano', kind: 'down', file: 'PC_713Partigiano_REC.gpx', link: '2019/03/roccolone-nord' },
-{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord', name: 'Roccolone Nord', kind: 'down', file: 'PC_RoccoloneNord_REC.gpx', link: '2019/03/roccolone-nord' },
-{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'colli', name: '910 / Alpini', kind: 'down', file: 'PC_910_REC.gpx', link: '2018/12/910' },
-{ vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Gussa Est', kind: 'down', file: 'PC_GussaEst_REC.gpx', link: '2019/01/monte-gussa' },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Gussa Nord', kind: 'down', file: 'PC_GussaNord_REC.gpx', link: '2019/01/monte-gussa' },
-{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Gussa Ovest', kind: 'down', file: 'PC_GussaOvest_REC.gpx', link: '2019/01/monte-gussa' },
-{ vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'colli,gussa', name: 'Gussa Sud', kind: 'down', file: 'PC_GussaSud_REC.gpx', link: '2019/01/monte-gussa' },
-{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord', name: 'ExPistino', kind: 'down', file: 'PC_ExPistino_REC.gpx', link: '2019/03/roccolone-nord' },
-{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: 'Pistino Downhill', kind: 'down', file: 'PC_PistinoDownhill_REC.gpx', link: '2019/03/pistino-downhill' },
-{ vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'colli', name: 'Roccolone', kind: 'down', file: 'PC_Roccolone_REC.gpx', link: '2018/12/roccolone' },
-{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: 'Roccolone Sud', kind: 'down', file: 'PC_RoccoloneSud_REC.gpx', link: '2019/01/roccolone-sud' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: 'Gradoni', kind: 'down', file: 'PC_Gradoni_REC.gpx', link: '2019/01/roccolone-sud' },
-{ vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,allegrezza', name: 'Allegrezza', kind: 'down', file: 'PC_Allegrezza_REC.gpx', link: '2018/12/allegrezza' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,allegrezza', name: 'Allegrezza Sud', kind: 'down', file: 'PC_AllegrezzaSud_REC.gpx', link: '2018/12/allegrezza' },
-{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: 'Torre', kind: 'down', file: 'PC_Torre_REC.gpx', link: '2019/01/roccolone-sud' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'colli', name: 'Salita da Astino', kind: 'up', file: 'PC_SalitaAstino_REC.gpx', link: '2018/12/salite-colli-bergamo' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Salita al Monte Gussa', kind: 'up', file: 'PC_SalitaGussa_REC.gpx', link: '2018/12/salite-colli-bergamo' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'colli', name: 'Salita dalla Madonna del Bosco', kind: 'up', file: 'PC_SalitaMadonnaDelBosco_REC.gpx', link: '2018/12/salite-colli-bergamo' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord,roccolone_sud', name: 'Salita dal Roccolone', kind: 'up', file: 'PC_SalitaRoccolone_REC.gpx', link: '2018/12/salite-colli-bergamo' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord,roccolone_sud', name: 'Salita al Colle Roccolone', kind: 'up', file: 'PC_SalitaCimaRoccolone_REC.gpx', link: '2018/12/salite-colli-bergamo' },
+
+
+//
+// SERIANA
+//
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'seriana', name: 'Canto Basso, 533, Forcella del Sorriso', kind: 'down', file: 'S_CantoBassoForcellaSorriso_REC.gpx', link: '2019/03/canto-basso-533-forcella-del-sorriso' },
 /* { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Cavlera, 528', kind: 'down', file: 'S_Cavlera528_REC.gpx' }, */
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'seriana,lonno', name: 'Lonno, Val del Luio, Alzano', kind: 'down', file: 'S_LonnoLuio_REC.gpx', link: '2019/04/lonno' },
@@ -354,60 +380,80 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana, bastia', name: 'Salita al Monte Bastia', kind: 'up', file: 'S_SalitaBastia_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita alla Val Coler', kind: 'up', file: 'S_SalitaTribulinaColer_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita da Cornale, Pradale', kind: 'up', file: 'S_SalitaCornalePradale_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+
+//
+// GANDINO
+//
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'GA_SalitaGandinoRifugioParafulmine_EBIKE.gpx', link: '2020/02/pizzo-formico' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Rifugio Parafulmine, Pizzo Formico', kind: 'up', file: 'GA_SalitaRifugioParafulminePizzoFormico_EBIKE.gpx', link: '2020/02/pizzo-formico' },
+
+//
+// VALSASSINA
+//
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'valsassina', name: 'Arvaggio 2000, Piani di Artavaggio, Vasca, Moggio', kind: 'down', file: 'SA_CazzanigaArtavaggioVascaNeve_REC.gpx', link: '2020/01/artavaggio' },
 { vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'valsassina', name: 'Moggio, Piani di Artavaggio, Artavaggio 2000', kind: 'up', file: 'SA_MoggioArtavaggioCazzaniga_REC.gpx', link: '2020/01/artavaggio' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, comm: "35% la salita dalla Baita Cornei al Formico", zone: 'gandino', name: 'Pizzo Formico, Monte Farno, Gandino', kind: 'down', file: 'GA_PizzoFormicoMonteFarno_REC.gpx', link: '2020/02/pizzo-formico' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'GA_SalitaGandinoRifugioParafulmine_EBIKE.gpx', link: '2020/02/pizzo-formico' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Rifugio Parafulmine, Pizzo Formico', kind: 'up', file: 'GA_SalitaRifugioParafulminePizzoFormico_EBIKE.gpx', link: '2020/02/pizzo-formico' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Tre Faggi, Blello, Brembilla', kind: 'down', file: 'B_TreFaggiBlelloBrembilla_REC.gpx', link: '2021/07/tre-faggi-blello-brembilla' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'brembana', name: 'Salita da Brembilla ai Tre Faggi', kind: 'up', file: 'B_SalitaBrembillaTreFaggi_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Piazzacava, Gerosa, Foppa, Brembilla', kind: 'down', file: 'B_PiazzacavaFoppaBrembilla_REC.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'brembana', name: 'Salita da Brembilla a Piazzacava', kind: 'up', file: 'B_SalitaBrembillaPiazzacava_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo Cerro, Piane, Brembilla', kind: 'down', file: 'B_PizzoCerroPianeBrembilla_REC.gpx', link: '2021/07/pizzo-cerro-piane-brembilla' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'brembana', name: 'Salita da Brembilla a Crosnello e al Pizzo Cerro', kind: 'up', file: 'B_SalitaBrembillaCrosnelloPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Pizzo Cerro, Fienili, Brembilla', kind: 'down', file: 'B_PizzoCerroFieniliBrembilla_REC.gpx' },
+
+//
+// BASSA BREMBANA
+//
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana', name: 'Tre Faggi, Blello, Brembilla', kind: 'down', file: 'B_TreFaggiBlelloBrembilla_REC.gpx', link: '2021/07/tre-faggi-blello-brembilla' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'bassa_brembana', name: 'Salita da Brembilla ai Tre Faggi', kind: 'up', file: 'B_SalitaBrembillaTreFaggi_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Piazzacava, Gerosa, Foppa, Brembilla', kind: 'down', file: 'B_PiazzacavaFoppaBrembilla_REC.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'bassa_brembana', name: 'Salita da Brembilla a Piazzacava', kind: 'up', file: 'B_SalitaBrembillaPiazzacava_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana', name: 'Pizzo Cerro, Piane, Brembilla', kind: 'down', file: 'B_PizzoCerroPianeBrembilla_REC.gpx', link: '2021/07/pizzo-cerro-piane-brembilla' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'bassa_brembana', name: 'Salita da Brembilla a Crosnello e al Pizzo Cerro', kind: 'up', file: 'B_SalitaBrembillaCrosnelloPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Pizzo Cerro, Fienili, Brembilla', kind: 'down', file: 'B_PizzoCerroFieniliBrembilla_REC.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'hidden', name: 'Salita da Brembilla al Pizzo Cerro', kind: 'up', file: 'B_SalitaBrembillaPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 2, rate: 2, rate_max: 3, cycle: 98, zone: 'brembana', name: 'Pizzo Cerro, Cavaglia, Brembilla', kind: 'down', file: 'B_PizzoCerroCavaglia_REC.gpx' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Forcella di Berbenno, Ripe, Brembilla', kind: 'down', file: 'B_BerbennoRipe_REC.gpx' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'B_CatremerioTruca_REC.gpx', link: '2020/11/catremerio-truca-brembilla' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'S. Antonio Abbandonato, Casarielli, Zogno', kind: 'down', file: 'B_SAntonioCasarielli_REC.gpx', link: '2020/07/casarielli' },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'S. Antonio Abbandonato, Strada Taverna, Ponti', kind: 'down', file: 'B_SAntonioTaverna_REC.gpx', link: '2020/07/strada-taverna' },
-{ vote: 2, rate: 2, rate_max: 4, cycle: 100, zone: 'brembana', name: 'Ca del C\u00E8co, Sonzogno, Pernice, Zogno', kind: 'down', file: 'B_CecoSonzognoPerniceZogno_REC.gpx', link: '2021/06/ceco-sonzogno-pernice' },
-{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: '505A, Zogno', kind: 'down', file: 'B_505AZogno_REC.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'brembana', name: 'Salita da S. Antonio Abbandonato a Ca del C\u00E8co', kind: 'up', file: 'B_SalitaSantAntonioCeco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Monte Castello, Algua, Zogno', kind: 'down', file: 'B_MonteCastelloAlguaZogno_REC.gpx', link: '2021/06/monte-castello' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Crosnello, Sussia, Vettarola', kind: 'down', file: 'B_CrosnelloSussiaVettarola_REC.gpx', link: '2020/08/crosnello-sussia-vettarola-san' },
-{ vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Terza dell\'Avaro', kind: 'down', file: 'B_AvaroTerza_REC.gpx', link: '2020/08/terza-avaro' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Monte Torcola, Piazza Brembana', kind: 'down', file: 'B_TorcolaPiazzaBrembana_REC.gpx', link: '2020/09/monte-torcola-piazza-brembana' },
-{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Rifugio Torcole, Bolli Arancio, Piazzolo', kind: 'down', file: 'B_TorcolaBolliArancioPiazzolo_REC.gpx', link: '2020/09/rifugio-torcole-bolli-arancio-piazzolo' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Passo San Marco, 113, via del Ferro', kind: 'down', file: 'B_SanMarco113Ferro_REC.gpx', link: '2020/09/passo-san-marco-113-via-del-ferro' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Baita Campo, 127, Olmo al Brembo', kind: 'down', file: 'B_BaitaCampoOlmo_REC.gpx', link: '2020/09/baita-campo-olmo-al-brembo' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Pizzo di Spino, San Pellegrino', kind: 'down', file: 'B_PizzoSpinoSanPellegrino_REC.gpx', link: '2020/11/pizzo-spino' },
-{ vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Forcella di Spettino, Molini, San Pellegrino', kind: 'down', file: 'B_ForcellaSpettinoMolini_REC.gpx', link: '2021/02/forcella-di-spettino-molini' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 99, zone: 'brembana', name: 'Periplo del Monte Gioco', kind: 'down', file: 'B_PeriploMonteGioco_EBIKE.gpx', link: '2021/02/periplo-monte-gioco' },
-{ vote: 5, rate: 4, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Valcumina', kind: 'down', file: 'B_Valcumina_REC.gpx', link: '2021/05/valcumina' },
+{ vote: 2, rate: 2, rate_max: 3, cycle: 98, zone: 'bassa_brembana', name: 'Pizzo Cerro, Cavaglia, Brembilla', kind: 'down', file: 'B_PizzoCerroCavaglia_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Forcella di Berbenno, Ripe, Brembilla', kind: 'down', file: 'B_BerbennoRipe_REC.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'B_CatremerioTruca_REC.gpx', link: '2020/11/catremerio-truca-brembilla' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana', name: 'S. Antonio Abbandonato, Casarielli, Zogno', kind: 'down', file: 'B_SAntonioCasarielli_REC.gpx', link: '2020/07/casarielli' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'S. Antonio Abbandonato, Strada Taverna, Ponti', kind: 'down', file: 'B_SAntonioTaverna_REC.gpx', link: '2020/07/strada-taverna' },
+{ vote: 2, rate: 2, rate_max: 4, cycle: 100, zone: 'bassa_brembana', name: 'Ca del C\u00E8co, Sonzogno, Pernice, Zogno', kind: 'down', file: 'B_CecoSonzognoPerniceZogno_REC.gpx', link: '2021/06/ceco-sonzogno-pernice' },
+{ vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: '505A, Zogno', kind: 'down', file: 'B_505AZogno_REC.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'bassa_brembana', name: 'Salita da S. Antonio Abbandonato a Ca del C\u00E8co', kind: 'up', file: 'B_SalitaSantAntonioCeco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Monte Castello, Algua, Zogno', kind: 'down', file: 'B_MonteCastelloAlguaZogno_REC.gpx', link: '2021/06/monte-castello' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Crosnello, Sussia, Vettarola', kind: 'down', file: 'B_CrosnelloSussiaVettarola_REC.gpx', link: '2020/08/crosnello-sussia-vettarola-san' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana', name: 'Pizzo di Spino, San Pellegrino', kind: 'down', file: 'B_PizzoSpinoSanPellegrino_REC.gpx', link: '2020/11/pizzo-spino' },
+{ vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana', name: 'Forcella di Spettino, Molini, San Pellegrino', kind: 'down', file: 'B_ForcellaSpettinoMolini_REC.gpx', link: '2021/02/forcella-di-spettino-molini' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 99, zone: 'bassa_brembana', name: 'Periplo del Monte Gioco', kind: 'down', file: 'B_PeriploMonteGioco_EBIKE.gpx', link: '2021/02/periplo-monte-gioco' },
+{ vote: 5, rate: 4, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Valcumina', kind: 'down', file: 'B_Valcumina_REC.gpx', link: '2021/05/valcumina' },
 { vote: 1, rate: 3, rate_max: 0, cycle: 100, zone: 'brembana, frasnito', name: 'Sussia Alta, Frasnito, San Pellegrino', kind: 'down', file: 'B_SussiaFrasnito_REC.gpx', link: '2021/03/sussia-frasnito' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'brembana, frasnito', name: 'Vetta, Frasnito', kind: 'down', file: 'B_VettaFrasnito_REC.gpx', link: '2021/03/sussia-frasnito' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana', name: 'Monte Molinasco, San Giovanni Bianco', kind: 'down', file: 'B_MolinascoSanGiovanniBianco_REC.gpx', link: '2021/03/monte-molinasco' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana', name: 'Monte Molinasco, San Giovanni Bianco', kind: 'down', file: 'B_MolinascoSanGiovanniBianco_REC.gpx', link: '2021/03/monte-molinasco' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana, pradai', name: 'Panchina Gigante, Pradai, Frasnadello', kind: 'down', file: 'B_PanchinaGigantePradaiFrasnadello_REC.gpx', link: '2021/06/panchina-gigante-pradai-frasnadello' },
 { vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana, pradai', name: 'Campel, Cresta, Frasnadello', kind: 'down', file: 'B_CampelCrestaFrasnadello_REC.gpx', link: '2021/06/panchina-gigante-pradai-frasnadello' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana, pradai', name: 'Salita da Spettino alla Panchina Gigante', kind: 'up', file: 'B_SalitaSpettinoPanchinaGigante_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'B_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno al Monte Castello', kind: 'up', file: 'B_SalitaZognoMonteCastello_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da S. Antonio Abbandonato a Catremerio e Crosnello', kind: 'up', file: 'B_SalitaSAntonioCrosnello_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo ai Piani dell\'Avaro', kind: 'up', file: 'B_SalitaAvaro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Piazza Brembana al Monte Torcola', kind: 'up', file: 'B_SalitaPiazzaBrembanaTorcola_EBIKE.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Passo San Marco', kind: 'up', file: 'B_SalitaSanMarco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da Olmo al Brembo al Monte Torcola', kind: 'up', file: 'B_SalitaOlmoPiazzatorreTorcola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita alla Baita Campo', kind: 'up', file: 'B_SalitaBaitaCampo_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 75, zone: 'brembana', name: 'Salita da San Pellegrino al Pizzo di Spino', kind: 'up', file: 'B_SalitaSantaCrocePizzoSpino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da San Pellegrino alla Forcella di Spettino', kind: 'up', file: 'B_SalitaForcellaSpettino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana', name: 'Salita da San Pellegrino a Salvarizza', kind: 'up', file: 'B_SalitaSalvarizza_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da Zogno al Monte Castello', kind: 'up', file: 'B_SalitaZognoMonteCastello_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'B_SalitaZognoSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da S. Antonio Abbandonato a Catremerio e Crosnello', kind: 'up', file: 'B_SalitaSAntonioCrosnello_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 75, zone: 'bassa_brembana', name: 'Salita da San Pellegrino al Pizzo di Spino', kind: 'up', file: 'B_SalitaSantaCrocePizzoSpino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da San Pellegrino alla Forcella di Spettino', kind: 'up', file: 'B_SalitaForcellaSpettino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da San Pellegrino a Salvarizza', kind: 'up', file: 'B_SalitaSalvarizza_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana, frasnito', name: 'Salita da San Pellegrino a Frasnito e Sussia', kind: 'up', file: 'B_SalitaFrasnitoSussia_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'brembana', name: 'Salita da San Giovanni Bianco al Monte Molinasco', kind: 'up', file: 'B_SalitaMolinasco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'brembana', name: 'Salita da Salvarizza alla Forcella della Valcumina', kind: 'up', file: 'B_SalvarizzaForcellaValcumina_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'bassa_brembana', name: 'Salita da San Giovanni Bianco al Monte Molinasco', kind: 'up', file: 'B_SalitaMolinasco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'bassa_brembana', name: 'Salita da Salvarizza alla Forcella della Valcumina', kind: 'up', file: 'B_SalvarizzaForcellaValcumina_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+
+//
+// ALTA BREMBANA
+//
+{ vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Terza dell\'Avaro', kind: 'down', file: 'B_AvaroTerza_REC.gpx', link: '2020/08/terza-avaro' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana', name: 'Monte Torcola, Piazza Brembana', kind: 'down', file: 'B_TorcolaPiazzaBrembana_REC.gpx', link: '2020/09/monte-torcola-piazza-brembana' },
+{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Rifugio Torcole, Bolli Arancio, Piazzolo', kind: 'down', file: 'B_TorcolaBolliArancioPiazzolo_REC.gpx', link: '2020/09/rifugio-torcole-bolli-arancio-piazzolo' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana', name: 'Passo San Marco, 113, via del Ferro', kind: 'down', file: 'B_SanMarco113Ferro_REC.gpx', link: '2020/09/passo-san-marco-113-via-del-ferro' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana', name: 'Baita Campo, 127, Olmo al Brembo', kind: 'down', file: 'B_BaitaCampoOlmo_REC.gpx', link: '2020/09/baita-campo-olmo-al-brembo' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita da Olmo al Brembo ai Piani dell\'Avaro', kind: 'up', file: 'B_SalitaAvaro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita da Piazza Brembana al Monte Torcola', kind: 'up', file: 'B_SalitaPiazzaBrembanaTorcola_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita da Olmo al Brembo al Passo San Marco', kind: 'up', file: 'B_SalitaSanMarco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita da Olmo al Brembo al Monte Torcola', kind: 'up', file: 'B_SalitaOlmoPiazzatorreTorcola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita alla Baita Campo', kind: 'up', file: 'B_SalitaBaitaCampo_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+
+//
+// CAVALLINA
+//
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'cavallina, argon', name: 'Percorso Vita', kind: 'down', file: 'A_ArgonPercorsoVita_REC.gpx', link: '2021/05/argon' },
 { vote: 2, rate: 1, rate_max: 3, cycle: 100, zone: 'cavallina, argon', name: 'Pietria dell\'Eremo', kind: 'down', file: 'A_ArgonPietraiaEremo_REC.gpx', link: '2021/05/argon' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'cavallina, argon', name: 'San Giorgio, Valle d\'Albano', kind: 'down', file: 'A_ArgonSanGiorgioValleAlbano_REC.gpx', link: '2021/05/argon' },
@@ -423,6 +469,4 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'A_ValpredinaCenateSopra_REC.gpx', link: '2021/05/valpredina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'A_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
-
-
 
