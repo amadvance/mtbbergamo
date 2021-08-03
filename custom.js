@@ -589,9 +589,20 @@ function setup_multi()
 	element.innerHTML = html;
 }
 
+// adjust the file name to the new standard
+function adjust_file(file)
+{
+	if (RENAME[file] === undefined)
+		return file;
+	else
+		return RENAME[file];
+}
+
 // create a post down track
 function create_down(map, control, file)
 {
+	file = adjust_file(file);
+
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].file == file) {
 			create_track(map, control,
@@ -614,6 +625,8 @@ function create_down(map, control, file)
 // create a post up track
 function create_up(map, control, file)
 {
+	file = adjust_file(file);
+
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].file == file) {
 			create_zone_track(map, control,
