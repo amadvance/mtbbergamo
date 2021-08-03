@@ -395,19 +395,23 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'valsassina', name: 'Moggio, Piani di Artavaggio, Artavaggio 2000', kind: 'up', file: 'Valsassina_MoggioArtavaggioCazzaniga.gpx', link: '2020/01/artavaggio' },
 
 //
+// BREMBILLA
+//
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Tre Faggi, Blello, Brembilla', kind: 'down', file: 'Brembilla_TreFaggiBlelloBrembilla.gpx', link: '2021/07/tre-faggi-blello-brembilla' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'bassa_brembana, brembilla', name: 'Salita da Brembilla ai Tre Faggi', kind: 'up', file: 'Brembilla_SalitaBrembillaTreFaggi_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Piazzacava, Gerosa, Foppa, Brembilla', kind: 'down', file: 'Brembilla_PiazzacavaFoppaBrembilla.gpx', link: '2021/07/piazzacava-gerosa-foppa' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'bassa_brembana, brembilla', name: 'Salita da Brembilla a Piazzacava', kind: 'up', file: 'Brembilla_SalitaBrembillaPiazzacava_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Pizzo Cerro, Piane, Brembilla', kind: 'down', file: 'Brembilla_PizzoCerroPianeBrembilla.gpx', link: '2021/07/pizzo-cerro-piane-brembilla' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'bassa_brembana, brembilla', name: 'Salita da Brembilla a Crosnello e al Pizzo Cerro', kind: 'up', file: 'Brembilla_SalitaBrembillaCrosnelloPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Pizzo Cerro, Fienili, Brembilla', kind: 'down', file: 'Brembilla_PizzoCerroFieniliBrembilla.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'hidden, brembilla', name: 'Salita da Brembilla al Pizzo Cerro', kind: 'up', file: 'Brembilla_SalitaBrembillaPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 2, rate: 2, rate_max: 3, cycle: 98, zone: 'bassa_brembana, brembilla', name: 'Pizzo Cerro, Cavaglia, Brembilla', kind: 'down', file: 'Brembilla_PizzoCerroCavaglia.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Forcella di Berbenno, Ripe, Brembilla', kind: 'down', file: 'Brembilla_BerbennoRipeBrembilla.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'Brembana_CatremerioTruca.gpx', link: '2020/11/catremerio-truca-brembilla' },
+
+//
 // BASSA BREMBANA
 //
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana', name: 'Tre Faggi, Blello, Brembilla', kind: 'down', file: 'Brembilla_TreFaggiBlelloBrembilla.gpx', link: '2021/07/tre-faggi-blello-brembilla' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'bassa_brembana', name: 'Salita da Brembilla ai Tre Faggi', kind: 'up', file: 'Brembilla_SalitaBrembillaTreFaggi_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Piazzacava, Gerosa, Foppa, Brembilla', kind: 'down', file: 'Brembilla_PiazzacavaFoppaBrembilla.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'bassa_brembana', name: 'Salita da Brembilla a Piazzacava', kind: 'up', file: 'Brembilla_SalitaBrembillaPiazzacava_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana', name: 'Pizzo Cerro, Piane, Brembilla', kind: 'down', file: 'Brembilla_PizzoCerroPianeBrembilla.gpx', link: '2021/07/pizzo-cerro-piane-brembilla' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'bassa_brembana', name: 'Salita da Brembilla a Crosnello e al Pizzo Cerro', kind: 'up', file: 'Brembilla_SalitaBrembillaCrosnelloPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Pizzo Cerro, Fienili, Brembilla', kind: 'down', file: 'Brembilla_PizzoCerroFieniliBrembilla.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'hidden', name: 'Salita da Brembilla al Pizzo Cerro', kind: 'up', file: 'Brembilla_SalitaBrembillaPizzoCerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 2, rate: 2, rate_max: 3, cycle: 98, zone: 'bassa_brembana', name: 'Pizzo Cerro, Cavaglia, Brembilla', kind: 'down', file: 'Brembilla_PizzoCerroCavaglia.gpx' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Forcella di Berbenno, Ripe, Brembilla', kind: 'down', file: 'Brembilla_BerbennoRipeBrembilla.gpx' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'Brembana_CatremerioTruca.gpx', link: '2020/11/catremerio-truca-brembilla' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana', name: 'S. Antonio Abbandonato, Casarielli, Zogno', kind: 'down', file: 'Brembana_SAntonioCasarielli.gpx', link: '2020/07/casarielli' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'S. Antonio Abbandonato, Strada Taverna, Ponti', kind: 'down', file: 'Brembana_SAntonioTaverna.gpx', link: '2020/07/strada-taverna' },
 { vote: 2, rate: 2, rate_max: 4, cycle: 100, zone: 'bassa_brembana', name: 'Ca del C\u00E8co, Sonzogno, Pernice, Zogno', kind: 'down', file: 'Brembana_CecoSonzognoPerniceZogno.gpx', link: '2021/06/ceco-sonzogno-pernice' },
