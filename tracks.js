@@ -409,8 +409,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Forcella di Berbenno, Ripe, Brembilla', kind: 'down', file: 'Brembilla_BerbennoRipeBrembilla.gpx' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Berbenno CAT, Lera, Brembilla', kind: 'down', file: 'Brembilla_BerbennoLeraBrembilla.gpx' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'Brembana_CatremerioTruca.gpx', link: '2020/11/catremerio-truca-brembilla' },
-{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Passo Mercante del Ferro, Forcella di Bura, Brembilla', kind: 'down', file: 'Brembana_PassoMercanteDelFerroBuraBrembilla.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 70, zone: 'bassa_brembana, brembilla', name: 'Salita da Brembilla al Passo del Mercante del Ferro', kind: 'up', file: 'Brembana_SalitaCatremerioPassoMercanteDelFerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Passo Mercante del Ferro, Forcella di Bura, Brembilla', kind: 'down', file: 'Brembana_PassoMercanteDelFerroBuraBrembilla.gpx', link: '2021/08/monte-foldone-e-sornadello' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 50, zone: 'bassa_brembana, brembilla', name: 'Salita da Catremerio al Passo del Mercante del Ferro', kind: 'up', file: 'Brembana_SalitaCatremerioPassoMercanteDelFerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, brembilla', name: 'Salita da Brembilla a Berbenno CAT', kind: 'up', file: 'Brembilla_SalitaBrembillaCAT_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 
 //
