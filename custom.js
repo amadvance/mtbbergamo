@@ -518,7 +518,7 @@ function setup_down(index)
 
 	html += "<b>Giudizio: " + get_track_vote(index) + "</b><br/>";
 	html += "<b>Difficolt\u00E0: " + get_track_rate(index) + "</b>" + get_track_rate_max(index) + "<br/>";
-	html += "<b>Ciclabilit\u00E0: " + get_track_cycle(index) + "</b><br/>";
+	html += "<b>Ciclabilit\u00E0:<!--DISCESA--> " + get_track_cycle(index) + "</b><!--SALITA--><br/>";
 	html += "<b>Download GPX: </b><a href=\"" + get_track_zip(index) + "\" download><b>" + get_track_name(index) + "</b></a>";
 
 	element.innerHTML = html;
@@ -536,11 +536,17 @@ function setup_up(index)
 		return;
 	}
 
-	var html = "";
+	var html = element.innerHTML;
 
 	html += ", <a href=\"" + get_track_zip(index) + "\" download>" + get_track_name(index) + "</a>";
 
-	element.innerHTML += html; // concatenate
+	var cycle = get_track_cycle(index);
+	if (cycle != "" && cycle != "100%") {
+		html = html.replace("<!--DISCESA-->","</b> discesa <b>");
+		html = html.replace("<!--SALITA-->", ", salita <b>" + cycle + "</b>");
+	}
+
+	element.innerHTML = html;
 }
 
 function sort_by_vote(a, b)
