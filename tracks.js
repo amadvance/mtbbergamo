@@ -410,9 +410,12 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Berbenno CAT, Lera, Brembilla', kind: 'down', file: 'Brembilla_BerbennoLeraBrembilla.gpx' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'Brembana_CatremerioTruca.gpx', link: '2020/11/catremerio-truca-brembilla' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Passo Mercante del Ferro, Forcella di Bura, Brembilla', kind: 'down', file: 'Brembana_PassoMercanteDelFerroBuraBrembilla.gpx', link: '2021/08/monte-foldone-e-sornadello' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana. brembilla', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'Brembilla_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Salita da S. Antonio Abbandonato a Catremerio e Crosnello', kind: 'up', file: 'Brembana_SalitaSAntonioCrosnello_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "50% da Catremerio, 200m dislivello a spinta", zone: 'bassa_brembana, brembilla', name: 'Salita da Catremerio al Passo del Mercante del Ferro', kind: 'up', file: 'Brembana_SalitaCatremerioPassoMercanteDelFerro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, brembilla', name: 'Salita da Brembilla a Berbenno CAT', kind: 'up', file: 'Brembilla_SalitaBrembillaCAT_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, brembilla', name: 'Salita da Brembilla alla Forcella di Berbenno', kind: 'up', file: 'Brembilla_SalitaBrembillaForcellaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, brembilla', name: 'Salita da Brembilla, Castignola, S. Antonio Abbandonato, Strada Taverna, Catremerio', kind: 'up', file: 'Brembilla_SalitaCastignolaSAntonioTavernaCatremerio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 
 //
 // BASSA BREMBANA
@@ -435,10 +438,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'brembana, pradai', name: 'Campel, Cresta, Frasnadello', kind: 'down', file: 'Brembana_CampelCrestaFrasnadello.gpx', link: '2021/06/panchina-gigante-pradai-frasnadello' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'brembana, pradai', name: 'Salita da Spettino alla Panchina Gigante', kind: 'up', file: 'Brembana_SalitaSpettinoPanchinaGigante_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Brembilla a Berbenno', kind: 'up', file: 'Brembilla_SalitaBrembillaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'Brembilla_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da Zogno al Monte Castello', kind: 'up', file: 'Brembana_SalitaZognoMonteCastello_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'Brembana_SalitaZognoSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da S. Antonio Abbandonato a Catremerio e Crosnello', kind: 'up', file: 'Brembana_SalitaSAntonioCrosnello_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 75, zone: 'bassa_brembana', name: 'Salita da San Pellegrino al Pizzo di Spino', kind: 'up', file: 'Brembana_SalitaSantaCrocePizzoSpino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da San Pellegrino alla Forcella di Spettino', kind: 'up', file: 'Brembana_SalitaForcellaSpettino_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita da San Pellegrino a Salvarizza', kind: 'up', file: 'Brembana_SalitaSalvarizza_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
