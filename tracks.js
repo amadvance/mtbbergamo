@@ -95,6 +95,15 @@ var TRACKS = [
 //
 // IMAGNA
 //
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna', name: 'Colletto di Brumano, Rifugio Resegone, Brumano', kind: 'down', file: 'Imagna_CollettoBrumanoRifResegoneBrumano.gpx', link: '2019/05/colletto-di-brumano-rifugio-resegone' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "70%, da Forbesette a spinta", zone: 'imagna', name: 'Salita dal Passo del Palio, a Forbesette, e al Colletto di Brumano', kind: 'up', file: 'Imagna_SalitaPalioForbesetteCollettoBrumano_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "40%, con ultimi 400m di dislivello a spalla", zone: 'imagna', name: 'Salita dal Passo del Palio al Resegone', kind: 'up', file: 'Imagna_SalitaPalioResegone.gpx', link: '2018/12/salite-imagna' },
+{ vote: 5, rate: 3, rate_max: 4, cycle: 100, zone: 'imagna', name: 'Resegone, Bocchetta del Palio, Grande Faggio', kind: 'down', file: 'Imagna_ResegoneGrandeFaggio.gpx', link: '2019/06/resegone' },
+/*
+Imagna_ResegoneBrumano.gpx
+Imagna_SalitaBrumanoResegone.gpx
+*/
+
 { vote: 2, rate: 1, rate_max: 2, cycle: 100, zone: 'locatello', name: 'Bustoseta, Selino', kind: 'down', file: 'Imagna_BustosetaSelino.gpx', link: '2019/07/locatello' },
 { vote: 2, rate: 1, rate_max: 2, cycle: 100, zone: 'locatello', name: 'Buonanome, Selino', kind: 'down', file: 'Imagna_BuonanomeSelino.gpx', link: '2019/07/locatello' },
 { vote: 2, rate: 1, rate_max: 2, cycle: 100, zone: 'locatello', name: 'Coegia, Selino', kind: 'down', file: 'Imagna_CoegiaSelino.gpx', link: '2019/07/locatello' },
@@ -134,8 +143,6 @@ removed for request of the owner
 { vote: 3, rate: 2, rate_max: 3, cycle: 95, zone: 'imagna', name: 'Passo Porta, 575, Valsecca, Scuderia, Mazzoleni, Selino', kind: 'down', file: 'Imagna_PassoPorta575ValseccaScuderiaMazzoleniSelino.gpx', link: '2019/07/passo-porta-575-valsecca' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Valsecca, Fonti', kind: 'down', file: 'Imagna_ValseccaFonti.gpx' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Valsecca, Scuderia, Mazzoleni, Selino', kind: 'down', file: 'Imagna_ValseccaScuderiaMazzoleniSelino.gpx' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna', name: 'Colletto di Brumano, Rifugio Resegone, Brumano', kind: 'down', file: 'Imagna_CollettoBrumanoRifResegoneBrumano.gpx', link: '2019/05/colletto-di-brumano-rifugio-resegone' },
-{ vote: 5, rate: 3, rate_max: 4, cycle: 100, zone: 'imagna', name: 'Resegone, Bocchetta del Palio, Grande Faggio', kind: 'down', file: 'Imagna_ResegoneGrandeFaggio.gpx', link: '2019/06/resegone' },
 { vote: 3, rate: 2, rate_max: 4, cycle: 100, zone: 'imagna', name: 'Tre Faggi, 580, Disdiroli, Selino', kind: 'down', file: 'Imagna_TreFaggi580DisdiroliSelino.gpx', link: '2019/06/tre-faggi-580-disdiroli-selino' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Tre Faggi, 571, Selino Alto, Selino', kind: 'down', file: 'Imagna_TreFaggi571SelinoAlto.gpx', link: '2020/05/tre-faggi-571-selino-alto' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna', name: 'Tre Faggi, 592E, Valle Brunone', kind: 'down', file: 'Imagna_TreFaggi592EBrunone.gpx', link: '2020/07/tre-faggi-valle-brunone'},
@@ -169,8 +176,6 @@ removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'costa_del_palio', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'Imagna_SalitaSbarraPalio.gpx', link: '2018/12/salite-imagna' },
 /* used for the Zuc De Valmana climbing without splitting */
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'zuc_de_valmana,canti', name: 'Salita dalla Sbarra di Brumano allo Zuc De Valmana', kind: 'up', file: 'Imagna_SalitaSbarraPalioZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "70%, da Forbesette a spinta", zone: 'imagna', name: 'Salita dal Passo del Palio, a Forbesette, e al Colletto di Brumano', kind: 'up', file: 'Imagna_SalitaPalioForbesetteCollettoBrumano_EBIKE.gpx', link: '2018/12/salite-imagna' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "40%, con ultimi 400m di dislivello a spalla", zone: 'imagna', name: 'Salita dal Passo del Palio al Resegone', kind: 'up', file: 'Imagna_SalitaPalioResegone.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Selino a Fuipiano e ai Tre Faggi', kind: 'up', file: 'Imagna_SalitaSelinoFuipianoTreFaggi.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Selino alla Forcella Alta', kind: 'up', file: 'Imagna_SalitaSelinoForcellaAlta_EBIKE.gpx', link: '2018/12/salite-imagna' },
 /*
