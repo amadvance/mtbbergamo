@@ -463,7 +463,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 // ALTA BREMBANA
 //
 { vote: 5, rate: 2, rate_max: 2, cycle: 100, zone: 'alta_brembana', name: 'Terza dell\'Avaro', kind: 'down', file: 'Brembana_AvaroTerza.gpx', link: '2020/08/terza-avaro' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Monte Avaro, Monte Disner', kind: 'down', file: 'Brembana_AvaroDisner.gpx' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Monte Avaro, Monte Disner', kind: 'down', file: 'Brembana_AvaroDisner.gpx', link: '2021/09/avaro-disner' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana', name: 'Monte Torcola, Piazza Brembana', kind: 'down', file: 'Brembana_TorcolaPiazzaBrembana.gpx', link: '2020/09/monte-torcola-piazza-brembana' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Rifugio Torcole, Bolli Arancio, Piazzolo', kind: 'down', file: 'Brembana_TorcolaBolliArancioPiazzolo.gpx', link: '2020/09/rifugio-torcole-bolli-arancio-piazzolo' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana', name: 'Passo San Marco, 113, via del Ferro', kind: 'down', file: 'Brembana_SanMarco113Ferro.gpx', link: '2020/09/passo-san-marco-113-via-del-ferro' },
