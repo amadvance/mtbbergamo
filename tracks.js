@@ -275,6 +275,8 @@ removed as almost duplicated by others
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'martino, martinella', name: 'Corna Martinella, 822, 801A', kind: 'down', file: 'Martino_CornaMartinella822801A.gpx', link: '2020/01/corna-martinella' },
 { vote: 5, rate: 1, rate_max: 3, cycle: 100, zone: 'hidden, martinella', name: 'Corna Martinella, Classica', kind: 'down', file: 'Martino_CornaMartinellaClassica.gpx', link: '2020/01/corna-martinella' },
 { vote: 5, rate: 1, rate_max: 3, cycle: 100, zone: 'hidden, martinella', name: 'Corna Martinella, Cristai Super Flow', kind: 'down', file: 'Martino_CornaMartinellaCristaiSuperFlow.gpx', link: '2020/01/corna-martinella' },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'martino, martinella', name: 'Santa Margherita, Pistino', kind: 'down', file: 'Martino_MargheritaPistino.gpx', link: '2020/01/corna-martinella' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, martinella', name: 'Salita Torre de Busi a Santa Margherita', kind: 'up', file: 'Martino_SalitaBusiMargherita_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 2, rate: 1, rate_max: 2, cycle: 100, zone: 'martino, coldara', name: 'Coldara, PizzoPec, Torre de Busi', kind: 'down', file: 'Martino_ColdaraPizzoPec.gpx', link: '2020/01/coldara' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, coldara', name: 'Coldara, San Marco, Torre de Busi', kind: 'down', file: 'Martino_ColdaraSanMarco.gpx', link: '2020/01/coldara' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, coldara', name: 'Coldara, Val Bratta, Torre de Busi', kind: 'down', file: 'Martino_ColdaraValBratta.gpx', link: '2020/01/coldara' },
