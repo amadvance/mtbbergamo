@@ -478,9 +478,11 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita da Olmo al Brembo al Passo San Marco', kind: 'up', file: 'Brembana_SalitaSanMarco_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita da Olmo al Brembo al Monte Torcola', kind: 'up', file: 'Brembana_SalitaOlmoPiazzatorreTorcola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita alla Baita Campo', kind: 'up', file: 'Brembana_SalitaBaitaCampo_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Piazzatorre, Via Priula, Val Terzera', kind: 'up', file: 'Brembana_SalitaPiazzatorePriulaTerzera_EBIKE.gpx', link: '2020/08/salite-valle-brembana'  },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Piazzatorre, Via Priula, Val Terzera', kind: 'up', file: 'Brembana_SalitaPiazzatorePriulaTerzera_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 4, rate: 3, rate_max: 4, cycle: 100, zone: 'alta_brembana', name: 'Pizzo Badile, Piazzatorre', kind: 'down', file: 'Brembana_PizzoBadilePiazzatorre.gpx', link: '2021/08/pizzo-badile' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'alta_brembana', name: 'Salita Piazzatorre, Forcolino, Pizzo Badile', kind: 'up', file: 'Brembana_SalitaPiazzatorreForcolinoPizzoBadile_EBIKE.gpx', link: '2020/08/salite-valle-brembana'  },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'alta_brembana', name: 'Salita Piazzatorre, Forcolino, Pizzo Badile', kind: 'up', file: 'Brembana_SalitaPiazzatorreForcolinoPizzoBadile_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'alta_brembana', name: 'Lago Moro, Carona', kind: 'down', file: 'Brembana_LagoMoroCarona.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Branzi, Foppolo, Lago Moro', kind: 'up', file: 'Brembana_SalitaFoppoloLagoMoro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 
 //
 // CAVALLINA
