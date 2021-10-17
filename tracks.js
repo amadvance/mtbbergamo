@@ -16,7 +16,7 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_sud', name: '712 Sud', kind: 'down', file: 'Colli_712Sud.gpx', link: '2019/01/roccolone-sud' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord', name: '713 / Partigiano', kind: 'down', file: 'Colli_713Partigiano.gpx', link: '2019/03/roccolone-nord' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,roccolone_nord', name: 'Roccolone Nord', kind: 'down', file: 'Colli_RoccoloneNord.gpx', link: '2019/03/roccolone-nord' },
-{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'colli', name: '910 / Alpini', kind: 'down', file: 'Colli_910.gpx', link: '2018/12/910' },
+{ vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'colli', name: '910 / Alpini', kind: 'down', file: 'Colli_910.gpx', link: '2018/12/910' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Gussa Est', kind: 'down', file: 'Colli_GussaEst.gpx', link: '2019/01/monte-gussa' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Gussa Nord', kind: 'down', file: 'Colli_GussaNord.gpx', link: '2019/01/monte-gussa' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'colli,gussa', name: 'Gussa Ovest', kind: 'down', file: 'Colli_GussaOvest.gpx', link: '2019/01/monte-gussa' },
@@ -481,7 +481,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Piazzatorre, Via Priula, Val Terzera', kind: 'up', file: 'Brembana_SalitaPiazzatorePriulaTerzera_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 4, rate: 3, rate_max: 4, cycle: 100, zone: 'alta_brembana', name: 'Pizzo Badile, Piazzatorre', kind: 'down', file: 'Brembana_PizzoBadilePiazzatorre.gpx', link: '2021/08/pizzo-badile' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'alta_brembana', name: 'Salita Piazzatorre, Forcolino, Pizzo Badile', kind: 'up', file: 'Brembana_SalitaPiazzatorreForcolinoPizzoBadile_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'alta_brembana', name: 'Lago Moro, Carona', kind: 'down', file: 'Brembana_LagoMoroCarona.gpx' },
+{ vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'alta_brembana', name: 'Lago Moro, Carona', kind: 'down', file: 'Brembana_LagoMoroCarona.gpx', link: '2021/10/lago-moro' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Branzi, Foppolo, Lago Moro', kind: 'up', file: 'Brembana_SalitaFoppoloLagoMoro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 
 //
