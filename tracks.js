@@ -214,6 +214,7 @@ removed as almost duplicated by others
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito ai Roccoli Passata', kind: 'up', file: 'Imagna_SalitaChitoCeresolaCantoPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, ubione, sopracorna', name: 'Salita da Clanezzo ai Roccoli Passata', kind: 'up', file: 'Imagna_SalitaClanezzoRoccoliPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "60% con ultimi 100m di dislivello a spalla", zone: 'imagna, ubione', name: 'Salita da Clanezzo all\'Ubione', kind: 'up', file: 'Imagna_SalitaClanezzoUbione.gpx', link: '2018/12/salite-imagna' },
+//Imagna_MalanotteFoppo.gpx
 
 //
 // SAN MARTINO
@@ -422,6 +423,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 2, rate: 2, rate_max: 3, cycle: 98, zone: 'bassa_brembana, brembilla', name: 'Pizzo Cerro, Cavaglia, Brembilla', kind: 'down', file: 'Brembilla_PizzoCerroCavaglia.gpx' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Forcella di Berbenno, Ripe, Brembilla', kind: 'down', file: 'Brembilla_BerbennoRipeBrembilla.gpx', link: '2021/09/ripe' },
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Berbenno CAT, Lera, Brembilla', kind: 'down', file: 'Brembilla_BerbennoLeraBrembilla.gpx', link: '2021/09/lera' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Passo del Canto, Laxolo, Brembilla', kind: 'down', file: 'Brembilla_CantoLaxoloBrembilla.gpx' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'Brembana_CatremerioTruca.gpx', link: '2020/11/catremerio-truca-brembilla' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana, brembilla', name: 'Passo Mercante del Ferro, Forcella di Bura, Brembilla', kind: 'down', file: 'Brembana_PassoMercanteDelFerroBuraBrembilla.gpx', link: '2021/08/monte-foldone-e-sornadello' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana. brembilla', name: 'Salita da Brembilla a S. Antonio Abbandonato', kind: 'up', file: 'Brembilla_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
@@ -430,6 +432,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, brembilla', name: 'Salita da Brembilla a Berbenno CAT', kind: 'up', file: 'Brembilla_SalitaBrembillaCAT_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, brembilla', name: 'Salita da Brembilla alla Forcella di Berbenno', kind: 'up', file: 'Brembilla_SalitaBrembillaForcellaBerbenno_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden, brembilla', name: 'Salita da Brembilla, Castignola, S. Antonio Abbandonato, Strada Taverna, Catremerio', kind: 'up', file: 'Brembilla_SalitaCastignolaSAntonioTavernaCatremerio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana', name: 'Salita dal Colle di Berbenno al Passo del Canto', kind: 'up', file: 'Brembilla_SalitaColleBerbennoCanto_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 
 //
 // BASSA BREMBANA
@@ -482,7 +485,9 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 4, cycle: 100, zone: 'alta_brembana', name: 'Pizzo Badile, Piazzatorre', kind: 'down', file: 'Brembana_PizzoBadilePiazzatorre.gpx', link: '2021/08/pizzo-badile' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'alta_brembana', name: 'Salita Piazzatorre, Forcolino, Pizzo Badile', kind: 'up', file: 'Brembana_SalitaPiazzatorreForcolinoPizzoBadile_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'alta_brembana', name: 'Lago Moro, Carona', kind: 'down', file: 'Brembana_LagoMoroCarona.gpx', link: '2021/10/lago-moro' },
+{ vote: 3, rate: 3, rate_max: 0, cycle: 97, zone: 'alta_brembana', name: 'Incrocio 101, Acqua Nera, Diga Valmora, Caprile', kind: 'down', file: 'BrembanaIncrocio101AcquaNeraDigaValmoraCaprile.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Branzi, Foppolo, Lago Moro', kind: 'up', file: 'Brembana_SalitaFoppoloLagoMoro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'hidden', name: 'Salita Branzi, Foppolo, Lago Moro', kind: 'up', file: 'BrembanaSalitaSantaBrigidaAvaroIncrocio101_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 
 //
 // CAVALLINA
@@ -502,4 +507,5 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'Cavallina_ValpredinaCenateSopra.gpx', link: '2021/05/valpredina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'Cavallina_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
+
 
