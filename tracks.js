@@ -468,7 +468,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 // ALTA BREMBANA
 //
 { vote: 5, rate: 2, rate_max: 2, cycle: 100, zone: 'alta_brembana', name: 'Terza dell\'Avaro', kind: 'down', file: 'Brembana_AvaroTerza.gpx', link: '2020/08/terza-avaro' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Monte Avaro, Monte Disner', kind: 'down', file: 'Brembana_AvaroDisner.gpx', link: '2021/09/avaro-disner' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Piani dell\' Avaro, Monte Disner', kind: 'down', file: 'Brembana_AvaroDisner.gpx', link: '2021/09/avaro-disner' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana', name: 'Monte Torcola, Piazza Brembana', kind: 'down', file: 'Brembana_TorcolaPiazzaBrembana.gpx', link: '2020/09/monte-torcola-piazza-brembana' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Rifugio Torcole, Bolli Arancio, Piazzolo', kind: 'down', file: 'Brembana_TorcolaBolliArancioPiazzolo.gpx', link: '2020/09/rifugio-torcole-bolli-arancio-piazzolo' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana', name: 'Passo San Marco, 113, via del Ferro', kind: 'down', file: 'Brembana_SanMarco113Ferro.gpx', link: '2020/09/passo-san-marco-113-via-del-ferro' },
@@ -485,9 +485,11 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 4, cycle: 100, zone: 'alta_brembana', name: 'Pizzo Badile, Piazzatorre', kind: 'down', file: 'Brembana_PizzoBadilePiazzatorre.gpx', link: '2021/08/pizzo-badile' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'alta_brembana', name: 'Salita Piazzatorre, Forcolino, Pizzo Badile', kind: 'up', file: 'Brembana_SalitaPiazzatorreForcolinoPizzoBadile_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'alta_brembana', name: 'Lago Moro, Carona', kind: 'down', file: 'Brembana_LagoMoroCarona.gpx', link: '2021/10/lago-moro' },
-{ vote: 3, rate: 3, rate_max: 0, cycle: 97, zone: 'alta_brembana', name: 'Incrocio 101, Acqua Nera, Diga Valmora, Caprile', kind: 'down', file: 'BrembanaIncrocio101AcquaNeraDigaValmoraCaprile.gpx' },
+{ vote: 3, rate: 3, rate_max: 0, cycle: 97, zone: 'alta_brembana', name: 'Incrocio 101, Acqua Nera, Diga Valmora, Caprile', kind: 'down', file: 'BrembanaIncrocio101AcquaNeraDigaValmoraCaprile.gpx', link: '2021/10/101-valmora' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Piani dell\'Avaro, Corna Rossa', kind: 'down', file: 'Brembana_AvaroCornaRossa.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Branzi, Foppolo, Lago Moro', kind: 'up', file: 'Brembana_SalitaFoppoloLagoMoro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'alta_brembana', name: 'Salita Branzi, Foppolo, Lago Moro', kind: 'up', file: 'BrembanaSalitaSantaBrigidaAvaroIncrocio101_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'alta_brembana', name: 'Salita Piani dell\'Avaro, Incrocio 101', kind: 'up', file: 'BrembanaSalitaSantaBrigidaAvaroIncrocio101_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+
 
 //
 // CAVALLINA
@@ -507,5 +509,6 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'Cavallina_ValpredinaCenateSopra.gpx', link: '2021/05/valpredina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'Cavallina_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
+
 
 
