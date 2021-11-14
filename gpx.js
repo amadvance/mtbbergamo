@@ -441,7 +441,7 @@ L.GPX = L.FeatureGroup.extend({
         }
 
         // avoid issues for points missing elevation info
-        if (elevation == 0 && last_elevation != null) {
+        if (elevation == 0 && last_ele != null) {
             elevation = last_ele;
         }
 
