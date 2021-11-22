@@ -398,6 +398,12 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita da Cornale, Pradale', kind: 'up', file: 'Seriana_SalitaCornalePradale_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 
 //
+// MEDIA SERIANA (oltre Gazzaniga)
+//
+{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'seriana, bastia', name: 'Forcella Vaccaro, 240, Parre', kind: 'down', file: 'Seriana_ForcellaVaccaro240Parre.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'seriana', name: 'Salita Parre, Rifugio Vaccaro, Forcella', kind: 'up', file: 'Seriana_SalitaParreVaccaroForcella_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+
+//
 // GANDINO
 //
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'Gandino_SalitaGandinoRifugioParafulmine_EBIKE.gpx', link: '2020/02/pizzo-formico' },
@@ -514,5 +520,4 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'Cavallina_ValpredinaCenateSopra.gpx', link: '2021/05/valpredina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'Cavallina_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 ];
-
 
