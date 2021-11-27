@@ -400,7 +400,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 //
 // MEDIA SERIANA (oltre Gazzaniga)
 //
-{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana, bastia', name: 'Forcella Vaccaro, 240, Parre', kind: 'down', file: 'Seriana_ForcellaVaccaro240Parre.gpx' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana, bastia', name: 'Forcella Vaccaro, 240, Parre', kind: 'down', file: 'Seriana_ForcellaVaccaro240Parre.gpx', link: '2021/11/vaccaro-forcella' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita Parre, Rifugio Vaccaro, Forcella', kind: 'up', file: 'Seriana_SalitaParreVaccaroForcella_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 
 //
