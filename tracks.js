@@ -364,7 +364,6 @@ rimosso su richiesta del CAI Albino
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita da Aviatico, al Monte Poieto', kind: 'up', file: 'Seriana_SalitaAviaticoForcaPoieto_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita da Ganda al Monte Poieto', kind: 'up', file: 'Seriana_SalitaGandaPoieto.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita da Selvino al Monte Purito', kind: 'up', file: 'Seriana_SalitaPurito_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
-/* { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita da Vertova al Cavlera', kind: 'up', file: 'Seriana_SalitaCavlera.gpx', link: '2019/03/salite-valle-seriana' }, */
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana,lonno', name: 'Salita da Alzano a Lonno', kind: 'up', file: 'Seriana_SalitaLonno.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita da Nembro a Selvino', kind: 'up', file: 'Seriana_SalitaNembroSelvino.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Trasferimento da Selvino a Ganda', kind: 'up', file: 'Seriana_SalitaSelvinoGanda.gpx', link: '2019/03/salite-valle-seriana' },
@@ -404,9 +403,9 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita Parre, Rifugio Vaccaro, Forcella', kind: 'up', file: 'Seriana_SalitaParreVaccaroForcella_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Passo di Bliben, 529 Easy, Vertova', kind: 'down', file: 'Seriana_Bliben529EasyVertova.gpx', link: '2021/12/529-easy' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Baita Garda, Dasla, 528 Special, Vertova', kind: 'down', file: 'Seriana_GardaDasla528SpecialVertova.gpx', link: '2021/12/528-special' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita Vertova, Passo di Bliben', kind: 'up', file: 'Seriana_VertovaDaslaBliben_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita Vertova, Bondo, Cavlera, Baita Garda', kind: 'up', file: 'Seriana_VertovaBondoCavleraGarda_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Tisa, 518, Bondo, Ponte Nossa', kind: 'down', file: 'Seriana_Tisa518BondoPonteNossa.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita Vertova, Passo di Bliben', kind: 'up', file: 'Seriana_SalitaVertovaDaslaBliben_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita Vertova, Bondo, Cavlera, Baita Garda', kind: 'up', file: 'Seriana_SalitaVertovaBondoCavleraGarda_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: 'bassa_seriana', name: 'Salita Ponte Nossa, Barbata, Tisa', kind: 'up', file: 'Seriana_SalitaPonteNossaBarbataTisa_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 
 //
