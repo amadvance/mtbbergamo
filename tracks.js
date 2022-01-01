@@ -38,7 +38,7 @@ var TRACKS = [
 //
 // MARESANA E SORISOLE
 //
-{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: '532, San Rocco', kind: 'down', file: 'Maresana_532.gpx', link: '2019/02/532' },
+{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Albanesi / Olympia Trail / 532, San Rocco', kind: 'down', file: 'Maresana_Albanesi532.gpx', link: '2019/02/532' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 98, zone: 'maresana', name: 'Vertigo / 604', kind: 'down', file: 'Maresana_604.gpx', link: '2018/11/604' },
 { vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'maresana', name: 'Bruna', kind: 'down', file: 'Maresana_Bruna.gpx', link: '2018/11/bruna' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'FarWest', kind: 'down', file: 'Maresana_FarWest.gpx', link: '2018/11/farwest' },
