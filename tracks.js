@@ -48,7 +48,7 @@ var TRACKS = [
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Colle Alto, Magnati', kind: 'down', file: 'Maresana_ColleAltoMagnati.gpx', link: '2021/03/colle-alto-magnati' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Filone / Agostini / 533', kind: 'down', file: 'Maresana_Filone.gpx', link: '2018/11/533-filone' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Colle Alto, Tremana', kind: 'down', file: 'Maresana_Tremana.gpx', link: '2020/12/colle-alto-tremana' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Scabla', kind: 'down', file: 'Maresana_Scabla.gpx' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Scabla', kind: 'down', file: 'Maresana_Scabla.gpx', link: '2021/04/scabla' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Veloce / Illegale / 533', kind: 'down', file: 'Maresana_Illegale.gpx', link: '2018/11/533-illegale' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Rosciano', kind: 'down', file: 'Maresana_Rosciano.gpx', link: '2018/11/rosciano' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 99, zone: 'maresana', name: 'San Rocco / 402', kind: 'down', file: 'Maresana_SanRocco.gpx', link: '2018/11/402-san-rocco' },
@@ -412,9 +412,9 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 //
 // GANDINO
 //
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'Gandino_SalitaGandinoRifugioParafulmine_EBIKE.gpx', link: '2020/02/pizzo-formico' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'gandino', name: 'Rifugio Parafulmine, Pizzo Formico', kind: 'up', file: 'Gandino_SalitaRifugioParafulminePizzoFormico_EBIKE.gpx', link: '2020/02/pizzo-formico' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, comm: "35% la salita dalla Baita Cornei al Formico", zone: 'gandino', name: 'Pizzo Formico, Monte Farno, Gandino', kind: 'down', file: 'Gandino_PizzoFormicoMonteFarno.gpx', link: '2020/02/pizzo-formico' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'media_seriana, gandino', name: 'Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'Gandino_SalitaGandinoRifugioParafulmine_EBIKE.gpx', link: '2020/02/pizzo-formico' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'media_seriana, gandino', name: 'Rifugio Parafulmine, Pizzo Formico', kind: 'up', file: 'Gandino_SalitaRifugioParafulminePizzoFormico_EBIKE.gpx', link: '2020/02/pizzo-formico' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, comm: "35% la salita dalla Baita Cornei al Formico", zone: 'media_seriana, gandino', name: 'Pizzo Formico, Monte Farno, Gandino', kind: 'down', file: 'Gandino_PizzoFormicoMonteFarno.gpx', link: '2020/02/pizzo-formico' },
 
 //
 // VALSASSINA
