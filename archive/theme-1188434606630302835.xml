@@ -584,7 +584,7 @@ body.mobile  {
 ]]></b:skin>
 
     <b:template-skin>
-      <b:variable default='960px' name='content.width' type='length' value='1024px'/>
+      <b:variable default='960px' name='content.width' type='length' value='1200px'/>
       <b:variable default='0' name='main.column.left.width' type='length'/>
       <b:variable default='310px' name='main.column.right.width' type='length' value='210px'/>
 
@@ -867,7 +867,7 @@ head.appendChild(script);
       <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'>
         <b:widget id='PageList2' locked='false' title='Zone' type='PageList'>
           <b:widget-settings>
-            <b:widget-setting name='pageListJson'><![CDATA[{'7456450945174822363': {'href': 'http://www.mtbbergamo.it/p/colli-di-bergamo.html', 'title': 'Colli di Bergamo', 'position': 0}, '8333227843128009505': {'href': 'http://www.mtbbergamo.it/p/maresana.html', 'title': 'Maresana', 'position': 1}, '644484164600315902': {'href': 'http://www.mtbbergamo.it/p/sorisole.html', 'title': 'Sorisole', 'position': 2}, '671321837611946696': {'href': 'http://www.mtbbergamo.it/p/monte-canto.html', 'title': 'Monte Canto', 'position': 3}, '8996960218431449059': {'href': 'http://www.mtbbergamo.it/p/valle-san-martino.html', 'title': 'Valle San Martino', 'position': 4}, '8071814843114685363': {'href': 'http://www.mtbbergamo.it/p/valle-imagna.html', 'title': 'Valle Imagna', 'position': 5}, '6438529019463434628': {'href': 'http://www.mtbbergamo.it/p/valle-seriana.html', 'title': 'Valle Seriana', 'position': 6}, '8020907678493114285': {'href': 'http://www.mtbbergamo.it/p/valle-brembana.html', 'title': 'Valle Brembana', 'position': 7}}]]></b:widget-setting>
+            <b:widget-setting name='pageListJson'><![CDATA[{'7456450945174822363': {'href': 'http://www.mtbbergamo.it/p/colli-di-bergamo.html', 'title': 'Colli di Bergamo', 'position': 0}, '8333227843128009505': {'href': 'http://www.mtbbergamo.it/p/maresana.html', 'title': 'Maresana', 'position': 1}, '644484164600315902': {'href': 'http://www.mtbbergamo.it/p/sorisole.html', 'title': 'Sorisole', 'position': 2}, '671321837611946696': {'href': 'http://www.mtbbergamo.it/p/monte-canto.html', 'title': 'Monte Canto', 'position': 3}, '8996960218431449059': {'href': 'http://www.mtbbergamo.it/p/valle-san-martino.html', 'title': 'San Martino', 'position': 4}, '8071814843114685363': {'href': 'http://www.mtbbergamo.it/p/valle-imagna.html', 'title': 'Imagna', 'position': 5}, '6438529019463434628': {'href': 'http://www.mtbbergamo.it/p/valle-seriana.html', 'title': 'Seriana', 'position': 6}, '5378927853840289375': {'href': 'http://www.mtbbergamo.it/p/media-valle-seriana.html', 'title': 'Media Seriana', 'position': 7}, '8020907678493114285': {'href': 'http://www.mtbbergamo.it/p/valle-brembana.html', 'title': 'Brembana', 'position': 8}, '6672595659076829759': {'href': 'http://www.mtbbergamo.it/p/alta-valle-brembana.html', 'title': 'Alta Brembana', 'position': 9}, '6890917005904254364': {'href': 'http://www.mtbbergamo.it/p/valle-cavallina.html', 'title': 'Cavallina', 'position': 10}}]]></b:widget-setting>
             <b:widget-setting name='homeTitle'>Home page</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
@@ -981,14 +981,14 @@ head.appendChild(script);
                 <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                 <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                 <b:widget-setting name='timestampLabel'>at</b:widget-setting>
-                <b:widget-setting name='reactionsLabel'>Reactions:</b:widget-setting>
+                <b:widget-setting name='reactionsLabel'/>
                 <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                 <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                 <b:widget-setting name='showLocation'>false</b:widget-setting>
                 <b:widget-setting name='showTimestamp'>false</b:widget-setting>
                 <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                 <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='backlinksLabel'>Links to this post</b:widget-setting>
+                <b:widget-setting name='backlinksLabel'/>
                 <b:widget-setting name='showDateHeader'>false</b:widget-setting>
                 <b:widget-setting name='style.textcolor'>#222222</b:widget-setting>
                 <b:widget-setting name='showCommentLink'>false</b:widget-setting>
@@ -1498,17 +1498,6 @@ head.appendChild(script);
         </b:if>
       </span>
 
-      <span class='reaction-buttons'>
-        <b:if cond='data:top.showReactions'>
-          <table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
-            <td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
-              <span class='reactions-label'>
-              <data:top.reactionsLabel/></span>&#160;</td>
-            <td><iframe allowtransparency='true' class='reactions-iframe' expr:src='data:post.reactionsUrl' frameborder='0' name='reactions' scrolling='no'/></td>
-           </tr></table>
-        </b:if>
-      </span>
-
       <span class='post-comment-link'>
         <b:include cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}                          and data:post.allowComments' data='post' name='comment_count_picker'/>
       </span>
@@ -1831,7 +1820,6 @@ head.appendChild(script);
 
     <div id='backlinks-container'>
     <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
-      <b:include cond='data:post.showBacklinks' data='post' name='backlinks'/>
     </div>
     </div>
   </div>
@@ -1982,7 +1970,7 @@ head.appendChild(script);
 <b:section-contents id='sidebar-right-1'>
   <b:widget id='PageList1' locked='false' title='Zone' type='PageList'>
     <b:widget-settings>
-      <b:widget-setting name='pageListJson'><![CDATA[{'7456450945174822363': {'href': 'http://www.mtbbergamo.it/p/colli-di-bergamo.html', 'title': 'Colli di Bergamo', 'position': 0}, '8333227843128009505': {'href': 'http://www.mtbbergamo.it/p/maresana.html', 'title': 'Maresana', 'position': 1}, '644484164600315902': {'href': 'http://www.mtbbergamo.it/p/sorisole.html', 'title': 'Sorisole', 'position': 2}, '671321837611946696': {'href': 'http://www.mtbbergamo.it/p/monte-canto.html', 'title': 'Monte Canto', 'position': 3}, '8996960218431449059': {'href': 'http://www.mtbbergamo.it/p/valle-san-martino.html', 'title': 'Valle San Martino', 'position': 4}, '8071814843114685363': {'href': 'http://www.mtbbergamo.it/p/valle-imagna.html', 'title': 'Valle Imagna', 'position': 5}, '6438529019463434628': {'href': 'http://www.mtbbergamo.it/p/valle-seriana.html', 'title': 'Valle Seriana', 'position': 6}, '8020907678493114285': {'href': 'http://www.mtbbergamo.it/p/valle-brembana.html', 'title': 'Valle Brembana', 'position': 7}}]]></b:widget-setting>
+      <b:widget-setting name='pageListJson'><![CDATA[{'7456450945174822363': {'href': 'http://www.mtbbergamo.it/p/colli-di-bergamo.html', 'title': 'Colli di Bergamo', 'position': 0}, '8333227843128009505': {'href': 'http://www.mtbbergamo.it/p/maresana.html', 'title': 'Maresana', 'position': 1}, '644484164600315902': {'href': 'http://www.mtbbergamo.it/p/sorisole.html', 'title': 'Sorisole', 'position': 2}, '671321837611946696': {'href': 'http://www.mtbbergamo.it/p/monte-canto.html', 'title': 'Monte Canto', 'position': 3}, '8996960218431449059': {'href': 'http://www.mtbbergamo.it/p/valle-san-martino.html', 'title': 'Valle San Martino', 'position': 4}, '8071814843114685363': {'href': 'http://www.mtbbergamo.it/p/valle-imagna.html', 'title': 'Valle Imagna', 'position': 5}, '6438529019463434628': {'href': 'http://www.mtbbergamo.it/p/valle-seriana.html', 'title': 'Bassa Valle Seriana', 'position': 6}, '5378927853840289375': {'href': 'http://www.mtbbergamo.it/p/media-valle-seriana.html', 'title': 'Media Valle Seriana', 'position': 7}, '8020907678493114285': {'href': 'http://www.mtbbergamo.it/p/valle-brembana.html', 'title': 'Bassa Val Brembana', 'position': 8}, '6672595659076829759': {'href': 'http://www.mtbbergamo.it/p/alta-valle-brembana.html', 'title': 'Alta Val Brembana', 'position': 9}, '6890917005904254364': {'href': 'http://www.mtbbergamo.it/p/valle-cavallina.html', 'title': 'Val Cavallina', 'position': 10}}]]></b:widget-setting>
       <b:widget-setting name='homeTitle'>Home page</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
@@ -2014,7 +2002,7 @@ head.appendChild(script);
   </b:widget>
   <b:widget id='LinkList1' locked='false' title='Risorse' type='LinkList'>
     <b:widget-settings>
-      <b:widget-setting name='link-3'>https://www.youtube.com/channel/UCRFCbs4PtzDjUtHeCQ3claA</b:widget-setting>
+      <b:widget-setting name='link-3'>https://www.youtube.com/c/mtbbergamo</b:widget-setting>
       <b:widget-setting name='sorting'>NONE</b:widget-setting>
       <b:widget-setting name='text-1'>Mappe</b:widget-setting>
       <b:widget-setting name='link-1'>http://www.mtbbergamo.it/p/mappe.html</b:widget-setting>
