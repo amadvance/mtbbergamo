@@ -404,7 +404,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'media_seriana', name: 'Passo di Bliben, 529 Easy, Vertova', kind: 'down', file: 'Seriana_Bliben529EasyVertova.gpx', link: '2021/12/529-easy' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'media_seriana', name: 'Baita Garda, Dasla, 528 Special, Vertova', kind: 'down', file: 'Seriana_GardaDasla528SpecialVertova.gpx', link: '2021/12/528-special' },
 { vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'media_seriana', name: 'Tisa, 518, Bondo, Ponte Nossa', kind: 'down', file: 'Seriana_Tisa518BondoPonteNossa.gpx', link: '2022/01/monte-tisa-518-bondo' },
-{ vote: 3, rate: 4, rate_max: 0, cycle: 100, zone: 'media_seriana', name: 'Passo di Bliben, 529 Hard, Vertova', kind: 'down', file: 'Seriana_Bliben529HardVertova.gpx' },
+{ vote: 3, rate: 4, rate_max: 0, cycle: 100, zone: 'media_seriana', name: 'Passo di Bliben, 529 Hard, Vertova', kind: 'down', file: 'Seriana_Bliben529HardVertova.gpx', link: '2022/01/529-hard' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'media_seriana', name: 'Salita Vertova, Passo di Bliben', kind: 'up', file: 'Seriana_SalitaVertovaDaslaBliben_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'media_seriana', name: 'Salita Vertova, Bondo, Cavlera, Baita Garda', kind: 'up', file: 'Seriana_SalitaVertovaBondoCavleraGarda_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'media_seriana', name: 'Salita Ponte Nossa, Barbata, Tisa', kind: 'up', file: 'Seriana_SalitaPonteNossaBarbataTisa_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
