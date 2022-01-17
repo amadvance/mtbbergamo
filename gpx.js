@@ -461,6 +461,22 @@ L.GPX = L.FeatureGroup.extend({
         last_time = point_time;
     }
 
+    // filter elevation with a median filter
+    for (var i = 2; i + 2 < el.length; i++) {
+        var ele_vect = [];
+
+        ele_vect.push(delta[i-2].ele);
+        ele_vect.push(delta[i-1].ele);
+        ele_vect.push(delta[i].ele);
+        ele_vect.push(delta[i+1].ele);
+        ele_vect.push(delta[i+2].ele);
+
+        ele_vect.sort();
+
+        delta[i].ele = ele_vect[2];
+        delta[i].delta_v = delta[i].ele - delta[i-1].ele;
+    }
+
     last_ll = null;
     last_ele = null;
     last_time = null;
