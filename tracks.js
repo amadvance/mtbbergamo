@@ -414,7 +414,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 //
 { vote: 5, rate: 1, rate_max: 3, cycle: 100, zone: 'media_seriana, gandino', name: 'Pizzo Formico, Monte Farno, 543, Casnigo', kind: 'down', file: 'Gandino_FormicoFarno543Casnigo.gpx', link: '2022/01/formico-543-casnigo' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'media_seriana, gandino', name: 'Pizzo Formico, Rifugio Parafulmine, Val Groaro', kind: 'down', file: 'Gandino_FormicoParafulmineGroaroGandino.gpx' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'media_seriana, gandino', name: 'Giro Val Gandino, Rifugio Parafulmine, Malga Lunga, Monte Sparavera', kind: 'down', file: 'Gandino_ParafulmineMalgaLungaSparavera547Gandino.gpx' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'media_seriana, gandino', name: 'Giro Val Gandino, Rifugio Parafulmine, Malga Lunga, Monte Sparavera', kind: 'down', file: 'Gandino_ParafulmineMalgaLungaSparavera547Gandino.gpx', link: '2022/01/giro-val-gandino' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'media_seriana, gandino', name: 'Monte Sparavera, Leffe', kind: 'down', file: 'Gandino_SparaveraLeffe.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 90, comm: "90%, ultimi 100m dislivello a spinta", zone: 'media_seriana, gandino', name: 'Salita Casnigo, Monte Farno, Pizzo Formico', kind: 'up', file: 'Gandino_SalitaCasnigoFarnoFormico_EBIKE.gpx', link: '2022/01/formico-543-casnigo' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 92, comm: "92%, ultimi 100m dislivello a spinta", zone: 'media_seriana, gandino', name: 'Salita Gandino, Monte Farno, Pizzo Formico', kind: 'up', file: 'Gandino_SalitaGandinoFarnoFormico_EBIKE.gpx' },
