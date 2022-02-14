@@ -142,13 +142,15 @@ removed for request of the owner
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Passo del Palio, Sbarra di Brumano', kind: 'down', file: 'Imagna_PassoPalioSbarra.gpx', link: '2019/05/zuc-de-valmana' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Zuc de Valmana, Cresta, Passo del Palio', kind: 'down', file: 'Imagna_ZucDeValmanaCrestaPassoPalio.gpx', link: '2019/05/zuc-de-valmana' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 70, zone: 'imagna', name: 'Anello del Resegone', kind: 'down', file: 'Imagna_AnelloResegone.gpx', link: '2020/08/anello-resegone' },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, taleggio', name: 'Fuipiano, Grandi Alberi, Morterone', kind: 'down', file: 'Imagna_PalioGrandiAlberiFuipiano.gpx' },
+
 /*
 removed for not so relevant
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Passo del Palio, Rifugio Resegone', kind: 'down', file: 'Imagna_PassoPalioBocchettaRifResegone_EBIKE.gpx' },
 */
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, morterone', name: 'Passo del Palio, Forbesette, Morterone', kind: 'down', file: 'Imagna_PassoPalioForbesetteMorterone.gpx', link: '2020/12/morterone' },
-{ vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'imagna, morterone', name: 'Passo del Palio, Freeride, Morterone', kind: 'down', file: 'Imagna_PassoPalioFreerideMorterone.gpx', link: '2020/12/morterone' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, morterone', name: 'Salita da Morterone al Passo del Palio', kind: 'up', file: 'Imagna_SalitaMorteronePassoPalio_EBIKE.gpx', link: '2020/12/morterone' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Forbesette, Morterone', kind: 'down', file: 'Imagna_PassoPalioForbesetteMorterone.gpx', link: '2020/12/morterone' },
+{ vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Freeride, Morterone', kind: 'down', file: 'Imagna_PassoPalioFreerideMorterone.gpx', link: '2020/12/morterone' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, morterone, taleggio', name: 'Salita da Morterone al Passo del Palio', kind: 'up', file: 'Imagna_SalitaMorteronePassoPalio_EBIKE.gpx', link: '2020/12/morterone' },
 /*
 removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Salita da Fuipiano allo Zuc De Valmana', kind: 'up', file: 'Imagna_SalitaZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
@@ -160,11 +162,11 @@ removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita da Brumano alle Cascine Zucchero', kind: 'up', file: 'Imagna_SalitaBrumanoCascineZucchero_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Brumano ai Pra d\'Alet', kind: 'up', file: 'Imagna_SalitaBrumanoPraDAlet_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna. morterone', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'Imagna_SalitaSbarraPalio_EBIKE.gpx', link: '2018/12/salite-imagna' },
-/* used for completing the MTB tracks */
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'costa_del_palio', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'Imagna_SalitaSbarraPalio.gpx', link: '2018/12/salite-imagna' },
-/* used for the Zuc De Valmana climbing without splitting */
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'zuc_de_valmana,canti', name: 'Salita dalla Sbarra di Brumano allo Zuc De Valmana', kind: 'up', file: 'Imagna_SalitaSbarraPalioZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Selino a Fuipiano e ai Tre Faggi', kind: 'up', file: 'Imagna_SalitaSelinoFuipianoTreFaggi.gpx', link: '2018/12/salite-imagna' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Fuipiano, Capione al Palio', kind: 'up', file: 'Imagna_SalitaFuipianoCapionePalio_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Fuipiano al Palio', kind: 'up', file: 'Imagna_SalitaFuipianoPalio_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'costa_del_palio', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'Imagna_SalitaSbarraPalio.gpx', link: '2018/12/salite-imagna' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'zuc_de_valmana,canti', name: 'Salita dalla Sbarra di Brumano allo Zuc De Valmana', kind: 'up', file: 'Imagna_SalitaSbarraPalioZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
 
 //
 // IMAGNA SUD
@@ -535,8 +537,12 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Salita da Tribulina ai Prati Alti', kind: 'up', file: 'Cavallina_SalitaTribuliaPratiAlti_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Monte Grione, 618, Endine Gaiano', kind: 'down', file: 'Cavallina_Grione618Endine.gpx' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Malga Longa, 563, Sovere, Endine Gaiano', kind: 'down', file: 'Cavallina_MalgaLonga563SovereEndine.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Endine Gaiano, Forcella di Ranzanico, Monte Grione', kind: 'up', file: 'Cavallina_SalitaEndineForcellaGrione_EBIKE.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Endine Gaiano, Forcella di Ranzanico, Malga Lunga', kind: 'up', file: 'Cavallina_SalitaEndineForcellaMalgaLunga_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Endine Gaiano, Forcella di Ranzanico, Monte Grione', kind: 'up', file: 'Cavallina_SalitaEndineForcellaGrione_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Endine Gaiano, Forcella di Ranzanico, Malga Lunga', kind: 'up', file: 'Cavallina_SalitaEndineForcellaMalgaLunga_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
+{ vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Forcella di Ranzanico, 618, Ranzanico', kind: 'down', file: 'Cavallina_Forcella618Ranzanico.gpx' },
+{ vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Forcella di Ranzanico, Sorgenti Bondo, Ranzanico', kind: 'down', file: 'Cavallina_ForcellaSorgenteRanzanico.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Spinone al Lago, Forcella di Ranzanico', kind: 'up', file: 'Cavallina_SalitaSpinoneForcellaRanzanico_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Collegament Ranzanico, Spinone al Lago', kind: 'up', file: 'Cavallina_CollegamentoRanzanicoSpinone_EBIKE.gpx', link: '2021/04/salite-val-cavallina' },
 
 ];
 
