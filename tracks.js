@@ -429,7 +429,13 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 // VALSASSINA
 //
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'valsassina', name: 'Arvaggio 2000, Piani di Artavaggio, Vasca, Moggio', kind: 'down', file: 'Valsassina_CazzanigaArtavaggioVascaNeve.gpx', link: '2020/01/artavaggio' },
-{ vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'valsassina', name: 'Moggio, Piani di Artavaggio, Artavaggio 2000', kind: 'up', file: 'Valsassina_MoggioArtavaggioCazzaniga.gpx', link: '2020/01/artavaggio' },
+{ vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'valsassina', name: 'Salita Moggio, Piani di Artavaggio, Artavaggio 2000', kind: 'up', file: 'Valsassina_MoggioArtavaggioCazzaniga.gpx', link: '2020/01/artavaggio' },
+
+//
+// TALEGGIO
+//
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana, taleggio', name: 'Rifugio Nicola, Bocchetta di Redagur, Rifugio Gherardi, Fraggio, Sottochiesa', kind: 'down', file: 'Taleggio_NicolaGherardiFraggioSottochiesa.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana, taleggio', name: 'Salita Sottochiesa, Artavaggio, Rifugio Nicola', kind: 'up', file: 'Taleggio_SalitaSottochiesaArtavaggioNicola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 
 //
 // BREMBILLA
