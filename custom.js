@@ -368,9 +368,9 @@ var COLORS_4 = [
 //"Lime", too strong
 "LimeGreen",
 "YellowGreen",
-"OliveDrab",
-"Olive",
-"DarkOliveGreen",
+// "OliveDrab", like openstreetmap background
+// "Olive", like openstreetmap background
+// "DarkOliveGreen", like openstreetmap background
 // repeat
 "DarkGreen",
 "Green",
