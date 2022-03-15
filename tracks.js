@@ -434,10 +434,10 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 //
 // TALEGGIO
 //
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana, taleggio', name: 'Rifugio Nicola, Bocchetta di Redagur, Rifugio Gherardi, Fraggio, Sottochiesa', kind: 'down', file: 'Taleggio_NicolaGherardiFraggioSottochiesa.gpx' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana, taleggio', name: 'Rifugio Gherardi, Ponte Becco', kind: 'down', file: 'Taleggio_ArtavaggioGherardiPonteBecco.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana, taleggio', name: 'Salita Sottochiesa, Artavaggio, Rifugio Nicola', kind: 'up', file: 'Taleggio_SalitaSottochiesaArtavaggioNicola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_brembana, taleggio', name: 'Salita, Ponte Becco, Sottochiesa, Artavaggio, Rifugio Gherardi', kind: 'up', file: 'Taleggio_SottochiesaArtavaggio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Rifugio Nicola, Bocchetta di Redagur, Rifugio Gherardi, Fraggio, Sottochiesa', kind: 'down', file: 'Taleggio_NicolaGherardiFraggioSottochiesa.gpx', link: '2022/03/nicola-regadur-gherardi' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Artavaggio, Rifugio Gherardi, Ponte Becco', kind: 'down', file: 'Taleggio_ArtavaggioGherardiPonteBecco.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Salita Sottochiesa, Artavaggio, Rifugio Nicola', kind: 'up', file: 'Taleggio_SalitaSottochiesaArtavaggioNicola_EBIKE.gpx', link: '2022/03/nicola-regadur-gherardi' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Salita, Ponte Becco, Sottochiesa, Artavaggio', kind: 'up', file: 'Taleggio_SottochiesaArtavaggio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 
 //
 // BREMBILLA
