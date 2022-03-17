@@ -436,8 +436,10 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 //
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Rifugio Nicola, Bocchetta di Redagur, Rifugio Gherardi, Fraggio, Sottochiesa', kind: 'down', file: 'Taleggio_NicolaGherardiFraggioSottochiesa.gpx', link: '2022/03/nicola-regadur-gherardi' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Artavaggio, Rifugio Gherardi, Ponte Becco', kind: 'down', file: 'Taleggio_ArtavaggioGherardiPonteBecco.gpx' },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Artavaggio, Fraggio, Sottochiesa', kind: 'down', file: 'Taleggio_ArtavaggioFraggioSottochiesa.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Salita Sottochiesa, Artavaggio, Rifugio Nicola', kind: 'up', file: 'Taleggio_SalitaSottochiesaArtavaggioNicola_EBIKE.gpx', link: '2022/03/nicola-regadur-gherardi' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Salita, Ponte Becco, Sottochiesa, Artavaggio', kind: 'up', file: 'Taleggio_SottochiesaArtavaggio_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Salita, Ponte Becco, Sottochiesa, Artavaggio', kind: 'up', file: 'Taleggio_SottochiesaArtavaggio_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana, taleggio', name: 'Salita Sottochiesa, Artavaggio, Rifugio Nicola', kind: 'up', file: 'Taleggio_SalitaSottochiesaAvolasioArtavaggio_EBIKE.gpx' },
 
 //
 // BREMBILLA
@@ -541,7 +543,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 99, zone: 'cavallina, misma', name: 'Misma, Santa Maria, Cenate', kind: 'down', file: 'Cavallina_MismaCenate.gpx', link: '2021/04/misma-santa-maria-cenate-sopra' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'cavallina, misma', name: 'Corna Clima, Sant\'Ambrogio', kind: 'down', file: 'Cavallina_CornaClimaSantAmbrogio.gpx', link: '2021/05/sant-ambrogio' },
 { vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Corna Clima, Mirabile', kind: 'down', file: 'Cavallina_CornaClimaMirabileVallese.gpx', link: '2022/03/mirabile' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'cavallina', name: 'Faisecco, Prati Alti, 611, Luzzana', kind: 'down', file: 'Cavallina_FaiseccoPratiAlti611Luzzana.gpx' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'cavallina', name: 'Faisecco, Prati Alti, 611, Luzzana', kind: 'down', file: 'Cavallina_FaiseccoPratiAlti611Luzzana.gpx', link: '2022/03/pranza-luzzana' },
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'cavallina, ', name: 'Pistino Minardi 2', kind: 'down', file: 'Cavallina_Minardi2.gpx', link: '2022/03/mirabile' },
 { vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: '', name: 'Corna Clima, Mirabile, Entratico', kind: 'down', file: 'Cavallina_CornaClimaMirabileEntratico.gpx', link: '2022/03/mirabile' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, misma', name: 'Valpredina, Cenate Sopra', kind: 'down', file: 'Cavallina_ValpredinaCenateSopra.gpx', link: '2021/05/valpredina' },
@@ -556,8 +558,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'cavallina, ranzanico', name: 'Forcella di Ranzanico, Sorgenti Bondo, Ranzanico', kind: 'down', file: 'Cavallina_ForcellaSorgenteRanzanico.gpx', link: '2022/02/doppietta-ranzanico'  },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, ranzanico', name: 'Salita Spinone al Lago, Forcella di Ranzanico', kind: 'up', file: 'Cavallina_SalitaSpinoneForcellaRanzanico_EBIKE.gpx', link: '2022/02/doppietta-ranzanico' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina, ranzanico', name: 'Collegamento Ranzanico, Spinone al Lago', kind: 'up', file: 'Cavallina_CollegamentoRanzanicoSpinone_EBIKE.gpx', link: '2022/02/doppietta-ranzanico' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Entratico, Casazza, Colle Gallo, Faisecco', kind: 'up', file: 'Cavallina_SalitaEntraticoCasazzaFaisecco_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Entratico, Casazza, Colle Gallo, Faisecco', kind: 'up', file: 'Cavallina_SalitaEntraticoCasazzaFaisecco_EBIKE.gpx', link: '2022/03/pranza-luzzana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Borgo di Terzo, 615, Colle di San Fermo, Monte Ballerino', kind: 'up', file: 'Cavallina_SalitaTerzo615SanFermoBallerino_EBIKE.gpx' },
 ];
-
 
