@@ -170,7 +170,6 @@ removed for request of the owner
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Brumano al Passo Porta', kind: 'up', file: 'Imagna_SalitaBrumanoPassoPorta_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Brumano alle Cascine Zucchero', kind: 'up', file: 'Imagna_SalitaBrumanoCascineZucchero_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Brumano ai Pra d\'Alet', kind: 'up', file: 'Imagna_SalitaBrumanoPraDAlet_EBIKE.gpx', link: '2018/12/salite-imagna' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita Capione, Passo del Palio', kind: 'up', file: 'Imagna_SalitaCapionePalio_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, morterone', name: 'Salita dalla Sbarra di Brumano al Palio', kind: 'up', file: 'Imagna_SalitaSbarraPalio_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita da Selino a Fuipiano e ai Tre Faggi', kind: 'up', file: 'Imagna_SalitaSelinoFuipianoTreFaggi.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Salita (nuova) da Fuipiano, Capione al Palio', kind: 'up', file: 'Imagna_SalitaFuipianoCapionePalio_EBIKE.gpx', link: '2022/04/sorgenti-enna' },
