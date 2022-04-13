@@ -161,7 +161,34 @@ function create_map_track(id) {
 
 function create_control(map) {
 	var control = L.control.layers(null, null).addTo(map);
-	return control;
+
+	var ret = {ct: control, gr: null};
+
+	return ret;
+}
+
+function create_control_group(map) {
+	var control = L.control.layers(null, null).addTo(map);
+
+	var group = [];
+
+	group[0] = L.layerGroup([]);
+	group[1] = L.layerGroup([]);
+	group[2] = L.layerGroup([]);
+	group[3] = L.layerGroup([]);
+	group[4] = L.layerGroup([]);
+	group[5] = L.layerGroup([]);
+
+	control.addOverlay(group[5], "Eccellenti");
+	control.addOverlay(group[4], "Ottimi");
+	control.addOverlay(group[3], "Buoni");
+	control.addOverlay(group[2], "Discreti");
+	control.addOverlay(group[1], "Sconsigliati");
+	control.addOverlay(group[0], "Salite");
+
+	var ret = {ct: control, gr: group};
+
+	return ret;
 }
 
 function create_gpx_info(map, control, gpx, url, index, link)
@@ -230,7 +257,18 @@ function create_gpx_info(map, control, gpx, url, index, link)
 	desc += "<br/>";
 	desc += "<a href=\"" + zip + "\" download>Download GPX</a>";
 	gpx.bindPopup(desc);
-	control.addOverlay(gpx, name);
+
+	if (control.gr === null) {
+		control.ct.addOverlay(gpx, name);
+
+		gpx.addTo(map);
+	} else {
+		var group = control.gr[TRACKS[index].vote];
+
+		group.addLayer(gpx);
+
+		group.addTo(map);
+	}
 }
 
 // create a track for a post with full size icons
@@ -268,7 +306,7 @@ function create_track(map, control, url, index, track_options)
 	}).on('loaded', function(e) {
 		var gpx = e.target;
 		create_gpx_info(map, control, gpx, url, index, null);
-	}).addTo(map);
+	});
 }
 
 // create a track for a zone post, with link to the specific post
@@ -306,7 +344,7 @@ function create_zone_track(map, control, url, index, track_options)
 	}).on('loaded', function(e) {
 		var gpx = e.target;
 		create_gpx_info(map, control, gpx, url, index, TRACKS[index].link);
-	}).addTo(map);
+	});
 }
 
 // detect if the page shown contains multiple blog pages
