@@ -19,6 +19,7 @@ output_mp4 = name + "-YOUTUBE.mp4"
 output_lst = name + ".lst";
 tmp_glob = ""
 tmp_count = 0
+ffmpeg = "../../ffmpeg-5.0.1-amd64-static/ffmpeg"
 
 # Sort the clips, they are in insertion order, not in position order
 clips = sorted(data["clips"], key=lambda clip: clip["position"])
@@ -47,14 +48,14 @@ for a in files:
 	clip_mp4 = a
 	clip_mkv = clip_mp4.replace(".mp4",".tmp.mkv")
 	tmp_glob += " " + clip_mkv
-	print >>cmd, "ffmpeg -y -i", clip_mp4, "-c copy -map 0:0 -map 0:1", clip_mkv
+	print >>cmd, ffmpeg, "-y -i", clip_mp4, "-c copy -map 0:0 -map 0:1", clip_mkv
 
 # Concatenate the video with encoding
 PLAIN='-c copy -bsf:a aac_adtstoasc'
 FILTER='-vf "normalize=blackpt=black:whitept=white:smoothing=60:strength=1.0,eq=contrast=1.1:saturation=1.5,curves=blue=\'0/0 0.5/0.45 1/1\',unsharp=7:7:1.2,hflip,vflip"'
 FILTER_DARK='-vf "curves=all=\'0/0 0.5/0.58 1/1\',normalize=blackpt=black:whitept=white:smoothing=60:strength=1.0,eq=saturation=1.5,unsharp=7:7:1.2,hflip,vflip"'
 ENCODE='-preset veryfast -codec:v libx264 -crf 24 -maxrate 90M -bufsize 30M -pix_fmt yuvj420p -codec:a aac -b:a 192k'
-print >>cmd, "ffmpeg -y -f concat -i " + name + ".lst", FILTER, ENCODE, output_mp4
+print >>cmd, ffmpeg, "-y -f concat -i " + name + ".lst", FILTER, ENCODE, output_mp4
 
 # Remove temp files
 print >>cmd, "rm" + tmp_glob
