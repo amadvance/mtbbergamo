@@ -27,7 +27,9 @@ function get_track_name(index)
 function get_track_zip(index)
 {
 	var url = ARCHIVE + 'gpx/' + TRACKS[index].file;
-	var zip = url.replace(/gpx/g,"zip");
+
+	/* replace both dir gpx and redux */
+	var zip = url.replace(/gpx/g,"zip").replace(/redux/g,"zip")
 
 	return zip;
 }
@@ -252,7 +254,8 @@ function create_gpx_info(map, control, gpx, url, index, link)
 		}
 	}
 
-	var zip = url.replace(/gpx/g,"zip");
+	/* replace both dir gpx and redux */
+	var zip = url.replace(/gpx/g,"zip").replace(/redux/g,"zip")
 
 	desc += "<br/>";
 	desc += "<a href=\"" + zip + "\" download>Download GPX</a>";
@@ -848,7 +851,7 @@ function create_zone(map, control, zone) {
 		}
 
 		create_zone_track(map, control,
-			ARCHIVE + 'gpx/' + TRACKS[i].file,
+			ARCHIVE + 'redux/' + TRACKS[i].file,
 			i,
 			{
 				color: color,
@@ -870,7 +873,7 @@ function create_climb(map, control, zone) {
 			continue;
 
 		create_zone_track(map, control,
-			ARCHIVE + 'gpx/' + TRACKS[i].file,
+			ARCHIVE + 'redux/' + TRACKS[i].file,
 			i,
 			{
 				slope: true,

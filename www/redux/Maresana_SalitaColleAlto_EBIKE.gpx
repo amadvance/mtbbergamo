@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:adv="http://www.garmin.com/xmlschemas/AdventuresExtensions/v1" xmlns:ctx="http://www.garmin.com/xmlschemas/CreationTimeExtension/v1" xmlns:gpxacc="http://www.garmin.com/xmlschemas/AccelerationExtension/v1" xmlns:gpxpx="http://www.garmin.com/xmlschemas/PowerExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxtrx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:prs="http://www.garmin.com/xmlschemas/PressureExtension/v1" xmlns:tmd="http://www.garmin.com/xmlschemas/TripMetaDataExtensions/v1" xmlns:trp="http://www.garmin.com/xmlschemas/TripExtensions/v1" xmlns:vidx1="http://www.garmin.com/xmlschemas/VideoExtension/v1" xmlns:vptm="http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensions/v1" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v1 http://www8.garmin.com/xmlschemas/ActivityExtensionv1.xsd http://www.garmin.com/xmlschemas/AdventuresExtensions/v1 http://www8.garmin.com/xmlschemas/AdventuresExtensionv1.xsd http://www.garmin.com/xmlschemas/PressureExtension/v1 http://www.garmin.com/xmlschemas/PressureExtensionv1.xsd http://www.garmin.com/xmlschemas/TripExtensions/v1 http://www.garmin.com/xmlschemas/TripExtensionsv1.xsd http://www.garmin.com/xmlschemas/TripMetaDataExtensions/v1 http://www.garmin.com/xmlschemas/TripMetaDataExtensionsv1.xsd http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensions/v1 http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensionsv1.xsd http://www.garmin.com/xmlschemas/CreationTimeExtension/v1 http://www.garmin.com/xmlschemas/CreationTimeExtensionsv1.xsd http://www.garmin.com/xmlschemas/AccelerationExtension/v1 http://www.garmin.com/xmlschemas/AccelerationExtensionv1.xsd http://www.garmin.com/xmlschemas/PowerExtension/v1 http://www.garmin.com/xmlschemas/PowerExtensionv1.xsd http://www.garmin.com/xmlschemas/VideoExtension/v1 http://www.garmin.com/xmlschemas/VideoExtensionv1.xsd" version="1.1" creator="Garmin Desktop App">
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2020-12-25T21:26:14Z</time>
+    <bounds minlat="45.72921048849821" maxlat="45.73055427521467" minlon="9.671790897846222" maxlon="9.675075514242053">
+    </bounds>
+  </metadata>
+  <trk>
+    <name>Maresana_SalitaColleAlto_EBIKE</name>
+    <extensions>
+      <gpxtrx:TrackExtension>
+        <gpxtrx:DisplayColor>Blue</gpxtrx:DisplayColor>
+      </gpxtrx:TrackExtension>
+    </extensions>
+    <trkseg>
+      <trkpt lat="45.729766795411706" lon="9.671790897846222">
+        <ele>534.15</ele>
+        <time>2020-11-14T09:14:47Z</time>
+      </trkpt>
+      <trkpt lat="45.72975221090019" lon="9.672056520357728">
+        <ele>537.03</ele>
+        <time>2020-11-14T09:14:57Z</time>
+      </trkpt>
+      <trkpt lat="45.72943579405546" lon="9.672389281913638">
+        <ele>546.17</ele>
+        <time>2020-11-14T09:15:17Z</time>
+      </trkpt>
+      <trkpt lat="45.72922591120005" lon="9.672759091481566">
+        <ele>550.49</ele>
+        <time>2020-11-14T09:15:30Z</time>
+      </trkpt>
+      <trkpt lat="45.72921048849821" lon="9.672942655161023">
+        <ele>551.93</ele>
+        <time>2020-11-14T09:15:35Z</time>
+      </trkpt>
+      <trkpt lat="45.72963000275195" lon="9.673620164394379">
+        <ele>562.03</ele>
+        <time>2020-11-14T09:16:02Z</time>
+      </trkpt>
+      <trkpt lat="45.73045092634857" lon="9.674647282809019">
+        <ele>575.01</ele>
+        <time>2020-11-14T09:16:47Z</time>
+      </trkpt>
+      <trkpt lat="45.73055427521467" lon="9.675075514242053">
+        <ele>579.81</ele>
+        <time>2020-11-14T09:17:05Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

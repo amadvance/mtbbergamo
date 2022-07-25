@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:ql="http://www.qlandkarte.org/xmlschemas/v1.1" xmlns:rmc="urn:net:trekbuddy:1.0:nmea:rmc" xmlns:tp1="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.qlandkarte.org/xmlschemas/v1.1 http://www.qlandkarte.org/xmlschemas/v1.1/ql-extensions.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd" version="1.1" creator="QMapShack 1.14.0 http://www.qlandkarte.org/">
+  <metadata>
+    <name>Cavallina PratiAlti611AEntratico</name>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2022-03-21T08:04:37Z</time>
+  </metadata>
+  <trk>
+    <name>Cavallina_PratiAlti611AEntratico</name>
+    <extensions>
+      <ql:key>00d5e3a17e6ef9e76ed219eb40292f98</ql:key>
+      <ql:flags>6</ql:flags>
+      <ql:history>
+        <ql:event>
+          <ql:icon>://icons/48x48/Start.png</ql:icon>
+          <ql:time>2022-04-14T17:18:01.705Z</ql:time>
+          <ql:comment>Initial version.</ql:comment>
+        </ql:event>
+        <ql:event>
+          <ql:icon>://icons/48x48/SetEle.png</ql:icon>
+          <ql:time>2022-04-14T17:18:50.354Z</ql:time>
+          <ql:comment>Replaced elevation data with data from DEM files.</ql:comment>
+        </ql:event>
+        <ql:event>
+          <ql:icon>://icons/48x48/SetEle.png</ql:icon>
+          <ql:time>2022-04-14T17:18:54.648Z</ql:time>
+          <ql:comment>Smoothed profile with a Median filter of size 5</ql:comment>
+        </ql:event>
+      </ql:history>
+      <gpxx:TrackExtension>
+        <gpxx:DisplayColor>Blue</gpxx:DisplayColor>
+      </gpxx:TrackExtension>
+    </extensions>
+    <trkseg>
+      <trkpt lat="45.72544576" lon="9.85134669">
+        <ele>778.0</ele>
+        <time>2022-03-19T09:42:47Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.72430557" lon="9.85400232">
+        <ele>775.0</ele>
+        <time>2022-03-19T09:58:31Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.72326076" lon="9.85541359">
+        <ele>762.0</ele>
+        <time>2022-03-19T09:59:48Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.72317032" lon="9.85607618">
+        <ele>763.0</ele>
+        <time>2022-03-19T09:59:59Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.72292666" lon="9.85656459">
+        <ele>754.0</ele>
+        <time>2022-03-19T10:00:06Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.72197816" lon="9.85770067">
+        <ele>742.0</ele>
+        <time>2022-03-19T10:00:31Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.72084962" lon="9.85789848">
+        <ele>740.0</ele>
+        <time>2022-03-19T10:00:55Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.72047764" lon="9.85810057">
+        <ele>734.0</ele>
+        <time>2022-03-19T10:01:03Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.72024403" lon="9.85834926">
+        <ele>726.0</ele>
+        <time>2022-03-19T10:03:37Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71975377" lon="9.85952256">
+        <ele>702.0</ele>
+        <time>2022-03-19T10:03:56Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71933594" lon="9.86010795">
+        <ele>690.0</ele>
+        <time>2022-03-19T10:04:07Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71912228" lon="9.86072059">
+        <ele>682.0</ele>
+        <time>2022-03-19T10:04:17Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71867259" lon="9.86142986">
+        <ele>677.0</ele>
+        <time>2022-03-19T10:04:29Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71840253" lon="9.86235447">
+        <ele>671.0</ele>
+        <time>2022-03-19T10:04:44Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71795544" lon="9.86298647">
+        <ele>662.0</ele>
+        <time>2022-03-19T10:04:54Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71775" lon="9.86359843">
+        <ele>649.0</ele>
+        <time>2022-03-19T10:05:03Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.7170869" lon="9.86497499">
+        <ele>615.0</ele>
+        <time>2022-03-19T10:05:27Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71686428" lon="9.86619917">
+        <ele>605.0</ele>
+        <time>2022-03-19T10:05:46Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71626665" lon="9.86732662">
+        <ele>584.0</ele>
+        <time>2022-03-19T10:06:10Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71604294" lon="9.86813824">
+        <ele>564.0</ele>
+        <time>2022-03-19T10:06:26Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71562527" lon="9.86887727">
+        <ele>543.0</ele>
+        <time>2022-03-19T10:06:50Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71545277" lon="9.86934674">
+        <ele>529.0</ele>
+        <time>2022-03-19T10:07:02Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71524054" lon="9.87049347">
+        <ele>516.0</ele>
+        <time>2022-03-19T10:07:31Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71503543" lon="9.87014679">
+        <ele>502.0</ele>
+        <time>2022-03-19T10:09:14Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.7146994" lon="9.86909721">
+        <ele>484.0</ele>
+        <time>2022-03-19T10:09:40Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71436874" lon="9.86870779">
+        <ele>468.0</ele>
+        <time>2022-03-19T10:09:55Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71411502" lon="9.86822465">
+        <ele>458.0</ele>
+        <time>2022-03-19T10:10:10Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71407923" lon="9.86801159">
+        <ele>457.0</ele>
+        <time>2022-03-19T10:10:17Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71398015" lon="9.86819155">
+        <ele>447.0</ele>
+        <time>2022-03-19T10:10:24Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71394034" lon="9.86813639">
+        <ele>446.0</ele>
+        <time>2022-03-19T10:10:26Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71386674" lon="9.8678587">
+        <ele>445.0</ele>
+        <time>2022-03-19T10:10:33Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.7138934" lon="9.86763155">
+        <ele>445.0</ele>
+        <time>2022-03-19T10:10:39Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71361478" lon="9.86782366">
+        <ele>430.0</ele>
+        <time>2022-03-19T10:10:51Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.7135054" lon="9.86777932">
+        <ele>424.0</ele>
+        <time>2022-03-19T10:11:01Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71346919" lon="9.86789038">
+        <ele>421.0</ele>
+        <time>2022-03-19T10:11:04Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71342334" lon="9.86756248">
+        <ele>418.0</ele>
+        <time>2022-03-19T10:11:14Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71322176" lon="9.86775435">
+        <ele>404.0</ele>
+        <time>2022-03-19T10:12:31Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71332578" lon="9.86702939">
+        <ele>399.0</ele>
+        <time>2022-03-19T10:12:50Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71314171" lon="9.86696611">
+        <ele>390.0</ele>
+        <time>2022-03-19T10:13:04Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.7132324" lon="9.86681381">
+        <ele>389.0</ele>
+        <time>2022-03-19T10:13:13Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71318974" lon="9.8667564">
+        <ele>386.0</ele>
+        <time>2022-03-19T10:13:52Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71236345" lon="9.86599783">
+        <ele>346.0</ele>
+        <time>2022-03-19T10:14:35Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71219548" lon="9.86613505">
+        <ele>344.0</ele>
+        <time>2022-03-19T10:15:24Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71204653" lon="9.86611233">
+        <ele>341.0</ele>
+        <time>2022-03-19T10:15:27Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71183556" lon="9.8657727">
+        <ele>334.0</ele>
+        <time>2022-03-19T10:15:32Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71151336" lon="9.86551906">
+        <ele>325.0</ele>
+        <time>2022-03-19T10:15:37Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71084138" lon="9.8654681">
+        <ele>312.0</ele>
+        <time>2022-03-19T10:15:47Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71075002" lon="9.86578988">
+        <ele>314.0</ele>
+        <time>2022-03-19T10:15:52Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71049102" lon="9.86609993">
+        <ele>316.0</ele>
+        <time>2022-03-19T10:15:59Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71023193" lon="9.86764865">
+        <ele>302.0</ele>
+        <time>2022-03-19T10:16:18Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71017326" lon="9.8677033">
+        <ele>302.0</ele>
+        <time>2022-03-19T10:16:20Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70992046" lon="9.86748244">
+        <ele>298.0</ele>
+        <time>2022-03-19T10:16:26Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70982968" lon="9.86758159">
+        <ele>298.0</ele>
+        <time>2022-03-19T10:16:59Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71005583" lon="9.87010857">
+        <ele>299.0</ele>
+        <time>2022-03-19T10:17:43Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.71005105" lon="9.87095682">
+        <ele>295.0</ele>
+        <time>2022-03-19T10:17:53Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70886325" lon="9.87255248">
+        <ele>273.0</ele>
+        <time>2022-03-19T10:19:13Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70855312" lon="9.8720629">
+        <ele>272.0</ele>
+        <time>2022-03-19T10:19:54Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70846142" lon="9.87230622">
+        <ele>272.0</ele>
+        <time>2022-03-19T10:19:55Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70861506" lon="9.87253035">
+        <ele>272.0</ele>
+        <time>2022-03-19T10:20:24Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70866175" lon="9.8727912">
+        <ele>273.0</ele>
+        <time>2022-03-19T10:20:32Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70849554" lon="9.87348447">
+        <ele>272.0</ele>
+        <time>2022-03-06T11:51:22Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70824048" lon="9.87325505">
+        <ele>272.0</ele>
+        <time>2022-03-06T11:51:33Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70763689" lon="9.87309462">
+        <ele>270.0</ele>
+        <time>2022-03-06T11:51:49Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70736197" lon="9.87281475">
+        <ele>271.0</ele>
+        <time>2022-03-06T11:51:57Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70715569" lon="9.87196751">
+        <ele>270.0</ele>
+        <time>2022-03-06T11:52:12Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70649042" lon="9.87066329">
+        <ele>270.0</ele>
+        <time>2022-03-06T11:52:36Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70640358" lon="9.86952603">
+        <ele>269.0</ele>
+        <time>2022-03-06T11:53:20Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70616595" lon="9.86838684">
+        <ele>269.0</ele>
+        <time>2022-03-06T11:53:39Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70631398" lon="9.86808375">
+        <ele>269.0</ele>
+        <time>2022-03-06T11:53:48Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70606504" lon="9.86766583">
+        <ele>267.0</ele>
+        <time>2022-03-06T11:53:56Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70554318" lon="9.86756148">
+        <ele>268.0</ele>
+        <time>2022-03-06T11:54:07Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+      <trkpt lat="45.70513498" lon="9.86686285">
+        <ele>268.0</ele>
+        <time>2022-03-06T11:54:21Z</time>
+        <extensions>
+          <ql:flags>0</ql:flags>
+          <ql:activity>0</ql:activity>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <extensions>
+    <ql:key>76eb6744d2b7fe6ee519e895702ae45d</ql:key>
+    <ql:sortingRoadbook>0</ql:sortingRoadbook>
+    <ql:sortingFolder>0</ql:sortingFolder>
+    <ql:correlation>1</ql:correlation>
+    <ql:invalidDataOk>0</ql:invalidDataOk>
+  </extensions>
+</gpx>
