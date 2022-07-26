@@ -546,7 +546,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Piani dell\'Avaro, Corna Rossa', kind: 'down', file: 'Brembana_AvaroCornaRossa.gpx', link: '2021/11/corna-rossa' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 99, zone: 'alta_brembana', name: 'Valle d\'Inferno', kind: 'down', file: 'Brembana_ValInferno.gpx', link: '2021/10/val-dinferno' },
 { vote: 3, rate: 3, rate_max: 4, cycle: 80, zone: 'alta_brembana', name: 'Passo Selletta, Rifugio Calvi, Sentiero Estivo, Carona', kind: 'down', file: 'Brembana_SellettaCalviEstivoCarona.gpx', link: '2022/07/selletta-calvi-estivo' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 98, zone: 'alta_brembana', name: 'Cima di Lemma, Passo Tartano, Prato Marino, Valleve', kind: 'down', file: 'Brembana_CimaLemmaPassoTartanoPratoMarinoValleve.gpx' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 98, zone: 'alta_brembana', name: 'Cima di Lemma, Passo Tartano, Prato Marino, Valleve', kind: 'down', file: 'Brembana_CimaLemmaPassoTartanoPratoMarinoValleve.gpx', link: '2022/07/cima-lemma-tartano' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 98, zone: 'alta_brembana', name: 'Val Sambuzza, Carona', kind: 'down', file: 'Brembana_ValSambuzzaCarona.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 76, zone: 'alta_brembana', name: 'Salita Averara, Piani dell\'Avaro, Monte Mincucco', kind: 'up', file: 'Brembana_SalitaAveraraAvaroMincucco_EBIKE.gpx', link: '2022/07/mincuccocantedoldo' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'alta_brembana', name: 'Salita Santa Brigida, Piani dell\'Avaro, Monte Mincucco', kind: 'up', file: 'Brembana_SalitaSantaBrigidaAvaroPonteranica_EBIKE.gpx', link: '2022/07/ponteranica-valmora' },
@@ -557,7 +557,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Passo San Marco, Via Priula', kind: 'down', file: 'Brembana_SanMarcoViaPriula.gpx', link: '2021/11/via-priula' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Mezzoldo, Via Priula, Passo San Marco', kind: 'up', file: 'Brembana_SalitaViaPriulaSanMarco_EBIKE.gpx', link: '2021/11/via-priula' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 60, zone: 'alta_brembana', name: 'Salita Carona, Rifugio Longo, Lago del Diavolo, Passo Selletta', kind: 'up', file: 'Brembana_SalitaCaronaLongoDiavoloSelletta_EBIKE.gpx', link: '2022/07/selletta-calvi-estivo' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 75, zone: 'alta_brembana', name: 'Salita Valleve, San Simone, Passo di Lemma ,Cima di Lemma', kind: 'up', file: 'Brembana_SalitaValleveSanSimoneCimaLemma_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 50, zone: 'alta_brembana', name: 'Salita Valleve, San Simone, Passo di Lemma, Cima di Lemma', kind: 'up', file: 'Brembana_SalitaValleveSanSimoneCimaLemma_EBIKE.gpx', link: '2022/07/cima-lemma-tartano' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'alta_brembana', name: 'Carona, Cima Nevosa, Val Sambuzza', kind: 'up', file: 'Brembana_SalitaCaronaConcaNevosaValSambuzza_EBIKE.gpx' },
 
 //
