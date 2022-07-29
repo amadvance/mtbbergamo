@@ -33,7 +33,7 @@ var RENAME = {
 "B_PizzoSpinoSanPellegrino_REC.gpx" : "Brembana_PizzoSpinoSanPellegrino.gpx",
 "B_SAntonioCasarielli_REC.gpx" : "Brembana_SAntonioCasarielli.gpx",
 "B_SAntonioTaverna_REC.gpx" : "Brembana_SAntonioTaverna.gpx",
-"B_SalitaAvaro_EBIKE.gpx" : "Brembana_SalitaAvaro_EBIKE.gpx",
+"B_SalitaAvaro_EBIKE.gpx" : "Brembana_SalitaOlmoAvaro_EBIKE.gpx",
 "B_SalitaBaitaCampo_EBIKE.gpx" : "Brembana_SalitaBaitaCampo_EBIKE.gpx",
 "B_SalitaBrembillaBerbenno_EBIKE.gpx" : "Brembilla_SalitaBrembillaBerbenno_EBIKE.gpx",
 "B_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx" : "Brembilla_SalitaBrembillaCastignolaSAntonio_EBIKE.gpx",
