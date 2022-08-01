@@ -400,7 +400,7 @@ rimosso su richiesta del CAI Albino
 { vote: 2, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana, bastia', name: 'Bastia, Fola', kind: 'down', file: 'Seriana_BastiaFola.gpx', link: '2021/04/scanzorosciate' },
 { vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'bassa_seriana, bastia', name: 'Bastia, Gianino', kind: 'down', file: 'Seriana_BastiaGianino.gpx', link: '2021/04/scanzorosciate' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana, bastia', name: 'Bastia, Valbona', kind: 'down', file: 'Seriana_BastiaValbona.gpx', link: '2021/04/scanzorosciate' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'Seriana_SalitaMismaRipetitori_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'Seriana_SalitaMismaRipetitori_EBIKE.gpx', link: '2021/04/misma-santa-maria-cenate-sopra' },
 /*
 removed as not significative
 Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegue per il 511, pedalabile fino all'incrocio con il sentiero per la Santa Maria di Misma. Da qui occorre spingere o spallare per 200 metri di dislivello.
@@ -408,7 +408,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 */
 { vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Forcella, Monte Misma', kind: 'up', file: 'Seriana_SalitaForcellaMisma_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 99, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Forcella, Ripetitori, Monte Misma', kind: 'up', file: 'Seriana_SalitaForcellaRipetitoriMisma_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana, bastia', name: 'Salita al Monte Bastia', kind: 'up', file: 'Seriana_SalitaBastia_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana, bastia', name: 'Salita al Monte Bastia', kind: 'up', file: 'Seriana_SalitaBastia_EBIKE.gpx', link: '2021/04/scanzorosciate' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita alla Val Coler', kind: 'up', file: 'Seriana_SalitaTribulinaColer_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita da Cornale, Pradale', kind: 'up', file: 'Seriana_SalitaCornalePradale_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 
