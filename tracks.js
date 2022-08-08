@@ -227,7 +227,7 @@ removed as almost duplicated by others
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Corna Marcia, Coyote Scamburtit, Ca Bonor\u00E8', kind: 'down', file: 'Imagna_CoyoteScamburtit.gpx', link: '2019/09/coyote-scamburtit' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito alla Corna Marcia', kind: 'up', file: 'Imagna_SalitaChitoBottaCornaMarcia_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita diretta dalla ciclabile del Chito al Passo del Canto', kind: 'up', file: 'Imagna_SalitaChitoCantoDiretta_EBIKE.gpx', link: '2018/12/salite-imagna' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito ai Roccoli Passata', kind: 'up', file: 'Imagna_SalitaChitoCeresolaCantoPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita dalla ciclabile del Chito ai Roccoli Passata', kind: 'up', file: 'Imagna_SalitaChitoCeresolaCantoPassata_EBIKE.gpx', link: '2019/09/costa-cavallina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'ubione, sopracorna', name: 'Salita da Clanezzo ai Roccoli Passata', kind: 'up', file: 'Imagna_SalitaClanezzoRoccoliPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "60% con ultimi 100m di dislivello a spalla", zone: 'imagna, ubione', name: 'Salita da Clanezzo all\'Ubione', kind: 'up', file: 'Imagna_SalitaClanezzoUbione.gpx', link: '2018/12/salite-imagna' },
 //Imagna_MalanotteFoppo.gpx
@@ -281,7 +281,7 @@ removed as almost duplicated by others
 { vote: 3, rate: 4, rate_max: 0, cycle: 85, zone: 'martino, valcava', name: 'Convento Pertus, Nesolio, Madonna del Corno', kind: 'down', file: 'Martino_ConventoPertusNesolioCorno.gpx', link: '2021/06/nesolio' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Madonna del Corno, Convento del Pertus', kind: 'up', file: 'Martino_SalitaCornoConventoPertus_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 1, rate: 4, rate_max: 0, cycle: 75, zone: 'martino, valcava', name: 'Convento Pertus, Pian Munik, Madonna del Corno', kind: 'down', file: 'Martino_ConventoPertusMunikCorno.gpx', link: '2021/07/munik' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Salita Madonna del Corno, Oneta, Convento del Pertus', kind: 'up', file: 'Martino_SalitaCornoOnetaConventoPertus_EBIKE.gpx', link: '2018/12/salite-san-martino' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Salita Madonna del Corno, Oneta, Convento del Pertus', kind: 'up', file: 'Martino_SalitaCornoOnetaConventoPertus_EBIKE.gpx', link: '2021/06/nesolio' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, valcava, tesoro', name: 'Monte Tesoro, Direttissima, Colle Di Sogno, Corna Martinella, Cristai Super Flow, Torre de Busi', kind: 'down', file: 'Martino_TesoroDirSognoMartinellaCristaiSuperFlow.gpx', link: '2018/12/monte-tesoro-direttissima-colle-di' },
 { vote: 1, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, sogno', name: 'Colle Di Sogno, 819, Torre de Busi', kind: 'down', file: 'Martino_ColleDiSogno819.gpx', link: '2019/12/colle-di-sogno' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'martino, sogno', name: 'Colle Di Sogno, 823, Torre de Busi', kind: 'down', file: 'Martino_ColleDiSogno823.gpx', link: '2019/12/colle-di-sogno' },
@@ -436,9 +436,6 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 92, comm: "95%, ultimi 100m dislivello a spinta", zone: 'media_seriana, gandino', name: 'Salita Gandino, Monte Farno, Pizzo Formico', kind: 'up', file: 'Gandino_SalitaGandinoFarnoFormico_EBIKE.gpx', link: '2022/01/pizzo-formico-groaro' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'media_seriana, gandino', name: 'Salita Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'Gandino_SalitaGandinoFarnoParafulmine_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'media_seriana, gandino', name: 'Salita Leffe, Malga Lunga, Monte Sparavera', kind: 'up', file: 'Gandino_SalitaLeffeMalgaLungaSparevera_EBIKE.gpx', link: '2022/02/leffe-malga-lunga' },
-/* hidden because it's no so good */
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, comm: "35% la salita dalla Baita Cornei al Formico", zone: 'hidden', name: 'Pizzo Formico, Monte Farno, Gandino', kind: 'down', file: 'Gandino_FormicoFarno.gpx', link: '2020/02/pizzo-formico' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'hidden', name: 'Salita Rifugio Parafulmine, Pizzo Formico', kind: 'up', file: 'Gandino_SalitaParafulmineFormico_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 
 //
 // VALSASSINA
