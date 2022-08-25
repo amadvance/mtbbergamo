@@ -530,7 +530,6 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Val Terzera, Piazzatorre', kind: 'down', file: 'Brembana_TerzeraPiazzatorre.gpx', link: '2021/08/val-terzera' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana', name: 'Baita Campo, 127, Olmo al Brembo', kind: 'down', file: 'Brembana_BaitaCampoOlmo.gpx', link: '2020/09/baita-campo-olmo-al-brembo' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'alta_brembana', name: 'Enzo Ronzoni (Ornica, Caprile)', kind: 'down', file: 'Brembana_EnzoRonzoni.gpx', link: '2021/10/enzo-ronzoni' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Olmo al Brembo ai Piani dell\'Avaro', kind: 'up', file: 'Brembana_SalitaOlmoAvaro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita da Piazza Brembana al Monte Torcola', kind: 'up', file: 'Brembana_SalitaPiazzaBrembanaTorcola_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita da Olmo al Brembo al Passo San Marco', kind: 'up', file: 'Brembana_SalitaOlmoSanMarco_EBIKE.gpx', link: '2020/09/passo-san-marco-113-via-del-ferro' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita da Olmo al Brembo al Monte Torcola', kind: 'up', file: 'Brembana_SalitaOlmoPiazzatorreTorcola_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
@@ -538,10 +537,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Piazzatorre, Via Priula, Val Terzera', kind: 'up', file: 'Brembana_SalitaPiazzatorePriulaTerzera_EBIKE.gpx', link: '2021/08/val-terzera' },
 { vote: 4, rate: 3, rate_max: 4, cycle: 100, zone: 'alta_brembana', name: 'Pizzo Badile, Piazzatorre', kind: 'down', file: 'Brembana_PizzoBadilePiazzatorre.gpx', link: '2021/08/pizzo-badile' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'alta_brembana', name: 'Salita Piazzatorre, Forcolino, Pizzo Badile', kind: 'up', file: 'Brembana_SalitaPiazzatorreForcolinoPizzoBadile_EBIKE.gpx', link: '2021/08/pizzo-badile' },
-{ vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'alta_brembana', name: 'Lago Moro, Carona', kind: 'down', file: 'Brembana_LagoMoroCarona.gpx', link: '2021/10/lago-moro' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana', name: 'Monte Mincucco, Diga di Valmora, Cantedoldo, Averara', kind: 'down', file: 'Brembana_MincuccoDigaValMoraCantedoldoAverara.gpx', link: '2022/07/mincuccocantedoldo' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Laghetti di Ponteranica, Diga di Valmora, Caprile, Santa Brigida', kind: 'down', file: 'Brembana_PonteranicaDigaValmoraCaprileSantaBrigida.gpx', link: '2022/07/ponteranica-valmora' },
-{ vote: 3, rate: 3, rate_max: 0, cycle: 97, zone: '', name: 'Incrocio 101, Acqua Nera, Diga Valmora, Caprile', kind: 'down', file: 'Brembana_Incrocio101AcquaNeraDigaValmoraCaprile.gpx', link: '2021/10/101-valmora' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Piani dell\'Avaro, Corna Rossa', kind: 'down', file: 'Brembana_AvaroCornaRossa.gpx', link: '2021/11/corna-rossa' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 99, zone: 'alta_brembana', name: 'Valle d\'Inferno', kind: 'down', file: 'Brembana_ValInferno.gpx', link: '2021/10/val-dinferno' },
 { vote: 3, rate: 3, rate_max: 4, cycle: 80, zone: 'alta_brembana', name: 'Passo Selletta, Rifugio Calvi, Sentiero Estivo, Carona', kind: 'down', file: 'Brembana_SellettaCalviEstivoCarona.gpx', link: '2022/07/selletta-calvi-estivo' },
@@ -549,11 +546,9 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 3, rate: 2, rate_max: 3, cycle: 95, zone: 'alta_brembana', name: 'Cresta Monte Chierico, Val Sambuzza, Carona', kind: 'down', file: 'Brembana_ChiericoSambuzzaCarona.gpx', link: '2022/07/carisole-sambuzza' },
 { vote: 4, rate: 3, rate_max: 4, cycle: 98, zone: 'alta_brembana', name: 'Cima Montebello, Passo Dordona, Valleve', kind: 'down', file: 'Brembana_CimaMontebelloPassoDordonaValleve.gpx', link: '2022/08/valcervia-dordona' },
 { vote: 5, rate: 4, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Lago Colombo, 212, Branzi', kind: 'down', file: 'Brembana_Colombo212Branzi.gpx', link: '2022/08/colombo-212' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana', name: 'Cima Montebello, Lago Moro, Rifugio Mirtillo, Carona', kind: 'down', file: 'Brembana_CimaMontebelloLagoMoroMirtilloCarona.gpx',  },
 { vote: 0, rate: 0, rate_max: 0, cycle: 76, zone: 'alta_brembana', name: 'Salita Averara, Piani dell\'Avaro, Monte Mincucco', kind: 'up', file: 'Brembana_SalitaAveraraAvaroMincucco_EBIKE.gpx', link: '2022/07/mincuccocantedoldo' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'alta_brembana', name: 'Salita Santa Brigida, Piani dell\'Avaro, Monte Mincucco', kind: 'up', file: 'Brembana_SalitaSantaBrigidaAvaroPonteranica_EBIKE.gpx', link: '2022/07/ponteranica-valmora' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Branzi, Foppolo, Lago Moro', kind: 'up', file: 'Brembana_SalitaFoppoloLagoMoro_EBIKE.gpx', link: '2021/10/lago-moro' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: '', name: 'Salita Santa Brigida, Piani dell\'Avaro, Incrocio 101', kind: 'up', file: 'Brembana_SalitaSantaBrigidaAvaroIncrocio101_EBIKE.gpx', link: '2021/10/101-valmora' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Santa Brigida, Colle Maddalena', kind: 'up', file: 'Brembana_SalitaSantaBrigidaColleMaddalena_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 { vote: 1, rate: 3, rate_max: 5, cycle: 80, zone: 'alta_brembana', name: 'Monte Torcola, 126, Moio de Calvi', kind: 'down', file: 'Brembana_Torcola126Moio.gpx', link: '2021/11/monte-torcola-126-moio-de-calvi' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Passo San Marco, Via Priula', kind: 'down', file: 'Brembana_SanMarcoViaPriula.gpx', link: '2021/11/via-priula' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'alta_brembana', name: 'Salita Mezzoldo, Via Priula, Passo San Marco', kind: 'up', file: 'Brembana_SalitaViaPriulaSanMarco_EBIKE.gpx', link: '2021/11/via-priula' },
@@ -562,7 +557,16 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 85, zone: 'alta_brembana', name: 'Carona, Val Carisole, Lago di Carisole, Cresta Monte Chierico', kind: 'up', file: 'Brembana_SalitaCaronaCarisoleChierico_EBIKE.gpx', link: '2022/07/carisole-sambuzza' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 70, zone: 'alta_brembana', name: 'Salita Valleve, Lago Moro, Passo Valcervia, Cima Montebello', kind: 'up', file: 'Brembana_SalitaValleveLagoMoroCimaMontebello_EBIKE.gpx', link: '2022/08/valcervia-dordona' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'alta_brembana', name: 'Salita Branzi, Carona, Laghi Gemelli, Lago Colombo', kind: 'up', file: 'Brembana_BranziCaronaGemelliColombo_EBIKE.gpx', link: '2022/08/colombo-212' },
-
+{ vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'alta_brembana', name: 'Salita Carona, Lago Moro, Cima Montebello', kind: 'up', file: 'Brembana_SalitaCaronaLagoMoroCimaMontenbello_EBIKE.gpx' },
+// replaced
+{ vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: '', name: 'Lago Moro, Rifugio Mirtillo, Carona', kind: 'down', file: 'Brembana_LagoMoroCarona.gpx', link: '2021/10/lago-moro' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Branzi, Foppolo, Lago Moro', kind: 'up', file: 'Brembana_SalitaFoppoloLagoMoro_EBIKE.gpx', link: '2021/10/lago-moro' },
+// replaced
+{ vote: 3, rate: 3, rate_max: 0, cycle: 97, zone: '', name: 'Incrocio 101, Acqua Nera, Diga Valmora, Caprile', kind: 'down', file: 'Brembana_Incrocio101AcquaNeraDigaValmoraCaprile.gpx', link: '2021/10/101-valmora' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 98, zone: '', name: 'Salita Santa Brigida, Piani dell\'Avaro, Incrocio 101', kind: 'up', file: 'Brembana_SalitaSantaBrigidaAvaroIncrocio101_EBIKE.gpx', link: '2021/10/101-valmora' },
+// overlapping
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Olmo al Brembo ai Piani dell\'Avaro', kind: 'up', file: 'Brembana_SalitaOlmoAvaro_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Santa Brigida, Colle Maddalena', kind: 'up', file: 'Brembana_SalitaSantaBrigidaColleMaddalena_EBIKE.gpx', link: '2020/08/salite-valle-brembana' },
 //
 // CAVALLINA
 //
@@ -617,4 +621,3 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
-
