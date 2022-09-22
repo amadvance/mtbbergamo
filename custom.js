@@ -161,8 +161,24 @@ function create_map_track(id) {
 	return mymap;
 }
 
+function create_waymarkedtrails(map, control) {
+	var myhiking = L.tileLayer('https://tile.waymarkedtrails.org/{id}/{z}/{x}/{y}.png', {
+		id: 'hiking',
+		pointable: true,
+		attribution: '&copy; <a href="http://waymarkedtrails.org">Sarah Hoffmann</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
+	});
+
+	control.addOverlay(myhiking, "Sentieri CAI");
+
+	myhiking.addTo(map);
+}
+
 function create_control(map) {
 	var control = L.control.layers(null, null).addTo(map);
+
+	create_base(map, control);
+
+	create_waymarkedtrails(map, control).addTo(map);
 
 	var ret = {ct: control, gr: null};
 
@@ -171,6 +187,10 @@ function create_control(map) {
 
 function create_control_group(map) {
 	var control = L.control.layers(null, null).addTo(map);
+
+	create_base(map, control);
+
+	create_waymarkedtrails(map, control);
 
 	var group = [];
 
