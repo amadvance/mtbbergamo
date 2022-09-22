@@ -108,18 +108,6 @@ function create_map(id) {
 	// To support multiple map on the same page, each map should have its renderer
 	mymap.hotline_renderer = L.hotline_create_new_renderer();
 
-	var OPENSTREETMAP = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-	var CYCLOSM = 'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png';
-
-	var mytile = new L.tileLayer(
-	CYCLOSM,
-	{
-		maxZoom: 19,
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="https://www.cyclosm.org/">CyclOSM</a> | <a href="https://www.cyclosm.org/legend.html" title="Legenda dei simboli grafici">Legenda</a>'
-	});
-
-	mytile.addTo(mymap);
-
 	var myscale = new L.control.scale({ metric: true, imperial: false });
 
 	myscale.addTo(mymap);
@@ -170,7 +158,43 @@ function create_waymarkedtrails(map, control) {
 
 	control.addOverlay(myhiking, "Sentieri CAI");
 
-	myhiking.addTo(map);
+	return myhiking;
+}
+
+function create_base(map, control) {
+	// More layers at https://leaflet-extras.github.io/leaflet-providers/preview/
+
+	var CyclOSM = new L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
+	{
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="https://www.cyclosm.org/">CyclOSM</a> | <a href="https://www.cyclosm.org/legend.html" title="Legenda dei simboli grafici">Legenda</a>'
+	});
+
+	CyclOSM.addTo(map);  // add it to make the default
+
+	control.addBaseLayer(CyclOSM, "CyclOSM");
+
+	var Thunderforest_OpenCycleMap = L.tileLayer('https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey={apikey}', {
+		attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+		apikey: 'b9a5e78a27a644dbbb109bc904b8919c',
+		maxZoom: 21
+	});
+
+	control.addBaseLayer(Thunderforest_OpenCycleMap, "OpenCycleMap");
+
+	var OpenStreetMap_Mapnik = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+	{
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	});
+
+	control.addBaseLayer(OpenStreetMap_Mapnik, "OpenStreetMap");
+
+	var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+		attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+	});
+
+	control.addBaseLayer(Esri_WorldImagery, "Satellite");
 }
 
 function create_control(map) {
