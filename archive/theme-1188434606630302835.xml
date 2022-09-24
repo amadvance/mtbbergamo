@@ -680,7 +680,7 @@ body.mobile  {
     }
   &lt;/script&gt;
 &lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
@@ -867,7 +867,7 @@ head.appendChild(script);
       <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'>
         <b:widget id='PageList2' locked='false' title='Zone' type='PageList'>
           <b:widget-settings>
-            <b:widget-setting name='pageListJson'><![CDATA[{"6890917005904254364":{"href":"http://www.mtbbergamo.it/p/valle-cavallina.html","position":10,"title":"Cavallina"},"5378927853840289375":{"href":"http://www.mtbbergamo.it/p/media-valle-seriana.html","position":7,"title":"Media Seriana"},"8333227843128009505":{"href":"http://www.mtbbergamo.it/p/maresana.html","position":1,"title":"Maresana"},"8996960218431449059":{"href":"http://www.mtbbergamo.it/p/valle-san-martino.html","position":4,"title":"San Martino"},"8071814843114685363":{"href":"http://www.mtbbergamo.it/p/valle-imagna.html","position":5,"title":"Imagna"},"8020907678493114285":{"href":"http://www.mtbbergamo.it/p/valle-brembana.html","position":8,"title":"Bassa Brembana"},"671321837611946696":{"href":"http://www.mtbbergamo.it/p/monte-canto.html","position":3,"title":"Monte Canto"},"6672595659076829759":{"href":"http://www.mtbbergamo.it/p/alta-valle-brembana.html","position":9,"title":"Alta Brembana"},"6438529019463434628":{"href":"http://www.mtbbergamo.it/p/valle-seriana.html","position":6,"title":"Bassa Seriana"},"7456450945174822363":{"href":"http://www.mtbbergamo.it/p/colli-di-bergamo.html","position":0,"title":"Colli"},"644484164600315902":{"href":"http://www.mtbbergamo.it/p/sorisole.html","position":2,"title":"Sorisole"}}]]></b:widget-setting>
+            <b:widget-setting name='pageListJson'><![CDATA[{"6890917005904254364":{"href":"http://www.mtbbergamo.it/p/valle-cavallina.html","position":11,"title":"Cavallina"},"5378927853840289375":{"href":"http://www.mtbbergamo.it/p/media-valle-seriana.html","position":10,"title":"Media Seriana"},"8333227843128009505":{"href":"http://www.mtbbergamo.it/p/maresana.html","position":1,"title":"Maresana"},"8996960218431449059":{"href":"http://www.mtbbergamo.it/p/valle-san-martino.html","position":4,"title":"San Martino"},"8071814843114685363":{"href":"http://www.mtbbergamo.it/p/valle-imagna.html","position":5,"title":"Imagna"},"8020907678493114285":{"href":"http://www.mtbbergamo.it/p/valle-brembana.html","position":7,"title":" Brembana"},"671321837611946696":{"href":"http://www.mtbbergamo.it/p/monte-canto.html","position":3,"title":"Monte Canto"},"4290629698892057325":{"href":"http://www.mtbbergamo.it/p/val-taleggio.html","position":6,"title":"Taleggio"},"6672595659076829759":{"href":"http://www.mtbbergamo.it/p/alta-valle-brembana.html","position":8,"title":"Alta Brembana"},"6438529019463434628":{"href":"http://www.mtbbergamo.it/p/valle-seriana.html","position":9,"title":"Seriana"},"7456450945174822363":{"href":"http://www.mtbbergamo.it/p/colli-di-bergamo.html","position":0,"title":"Colli"},"644484164600315902":{"href":"http://www.mtbbergamo.it/p/sorisole.html","position":2,"title":"Sorisole"}}]]></b:widget-setting>
             <b:widget-setting name='homeTitle'>Home page</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
@@ -978,7 +978,6 @@ head.appendChild(script);
                 <b:widget-setting name='commentLabel'>comments</b:widget-setting>
                 <b:widget-setting name='showShareButtons'>false</b:widget-setting>
                 <b:widget-setting name='authorLabel'>Posted by</b:widget-setting>
-                <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                 <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                 <b:widget-setting name='timestampLabel'>at</b:widget-setting>
                 <b:widget-setting name='reactionsLabel'/>
@@ -1049,8 +1048,6 @@ head.appendChild(script);
   <b:else/>
     <b:include name='mobile-main'/>
   </b:if>
-
-  <b:include cond='data:top.showPlusOne' name='googlePlusBootstrap'/>
 </b:includable>
               <b:includable id='backlinkDeleteIcon' var='backlink'/>
               <b:includable id='backlinks' var='post'/>
@@ -1395,9 +1392,6 @@ head.appendChild(script);
                   <a href='javascript:void(0);'><data:shareMsg/></a>
                 </div>
               </b:if>
-              <b:if cond='data:top.showDummy'>
-                <div class='goog-inline-block dummy-container'><data:post.dummyTag/></div>
-              </b:if>
             </div>
 
           </div>
@@ -1568,7 +1562,7 @@ head.appendChild(script);
   </b:if>
 </b:includable>
               <b:includable id='shareButtons' var='post'>
-  <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showPinterestButton'><a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToPinterestMsg/></span></a></b:if><b:if cond='data:top.showPlusOne'><div class='goog-inline-block google-plus-share-container'><data:post.googlePlusShareTag/></div></b:if>
+  <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showPinterestButton'><a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToPinterestMsg/></span></a></b:if>
 </b:includable>
               <b:includable id='status-message'>
   <b:if cond='data:navMessage'>
@@ -1970,7 +1964,7 @@ head.appendChild(script);
 <b:section-contents id='sidebar-right-1'>
   <b:widget id='PageList1' locked='false' title='Zone' type='PageList'>
     <b:widget-settings>
-      <b:widget-setting name='pageListJson'><![CDATA[{"6890917005904254364":{"href":"http://www.mtbbergamo.it/p/valle-cavallina.html","position":10,"title":"Val Cavallina"},"5378927853840289375":{"href":"http://www.mtbbergamo.it/p/media-valle-seriana.html","position":7,"title":"Media Val Seriana"},"8333227843128009505":{"href":"http://www.mtbbergamo.it/p/maresana.html","position":1,"title":"Maresana"},"8996960218431449059":{"href":"http://www.mtbbergamo.it/p/valle-san-martino.html","position":4,"title":"Valle San Martino"},"8071814843114685363":{"href":"http://www.mtbbergamo.it/p/valle-imagna.html","position":5,"title":"Valle Imagna"},"8020907678493114285":{"href":"http://www.mtbbergamo.it/p/valle-brembana.html","position":8,"title":"Bassa Val Brembana"},"671321837611946696":{"href":"http://www.mtbbergamo.it/p/monte-canto.html","position":3,"title":"Monte Canto"},"6672595659076829759":{"href":"http://www.mtbbergamo.it/p/alta-valle-brembana.html","position":9,"title":"Alta Val Brembana"},"6438529019463434628":{"href":"http://www.mtbbergamo.it/p/valle-seriana.html","position":6,"title":"Bassa Val Seriana"},"7456450945174822363":{"href":"http://www.mtbbergamo.it/p/colli-di-bergamo.html","position":0,"title":"Colli di Bergamo"},"644484164600315902":{"href":"http://www.mtbbergamo.it/p/sorisole.html","position":2,"title":"Sorisole"}}]]></b:widget-setting>
+      <b:widget-setting name='pageListJson'><![CDATA[{"6890917005904254364":{"href":"http://www.mtbbergamo.it/p/valle-cavallina.html","position":11,"title":"Val Cavallina"},"5378927853840289375":{"href":"http://www.mtbbergamo.it/p/media-valle-seriana.html","position":10,"title":"Media Val Seriana"},"8333227843128009505":{"href":"http://www.mtbbergamo.it/p/maresana.html","position":1,"title":"Maresana"},"8996960218431449059":{"href":"http://www.mtbbergamo.it/p/valle-san-martino.html","position":4,"title":"Valle San Martino"},"8071814843114685363":{"href":"http://www.mtbbergamo.it/p/valle-imagna.html","position":5,"title":"Valle Imagna"},"8020907678493114285":{"href":"http://www.mtbbergamo.it/p/valle-brembana.html","position":7,"title":"Bassa Val Brembana"},"671321837611946696":{"href":"http://www.mtbbergamo.it/p/monte-canto.html","position":3,"title":"Monte Canto"},"4290629698892057325":{"href":"http://www.mtbbergamo.it/p/val-taleggio.html","position":6,"title":"Val Taleggio"},"6672595659076829759":{"href":"http://www.mtbbergamo.it/p/alta-valle-brembana.html","position":8,"title":"Alta Val Brembana"},"6438529019463434628":{"href":"http://www.mtbbergamo.it/p/valle-seriana.html","position":9,"title":"Bassa Val Seriana"},"7456450945174822363":{"href":"http://www.mtbbergamo.it/p/colli-di-bergamo.html","position":0,"title":"Colli di Bergamo"},"644484164600315902":{"href":"http://www.mtbbergamo.it/p/sorisole.html","position":2,"title":"Sorisole"}}]]></b:widget-setting>
       <b:widget-setting name='homeTitle'>Home page</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
@@ -2002,17 +1996,21 @@ head.appendChild(script);
   </b:widget>
   <b:widget id='LinkList1' locked='false' title='Risorse' type='LinkList'>
     <b:widget-settings>
-      <b:widget-setting name='link-3'>http://www.mtbbergamo.it/p/guide.html</b:widget-setting>
+      <b:widget-setting name='link-5'>http://www.mtbbergamo.it/p/guide.html</b:widget-setting>
+      <b:widget-setting name='link-6'>https://www.youtube.com/c/MTBBergamo/videos</b:widget-setting>
+      <b:widget-setting name='link-3'>http://www.mtbbergamo.it/p/ciclabilita.html</b:widget-setting>
+      <b:widget-setting name='link-4'>http://www.mtbbergamo.it/p/mappe.html</b:widget-setting>
+      <b:widget-setting name='text-1'>Giudizio</b:widget-setting>
+      <b:widget-setting name='text-0'>Chi sono</b:widget-setting>
+      <b:widget-setting name='text-3'>Ciclabilità</b:widget-setting>
+      <b:widget-setting name='text-2'>Difficoltà</b:widget-setting>
+      <b:widget-setting name='text-5'>Guide</b:widget-setting>
+      <b:widget-setting name='text-4'>Mappe</b:widget-setting>
+      <b:widget-setting name='text-6'>YouTube</b:widget-setting>
       <b:widget-setting name='sorting'>NONE</b:widget-setting>
-      <b:widget-setting name='link-4'>https://www.youtube.com/c/mtbbergamo</b:widget-setting>
-      <b:widget-setting name='text-1'>Difficoltà</b:widget-setting>
-      <b:widget-setting name='link-1'>http://www.mtbbergamo.it/p/difficolta.html</b:widget-setting>
-      <b:widget-setting name='text-0'>Giudizio</b:widget-setting>
-      <b:widget-setting name='link-2'>http://www.mtbbergamo.it/p/mappe.html</b:widget-setting>
-      <b:widget-setting name='text-3'>Guide</b:widget-setting>
-      <b:widget-setting name='link-0'>http://www.mtbbergamo.it/p/giudizio.html</b:widget-setting>
-      <b:widget-setting name='text-2'>Mappe</b:widget-setting>
-      <b:widget-setting name='text-4'>Canale YouTube</b:widget-setting>
+      <b:widget-setting name='link-1'>http://www.mtbbergamo.it/p/giudizio.html</b:widget-setting>
+      <b:widget-setting name='link-2'>http://www.mtbbergamo.it/p/difficolta.html</b:widget-setting>
+      <b:widget-setting name='link-0'>http://www.mtbbergamo.it/p/chi-sono.html</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
 
