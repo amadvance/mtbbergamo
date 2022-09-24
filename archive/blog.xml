@@ -2,7 +2,7 @@
 <?xml-stylesheet href="https://www.blogger.com/styles/atom.css" type="text/css"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/" xmlns:gd="http://schemas.google.com/g/2005" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:georss="http://www.georss.org/georss">
   <id>tag:blogger.com,1999:blog-1188434606630302835.archive</id>
-  <updated>2022-09-23T01:58:12.892+02:00</updated>
+  <updated>2022-09-24T18:20:32.817+02:00</updated>
   <title type="text">MTB Bergamo</title>
   <link rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/archive"/>
   <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/archive"/>
@@ -18,7 +18,7 @@
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.layout</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#template"/>
     <title type="text">Modello: MTB Bergamo</title>
     <content type="text">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
@@ -607,7 +607,7 @@ body.mobile  {
 ]]&gt;&lt;/b:skin&gt;
 
     &lt;b:template-skin&gt;
-      &lt;b:variable default='960px' name='content.width' type='length' value='1200px'/&gt;
+      &lt;b:variable default='960px' name='content.width' type='length' value='1024px'/&gt;
       &lt;b:variable default='0' name='main.column.left.width' type='length'/&gt;
       &lt;b:variable default='310px' name='main.column.right.width' type='length' value='210px'/&gt;
 
@@ -618,7 +618,8 @@ body.mobile  {
 
       .content-outer, .content-fauxcolumn-outer, .region-inner {
         min-width: $(content.width);
-        max-width: $(content.width);
+        /* max-width: $(content.width); REMOVED FOR FULL WIDTH */
+        max-width: 1440px;
         _width: $(content.width);
       }
 
@@ -795,13 +796,13 @@ head.appendChild(script);
       &lt;b:section class='header' id='header' maxwidgets='1' name='Header' showaddelement='no'&gt;
         &lt;b:widget id='Header1' locked='true' title='MTB Bergamo (Intestazione)' type='Header'&gt;
           &lt;b:widget-settings&gt;
-            &lt;b:widget-setting name='displayUrl'&gt;http://1.bp.blogspot.com/-YB1Uo0SagxA/XAru4eFD1qI/AAAAAAAAERU/b3Cfn_vdFmUrZsZ-r3xI7CIptESJO0d8wCK4BGAYYCw/s1600/title_resegone_wip.jpg&lt;/b:widget-setting&gt;
-            &lt;b:widget-setting name='displayHeight'&gt;226&lt;/b:widget-setting&gt;
+            &lt;b:widget-setting name='displayUrl'&gt;https://raw.githubusercontent.com/amadvance/mtbbergamo/master/www/img/title.jpg&lt;/b:widget-setting&gt;
+            &lt;b:widget-setting name='displayHeight'&gt;151&lt;/b:widget-setting&gt;
             &lt;b:widget-setting name='sectionWidth'&gt;752&lt;/b:widget-setting&gt;
             &lt;b:widget-setting name='useImage'&gt;true&lt;/b:widget-setting&gt;
             &lt;b:widget-setting name='shrinkToFit'&gt;false&lt;/b:widget-setting&gt;
             &lt;b:widget-setting name='imagePlacement'&gt;REPLACE&lt;/b:widget-setting&gt;
-            &lt;b:widget-setting name='displayWidth'&gt;1024&lt;/b:widget-setting&gt;
+            &lt;b:widget-setting name='displayWidth'&gt;1600&lt;/b:widget-setting&gt;
           &lt;/b:widget-settings&gt;
           &lt;b:includable id='main'&gt;
 
@@ -890,7 +891,7 @@ head.appendChild(script);
       &lt;b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'&gt;
         &lt;b:widget id='PageList2' locked='false' title='Zone' type='PageList'&gt;
           &lt;b:widget-settings&gt;
-            &lt;b:widget-setting name='pageListJson'&gt;&lt;![CDATA[{"6890917005904254364":{"href":"http://www.mtbbergamo.it/p/valle-cavallina.html","position":11,"title":"Cavallina"},"5378927853840289375":{"href":"http://www.mtbbergamo.it/p/media-valle-seriana.html","position":10,"title":"Media Seriana"},"8333227843128009505":{"href":"http://www.mtbbergamo.it/p/maresana.html","position":1,"title":"Maresana"},"8996960218431449059":{"href":"http://www.mtbbergamo.it/p/valle-san-martino.html","position":4,"title":"San Martino"},"8071814843114685363":{"href":"http://www.mtbbergamo.it/p/valle-imagna.html","position":5,"title":"Imagna"},"8020907678493114285":{"href":"http://www.mtbbergamo.it/p/valle-brembana.html","position":7,"title":" Brembana"},"671321837611946696":{"href":"http://www.mtbbergamo.it/p/monte-canto.html","position":3,"title":"Monte Canto"},"4290629698892057325":{"href":"http://www.mtbbergamo.it/p/val-taleggio.html","position":6,"title":"Taleggio"},"6672595659076829759":{"href":"http://www.mtbbergamo.it/p/alta-valle-brembana.html","position":8,"title":"Alta Brembana"},"6438529019463434628":{"href":"http://www.mtbbergamo.it/p/valle-seriana.html","position":9,"title":"Seriana"},"7456450945174822363":{"href":"http://www.mtbbergamo.it/p/colli-di-bergamo.html","position":0,"title":"Colli"},"644484164600315902":{"href":"http://www.mtbbergamo.it/p/sorisole.html","position":2,"title":"Sorisole"}}]]&gt;&lt;/b:widget-setting&gt;
+            &lt;b:widget-setting name='pageListJson'&gt;&lt;![CDATA[{"6890917005904254364":{"href":"http://www.mtbbergamo.it/p/valle-cavallina.html","position":11,"title":"Cavallina"},"5378927853840289375":{"href":"http://www.mtbbergamo.it/p/media-valle-seriana.html","position":10,"title":"Media Seriana"},"8333227843128009505":{"href":"http://www.mtbbergamo.it/p/maresana.html","position":1,"title":"Maresana"},"8996960218431449059":{"href":"http://www.mtbbergamo.it/p/valle-san-martino.html","position":4,"title":"San Martino"},"8071814843114685363":{"href":"http://www.mtbbergamo.it/p/valle-imagna.html","position":5,"title":"Imagna"},"8020907678493114285":{"href":"http://www.mtbbergamo.it/p/valle-brembana.html","position":7,"title":"Brembana"},"671321837611946696":{"href":"http://www.mtbbergamo.it/p/monte-canto.html","position":3,"title":"Monte Canto"},"4290629698892057325":{"href":"http://www.mtbbergamo.it/p/val-taleggio.html","position":6,"title":"Taleggio"},"6672595659076829759":{"href":"http://www.mtbbergamo.it/p/alta-valle-brembana.html","position":8,"title":"Alta Brembana"},"6438529019463434628":{"href":"http://www.mtbbergamo.it/p/valle-seriana.html","position":9,"title":"Seriana"},"7456450945174822363":{"href":"http://www.mtbbergamo.it/p/colli-di-bergamo.html","position":0,"title":"Colli"},"644484164600315902":{"href":"http://www.mtbbergamo.it/p/sorisole.html","position":2,"title":"Sorisole"}}]]&gt;&lt;/b:widget-setting&gt;
             &lt;b:widget-setting name='homeTitle'&gt;Home page&lt;/b:widget-setting&gt;
           &lt;/b:widget-settings&gt;
           &lt;b:includable id='main'&gt;
@@ -2188,7 +2189,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_PUBLISHING_MODE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di pubblicazione eseguita per questo blog.</title>
     <content type="text">PUBLISH_MODE_HOSTED</content>
@@ -2204,7 +2205,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ADMIN_PERMISSION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">L'elenco di email degli amministratori per il blog.</title>
     <content type="text">amadvance@gmail.com</content>
@@ -2220,7 +2221,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ADULT_CONTENT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog contiene contenuti per adulti</title>
     <content type="text">false</content>
@@ -2236,7 +2237,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ANALYTICS_ACCOUNT_NUMBER</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero dell'account Google Analytics del blog</title>
     <content type="text">UA-21967501-5</content>
@@ -2252,7 +2253,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ARCHIVE_DATE_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il numero del formato data dell'indice di archivio</title>
     <content type="text">9</content>
@@ -2268,7 +2269,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ARCHIVE_FREQUENCY</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Frequenza di archiviazione del blog</title>
     <content type="text">MONTHLY</content>
@@ -2284,7 +2285,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_AUTHOR_PERMISSION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">L'elenco di email degli autori autorizzati a pubblicare.</title>
     <content type="text"/>
@@ -2300,7 +2301,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_BY_POST_ARCHIVING</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale creazione di una pagina archivio per ogni post</title>
     <content type="text">true</content>
@@ -2316,7 +2317,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_ACCESS</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Chi può inserire commenti</title>
     <content type="text">TEAM</content>
@@ -2332,7 +2333,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_CAPTCHA</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale richiesta di commentatori per completare un Captcha</title>
     <content type="text">false</content>
@@ -2348,7 +2349,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_EMAIL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Elenco di indirizzi email a cui inviare notifiche di nuovi commenti</title>
     <content type="text"/>
@@ -2364,7 +2365,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_FEED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di feed da fornire per i commenti del blog</title>
     <content type="text">FULL</content>
@@ -2380,7 +2381,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_FORM_LOCATION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Posizione modulo dei commenti del blog</title>
     <content type="text">EMBEDDED_IFRAME</content>
@@ -2396,7 +2397,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MESSAGE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Messaggio di commento blog</title>
     <content type="text"/>
@@ -2412,7 +2413,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MODERATION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale attivazione della moderazione dei commenti</title>
     <content type="text">ENABLED</content>
@@ -2428,7 +2429,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MODERATION_DELAY</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero di giorni dopo i quali i nuovi commenti possono essere sottoposti a una moderazione</title>
     <content type="text">14</content>
@@ -2444,7 +2445,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MODERATION_EMAIL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Indirizzo email a cui inviare notifiche di nuovi commenti che richiedono una moderazione</title>
     <content type="text"/>
@@ -2460,7 +2461,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_PROFILE_IMAGES</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale visualizzazione di immagini profilo nei commenti</title>
     <content type="text">true</content>
@@ -2476,7 +2477,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENTS_ALLOWED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare commenti</title>
     <content type="text">false</content>
@@ -2492,7 +2493,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENTS_TIME_STAMP_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero del formato ora del commento</title>
     <content type="text">29</content>
@@ -2508,7 +2509,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CONVERT_LINE_BREAKS</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se convertire le interruzioni di riga in tag &lt;br /&gt; nell'editor dei post</title>
     <content type="text">true</content>
@@ -2524,7 +2525,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ADS_TXT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">I contenuti del file ads.txt personalizzato del blog forniti ai motori di ricerca degli annunci.</title>
     <content type="text"/>
@@ -2540,7 +2541,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ADS_TXT_ENABLED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Indica se questo blog fornirà o meno i contenuti del file ads.txt personalizzato ai motori di ricerca degli annunci.</title>
     <content type="text">false</content>
@@ -2556,7 +2557,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_PAGE_NOT_FOUND</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">I contenuti visualizzati quando non viene trovato il post o la pagina.</title>
     <content type="text"/>
@@ -2572,7 +2573,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ROBOTS_TXT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">I contenuti del file robots.txt personalizzato inseriti nei motori di ricerca.</title>
     <content type="text"/>
@@ -2588,7 +2589,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ROBOTS_TXT_ENABLED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog visualizza contenuti di file robots.txt personalizzati per i motori di ricerca.</title>
     <content type="text">false</content>
@@ -2604,7 +2605,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_DATE_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero del formato dell'intestazione della data</title>
     <content type="text">26</content>
@@ -2620,7 +2621,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_DEFAULT_COMMENTS_MODE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Modalità commenti predefinita per i post</title>
     <content type="text">DEFAULT_HAVE_COMMENTS</content>
@@ -2636,7 +2637,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_DESCRIPTION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Una descrizione del blog</title>
     <content type="text">Percorsi in Mountain Bike nella provincia di Bergamo</content>
@@ -2652,7 +2653,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_EMAIL_POST_LINKS</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare un link agli utenti che vogliono inviare post via email</title>
     <content type="text">false</content>
@@ -2668,7 +2669,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_FEED_REDIRECT_URL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">URL a cui reindirizzare richieste di feed post</title>
     <content type="text"/>
@@ -2684,7 +2685,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_FLOAT_ALIGNMENT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se l'allineamento mobile è abilitato per il blog</title>
     <content type="text">true</content>
@@ -2700,7 +2701,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_LOCALE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Lingua del blog</title>
     <content type="text">it</content>
@@ -2716,7 +2717,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_MAX_NUM</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero massimo di elementi da mostrare nella pagina principale"</title>
     <content type="text">1</content>
@@ -2732,7 +2733,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_MAX_UNIT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Elementi da mostrare nella pagina principale</title>
     <content type="text">POSTS</content>
@@ -2748,7 +2749,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_META_DESCRIPTION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">La meta descrizione del blog fornita ai motori di ricerca.</title>
     <content type="text">Percorsi in Mountain Bike Enduro e All Mountain in provincia di Bergamo</content>
@@ -2764,7 +2765,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_META_DESCRIPTION_ENABLED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog è pubblicato con meta descrizioni.</title>
     <content type="text">true</content>
@@ -2780,7 +2781,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_NAME</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Nome del blog</title>
     <content type="text">MTB Bergamo</content>
@@ -2796,7 +2797,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_PER_POST_FEED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di feed da fornire per i commenti per ogni post</title>
     <content type="text">FULL</content>
@@ -2812,7 +2813,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_POST_FEED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di feed da fornire per i post del blog</title>
     <content type="text">FULL</content>
@@ -2828,7 +2829,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_POST_FEED_FOOTER</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Piè di pagina da aggiungere alla fine di ogni voce nel feed del post</title>
     <content type="text"/>
@@ -2844,7 +2845,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_POST_TEMPLATE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Modello dei post del blog</title>
     <content type="text"/>
@@ -2860,7 +2861,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_QUICK_EDITING</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se Quick Edit è attivato</title>
     <content type="text">true</content>
@@ -2876,7 +2877,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_READ_ACCESS_MODE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di accesso per i lettori del blog.</title>
     <content type="text">PUBLIC</content>
@@ -2892,7 +2893,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_READER_PERMISSION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">L'elenco di email per gli utenti che sono autorizzati a leggere il blog.</title>
     <content type="text"/>
@@ -2908,7 +2909,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_SEARCHABLE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog deve essere indicizzato dai motori di ricerca</title>
     <content type="text">true</content>
@@ -2924,7 +2925,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_SEND_EMAIL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Elenco di indirizzi email separati da virgole a cui inviare nuovi post del blog</title>
     <content type="text"/>
@@ -2940,7 +2941,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_SHOW_URL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare una casella con link correlato nel compositore di post</title>
     <content type="text">false</content>
@@ -2956,7 +2957,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_TIME_STAMP_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il numero del formato ora</title>
     <content type="text">27</content>
@@ -2972,7 +2973,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_TIME_ZONE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il fuso orario del blog</title>
     <content type="text">Europe/Rome</content>
@@ -2988,7 +2989,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_USE_LIGHTBOX</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2022-09-23T01:58:12.892+02:00</updated>
+    <updated>2022-09-24T18:20:32.817+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare le immagini in lightbox quando è selezionata l'impostazione</title>
     <content type="text">false</content>
@@ -3020,12 +3021,12 @@ head.appendChild(script);
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-9023594038789093948</id>
-    <published>2022-09-17T17:17:00.018+02:00</published>
-    <updated>2022-09-20T17:43:29.168+02:00</updated>
+    <published>2022-09-17T17:17:00.020+02:00</published>
+    <updated>2022-09-24T12:04:32.769+02:00</updated>
     <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Baite di Mezzeno, Passo del Vendulo, Lenna</title>
-    <content type="html">&lt;p&gt;Discesa in &lt;a href="http://www.mtbbergamo.it/p/alta-valle-brembana.html"&gt;Alta Val Brembana&lt;/a&gt; nei pressi di Roncobello, dalle Baite di Mezzeno al Passo del Vendulo, Piccarelli, Bordogna e Lenna &lt;/p&gt;&lt;div id="info_header"&gt;&lt;/div&gt;&lt;p&gt;Discesa mista con tratti tecnici con punte S3, e tratti flow veloci S1. Salita principalmente su asfalto. Una salita alternativa per sentieri la trovi nel percorso &lt;a href="http://www.mtbbergamo.it/2022/09/cornacchie.html"&gt;Porta delle Cornacchie&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;Si parte da &lt;i&gt;Lenna&lt;/i&gt; dal &lt;i&gt;Santuario della Madonna della Coltura&lt;/i&gt;. Si procede in leggera salita per alcune sterrate e sentieri fino al &lt;i&gt;Cantone San Francesco&lt;/i&gt; e proseguendo per sterrate al &lt;i&gt;Cimitero di Bordogna&lt;/i&gt;. &lt;/p&gt;   &lt;p&gt;Dal cimitero si prosegue per asfalto, con una deviazione per il &lt;i&gt;Mulino Baresi&lt;/i&gt;, e proseguendo su asfalto fino a &lt;i&gt;Roncobello&lt;/i&gt;. Superato il paese si devia per la sterrata della &lt;i&gt;Pista da Fondo&lt;/i&gt;, si passa dall'&lt;i&gt;Oasi Alpina di Roncobello&lt;/i&gt; e si riprende la salita su asfalto fino alle &lt;i&gt;Baite di Mezzeno&lt;/i&gt;. &lt;/p&gt;   &lt;p&gt;Dalle baite si ripercorre un breve tratto a ritroso, si prende il primo sentiero sulla sinistra (freccia bianca sull'asfalto). E' un tecnico con alcuni passaggi S3 nel primo tratto. Dopo diventa un facile S1 fino a incrociare la strada. &lt;/p&gt;&lt;p&gt;Si risale fino al primo tornante, e si prende il &lt;i&gt;Sentiero del Barca&lt;/i&gt;. Sentiero in costa con alcune difficoltà tecniche S2 ed alcuni tratti esposti. Termina su una sterrata con un passaggio S4, fai attenzione. Si prosegue sulla sterrata con qualche sali e scendi, che si trasforma in un facile sentiero S1 fino al &lt;i&gt;Passo del Vendulo&lt;/i&gt;. &lt;/p&gt;&lt;p&gt;Si continua la discesa veloce S1 per facili mulattiere. passando per &lt;i&gt;Piccarelli&lt;/i&gt;, &lt;i&gt;Baresi&lt;/i&gt; e &lt;i&gt;Bordogna&lt;/i&gt;. Moderare la velocità nei pressi delle case. &lt;/p&gt;&lt;p&gt;Ci si ricongiunge alla traccia della salita al cimitero &lt;i&gt;Bordogna&lt;/i&gt;. Dopo il ponticello, continuare per la sterrata fino ad un sentiero S1 sulla destra che termina al &lt;i&gt;Cantone Santa Maria&lt;/i&gt;. Un ultimo tratto di salita per raggiungere il &lt;i&gt;Cantone San Francesco&lt;/i&gt;, dove inizia il tratto finale S1, molto veloce e flow. &lt;/p&gt; &lt;div class="videotitle"&gt;Baite di Mezzeno, Passo del Vendulo, Lenna &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/1MwloVglghk?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Lenna, Roncobello, Baite di Mezzeno &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/8D7Zr-rR3qE?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div id="Mezzeno" class="mapbox"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('Mezzeno');   var page_control = create_control(page_map);    create_down(page_map, page_control, 'Brembana_MezzenoVenduloPiccarelliLenna.gpx');   create_up(page_map, page_control, 'Brembana_SalitaLennaRoncobelloMezzeno_EBIKE.gpx'); &lt;/script&gt;</content>
+    <content type="html">&lt;p&gt;Discesa in &lt;a href="http://www.mtbbergamo.it/p/alta-valle-brembana.html"&gt;Alta Val Brembana&lt;/a&gt; nei pressi di Roncobello, dalle Baite di Mezzeno al Passo del Vendulo, Piccarelli, Bordogna e Lenna &lt;/p&gt;&lt;div id="info_header"&gt;&lt;/div&gt;&lt;p&gt;Discesa mista con tratti tecnici con punte S3, e tratti flow veloci S1. Salita principalmente su asfalto. Una salita alternativa per sentieri la trovi nel percorso &lt;a href="http://www.mtbbergamo.it/2022/09/cornacchie.html"&gt;Porta delle Cornacchie&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;Si parte da &lt;i&gt;Lenna&lt;/i&gt; dal &lt;i&gt;Santuario della Madonna della Coltura&lt;/i&gt;. Si procede in leggera salita per alcune sterrate e sentieri fino al &lt;i&gt;Cantone San Francesco&lt;/i&gt; e proseguendo per sterrate al &lt;i&gt;Cimitero di Bordogna&lt;/i&gt;. &lt;/p&gt;   &lt;p&gt;Dal cimitero si prosegue per asfalto, con una deviazione per il &lt;i&gt;Mulino Baresi&lt;/i&gt;, e proseguendo su asfalto fino a &lt;i&gt;Roncobello&lt;/i&gt;. Superato il paese si devia per la sterrata della &lt;i&gt;Pista da Fondo&lt;/i&gt;, si passa dall'&lt;i&gt;Oasi Alpina di Roncobello&lt;/i&gt; e si riprende la salita su asfalto fino alle &lt;i&gt;Baite di Mezzeno&lt;/i&gt;. &lt;/p&gt;   &lt;p&gt;Dalle baite si ripercorre un breve tratto a ritroso, si prende il primo sentiero sulla sinistra (freccia bianca sull'asfalto). E' un tecnico con alcuni passaggi S3 nel primo tratto. Dopo diventa un facile S1 fino a incrociare la strada. &lt;/p&gt;&lt;p&gt;Si risale fino al primo tornante, e si prende il &lt;i&gt;Sentiero del Barca&lt;/i&gt;. Sentiero in costa con alcune difficoltà tecniche S2 ed alcuni tratti esposti. Termina su una sterrata con un passaggio S4, fai attenzione. Si prosegue sulla sterrata con qualche sali e scendi, che si trasforma in un facile sentiero S1 fino al &lt;i&gt;Passo del Vendulo&lt;/i&gt;. &lt;/p&gt;&lt;p&gt;Si continua la discesa veloce S1 per facili mulattiere. passando per &lt;i&gt;Piccarelli&lt;/i&gt;, &lt;i&gt;Baresi&lt;/i&gt; e &lt;i&gt;Bordogna&lt;/i&gt;. Moderare la velocità nei pressi delle case. &lt;/p&gt;&lt;p&gt;Ci si ricongiunge alla traccia della salita al cimitero &lt;i&gt;Bordogna&lt;/i&gt;. Dopo il ponticello, continuare per la sterrata fino ad un sentiero S1 sulla destra che termina al &lt;i&gt;Cantone Santa Maria&lt;/i&gt;. Un ultimo tratto di salita per raggiungere il &lt;i&gt;Cantone San Francesco&lt;/i&gt;, dove inizia il tratto finale S1, molto veloce e flow. &lt;/p&gt; &lt;div class="test"&gt; &lt;div class="videotitle"&gt;Baite di Mezzeno, Passo del Vendulo, Lenna &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/1MwloVglghk?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Lenna, Roncobello, Baite di Mezzeno &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/8D7Zr-rR3qE?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;/div&gt; &lt;div id="Mezzeno" class="mapbox"&gt;&lt;/div&gt;   &lt;script type="application/javascript"&gt;  var page_map = create_map_track('Mezzeno');   var page_control = create_control(page_map);    create_down(page_map, page_control, 'Brembana_MezzenoVenduloPiccarelliLenna.gpx');   create_up(page_map, page_control, 'Brembana_SalitaLennaRoncobelloMezzeno_EBIKE.gpx'); &lt;/script&gt;</content>
     <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/9023594038789093948"/>
     <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/9023594038789093948"/>
     <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2022/09/mezzeno.html" title="Baite di Mezzeno, Passo del Vendulo, Lenna"/>
@@ -4616,11 +4617,11 @@ head.appendChild(script);
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-3560597825920168556</id>
-    <published>2021-04-27T19:20:00.006+02:00</published>
-    <updated>2022-02-14T18:11:28.747+01:00</updated>
+    <published>2021-04-27T19:20:00.007+02:00</published>
+    <updated>2022-09-24T18:14:48.449+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Salite della Val Cavallina</title>
-    <content type="html">Salite in &lt;a href="http://www.mtbbergamo.it/p/valle-cavallina.html"&gt;Val Cavallina&lt;/a&gt; per raggiungere i percorsi.&lt;br/&gt; &lt;div id="SaliteValleCavallina" class="mapbox"&gt;&lt;/div&gt; &lt;!-- &lt;div class="videotitle"&gt;Salita da Scanzorosciate, al Colle di Pasta e Monte d' Argon (E-Bike) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/qbMrwQmpJ3Y?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita dalla Valle di Albano al Colle di Pasta (E-Bike) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/xWdTzzGfa9g?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita Tribulina, Prati Alti (E-Bike) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/FVIRk8TJOc8?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;--&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteValleCavallina');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'cavallina'); &lt;/script&gt;</content>
+    <content type="html">Salite in &lt;a href="http://www.mtbbergamo.it/p/valle-cavallina.html"&gt;Val Cavallina&lt;/a&gt; per raggiungere i percorsi.&lt;br/&gt; &lt;div id="SaliteValleCavallina" class="mapbox"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteValleCavallina');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'cavallina'); &lt;/script&gt;</content>
     <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/3560597825920168556"/>
     <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/3560597825920168556"/>
     <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2021/04/salite-val-cavallina.html" title="Salite della Val Cavallina"/>
@@ -4630,7 +4631,6 @@ head.appendChild(script);
       <email>noreply@blogger.com</email>
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
     </author>
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/qbMrwQmpJ3Y/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-5460202641852966763</id>
@@ -5246,21 +5246,20 @@ head.appendChild(script);
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-4546117523390113589</id>
-    <published>2020-08-01T17:50:00.004+02:00</published>
-    <updated>2022-02-14T18:10:37.965+01:00</updated>
+    <published>2020-08-01T17:50:00.006+02:00</published>
+    <updated>2022-09-24T18:16:23.423+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
-    <title type="text">Salite della Valle Brembana</title>
-    <content type="html">Salite in &lt;a href="http://www.mtbbergamo.it/p/valle-brembana.html"&gt;Valle Brembana&lt;/a&gt; per raggiungere i percorsi.&lt;br/&gt; &lt;p&gt;La Valle Brembana è una lunga e stratta valle, raggiungibile da Bergamo sia in auto che in bicicletta con la lunga ciclabile ricavata dalla linea ferroviaria dismessa nel 1966.  &lt;/p&gt; &lt;div id="SaliteValleBrembana" class="mapbox"&gt;&lt;/div&gt; &lt;!-- &lt;div class="videotitle"&gt;Salita da Moio de Calvi al Monte Torcola &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/_VJ3CkrLnZo?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Catremerio al Passo del Crosnello &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/HY9tnktv5WQ?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Castignola a Catremerio &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/ED0hxV-QiBI?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Castignola a S. Antonio Abbandonato &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/1orTh1dqpoU?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Santa Croce al Pizzo di Spino &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/fY4sdWZyodE?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;--&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteValleBrembana');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'brembana'); &lt;/script&gt;</content>
+    <title type="text">Salite della Val Brembana</title>
+    <content type="html">Salite in &lt;a href="http://www.mtbbergamo.it/p/valle-brembana.html"&gt;Val Brembana&lt;/a&gt; per raggiungere i percorsi.&lt;br/&gt; &lt;p&gt;La Valle Brembana è una lunga e stratta valle, raggiungibile da Bergamo sia in auto che in bicicletta con la lunga ciclabile ricavata dalla linea ferroviaria dismessa nel 1966.  &lt;/p&gt; &lt;div id="SaliteValleBrembana" class="mapbox"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteValleBrembana');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'brembana'); &lt;/script&gt;</content>
     <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/4546117523390113589"/>
     <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/4546117523390113589"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2020/08/salite-valle-brembana.html" title="Salite della Valle Brembana"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2020/08/salite-valle-brembana.html" title="Salite della Val Brembana"/>
     <author>
       <name>Andrea</name>
       <uri>https://www.blogger.com/profile/10311923148019903122</uri>
       <email>noreply@blogger.com</email>
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
     </author>
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/_VJ3CkrLnZo/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-9174760835201057813</id>
@@ -6489,11 +6488,11 @@ head.appendChild(script);
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-1341591183442596946</id>
-    <published>2019-03-17T07:50:00.006+01:00</published>
-    <updated>2022-02-14T18:09:47.246+01:00</updated>
+    <published>2019-03-17T07:50:00.008+01:00</published>
+    <updated>2022-09-24T18:16:13.774+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Salite della Valle Seriana</title>
-    <content type="html">Salite in &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle Seriana&lt;/a&gt; per raggiungere i percorsi.&lt;br/&gt; &lt;p&gt;La Valle Seriana è molto urbanizzata, e presenta un notevole traffico automobilistico, ma è disponibile una  ciclopedonale che permette di raggiungere da Bergamo tutta la valle. &lt;/p&gt;&lt;p&gt;Da Alzano Lombardo è possibile salire a Monte di Nese con una una strada molto poco trafficata essendo a fondo chiuso, ottima anche per un uscita in bici di corsa se si vuole salire in tranquillità. La pendenza media è del 6%, con un tratto finale dalla località Burro con una media del 8% e punte del 12%.  Proseguendo su sterrata, si raggiunge facilmente la Forcella di Nese, ed il Canto Basso, eventualmente collegandosi con la zona della &lt;a href="http://www.mtbbergamo.it/p/maresana.html"&gt;Maresana&lt;/a&gt;. A Monte di Nese, sotto la chiesa c'è una fontanella per abbeverarsi. &lt;/p&gt;&lt;p&gt;Da Alzano Lombardo è anche possibile raggiungere Lonno tramite una strada asfaltata ma chiusa alle automobili. E' una delle salite più dure, con pendenza media del 11% e punte del 17%. Negli anni è stata completamente asfaltata, e quindi è percorribile anche in bici da corsa. A Lonno nella piazza principale c'è una fontanella di fronte alla chiesa. &lt;/p&gt;&lt;p&gt;La seconda salita è la Nembro-Selvino molto famosa per essere stata sede della crono-scalata del Giro D'Italia 1995. Presenta un breve tratto iniziale al 10%, poi spiana e sale in modo molto costante con una pendenza media del 6%. A Selvino è d'obbligo passare dalla fontanella all'ingresso del paese, sempre affollata di ciclisti. E' una salita molto trafficata, meglio evitare i giorni festivi. Una alternativa è prendere la &lt;a href="http://www.comunediselvino.it/elenco.aspx?c=70&amp;sc=77"&gt;Funivia Albino-Selvino&lt;/a&gt;. La salita in funivia può essere combinata con la &lt;a href="https://www.montepoieto.it/la-cabinovia/"&gt;Cabinovia del Monte Poieto&lt;/a&gt; (8 euro con bici). Dall'uscita della funivia si deve raggiungere Aviatico imboccando la rampa in salita. Non fatevi spaventare, sono solo 200m al 15%, e subito dopo spiana e si raggiunge la cabinovia con un breve tratto in leggera discesa. &lt;/p&gt;&lt;p&gt;Da Selvino è possibile continuare la risalita per la località Salmezza. Questo tratto è molto duro con una media del 11% e punte del 16%. &lt;/p&gt; &lt;div id="SaliteValleSeriana" class="mapbox"&gt;&lt;/div&gt; &lt;!--  &lt;div class="videotitle"&gt;Salita al Monte Misma da Pradalunga per i ripetitori (E-Bike) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/yRb2yiTaJhA?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Tribulina a Val Coler (E-Bike) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/61d1Fodsb20?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Spersiglio a Pradale (E-Bike) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/7LGRf8yvinI?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Aviatico, Forca, al Monte Poieto &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/MYXo-8Qa4es?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Selvino al Monte Purito da sotto la seggiovia &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/0GClwanReEE?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Monte di Nese al Canto Basso (ciclabilità 90%) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/tNhP4MLxqH0?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; --&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteValleSeriana');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'seriana'); &lt;/script&gt;</content>
+    <content type="html">Salite in &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle Seriana&lt;/a&gt; per raggiungere i percorsi.&lt;br/&gt; &lt;p&gt;La Valle Seriana è molto urbanizzata, e presenta un notevole traffico automobilistico, ma è disponibile una  ciclopedonale che permette di raggiungere da Bergamo tutta la valle. &lt;/p&gt;&lt;p&gt;Da Alzano Lombardo è possibile salire a Monte di Nese con una una strada molto poco trafficata essendo a fondo chiuso, ottima anche per un uscita in bici di corsa se si vuole salire in tranquillità. La pendenza media è del 6%, con un tratto finale dalla località Burro con una media del 8% e punte del 12%.  Proseguendo su sterrata, si raggiunge facilmente la Forcella di Nese, ed il Canto Basso, eventualmente collegandosi con la zona della &lt;a href="http://www.mtbbergamo.it/p/maresana.html"&gt;Maresana&lt;/a&gt;. A Monte di Nese, sotto la chiesa c'è una fontanella per abbeverarsi. &lt;/p&gt;&lt;p&gt;Da Alzano Lombardo è anche possibile raggiungere Lonno tramite una strada asfaltata ma chiusa alle automobili. E' una delle salite più dure, con pendenza media del 11% e punte del 17%. Negli anni è stata completamente asfaltata, e quindi è percorribile anche in bici da corsa. A Lonno nella piazza principale c'è una fontanella di fronte alla chiesa. &lt;/p&gt;&lt;p&gt;La seconda salita è la Nembro-Selvino molto famosa per essere stata sede della crono-scalata del Giro D'Italia 1995. Presenta un breve tratto iniziale al 10%, poi spiana e sale in modo molto costante con una pendenza media del 6%. A Selvino è d'obbligo passare dalla fontanella all'ingresso del paese, sempre affollata di ciclisti. E' una salita molto trafficata, meglio evitare i giorni festivi. Una alternativa è prendere la &lt;a href="http://www.comunediselvino.it/elenco.aspx?c=70&amp;sc=77"&gt;Funivia Albino-Selvino&lt;/a&gt;. La salita in funivia può essere combinata con la &lt;a href="https://www.montepoieto.it/la-cabinovia/"&gt;Cabinovia del Monte Poieto&lt;/a&gt; (8 euro con bici). Dall'uscita della funivia si deve raggiungere Aviatico imboccando la rampa in salita. Non fatevi spaventare, sono solo 200m al 15%, e subito dopo spiana e si raggiunge la cabinovia con un breve tratto in leggera discesa. &lt;/p&gt;&lt;p&gt;Da Selvino è possibile continuare la risalita per la località Salmezza. Questo tratto è molto duro con una media del 11% e punte del 16%. &lt;/p&gt; &lt;div id="SaliteValleSeriana" class="mapbox"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteValleSeriana');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'seriana'); &lt;/script&gt;</content>
     <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/1341591183442596946"/>
     <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/1341591183442596946"/>
     <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2019/03/salite-valle-seriana.html" title="Salite della Valle Seriana"/>
@@ -6503,7 +6502,6 @@ head.appendChild(script);
       <email>noreply@blogger.com</email>
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
     </author>
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/yRb2yiTaJhA/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-1754199515228224450</id>
@@ -6604,11 +6602,11 @@ head.appendChild(script);
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-316969152065663161</id>
-    <published>2019-02-28T22:16:00.004+01:00</published>
-    <updated>2022-02-14T18:24:15.454+01:00</updated>
+    <published>2019-02-28T22:16:00.005+01:00</published>
+    <updated>2022-09-24T18:15:09.934+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Salite al Monte Canto</title>
-    <content type="html">Salite al &lt;a href="http://www.mtbbergamo.it/p/monte-canto.html"&gt;Monte Canto&lt;/a&gt; per raggiungere i percorsi.&lt;br/&gt; &lt;p&gt;La salita più facile per il Monte Canto è quella di Pontida che permette di affrontare i percorsi del lato Nord. La pendenza è sempre lieve, fin troppo. Si può parcheggiare al cimitero di Pontida, e da li parte una sterrata che porta fino alla chiesetta di Santa Barbara. &lt;/p&gt;&lt;p&gt;Da Sotto il Monte parte un altra sterrata che permette di affrontare i percorsi del lato Sud, più facilmente fruibili dato che si asciugano in fretta. Lungo questa salita (CAI 894) è possibile ammirare varie sculture in pietra di &lt;a href="https://naturaescursionimtb.weebly.com/volti-sui-massi-a-sotto-il-monte.html"&gt;Vanni Battaglia&lt;/a&gt;. Qui un &lt;a href="https://www.youtube.com/watch?v=-XI3SOBwerw"&gt;video&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;Si può anche salire da Ambivere e Mapello, con un tratto asfaltato, per poi proseguire lungo sentieri fino ad arrivare a Fontanella. Da Fontanella è possibile raggiungere la chiesetta di Santa Barbara tramite una ciotolata cementata, con alcuni tratti molto ripidi non pedalabili. &lt;/p&gt;&lt;p&gt;Per raggiungere la vetta del Monte Canto, occorre un ulteriore sforzo. Dalla località Canto si prende il pedalabile sentiero di Crinale che sale costeggiando il versante Nord. Raggiunta una sella, si inverte la direzione e dopo un breve tratto a spinta si raggiunge la cima, che stranamente non è marcata da una croce, ma solamente con una scritta su un sasso. La zona è completamente circondata da alberi, e non si può godere del panorama. Conviene arrivare in cima solo per prendere la discesa &lt;a href="http://www.mtbbergamo.it/2019/02/scalette.html"&gt;Scalette&lt;/a&gt;. &lt;/p&gt;    &lt;div id="SaliteMonteCanto" class="mapbox"&gt;&lt;/div&gt; &lt;!-- &lt;div class="videotitle"&gt;Salita da Pontida &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" src="https://www.youtube.com/embed/7Bu3DBOvrTY?feature=player_embedded" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Somasca &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" src="https://www.youtube.com/embed/ARvYyeYkP4U?feature=player_embedded" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Sotto il Monte &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" src="https://www.youtube.com/embed/zhF03m3eHtE?feature=player_embedded" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;--&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteMonteCanto');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'canto'); &lt;/script&gt;</content>
+    <content type="html">Salite al &lt;a href="http://www.mtbbergamo.it/p/monte-canto.html"&gt;Monte Canto&lt;/a&gt; per raggiungere i percorsi.&lt;br/&gt; &lt;p&gt;La salita più facile per il Monte Canto è quella di Pontida che permette di affrontare i percorsi del lato Nord. La pendenza è sempre lieve, fin troppo. Si può parcheggiare al cimitero di Pontida, e da li parte una sterrata che porta fino alla chiesetta di Santa Barbara. &lt;/p&gt;&lt;p&gt;Da Sotto il Monte parte un altra sterrata che permette di affrontare i percorsi del lato Sud, più facilmente fruibili dato che si asciugano in fretta. Lungo questa salita (CAI 894) è possibile ammirare varie sculture in pietra di &lt;a href="https://naturaescursionimtb.weebly.com/volti-sui-massi-a-sotto-il-monte.html"&gt;Vanni Battaglia&lt;/a&gt;. Qui un &lt;a href="https://www.youtube.com/watch?v=-XI3SOBwerw"&gt;video&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;Si può anche salire da Ambivere e Mapello, con un tratto asfaltato, per poi proseguire lungo sentieri fino ad arrivare a Fontanella. Da Fontanella è possibile raggiungere la chiesetta di Santa Barbara tramite una ciotolata cementata, con alcuni tratti molto ripidi non pedalabili. &lt;/p&gt;&lt;p&gt;Per raggiungere la vetta del Monte Canto, occorre un ulteriore sforzo. Dalla località Canto si prende il pedalabile sentiero di Crinale che sale costeggiando il versante Nord. Raggiunta una sella, si inverte la direzione e dopo un breve tratto a spinta si raggiunge la cima, che stranamente non è marcata da una croce, ma solamente con una scritta su un sasso. La zona è completamente circondata da alberi, e non si può godere del panorama. Conviene arrivare in cima solo per prendere la discesa &lt;a href="http://www.mtbbergamo.it/2019/02/scalette.html"&gt;Scalette&lt;/a&gt;. &lt;/p&gt;    &lt;div id="SaliteMonteCanto" class="mapbox"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteMonteCanto');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'canto'); &lt;/script&gt;</content>
     <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/316969152065663161"/>
     <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/316969152065663161"/>
     <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2019/02/salite-monte-canto.html" title="Salite al Monte Canto"/>
@@ -6618,7 +6616,6 @@ head.appendChild(script);
       <email>noreply@blogger.com</email>
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
     </author>
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/7Bu3DBOvrTY/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-2325898836379476222</id>
@@ -7003,14 +7000,14 @@ head.appendChild(script);
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-3572034435252505335</id>
-    <published>2018-12-22T20:55:00.002+01:00</published>
-    <updated>2020-03-01T16:24:07.009+01:00</updated>
+    <published>2018-12-22T20:55:00.003+01:00</published>
+    <updated>2022-09-24T18:15:59.388+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
-    <title type="text">Salite nei colli di Bergamo</title>
+    <title type="text">Salite nei Colli di Bergamo</title>
     <content type="html">Salite nei &lt;a href="http://www.mtbbergamo.it/p/colli-di-bergamo.html"&gt;Colli di Bergamo&lt;/a&gt; per raggiungere i percorsi.&lt;br/&gt; &lt;p&gt;Oltre alle salite qui presentate è anche possibile arrivare da Città Alta passando per San Vigilio o utilizzare una delle molte strade che vengono intersecate dai sentieri. &lt;/p&gt;&lt;p&gt;Per spostarsi è consigliabile seguire la ciclabile che circonda i colli evitando il traffico. &lt;/p&gt;&lt;p&gt;Le salite del Roccolone e del Gussa sono anche percorsi possibili per la discesa, fate quindi attenzione al doppio senso di circolazione. &lt;/p&gt; &lt;div id="SaliteColli" class="mapbox"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteColli');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'colli'); &lt;/script&gt;</content>
     <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/3572034435252505335"/>
     <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/3572034435252505335"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2018/12/salite-colli-bergamo.html" title="Salite nei colli di Bergamo"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2018/12/salite-colli-bergamo.html" title="Salite nei Colli di Bergamo"/>
     <author>
       <name>Andrea</name>
       <uri>https://www.blogger.com/profile/10311923148019903122</uri>
@@ -7081,11 +7078,11 @@ head.appendChild(script);
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-7023581538949292522</id>
-    <published>2018-12-10T19:57:00.009+01:00</published>
-    <updated>2022-02-14T18:08:20.111+01:00</updated>
+    <published>2018-12-10T19:57:00.010+01:00</published>
+    <updated>2022-09-24T18:15:19.992+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Salite della Valle San Martino</title>
-    <content type="html">Salite della&lt;a href="http://www.mtbbergamo.it/p/valle-san-martino.html"&gt;Valle San Martino&lt;/a&gt; per raggiungere i percorsi.&lt;br /&gt;&lt;p&gt;Le salite della Valle San Martino sul versante di Valcava, hanno una caratteristica in comune: sono tutte dure e faticose! &lt;/p&gt;&lt;p&gt;La più famosa è indubbiamente la classica &lt;a href="http://www.idiaridellabicicletta.com/valcava-4-km-senza-tregua/"&gt;Torre De Busi - Valcava&lt;/a&gt;, con il temuto tratto al 18%. Tre kilometri finali che sono la bestia nera di tutti i ciclisti della zona. &lt;/p&gt;&lt;p&gt;Una migliore alternativa in MTB è la salita che parte da Palazzago, sale a Colle Pedrino e attraversa la Cava Italcementi. Alterna tratti in asfalto con tratti in sterrato, con una pendenza costante, ma con lunghi tratti al 13% che vi faranno faticare, ma potrete godervi una salita senza automobili. Nei giorni lavorativi potreste (raramente) incontrare personale al lavoro, per mia esperienza personale sono sempre stati tolleranti, ma mi è stato riferito di un caso dove non volevano fare passare ciclisti. Si consiglia quindi di passare il Sabato o Festivi, dove non c'è anima viva.  Sul finale della salita si trova una sorgente d'acqua, che però si asciuga in periodi di siccità. &lt;/p&gt;&lt;p&gt;Un altra salita possibile è la sterrata che da Carenno sale alla Forcella Alta. Asfalto con poco traffico fino a Carenno,  e sterrato da Caversano fino alla cima. E' possibile partire da Torre de Busi perdendo solo qualche metro di dislivello su asfalto. Partendo da Carenno si può accorciare la fatica ed il dislivello. &lt;/p&gt;&lt;p&gt;Da Torre de Busi è anche possibile risalire ad Opreno tramite una ripida sterrata, che si conclude con un sentiero in costa. &lt;/p&gt; &lt;div id="SaliteSanMartino" class="mapbox"&gt;&lt;/div&gt; &lt;!--  &lt;div class="videotitle"&gt;Salita da Carenno alla Forcella Alta &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" src="https://www.youtube.com/embed/LPYKkqNzXRY?start=0&amp;feature=player_embedded" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita dalla Forcella Alta al Monte Tesoro (ciclabilità 40%) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" src="https://www.youtube.com/embed/QWzTRnL7hB0?start=0&amp;feature=player_embedded" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita dal Passo di Valcava al Monte Tesoro (ciclabilità 30%) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" src="https://www.youtube.com/embed/SWZeMTxDFY0?start=0&amp;feature=player_embedded" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Torre de Busi ad Opreno &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/IfOvh0_jMwc?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Carenno, 819, Corna Martinella &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/YCJe2xnGCc0?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Valcava al Linzone &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/fMw54Q6TPSs?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Roncola, Monte Piacca &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/N4y2J1yhQWE?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;--&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteSanMartino');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'martino'); &lt;/script&gt;</content>
+    <content type="html">Salite della&lt;a href="http://www.mtbbergamo.it/p/valle-san-martino.html"&gt;Valle San Martino&lt;/a&gt; per raggiungere i percorsi.&lt;br /&gt;&lt;p&gt;Le salite della Valle San Martino sul versante di Valcava, hanno una caratteristica in comune: sono tutte dure e faticose! &lt;/p&gt;&lt;p&gt;La più famosa è indubbiamente la classica &lt;a href="http://www.idiaridellabicicletta.com/valcava-4-km-senza-tregua/"&gt;Torre De Busi - Valcava&lt;/a&gt;, con il temuto tratto al 18%. Tre kilometri finali che sono la bestia nera di tutti i ciclisti della zona. &lt;/p&gt;&lt;p&gt;Una migliore alternativa in MTB è la salita che parte da Palazzago, sale a Colle Pedrino e attraversa la Cava Italcementi. Alterna tratti in asfalto con tratti in sterrato, con una pendenza costante, ma con lunghi tratti al 13% che vi faranno faticare, ma potrete godervi una salita senza automobili. Nei giorni lavorativi potreste (raramente) incontrare personale al lavoro, per mia esperienza personale sono sempre stati tolleranti, ma mi è stato riferito di un caso dove non volevano fare passare ciclisti. Si consiglia quindi di passare il Sabato o Festivi, dove non c'è anima viva.  Sul finale della salita si trova una sorgente d'acqua, che però si asciuga in periodi di siccità. &lt;/p&gt;&lt;p&gt;Un altra salita possibile è la sterrata che da Carenno sale alla Forcella Alta. Asfalto con poco traffico fino a Carenno,  e sterrato da Caversano fino alla cima. E' possibile partire da Torre de Busi perdendo solo qualche metro di dislivello su asfalto. Partendo da Carenno si può accorciare la fatica ed il dislivello. &lt;/p&gt;&lt;p&gt;Da Torre de Busi è anche possibile risalire ad Opreno tramite una ripida sterrata, che si conclude con un sentiero in costa. &lt;/p&gt; &lt;div id="SaliteSanMartino" class="mapbox"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteSanMartino');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'martino'); &lt;/script&gt;</content>
     <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/7023581538949292522"/>
     <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/7023581538949292522"/>
     <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2018/12/salite-san-martino.html" title="Salite della Valle San Martino"/>
@@ -7095,15 +7092,14 @@ head.appendChild(script);
       <email>noreply@blogger.com</email>
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
     </author>
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/LPYKkqNzXRY/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-4995938632299344929</id>
-    <published>2018-12-02T23:13:00.002+01:00</published>
-    <updated>2022-02-14T18:00:39.934+01:00</updated>
+    <published>2018-12-02T23:13:00.003+01:00</published>
+    <updated>2022-09-24T18:15:29.571+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Salite della Valle Imagna</title>
-    <content type="html">Salite della &lt;a href="http://www.mtbbergamo.it/p/valle-imagna.html"&gt;Valle Imagna&lt;/a&gt; per raggiungere i percorsi.&lt;br /&gt;&lt;p&gt;La Valle Imagna presenta un ricca rete stradale, con numerose salite molto frequentate da ciclisti in bici da corsa. Ogni anno, a Maggio, lungo queste strade si svolge la parte finale della &lt;a href="https://www.felicegimondi.it/"&gt;Gran Fondo Felice Gimondi&lt;/a&gt; con migliaia di partecipanti. &lt;/p&gt;&lt;p&gt;Tra le molte possibilità, le salite qui elencate cercano di proporre le strade più semplici e meno trafficate per poter salire in tranquillità godendosi il panorama. &lt;/p&gt; &lt;div id="SaliteImagna" class="mapbox"&gt;&lt;/div&gt; &lt;!-- &lt;div class="videotitle"&gt;Salita dalla Sbarra di Brumano al Passo del Palio (E-Bike ON) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/3-vSokQ_68M?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita dalla Sbarra di Brumano al Passo del Palio, Invernale (E-Bike ON) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/oFA7GMlbAf0?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita dal Passo del Palio al Resegone &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/DpAHKhbEEZU?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Trasferimento dal Passo del Palio a Forbesette (E-Bike ON) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/4n5MnSysgEc?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Forbesette al Colletto di Brumano (E-Bike ON) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/xmsIf-XLkG0?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita da Fuipiano ai Tre Faggi (E-Bike ON) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/2blEv9E9N1Y?start=0&amp;amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Salita dalla Bocca del Grassello ai Canti (da 4:24) (E-Bike ON) &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/0YTcbaWHoJY?start=264&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;--&gt; &lt;!-- &lt;div class="videotitle"&gt;Salita da Fuipiano allo Zuc De Valmana &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/B8-RcXcX8gM?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;--&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteImagna');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'imagna'); &lt;/script&gt;</content>
+    <content type="html">Salite della &lt;a href="http://www.mtbbergamo.it/p/valle-imagna.html"&gt;Valle Imagna&lt;/a&gt; per raggiungere i percorsi.&lt;br /&gt;&lt;p&gt;La Valle Imagna presenta un ricca rete stradale, con numerose salite molto frequentate da ciclisti in bici da corsa. Ogni anno, a Maggio, lungo queste strade si svolge la parte finale della &lt;a href="https://www.felicegimondi.it/"&gt;Gran Fondo Felice Gimondi&lt;/a&gt; con migliaia di partecipanti. &lt;/p&gt;&lt;p&gt;Tra le molte possibilità, le salite qui elencate cercano di proporre le strade più semplici e meno trafficate per poter salire in tranquillità godendosi il panorama. &lt;/p&gt; &lt;div id="SaliteImagna" class="mapbox"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteImagna');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'imagna'); &lt;/script&gt;</content>
     <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/4995938632299344929"/>
     <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/4995938632299344929"/>
     <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2018/12/salite-imagna.html" title="Salite della Valle Imagna"/>
@@ -7113,7 +7109,6 @@ head.appendChild(script);
       <email>noreply@blogger.com</email>
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
     </author>
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/3-vSokQ_68M/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-2535806352522355435</id>
@@ -7178,11 +7173,11 @@ head.appendChild(script);
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-1354630365996862503</id>
-    <published>2018-11-25T17:58:00.003+01:00</published>
-    <updated>2022-04-20T07:02:33.479+02:00</updated>
+    <published>2018-11-25T17:58:00.004+01:00</published>
+    <updated>2022-09-24T18:15:52.462+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Salite Maresana</title>
-    <content type="html">Salite per la &lt;a href="http://www.mtbbergamo.it/p/maresana.html"&gt;Maresana&lt;/a&gt; da Ponteranica e Ranica.&lt;br /&gt; &lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="https://1.bp.blogspot.com/-_FH0VTEzCJE/XHAocJbltrI/AAAAAAAAEYg/WBke0QIXJkwoVS-lxDYbdGKKmdsnTLktQCLcBGAs/s1600/pendenza_ranica-1280.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"&gt;&lt;img border="0" src="https://1.bp.blogspot.com/-_FH0VTEzCJE/XHAocJbltrI/AAAAAAAAEYg/WBke0QIXJkwoVS-lxDYbdGKKmdsnTLktQCLcBGAs/s320/pendenza_ranica-1280.jpg" width="320" height="235" data-original-width="1280" data-original-height="940" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;Per salire in Maresana la via più facile è la salita da Ponteranica, tutta asfaltata, ma con pendenze notevoli e punte del 20%. Una alternativa più dura è da Ponteranica Alta, passando dal Castello della Moretta, sempre asfaltata si raggiunge il 30%. &lt;/p&gt;&lt;p&gt;E' anche possibile salire da Ranica tramite una cementata veramente dura, ma in questo caso le pendenze raggiungono ben il 40%. E consigliabile solo per i più allenati oppure con E-Bike. &lt;/p&gt;&lt;p&gt;Infine, è possibile salire da Olera tramite cementata. Anche qui punte del 30%. &lt;/p&gt; &lt;div id="SaliteMaresana" class="mapbox"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteMaresana');   var page_control = create_control(page_map);   create_climb(page_map, page_control, 'maresana'); &lt;/script&gt;</content>
+    <content type="html">Salite per la &lt;a href="http://www.mtbbergamo.it/p/maresana.html"&gt;Maresana&lt;/a&gt; da Ponteranica e Ranica.&lt;br /&gt; &lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="https://1.bp.blogspot.com/-_FH0VTEzCJE/XHAocJbltrI/AAAAAAAAEYg/WBke0QIXJkwoVS-lxDYbdGKKmdsnTLktQCLcBGAs/s1600/pendenza_ranica-1280.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"&gt;&lt;img border="0" src="https://1.bp.blogspot.com/-_FH0VTEzCJE/XHAocJbltrI/AAAAAAAAEYg/WBke0QIXJkwoVS-lxDYbdGKKmdsnTLktQCLcBGAs/s320/pendenza_ranica-1280.jpg" width="320" height="235" data-original-width="1280" data-original-height="940" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;Per salire in Maresana la via più facile è la salita da Ponteranica, tutta asfaltata, ma con pendenze notevoli e punte del 20%. Una alternativa più dura è da Ponteranica Alta, passando dal Castello della Moretta, sempre asfaltata si raggiunge il 30%. &lt;/p&gt;&lt;p&gt;E' anche possibile salire da Ranica tramite una cementata veramente dura, ma in questo caso le pendenze raggiungono ben il 40%. E consigliabile solo per i più allenati oppure con E-Bike. &lt;/p&gt;&lt;p&gt;Infine, è possibile salire da Olera tramite cementata. Anche qui punte del 30%. &lt;/p&gt; &lt;div id="SaliteMaresana" class="mapbox"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_track('SaliteMaresana');   var page_control = create_control(page_map);    create_climb(page_map, page_control, 'maresana'); &lt;/script&gt;</content>
     <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/1354630365996862503"/>
     <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/1354630365996862503"/>
     <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2018/11/salite-maresana.html" title="Salite Maresana"/>
@@ -7394,6 +7389,229 @@ head.appendChild(script);
     <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/a_wrq1OxN30/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-5378927853840289375</id>
+    <published>2022-01-01T16:58:00.000+01:00</published>
+    <updated>2022-09-24T18:13:31.262+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Media Val Seriana</title>
+    <content type="html">&lt;p&gt;Per media Val Seriana si intende la valle oltre &lt;i&gt;Gazzaniga&lt;/i&gt;, non più facilmente raggiungibile da Bergamo in bicicletta per la distanza che inizia ad essere elevata. Con poco traffico ci vogliono circa 25 minuti per raggiungere &lt;i&gt;Vertova&lt;/i&gt; da &lt;i&gt;Bergamo&lt;/i&gt;. &lt;/p&gt; &lt;p&gt;I percorsi prima di &lt;i&gt;Gazzaniga&lt;/i&gt; li trovi nella &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Bassa Val Seriana&lt;/a&gt;.   &lt;/p&gt; &lt;p style="color:red"&gt;La selezione di sentieri è ancora molto incompleta! Pian piano verrà estesa. &lt;/p&gt; &lt;p&gt;Una ricca raccolta di percorsi MTB in Val Seriana si trovano nei siti  &lt;a href="https://www.valleserianabike.it/"&gt;ValleSerianaBike.it&lt;/a&gt; e &lt;a href="https://www.orangemtb.com/"&gt;Orange MTB&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2019/03/salite-valle-seriana.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=UuQQpwv4SBM&amp;list=PL1m5GKi1aSOv36x6zdajhfKswegJdYvH0"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'media_seriana'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/5378927853840289375"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/5378927853840289375"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/media-valle-seriana.html" title="Media Val Seriana"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-6672595659076829759</id>
+    <published>2021-08-02T19:09:00.000+02:00</published>
+    <updated>2022-09-24T18:13:27.234+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Alta Val Brembana</title>
+    <content type="html">&lt;p&gt;Per alta Val Breambana si intende la valle oltre &lt;i&gt;San Giovanni Bianco&lt;/i&gt;. Con la recente galleria di Zogno e la nuova superstrada Treviolo-Paladina ci vogliono circa 35 minuti per raggiungere &lt;i&gt;Piazza Brembana&lt;/i&gt; da &lt;i&gt;Bergamo&lt;/i&gt;. &lt;/p&gt; &lt;p&gt;I percorsi prima di &lt;i&gt;San Giovanni Bianco&lt;/i&gt; li trovi nella &lt;a href="http://www.mtbbergamo.it/p/valle-brembana.html"&gt;Bassa Val Brembana&lt;/a&gt; e in &lt;a href="http://www.mtbbergamo.it/p/val-taleggio.html"&gt;Val Taleggio&lt;/a&gt;.  &lt;/p&gt; &lt;p&gt;Una ricca raccolta di percorsi MTB in Val Brembana si trova nel sito  &lt;a href="http://www.percorsimtbvalbrembana.it/"&gt;percorsiMTBvalbrembana.it&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Se hai bisogno di informazioni specifiche puoi chiedere nel thread di &lt;a href="https://www.mtb-mag.com/forum/t/val-brembana-point.102016/page-209/"&gt;MTB Forum dedicato alla Val Brembana&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2020/08/salite-valle-brembana.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=egZPijO_Nu4&amp;list=PL1m5GKi1aSOtUmOj66LSghzacsvjXVj1P"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'alta_brembana'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6672595659076829759"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6672595659076829759"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/alta-valle-brembana.html" title="Alta Val Brembana"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-6890917005904254364</id>
+    <published>2021-04-19T17:01:00.000+02:00</published>
+    <updated>2022-09-24T18:13:23.080+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Val Cavallina</title>
+    <content type="html">&lt;p&gt;La Val Cavallina è la valle del fiume Cherio che dal Lago di Endine scende fino ai pressi di Bergamo. &lt;/p&gt; &lt;p&gt;Una raccolta di percorsi MTB in Val Cavallina si trova nel sito  &lt;a href="http://stezzanobiker.altervista.org/valcavallina/index.html"&gt;MTB Stezzano&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2021/04/salite-val-cavallina.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=QjHQ6234wxY&amp;list=PL1m5GKi1aSOu_2ILPBjp2LqCR1j411ELQ"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'cavallina'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6890917005904254364"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6890917005904254364"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/valle-cavallina.html" title="Val Cavallina"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-6030940991691793295</id>
+    <published>2020-07-26T23:25:00.000+02:00</published>
+    <updated>2022-09-24T18:13:18.503+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Mappe</title>
+    <content type="html">&lt;h3&gt;Cartacee&lt;/h3&gt; &lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="https://3.bp.blogspot.com/-FVUxkEfSX-4/XGSPVxYWagI/AAAAAAAAEXo/NSCIrZXEt64CYN4a3EtZhqVSVcvNDLLZQCLcBGAs/s1600/k104.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"&gt;&lt;img border="0" src="https://3.bp.blogspot.com/-FVUxkEfSX-4/XGSPVxYWagI/AAAAAAAAEXo/NSCIrZXEt64CYN4a3EtZhqVSVcvNDLLZQCLcBGAs/s1600/k104.jpg" data-original-width="119" data-original-height="200" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;Le mappe &lt;a href="https://www.google.com/search?q=kompass+104"&gt;Kompass 104 Alpi Orobie Bergamasche&lt;/a&gt; e &lt;a href="https://www.google.com/search?q=kompass+105"&gt;Kompass 105 Lecco Valle Brembana&lt;/a&gt; coprono l'intera area di Bergamo e Provincia. La scala 1:50000 le rende di difficile utilizzo, sono però un buon punto di riferimento se si preferisce un supporto cartaceo. &lt;/p&gt;&lt;!-- &lt;p&gt;&lt;img border="0" src="https://4.bp.blogspot.com/-X9SHW6Fox-M/XGSM4rj3r4I/AAAAAAAAEW8/x9OZWXifBeQqXEmOhTAmMXxG31BYAUl-gCLcBGAs/s1600/k104.jpg" data-original-width="119" data-original-height="200" /&gt;&lt;img border="0" src="https://4.bp.blogspot.com/-PW5PXuL_vZ4/XGSM4-7RynI/AAAAAAAAEXA/U2hDDLumPjYsrOoSe6WFNZlEkF4e7CqIQCLcBGAs/s1600/k105.jpg" data-original-width="119" data-original-height="200" /&gt;&lt;/p&gt;--&gt;&lt;p&gt;La casa editrice Ingenia ha prodotto negli anni passati varie mappe della Bergamasca con scale da 1:10000 a 1:25000, che sono ottime per l'utilizzo escursionistico sia a piedi che in MTB. Le puoi trovare online sui siti &lt;a href="http://www.libridimontagna.net/Editori/Ingenia"&gt;Libri Di Montagna&lt;/a&gt; ed &lt;a href="https://www.escursionista.it/catalogsearch/advanced/result/?name=&amp;editoredrop[]=5788"&gt;Escursionista&lt;/a&gt;. &lt;/p&gt;&lt;!-- &lt;p&gt;&lt;img border="0" src="https://3.bp.blogspot.com/-QrRVBziw3Rc/XGSN3S4UTrI/AAAAAAAAEXQ/RVNoMsSn4p8Zpaunxs6JDqVG8NfS7u2_ACLcBGAs/s1600/ing2.jpg" data-original-width="174" data-original-height="250" /&gt;&lt;img border="0" src="https://1.bp.blogspot.com/-yjRJfEDe_xg/XGSN3oVum7I/AAAAAAAAEXU/TEI1SzZgAGYNpclcR70ZypwZaRlm6m-swCLcBGAs/s1600/ing1.jpg" data-original-width="192" data-original-height="250" /&gt;&lt;img border="0" src="https://3.bp.blogspot.com/-kSZ-28dF06g/XGSN3xO9wWI/AAAAAAAAEXY/dkJ8HeJp55cnCS6KSxP9imu5BY8sSCOdwCLcBGAs/s1600/ing3.jpg" data-original-width="209" data-original-height="250" /&gt;&lt;/p&gt;--&gt;&lt;h3&gt;Online&lt;/h3&gt;&lt;p&gt;Per la consultazione online puoi utilizzare le mappe &lt;a href="https://www.cyclosm.org/#map=13/45.7687/9.6230"&gt;CyclOSM&lt;/a&gt;, basate su &lt;a href="https://www.openstreetmap.org/#map=12/45.7436/9.6632"&gt;OpenStreetMap&lt;/a&gt;, che visualizzano anche il &lt;a href="http://www.mtbbergamo.it/p/difficolta.html"&gt;livello di difficoltà&lt;/a&gt; per la MTB. Per l'escursionismo a piedi puoi usare la &lt;a href="https://hiking.waymarkedtrails.org/#?map=12!45.7724!9.6444"&gt;Waymarked Trails&lt;/a&gt; che permette di scaricare i GPX dei sentieri. &lt;/p&gt;&lt;p&gt;Ci sono anche la &lt;a href="http://geoportale.caibergamo.it/caibergamo_gfmaplet/"&gt;Carta Escursionistica della provincia di Bergamo&lt;/a&gt; del CAI e la versione online delle &lt;a href="https://www.kompass.de/wanderkarte/"&gt;Kompass&lt;/a&gt;, ma  ormai le mappe basate su OpenStreetmap sono decisamente migliori. &lt;p&gt; &lt;h3&gt;GPS e smartphone&lt;/h3&gt;&lt;/p&gt;Se utilizzi un dispositivo GPS dedicato, le mappe &lt;a href="https://openmtbmap.org/it/"&gt;OpenMTBMap&lt;/a&gt; sono la scelta migliore. Sono anch'esse basate su &lt;a href="https://www.openstreetmap.org/#map=12/45.7436/9.6632"&gt;OpenStreetMap&lt;/a&gt; ma dedicate all'utilizzo in MTB con indicazione del livello di difficoltà delle discese e salite. &lt;/p&gt;&lt;p&gt;Se invece utilizzi uno smartphone, le migliori applicazioni disponibili per Android probabilmente sono &lt;a href="https://osmand.net/"&gt;OSMAnd&lt;/a&gt; (più semplice), &lt;a href="https://www.oruxmaps.com/cs/en/"&gt;Oruxmaps&lt;/a&gt; (piu completa). In entrambe puoi caricare le mappe &lt;a href="https://www.openandromaps.org/en/downloads"&gt;OpenAndroMaps&lt;/a&gt; che con il tema &lt;i&gt;Elevate&lt;/i&gt; in configurazione &lt;i&gt;Mountainbike&lt;/i&gt; mostrano anch'esse il livello di difficoltà delle discese e salite. &lt;/p&gt;&lt;p&gt;E' da sottolineare che qualunque applicazione per smartphone utilizzi è fondamentale avere mappe pre-scaricate per non dipendere dalla connessione internet. &lt;/p&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6030940991691793295"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6030940991691793295"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/mappe.html" title="Mappe"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://3.bp.blogspot.com/-FVUxkEfSX-4/XGSPVxYWagI/AAAAAAAAEXo/NSCIrZXEt64CYN4a3EtZhqVSVcvNDLLZQCLcBGAs/s72-c/k104.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-8020907678493114285</id>
+    <published>2020-07-22T18:22:00.000+02:00</published>
+    <updated>2022-09-24T18:12:59.663+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Bassa Val Brembana</title>
+    <content type="html">&lt;p&gt;La bassa Val Brembana spazia dai dintorni della città offrendo una ricca e varia possibilità di escursioni dalle più facili alle più estreme. &lt;/p&gt; &lt;p&gt;Per bassa Val Brembana si intende la valle fino a &lt;i&gt;San Giovanni Bianco&lt;/i&gt;. I percorsi oltre &lt;i&gt;San Giovanni Bianco&lt;/i&gt; li trovi nella &lt;a href="http://www.mtbbergamo.it/p/alta-valle-brembana.html"&gt;Alta Val Brembana&lt;/a&gt; e &lt;a href="http://www.mtbbergamo.it/p/val-taleggio.html"&gt;Val Taleggio&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Una ricca raccolta di percorsi MTB in Val Brembana si trova nel sito  &lt;a href="http://www.percorsimtbvalbrembana.it/"&gt;percorsiMTBvalbrembana.it&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Se hai bisogno di informazioni specifiche puoi chiedere nel thread di &lt;a href="https://www.mtb-mag.com/forum/t/val-brembana-point.102016/page-209/"&gt;MTB Forum dedicato alla Val Brembana&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;La mappa delle sole salite la trovate in &lt;a href="http://www.mtbbergamo.it/2020/08/salite-valle-brembana.html"&gt;questa pagina&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2020/08/salite-valle-brembana.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=egZPijO_Nu4&amp;list=PL1m5GKi1aSOtUmOj66LSghzacsvjXVj1P"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;!-- &lt;div class="videotitle"&gt;Panorama da Vettarola &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/qFGxxC7dwW4?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Panorama dalla pachina gigante di Santa Croce &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/oMyaBCqwgLM?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;--&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'bassa_brembana'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8020907678493114285"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8020907678493114285"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/valle-brembana.html" title="Bassa Val Brembana"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/qFGxxC7dwW4/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-6438529019463434628</id>
+    <published>2020-06-10T19:06:00.000+02:00</published>
+    <updated>2022-09-24T18:12:52.323+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Bassa Val Seriana</title>
+    <content type="html">&lt;p&gt;La Val Seriana è una delle mete preferite dai Bergamaschi per la vicinanza alla città, e per l'ottima esposizione. &lt;/p&gt; &lt;p&gt;Per bassa Val Seriana si intende la valle fino a &lt;i&gt;Gazzaniga&lt;/i&gt;. I percorsi oltre &lt;i&gt;Gazzaniga&lt;/i&gt; li trovi nella &lt;a href="http://www.mtbbergamo.it/p/media-valle-seriana.html"&gt;Media Val Seriana&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Data la fitta rete sentieristica, oltre alle tracce principali, molte varianti sono state organizzate nelle sotto sezioni di &lt;a href="http://www.mtbbergamo.it/2019/04/lonno.html"&gt;Lonno&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Tramite la ciclabile è possibile raggiungere in bici i percorsi direttamente da Bergamo senza l'assillo del traffico automobilistico. In alternativa alla ciclabile è anche possibile prendere la &lt;a href="http://www.teb.bergamo.it/it/il-mio-viaggio/in-bici-sul-tram"&gt;tramvia elettrica&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Se si vuole evitare la fatica della salita su asfalto, si può anche usufruire della &lt;a href="https://comunediselvino.it/menu/64205/funivia-albino-selvino"&gt;Funivia Albino Selvino&lt;/a&gt; (riaperta il 24 Luglio 2019), e della &lt;a href="https://www.montepoieto.it/la-cabinovia/"&gt;Cabinovia del Monte Poieto&lt;/a&gt; che combinate permettono di raggiungere i 1360m della cima del Monte Poieto. &lt;/p&gt; &lt;p&gt;Una ricca raccolta di percorsi MTB in Val Seriana si trovano nei siti  &lt;a href="https://www.valleserianabike.it/"&gt;ValleSerianaBike.it&lt;/a&gt; e &lt;a href="https://www.orangemtb.com/"&gt;Orange MTB&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;La valle è anche sede della &lt;a href="http://www.valserianamarathon.it/"&gt;VALSERIANA Marathon&lt;/a&gt; che si svolge a Maggio. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2019/03/salite-valle-seriana.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=UuQQpwv4SBM&amp;list=PL1m5GKi1aSOv36x6zdajhfKswegJdYvH0"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'bassa_seriana'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6438529019463434628"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6438529019463434628"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/valle-seriana.html" title="Bassa Val Seriana"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-8071814843114685363</id>
+    <published>2020-05-28T22:31:00.000+02:00</published>
+    <updated>2022-09-24T18:12:43.089+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Valle Imagna</title>
+    <content type="html">&lt;p&gt;La Valle Imagna possiede una vasta rete di sentieri che si presta ad escursioni in MTB All-Mountain fino alla vetta del &lt;a href="http://www.mtbbergamo.it/2021/09/vetta-resegone.html"&gt;Resegone&lt;/a&gt;. Con poco traffico ci vogliono circa 30 minuti per raggiungere &lt;i&gt;Sant Omobono Terme&lt;/i&gt; da &lt;i&gt;Bergamo&lt;/i&gt;. &lt;/p&gt;&lt;p&gt;Come per la &lt;a href="http://www.mtbbergamo.it/p/valle-san-martino.html"&gt;Valle San Martino&lt;/a&gt;, si tratta perlopiù di percorsi alpini impegnativi, sia in salita che in discesa, che è meglio affrontare preparati, con adeguate protezioni ed equipaggiamento. Una MTB full è caldamente consigliata, se non necessaria. &lt;/p&gt; &lt;p&gt;Data la fitta rete sentieristica, oltre alle tracce principali, molte varianti sono state organizzate nelle sotto sezioni di &lt;a href="http://www.mtbbergamo.it/2019/04/roncola.html"&gt;Roncola San Bernardo&lt;/a&gt;, &lt;a href="http://www.mtbbergamo.it/2019/06/rota-imagna.html"&gt;Rota d'Imagna&lt;/a&gt;, &lt;a href="http://www.mtbbergamo.it/2019/07/vanzarolo.html"&gt;Vanzarolo&lt;/a&gt; e &lt;a href="http://www.mtbbergamo.it/2019/07/locatello.html"&gt;Locatello&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Se hai bisogno di informazioni specifiche puoi chiedere nel thread di &lt;a href="https://www.mtb-mag.com/forum/threads/valle-imagna-point-nuovo-portale-e-news.78546/"&gt;MTB Forum dedicato alla Valle Imagna&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2018/12/salite-imagna.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=ikg9UpvdfgQ&amp;list=PL1m5GKi1aSOuJrd_Z0aDMj6sDXl4Innjo"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'imagna'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8071814843114685363"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8071814843114685363"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/valle-imagna.html" title="Valle Imagna"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-671321837611946696</id>
+    <published>2019-10-03T14:49:00.001+02:00</published>
+    <updated>2022-09-24T18:12:33.248+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Monte Canto</title>
+    <content type="html">&lt;p&gt;Il &lt;i&gt;Monte Canto&lt;/i&gt; presenta percorsi MTB di tutti i generi, dai più flow, come l' &lt;a href="http://www.mtbbergamo.it/2019/02/uccellaia.html"&gt;Uccellaia&lt;/a&gt; ed il &lt;a href="http://www.mtbbergamo.it/2021/05/canyon.html"&gt;Canyon&lt;/a&gt;, ai misti come il &lt;a href="http://www.mtbbergamo.it/2019/02/kompressor.html"&gt;Kompressor&lt;/a&gt; e il &lt;a href="http://www.mtbbergamo.it/2019/02/rocce-muschio.html"&gt;Lame Rotanti&lt;/a&gt;, ed il tostissimo &lt;a href="http://www.mtbbergamo.it/2019/02/scalette.html"&gt;Scalette&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;Se siete alle prime esperienze si consiglia il &lt;a href="http://www.mtbbergamo.it/2020/02/biglietto-da-visita.html"&gt;Biglietto da Visita&lt;/a&gt; per farsi una idea dei sentieri del &lt;i&gt;Monte Canto&lt;/i&gt;. &lt;/p&gt;&lt;p&gt;Una MTB front permette di affrontare la maggior parte dei sentieri. La limitata altitudine dei 710m della cima del Monte Canto lo rende una meta ideale per i periodi freddi, e permette anche due risalite in mezza giornata. In particolare le discese del lato Sud, sono ben esposte al Sole e si asciugano in fretta. Il lato Nord è fruibile solo nei periodi più asciutti. &lt;/p&gt;&lt;p&gt;Se questi percorsi non vi bastano, potete consultare l'ottimo sito &lt;a href="http://montecanto.altervista.org/WordPress/"&gt;Sentieri del Monte Canto&lt;/a&gt; che elenca e descrive proprio tutti i sentieri per MTB! &lt;/p&gt;&lt;p&gt;Mappe da scaricare e stampare si possono trovate sul sito del &lt;a href="http://inaltoup.altervista.org/html/mappa_canto.htm"&gt;CAI Vimercate&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;Se avete bisogno di ulteriori informazioni, potete chiedere nel thread di &lt;a href="https://community.mtb-mag.com/t/quelli-del-monte-canto-lavventura-continua.396231/"&gt;MTB Forum dedicato al Monte Canto &lt;/a&gt; dove bazzicano molti biker che si dedicano alla pulizia dei sentieri. &lt;/p&gt; &lt;p&gt;Ogni anno, in primavera, il Monte Canto è sede della gara podistica &lt;a href="http://www.skydelcanto2.it/"&gt;SKY del Canto&lt;/a&gt; che si svolge su un percorso ad anello di 22 km e 1300m di dislivello che si può riconoscere dai numerosi cartelli SKY che si vedono lungo i sentieri. Ovviamente il giorno della gara non è possibile girare in MTB. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2019/02/salite-monte-canto.html"&gt;la mappa delle salite&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'canto'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/671321837611946696"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/671321837611946696"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/monte-canto.html" title="Monte Canto"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-8996960218431449059</id>
+    <published>2020-05-29T21:37:00.000+02:00</published>
+    <updated>2022-09-24T18:11:53.509+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Valle San Martino</title>
+    <content type="html">&lt;p&gt;La Valle San Martino, ed in particolare il monte Albenza, è la meta più vicina a Bergamo per percorsi MTB All-Mountain. Con poco traffico ci vogliono circa 25 minuti per raggiungere &lt;i&gt;Burligo&lt;/i&gt; da &lt;i&gt;Bergamo&lt;/i&gt;. &lt;/p&gt;   &lt;p&gt;   Come per la &lt;a href="http://www.mtbbergamo.it/p/valle-imagna.html"&gt;Valle Imagna&lt;/a&gt;, si tratta perlopiù di percorsi alpini impegnativi, sia in salita che in discesa, che è meglio affrontare preparati, con adeguate protezioni ed equipaggiamento. Una MTB full è caldamente consigliata, se non necessaria. &lt;/p&gt;&lt;p&gt;Data la fitta rete sentieristica, oltre alle tracce principali, molte varianti sono state organizzate nelle sotto sezioni di &lt;a href="http://www.mtbbergamo.it/2020/01/corna-martinella.html"&gt;Corna Martinella&lt;/a&gt;, &lt;a href="http://www.mtbbergamo.it/2019/12/colle-di-sogno.html"&gt;Colle di Sogno&lt;/a&gt;, &lt;a href="http://www.mtbbergamo.it/2020/01/coldara.html"&gt;Coldara&lt;/a&gt;, &lt;a href="http://www.mtbbergamo.it/2019/04/colle-pedrino.html"&gt;Colle Pedrino&lt;/a&gt; e &lt;a href="http://www.mtbbergamo.it/2019/04/roncola.html"&gt;Roncola San Bernardo&lt;/a&gt;.  &lt;/p&gt;&lt;p&gt;Il monte Albenza la separa dalla &lt;a href="http://www.mtbbergamo.it/p/valle-imagna.html"&gt;Valle Imagna&lt;/a&gt; con cui condivide alcuni percorsi qui segnalati. La Valle San Martino ha il pregio di un' ottima esposizione al sole, che la rende ideale per il periodo invernale, grazie ad una più facile asciugatura dei sentieri. &lt;/p&gt;&lt;p&gt;Sul lato opposto la valle è delimitata dal &lt;a href="http://www.mtbbergamo.it/p/monte-canto.html"&gt;Monte Canto&lt;/a&gt; che ha percorsi con caratteristiche più flow. &lt;/p&gt;&lt;p&gt;A Monte Marenzo c'è il &lt;a href="https://lamponpark.blogfree.net/"&gt;LamponPark&lt;/a&gt;, un bel trail con salti e pump track, gratuito e aperto tutti i giorni.   &lt;!-- https://lamponpark.blogfree.net/?t=5617885 --&gt;&lt;/p&gt;&lt;p&gt;Se hai bisogno di informazioni più specifiche, puoi chiedere nel thread di &lt;a href="https://www.mtb-mag.com/forum/threads/thread-ufficiale-della-valcava.283680/"&gt;MTB Forum dedicato a Valcava&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;Ulteriori informazioni sui sentieri della valle si possono anche trovare sul sito della &lt;a href="https://www.cmlariosanmartino.movimentolento.it/it/resource/track/category/piedi/"&gt;Comunità Montana&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2018/12/salite-san-martino.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=vUeKl_KYsvM&amp;list=PL1m5GKi1aSOsCwNbTtKzwbH3Wt4UvYxIV"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'martino'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8996960218431449059"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8996960218431449059"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/valle-san-martino.html" title="Valle San Martino"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-644484164600315902</id>
+    <published>2019-06-26T21:24:00.002+02:00</published>
+    <updated>2022-09-24T18:11:28.307+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Sorisole</title>
+    <content type="html">&lt;p&gt;Sorisole presenta alcuni percorsi MTB molto interessanti, compresa una &lt;a href="http://www.mtbbergamo.it/2018/12/pista-downhill.html"&gt;Pista di Downhill&lt;/a&gt; realizzata dai &lt;a href="http://www.bikerspetosino.it/"&gt;Biker Petosino&lt;/a&gt;. Confina con la collina della &lt;a href="http://www.mtbbergamo.it/p/maresana.html"&gt;Maresana&lt;/a&gt; e sono possibili varie combinazioni di percorsi. &lt;/p&gt;&lt;p&gt;L'esposizione, come suggerisce il nome Sorisole, è ottima, e facilita l'asciugatura dei percorsi esposti a Sud. &lt;/p&gt;&lt;p&gt;Negli anni è stata sede di varie gare Enduro, tra cui le &lt;a href="https://www.endurocuplombardia.it/site/event/petosino-bg/"&gt;Enduro Cup Lombardia 2015&lt;/a&gt;, &lt;a href="http://www.endurocuplombardia.it/site/event/ecl16-petosino-bg/"&gt;2016&lt;/a&gt; e del &lt;a href="https://www.mtbcult.it/94425/altra-doppietta-per-i-fratelli-lupato-a-petosino-bg/?fbclid=IwAR0y_zsRGu4oul-4oEgkcju8npeq1K-_Dya8h0mQb2EwoNJmtqHCFZMJrR4"&gt;3° Trofeo Enduro DF Sport Specialist di Petosino (BG) 2017&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2019/06/salite-sorisole.html"&gt;la mappa delle salite&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'sorisole'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/644484164600315902"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/644484164600315902"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/sorisole.html" title="Sorisole"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-7456450945174822363</id>
+    <published>2019-07-04T07:24:00.000+02:00</published>
+    <updated>2022-09-24T18:10:59.027+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Colli di Bergamo</title>
+    <content type="html">&lt;p&gt;I Colli di Bergamo, data la vicinanza alla città, sono una delle mete principali per MTB durante la settimana. I percorsi sono principalmente flow come i famosi &lt;a href="http://www.mtbbergamo.it/2018/12/roccolone.html"&gt;Roccolone&lt;/a&gt; e &lt;a href="http://www.mtbbergamo.it/2018/12/allegrezza.html"&gt;Allegrezza&lt;/a&gt; ma c'è ne sono anche di tecnici come il &lt;a href="http://www.mtbbergamo.it/2018/12/910.html"&gt;910&lt;/a&gt;. In ogni caso la difficoltà non supera mai il livello S1 / BC e tutti i percorsi si possono fare anche con MTB front. E' l'ideale per brevi giri serali di una, due ore, e con l'adeguata illuminazione, anche notturni. &lt;/p&gt; &lt;p&gt;La zona è molto frequentata da escursionisti a piedi, fate molta attenzione, specialmente nei week-end di bel tempo. &lt;/p&gt; &lt;p&gt;Se siete principianti, la discesa del &lt;a href="http://www.mtbbergamo.it/2018/12/roccolone.html"&gt;Roccolone&lt;/a&gt; sarà quelle che farete più spesso, aggiungendoci una variante dopo l'altra. Quando vi sentirete sicuri nel fare il &lt;a href="http://www.mtbbergamo.it/2018/12/910.html"&gt;910&lt;/a&gt; vorrà dire che siete pronti per nuove mete come la &lt;a href="http://www.mtbbergamo.it/p/maresana.html"&gt;Maresana&lt;/a&gt; o il &lt;a href="http://www.mtbbergamo.it/p/monte-canto.html"&gt;Monte Canto&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2018/12/salite-colli-bergamo.html"&gt;la mappa delle salite&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'colli'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/7456450945174822363"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/7456450945174822363"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/colli-di-bergamo.html" title="Colli di Bergamo"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-8333227843128009505</id>
+    <published>2019-06-26T21:24:00.001+02:00</published>
+    <updated>2022-09-24T18:10:44.451+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Maresana</title>
+    <content type="html">&lt;p&gt;La collina della Maresana, data la sua vicinanza alla città, è una delle palestre MTB più frequentate dai bergamaschi.  Presenta percorsi MTB di tutti i generi, dai più flow, come la &lt;a href="http://www.mtbbergamo.it/2018/11/bruna.html"&gt;Bruna&lt;/a&gt;, ai più tecnici come il &lt;a href="http://www.mtbbergamo.it/2018/11/533-filone.html"&gt;Filone&lt;/a&gt; o il &lt;a href="http://www.mtbbergamo.it/2018/11/604.html"&gt;604&lt;/a&gt;. Per la maggior parte dei percorsi una MTB full è consigliata, ma si trovano percorsi anche per MTB front. Data la limitata altitudine di 726m del Colle Di Ranica, è ottima per giri di mezza giornata dove è anche possibile prevedere due risalite. &lt;/p&gt;&lt;p&gt;La zona è anche molto frequentata da escursionisti a piedi, occorre quindi fare molta attenzione, specialmente nei week-end di bel tempo per evitare spiacevoli &lt;a href="https://www.ecodibergamo.it/stories/bergamo-citta/maresana-invasa-dalle-mountain-bikeproblema-di-sicurezza-sui-sentieri_1176898_11/"&gt;lamentele&lt;/a&gt; e &lt;a href="https://www.ecodibergamo.it/stories/hinterland/maresana-assedio-di-mountain-bikerischio-incidenti-scattano-i-divieti_1187027_11/"&gt;divieti&lt;/a&gt; come al sentiero &lt;a href="http://www.mtbbergamo.it/2018/11/533-illegale.html"&gt;Illegale&lt;/a&gt;.  &lt;/p&gt;&lt;p&gt;Negli anni è stata sede di varie gare Enduro, tra cui le &lt;a href="https://www.endurocuplombardia.it/site/event/petosino-bg/"&gt;Enduro Cup Lombardia 2015&lt;/a&gt; e &lt;a href="http://www.endurocuplombardia.it/site/event/ecl16-petosino-bg/"&gt;2016&lt;/a&gt;, e la &lt;a href="https://e-enduro.it/en/2018/09/05/gpx-tracks-bergamo-the-fourth-round-of-the-e-enduropowered-by-specialized/"&gt;E-Enduro 2018&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;In Maresana è disponibile un servizio bus Navetta per MTB organizzato dall' &lt;a href="https://www.facebook.com/LIVESLOWRIDEFAST/"&gt;Orio Gravity Area&lt;/a&gt; che si occupa anche della manutenzione di molti sentieri. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2018/11/salite-maresana.html"&gt;la mappa delle salite&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'maresana'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8333227843128009505"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8333227843128009505"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/maresana.html" title="Maresana"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-4290629698892057325</id>
+    <published>2022-04-11T20:59:00.000+02:00</published>
+    <updated>2022-09-24T18:10:28.944+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Val Taleggio</title>
+    <content type="html">&lt;p&gt;Con la recente galleria di Zogno e la nuova superstrada Treviolo-Paladina ci vogliono circa 40 minuti per raggiungere &lt;i&gt;Sottochiesa&lt;/i&gt; da &lt;i&gt;Bergamo&lt;/i&gt;. Per i percorsi in zona &lt;i&gt;Morterone&lt;/i&gt; l'accesso più diretto è dalla &lt;a href="http://www.mtbbergamo.it/p/valle-imagna.html"&gt;Valle Imagna&lt;/a&gt; da &lt;i&gt;Fuipiano&lt;/i&gt; raggiungibile in 45 minuti da &lt;i&gt;Bergamo&lt;/i&gt;. &lt;/p&gt; &lt;p&gt;Altri percorsi MTB in Val Taleggio si trovano nel sito  &lt;a href="http://www.percorsimtbvalbrembana.it/"&gt;percorsiMTBvalbrembana.it&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Se hai bisogno di informazioni specifiche puoi chiedere nel thread di &lt;a href="https://www.mtb-mag.com/forum/t/val-brembana-point.102016/page-209/"&gt;MTB Forum dedicato alla Val Brembana&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2020/08/salite-valle-brembana.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=ksJCJuCZN8k&amp;list=PL1m5GKi1aSOtw8NdQW1vfRMaARwEb1B5M"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'taleggio'); &lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/4290629698892057325"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/4290629698892057325"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/val-taleggio.html" title="Val Taleggio"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.page-4801599335058919995</id>
     <published>2019-12-23T17:13:00.000+01:00</published>
     <updated>2022-09-03T17:27:01.492+02:00</updated>
@@ -7412,24 +7630,6 @@ head.appendChild(script);
     <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://3.bp.blogspot.com/-9w5Xw2h5dsE/XGMqlybLK2I/AAAAAAAAETY/xcAMgYMMhzwpHOxnLuUNUKXWEyTGoD97wCLcBGAs/s72-c/s0_1.jpg" height="72" width="72"/>
   </entry>
   <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-6030940991691793295</id>
-    <published>2020-07-26T23:25:00.000+02:00</published>
-    <updated>2022-08-28T00:09:06.665+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Mappe</title>
-    <content type="html">&lt;h3&gt;Cartacee&lt;/h3&gt; &lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="https://3.bp.blogspot.com/-FVUxkEfSX-4/XGSPVxYWagI/AAAAAAAAEXo/NSCIrZXEt64CYN4a3EtZhqVSVcvNDLLZQCLcBGAs/s1600/k104.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"&gt;&lt;img border="0" src="https://3.bp.blogspot.com/-FVUxkEfSX-4/XGSPVxYWagI/AAAAAAAAEXo/NSCIrZXEt64CYN4a3EtZhqVSVcvNDLLZQCLcBGAs/s1600/k104.jpg" data-original-width="119" data-original-height="200" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;Le mappe &lt;a href="https://www.google.com/search?q=kompass+104"&gt;Kompass 104 Alpi Orobie Bergamasche&lt;/a&gt; e &lt;a href="https://www.google.com/search?q=kompass+105"&gt;Kompass 105 Lecco Valle Brembana&lt;/a&gt; coprono l'intera area di Bergamo e Provincia. La scala 1:50000 le rende di difficile utilizzo, sono però un buon punto di riferimento se si preferisce un supporto cartaceo. &lt;/p&gt;&lt;!-- &lt;p&gt;&lt;img border="0" src="https://4.bp.blogspot.com/-X9SHW6Fox-M/XGSM4rj3r4I/AAAAAAAAEW8/x9OZWXifBeQqXEmOhTAmMXxG31BYAUl-gCLcBGAs/s1600/k104.jpg" data-original-width="119" data-original-height="200" /&gt;&lt;img border="0" src="https://4.bp.blogspot.com/-PW5PXuL_vZ4/XGSM4-7RynI/AAAAAAAAEXA/U2hDDLumPjYsrOoSe6WFNZlEkF4e7CqIQCLcBGAs/s1600/k105.jpg" data-original-width="119" data-original-height="200" /&gt;&lt;/p&gt;--&gt;&lt;p&gt;La casa editrice Ingenia ha prodotto negli anni passati varie mappe della Bergamasca con scale da 1:10000 a 1:25000, che sono ottime per l'utilizzo escursionistico sia a piedi che in MTB. Le puoi trovare online sui siti &lt;a href="http://www.libridimontagna.net/Editori/Ingenia"&gt;Libri Di Montagna&lt;/a&gt; ed &lt;a href="https://www.escursionista.it/catalogsearch/advanced/result/?name=&amp;editoredrop[]=5788"&gt;Escursionista&lt;/a&gt;. &lt;/p&gt;&lt;!-- &lt;p&gt;&lt;img border="0" src="https://3.bp.blogspot.com/-QrRVBziw3Rc/XGSN3S4UTrI/AAAAAAAAEXQ/RVNoMsSn4p8Zpaunxs6JDqVG8NfS7u2_ACLcBGAs/s1600/ing2.jpg" data-original-width="174" data-original-height="250" /&gt;&lt;img border="0" src="https://1.bp.blogspot.com/-yjRJfEDe_xg/XGSN3oVum7I/AAAAAAAAEXU/TEI1SzZgAGYNpclcR70ZypwZaRlm6m-swCLcBGAs/s1600/ing1.jpg" data-original-width="192" data-original-height="250" /&gt;&lt;img border="0" src="https://3.bp.blogspot.com/-kSZ-28dF06g/XGSN3xO9wWI/AAAAAAAAEXY/dkJ8HeJp55cnCS6KSxP9imu5BY8sSCOdwCLcBGAs/s1600/ing3.jpg" data-original-width="209" data-original-height="250" /&gt;&lt;/p&gt;--&gt;&lt;h3&gt;Online&lt;/h3&gt;&lt;p&gt;Per la consultazione online puoi utilizzare le mappe &lt;a href="https://www.cyclosm.org/#map=13/45.7687/9.6230"&gt;CyclOSM&lt;/a&gt;, basate su &lt;a href="https://www.openstreetmap.org/#map=12/45.7436/9.6632"&gt;OpenStreetMap&lt;/a&gt;, che visualizzano anche il &lt;a href="http://www.mtbbergamo.it/p/difficolta.html"&gt;livello di difficoltà&lt;/a&gt; per la MTB. Per l'escursionismo a piedi puoi usare la &lt;a href="https://hiking.waymarkedtrails.org/#?map=12!45.7724!9.6444"&gt;Waymarked Trails&lt;/a&gt; che permette di scaricare i GPX dei sentieri. &lt;/p&gt;&lt;p&gt;Ci sono anche la &lt;a href="http://geoportale.caibergamo.it/caibergamo_gfmaplet/"&gt;Carta Escursionistica della provincia di Bergamo&lt;/a&gt; del CAI e la versione online delle &lt;a href="https://www.kompass.de/wanderkarte/"&gt;Kompass&lt;/a&gt;, ma  ormai le mappe basate su OpenStreetmap sono decisamente migliori. &lt;p&gt; &lt;h3&gt;GPS e smartphone&lt;/h3&gt;&lt;/p&gt;Se utilizzi un dispositivo GPS dedicato, le mappe &lt;a href="https://openmtbmap.org/it/"&gt;OpenMTBMap&lt;/a&gt; sono la scelta migliore. Sono anch'esse basate su &lt;a href="https://www.openstreetmap.org/#map=12/45.7436/9.6632"&gt;OpenStreetMap&lt;/a&gt; ma dedicate all'utilizzo in MTB con indicazione del livello di difficoltà delle discese e salite. &lt;/p&gt;&lt;p&gt;Se invece utilizzi uno smartphone, le migliori applicazioni disponibili per Android probabilmente sono &lt;a href="https://osmand.net/"&gt;OSMAnd&lt;/a&gt; (più semplice), &lt;a href="https://www.oruxmaps.com/cs/en/"&gt;Oruxmaps&lt;/a&gt; (piu completa). In entrambe puoi caricare le mappe &lt;a href="https://www.openandromaps.org/en/downloads"&gt;OpenAndroMaps&lt;/a&gt; che con il tema &lt;i&gt;Elevate&lt;/i&gt; in configurazione &lt;i&gt;Mountainbike&lt;/i&gt; mostrano anch'esse il livello di difficoltà delle discese e salite. &lt;/p&gt;&lt;p&gt;E' da sottolineare che qualunque applicazione per smartphone utilizzi è fondamentale avere mappe pre-scaricate per non dipendere dalla connessione internet. &lt;/p&gt; &lt;!-- &lt;a href="http://ftp.mtbbergamo.it/test.zip" download&gt;test1 zip&lt;/a&gt;&lt;a href="http://ftp.mtbbergamo.it/test.zip" target="_blank"&gt;test2 zip&lt;/a&gt;&lt;a href="http://ftp.mtbbergamo.it/test.zip" download target="_blank"&gt;test3 zip&lt;/a&gt; &lt;a href="http://ftp.mtbbergamo.it/test.gpx" download&gt;test1 gpx&lt;/a&gt;&lt;a href="http://ftp.mtbbergamo.it/test.gpx" target="_blank"&gt;test2 gpx&lt;/a&gt;&lt;a href="http://ftp.mtbbergamo.it/test.gpx" download target="_blank"&gt;test3 gpx&lt;/a&gt; &lt;a href="http://ftp.mtbbergamo.it/test.gpx.gz" download&gt;test1 gz&lt;/a&gt;--&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6030940991691793295"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6030940991691793295"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/mappe.html" title="Mappe"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://3.bp.blogspot.com/-FVUxkEfSX-4/XGSPVxYWagI/AAAAAAAAEXo/NSCIrZXEt64CYN4a3EtZhqVSVcvNDLLZQCLcBGAs/s72-c/k104.jpg" height="72" width="72"/>
-  </entry>
-  <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.page-129204462732141012</id>
     <published>2022-04-02T16:33:00.000+02:00</published>
     <updated>2022-08-27T22:30:09.709+02:00</updated>
@@ -7445,24 +7645,6 @@ head.appendChild(script);
       <email>noreply@blogger.com</email>
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
     </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-8020907678493114285</id>
-    <published>2020-07-22T18:22:00.000+02:00</published>
-    <updated>2022-08-26T20:49:05.090+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Bassa Val Brembana</title>
-    <content type="html">&lt;p&gt;La bassa Val Brembana spazia dai dintorni della città offrendo una ricca e varia possibilità di escursioni dalle più facili alle più estreme. &lt;/p&gt; &lt;p&gt;Per bassa Val Brembana si intende la valle fino a &lt;i&gt;San Giovanni Bianco&lt;/i&gt;. I percorsi oltre &lt;i&gt;San Giovanni Bianco&lt;/i&gt; li trovi nella &lt;a href="http://www.mtbbergamo.it/p/alta-valle-brembana.html"&gt;Alta Val Brembana&lt;/a&gt; e &lt;a href="http://www.mtbbergamo.it/p/val-taleggio.html"&gt;Val Taleggio&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Una ricca raccolta di percorsi MTB in Val Brembana si trova nel sito  &lt;a href="http://www.percorsimtbvalbrembana.it/"&gt;percorsiMTBvalbrembana.it&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Se hai bisogno di informazioni specifiche puoi chiedere nel thread di &lt;a href="https://www.mtb-mag.com/forum/t/val-brembana-point.102016/page-209/"&gt;MTB Forum dedicato alla Val Brembana&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;La mappa delle sole salite la trovate in &lt;a href="http://www.mtbbergamo.it/2020/08/salite-valle-brembana.html"&gt;questa pagina&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2020/08/salite-valle-brembana.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=egZPijO_Nu4&amp;list=PL1m5GKi1aSOtUmOj66LSghzacsvjXVj1P"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;!-- &lt;div class="videotitle"&gt;Panorama da Vettarola &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/qFGxxC7dwW4?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; &lt;div class="videotitle"&gt;Panorama dalla pachina gigante di Santa Croce &lt;/div&gt;&lt;div class="videobox"&gt;&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/oMyaBCqwgLM?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;--&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'bassa_brembana'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8020907678493114285"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8020907678493114285"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/valle-brembana.html" title="Bassa Val Brembana"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/qFGxxC7dwW4/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.page-8541137947062939831</id>
@@ -7491,193 +7673,6 @@ head.appendChild(script);
     <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/9034321160210970840"/>
     <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/9034321160210970840"/>
     <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/ciclabilita.html" title="Ciclabilità"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-6890917005904254364</id>
-    <published>2021-04-19T17:01:00.000+02:00</published>
-    <updated>2022-05-16T20:10:43.962+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Val Cavallina</title>
-    <content type="html">&lt;p&gt;La Val Cavallina è la valle del fiume Cherio che dal Lago di Endine scende fino ai pressi di Bergamo. &lt;/p&gt; &lt;p&gt;Una raccolta di percorsi MTB in Val Cavallina si trova nel sito  &lt;a href="http://stezzanobiker.altervista.org/valcavallina/index.html"&gt;MTB Stezzano&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2021/04/salite-val-cavallina.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=QjHQ6234wxY&amp;list=PL1m5GKi1aSOu_2ILPBjp2LqCR1j411ELQ"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'cavallina'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6890917005904254364"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6890917005904254364"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/valle-cavallina.html" title="Val Cavallina"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-5378927853840289375</id>
-    <published>2022-01-01T16:58:00.000+01:00</published>
-    <updated>2022-04-13T21:10:52.619+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Media Val Seriana</title>
-    <content type="html">&lt;p&gt;Per media Val Seriana si intende la valle oltre &lt;i&gt;Gazzaniga&lt;/i&gt;, non più facilmente raggiungibile da Bergamo in bicicletta per la distanza che inizia ad essere elevata. Con poco traffico ci vogliono circa 25 minuti per raggiungere &lt;i&gt;Vertova&lt;/i&gt; da &lt;i&gt;Bergamo&lt;/i&gt;. &lt;/p&gt; &lt;p&gt;I percorsi prima di &lt;i&gt;Gazzaniga&lt;/i&gt; li trovi nella &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Bassa Val Seriana&lt;/a&gt;.   &lt;/p&gt; &lt;p style="color:red"&gt;La selezione di sentieri è ancora molto incompleta! Pian piano verrà estesa. &lt;/p&gt; &lt;p&gt;Una ricca raccolta di percorsi MTB in Val Seriana si trovano nei siti  &lt;a href="https://www.valleserianabike.it/"&gt;ValleSerianaBike.it&lt;/a&gt; e &lt;a href="https://www.orangemtb.com/"&gt;Orange MTB&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2019/03/salite-valle-seriana.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=UuQQpwv4SBM&amp;list=PL1m5GKi1aSOv36x6zdajhfKswegJdYvH0"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'media_seriana'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/5378927853840289375"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/5378927853840289375"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/media-valle-seriana.html" title="Media Val Seriana"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-6438529019463434628</id>
-    <published>2020-06-10T19:06:00.000+02:00</published>
-    <updated>2022-04-13T21:10:41.010+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Bassa Val Seriana</title>
-    <content type="html">&lt;p&gt;La Val Seriana è una delle mete preferite dai Bergamaschi per la vicinanza alla città, e per l'ottima esposizione. &lt;/p&gt; &lt;p&gt;Per bassa Val Seriana si intende la valle fino a &lt;i&gt;Gazzaniga&lt;/i&gt;. I percorsi oltre &lt;i&gt;Gazzaniga&lt;/i&gt; li trovi nella &lt;a href="http://www.mtbbergamo.it/p/media-valle-seriana.html"&gt;Media Val Seriana&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Data la fitta rete sentieristica, oltre alle tracce principali, molte varianti sono state organizzate nelle sotto sezioni di &lt;a href="http://www.mtbbergamo.it/2019/04/lonno.html"&gt;Lonno&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Tramite la ciclabile è possibile raggiungere in bici i percorsi direttamente da Bergamo senza l'assillo del traffico automobilistico. In alternativa alla ciclabile è anche possibile prendere la &lt;a href="http://www.teb.bergamo.it/it/il-mio-viaggio/in-bici-sul-tram"&gt;tramvia elettrica&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Se si vuole evitare la fatica della salita su asfalto, si può anche usufruire della &lt;a href="https://comunediselvino.it/menu/64205/funivia-albino-selvino"&gt;Funivia Albino Selvino&lt;/a&gt; (riaperta il 24 Luglio 2019), e della &lt;a href="https://www.montepoieto.it/la-cabinovia/"&gt;Cabinovia del Monte Poieto&lt;/a&gt; che combinate permettono di raggiungere i 1360m della cima del Monte Poieto. &lt;/p&gt; &lt;p&gt;Una ricca raccolta di percorsi MTB in Val Seriana si trovano nei siti  &lt;a href="https://www.valleserianabike.it/"&gt;ValleSerianaBike.it&lt;/a&gt; e &lt;a href="https://www.orangemtb.com/"&gt;Orange MTB&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;La valle è anche sede della &lt;a href="http://www.valserianamarathon.it/"&gt;VALSERIANA Marathon&lt;/a&gt; che si svolge a Maggio. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2019/03/salite-valle-seriana.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=UuQQpwv4SBM&amp;list=PL1m5GKi1aSOv36x6zdajhfKswegJdYvH0"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'bassa_seriana'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6438529019463434628"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6438529019463434628"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/valle-seriana.html" title="Bassa Val Seriana"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-6672595659076829759</id>
-    <published>2021-08-02T19:09:00.000+02:00</published>
-    <updated>2022-04-13T21:10:29.682+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Alta Val Brembana</title>
-    <content type="html">&lt;p&gt;Per alta Val Breambana si intende la valle oltre &lt;i&gt;San Giovanni Bianco&lt;/i&gt;. Con la recente galleria di Zogno e la nuova superstrada Treviolo-Paladina ci vogliono circa 35 minuti per raggiungere &lt;i&gt;Piazza Brembana&lt;/i&gt; da &lt;i&gt;Bergamo&lt;/i&gt;. &lt;/p&gt; &lt;p&gt;I percorsi prima di &lt;i&gt;San Giovanni Bianco&lt;/i&gt; li trovi nella &lt;a href="http://www.mtbbergamo.it/p/valle-brembana.html"&gt;Bassa Val Brembana&lt;/a&gt; e in &lt;a href="http://www.mtbbergamo.it/p/val-taleggio.html"&gt;Val Taleggio&lt;/a&gt;.  &lt;/p&gt; &lt;p&gt;Una ricca raccolta di percorsi MTB in Val Brembana si trova nel sito  &lt;a href="http://www.percorsimtbvalbrembana.it/"&gt;percorsiMTBvalbrembana.it&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Se hai bisogno di informazioni specifiche puoi chiedere nel thread di &lt;a href="https://www.mtb-mag.com/forum/t/val-brembana-point.102016/page-209/"&gt;MTB Forum dedicato alla Val Brembana&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2020/08/salite-valle-brembana.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=egZPijO_Nu4&amp;list=PL1m5GKi1aSOtUmOj66LSghzacsvjXVj1P"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'alta_brembana'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6672595659076829759"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/6672595659076829759"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/alta-valle-brembana.html" title="Alta Val Brembana"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-4290629698892057325</id>
-    <published>2022-04-11T20:59:00.000+02:00</published>
-    <updated>2022-04-13T21:09:56.281+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Val Taleggio</title>
-    <content type="html">&lt;p&gt;Con la recente galleria di Zogno e la nuova superstrada Treviolo-Paladina ci vogliono circa 40 minuti per raggiungere &lt;i&gt;Sottochiesa&lt;/i&gt; da &lt;i&gt;Bergamo&lt;/i&gt;. Per i percorsi in zona &lt;i&gt;Morterone&lt;/i&gt; l'accesso più diretto è dalla &lt;a href="http://www.mtbbergamo.it/p/valle-imagna.html"&gt;Valle Imagna&lt;/a&gt; da &lt;i&gt;Fuipiano&lt;/i&gt; raggiungibile in 45 minuti da &lt;i&gt;Bergamo&lt;/i&gt;. &lt;/p&gt; &lt;p&gt;Altri percorsi MTB in Val Taleggio si trovano nel sito  &lt;a href="http://www.percorsimtbvalbrembana.it/"&gt;percorsiMTBvalbrembana.it&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Se hai bisogno di informazioni specifiche puoi chiedere nel thread di &lt;a href="https://www.mtb-mag.com/forum/t/val-brembana-point.102016/page-209/"&gt;MTB Forum dedicato alla Val Brembana&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2020/08/salite-valle-brembana.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=ksJCJuCZN8k&amp;list=PL1m5GKi1aSOtw8NdQW1vfRMaARwEb1B5M"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'taleggio'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/4290629698892057325"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/4290629698892057325"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/val-taleggio.html" title="Val Taleggio"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-8071814843114685363</id>
-    <published>2020-05-28T22:31:00.000+02:00</published>
-    <updated>2022-04-13T21:09:45.362+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Valle Imagna</title>
-    <content type="html">&lt;p&gt;La Valle Imagna possiede una vasta rete di sentieri che si presta ad escursioni in MTB All-Mountain fino alla vetta del &lt;a href="http://www.mtbbergamo.it/2021/09/vetta-resegone.html"&gt;Resegone&lt;/a&gt;. Con poco traffico ci vogliono circa 30 minuti per raggiungere &lt;i&gt;Sant Omobono Terme&lt;/i&gt; da &lt;i&gt;Bergamo&lt;/i&gt;. &lt;/p&gt;&lt;p&gt;Come per la &lt;a href="http://www.mtbbergamo.it/p/valle-san-martino.html"&gt;Valle San Martino&lt;/a&gt;, si tratta perlopiù di percorsi alpini impegnativi, sia in salita che in discesa, che è meglio affrontare preparati, con adeguate protezioni ed equipaggiamento. Una MTB full è caldamente consigliata, se non necessaria. &lt;/p&gt; &lt;p&gt;Data la fitta rete sentieristica, oltre alle tracce principali, molte varianti sono state organizzate nelle sotto sezioni di &lt;a href="http://www.mtbbergamo.it/2019/04/roncola.html"&gt;Roncola San Bernardo&lt;/a&gt;, &lt;a href="http://www.mtbbergamo.it/2019/06/rota-imagna.html"&gt;Rota d'Imagna&lt;/a&gt;, &lt;a href="http://www.mtbbergamo.it/2019/07/vanzarolo.html"&gt;Vanzarolo&lt;/a&gt; e &lt;a href="http://www.mtbbergamo.it/2019/07/locatello.html"&gt;Locatello&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Se hai bisogno di informazioni specifiche puoi chiedere nel thread di &lt;a href="https://www.mtb-mag.com/forum/threads/valle-imagna-point-nuovo-portale-e-news.78546/"&gt;MTB Forum dedicato alla Valle Imagna&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2018/12/salite-imagna.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=ikg9UpvdfgQ&amp;list=PL1m5GKi1aSOuJrd_Z0aDMj6sDXl4Innjo"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'imagna'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8071814843114685363"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8071814843114685363"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/valle-imagna.html" title="Valle Imagna"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-8996960218431449059</id>
-    <published>2020-05-29T21:37:00.000+02:00</published>
-    <updated>2022-04-13T21:09:33.172+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Valle San Martino</title>
-    <content type="html">&lt;p&gt;La Valle San Martino, ed in particolare il monte Albenza, è la meta più vicina a Bergamo per percorsi MTB All-Mountain. Con poco traffico ci vogliono circa 25 minuti per raggiungere &lt;i&gt;Burligo&lt;/i&gt; da &lt;i&gt;Bergamo&lt;/i&gt;. &lt;/p&gt;   &lt;p&gt;   Come per la &lt;a href="http://www.mtbbergamo.it/p/valle-imagna.html"&gt;Valle Imagna&lt;/a&gt;, si tratta perlopiù di percorsi alpini impegnativi, sia in salita che in discesa, che è meglio affrontare preparati, con adeguate protezioni ed equipaggiamento. Una MTB full è caldamente consigliata, se non necessaria. &lt;/p&gt;&lt;p&gt;Data la fitta rete sentieristica, oltre alle tracce principali, molte varianti sono state organizzate nelle sotto sezioni di &lt;a href="http://www.mtbbergamo.it/2020/01/corna-martinella.html"&gt;Corna Martinella&lt;/a&gt;, &lt;a href="http://www.mtbbergamo.it/2019/12/colle-di-sogno.html"&gt;Colle di Sogno&lt;/a&gt;, &lt;a href="http://www.mtbbergamo.it/2020/01/coldara.html"&gt;Coldara&lt;/a&gt;, &lt;a href="http://www.mtbbergamo.it/2019/04/colle-pedrino.html"&gt;Colle Pedrino&lt;/a&gt; e &lt;a href="http://www.mtbbergamo.it/2019/04/roncola.html"&gt;Roncola San Bernardo&lt;/a&gt;.  &lt;/p&gt;&lt;p&gt;Il monte Albenza la separa dalla &lt;a href="http://www.mtbbergamo.it/p/valle-imagna.html"&gt;Valle Imagna&lt;/a&gt; con cui condivide alcuni percorsi qui segnalati. La Valle San Martino ha il pregio di un' ottima esposizione al sole, che la rende ideale per il periodo invernale, grazie ad una più facile asciugatura dei sentieri. &lt;/p&gt;&lt;p&gt;Sul lato opposto la valle è delimitata dal &lt;a href="http://www.mtbbergamo.it/p/monte-canto.html"&gt;Monte Canto&lt;/a&gt; che ha percorsi con caratteristiche più flow. &lt;/p&gt;&lt;p&gt;A Monte Marenzo c'è il &lt;a href="https://lamponpark.blogfree.net/"&gt;LamponPark&lt;/a&gt;, un bel trail con salti e pump track, gratuito e aperto tutti i giorni.   &lt;!-- https://lamponpark.blogfree.net/?t=5617885 --&gt;&lt;/p&gt;&lt;p&gt;Se hai bisogno di informazioni più specifiche, puoi chiedere nel thread di &lt;a href="https://www.mtb-mag.com/forum/threads/thread-ufficiale-della-valcava.283680/"&gt;MTB Forum dedicato a Valcava&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;Ulteriori informazioni sui sentieri della valle si possono anche trovare sul sito della &lt;a href="https://www.cmlariosanmartino.movimentolento.it/it/resource/track/category/piedi/"&gt;Comunità Montana&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2018/12/salite-san-martino.html"&gt;la mappa delle salite&lt;/a&gt; e &lt;a href="https://www.youtube.com/watch?v=vUeKl_KYsvM&amp;list=PL1m5GKi1aSOsCwNbTtKzwbH3Wt4UvYxIV"&gt;la raccolta di panorami della valle&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'martino'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8996960218431449059"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8996960218431449059"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/valle-san-martino.html" title="Valle San Martino"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-671321837611946696</id>
-    <published>2019-10-03T14:49:00.001+02:00</published>
-    <updated>2022-04-13T21:08:18.432+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Monte Canto</title>
-    <content type="html">&lt;p&gt;Il &lt;i&gt;Monte Canto&lt;/i&gt; presenta percorsi MTB di tutti i generi, dai più flow, come l' &lt;a href="http://www.mtbbergamo.it/2019/02/uccellaia.html"&gt;Uccellaia&lt;/a&gt; ed il &lt;a href="http://www.mtbbergamo.it/2021/05/canyon.html"&gt;Canyon&lt;/a&gt;, ai misti come il &lt;a href="http://www.mtbbergamo.it/2019/02/kompressor.html"&gt;Kompressor&lt;/a&gt; e il &lt;a href="http://www.mtbbergamo.it/2019/02/rocce-muschio.html"&gt;Lame Rotanti&lt;/a&gt;, ed il tostissimo &lt;a href="http://www.mtbbergamo.it/2019/02/scalette.html"&gt;Scalette&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;Se siete alle prime esperienze si consiglia il &lt;a href="http://www.mtbbergamo.it/2020/02/biglietto-da-visita.html"&gt;Biglietto da Visita&lt;/a&gt; per farsi una idea dei sentieri del &lt;i&gt;Monte Canto&lt;/i&gt;. &lt;/p&gt;&lt;p&gt;Una MTB front permette di affrontare la maggior parte dei sentieri. La limitata altitudine dei 710m della cima del Monte Canto lo rende una meta ideale per i periodi freddi, e permette anche due risalite in mezza giornata. In particolare le discese del lato Sud, sono ben esposte al Sole e si asciugano in fretta. Il lato Nord è fruibile solo nei periodi più asciutti. &lt;/p&gt;&lt;p&gt;Se questi percorsi non vi bastano, potete consultare l'ottimo sito &lt;a href="http://montecanto.altervista.org/WordPress/"&gt;Sentieri del Monte Canto&lt;/a&gt; che elenca e descrive proprio tutti i sentieri per MTB! &lt;/p&gt;&lt;p&gt;Mappe da scaricare e stampare si possono trovate sul sito del &lt;a href="http://inaltoup.altervista.org/html/mappa_canto.htm"&gt;CAI Vimercate&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;Se avete bisogno di ulteriori informazioni, potete chiedere nel thread di &lt;a href="https://community.mtb-mag.com/t/quelli-del-monte-canto-lavventura-continua.396231/"&gt;MTB Forum dedicato al Monte Canto &lt;/a&gt; dove bazzicano molti biker che si dedicano alla pulizia dei sentieri. &lt;/p&gt; &lt;p&gt;Ogni anno, in primavera, il Monte Canto è sede della gara podistica &lt;a href="http://www.skydelcanto2.it/"&gt;SKY del Canto&lt;/a&gt; che si svolge su un percorso ad anello di 22 km e 1300m di dislivello che si può riconoscere dai numerosi cartelli SKY che si vedono lungo i sentieri. Ovviamente il giorno della gara non è possibile girare in MTB. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2019/02/salite-monte-canto.html"&gt;la mappa delle salite&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'canto'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/671321837611946696"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/671321837611946696"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/monte-canto.html" title="Monte Canto"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-8333227843128009505</id>
-    <published>2019-06-26T21:24:00.001+02:00</published>
-    <updated>2022-04-13T21:08:02.834+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Maresana</title>
-    <content type="html">&lt;p&gt;La collina della Maresana, data la sua vicinanza alla città, è una delle palestre MTB più frequentate dai bergamaschi.  Presenta percorsi MTB di tutti i generi, dai più flow, come la &lt;a href="http://www.mtbbergamo.it/2018/11/bruna.html"&gt;Bruna&lt;/a&gt;, ai più tecnici come il &lt;a href="http://www.mtbbergamo.it/2018/11/533-filone.html"&gt;Filone&lt;/a&gt; o il &lt;a href="http://www.mtbbergamo.it/2018/11/604.html"&gt;604&lt;/a&gt;. Per la maggior parte dei percorsi una MTB full è consigliata, ma si trovano percorsi anche per MTB front. Data la limitata altitudine di 726m del Colle Di Ranica, è ottima per giri di mezza giornata dove è anche possibile prevedere due risalite. &lt;/p&gt;&lt;p&gt;La zona è anche molto frequentata da escursionisti a piedi, occorre quindi fare molta attenzione, specialmente nei week-end di bel tempo per evitare spiacevoli &lt;a href="https://www.ecodibergamo.it/stories/bergamo-citta/maresana-invasa-dalle-mountain-bikeproblema-di-sicurezza-sui-sentieri_1176898_11/"&gt;lamentele&lt;/a&gt; e &lt;a href="https://www.ecodibergamo.it/stories/hinterland/maresana-assedio-di-mountain-bikerischio-incidenti-scattano-i-divieti_1187027_11/"&gt;divieti&lt;/a&gt; come al sentiero &lt;a href="http://www.mtbbergamo.it/2018/11/533-illegale.html"&gt;Illegale&lt;/a&gt;.  &lt;/p&gt;&lt;p&gt;Negli anni è stata sede di varie gare Enduro, tra cui le &lt;a href="https://www.endurocuplombardia.it/site/event/petosino-bg/"&gt;Enduro Cup Lombardia 2015&lt;/a&gt; e &lt;a href="http://www.endurocuplombardia.it/site/event/ecl16-petosino-bg/"&gt;2016&lt;/a&gt;, e la &lt;a href="https://e-enduro.it/en/2018/09/05/gpx-tracks-bergamo-the-fourth-round-of-the-e-enduropowered-by-specialized/"&gt;E-Enduro 2018&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;In Maresana è disponibile un servizio bus Navetta per MTB organizzato dall' &lt;a href="https://www.facebook.com/LIVESLOWRIDEFAST/"&gt;ORIO Gravity PARK&lt;/a&gt; che si occupa anche della manutenzione di molti sentieri. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2018/11/salite-maresana.html"&gt;la mappa delle salite&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'maresana'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8333227843128009505"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/8333227843128009505"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/maresana.html" title="Maresana"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-7456450945174822363</id>
-    <published>2019-07-04T07:24:00.000+02:00</published>
-    <updated>2022-04-13T21:07:13.421+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Colli di Bergamo</title>
-    <content type="html">&lt;p&gt;I Colli di Bergamo, data la vicinanza alla città, sono una delle mete principali per MTB durante la settimana. I percorsi sono principalmente flow come i famosi &lt;a href="http://www.mtbbergamo.it/2018/12/roccolone.html"&gt;Roccolone&lt;/a&gt; e &lt;a href="http://www.mtbbergamo.it/2018/12/allegrezza.html"&gt;Allegrezza&lt;/a&gt; ma c'è ne sono anche di tecnici come il &lt;a href="http://www.mtbbergamo.it/2018/12/910.html"&gt;910&lt;/a&gt;. In ogni caso la difficoltà non supera mai il livello S1 / BC e tutti i percorsi si possono fare anche con MTB front. E' l'ideale per brevi giri serali di una, due ore, e con l'adeguata illuminazione, anche notturni. &lt;/p&gt; &lt;p&gt;La zona è molto frequentata da escursionisti a piedi, fate molta attenzione, specialmente nei week-end di bel tempo. &lt;/p&gt; &lt;p&gt;Se siete principianti, la discesa del &lt;a href="http://www.mtbbergamo.it/2018/12/roccolone.html"&gt;Roccolone&lt;/a&gt; sarà quelle che farete più spesso, aggiungendoci una variante dopo l'altra. Quando vi sentirete sicuri nel fare il &lt;a href="http://www.mtbbergamo.it/2018/12/910.html"&gt;910&lt;/a&gt; vorrà dire che siete pronti per nuove mete come la &lt;a href="http://www.mtbbergamo.it/p/maresana.html"&gt;Maresana&lt;/a&gt; o il &lt;a href="http://www.mtbbergamo.it/p/monte-canto.html"&gt;Monte Canto&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2018/12/salite-colli-bergamo.html"&gt;la mappa delle salite&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'colli'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/7456450945174822363"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/7456450945174822363"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/colli-di-bergamo.html" title="Colli di Bergamo"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//4.bp.blogspot.com/-Wmq99uNwpTQ/XqQxWpUDZiI/AAAAAAAAEsQ/H3ny6-2fejIufDunUwmlTJF8X1GRSG_sgCK4BGAYYCw/s32/avatar_2014-2_256.png"/>
-    </author>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-644484164600315902</id>
-    <published>2019-06-26T21:24:00.002+02:00</published>
-    <updated>2022-04-13T21:04:01.238+02:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Sorisole</title>
-    <content type="html">&lt;p&gt;Sorisole presenta alcuni percorsi MTB molto interessanti, compresa una &lt;a href="http://www.mtbbergamo.it/2018/12/pista-downhill.html"&gt;Pista di Downhill&lt;/a&gt; realizzata dai &lt;a href="http://www.bikerspetosino.it/"&gt;Biker Petosino&lt;/a&gt;. Confina con la collina della &lt;a href="http://www.mtbbergamo.it/p/maresana.html"&gt;Maresana&lt;/a&gt; e sono possibili varie combinazioni di percorsi. &lt;/p&gt;&lt;p&gt;L'esposizione, come suggerisce il nome Sorisole, è ottima, e facilita l'asciugatura dei percorsi esposti a Sud. &lt;/p&gt;&lt;p&gt;Negli anni è stata sede di varie gare Enduro, tra cui le &lt;a href="https://www.endurocuplombardia.it/site/event/petosino-bg/"&gt;Enduro Cup Lombardia 2015&lt;/a&gt;, &lt;a href="http://www.endurocuplombardia.it/site/event/ecl16-petosino-bg/"&gt;2016&lt;/a&gt; e del &lt;a href="https://www.mtbcult.it/94425/altra-doppietta-per-i-fratelli-lupato-a-petosino-bg/?fbclid=IwAR0y_zsRGu4oul-4oEgkcju8npeq1K-_Dya8h0mQb2EwoNJmtqHCFZMJrR4"&gt;3° Trofeo Enduro DF Sport Specialist di Petosino (BG) 2017&lt;/a&gt;. &lt;/p&gt; &lt;p&gt;Guarda anche &lt;a href="http://www.mtbbergamo.it/2019/06/salite-sorisole.html"&gt;la mappa delle salite&lt;/a&gt;. &lt;/p&gt; &lt;div id="mapid" class="mapbox"&gt;&lt;/div&gt; &lt;div id="info_header"&gt;&lt;/div&gt; &lt;link href="http://ftp.mtbbergamo.it/all.css" rel="stylesheet"&gt;&lt;/link&gt;&lt;script src="http://ftp.mtbbergamo.it/all.js"&gt;&lt;/script&gt; &lt;script type="application/javascript"&gt;  var page_map = create_map_zone('mapid');   var page_control = create_control_group(page_map);   create_zone(page_map, page_control, 'sorisole'); &lt;/script&gt;</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/644484164600315902"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/644484164600315902"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/sorisole.html" title="Sorisole"/>
     <author>
       <name>Andrea</name>
       <uri>https://www.blogger.com/profile/10311923148019903122</uri>
