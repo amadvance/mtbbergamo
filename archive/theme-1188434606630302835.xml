@@ -584,7 +584,7 @@ body.mobile  {
 ]]></b:skin>
 
     <b:template-skin>
-      <b:variable default='960px' name='content.width' type='length' value='1200px'/>
+      <b:variable default='960px' name='content.width' type='length' value='1024px'/>
       <b:variable default='0' name='main.column.left.width' type='length'/>
       <b:variable default='310px' name='main.column.right.width' type='length' value='210px'/>
 
@@ -595,7 +595,8 @@ body.mobile  {
 
       .content-outer, .content-fauxcolumn-outer, .region-inner {
         min-width: $(content.width);
-        max-width: $(content.width);
+        /* max-width: $(content.width); REMOVED FOR FULL WIDTH */
+        max-width: 1440px;
         _width: $(content.width);
       }
 
@@ -772,13 +773,13 @@ head.appendChild(script);
       <b:section class='header' id='header' maxwidgets='1' name='Header' showaddelement='no'>
         <b:widget id='Header1' locked='true' title='MTB Bergamo (Intestazione)' type='Header'>
           <b:widget-settings>
-            <b:widget-setting name='displayUrl'>http://1.bp.blogspot.com/-YB1Uo0SagxA/XAru4eFD1qI/AAAAAAAAERU/b3Cfn_vdFmUrZsZ-r3xI7CIptESJO0d8wCK4BGAYYCw/s1600/title_resegone_wip.jpg</b:widget-setting>
-            <b:widget-setting name='displayHeight'>226</b:widget-setting>
+            <b:widget-setting name='displayUrl'>https://raw.githubusercontent.com/amadvance/mtbbergamo/master/www/img/title.jpg</b:widget-setting>
+            <b:widget-setting name='displayHeight'>151</b:widget-setting>
             <b:widget-setting name='sectionWidth'>752</b:widget-setting>
             <b:widget-setting name='useImage'>true</b:widget-setting>
             <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
             <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
-            <b:widget-setting name='displayWidth'>1024</b:widget-setting>
+            <b:widget-setting name='displayWidth'>1600</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
 
@@ -867,7 +868,7 @@ head.appendChild(script);
       <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'>
         <b:widget id='PageList2' locked='false' title='Zone' type='PageList'>
           <b:widget-settings>
-            <b:widget-setting name='pageListJson'><![CDATA[{"6890917005904254364":{"href":"http://www.mtbbergamo.it/p/valle-cavallina.html","position":11,"title":"Cavallina"},"5378927853840289375":{"href":"http://www.mtbbergamo.it/p/media-valle-seriana.html","position":10,"title":"Media Seriana"},"8333227843128009505":{"href":"http://www.mtbbergamo.it/p/maresana.html","position":1,"title":"Maresana"},"8996960218431449059":{"href":"http://www.mtbbergamo.it/p/valle-san-martino.html","position":4,"title":"San Martino"},"8071814843114685363":{"href":"http://www.mtbbergamo.it/p/valle-imagna.html","position":5,"title":"Imagna"},"8020907678493114285":{"href":"http://www.mtbbergamo.it/p/valle-brembana.html","position":7,"title":" Brembana"},"671321837611946696":{"href":"http://www.mtbbergamo.it/p/monte-canto.html","position":3,"title":"Monte Canto"},"4290629698892057325":{"href":"http://www.mtbbergamo.it/p/val-taleggio.html","position":6,"title":"Taleggio"},"6672595659076829759":{"href":"http://www.mtbbergamo.it/p/alta-valle-brembana.html","position":8,"title":"Alta Brembana"},"6438529019463434628":{"href":"http://www.mtbbergamo.it/p/valle-seriana.html","position":9,"title":"Seriana"},"7456450945174822363":{"href":"http://www.mtbbergamo.it/p/colli-di-bergamo.html","position":0,"title":"Colli"},"644484164600315902":{"href":"http://www.mtbbergamo.it/p/sorisole.html","position":2,"title":"Sorisole"}}]]></b:widget-setting>
+            <b:widget-setting name='pageListJson'><![CDATA[{"6890917005904254364":{"href":"http://www.mtbbergamo.it/p/valle-cavallina.html","position":11,"title":"Cavallina"},"5378927853840289375":{"href":"http://www.mtbbergamo.it/p/media-valle-seriana.html","position":10,"title":"Media Seriana"},"8333227843128009505":{"href":"http://www.mtbbergamo.it/p/maresana.html","position":1,"title":"Maresana"},"8996960218431449059":{"href":"http://www.mtbbergamo.it/p/valle-san-martino.html","position":4,"title":"San Martino"},"8071814843114685363":{"href":"http://www.mtbbergamo.it/p/valle-imagna.html","position":5,"title":"Imagna"},"8020907678493114285":{"href":"http://www.mtbbergamo.it/p/valle-brembana.html","position":7,"title":"Brembana"},"671321837611946696":{"href":"http://www.mtbbergamo.it/p/monte-canto.html","position":3,"title":"Monte Canto"},"4290629698892057325":{"href":"http://www.mtbbergamo.it/p/val-taleggio.html","position":6,"title":"Taleggio"},"6672595659076829759":{"href":"http://www.mtbbergamo.it/p/alta-valle-brembana.html","position":8,"title":"Alta Brembana"},"6438529019463434628":{"href":"http://www.mtbbergamo.it/p/valle-seriana.html","position":9,"title":"Seriana"},"7456450945174822363":{"href":"http://www.mtbbergamo.it/p/colli-di-bergamo.html","position":0,"title":"Colli"},"644484164600315902":{"href":"http://www.mtbbergamo.it/p/sorisole.html","position":2,"title":"Sorisole"}}]]></b:widget-setting>
             <b:widget-setting name='homeTitle'>Home page</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
