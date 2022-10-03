@@ -156,7 +156,7 @@ function create_waymarkedtrails(map, control) {
 		attribution: '&copy; <a href="http://waymarkedtrails.org">Sarah Hoffmann</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
 	});
 
-	control.addOverlay(myhiking, "Sentieri CAI");
+	control.addOverlay(myhiking, "Sentieri CAI e Comunali");
 
 	return myhiking;
 }
