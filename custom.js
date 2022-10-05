@@ -12,6 +12,42 @@ var WEB = 'http://www.mtbbergamo.it/';
 var ARCHIVE_BACKUP = 'http://ftp.mtbbergamo.it/';
 var ARCHIVE = 'https://raw.githubusercontent.com/amadvance/mtbbergamo/master/www/';
 
+/*
+ * Allow cross-domain download
+ *
+ * https://stackoverflow.com/questions/49474775/chrome-65-blocks-cross-origin-a-download-client-side-workaround-to-force-down
+ *
+ * At present disable as it doesn't work on Android.
+ * The files gets renamed to .txt in Firefox, or blob:xxxxxxxxxxxxxx in Chrome.
+ *
+ * Note that instead it's working correctly on PC, from Firefox/Chrome/Edge.
+ */
+function force_download(blob, filename) {
+  var a = document.createElement('a');
+  a.href = blob;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+
+function trigger_download(url) {
+  filename = url.split('\\').pop().split('/').pop();
+
+  fetch(url, {
+      headers: new Headers({
+        'Origin': location.origin
+      }),
+      mode: 'cors'
+    })
+    .then(response => response.blob())
+    .then(blob => {
+      let blobUrl = window.URL.createObjectURL(new Blob([blob], {type: "application/gpx+xml"}));
+      force_download(blobUrl, filename);
+    })
+    .catch(e => console.error(e));
+}
+
 function _merge_fields(a, b) {
 	var _ = {};
 	for (var attr in a) { _[attr] = a[attr]; }
@@ -24,14 +60,38 @@ function get_track_name(index)
 	return TRACKS[index].name;
 }
 
-function get_track_zip(index)
+function get_track_gpx(index)
 {
 	var url = ARCHIVE + 'gpx/' + TRACKS[index].file;
 
-	/* replace both dir gpx and redux */
-	var zip = url.replace(/gpx/g,"zip").replace(/redux/g,"zip")
+	return url;
+}
+
+function get_track_zip(index)
+{
+	var url = get_track_gpx(index);
+
+	/* replace both dir and extension from gpx to zip */
+	var zip = url.replace(/gpx/g,"zip");
 
 	return zip;
+}
+
+function get_track_anchor_zip(index, text)
+{
+	return "<a href=\"" + get_track_zip(index) + "\" download>" + text + "</a>"
+}
+
+function get_track_anchor_blob(index, text)
+{
+	var gpx = get_track_gpx(index);
+
+	return "<a href=\"/gpx/" + TRACKS[index].file + "\" onclick=\"trigger_download('" + gpx + "'); return false;\">" + text + "</a>";
+}
+
+function get_track_anchor(index, text)
+{
+	return get_track_anchor_blob(index, text);
 }
 
 function get_track_vote(index)
@@ -298,11 +358,8 @@ function create_gpx_info(map, control, gpx, url, index, link)
 		}
 	}
 
-	/* replace both dir gpx and redux */
-	var zip = url.replace(/gpx/g,"zip").replace(/redux/g,"zip")
-
 	desc += "<br/>";
-	desc += "<a href=\"" + zip + "\" download>Download GPX</a>";
+	desc += get_track_anchor(index, "Download GPX");
 	gpx.bindPopup(desc);
 
 	if (control.gr === null) {
@@ -612,7 +669,7 @@ function setup_down(index)
 	html += "<b>Giudizio: " + get_track_vote(index) + "</b><br/>";
 	html += "<b>Difficolt\u00E0: " + get_track_rate(index) + "</b>" + get_track_rate_max(index) + "<br/>";
 	html += "<b>Tempo in sella:<!--DISCESA--> " + get_track_cycle(index) + "</b><!--SALITA--><br/>";
-	html += "<b>Download GPX: </b><a href=\"" + get_track_zip(index) + "\" download><b>" + get_track_name(index) + "</b></a>";
+	html += "<b>Download GPX: </b>" + get_track_anchor(index,"<b>" + get_track_name(index) + "</b>");
 
 	element.innerHTML = html;
 }
@@ -631,7 +688,7 @@ function setup_up(index)
 
 	var html = element.innerHTML;
 
-	html += ", <a href=\"" + get_track_zip(index) + "\" download>" + get_track_name(index) + "</a>";
+	html += ", " + get_track_anchor(index, get_track_name(index));
 
 	var cycle = get_track_cycle(index);
 	if (cycle != "" && cycle != "100%") {
@@ -671,7 +728,7 @@ function setup_multi()
 		html += "<b>" + get_track_name(index) + "</b><br/>";
 		html += "&nbsp;&nbsp;&nbsp;&nbsp;" + get_track_vote(index) + ", ";
 		html += get_track_rate(index) + get_track_rate_max(index);
-		html += ", <a href=\"" + get_track_zip(index) + "\" download>download GPX</a>";
+		html += ", " + get_track_anchor(index, "download GPX");
 		html += "</br>";
 	}
 
@@ -679,7 +736,7 @@ function setup_multi()
 		var index = multi_up_set[i];
 		html += "<b>" + get_track_name(index) + "</b><br/>";
 		html += "&nbsp;&nbsp;&nbsp;&nbsp;";
-		html += "<a href=\"" + get_track_zip(index) + "\" download>download GPX</a>";
+		html += get_track_anchor(index, "download GPX");
 		html += "</br>";
 	}
 
