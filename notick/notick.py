@@ -16,44 +16,60 @@
 # python3 notick.py XXX.wav XXX_notick.wav
 # ffmpeg -i XXX.mp4 -i XXX_notick.wav -c:v copy -map 0:v:0 -map 1:a:0 XXX_notick.mp4
 #
+#
+# To fix manually missed ticks you can do it with audacity:
+# - Load the track and identify the tick using the Spectrogram
+# - Select the frequency range to clear
+# - Select Effect/Pluging 1-15/Spectral Delete
+#
+# You can also do it in the time domain:
+# - Load the track and identify the tick recognizing the waveform
+# - Add an empty track with Track/Add New/Stero
+# - Copy in the clipboard a similar in size wave, but without the tick
+# - Paste that wave in the new track, exactly where the tick is
+# - Press Select/Tracks/In AllTracks, it's Shift+Ctrl+K
+# - Press Delete to clear from both the track
+# - Paste again to add the new wave in the main track
 
 import sys
 import wave
 import struct
 import math
+import array
 import numpy as np
 
 global data
 global hamming
 
 #
-# Clear tick at the specified position
+# Clear tick starting at the specified position for the specified size
+#
 # The data before the tick position is copied over the tick with a trapezoidal window
 #
-# It's assumed a window size of 512
+# It's assumed a window size of 512+extra
 #
-def clear_tick(pos):
-	if pos < 512:
+def clear_tick(pos, width):
+	if pos < width:
 		return
 
-	for i in range(0,63):
+	for i in range(0,64):
 		j = (pos + i)*2
 		l = i
 		r = 64 - l
-		data[j] = (data[j] * r + data[j-1024] * l) // 64
-		data[j+1] = (data[j+1] * r + data[j-1024+1] * l) // 64
+		data[j] = (data[j] * r + data[j-width*2] * l) // 64
+		data[j+1] = (data[j+1] * r + data[j-width*2+1] * l) // 64
 
-	for i in range(64,447):
+	for i in range(64,width-64):
 		j = (pos + i)*2
-		data[j] = data[j-1024]
-		data[j+1] = data[j-1024+1]
+		data[j] = data[j-width*2]
+		data[j+1] = data[j-width*2+1]
 
-	for i in range(448,511):
+	for i in range(width-64,width):
 		j = (pos + i)*2
-		l = i - 448
+		l = i - (width-64)
 		r = 64 - l
-		data[j] = (data[j] * l + data[j-1024] * r) // 64
-		data[j+1] = (data[j+1] * l + data[j-1024+1] * r) // 64
+		data[j] = (data[j] * l + data[j-width*2] * r) // 64
+		data[j+1] = (data[j+1] * l + data[j-width*2+1] * r) // 64
 
 
 #
@@ -73,11 +89,11 @@ def process(sample):
 
 	power_other = 0
 	power_tick = 0
-	for i in range(1, 10):
+	for i in range(1, 11):
 		power_other += abs(dft[i])
-	for i in range(11, 14):
+	for i in range(11, 15):
 		power_tick += abs(dft[i])
-	for i in range(15, 127):
+	for i in range(15, 128):
 		power_other += abs(dft[i])
 
 	# avoid division by 0
@@ -87,9 +103,23 @@ def process(sample):
 	return (power_other,power_tick)
 
 
+def process_channel(channel, pos):
+	sample = [x / 32768.0 for x in data[pos*2+channel:(pos+512)*2+channel:2]]
+
+	return process(sample)
+
+def time_position(pos):
+	pos_msec = pos * 1000 // 48000
+	pos_sec = pos_msec // 1000
+	pos_msec = pos_msec % 1000
+	return "%d:%02d.%03d" % (pos_sec / 60, pos_sec % 60, pos_msec)
+
 if len(sys.argv) != 3:
 	print("Syntax: notick SRC.wav DST.wav")
 	exit(1)
+
+print("Load " + sys.argv[1]);
+sys.stdout.flush()
 
 inp = wave.open(sys.argv[1],'rb')
 
@@ -109,66 +139,84 @@ count = inp.getnframes()
 
 frame = inp.readframes(count);
 
-data = list(struct.unpack("<%dh" % (count*2), frame))
-
 inp.close()
+del(inp)
 
-left_channel = []
-for i in data[::2]:
-	left_channel.append(i / 32768.0)
-
-right_channel = []
-for i in data[1::2]:
-	right_channel.append(i / 32768.0)
+# use an array of signed shorts to have a more compact memory usage
+data = array.array("h", frame)
+del(frame)
 
 pos = 0
-peak_ratio = 0
-peak_pos = 0
-peak_volume = 0
+peak_ratio = 0 # ratio of the peak tick
+peak_pos = 0 # starting position of the tick with the peak ratio
+peak_volume = 0 # volume of the peak tick
 
 # use an hamming window on the input
 hamming = np.hamming(512)
 
+print("Process");
+sys.stdout.flush()
+
+# sometimes the tick is detect with a temporal skew, extend the clearing window to cover this
+skew = 128
+
 clear_count = 0
-for pos in range(0, count - 512, 16):
+for pos in range(512 + skew*2, count - 1024 - skew*2, 16):
 	if pos % 100000 == 0:
 		print("%d%%" % (100 * pos // count))
 		sys.stdout.flush()
 
-	(power_other, power_tick) = process(left_channel[pos:pos+511])
+	(power_other_left, power_tick_left) = process_channel(0, pos)
+	(power_other_right, power_tick_right) = process_channel(1, pos)
 
-	ratio = power_tick / power_other
-	if ratio > peak_ratio:
-		peak_ratio = ratio
+	ratio_left = power_tick_left / power_other_left
+	ratio_right = power_tick_right / power_other_right
+
+	if ratio_left > peak_ratio:
+		peak_ratio = ratio_left
 		peak_pos = pos
-		peak_volume = power_tick
-
-	(power_other, power_tick) = process(right_channel[pos:pos+511])
-
-	ratio = power_tick / power_other
-	if ratio > peak_ratio:
-		peak_ratio = ratio
+		peak_volume = power_tick_left
+		peak_channel = 0
+	if ratio_right > peak_ratio:
+		peak_ratio = ratio_right
 		peak_pos = pos
-		peak_volume = power_tick
+		peak_volume = power_tick_right
+		peak_channel = 1
 
-	if peak_ratio > 0.4 and pos - peak_pos > 512:
-		pos_msec = peak_pos * 1000 // inp.getframerate()
-		pos_sec = pos_msec // 1000
-		pos_msec = pos_msec % 1000
-		clear_count = clear_count + 1
-		print("tick %d:%02d.%03d, ratio %.2f, volume %.2f" % (pos_sec / 60, pos_sec % 60, pos_msec, peak_ratio, peak_volume))
-		sys.stdout.flush()
-		clear_tick(peak_pos)
-		peak_pos = 0
+	if pos - peak_pos > 512:
+		if peak_ratio > 0.3:
+			# compute information of the previous and next window
+			(before_power_other, before_power_tick) = process_channel(peak_channel, peak_pos - 512)
+			(after_power_other, after_power_tick) = process_channel(peak_channel, peak_pos + 512)
+
+			before_ratio = before_power_tick / before_power_other
+			after_ratio = after_power_tick / after_power_other
+
+			ratio_triangular_factor = peak_ratio / max(before_ratio, after_ratio)
+			volume_triangular_factor = peak_volume / max(before_power_tick, after_power_tick)
+
+			# with a limit higher than 2.4 misses ticks on the sample_long file
+			if ratio_triangular_factor > 2.4:
+				print("tick %s-%s, ratio x%2.2f %.2f/%.2f\\%.2f, volume x%2.2f %.2f/%.2f\\%.2f" % (time_position(peak_pos - skew), time_position(peak_pos + 512 - skew), ratio_triangular_factor, before_ratio, peak_ratio, after_ratio, volume_triangular_factor, before_power_tick, peak_volume, after_power_tick))
+				sys.stdout.flush()
+				clear_count = clear_count + 1
+				clear_tick(peak_pos - skew, 512 + skew * 2)
+
+		# after 512 samples, the peak can be dropped
 		peak_ratio = 0
 		peak_volume = 0
+
+print("Save " + sys.argv[2]);
+sys.stdout.flush()
 
 out = wave.open(sys.argv[2], 'wb')
 out.setnchannels(2)
 out.setsampwidth(2)
 out.setframerate(48000)
-out_data = struct.pack('<%dh' % (count*2), *data)
-out.writeframes(out_data)
+out.writeframes(data)
 out.close()
 
-print("tick_cleared", clear_count)
+print("Tick cleared", clear_count)
+sys.stdout.flush()
+
+exit(0)
