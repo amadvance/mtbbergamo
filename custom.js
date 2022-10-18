@@ -9,7 +9,6 @@
  */
 
 var WEB = 'http://www.mtbbergamo.it/';
-var ARCHIVE_BACKUP = 'http://ftp.mtbbergamo.it/';
 var ARCHIVE = 'https://raw.githubusercontent.com/amadvance/mtbbergamo/master/www/';
 
 /*
