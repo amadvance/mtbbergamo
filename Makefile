@@ -16,7 +16,7 @@ www/zip/%.zip : www/gpx/%.gpx
 	zip -j $@ $<
 
 www/redux/%.gpx : www/gpx/%.gpx
-	gpx-cmd-tools/gpxsimplify -d 5 -o $@ $<
+	gpx-cmd-tools/gpxsimplify -d 2 -o $@ $<
 
 zip: $(ZIP)
 
