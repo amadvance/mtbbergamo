@@ -37,6 +37,7 @@ import struct
 import math
 import array
 import numpy as np
+import argparse
 
 global data
 global hamming
@@ -114,14 +115,30 @@ def time_position(pos):
 	pos_msec = pos_msec % 1000
 	return "%d:%02d.%03d" % (pos_sec / 60, pos_sec % 60, pos_msec)
 
-if len(sys.argv) != 3:
-	print("Syntax: notick SRC.wav DST.wav")
-	exit(1)
+def position_time(time):
+	nibble = time.split(':')
+	if len(nibble) == 1:
+		return int(nibble[0]) * 48000
+	elif len(nibble) == 2:
+		return (int(nibble[0]) * 60 + int(nibble[1])) * 48000
+	elif len(nibble) == 3:
+		return (int(nibble[0]) * 3600 + int(nibble[1]) * 60 + int(nibble[2])) * 48000
+	else:
+		print("Invalid argument " + time)
+		exit(1)
 
-print("Load " + sys.argv[1]);
+# process arguments
+parser = argparse.ArgumentParser()
+parser.add_argument("-s", metavar="HH:MM:SS", help="Start position HH:MM:SS")
+parser.add_argument("-t", metavar="HH:MM:SS", help="Stop position HH:MM:SS")
+parser.add_argument("src", metavar="SRC", help="Source .WAV file")
+parser.add_argument("dst", metavar="DST", help="Destination .WAV file")
+args = parser.parse_args()
+
+print("Load " + args.src);
 sys.stdout.flush()
 
-inp = wave.open(sys.argv[1],'rb')
+inp = wave.open(args.src,'rb')
 
 if inp.getnchannels() != 2:
 	print("Only 2 channel WAV are supported")
@@ -146,13 +163,24 @@ del(inp)
 data = array.array("h", frame)
 del(frame)
 
-pos = 0
 peak_ratio = 0 # ratio of the peak tick
 peak_pos = 0 # starting position of the tick with the peak ratio
 peak_volume = 0 # volume of the peak tick
 
 # use an hamming window on the input
 hamming = np.hamming(512)
+
+if args.s is None:
+	pos_start = 0
+else:
+	pos_start = position_time(args.s)
+	print("Starting from " + time_position(pos_start))
+
+if args.t is None:
+	pos_stop = count
+else:
+	pos_stop = position_time(args.t)
+	print("Stopping at " + time_position(pos_stop))
 
 print("Process");
 sys.stdout.flush()
@@ -161,7 +189,7 @@ sys.stdout.flush()
 skew = 128
 
 clear_count = 0
-for pos in range(512 + skew*2, count - 1024 - skew*2, 16):
+for pos in range(pos_start + 512 + skew*2, pos_stop - 1024 - skew*2, 16):
 	if pos % 100000 == 0:
 		print("%d%%" % (100 * pos // count))
 		sys.stdout.flush()
@@ -206,10 +234,10 @@ for pos in range(512 + skew*2, count - 1024 - skew*2, 16):
 		peak_ratio = 0
 		peak_volume = 0
 
-print("Save " + sys.argv[2]);
+print("Save " + args.dst);
 sys.stdout.flush()
 
-out = wave.open(sys.argv[2], 'wb')
+out = wave.open(args.dst, 'wb')
 out.setnchannels(2)
 out.setsampwidth(2)
 out.setframerate(48000)
