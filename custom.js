@@ -174,8 +174,8 @@ function create_map(id) {
 	return mymap;
 }
 
-var ZONE_TITLE = "<div class='maptitle'>Per scaricare la traccia GPX e la descrizione cliccate sul percorso colorato nella mappa</div>"
-var TRACK_TITLE = "<div class='maptitle'>Per scaricare la traccia GPX cliccate sul percorso colorato nella mappa</div>"
+var ZONE_TITLE = "<div class='maptitle'>Per informazioni clicca sul percorso colorato nella mappa</div>"
+var TRACK_TITLE = "<div class='maptitle'>Per informazioni clicca sul percorso colorato nella mappa</div>"
 
 function create_map_zone(id) {
 	var mymap = create_map(id);
