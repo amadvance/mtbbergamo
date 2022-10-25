@@ -139,6 +139,7 @@ var TRACKS = [
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Zuc de Valmana, Cresta, Passo del Palio', kind: 'down', file: 'Imagna_ZucDeValmanaCrestaPassoPalio.gpx', link: '2019/05/zuc-de-valmana' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 70, zone: 'imagna', name: 'Anello del Resegone', kind: 'down', file: 'Imagna_AnelloResegone.gpx', link: '2020/08/anello-resegone' },
 { vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Sentiero della Cultura Casearia', kind: 'down', file: 'Imagna_SentieroDellaCulturaCasearia_EBIKE.gpx' },
+{ vote: 3, rate: 1, rate_max: 0, cycle: 95, zone: 'imagna', name: 'Sentiero dei Giganti', kind: 'down', file: 'Imagna_SentieroDeiGiganti_EBIKE.gpx' },
 { vote: 2, rate: 2, rate_max: 3, cycle: 95, zone: 'imagna, taleggio', name: 'Passo del Palio, Selvano, Sorgente Enna, Piazzoli, Fuipiano', kind: 'down', file: 'Imagna_PalioSelvanoEnnaPiazzoliGrasselloFuipiano.gpx', link: '2022/04/sorgenti-enna' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, taleggio', name: 'Passo del Palio, Foo di Valmana, Selvano, Morterone, Fuipiano', kind: 'down', file: 'Imagna_PalioFooValmanaSelvanoMorteroneFuipiano.gpx', link: '2022/04/foo-di-valmana' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, taleggio', name: 'Passo del Palio, Grandi Alberi, Morterone, Fuipiano', kind: 'down', file: 'Imagna_PalioGrandiAlberiFuipiano.gpx', link: '2022/03/grandi-alberi' },
