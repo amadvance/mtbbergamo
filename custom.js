@@ -926,33 +926,59 @@ function create_zone(map, control, zone) {
 		if (TRACKS[i].zone.search(zone) < 0)
 			continue;
 
-		var color;
-		var weight;
-
-		// select the color from the two UP/DOWN selections
+		// insert in the proper multi list
 		if (TRACKS[i].kind == "up") {
-			color = COLORS_UP;
-			weight = 3;
+			multi_up_set.push(i);
 		} else {
-			weight = 9;
-			if (TRACKS[i].vote == 5)
-				color = COLORS_5[color_d[5]++]
-			else if (TRACKS[i].vote == 4)
-				color = COLORS_4[color_d[4]++]
-			else if (TRACKS[i].vote == 3)
-				color = COLORS_3[color_d[3]++]
-			else if (TRACKS[i].vote == 2)
-				color = COLORS_2[color_d[2]++]
-			else
-				color = COLORS_1[color_d[1]++]
-
 			// insert in the header list
 			multi_down_set.push(i);
 		}
+	}
+
+	multi_down_set.sort(sort_by_vote);
+
+	// first down
+	for (var i = 0; i < multi_down_set.length; ++i) {
+		var index = multi_down_set[i];
+		var color;
+		var weight;
+
+		// select weight and color for DOWN track
+		weight = 9;
+		if (TRACKS[index].vote == 5)
+			color = COLORS_5[color_d[5]++]
+		else if (TRACKS[index].vote == 4)
+			color = COLORS_4[color_d[4]++]
+		else if (TRACKS[index].vote == 3)
+			color = COLORS_3[color_d[3]++]
+		else if (TRACKS[index].vote == 2)
+			color = COLORS_2[color_d[2]++]
+		else
+			color = COLORS_1[color_d[1]++]
 
 		create_zone_track(map, control,
-			ARCHIVE + 'redux/' + TRACKS[i].file,
-			i,
+			ARCHIVE + 'redux/' + TRACKS[index].file,
+			index,
+			{
+				color: color,
+				weight: weight
+			}
+		);
+	}
+
+	// then up
+	for (var i = 0; i < multi_up_set.length; ++i) {
+		var index = multi_up_set[i];
+		var color;
+		var weight;
+
+		// select weight and color for UP track
+		color = COLORS_UP;
+		weight = 3;
+
+		create_zone_track(map, control,
+			ARCHIVE + 'redux/' + TRACKS[index].file,
+			index,
 			{
 				color: color,
 				weight: weight
