@@ -106,6 +106,7 @@ var TRACKS = [
 //
 // IMAGNA NORD
 //
+// downhill
 { vote: 5, rate: 3, rate_max: 4, cycle: 100, zone: 'imagna', name: 'Vetta Resegone, Brumano', kind: 'down', file: 'Imagna_ResegoneBrumano.gpx', link: '2021/09/vetta-resegone' },
 { vote: 2, rate: 1, rate_max: 2, cycle: 100, zone: 'locatello', name: 'Bustoseta, Selino', kind: 'down', file: 'Imagna_BustosetaSelino.gpx', link: '2019/07/locatello' },
 { vote: 2, rate: 1, rate_max: 2, cycle: 100, zone: 'locatello', name: 'Buonanome, Selino', kind: 'down', file: 'Imagna_BuonanomeSelino.gpx', link: '2019/07/locatello' },
@@ -137,14 +138,16 @@ var TRACKS = [
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Passo di Valbona, Sbarra di Brumano', kind: 'down', file: 'Imagna_PassoValbonaSbarra.gpx', link: '2019/05/zuc-de-valmana' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Passo del Palio, Sbarra di Brumano', kind: 'down', file: 'Imagna_PassoPalioSbarra.gpx', link: '2019/05/zuc-de-valmana' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna,zuc_de_valmana', name: 'Zuc de Valmana, Cresta, Passo del Palio', kind: 'down', file: 'Imagna_ZucDeValmanaCrestaPassoPalio.gpx', link: '2019/05/zuc-de-valmana' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 70, zone: 'imagna', name: 'Anello del Resegone', kind: 'down', file: 'Imagna_AnelloResegone.gpx', link: '2020/08/anello-resegone' },
-{ vote: 3, rate: 1, rate_max: 0, cycle: 100, zone: 'imagna', name: 'Sentiero della Cultura Casearia', kind: 'down', file: 'Imagna_SentieroDellaCulturaCasearia_EBIKE.gpx' },
-{ vote: 3, rate: 1, rate_max: 0, cycle: 95, zone: 'imagna', name: 'Sentiero dei Giganti', kind: 'down', file: 'Imagna_SentieroDeiGiganti_EBIKE.gpx' },
 { vote: 2, rate: 2, rate_max: 3, cycle: 95, zone: 'imagna, taleggio', name: 'Passo del Palio, Selvano, Sorgente Enna, Piazzoli, Fuipiano', kind: 'down', file: 'Imagna_PalioSelvanoEnnaPiazzoliGrasselloFuipiano.gpx', link: '2022/04/sorgenti-enna' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, taleggio', name: 'Passo del Palio, Foo di Valmana, Selvano, Morterone, Fuipiano', kind: 'down', file: 'Imagna_PalioFooValmanaSelvanoMorteroneFuipiano.gpx', link: '2022/04/foo-di-valmana' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, taleggio', name: 'Passo del Palio, Grandi Alberi, Morterone, Fuipiano', kind: 'down', file: 'Imagna_PalioGrandiAlberiFuipiano.gpx', link: '2022/03/grandi-alberi' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Forbesette, Morterone', kind: 'down', file: 'Imagna_PassoPalioForbesetteMorterone.gpx', link: '2020/12/morterone' },
 { vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Freeride, Morterone', kind: 'down', file: 'Imagna_PassoPalioFreerideMorterone.gpx', link: '2020/12/morterone' },
+
+// tour
+{ vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna', name: 'Sentiero della Cultura Casearia', kind: 'down', file: 'Imagna_SentieroDellaCulturaCasearia_EBIKE.gpx', link: '2022/10/corna-casere' },
+{ vote: 3, rate: 1, rate_max: 2, cycle: 95, zone: 'imagna', name: 'Sentiero dei Giganti', kind: 'down', file: 'Imagna_SentieroDeiGiganti_EBIKE.gpx' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 70, zone: 'imagna', name: 'Anello del Resegone', kind: 'down', file: 'Imagna_AnelloResegone.gpx', link: '2020/08/anello-resegone' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "40%, con ultimi 400m di dislivello a spalla", zone: 'imagna', name: 'Salita dalla Stanga di Brumano alla vetta del Resegone', kind: 'up', file: 'Imagna_SalitaBrumanoResegone.gpx', link: '2021/09/vetta-resegone' },
