@@ -268,6 +268,15 @@ function create_control(map) {
 	return ret;
 }
 
+function get_track_group(index)
+{
+	if (TRACKS[index].kind == "up")
+		return 0;
+	if (TRACKS[index].kind == "trek")
+		return 1;
+	return TRACKS[index].vote + 1;
+}
+
 function create_control_group(map) {
 	var control = L.control.layers(null, null).addTo(map);
 
@@ -283,15 +292,26 @@ function create_control_group(map) {
 	group[3] = L.layerGroup([]);
 	group[4] = L.layerGroup([]);
 	group[5] = L.layerGroup([]);
+	group[6] = L.layerGroup([]);
 
-	control.addOverlay(group[5], "Eccellenti");
-	control.addOverlay(group[4], "Ottimi");
-	control.addOverlay(group[3], "Buoni");
-	control.addOverlay(group[2], "Discreti");
-	control.addOverlay(group[1], "Sconsigliati");
+	var group_count = [];
+	group_count[0] = 0;
+	group_count[1] = 0;
+	group_count[2] = 0;
+	group_count[3] = 0;
+	group_count[4] = 0;
+	group_count[5] = 0;
+	group_count[6] = 0;
+
+	control.addOverlay(group[6], "Eccellenti");
+	control.addOverlay(group[5], "Ottimi");
+	control.addOverlay(group[4], "Buoni");
+	control.addOverlay(group[3], "Discreti");
+	control.addOverlay(group[2], "Sconsigliati");
+	control.addOverlay(group[1], "Escursioni");
 	control.addOverlay(group[0], "Salite");
 
-	var ret = {ct: control, gr: group};
+	var ret = {ct: control, gr: group, grc: group_count};
 
 	return ret;
 }
@@ -366,11 +386,16 @@ function create_gpx_info(map, control, gpx, url, index, link)
 
 		gpx.addTo(map);
 	} else {
-		var group = control.gr[TRACKS[index].vote];
+		var group_index = get_track_group(index);
+		var group = control.gr[group_index];
 
 		group.addLayer(gpx);
 
-		group.addTo(map);
+		++control.grc[group_index];
+
+		// don't show trekking and sconsigliati
+		if (group_index != 1 && group_index != 2 && control.grc[group_index] == 1)
+			group.addTo(map);
 	}
 }
 
@@ -809,7 +834,7 @@ function create_post(map, control, zone)
 		if (TRACKS[i].zone.search(zone) < 0)
 			continue;
 
-		if (TRACKS[i].kind != "down")
+		if (TRACKS[i].kind != "down" && TRACKS[i].kind != "trek")
 			continue;
 
 		create_track(map, control,
@@ -1013,7 +1038,7 @@ function count_tracks()
 {
 	var count = 0;
 	for (i = 0; i < TRACKS.length; i++) {
-		if (TRACKS[i].kind != "down")
+		if (TRACKS[i].kind != "down" && TRACKS[i].kind != "trek")
 			continue;
 		if (TRACKS[i].zone == "hidden")
 			continue;
