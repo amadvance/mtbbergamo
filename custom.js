@@ -907,7 +907,25 @@ function create_tree(map, control, pos_x, pos_y, msg)
 	L.marker([pos_x, pos_y], {icon: treeIcon}).addTo(map).bindPopup(msg);
 }
 
-function setup_zone()
+function table_track(index)
+{
+	var html = "";
+
+	html += '<tr><td>';
+	if (TRACKS[index].link)
+		html += '<b><a href="' + WEB + TRACKS[index].link + '.html">' + TRACKS[index].name + "</a></b>&nbsp;&nbsp;";
+	else
+		html += TRACKS[index].name + "&nbsp;&nbsp;";
+	html += '</td><td style="white-space:nowrap">';
+	html += get_track_vote(index);
+	html += '</td><td style="white-space:nowrap">';
+	html += get_track_rate(index) + get_track_rate_max(index);
+	html += "</td></tr>";
+
+	return html;
+}
+
+function table_zone()
 {
 	var element = document.getElementById("info_header");
 	if (element == null)
@@ -918,26 +936,36 @@ function setup_zone()
 		return;
 	}
 
-	var html = "<p><table>";
+	var html = "";
+	var has_trek = 0;
 
+	html += "<p><table>";
 	html += '<tr><th style="text-align:left;">Discesa</th><th style="text-align:left;">Giudizio</th><th style="text-align:left;">Difficolt\u00E0</th></tr>';
 
 	for (var i = 0; i < multi_down_set.length; ++i) {
 		var index = multi_down_set[i];
 
-		html += '<tr><td>';
-		if (TRACKS[index].link)
-			html += '<b><a href="' + WEB + TRACKS[index].link + '.html">' + TRACKS[index].name + "</a></b>&nbsp;&nbsp;";
+		if (TRACKS[index].kind == "trek")
+			has_trek = 1;
 		else
-			html += TRACKS[index].name + "&nbsp;&nbsp;";
-		html += '</td><td style="white-space:nowrap">';
-		html += get_track_vote(index);
-		html += '</td><td style="white-space:nowrap">';
-		html += get_track_rate(index) + get_track_rate_max(index);
-		html += "</td></tr>";
+			html += table_track(index);
 	}
 
 	html += "</table></p>";
+
+	if (has_trek) {
+		html += "<p><table>";
+		html += '<tr><th style="text-align:left;">Escursioni</th><th style="text-align:left;">Giudizio</th><th style="text-align:left;">Difficolt\u00E0</th></tr>';
+
+		for (var i = 0; i < multi_down_set.length; ++i) {
+			var index = multi_down_set[i];
+
+			if (TRACKS[index].kind == "trek")
+				html += table_track(index);
+		}
+
+		html += "</table></p>";
+	}
 
 	element.innerHTML = html;
 }
@@ -1011,7 +1039,7 @@ function create_zone(map, control, zone) {
 		);
 	}
 
-	setup_zone();
+	table_zone();
 }
 
 // create a climp post including all the up tracks
