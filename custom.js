@@ -272,9 +272,7 @@ function get_track_group(index)
 {
 	if (TRACKS[index].kind == "up")
 		return 0;
-	if (TRACKS[index].kind == "trek")
-		return 1;
-	return TRACKS[index].vote + 1;
+	return TRACKS[index].vote;
 }
 
 function create_control_group(map) {
@@ -292,7 +290,6 @@ function create_control_group(map) {
 	group[3] = L.layerGroup([]);
 	group[4] = L.layerGroup([]);
 	group[5] = L.layerGroup([]);
-	group[6] = L.layerGroup([]);
 
 	var group_count = [];
 	group_count[0] = 0;
@@ -301,14 +298,12 @@ function create_control_group(map) {
 	group_count[3] = 0;
 	group_count[4] = 0;
 	group_count[5] = 0;
-	group_count[6] = 0;
 
-	control.addOverlay(group[6], "Eccellenti");
-	control.addOverlay(group[5], "Ottimi");
-	control.addOverlay(group[4], "Buoni");
-	control.addOverlay(group[3], "Discreti");
-	control.addOverlay(group[2], "Sconsigliati");
-	control.addOverlay(group[1], "Escursioni");
+	control.addOverlay(group[5], "Eccellenti");
+	control.addOverlay(group[4], "Ottimi");
+	control.addOverlay(group[3], "Buoni");
+	control.addOverlay(group[2], "Discreti");
+	control.addOverlay(group[1], "Sconsigliati");
 	control.addOverlay(group[0], "Salite");
 
 	var ret = {ct: control, gr: group, grc: group_count};
@@ -393,8 +388,8 @@ function create_gpx_info(map, control, gpx, url, index, link)
 
 		++control.grc[group_index];
 
-		// don't show trekking and sconsigliati
-		if (group_index != 1 && group_index != 2 && control.grc[group_index] == 1)
+		// don't show sconsigliati
+		if (group_index != 1 && control.grc[group_index] == 1)
 			group.addTo(map);
 	}
 }
@@ -925,9 +920,9 @@ function table_track(index)
 	return html;
 }
 
-function table_zone()
+function table_zone(title, desc, header)
 {
-	var element = document.getElementById("info_header");
+	var element = document.getElementById(header);
 	if (element == null)
 		return;
 
@@ -936,32 +931,18 @@ function table_zone()
 		return;
 	}
 
-	var html = "";
-	var has_trek = 0;
+	var html = desc;
 
-	html += "<p><table>";
-	html += '<tr><th style="text-align:left;">Discesa</th><th style="text-align:left;">Giudizio</th><th style="text-align:left;">Difficolt\u00E0</th></tr>';
-
-	for (var i = 0; i < multi_down_set.length; ++i) {
-		var index = multi_down_set[i];
-
-		if (TRACKS[index].kind == "trek")
-			has_trek = 1;
-		else
-			html += table_track(index);
-	}
-
-	html += "</table></p>";
-
-	if (has_trek) {
+	if (multi_down_set.length != 0) {
 		html += "<p><table>";
-		html += '<tr><th style="text-align:left;">Escursioni</th><th style="text-align:left;">Giudizio</th><th style="text-align:left;">Difficolt\u00E0</th></tr>';
+		html += '<tr><th style="text-align:left;">';
+		html += title;
+		html += '</th><th style="text-align:left;">Giudizio</th><th style="text-align:left;">Difficolt\u00E0</th></tr>';
 
 		for (var i = 0; i < multi_down_set.length; ++i) {
 			var index = multi_down_set[i];
 
-			if (TRACKS[index].kind == "trek")
-				html += table_track(index);
+			html += table_track(index);
 		}
 
 		html += "</table></p>";
@@ -970,20 +951,25 @@ function table_zone()
 	element.innerHTML = html;
 }
 
-// create a zone post including all the up and down tracks
-// use rank as color
-function create_zone(map, control, zone) {
+// create a post including all the filtered tracks, use rank as color
+function create_generic(map, control, zone, title, desc, header, filter)
+{
 	var color_d = [0, 0, 0, 0, 0, 0];
+
+	multi_down_set = [];
+	multi_up_set = [];
 
 	for (i = 0; i < TRACKS.length; i++) {
 		if (TRACKS[i].zone.search(zone) < 0)
+			continue;
+
+		if (filter.search(TRACKS[i].kind) < 0)
 			continue;
 
 		// insert in the proper multi list
 		if (TRACKS[i].kind == "up") {
 			multi_up_set.push(i);
 		} else {
-			// insert in the header list
 			multi_down_set.push(i);
 		}
 	}
@@ -1039,7 +1025,34 @@ function create_zone(map, control, zone) {
 		);
 	}
 
-	table_zone();
+	table_zone(title, desc, header);
+}
+
+// create a zone post including all the up and down tracks
+function create_zone(map, control, zone)
+{
+	desc = "";
+
+	desc += "<p>";
+	desc += "Elenco dei percorsi orientati alla discesa. Sono generalmente fattibili sia con una MTB muscolare che E-Bike. ";
+	desc += "</p>";
+
+	create_generic(map, control, zone, "Discese", desc, "info_header", "up,down");
+}
+
+// create a zone post including all the trek tracks
+function create_trek(map, control, zone)
+{
+
+	desc = "";
+
+	desc += "<p>"
+	desc += "Elenco dei percorsi escursionistici, meno orientati alla discesa e di più all'escursionismo. ";
+	desc += "Sono percorsi pedonali, con vari sali/scendi, ma fattibili anche in MTB. ";
+	desc += "Per le numerose salite tecniche, una E-Bike è altamente consigliata.";
+	desc += "</p>"
+
+	create_generic(map, control, zone, "Escursioni", desc, "trek_header", "trek");
 }
 
 // create a climp post including all the up tracks
