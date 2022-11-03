@@ -911,9 +911,9 @@ function table_track(index)
 		html += '<b><a href="' + WEB + TRACKS[index].link + '.html">' + TRACKS[index].name + "</a></b>&nbsp;&nbsp;";
 	else
 		html += TRACKS[index].name + "&nbsp;&nbsp;";
-	html += '</td><td style="white-space:nowrap">';
+	html += '</td><td style="white-space:nowrap;padding-left:5px;padding-right:5px">';
 	html += get_track_vote(index);
-	html += '</td><td style="white-space:nowrap">';
+	html += '</td><td style="white-space:nowrap;padding-left:5px;padding-right:5px">';
 	html += get_track_rate(index) + get_track_rate_max(index);
 	html += "</td></tr>";
 
