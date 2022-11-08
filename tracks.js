@@ -143,15 +143,16 @@ var TRACKS = [
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, taleggio', name: 'Passo del Palio, Grandi Alberi, Morterone, Fuipiano', kind: 'down', file: 'Imagna_PalioGrandiAlberiFuipiano.gpx', link: '2022/03/grandi-alberi' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Forbesette, Morterone', kind: 'down', file: 'Imagna_PassoPalioForbesetteMorterone.gpx', link: '2020/12/morterone' },
 { vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Freeride, Morterone', kind: 'down', file: 'Imagna_PassoPalioFreerideMorterone.gpx', link: '2020/12/morterone' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 70, zone: 'imagna', name: 'Anello del Resegone', kind: 'down', file: 'Imagna_AnelloResegone.gpx', link: '2020/08/anello-resegone' },
 
-// tour
+// trek
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna', name: 'Sentiero della Cultura Casearia', kind: 'trek', file: 'Imagna_SentieroDellaCulturaCasearia_EBIKE.gpx', link: '2022/10/corna-casere' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 95, zone: 'imagna', name: 'Sentiero dei Giganti', kind: 'trek', file: 'Imagna_SentieroDeiGiganti_EBIKE.gpx' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 90, zone: 'imagna', name: 'Anello delle Contrade', kind: 'trek', file: 'Imagna_AnelloContrade_EBIKE.gpx' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna', name: 'Antiche Tracce', kind: 'trek', file: 'Imagna_AnticheTracce_EBIKE.gpx' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 95, zone: 'imagna', name: 'Sentiero dei Ponti', kind: 'trek', file: 'Imagna_SentieroDeiPonti_EBIKE.gpx' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 90, zone: 'imagna', name: 'Sentiero del Castagno', kind: 'trek', file: 'Imagna_SentieroDelCastagno_EBIKE.gpx' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 70, zone: 'imagna', name: 'Anello del Resegone', kind: 'down', file: 'Imagna_AnelloResegone.gpx', link: '2020/08/anello-resegone' },
+{ vote: 3, rate: 1, rate_max: 2, cycle: 90, zone: 'imagna', name: 'Sentiero dei Roccoli, dell\'Acqua e dei Borghi', kind: 'trek', file: 'Imagna_SentieroRoccoliAcquaBorghi.gpx' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "40%, con ultimi 400m di dislivello a spalla", zone: 'imagna', name: 'Salita dalla Stanga di Brumano alla vetta del Resegone', kind: 'up', file: 'Imagna_SalitaBrumanoResegone.gpx', link: '2021/09/vetta-resegone' },
@@ -550,9 +551,10 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 //
 // SERINA
 //
-
-{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'alta_brembana, serina', name: 'Cima di Grem, cresta, Zambla', kind: 'down', file: 'Serina_CimaGremCrestaZambla.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'alta_brembana, serina', name: 'Salita Zambla, Capanna 2000, Cima di Grem', kind: 'up', file: 'Serina_SalitaZamblaPlassaCapanna200CimaGrem_EBIKE.gpx'  },
+{ vote: 5, rate: 2, rate_max: 3, cycle: 99, zone: 'serina, brembana', name: 'Cima di Grem, Cresta, Zambla Alta', kind: 'down', file: 'Serina_CimaGremCrestaZambla.gpx', link: '2022/11/cima-di-grem' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'serina, brembana', name: 'Salita Zambla Alta, Capanna 2000, Cima di Grem', kind: 'up', file: 'Serina_SalitaZamblaPlassaCapanna200CimaGrem_EBIKE.gpx', link: '2022/11/cima-di-grem'  },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'serina, brembana', name: 'Capanna 2000, Sentiero dei Fiori, Val Vedra', kind: 'down', file: 'Serina_Capanna2000VedraOltreIlColle.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'serina, brembana', name: 'Salita Oltre il Colle, Capanna 2000', kind: 'up', file: 'Serina_SalitaOltreIlColleCapanna2000_EBIKE.gpx' },
 
 //
 // ALTA BREMBANA
@@ -662,5 +664,3 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
-
-
