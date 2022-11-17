@@ -241,6 +241,14 @@ function create_base(map, control) {
 
 	control.addBaseLayer(Thunderforest_OpenCycleMap, "OpenCycleMap");
 
+	var Thunderforest_Outdoors = L.tileLayer('https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey={apikey}', {
+		attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+		apikey: 'b9a5e78a27a644dbbb109bc904b8919c',
+		maxZoom: 21
+	});
+
+	control.addBaseLayer(Thunderforest_Outdoors, "Outdoors");
+
 	var OpenStreetMap_Mapnik = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 	{
 		maxZoom: 19,
