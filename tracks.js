@@ -150,7 +150,7 @@ var TRACKS = [
 { vote: 4, rate: 1, rate_max: 2, cycle: 95, zone: 'imagna', name: 'Sentiero dei Giganti', kind: 'trek', file: 'Imagna_SentieroDeiGiganti_EBIKE.gpx', link: '2022/11/giganti' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 90, zone: 'imagna', name: 'Anello delle Contrade', kind: 'trek', file: 'Imagna_AnelloContrade_EBIKE.gpx' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna', name: 'Antiche Tracce', kind: 'trek', file: 'Imagna_AnticheTracce_EBIKE.gpx' },
-{ vote: 3, rate: 1, rate_max: 2, cycle: 95, zone: 'imagna', name: 'Sentiero dei Ponti', kind: 'trek', file: 'Imagna_SentieroDeiPonti_EBIKE.gpx' },
+{ vote: 3, rate: 1, rate_max: 2, cycle: 95, zone: 'imagna', name: 'Sentiero dei Ponti', kind: 'trek', file: 'Imagna_SentieroDeiPonti_EBIKE.gpx', link: '2022/11/ponti' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 90, zone: 'imagna', name: 'Sentiero del Castagno', kind: 'trek', file: 'Imagna_SentieroDelCastagno_EBIKE.gpx' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 90, zone: 'imagna', name: 'Sentiero dei Roccoli, dell\'Acqua e dei Borghi', kind: 'trek', file: 'Imagna_SentieroRoccoliAcquaBorghi.gpx' },
 
