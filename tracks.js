@@ -390,9 +390,9 @@ rimosso su richiesta del CAI Albino
 { vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Pista Downhill Poieto', kind: 'down', file: 'Seriana_PoietoDH.gpx', link: '2019/03/poieto-dh' },
 { vote: 3, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Nembro Trail', kind: 'down', file: 'Seriana_NembroTrail.gpx', link: '2019/05/nembro-trail' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Poieto, Ganda, Camocco, Albino', kind: 'down', file: 'Seriana_PoietoGandaCamoccoAlbino.gpx', link: '2022/11/camocco' },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Poieto, Ganda, Bomba Trail, Albino', kind: 'down', file: 'Seriana_PoietoGandaBombaAlbino.gpx' },
 { vote: 3, rate: 3, rate_max: 4, cycle: 88, zone: 'bassa_seriana', name: 'Monte Poieto, Cornagera, Pradale, Valgua', kind: 'down', file: 'Seriana_PoietoCornageraPradaleValgua.gpx', link: '2022/12/cornagera' },
-
+{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Bomba Trail, Albino', kind: 'down', file: 'Seriana_RenaBombaAlbino.gpx' },
+{ vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Croce San Luigi, Albino', kind: 'down', file: 'Seriana_RenaAlbino.gpx' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Trasferimento dalla Forcella di Nese al Canto Basso', kind: 'up', file: 'Seriana_ForcellaNese533BCantoBasso.gpx', link: '2019/03/salite-valle-seriana' },
@@ -406,6 +406,7 @@ rimosso su richiesta del CAI Albino
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita dalla Forcella al Monte Cavallo', kind: 'up', file: 'Seriana_SalitaMonteCavallo.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita da Nese alla Forcella', kind: 'up', file: 'Seriana_SalitaNeseForcella.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 99, zone: 'bassa_seriana', name: 'Salita Albino, Col du Bates, Ganda, Monte Poieto', kind: 'up', file: 'Seriana_SalitaAlbinoBatesGandaPoieto_EBIKE.gpx', link: '2022/11/camocco' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 99, zone: 'bassa_seriana', name: 'Salita Albino, Col du Bates, Monte Rena', kind: 'up', file: 'Seriana_SalitaAlbinoBatesGandaRena_EBIKE.gpx' },
 
 // sud
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana, 520', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'Seriana_CiclabileValleSeriana.gpx', link: '2019/03/salite-valle-seriana' },
