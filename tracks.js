@@ -391,7 +391,7 @@ rimosso su richiesta del CAI Albino
 { vote: 3, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Nembro Trail', kind: 'down', file: 'Seriana_NembroTrail.gpx', link: '2019/05/nembro-trail' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Poieto, Ganda, Camocco, Albino', kind: 'down', file: 'Seriana_PoietoGandaCamoccoAlbino.gpx', link: '2022/11/camocco' },
 { vote: 3, rate: 3, rate_max: 4, cycle: 88, zone: 'bassa_seriana', name: 'Monte Poieto, Cornagera, Pradale, Valgua', kind: 'down', file: 'Seriana_PoietoCornageraPradaleValgua.gpx', link: '2022/12/cornagera' },
-{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Bomba Trail, Albino', kind: 'down', file: 'Seriana_RenaBombaAlbino.gpx' },
+{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Bomba Trail, Albino', kind: 'down', file: 'Seriana_RenaBombaAlbino.gpx', link: '2022/12/rena-bomba' },
 { vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Croce San Luigi, Albino', kind: 'down', file: 'Seriana_RenaAlbino.gpx' },
 
 // climb
