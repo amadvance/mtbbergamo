@@ -394,6 +394,7 @@ rimosso su richiesta del CAI Albino
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Bomba Trail, Albino', kind: 'down', file: 'Seriana_RenaBombaAlbino.gpx', link: '2022/12/rena-bomba' },
 { vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Croce San Luigi, Albino', kind: 'down', file: 'Seriana_RenaAlbino.gpx' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Monte Poieto, Amora, Petello', kind: 'down', file: 'Seriana_PoeitoAmoraAlbino.gpx', link: '2023/01/amora' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Tribulina di Ganda, 522, Gazzaniga', kind: 'down', file: 'Seriana_TribulinaGanda522Gazzaniga.gpx', link: '2023/01/522' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Trasferimento dalla Forcella di Nese al Canto Basso', kind: 'up', file: 'Seriana_ForcellaNese533BCantoBasso.gpx', link: '2019/03/salite-valle-seriana' },
@@ -409,6 +410,7 @@ rimosso su richiesta del CAI Albino
 { vote: 0, rate: 0, rate_max: 0, cycle: 99, zone: 'bassa_seriana', name: 'Salita Albino, Col du Bates, Ganda, Monte Poieto', kind: 'up', file: 'Seriana_SalitaAlbinoBatesGandaPoieto_EBIKE.gpx', link: '2022/11/camocco' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 99, zone: 'bassa_seriana', name: 'Salita Albino, Col du Bates, Monte Rena', kind: 'up', file: 'Seriana_SalitaAlbinoBatesGandaRena_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita Aviatico, Monte Poieto', kind: 'up', file: 'Seriana_SalitaAviaticoPoeito_EBIKE.gpx', link: '2023/01/amora' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'bassa_seriana', name: 'Salita Gazzaniga, Mer\u00E0, Tribulina di Ganda', kind: 'up', file: 'Seriana_SalitaGazzanigaMeraGanda_EBIKE.gpx', link: '2023/01/522' },
 
 // sud
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana, 520', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'Seriana_CiclabileValleSeriana.gpx', link: '2019/03/salite-valle-seriana' },
@@ -680,3 +682,4 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
+
