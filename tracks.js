@@ -328,6 +328,11 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Almenno al Monte Lizone', kind: 'up', file: 'Martino_SalitaAlmennoPalazzagoLinzone_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Trasferimento da Opreno a Burligo', kind: 'up', file: 'Martino_OprenoBurligo.gpx', link: '2018/12/salite-san-martino' },
 
+{ vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Kavast\u00F2poi (Cavatappi)', kind: 'down', file: 'Martino_Kavastopoi.gpx' },
+
+// overlapping
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino', name: 'Salita Perlupario, Cava di Valcava', kind: 'up', file: 'Martino_SalitaPerluparioCava_EBIKE.gpx' },
+
 //
 // MONTE CANTO
 //
@@ -392,9 +397,14 @@ rimosso su richiesta del CAI Albino
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Poieto, Ganda, Camocco, Albino', kind: 'down', file: 'Seriana_PoietoGandaCamoccoAlbino.gpx', link: '2022/11/camocco' },
 { vote: 3, rate: 3, rate_max: 4, cycle: 88, zone: 'bassa_seriana', name: 'Monte Poieto, Cornagera, Pradale, Valgua', kind: 'down', file: 'Seriana_PoietoCornageraPradaleValgua.gpx', link: '2022/12/cornagera' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Bomba Trail, Albino', kind: 'down', file: 'Seriana_RenaBombaAlbino.gpx', link: '2022/12/rena-bomba' },
-{ vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Croce San Luigi, Albino', kind: 'down', file: 'Seriana_RenaAlbino.gpx' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Monte Poieto, Amora, Petello', kind: 'down', file: 'Seriana_PoeitoAmoraAlbino.gpx', link: '2023/01/amora' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Tribulina di Ganda, 522, Gazzaniga', kind: 'down', file: 'Seriana_TribulinaGanda522Gazzaniga.gpx', link: '2023/01/522' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Croce San Luigi, Desenzano', kind: 'down', file: 'Seriana_RenaLuigiDesenzano.gpx' },
+
+// removed for not so relevant
+/*
+{ vote: 2, rate: 3, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Rena, Albino', kind: 'down', file: 'Seriana_RenaAlbino.gpx' },
+*/
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Trasferimento dalla Forcella di Nese al Canto Basso', kind: 'up', file: 'Seriana_ForcellaNese533BCantoBasso.gpx', link: '2019/03/salite-valle-seriana' },
