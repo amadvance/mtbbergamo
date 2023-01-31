@@ -344,7 +344,7 @@ var TRACKS = [
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'canto', name: 'Biglietto da Visita', kind: 'down', file: 'Canto_BigliettoDaVisita.gpx', link: '2020/02/biglietto-da-visita' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'Kompressor', kind: 'down', file: 'Canto_Kompressor.gpx', link: '2019/02/kompressor' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'canto', name: 'Pietra Sant Alberto', kind: 'down', file: 'Canto_PietraSAlberto.gpx', link: '2020/03/pietra-santalberto' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'canto', name: 'Rocce / Muschio / California / Lame Rotanti', kind: 'down', file: 'Canto_Rocce.gpx', link: '2019/02/rocce-muschio' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'canto', name: 'Rocce / Muschio / Lame Rotanti', kind: 'down', file: 'Canto_Rocce.gpx', link: '2019/02/rocce-muschio' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 98, zone: 'canto', name: 'Scalette', kind: 'down', file: 'Canto_Scalette.gpx', link: '2019/02/scalette' },
 { vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'canto', name: 'Uccellaia 1 e 2', kind: 'down', file: 'Canto_Uccellaia1E2.gpx', link: '2019/02/uccellaia' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'canto', name: 'Zandona', kind: 'down', file: 'Canto_Zandona.gpx', link: '2019/02/zandona' },
