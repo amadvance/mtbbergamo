@@ -93,6 +93,11 @@ function get_track_anchor(index, text)
 	return get_track_anchor_blob(index, text);
 }
 
+function get_shademap_anchor(index)
+{
+	return "<span title=\"Esposizione solare della traccia a seconda dell'ora e del giorno.\nDal sito shademap.app\"><a href=\"https://shademap.app/#gpx=" + ARCHIVE + "redux/" + TRACKS[index].file + "\"><img src=\"" + ARCHIVE + "img/shademap.png\" class=\"leaflet-slope-img\" width=24 height=24></a></span>";
+}
+
 function get_track_vote(index)
 {
 	if (index == -1)
@@ -697,6 +702,7 @@ function setup_down(index)
 	html += "<b>Difficolt\u00E0: " + get_track_rate(index) + "</b>" + get_track_rate_max(index) + "<br/>";
 	html += "<b>Tempo in sella:<!--DISCESA--> " + get_track_cycle(index) + "</b><!--SALITA--><br/>";
 	html += "<b>Download GPX: </b>" + get_track_anchor(index,"<b>" + get_track_name(index) + "</b>");
+	html += "&nbsp;" + get_shademap_anchor(index);
 
 	element.innerHTML = html;
 }
@@ -716,6 +722,7 @@ function setup_up(index)
 	var html = element.innerHTML;
 
 	html += ", " + get_track_anchor(index, get_track_name(index));
+	html += "&nbsp;" + get_shademap_anchor(index);
 
 	var cycle = get_track_cycle(index);
 	if (cycle != "" && cycle != "100%") {
@@ -756,6 +763,7 @@ function setup_multi()
 		html += "&nbsp;&nbsp;&nbsp;&nbsp;" + get_track_vote(index) + ", ";
 		html += get_track_rate(index) + get_track_rate_max(index);
 		html += ", " + get_track_anchor(index, "download GPX");
+		html += "&nbsp;" + get_shademap_anchor(index);
 		html += "</br>";
 	}
 
@@ -764,6 +772,7 @@ function setup_multi()
 		html += "<b>" + get_track_name(index) + "</b><br/>";
 		html += "&nbsp;&nbsp;&nbsp;&nbsp;";
 		html += get_track_anchor(index, "download GPX");
+		html += "&nbsp;" + get_shademap_anchor(index);
 		html += "</br>";
 	}
 
