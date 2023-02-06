@@ -344,22 +344,29 @@ var TRACKS = [
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'canto', name: 'Biglietto da Visita', kind: 'down', file: 'Canto_BigliettoDaVisita.gpx', link: '2020/02/biglietto-da-visita' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'Kompressor', kind: 'down', file: 'Canto_Kompressor.gpx', link: '2019/02/kompressor' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'canto', name: 'Pietra Sant Alberto', kind: 'down', file: 'Canto_PietraSAlberto.gpx', link: '2020/03/pietra-santalberto' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'canto', name: 'Rocce / Muschio / Lame Rotanti', kind: 'down', file: 'Canto_Rocce.gpx', link: '2019/02/rocce-muschio' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'canto', name: 'Rocce / Muschio / Lame Rotanti', kind: 'down', file: 'Canto_Rocce.gpx', link: '2019/02/rocce-muschio' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 98, zone: 'canto', name: 'Scalette', kind: 'down', file: 'Canto_Scalette.gpx', link: '2019/02/scalette' },
 { vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'canto', name: 'Uccellaia 1 e 2', kind: 'down', file: 'Canto_Uccellaia1E2.gpx', link: '2019/02/uccellaia' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'canto', name: 'Zandona', kind: 'down', file: 'Canto_Zandona.gpx', link: '2019/02/zandona' },
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'canto', name: 'Porcile, San Giovanni', kind: 'down', file: 'Canto_PorcileSanGiovanni.gpx', link: '2020/03/porcile-san-giovanni' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'Bob', kind: 'down', file: 'Canto_Bob.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'canto', name: 'California', kind: 'down', file: 'Canto_California.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'canto', name: 'Grezia', kind: 'down', file: 'Canto_Grezia.gpx' },
+
+// climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Sotto il Monte', kind: 'up', file: 'Canto_SalitaSottoIlMonte.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Sotto il Monte', kind: 'up', file: 'Canto_SalitaSottoIlMonte_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Somasca a Pontida', kind: 'up', file: 'Canto_SalitaSomascaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita al Crocione', kind: 'up', file: 'Canto_SalitaCrocione_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita al Monte Canto', kind: 'up', file: 'Canto_SalitaMonteCanto.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Pontida', kind: 'up', file: 'Canto_SalitaPontida.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Somasca', kind: 'up', file: 'Canto_SalitaSomasca_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Pontida', kind: 'up', file: 'Canto_SalitaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Ambivere', kind: 'up', file: 'Canto_SalitaAmbivere.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Fontanella', kind: 'up', file: 'Canto_SalitaFontanella.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Cross, Trasferimento Roncarro-Caneve', kind: 'up', file: 'Canto_Cross_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 
+// overlapping
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Sotto il Monte', kind: 'up', file: 'Canto_SalitaSottoIlMonte_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita al Crocione', kind: 'up', file: 'Canto_SalitaCrocione_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Pontida', kind: 'up', file: 'Canto_SalitaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 
 //
 // SERIANA
@@ -694,4 +701,3 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
-
