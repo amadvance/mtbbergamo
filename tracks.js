@@ -328,10 +328,10 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Almenno al Monte Lizone', kind: 'up', file: 'Martino_SalitaAlmennoPalazzagoLinzone_EBIKE.gpx', link: '2018/12/salite-san-martino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Trasferimento da Opreno a Burligo', kind: 'up', file: 'Martino_OprenoBurligo.gpx', link: '2018/12/salite-san-martino' },
 
-{ vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Kavast\u00F2poi (Cavatappi)', kind: 'down', file: 'Martino_Kavastopoi.gpx' },
+{ vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Kavast\u00F2poi (Cavatappi)', kind: 'down', file: 'Martino_Kavastopoi.gpx', link: '2023/02/kavastopoi' },
 
 // overlapping
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino', name: 'Salita Perlupario, Cava di Valcava', kind: 'up', file: 'Martino_SalitaPerluparioCava_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'pedrino', name: 'Salita Perlupario, Cava di Valcava', kind: 'up', file: 'Martino_SalitaPerluparioCava_EBIKE.gpx', link: '2023/02/kavastopoi' },
 
 //
 // MONTE CANTO
