@@ -358,7 +358,7 @@ var TRACKS = [
 { vote: 4, rate: 1, rate_max: 0, cycle: 100, zone: 'canto', name: 'Porcile, San Giovanni', kind: 'down', file: 'Canto_PorcileSanGiovanni.gpx', link: '2020/03/porcile-san-giovanni' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'canto, bob', name: 'Bob', kind: 'down', file: 'Canto_Bob.gpx', link: '2023/02/bob' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'canto, california', name: 'California', kind: 'down', file: 'Canto_California.gpx' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'canto, grezia', name: 'Grezia', kind: 'down', file: 'Canto_Grezia.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'canto, grezia', name: 'Grezia', kind: 'down', file: 'Canto_Grezia.gpx', link: '2023/02/grezia' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto, bob, grezia, california, rocce', name: 'Salita da Sotto il Monte', kind: 'up', file: 'Canto_SalitaSottoIlMonte.gpx', link: '2019/02/salite-monte-canto' },
