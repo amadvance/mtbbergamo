@@ -350,6 +350,7 @@ var TRACKS = [
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'Crocione, Guendalina', kind: 'down', file: 'Canto_CrocioneGuendalina.gpx', link: '2020/02/crocione-guendalina' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'canto', name: 'Biglietto da Visita', kind: 'down', file: 'Canto_BigliettoDaVisita.gpx', link: '2020/02/biglietto-da-visita' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'Kompressor', kind: 'down', file: 'Canto_Kompressor.gpx', link: '2019/02/kompressor' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'Borderline', kind: 'down', file: 'Canto_Borderline.gpx' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'canto', name: 'Pietra Sant Alberto', kind: 'down', file: 'Canto_PietraSAlberto.gpx', link: '2020/03/pietra-santalberto' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'canto, rocce', name: 'Rocce / Muschio e Lame Rotanti', kind: 'down', file: 'Canto_RocceLameRotanti.gpx', link: '2019/02/rocce-muschio' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 98, zone: 'canto', name: 'Scalette', kind: 'down', file: 'Canto_Scalette.gpx', link: '2019/02/scalette' },
