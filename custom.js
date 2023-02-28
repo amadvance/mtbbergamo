@@ -234,7 +234,7 @@ function create_base(map, control) {
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="https://www.cyclosm.org/">CyclOSM</a> | <a href="https://www.cyclosm.org/legend.html" title="Legenda dei simboli grafici">Legenda</a>'
 	});
 
-	CyclOSM.addTo(map);  // add it to make the default
+	// CyclOSM.addTo(map);  // add it to make the default
 
 	control.addBaseLayer(CyclOSM, "CyclOSM");
 
@@ -243,6 +243,8 @@ function create_base(map, control) {
 		apikey: 'b9a5e78a27a644dbbb109bc904b8919c',
 		maxZoom: 21
 	});
+
+	Thunderforest_OpenCycleMap.addTo(map);  // add it to make the default
 
 	control.addBaseLayer(Thunderforest_OpenCycleMap, "OpenCycleMap");
 
