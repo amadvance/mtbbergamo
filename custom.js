@@ -244,7 +244,10 @@ function create_base(map, control) {
 		maxZoom: 21
 	});
 
-	Thunderforest_OpenCycleMap.addTo(map);  // add it to make the default
+	/*
+	 * Thunderforest has a quota of 150.000 requests per month, but at 2023, the site requires about 20.000 per day,
+	 * then it cannot be used.
+	 */
 
 	control.addBaseLayer(Thunderforest_OpenCycleMap, "OpenCycleMap");
 
@@ -262,7 +265,20 @@ function create_base(map, control) {
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	});
 
+	OpenStreetMap_Mapnik.addTo(map);  // add it to make the default
+
 	control.addBaseLayer(OpenStreetMap_Mapnik, "OpenStreetMap");
+
+	var OpenStreetMap_CH = L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png',
+	{
+		maxZoom: 18,
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+		bounds: [[45, 5], [48, 11]]
+	});
+
+	// OpenStreetMap_CH.addTo(map);  // add it to make the default
+
+	control.addBaseLayer(OpenStreetMap_CH, "OpenStreetMap_CH");
 
 	var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 		attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
