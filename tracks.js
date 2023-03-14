@@ -482,8 +482,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'media_seriana', name: 'Baita Garda, Dasla, 528 Special, Vertova', kind: 'down', file: 'Seriana_GardaDasla528SpecialVertova.gpx', link: '2021/12/528-special' },
 { vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'media_seriana', name: 'Tisa, 518, Bondo, Ponte Nossa', kind: 'down', file: 'Seriana_Tisa518BondoPonteNossa.gpx', link: '2022/01/monte-tisa-518-bondo' },
 { vote: 3, rate: 4, rate_max: 0, cycle: 100, zone: 'media_seriana', name: 'Passo di Bliben, 529 Hard, Vertova', kind: 'down', file: 'Seriana_Bliben529HardVertova.gpx', link: '2022/01/529-hard' },
-{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'media_seriana', name: '530 George', kind: 'down', file: 'Seriana_530George.gpx' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'media_seriana', name: '530', kind: 'down', file: 'Seriana_530.gpx' },
+{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'media_seriana, 530', name: '530 George', kind: 'down', file: 'Seriana_530George.gpx', link: '2023/03/530-george' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'media_seriana, 530', name: '530 Original', kind: 'down', file: 'Seriana_530Original.gpx', link: '2023/03/530-george' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'media_seriana', name: 'Salita Parre, Rifugio Vaccaro, Forcella', kind: 'up', file: 'Seriana_SalitaParreVaccaroForcella_EBIKE.gpx', link: '2021/11/vaccaro-forcella' },
@@ -492,7 +492,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'media_seriana', name: 'Salita Ponte Nossa, Barbata, Cima di Tisa', kind: 'up', file: 'Seriana_SalitaPonteNossaBarbataTisa_EBIKE.gpx', link: '2022/01/monte-tisa-518-bondo' },
 
 // overlapping
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Vertova, Cavlera', kind: 'up', file: 'Seriana_SalitaVertovaCavlera_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '530', name: 'Salita Vertova, Rifugio Cavlera', kind: 'up', file: 'Seriana_SalitaVertovaCavlera_EBIKE.gpx', link: '2023/03/530-george' },
 
 //
 // GANDINO
