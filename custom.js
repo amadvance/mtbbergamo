@@ -276,17 +276,6 @@ function create_base(map, control) {
 
 	control.addBaseLayer(OpenStreetMap_Mapnik, "OpenStreetMap");
 
-	var OpenStreetMap_CH = L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png',
-	{
-		maxZoom: 18,
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-		bounds: [[45, 5], [48, 11]]
-	});
-
-	// OpenStreetMap_CH.addTo(map);  // add it to make the default
-
-	control.addBaseLayer(OpenStreetMap_CH, "OpenStreetMap_CH");
-
 	var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 		attribution: '&copy; Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 	});
