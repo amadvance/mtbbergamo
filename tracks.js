@@ -73,8 +73,8 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Flying Dutchman', kind: 'down', file: 'Maresana_FlyingDutchman.gpx', link: '2019/01/flying-dutchman' },
 { vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Gaito', kind: 'down', file: 'Maresana_Gaito.gpx', link: '2021/03/gaito' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'sorisole', name: 'Bacino', kind: 'down', file: 'Sorisole_Bacino.gpx' },
-{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'sorisole, pisgiu_dh', name: 'Pista Downhill', kind: 'down', file: 'Sorisole_PistaDH.gpx', link: '2018/12/pista-downhill' },
-{ vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'sorisole, pisgiu_dh', name: 'Pista Downhill Hard', kind: 'down', file: 'Sorisole_PistaDHHard.gpx', link: '2018/12/pista-downhill' },
+{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'sorisole, pisgiu_dh', name: 'Pista DH', kind: 'down', file: 'Sorisole_PistaDH.gpx', link: '2018/12/pista-downhill' },
+{ vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'sorisole, pisgiu_dh', name: 'Pista DH Hard', kind: 'down', file: 'Sorisole_PistaDHHard.gpx', link: '2018/12/pista-downhill' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana, sorisole, 229', name: 'Catene / 229', kind: 'down', file: 'Sorisole_Catene229.gpx', link: '2018/12/229' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: '229', name: 'Premerlino, 229', kind: 'down', file: 'Sorisole_Premerlino229.gpx', link: '2018/12/229' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Sorisole, Ponteranica Alta', kind: 'down', file: 'Sorisole_SorisolePonteranicaAlta.gpx' },
@@ -85,6 +85,8 @@ var TRACKS = [
 { vote: 4, rate: 1, rate_max: 3, cycle: 100, zone: 'sorisole', name: 'Canto Alto, 507, Prati Parini, 113, Sedrina', kind: 'down', file: 'Sorisole_CantoAltoPratiPariniSedrina.gpx', link: '2019/06/canto-alto-prati-parini-sedrina' },
 { vote: 5, rate: 3, rate_max: 4, cycle: 100, zone: 'sorisole', name: 'Canto Alto, 220, Forcella di Cambli, 113, Pisgiu, Sorisole', kind: 'down', file: 'Sorisole_CantoAlto220113Sorisole.gpx', link: '2019/06/canto-alto-forcella-di-cambli-pisgiu' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Sorisole, Pistino Scuola MTB', kind: 'down', file: 'Sorisole_SorisolePistinoScuolaMTB.gpx', link: '2019/06/pistino-scuola-mtb-sorisole' },
+{ vote: 4, rate: 2, rate_max: 4, cycle: 100, zone: 'sorisole', name: 'Canto Alto, Canto Basso, Catene, Pista DH', kind: 'down', file: 'Sorisole_CantoAltoBassoCatenePistaDH.gpx' },
+
 /*
 // abbandonato
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Luca West', kind: 'down', file: 'Maresana_LucaWest.gpx', link: '2018/11/lucawest' },
@@ -93,21 +95,22 @@ var TRACKS = [
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Salita Ranica, Monte Zuccone', kind: 'up', file: 'Maresana_SalitaRanicaZuccone_EBIKE.gpx', link: '2018/11/salite-maresana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Salita Ponteranica, Croce di Ranica', kind: 'up', file: 'Maresana_SalitaPonteranica.gpx', link: '2018/11/salite-maresana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Salita al Colle Alto', kind: 'up', file: 'Maresana_SalitaColleAlto_EBIKE.gpx', link: '2018/11/salite-maresana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana, sorisole', name: 'Salita da Ponteranica Alta', kind: 'up', file: 'Maresana_SalitaPonteranicaAlta.gpx', link: '2018/11/salite-maresana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Salita da Olera', kind: 'up', file: 'Maresana_SalitaOlera.gpx', link: '2018/11/salite-maresana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana, sorisole, 229', name: 'Trasferimento da Ca Del Lacc alla Forcella Del Sorriso', kind: 'up', file: 'Maresana_CaDelLaccForcellaDelSorriso.gpx', link: '2018/11/salite-maresana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana, sorisole, 229', name: 'Trasferimento da Premerlino a Ponteranica Alta', kind: 'up', file: 'Maresana_PremerlinoPonteranicaAlta.gpx', link: '2018/11/salite-maresana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Trasferimento dal Castello della Moretta alla Maresana', kind: 'up', file: 'Maresana_MorettaMaresana.gpx', link: '2018/11/salite-maresana' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "10% dal Canto Basso al Canto Alto a spalla o a spinta", zone: 'sorisole', name: 'Salita dal Canto Basso al Canto Alto', kind: 'up', file: 'Sorisole_SalitaCantoBassoCantoAlto.gpx', link: '2019/06/salite-sorisole' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita alla Forcella di Rua', kind: 'up', file: 'Sorisole_SalitaForcellaDiRua.gpx', link: '2019/06/salite-sorisole' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'pisgiu_dh', name: 'Salita da Pontesecco alla Pista Downhill', kind: 'up', file: 'Sorisole_SalitaPonteseccoPistaDH.gpx', link: '2019/06/salite-sorisole' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'galusu', name: 'Salita da Pontesecco al Galus\u00F9', kind: 'up', file: 'Sorisole_SalitaPonteseccoGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita al Galus\u00F9', kind: 'up', file: 'Sorisole_SalitaGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita al Giongo', kind: 'up', file: 'Sorisole_SalitaGiongo.gpx', link: '2019/06/salite-sorisole' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Salita Colle Alto', kind: 'up', file: 'Maresana_SalitaColleAlto_EBIKE.gpx', link: '2018/11/salite-maresana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana, sorisole', name: 'Salita Ponteranica Alta', kind: 'up', file: 'Maresana_SalitaPonteranicaAlta.gpx', link: '2018/11/salite-maresana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Salita Olera', kind: 'up', file: 'Maresana_SalitaOlera.gpx', link: '2018/11/salite-maresana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana, sorisole, 229', name: 'Trasferimento Ca Del Lacc, Forcella Del Sorriso', kind: 'up', file: 'Maresana_CaDelLaccForcellaDelSorriso.gpx', link: '2018/11/salite-maresana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana, sorisole, 229', name: 'Trasferimento Premerlino, Ponteranica Alta', kind: 'up', file: 'Maresana_PremerlinoPonteranicaAlta.gpx', link: '2018/11/salite-maresana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Trasferimento Castello della Moretta, Maresana', kind: 'up', file: 'Maresana_MorettaMaresana.gpx', link: '2018/11/salite-maresana' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "10% dal Canto Basso al Canto Alto a spalla o a spinta", zone: 'sorisole', name: 'Salita Canto Basso, Canto Alto', kind: 'up', file: 'Sorisole_SalitaCantoBassoCantoAlto.gpx', link: '2019/06/salite-sorisole' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita Forcella di Rua', kind: 'up', file: 'Sorisole_SalitaForcellaDiRua.gpx', link: '2019/06/salite-sorisole' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'pisgiu_dh', name: 'Salita Pontesecco, Pista DH', kind: 'up', file: 'Sorisole_SalitaPonteseccoPistaDH.gpx', link: '2019/06/salite-sorisole' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'galusu', name: 'Salita Pontesecco, Galus\u00F9', kind: 'up', file: 'Sorisole_SalitaPonteseccoGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita Galus\u00F9', kind: 'up', file: 'Sorisole_SalitaGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita Giongo', kind: 'up', file: 'Sorisole_SalitaGiongo.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole, 229', name: 'Trasferimento da Catene al Pisgi\u00F9', kind: 'up', file: 'Sorisole_CatenePisgiu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Trasferimento alla Pista Downhill', kind: 'up', file: 'Sorisole_203.gpx', link: '2019/06/salite-sorisole' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita dalla Forcella del Sorriso al Canto Basso', kind: 'up', file: 'Sorisole_SalitaForcellaDelSorrisoCantoBasso.gpx', link: '2019/06/salite-sorisole' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita Forcella del Sorriso, Canto Basso', kind: 'up', file: 'Sorisole_SalitaForcellaDelSorrisoCantoBasso.gpx', link: '2019/06/salite-sorisole' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 97, zone: 'sorisole', name: 'Salita Sedrina, Prati Parini, Canto Alto', kind: 'up', file: 'Sorisole_SalitaSedrinaCantoAlto_EBIKE.gpx' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Ranica, Pozza del Colle', kind: 'up', file: 'Maresana_SalitaRanicaPozzaDelColle_EBIKE.gpx', link: '2018/11/salite-maresana' },
@@ -723,4 +726,3 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
-
