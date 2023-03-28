@@ -68,7 +68,7 @@ var TRACKS = [
 { vote: 4, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Tornantini / 409', kind: 'down', file: 'Maresana_Tornantini.gpx', link: '2018/11/tornantini' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana, legnaia', name: 'Legnaia', kind: 'down', file: 'Maresana_Legnaia.gpx', link: '2018/11/legnaia' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'legnaia', name: 'Legnaia Sud', kind: 'down', file: 'Maresana_LegnaiaSud.gpx', link: '2018/11/legnaia' },
-{ vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Birondina', kind: 'down', file: 'Maresana_Birondina.gpx', link: '2019/02/birondina' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Birondina', kind: 'down', file: 'Maresana_Birondina.gpx', link: '2019/02/birondina' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'maresana, bassa_seriana', name: '532A, Olera', kind: 'down', file: 'Maresana_532A_Olera.gpx', link: '2019/03/532a-olera' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'maresana', name: 'Flying Dutchman', kind: 'down', file: 'Maresana_FlyingDutchman.gpx', link: '2019/01/flying-dutchman' },
 { vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'maresana', name: 'Gaito', kind: 'down', file: 'Maresana_Gaito.gpx', link: '2021/03/gaito' },
@@ -110,7 +110,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole, 229', name: 'Trasferimento da Catene al Pisgi\u00F9', kind: 'up', file: 'Sorisole_CatenePisgiu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Trasferimento alla Pista Downhill', kind: 'up', file: 'Sorisole_203.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita Forcella del Sorriso, Canto Basso', kind: 'up', file: 'Sorisole_SalitaForcellaDelSorrisoCantoBasso.gpx', link: '2019/06/salite-sorisole' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 97, zone: 'sorisole', name: 'Salita Sedrina, Prati Parini, Canto Alto', kind: 'up', file: 'Sorisole_SalitaSedrinaCantoAlto_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 92, zone: 'sorisole', name: 'Salita Sedrina, Prati Parini, Canto Alto', kind: 'up', file: 'Sorisole_SalitaSedrinaCantoAlto_EBIKE.gpx' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Ranica, Pozza del Colle', kind: 'up', file: 'Maresana_SalitaRanicaPozzaDelColle_EBIKE.gpx', link: '2018/11/salite-maresana' },
