@@ -85,7 +85,7 @@ var TRACKS = [
 { vote: 4, rate: 1, rate_max: 3, cycle: 100, zone: 'sorisole', name: 'Canto Alto, 507, Prati Parini, 113, Sedrina', kind: 'down', file: 'Sorisole_CantoAltoPratiPariniSedrina.gpx', link: '2019/06/canto-alto-prati-parini-sedrina' },
 { vote: 5, rate: 3, rate_max: 4, cycle: 100, zone: 'sorisole', name: 'Canto Alto, 220, Forcella di Cambl\u00EC, 113, Pisgiu, Sorisole', kind: 'down', file: 'Sorisole_CantoAlto220Sorisole.gpx', link: '2019/06/canto-alto-forcella-di-cambli-pisgiu' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Sorisole, Pistino Scuola MTB', kind: 'down', file: 'Sorisole_SorisolePistinoScuolaMTB.gpx', link: '2019/06/pistino-scuola-mtb-sorisole' },
-{ vote: 4, rate: 3, rate_max: 4, cycle: 100, zone: 'sorisole', name: 'Canto Alto, Canto Basso, Catene, Pista DH', kind: 'down', file: 'Sorisole_CantoAltoBassoCatenePistaDH.gpx' },
+{ vote: 4, rate: 3, rate_max: 4, cycle: 100, zone: 'sorisole', name: 'Canto Alto, Canto Basso, Catene, Pista DH', kind: 'down', file: 'Sorisole_CantoAltoBassoCatenePistaDH.gpx', link: '2023/04/canto-alto-catene-dh' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Valle del Giongo, Monte Bastia', kind: 'down', file: 'Sorisole_ValleGiongoMonteBastia.gpx'},
 
 /*
@@ -107,7 +107,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'galusu', name: 'Salita Pontesecco, Galus\u00F9', kind: 'up', file: 'Sorisole_SalitaPonteseccoGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita Galus\u00F9', kind: 'up', file: 'Sorisole_SalitaGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
 //{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita Giongo', kind: 'up', file: 'Sorisole_SalitaGiongo.gpx', link: '2019/06/salite-sorisole' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 92, zone: 'sorisole', name: 'Salita Sedrina, Prati Parini, Canto Alto', kind: 'up', file: 'Sorisole_SalitaSedrinaCantoAlto_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 92, zone: 'sorisole', name: 'Salita Sedrina, Prati Parini, Canto Alto', kind: 'up', file: 'Sorisole_SalitaSedrinaCantoAlto_EBIKE.gpx', link: '2023/04/canto-alto-catene-dh' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 70, comm: "50% Forcella/Canto Basso, 10% Canto Basso/Canto Alto", zone: 'sorisole', name: 'Salita Ponteranica, Canto Alto', kind: 'up', file: 'Sorisole_SalitaPonteranicaCantoAlto.gpx', link: '2019/06/canto-alto-forcella-di-cambli-pisgiu' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 70, comm: "10% Canto Basso/Canto Alto", zone: 'sorisole', name: 'Salita Nese, Canto Basso, Canto Alto', kind: 'up', file: 'Sorisole_SalitaNeseCantoAlto.gpx', link: '2019/06/canto-alto-prati-parini-sedrina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 92, zone: 'sorisole', name: 'Salita Petosino, Forcella di Cambl\u00EC', kind: 'up', file: 'Sorisole_SalitaPetosinoForcellaCambli_EBIKE.gpx' },
