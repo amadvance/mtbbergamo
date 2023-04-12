@@ -361,7 +361,6 @@ var TRACKS = [
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'canto', name: 'Crocione, California 2', kind: 'down', file: 'Canto_CrocioneCaliforna2.gpx' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'canto', name: 'Tronchi, Canyon', kind: 'down', file: 'Canto_Canyon.gpx', link: '2021/05/canyon' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'canto', name: 'Traliccio', kind: 'down', file: 'Canto_Traliccio.gpx', link: '2021/05/traliccio' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'GEP', kind: 'down', file: 'Canto_GEP.gpx', link: '2021/05/gep' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'Radici, Genestaro', kind: 'down', file: 'Canto_RadiciGenestaro.gpx', link: '2020/03/radici-genestaro' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'Crocione, Guendalina', kind: 'down', file: 'Canto_CrocioneGuendalina.gpx', link: '2020/02/crocione-guendalina' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'canto', name: 'Biglietto da Visita', kind: 'down', file: 'Canto_BigliettoDaVisita.gpx', link: '2020/02/biglietto-da-visita' },
@@ -392,6 +391,9 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Sotto il Monte', kind: 'up', file: 'Canto_SalitaSottoIlMonte_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Ruderi, Crocione', kind: 'up', file: 'Canto_SalitaCrocione_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Pontida, Santa Barbara', kind: 'up', file: 'Canto_SalitaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
+
+// rimosso perchè trasformato in strada
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: '', name: 'GEP', kind: 'down', file: 'Canto_GEP.gpx', link: '2021/05/gep' },
 
 //
 // SERIANA
