@@ -87,6 +87,7 @@ var TRACKS = [
 { vote: 4, rate: 3, rate_max: 4, cycle: 100, zone: 'sorisole', name: 'Canto Alto, Canto Basso, Catene, Pista DH', kind: 'down', file: 'Sorisole_CantoAltoBassoCatenePistaDH.gpx', link: '2023/04/canto-alto-catene-dh' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'sorisole, giongo', name: 'Giongo', kind: 'down', file: 'Sorisole_Giongo.gpx', link: '2023/04/giongo' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'sorisole, giongo', name: 'Valle del Giongo, Monte Bastia', kind: 'down', file: 'Sorisole_ValleGiongoMonteBastia.gpx', link: '2023/04/giongo' },
+{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'sorisole', name: 'Canto Alto, Forcellino, 220, Pista DH', kind: 'down', file: 'Sorisole_CantoAltoForcellino220PistaDH.gpx' },
 
 /*
 // abbandonato
@@ -108,6 +109,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita Galus\u00F9', kind: 'up', file: 'Sorisole_SalitaGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
 //{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole', name: 'Salita Giongo', kind: 'up', file: 'Sorisole_SalitaGiongo.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 92, zone: 'sorisole', name: 'Salita Sedrina, Prati Parini, Canto Alto', kind: 'up', file: 'Sorisole_SalitaSedrinaCantoAlto_EBIKE.gpx', link: '2023/04/canto-alto-catene-dh' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 94, zone: 'sorisole', name: 'Salita Ponti di Sedrina, Cava, Canto Alto', kind: 'up', file: 'Sorisole_SalitaPontiSedrinaCavaCantoAlto_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 70, comm: "50% Forcella/Canto Basso, 10% Canto Basso/Canto Alto", zone: 'sorisole', name: 'Salita Ponteranica, Canto Alto', kind: 'up', file: 'Sorisole_SalitaPonteranicaCantoAlto.gpx', link: '2019/06/canto-alto-forcella-di-cambli-pisgiu' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 70, comm: "10% Canto Basso/Canto Alto", zone: 'sorisole', name: 'Salita Nese, Canto Basso, Canto Alto', kind: 'up', file: 'Sorisole_SalitaNeseCantoAlto.gpx', link: '2019/06/canto-alto-prati-parini-sedrina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'sorisole, giongo', name: 'Salita Petosino, Forcella di Rua', kind: 'up', file: 'Sorisole_SalitaPetosinoForcellaDiRua_EBIKE.gpx', link: '2023/04/giongo' },
@@ -355,6 +357,8 @@ var TRACKS = [
 //
 // MONTE CANTO
 //
+{ vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'canto', name: 'Frana', kind: 'down', file: 'Canto_Frana.gpx' },
+{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'canto', name: 'Crocione, California 2', kind: 'down', file: 'Canto_CrocioneCaliforna2.gpx' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'canto', name: 'Tronchi, Canyon', kind: 'down', file: 'Canto_Canyon.gpx', link: '2021/05/canyon' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'canto', name: 'Traliccio', kind: 'down', file: 'Canto_Traliccio.gpx', link: '2021/05/traliccio' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'canto', name: 'GEP', kind: 'down', file: 'Canto_GEP.gpx', link: '2021/05/gep' },
@@ -374,19 +378,20 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'canto, grezia', name: 'Grezia', kind: 'down', file: 'Canto_Grezia.gpx', link: '2023/02/grezia' },
 
 // climb
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto, bob, grezia, rocce', name: 'Salita da Sotto il Monte', kind: 'up', file: 'Canto_SalitaSottoIlMonte.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Somasca a Pontida', kind: 'up', file: 'Canto_SalitaSomascaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita al Monte Canto', kind: 'up', file: 'Canto_SalitaMonteCanto.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Pontida', kind: 'up', file: 'Canto_SalitaPontida.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Somasca', kind: 'up', file: 'Canto_SalitaSomasca_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Ambivere', kind: 'up', file: 'Canto_SalitaAmbivere.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita da Fontanella', kind: 'up', file: 'Canto_SalitaFontanella.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto, bob, grezia, rocce', name: 'Salita Sotto il Monte, Santa Barbara', kind: 'up', file: 'Canto_SalitaSottoIlMonte.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita Somasca, Pontida', kind: 'up', file: 'Canto_SalitaSomascaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita Ruderi, Monte Canto', kind: 'up', file: 'Canto_SalitaMonteCanto.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita Pontida, Santa Barbara', kind: 'up', file: 'Canto_SalitaPontida.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita Pontida, GEP, Santa Barbara', kind: 'up', file: 'Canto_SalitaPontidaGEP_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita Somasca, Monte Albano', kind: 'up', file: 'Canto_SalitaSomasca_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita Ambivere, Monte Albano', kind: 'up', file: 'Canto_SalitaAmbivere.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto', name: 'Salita Fontanella, Santa Barbara', kind: 'up', file: 'Canto_SalitaFontanella.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'canto, bob, grezia, rocce', name: 'Cross, Trasferimento Roncarro-Caneve', kind: 'up', file: 'Canto_Cross_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Sotto il Monte', kind: 'up', file: 'Canto_SalitaSottoIlMonte_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita al Crocione', kind: 'up', file: 'Canto_SalitaCrocione_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita da Pontida', kind: 'up', file: 'Canto_SalitaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Ruderi, Crocione', kind: 'up', file: 'Canto_SalitaCrocione_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: '', name: 'Salita Pontida, Santa Barbara', kind: 'up', file: 'Canto_SalitaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 
 //
 // SERIANA
@@ -730,3 +735,4 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
+
