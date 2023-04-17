@@ -357,7 +357,7 @@ var TRACKS = [
 //
 // MONTE CANTO
 //
-{ vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'canto', name: 'Frana', kind: 'down', file: 'Canto_Frana.gpx' },
+{ vote: 5, rate: 2, rate_max: 0, cycle: 100, zone: 'canto', name: 'La Frana', kind: 'down', file: 'Canto_Frana.gpx', link: '2023/04/frana' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'canto', name: 'Crocione, California 2', kind: 'down', file: 'Canto_CrocioneCaliforna2.gpx' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'canto', name: 'Tronchi, Canyon', kind: 'down', file: 'Canto_Canyon.gpx', link: '2021/05/canyon' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 100, zone: 'canto', name: 'Traliccio', kind: 'down', file: 'Canto_Traliccio.gpx', link: '2021/05/traliccio' },
