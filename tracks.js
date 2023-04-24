@@ -319,7 +319,7 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'martino, coldara', name: 'Coldara, Val Bratta, Torre de Busi', kind: 'down', file: 'Martino_ColdaraValBratta.gpx', link: '2020/01/coldara' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'coldara', name: 'Coldara, Col Fopa, Opreno', kind: 'down', file: 'Martino_ColdaraColFopaOpreno.gpx', link: '2020/01/coldara' },
 { vote: 5, rate: 1, rate_max: 2, cycle: 100, zone: 'martino, valcava, pedrino', name: 'Kavast\u00F2poi (Cavatappi)', kind: 'down', file: 'Martino_Kavastopoi.gpx', link: '2023/02/kavastopoi' },
-{ vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'martino, valcava', name: 'Valcavst\u00F2poi', kind: 'down', file: 'Martino_Valcavastoposi.gpx' },
+{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'martino, valcava', name: 'Valcavast\u00F2poi', kind: 'down', file: 'Martino_Valcavastopoi.gpx', link: '2023/04/valcavastopoi' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'martino, valcava, roncola', name: 'Trasferimento da Roncola alla Baita', kind: 'up', file: 'Martino_RoncolaBaita.gpx', link: '2018/12/salite-san-martino' },
