@@ -258,13 +258,13 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Final, Postiera', kind: 'down', file: 'Imagna_FinalPostiera.gpx', link: '2020/05/sopracorna' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Final, Valle Mori', kind: 'down', file: 'Imagna_FinalValleMori.gpx', link: '2020/05/sopracorna' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Corna Marcia, Coyote Scamburtit, Ca Bonor\u00E8', kind: 'down', file: 'Imagna_CoyoteScamburtit.gpx', link: '2019/09/coyote-scamburtit' },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Monte Ubiale, Ubiale', kind: 'down', file: 'Imagna_MonteUbialeClanezzo.gpx' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Monte Ubiale, Ubiale', kind: 'down', file: 'Imagna_MonteUbialeClanezzo.gpx', link: '2023/05/monte-ubiale'  },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita ciclabile del Chito, Corna Marcia', kind: 'up', file: 'Imagna_SalitaChitoBottaCornaMarcia_EBIKE.gpx', link: '2019/09/coyote-scamburtit' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'imagna, ubione', name: 'Salita ciclabile del Chito, Roccoli Passata', kind: 'up', file: 'Imagna_SalitaChitoCeresolaCantoPassata_EBIKE.gpx', link: '2019/09/costa-cavallina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, comm: "60% con ultimi 100m di dislivello a spalla", zone: 'imagna, ubione', name: 'Salita Clanezzo, Monte Ubione', kind: 'up', file: 'Imagna_SalitaClanezzoUbione.gpx', link: '2020/08/ubione-571' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'imagna, ubione', name: 'Salita Clanezzo, Passo del Canto, Monte Ubiale', kind: 'up', file: 'Imagna_SalitaClanezzoMonteUbiale_EBIKE.gpx'},
+{ vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'imagna, ubione', name: 'Salita Clanezzo, Passo del Canto, Monte Ubiale', kind: 'up', file: 'Imagna_SalitaClanezzoMonteUbiale_EBIKE.gpx', link: '2023/05/monte-ubiale' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'ubione, sopracorna', name: 'Salita Clanezzo, Roccoli Passata', kind: 'up', file: 'Imagna_SalitaClanezzoRoccoliPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
