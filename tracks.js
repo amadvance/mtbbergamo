@@ -638,11 +638,12 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 //
 { vote: 5, rate: 2, rate_max: 3, cycle: 99, zone: 'serina, brembana', name: 'Cima di Grem, Cresta, Zambla Alta', kind: 'down', file: 'Serina_CimaGremCrestaZambla.gpx', link: '2022/11/cima-di-grem' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 95, zone: 'serina, brembana', name: 'Capanna 2000, Sentiero dei Fiori, Val Vedra', kind: 'down', file: 'Serina_Capanna2000VedraOltreIlColle.gpx', link: '2022/11/val-vedra' },
-{ vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'serina, brembana', name: 'Anello Serina, Zambla, Oltre il Colle', kind: 'down', file: 'Serina_AnelloSerinaZamblaOltreIlColle_EBIKE.gpx' },
+{ vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'serina, brembana', name: 'Zambla, Oltre il Colle, Serina', kind: 'down', file: 'Serina_ZamblaAltaOltreIlColleSerina.gpx', link: '2023/06/anello-serina-zambla' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'serina, brembana', name: 'Salita Zambla Alta, Capanna 2000, Cima di Grem', kind: 'up', file: 'Serina_SalitaZamblaPlassaCapanna200CimaGrem_EBIKE.gpx', link: '2022/11/cima-di-grem'  },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'serina, brembana', name: 'Salita Oltre il Colle, Capanna 2000', kind: 'up', file: 'Serina_SalitaOltreIlColleCapanna2000_EBIKE.gpx', link: '2022/11/val-vedra' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'serina, brembana', name: 'Salita Serina, Conca d\'Alben, Zambla', kind: 'up', file: 'Serina_SalitaSerinaConcaAlbenZambla_EBIKE.gpx', link: '2023/06/anello-serina-zambla' },
 
 //
 // ALTA BREMBANA
