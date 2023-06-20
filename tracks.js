@@ -640,7 +640,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 3, cycle: 95, zone: 'serina, brembana', name: 'Capanna 2000, Sentiero dei Fiori, Val Vedra', kind: 'down', file: 'Serina_Capanna2000VedraOltreIlColle.gpx', link: '2022/11/val-vedra' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'serina, brembana', name: 'Zambla, Oltre il Colle, Serina', kind: 'down', file: 'Serina_ZamblaAltaOltreIlColleSerina.gpx', link: '2023/06/anello-serina-zambla' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 98, zone: 'serina, brembana', name: 'Anello Serina, Corone, Cornalba, Serina', kind: 'down', file: 'Serina_AnelloSerinaCoroneCornalbaErasmo_EBIKE.gpx', link: '2023/06/anello-serina-erasmo' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'serina, brembana', name: 'Monte Vaccareggio, Via Mercatorum, Serina', kind: 'down', file: 'Serina_VaccareggioMercatorumSerina.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'serina, brembana', name: 'Monte Vaccareggio, Via Mercatorum, Serina', kind: 'down', file: 'Serina_VaccareggioMercatorumSerina.gpx', link: '2023/06/vaccareggio' },
 { vote: 4, rate: 4, rate_max: 0, cycle: 100, zone: 'serina, brembana', name: 'Rifugio Monte Alben, Tre Valloni', kind: 'down', file: 'Serina_RifugioAlbenTreValloniBagnella.gpx' },
 
 // climb
