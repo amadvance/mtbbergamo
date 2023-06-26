@@ -641,7 +641,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'serina, brembana', name: 'Zambla, Oltre il Colle, Serina', kind: 'down', file: 'Serina_ZamblaAltaOltreIlColleSerina.gpx', link: '2023/06/anello-serina-zambla' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 98, zone: 'serina, brembana', name: 'Anello Serina, Corone, Cornalba, Serina', kind: 'down', file: 'Serina_AnelloSerinaCoroneCornalbaErasmo_EBIKE.gpx', link: '2023/06/anello-serina-erasmo' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'serina, brembana', name: 'Monte Vaccareggio, Via Mercatorum, Serina', kind: 'down', file: 'Serina_VaccareggioMercatorumSerina.gpx', link: '2023/06/vaccareggio' },
-{ vote: 4, rate: 4, rate_max: 0, cycle: 100, zone: 'serina, brembana', name: 'Rifugio Monte Alben, Tre Valloni', kind: 'down', file: 'Serina_RifugioAlbenTreValloniBagnella.gpx' },
+{ vote: 4, rate: 4, rate_max: 0, cycle: 100, zone: 'serina, brembana', name: 'Rifugio Monte Alben, Sentiero Tre Valloni', kind: 'down', file: 'Serina_RifugioAlbenTreValloniBagnella.gpx' },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 99, zone: 'serina, brembana', name: 'Rifugio Monte Alben, Sentiero Panoramico', kind: 'down', file: 'Serina_RifugioAlbenPanoramicoCornalbaBolzagna.gpx', link: '2023/06/alben-panoramico' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'serina, brembana', name: 'Salita Zambla Alta, Capanna 2000, Cima di Grem', kind: 'up', file: 'Serina_SalitaZamblaPlassaCapanna200CimaGrem_EBIKE.gpx', link: '2022/11/cima-di-grem'  },
@@ -649,6 +650,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'serina, brembana', name: 'Salita Serina, Conca d\'Alben, Zambla', kind: 'up', file: 'Serina_SalitaSerinaConcaAlbenZambla_EBIKE.gpx', link: '2023/06/anello-serina-zambla' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'serina, brembana', name: 'Salita Serina, Valpiana, Monte Vaccareggio', kind: 'up', file: 'Serina_SalitaSerinaValpianaVaccareggio_EBIKE.gpx' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 80, zone: 'serina, brembana', name: 'Salita Serina, Valpiana, Passo Sappl\u00EC, Rifugio Monte Alben', kind: 'up', file: 'Serina_SalitaValpianaSuppliRifugioAlben.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 97, zone: 'serina, brembana', name: 'Salita Serina, Cornalba, Sentiero Panoramico, Rifugio Monte Alben', kind: 'up', file: 'Serina_SalitaBagnellaCornalbaPanoramicoRifugioAlben-EBIKE.gpx', link: '2023/06/alben-panoramico' },
 
 //
 // ALTA BREMBANA
