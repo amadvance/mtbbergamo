@@ -624,7 +624,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_brembana', name: 'Monte Vaccareggio, Camerata Cornello', kind: 'down', file: 'Brembana_VaccareggioCamerataCornello.gpx' },
 
 // trek
-{ vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'bassa_brembana', name: 'Vie del Passato di San Pellegrino', kind: 'trek', file: 'Brembana_VieDelPassato.gpx' },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'bassa_brembana', name: 'Vie del Passato', kind: 'trek', file: 'Brembana_VieDelPassato.gpx', link: '2023/08/passato' },
 
 // climp
 { vote: 0, rate: 0, rate_max: 0, cycle: 90, zone: 'bassa_brembana', name: 'Salita da S. Antonio Abbandonato a Ca del C\u00E8co', kind: 'up', file: 'Brembana_SalitaSantAntonioCeco_EBIKE.gpx', link: '2021/06/ceco-sonzogno-pernice' },
