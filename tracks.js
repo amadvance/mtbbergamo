@@ -161,6 +161,7 @@ var TRACKS = [
 { vote: 3, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, taleggio', name: 'Passo del Palio, Foo di Valmana, Selvano, Morterone, Fuipiano', kind: 'down', file: 'Imagna_PalioFooValmanaSelvanoMorteroneFuipiano.gpx', link: '2022/04/foo-di-valmana' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'imagna, taleggio', name: 'Passo del Palio, Grandi Alberi, Morterone, Fuipiano', kind: 'down', file: 'Imagna_PalioGrandiAlberiFuipiano.gpx', link: '2022/03/grandi-alberi' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Forbesette, Morterone', kind: 'down', file: 'Imagna_PassoPalioForbesetteMorterone.gpx', link: '2020/12/morterone' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Forbesette, Morterone Nord', kind: 'down', file: 'Imagna_PassoPalioForbesetteMorteroneNord.gpx', link: '2020/12/morterone' },
 { vote: 3, rate: 1, rate_max: 3, cycle: 100, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Freeride, Morterone', kind: 'down', file: 'Imagna_PassoPalioFreerideMorterone.gpx', link: '2020/12/morterone' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 70, zone: 'imagna', name: 'Anello del Resegone', kind: 'down', file: 'Imagna_AnelloResegone.gpx', link: '2020/08/anello-resegone' },
 
