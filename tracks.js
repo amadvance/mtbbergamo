@@ -403,13 +403,15 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: '', name: 'GEP', kind: 'down', file: 'Canto_GEP.gpx', link: '2021/05/gep' },
 
 //
-// SERIANA
+// BASSA SERIANA
 //
 // nord
 { vote: 4, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Canto Basso, 533, Forcella del Sorriso', kind: 'down', file: 'Seriana_CantoBassoForcellaSorriso.gpx', link: '2019/03/canto-basso-533-forcella-del-sorriso' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'bassa_seriana,lonno', name: 'Lonno, Val del Luio, Alzano', kind: 'down', file: 'Seriana_LonnoLuio.gpx', link: '2019/04/lonno' },
 /* { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Cavallo, Canto Basso', kind: 'down', file: 'Seriana_MonteCavallo.gpx' }, */
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Poieto, 523, Gazzaniga', kind: 'down', file: 'Seriana_Poieto523Gazzaniga.gpx', link: '2019/05/poieto-gazzaniga' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Cascina Donadoni, 524, Vertova', kind: 'down', file: 'Seriana_Donadoni524Vertova.gpx' },
+{ vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'bassa_seriana', name: 'Poieto, 516, Val Vertova', kind: 'down', file: 'Seriana_Poieto516ValVertova.gpx' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana,lonno', name: 'Lonno, Pizzo di Lonno, Monte Ganda, Alzano', kind: 'down', file: 'Seriana_LonnoPizzoMonteGanda.gpx', link: '2019/04/lonno' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'bassa_seriana,lonno', name: 'Lonno, Percorso Vita, Valbona', kind: 'down', file: 'Seriana_LonnoPercorsoVita.gpx', link: '2019/04/lonno' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana,lonno', name: 'Lonno, Percorso Vita, Luio', kind: 'down', file: 'Seriana_LonnoPercorsoVitaLuio.gpx', link: '2019/04/lonno' },
@@ -463,6 +465,8 @@ rimosso su richiesta del CAI Albino
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'bassa_seriana', name: 'Salita Gazzaniga, Mer\u00E0, Tribulina di Ganda', kind: 'up', file: 'Seriana_SalitaGazzanigaMeraGanda_EBIKE.gpx', link: '2023/01/522' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 99, zone: 'bassa_seriana', name: 'Salita Gazzaniga, Val del Gr\u00F9, Monte Poieto', kind: 'up', file: 'Seriana_SalitaGazzanigaGruPoieto_EBIKE.gpx', link: '2019/05/poieto-gazzaniga' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita Aviatico, Forca, Monte Poieto', kind: 'up', file: 'Seriana_SalitaAviaticoForcaPoieto_EBIKE.gpx', link: '2019/05/poieto-gazzaniga' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Salita Vertova, Val del Gr\u00F9, Cascina Donadoni', kind: 'up', file: 'Seriana_SalitaVertovaGruDonadoni_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 99, zone: 'bassa_seriana', name: 'Salita Vertova, Val del Gr\u00F9, Monte Poieto', kind: 'up', file: 'Seriana_SalitaVertovaGruPoieto_EBIKE.gpx' },
 
 // sud
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'bassa_seriana, 520', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'Seriana_CiclabileValleSeriana.gpx', link: '2019/03/salite-valle-seriana' },
@@ -784,4 +788,3 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
-
