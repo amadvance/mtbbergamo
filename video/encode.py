@@ -34,7 +34,11 @@ input_list = ""
 filter_list = ""
 i = 0
 for a in clips:
-	clip_mp4 = a["reader"]["path"].replace("./","")
+	clip_mp4 = a["reader"]["path"]
+
+	if clip_mp4[:2] == "./":
+		clip_mp4 = clip_mp4[2:]
+
 	input_list += "-ss " + str(float(a["start"])) + " -to " + str(float(a["end"])) + " -i " + clip_mp4 + " "
 	filter_list += "[" + str(i) + ":v] [" + str(i) + ":a] "
 	i += 1
