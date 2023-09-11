@@ -410,6 +410,7 @@ var TRACKS = [
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'bassa_seriana,lonno', name: 'Lonno, Val del Luio, Alzano', kind: 'down', file: 'Seriana_LonnoLuio.gpx', link: '2019/04/lonno' },
 /* { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Cavallo, Canto Basso', kind: 'down', file: 'Seriana_MonteCavallo.gpx' }, */
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Poieto, 523, Gazzaniga', kind: 'down', file: 'Seriana_Poieto523Gazzaniga.gpx', link: '2023/09/poieto-gazzaniga' },
+{ vote: 5, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Poieto, Slayer Lane, Vertova', kind: 'down', file: 'Seriana_PoietoSlayerVertova.gpx' },
 { vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Cascina Donadoni, 524, Vertova', kind: 'down', file: 'Seriana_Donadoni524Vertova.gpx' },
 { vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'bassa_seriana', name: 'Poieto, 516, Val Vertova', kind: 'down', file: 'Seriana_Poieto516ValVertova.gpx' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana,lonno', name: 'Lonno, Pizzo di Lonno, Monte Ganda, Alzano', kind: 'down', file: 'Seriana_LonnoPizzoMonteGanda.gpx', link: '2019/04/lonno' },
@@ -788,3 +789,4 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 95, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 100, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
+
