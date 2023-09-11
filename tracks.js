@@ -410,7 +410,7 @@ var TRACKS = [
 { vote: 4, rate: 1, rate_max: 2, cycle: 100, zone: 'bassa_seriana,lonno', name: 'Lonno, Val del Luio, Alzano', kind: 'down', file: 'Seriana_LonnoLuio.gpx', link: '2019/04/lonno' },
 /* { vote: 2, rate: 1, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Monte Cavallo, Canto Basso', kind: 'down', file: 'Seriana_MonteCavallo.gpx' }, */
 { vote: 4, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana', name: 'Poieto, 523, Gazzaniga', kind: 'down', file: 'Seriana_Poieto523Gazzaniga.gpx', link: '2023/09/poieto-gazzaniga' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Cascina Donadoni, 524, Vertova', kind: 'down', file: 'Seriana_Donadoni524Vertova.gpx' },
+{ vote: 2, rate: 2, rate_max: 3, cycle: 100, zone: 'bassa_seriana', name: 'Cascina Donadoni, 524, Vertova', kind: 'down', file: 'Seriana_Donadoni524Vertova.gpx' },
 { vote: 3, rate: 3, rate_max: 4, cycle: 100, zone: 'bassa_seriana', name: 'Poieto, 516, Val Vertova', kind: 'down', file: 'Seriana_Poieto516ValVertova.gpx' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 100, zone: 'bassa_seriana,lonno', name: 'Lonno, Pizzo di Lonno, Monte Ganda, Alzano', kind: 'down', file: 'Seriana_LonnoPizzoMonteGanda.gpx', link: '2019/04/lonno' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 100, zone: 'bassa_seriana,lonno', name: 'Lonno, Percorso Vita, Valbona', kind: 'down', file: 'Seriana_LonnoPercorsoVita.gpx', link: '2019/04/lonno' },
