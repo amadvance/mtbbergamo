@@ -161,7 +161,10 @@ function get_track_cycle(index)
 	if (TRACKS[index].cycle == 0)
 		return "";
 
-	return TRACKS[index].cycle.toString() + "%";
+	if (TRACKS[index].cycle == 1)
+		return "1 minuto";
+
+	return TRACKS[index].cycle.toString() + " minuti";
 }
 
 function create_map(id) {
@@ -372,9 +375,9 @@ function create_gpx_info(map, control, gpx, url, index, link)
 	}
 
 	cycle = get_track_cycle(index);
-	if (cycle != "" && cycle != "100%") {
+	if (cycle != "") {
 		desc += "<br/>";
-		desc += "Tempo in sella: <b>" + cycle + "</b>";
+		desc += "Tempo a spinta: <b>" + cycle + "</b>";
 	}
 
 	desc += "<br/>";
@@ -712,9 +715,13 @@ function setup_down(index)
 
 	var html = "";
 
+	var cycle = get_track_cycle(index)
+	if (cycle == "")
+		cycle = "0%";
+
 	html += "<b>Giudizio: " + get_track_vote(index) + "</b><br/>";
 	html += "<b>Difficolt\u00E0: " + get_track_rate(index) + "</b>" + get_track_rate_max(index) + "<br/>";
-	html += "<b>Tempo in sella:<!--DISCESA--> " + get_track_cycle(index) + "</b><!--SALITA--><br/>";
+	html += "<b>Tempo a spinta:<!--DISCESA--> " + cycle + "</b><!--SALITA--><br/>";
 	html += "<b>Download GPX: </b>" + get_track_anchor(index,"<b>" + get_track_name(index) + "</b>");
 	html += "&nbsp;" + get_shademap_anchor(index);
 
@@ -739,7 +746,7 @@ function setup_up(index)
 	html += "&nbsp;" + get_shademap_anchor(index);
 
 	var cycle = get_track_cycle(index);
-	if (cycle != "" && cycle != "100%") {
+	if (cycle != "") {
 		html = html.replace("<!--DISCESA-->","</b> discesa <b>");
 		html = html.replace("<!--SALITA-->", ", salita <b>" + cycle + "</b>");
 	}
