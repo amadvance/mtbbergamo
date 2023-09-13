@@ -716,7 +716,7 @@ function setup_down(index)
 
 	var cycle = get_track_cycle(index)
 	if (cycle == "")
-		cycle = "0%";
+		cycle = "no";
 
 	html += "<b>Giudizio: " + get_track_vote(index) + "</b><br/>";
 	html += "<b>Difficolt\u00E0: " + get_track_rate(index) + "</b>" + get_track_rate_max(index) + "<br/>";
