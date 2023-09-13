@@ -154,9 +154,8 @@ function get_track_cycle(index)
 	if (index == -1)
 		return "";
 
-	if ('comm' in TRACKS[index]) {
-		return TRACKS[index].comm;
-	}
+	if (typeof TRACKS[index].cycle === 'string')
+		return TRACKS[index].cycle;
 
 	if (TRACKS[index].cycle == 0)
 		return "";
