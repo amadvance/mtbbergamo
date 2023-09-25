@@ -240,6 +240,13 @@ function create_base(map, control) {
 
 	control.addBaseLayer(CyclOSM, "CyclOSM");
 
+	var Tracestrack = L.tileLayer('https://tile.tracestrack.com/topo_it/{z}/{x}/{y}.png?key=8b3409d2713e8014e7ebe376a7a19a20', {
+		maxZoom: 17,
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | &copy; <a href="https://www.tracestrack.com/">Tracestrack</a>)'
+	});
+
+	control.addBaseLayer(Tracestrack, "Tracestrack");
+
 	var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 		maxZoom: 17,
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
