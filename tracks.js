@@ -660,7 +660,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 1, zone: 'serina, brembana', name: 'Monte Suchello, Passo Barbata, Val del Ferro, Ambriola', kind: 'down', file: 'Serina_SuchelloBarbataFerroAmbriola.gpx', link: '2023/07/suchello' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 1, zone: 'serina, brembana', name: 'Monte Vaccareggio, Valpiana, Serina', kind: 'down', file: 'Serina_VaccareggioValpianaSerina.gpx', link: '2023/07/vaccareggio-valpiana' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 3, zone: 'serina, brembana', name: 'Bocchetta di Grem, Bivacco Telini, Rifugio Grem, Zambla Alta', kind: 'down', file: 'Serina_BocchettaGremTeliniZambla.gpx', link: '2023/07/telini' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'serina, brembana', name: 'Forca di Aviatico, Trafficanti, Via Mercatorum, Algua', kind: 'down', file: 'Serina_ForcaTrafficantiMercatorumAlgua' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'serina, brembana', name: 'Forca di Aviatico, Trafficanti, Via Mercatorum, Algua', kind: 'down', file: 'Serina_ForcaTrafficantiMercatorumAlgua.gpx' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 12, zone: 'serina, brembana', name: 'Salita Zambla Alta, Plassa, Capanna 2000, Cima di Grem', kind: 'up', file: 'Serina_SalitaZamblaPlassaCapanna200CimaGrem_EBIKE.gpx', link: '2022/11/cima-di-grem'  },
@@ -701,7 +701,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 1, rate: 3, rate_max: 5, cycle: 10, zone: 'alta_brembana', name: 'Monte Torcola, 126, Moio de Calvi', kind: 'down', file: 'Brembana_Torcola126Moio.gpx', link: '2021/11/monte-torcola-126-moio-de-calvi' },
 { vote: 2, rate: 1, rate_max: 0, cycle: 0, zone: 'alta_brembana', name: 'Passo San Marco, Via Priula', kind: 'down', file: 'Brembana_SanMarcoViaPriula.gpx', link: '2021/11/via-priula' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'alta_brembana', name: 'Monte Torcola, Piazzolo, Piazzatorre', kind: 'down', file: 'Brembana_TolcolaPiazzoloPiazzatorre.gpx', link: '2023/08/piazzolo' },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'alta_brembana', name: 'Forcolino di Torcola, Brazi, Moio de Calvi', kind: 'down', file: 'Brembana_ForcolinoBranziMoio.gpx' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'alta_brembana', name: 'Forcolino di Torcola, Branzi, Moio de Calvi', kind: 'down', file: 'Brembana_ForcolinoBranziMoio.gpx', link: '2023/10/forcolino' },
+{ vote: 3, rate: 4, rate_max: 5, cycle: 0, zone: 'alta_brembana', name: '125, Pusdosso, Moio de Calvi', kind: 'down', file: 'Brembana_125PusdossoMoio.gpx' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'alta_brembana', name: 'Salita da Piazza Brembana al Monte Torcola', kind: 'up', file: 'Brembana_SalitaPiazzaBrembanaTorcola_EBIKE.gpx', link: '2020/09/monte-torcola-piazza-brembana' },
@@ -734,7 +735,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita da Olmo al Brembo ai Piani dell\'Avaro', kind: 'up', file: 'Brembana_SalitaOlmoAvaro_EBIKE.gpx', link: '2020/08/terza-avaro' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Santa Brigida, Colle Maddalena', kind: 'up', file: 'Brembana_SalitaSantaBrigidaColleMaddalena_EBIKE.gpx', link: '2021/10/val-dinferno' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Piazzatorre, Monte Torcola', kind: 'up', file: 'Brembana_SalitaPiazzatorreTorcola_EBIKE.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: '', name: 'Salita Moido de Calvi, Torcola, Forcolino di Torcola', kind: 'up', file: 'Brembana_SalitaMoioForcolino_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: '', name: 'Salita Moio de Calvi, Torcola, Forcolino di Torcola', kind: 'up', file: 'Brembana_SalitaMoioForcolino_EBIKE.gpx', link: '2023/10/forcolino' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Moio de Calvi, Pista da sci di Torcola, 125', kind: 'up', file: 'Brembana_SalitaMoioPistaTorcola125_EBIKE.gpx' },
 
 //
 // CAVALLINA
