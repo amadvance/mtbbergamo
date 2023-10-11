@@ -660,7 +660,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 1, zone: 'serina, brembana', name: 'Monte Suchello, Passo Barbata, Val del Ferro, Ambriola', kind: 'down', file: 'Serina_SuchelloBarbataFerroAmbriola.gpx', link: '2023/07/suchello' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 1, zone: 'serina, brembana', name: 'Monte Vaccareggio, Valpiana, Serina', kind: 'down', file: 'Serina_VaccareggioValpianaSerina.gpx', link: '2023/07/vaccareggio-valpiana' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 3, zone: 'serina, brembana', name: 'Bocchetta di Grem, Bivacco Telini, Rifugio Grem, Zambla Alta', kind: 'down', file: 'Serina_BocchettaGremTeliniZambla.gpx', link: '2023/07/telini' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'serina, brembana', name: 'Forca di Aviatico, Trafficanti, Via Mercatorum, Algua', kind: 'down', file: 'Serina_ForcaTrafficantiMercatorumAlgua.gpx' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'serina, brembana', name: 'Forcellino, Trafficanti, Via Mercatorum, Algua', kind: 'down', file: 'Serina_ForcellinoTrafficantiMercatorumAlgua.gpx', link: '2023/10/trafficanti-mercatorum' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 12, zone: 'serina, brembana', name: 'Salita Zambla Alta, Plassa, Capanna 2000, Cima di Grem', kind: 'up', file: 'Serina_SalitaZamblaPlassaCapanna200CimaGrem_EBIKE.gpx', link: '2022/11/cima-di-grem'  },
@@ -672,7 +672,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 7, zone: 'serina, brembana', name: 'Salita Ambriola, Tassone, Monte Suchello', kind: 'up', file: 'Serina_AmbriolaSuchello_EBIKE.gpx', link: '2023/07/suchello' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'serina, brembana', name: 'Salita Serina, Via Mercatorum, Monte Vaccareggio', kind: 'up', file: 'Serina_SalitaSerinaMercatorumVaccareggio_EBIKE.gpx', link: '2023/07/vaccareggio-valpiana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 4, zone: 'serina, brembana', name: 'Salita Zambla Alta, Plassa, Bocchetta di Grem', kind: 'up', file: 'Serina_SalitaZamblaPlassaBocchettaGrem_EBIKE.gpx', link: '2023/07/telini' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: 'serina, brembana', name: 'Algua, Ambriola, Via Mercatorum, Aviatico, Forca di Aviatico, Forcella', kind: 'up', file: 'Serina_SalitaAlguaAviaticoForca_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: 'serina, brembana', name: 'Algua, Ambriola, Via Mercatorum, Aviatico, Forca di Aviatico, Forcellino', kind: 'up', file: 'Serina_SalitaAlguaMercatorumAviaticoForcellino_EBIKE.gpx', link: '2023/10/trafficanti-mercatorum' },
 
 //
 // ALTA BREMBANA
