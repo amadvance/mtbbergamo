@@ -400,7 +400,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Ruderi, Crocione', kind: 'up', file: 'Canto_SalitaCrocione_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Pontida, Santa Barbara', kind: 'up', file: 'Canto_SalitaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto' },
 
-// rimosso perchè trasformato in strada
+// removed perchè trasformato in strada
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: '', name: 'GEP', kind: 'down', file: 'Canto_GEP.gpx', link: '2021/05/gep' },
 
 //
@@ -425,7 +425,7 @@ var TRACKS = [
 { vote: 2, rate: 2, rate_max: 0, cycle: 1, zone: 'bassa_seriana, valtrusa', name: 'Selvino, 535, Lonno', kind: 'down', file: 'Seriana_535Lonno.gpx', link: '2019/05/monte-valtrusa' },
 { vote: 2, rate: 2, rate_max: 0, cycle: "3 minuti la salita al Valtrusa", zone: 'bassa_seriana, valtrusa', name: 'Selvino, 535, Monte Valtrusa, Lonno', kind: 'down', file: 'Seriana_535Valtrusa.gpx', link: '2019/05/monte-valtrusa' },
 /*
-rimosso su richiesta del CAI Albino
+removed su richiesta del CAI Albino
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Selvino, 550 / Mulattiera, Albino', kind: 'down', file: 'Seriana_550MulattieraAlbino.gpx', link: '2019/03/550-mulattiera' },
 */
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Selvino, 536 / Trevasco, Nembro', kind: 'down', file: 'Seriana_Trevasco.gpx', link: '2019/04/trevasco' },
@@ -630,7 +630,6 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_brembana', name: 'Monte Vaccareggio, Camerata Cornello', kind: 'down', file: 'Brembana_VaccareggioCamerataCornello.gpx', link: '2023/08/vaccareggio' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_brembana', name: 'Monte Vaccareggio, San Pietro, San Giovanni Bianco', kind: 'down', file: 'Brembana_VaccareggioSanPietroSanGiovanniBianco.gpx', link: '2023/10/vaccareggio-bianco'  },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Monte Vaccareggio, S.S. Trinit\u00E0, San Giovanni Bianco', kind: 'down', file: 'Brembana_VaccareggioTrinitaSanGiovanniBianco.gpx' },
-{ vote: 2, rate: 3, rate_max: 0, cycle: 3, zone: 'bassa_brembana', name: 'Monte Castello, Algua, Zogno', kind: 'down', file: 'Brembana_MonteCastelloAlguaZogno.gpx', link: '2021/06/monte-castello' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 3, zone: 'bassa_brembana', name: 'Monte Castello, Mosche, Ambria, Zogno', kind: 'down', file: 'Brembana_MonteCastelloMoscheZogno.gpx', link: '2023/11/castello-mosche' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Monte Castello, Endenna, Zogno', kind: 'down', file: 'Brembana_MonteCastelloEndennaZogno.gpx' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Monte Castello, Val Pagana, Strada Birocciable', kind: 'down', file: 'Brembana_MonteCastelloValPaganaBirocciabile.gpx' },
@@ -654,6 +653,9 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: '', name: 'Salita da Salvarizza alla Forcella della Valcumina', kind: 'up', file: 'Brembana_SalvarizzaForcellaValcumina_EBIKE.gpx', link: '2021/05/valcumina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita da San Pellegrino a Salvarizza', kind: 'up', file: 'Brembana_SalitaSalvarizza_EBIKE.gpx', link: '2021/02/periplo-monte-gioco' },
+
+// replaced
+{ vote: 2, rate: 3, rate_max: 0, cycle: 3, zone: '', name: 'Monte Castello, Algua, Zogno', kind: 'down', file: 'Brembana_MonteCastelloAlguaZogno.gpx', link: '2021/06/monte-castello' },
 
 //
 // SERINA
