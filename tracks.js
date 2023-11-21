@@ -632,7 +632,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_brembana', name: 'Monte Vaccareggio, San Pietro, San Giovanni Bianco', kind: 'down', file: 'Brembana_VaccareggioSanPietroSanGiovanniBianco.gpx', link: '2023/10/vaccareggio-bianco'  },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Monte Vaccareggio, S.S. Trinit\u00E0, San Giovanni Bianco', kind: 'down', file: 'Brembana_VaccareggioTrinitaSanGiovanniBianco.gpx' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 3, zone: 'bassa_brembana', name: 'Monte Castello, Mosche, Ambria, Zogno', kind: 'down', file: 'Brembana_MonteCastelloMoscheZogno.gpx', link: '2023/11/castello-mosche' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Monte Castello, Endenna, Zogno', kind: 'down', file: 'Brembana_MonteCastelloEndennaZogno.gpx' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Monte Castello, Passata, Endenna, Zogno', kind: 'down', file: 'Brembana_MonteCastelloPassataEndennaZogno.gpx', link: '2023/11/giro-castello' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Monte Castello, Val Pagana, Strada Birocciable', kind: 'down', file: 'Brembana_MonteCastelloValPaganaBirocciabile.gpx' },
 
 // trek
@@ -649,7 +649,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'bassa_brembana', name: 'Salita Camerata Cornello, Monte Vaccareggio', kind: 'up', file: 'Brembana_SalitaCamerataCornelloVaccareggio_EBIKE.gpx', link: '2023/08/vaccareggio' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'bassa_brembana', name: 'Salita San Giovanni Bianco, S. S. Trinit\u00E0, Monte Vaccareggio', kind: 'up', file: 'Brembana_SalitaSanGiovanniBiancoVaccareggio_EBIKE.gpx', link: '2023/10/vaccareggio-bianco' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita da Zogno al Monte Castello diretta', kind: 'up', file: 'Brembana_SalitaZognoMonteCastello_EBIKE.gpx', link: '2023/11/castello-mosche' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita da Zogno al Monte Castello con periplo', kind: 'up', file: 'Brembana_SalitaZognoGiroMonteCastello_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita da Zogno al Monte Castello con periplo', kind: 'up', file: 'Brembana_SalitaZognoGiroMonteCastello_EBIKE.gpx', link: '2023/11/giro-castello' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: '', name: 'Salita da Salvarizza alla Forcella della Valcumina', kind: 'up', file: 'Brembana_SalvarizzaForcellaValcumina_EBIKE.gpx', link: '2021/05/valcumina' },
