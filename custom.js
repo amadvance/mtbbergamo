@@ -292,12 +292,26 @@ function create_base(map, control) {
 	control.addBaseLayer(Esri_WorldImagery, "Satellite");
 }
 
+// map for tracks
 function create_control(map) {
 	var control = L.control.layers(null, null).addTo(map);
 
 	create_base(map, control);
 
 	create_waymarkedtrails(map, control).addTo(map);
+
+	var ret = {ct: control, gr: null};
+
+	return ret;
+}
+
+// map for climbs
+function create_control_climb(map) {
+	var control = L.control.layers(null, null).addTo(map);
+
+	create_base(map, control);
+
+	create_waymarkedtrails(map, control);
 
 	var ret = {ct: control, gr: null};
 
@@ -311,6 +325,7 @@ function get_track_group(index)
 	return TRACKS[index].vote;
 }
 
+// map for groups
 function create_control_group(map) {
 	var control = L.control.layers(null, null).addTo(map);
 
