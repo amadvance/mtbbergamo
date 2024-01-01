@@ -189,6 +189,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'zuc_de_valmana,canti', name: 'Salita dalla Sbarra di Brumano allo Zuc De Valmana', kind: 'up', file: 'Imagna_SalitaSbarraPalioZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna, morterone, taleggio', name: 'Salita da Morterone al Passo del Palio', kind: 'up', file: 'Imagna_SalitaMorteronePassoPalio_EBIKE.gpx', link: '2020/12/morterone' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna', name: 'Salita Selino, Ca Prospero, Chignolo, Brumano, Passo Porta', kind: 'up', file: 'Imagna_SalitaSelinoCaProsperoChignoloPassoPorta_EBIKE.gpx', link: '2019/06/passo-porta' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna', name: 'Salita Ponte Giurino, Selino, Tre Faggi', kind: 'up', file: 'Imagna_SalitaPonteGiurinoTreFaggi_EBIKE.gpx', link: '2020/07/tre-faggi-valle-brunone' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita (nuova) da Fuipiano, Capione al Palio', kind: 'up', file: 'Imagna_SalitaFuipianoCapioneCimaPalio_EBIKE.gpx', link: '2022/04/foo-di-valmana' },
@@ -808,5 +809,4 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
-
 
