@@ -472,6 +472,7 @@ removed su richiesta del CAI Albino
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'bassa_seriana', name: 'Salita Gazzaniga, Val del Gr\u00F9, Monte Poieto', kind: 'up', file: 'Seriana_SalitaGazzanigaGruPoieto_EBIKE.gpx', link: '2023/09/poieto-gazzaniga' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita Vertova, Val del Gr\u00F9, C\u00E0 Donadoni', kind: 'up', file: 'Seriana_SalitaVertovaGruDonadoni_EBIKE.gpx', link: '2023/09/donadoni' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'bassa_seriana', name: 'Salita Vertova, Val del Gr\u00F9, Monte Poieto', kind: 'up', file: 'Seriana_SalitaVertovaGruPoieto_EBIKE.gpx', link: '2023/09/poieto-516' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita Gazzaniga, Ganda', kind: 'up', file: 'Seriana_SalitaGazzanigaGanda_EBIKE.gpx', link: '2019/05/521' },
 
 // sud
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana, 520', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'Seriana_CiclabileValleSeriana.gpx', link: '2019/03/salite-valle-seriana' },
