@@ -597,8 +597,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 2, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Berbenno CAT, Lera, Brembilla', kind: 'down', file: 'Brembilla_BerbennoLeraBrembilla.gpx', link: '2021/09/lera' },
 { vote: 5, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Catremerio, Truca, Brembilla', kind: 'down', file: 'Brembana_CatremerioTruca.gpx', link: '2020/11/catremerio-truca-brembilla' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Passo Mercante del Ferro, Forcella di Bura, Brembilla', kind: 'down', file: 'Brembana_PassoMercanteDelFerroBuraBrembilla.gpx', link: '2021/08/monte-foldone-e-sornadello' },
-{ vote: 2, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Castignola, 592A, Brembilla', kind: 'down', file: 'Brembilla_Castignola592ABrembilla.gpx' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Corna Marcia, Laxolo, Brembilla', kind: 'down', file: 'Brembilla_CornaMarciaLaxoloBrembilla.gpx', link: '2023/05/corna-marcia-laxolo' },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Zuccone dell\'Arco, Rifugio GESP, 592A, Brembilla', kind: 'down', file: 'Brembilla_ZucconeArcoGESPSAntonio592ABrembilla.gpx', link: '2024/01/zuccone-arco' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 4, zone: 'bassa_brembana, brembilla', name: 'Salita Brembilla, Piazzacava', kind: 'up', file: 'Brembilla_SalitaBrembillaPiazzacava_EBIKE.gpx', link: '2021/07/piazzacava-gerosa-foppa' },
@@ -609,8 +609,10 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Salita Brembilla, Forcella di Berbenno', kind: 'up', file: 'Brembilla_SalitaBrembillaForcellaBerbenno_EBIKE.gpx', link: '2021/09/ripe' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Salita Brembilla, Castignola, S. Antonio Abbandonato, Strada Taverna, Catremerio', kind: 'up', file: 'Brembilla_SalitaCastignolaSAntonioTavernaCatremerio_EBIKE.gpx', link: '2020/11/catremerio-truca-brembilla' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Salita Brembilla, Colle di Berbenno, Corna Marcia', kind: 'up', file: 'Brembilla_SalitaBrembillaCornaMarcia_EBIKE.gpx', link: '2023/05/corna-marcia-laxolo' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'bassa_brembana, brembilla', name: 'Salita Brembilla, Catremerio, Zuccone dell\'Arco', kind: 'up', file: 'Brembilla_SalitaBrembillaCatremerioZucconeArco_EBIKE.gpx', link: '2024/01/zuccone-arco' },
 
 // replaced
+{ vote: 2, rate: 2, rate_max: 0, cycle: 0, zone: '', name: 'Castignola, 592A, Brembilla', kind: 'down', file: 'Brembilla_Castignola592ABrembilla.gpx' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: '', name: 'Passo del Canto, Laxolo, Brembilla', kind: 'down', file: 'Brembilla_CantoLaxoloBrembilla.gpx', link: '2021/11/laxolo' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita dal Colle di Berbenno al Passo del Canto', kind: 'up', file: 'Brembilla_SalitaColleBerbennoCanto_EBIKE.gpx', link: '2021/11/laxolo' },
 
