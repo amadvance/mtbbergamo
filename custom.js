@@ -127,7 +127,7 @@ function get_track_rate(index)
 	if (index == -1)
 		return "";
 
-	if (TRACKS[index].rate == 0)
+	if (TRACKS[index].rate == 0 && TRACKS[index].rate_max == 0)
 		return "";
 
 	return "S" + TRACKS[index].rate.toString();
@@ -136,9 +136,6 @@ function get_track_rate(index)
 function get_track_rate_max(index)
 {
 	if (index == -1)
-		return "";
-
-	if (TRACKS[index].rate == 0)
 		return "";
 
 	rate = "";
