@@ -164,6 +164,7 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Forbesette, Morterone Nord', kind: 'down', file: 'Imagna_PassoPalioForbesetteMorteroneNord.gpx', link: '2020/12/morterone' },
 { vote: 3, rate: 1, rate_max: 3, cycle: 0, zone: 'imagna, morterone, taleggio', name: 'Passo del Palio, Freeride, Morterone', kind: 'down', file: 'Imagna_PassoPalioFreerideMorterone.gpx', link: '2020/12/morterone' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 45, zone: 'imagna', name: 'Anello del Resegone', kind: 'down', file: 'Imagna_AnelloResegone.gpx', link: '2020/08/anello-resegone' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'imagna, taleggio', name: 'Passo del Palio, Forcella di Olino, Morterone, Fuipiano', kind: 'down', file: 'Imagna_ForcellaDiOlino.gpx', link: '2024/02/forcella-di-olino' },
 
 // trek
 { vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'imagna', name: 'Sentiero della Cultura Casearia', kind: 'trek', file: 'Imagna_SentieroDellaCulturaCasearia_EBIKE.gpx', link: '2022/10/corna-casere' },
@@ -190,6 +191,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'imagna', name: 'Salita Selino, Ca Prospero, Chignolo, Brumano, Cascine Zucchero', kind: 'up', file: 'Imagna_SalitaSelinoCaProsperoChignoloCascineZucchero_EBIKE.gpx', link: '2019/06/passo-porta' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna', name: 'Salita Selino, Campi, Brumano, Cascine Zucchero', kind: 'up', file: 'Imagna_SalitaSelinoCampiCascineZucchero_EBIKE.gpx', link: '2019/07/passo-porta-575-valsecca' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna', name: 'Salita Ponte Giurino, Selino, Tre Faggi', kind: 'up', file: 'Imagna_SalitaPonteGiurinoTreFaggi_EBIKE.gpx', link: '2020/07/tre-faggi-valle-brunone' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Arnosto, Passo del Palio', kind: 'up', file: 'Imagna_SalitaArnostoPalio_EBIKE.gpx', link: '2024/02/forcella-di-olino' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita (nuova) da Fuipiano, Capione al Palio', kind: 'up', file: 'Imagna_SalitaFuipianoCapioneCimaPalio_EBIKE.gpx', link: '2022/04/foo-di-valmana' },
