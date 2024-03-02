@@ -565,8 +565,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'taleggio', name: 'Cima di Piazzo, Bocchetta di Regadur, Ridugio Gherardi, Fraggio, Sottochiesa', kind: 'down', file: 'Taleggio_CimaPiazzoNicolaRegadurGherardiFraggioSottochiesa.gpx', link: '2022/10/cima-di-piazzo' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'taleggio', name: 'Rifugio Nicola, Piani di Artavaggio, Corno Zuccone, Fraggio, Pizzino, Sottochiesa', kind: 'down', file: 'Taleggio_NicolaZucconeSudFraggioSottochiesa.gpx', link: '2022/10/corno-zuccone-sud' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'taleggio', name: 'Rifugio Nicola, Piani di Artavaggio, Corno Zuccone, 151B, Reggetto, Pizzino, Sottochiesa', kind: 'down', file: 'Taleggio_NicolaArtavaggioZuccone151BPizzinoSottochiesa.gpx', link: '2022/10/corno-zuccone-151b' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'taleggio', name: 'Rifugio Nicola, Piani di Artavaggio, Fraggio, Sottochiesa (INVERNALE)', kind: 'down', file: 'Taleggio_NicolaArtavaggioFraggioSottochiesaInvernale.gpx', link: '2023/01/nicola-neve' },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'taleggio', name: 'Rifugio Nicola, Piani di Artavaggio, Reggetto, Sottochiesa (INVERNALE)', kind: 'down', file: 'Taleggio_NicolaArtavaggioReggettoSottochiesaInvernale.gpx', link: '2024/02/nicola-reggetto-neve' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: "dipende dalla neve", zone: 'taleggio', name: 'Rifugio Nicola, Piani di Artavaggio, Fraggio, Sottochiesa (INVERNALE)', kind: 'down', file: 'Taleggio_NicolaArtavaggioFraggioSottochiesaInvernale.gpx', link: '2023/01/nicola-neve' },
+{ vote: 4, rate: 2, rate_max: 0, cycle: "dipende dalla neve", zone: 'taleggio', name: 'Rifugio Nicola, Piani di Artavaggio, Reggetto, Sottochiesa (INVERNALE)', kind: 'down', file: 'Taleggio_NicolaArtavaggioReggettoSottochiesaInvernale.gpx', link: '2024/02/nicola-reggetto-neve' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'taleggio, brembana', name: 'Salita, Ponte Becco, Sottochiesa, Piani di Artavaggio', kind: 'up', file: 'Taleggio_SalitaBeccoSottochiesaArtavaggio_EBIKE.gpx', link: '2022/03/artavaggio-gherardi-becco' },
@@ -578,7 +578,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'taleggio, brembana', name: 'Salita Sottochiesa, Rifugio Gherardi, Piani di Artavaggio', kind: 'up', file: 'Taleggio_SalitaSottochiesaGherardiArtavaggio_EBIKE.gpx', link: '2022/09/artavaggio-reggetto' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 18, zone: 'taleggio, brembana', name: 'Salita Sottochiesa, Quindicina, Passo e Pizzo Baciamorti', kind: 'up', file: 'Taleggio_SalitaSottochiesaQuindicinaBaciamorti_EBIKE.gpx', link: '2022/09/baciamorti-antiorario' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'taleggio, brembana', name: 'Salita Sottochiesa, Piani di Artavaggio, Rifugio Nicola, Cima di Piazzo', kind: 'up', file: 'Taleggio_SalitaSottochiesaArtavaggioNicolaCimaPiazzo_EBIKE.gpx', link: '2022/10/cima-di-piazzo' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'taleggio, brembana', name: 'Salita Sottochiesa, Culmine di San Pietro, Piani di Artavaggio, Rifugio Nicola', kind: 'up', file: 'Taleggio_SalitaSottochiesaSanPietroArtavaggioNicolaInvernale_EBIKE.gpx', link: '2023/01/nicola-neve' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'taleggio, brembana', name: 'Salita Sottochiesa, Culmine di San Pietro, Piani di Artavaggio, Rifugio Nicola (INVERNALE)', kind: 'up', file: 'Taleggio_SalitaSottochiesaSanPietroArtavaggioNicolaInvernale_EBIKE.gpx', link: '2023/01/nicola-neve' },
 
 // overlapping
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: '', name: 'Rifugio Nicola, Bocchetta di Redagur, Rifugio Gherardi, Fraggio, Sottochiesa', kind: 'down', file: 'Taleggio_NicolaGherardiFraggioSottochiesa.gpx', link: '2022/03/nicola-regadur-gherardi' },
@@ -587,10 +587,10 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Sottochiesa, Avolasio, Piani di Artavaggio', kind: 'up', file: 'Taleggio_SalitaSottochiesaAvolasioArtavaggio_EBIKE.gpx', link: '2022/04/artagaggio-fraggio' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Sottochiesa, Rifugio Gherardi, Piani di Artavaggio, Rifugio Nicola', kind: 'up', file: 'Taleggio_SalitaSottochiesaGherardiArtavaggioNicola_EBIKE.gpx', link: '2022/10/corno-zuccone-sud' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Sottochiesa, Piani di Artavaggio, Rifugio Nicola', kind: 'up', file: 'Taleggio_SalitaSottochiesaArtavaggioNicola_EBIKE.gpx', link: '2022/10/corno-zuccone-151b' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Sottochiesa, Piani di Artavaggio, Rifugio Nicola', kind: 'up', file: 'Taleggio_SalitaSottochiesaArtavaggioNicolaInvernale_EBIKE.gpx', link: '2024/02/nicola-reggetto-neve' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Sottochiesa, Piani di Artavaggio, Rifugio Nicola (INVERNALE)', kind: 'up', file: 'Taleggio_SalitaSottochiesaArtavaggioNicolaInvernale_EBIKE.gpx', link: '2024/02/nicola-reggetto-neve' },
 
 // trek
-{ vote: 5, rate: 0, rate_max: 1, cycle: 0, zone: 'taleggio', name: 'Mega Tour Val Taleggio', kind: 'trek', file: 'Taleggio_GiroTaleggio_EBIKE.gpx', link: '' },
+{ vote: 5, rate: 0, rate_max: 1, cycle: 0, zone: 'taleggio', name: 'Epic Tour Val Taleggio', kind: 'trek', file: 'Taleggio_AnelloTaleggio_EBIKE.gpx', link: '' },
 
 //
 // BREMBILLA
