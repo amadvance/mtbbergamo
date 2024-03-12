@@ -590,7 +590,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Sottochiesa, Piani di Artavaggio, Rifugio Nicola (INVERNALE)', kind: 'up', file: 'Taleggio_SalitaSottochiesaArtavaggioNicolaInvernale_EBIKE.gpx', link: '2024/02/nicola-reggetto-neve' },
 
 // trek
-{ vote: 5, rate: 0, rate_max: 1, cycle: 0, zone: 'taleggio', name: 'Epic Tour Val Taleggio', kind: 'trek', file: 'Taleggio_AnelloTaleggio_EBIKE.gpx', link: '' },
+{ vote: 5, rate: 0, rate_max: 1, cycle: 0, zone: 'taleggio', name: 'Epic Tour Val Taleggio', kind: 'trek', file: 'Taleggio_AnelloTaleggio_EBIKE.gpx', link: '2024/03/epic-tour-taleggio' },
 
 //
 // BREMBILLA
