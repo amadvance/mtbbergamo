@@ -47,6 +47,11 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'colli,roccolone_nord,roccolone_sud', name: 'Salita al Colle Roccolone', kind: 'up', file: 'Colli_SalitaCimaRoccolone.gpx', link: '2018/12/salite-colli-bergamo' },
 
 //
+// BERGAMO
+//
+{ vote: 3, rate: 0, rate_max: 1, cycle: 0, zone: 'colli,bergamo', name: 'Giro Parco del Brembo', kind: 'trek', file: 'Bergamo_GiroParcoDelBrembo.gpx', link: '' },
+
+//
 // MARESANA E SORISOLE
 //
 { vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'maresana', name: 'Albanesi / 532, San Rocco', kind: 'down', file: 'Maresana_Albanesi.gpx', link: '2019/02/532' },
