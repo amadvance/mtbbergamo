@@ -1104,8 +1104,6 @@ function create_trek(map, control, zone)
 
 	desc += "<p>"
 	desc += "Elenco dei percorsi escursionistici, meno orientati alla discesa e di più all'escursionismo. ";
-	desc += "Sono percorsi pedonali, con vari sali/scendi, ma fattibili anche in MTB. ";
-	desc += "Per le numerose salite tecniche, una E-Bike è consigliata, altrimenti alcuni pezzi dovrete spingere.";
 	desc += "</p>"
 
 	create_generic(map, control, zone, "Escursioni", desc, "trek_header", "trek");

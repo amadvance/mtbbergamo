@@ -49,7 +49,7 @@ var TRACKS = [
 //
 // BERGAMO
 //
-{ vote: 3, rate: 0, rate_max: 1, cycle: 0, zone: 'colli,bergamo', name: 'Giro Parco del Brembo', kind: 'trek', file: 'Bergamo_GiroParcoDelBrembo.gpx', link: '' },
+{ vote: 3, rate: 0, rate_max: 1, cycle: 0, zone: 'colli,bergamo', name: 'Giro Parco del Brembo', kind: 'trek', file: 'Bergamo_GiroParcoDelBrembo.gpx', link: '2024/04/brembo' },
 
 //
 // MARESANA E SORISOLE
