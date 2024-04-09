@@ -618,7 +618,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Salita Brembilla, Castignola, S. Antonio Abbandonato, Strada Taverna, Catremerio', kind: 'up', file: 'Brembilla_SalitaCastignolaSAntonioTavernaCatremerio_EBIKE.gpx', link: '2020/11/catremerio-truca-brembilla' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana, brembilla', name: 'Salita Brembilla, Colle di Berbenno, Corna Marcia', kind: 'up', file: 'Brembilla_SalitaBrembillaCornaMarcia_EBIKE.gpx', link: '2023/05/corna-marcia-laxolo' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'bassa_brembana, brembilla', name: 'Salita Brembilla, Catremerio, Zuccone dell\'Arco', kind: 'up', file: 'Brembilla_SalitaBrembillaCatremerioZucconeArco_EBIKE.gpx', link: '2024/01/zuccone-arco' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 13, zone: 'bassa_brembana, brembilla', name: 'Salita Zogno, Catremerio, Monte Zucco', kind: 'up', file: 'Breambana_SalitaZognoCatremerioZucco_EBIKE.gpx', link: '2024/03/monte-zucco' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 13, zone: 'bassa_brembana, brembilla', name: 'Salita Zogno, Catremerio, Monte Zucco', kind: 'up', file: 'Brembana_SalitaZognoCatremerioZucco_EBIKE.gpx', link: '2024/03/monte-zucco' },
 
 // replaced
 { vote: 2, rate: 2, rate_max: 0, cycle: 0, zone: '', name: 'Castignola, 592A, Brembilla', kind: 'down', file: 'Brembilla_Castignola592ABrembilla.gpx' },
