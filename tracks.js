@@ -50,6 +50,7 @@ var TRACKS = [
 // BERGAMO
 //
 { vote: 3, rate: 0, rate_max: 1, cycle: 0, zone: 'colli', name: 'Giro Parco del Brembo', kind: 'trek', file: 'Bergamo_GiroParcoDelBrembo.gpx', link: '2024/04/brembo' },
+{ vote: 3, rate: 0, rate_max: 1, cycle: 0, zone: 'colli', name: 'Giro del Romanico', kind: 'trek', file: 'Bergamo_GiroDelRomanico.gpx', link: '2024/04/romanico' },
 
 //
 // MARESANA E SORISOLE
@@ -119,7 +120,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: "10 minuti Canto Basso, 30 minuti Canto Alto", zone: 'sorisole', name: 'Salita Ponteranica, Canto Alto', kind: 'up', file: 'Sorisole_SalitaPonteranicaCantoAlto.gpx', link: '2019/06/canto-alto-forcella-di-cambli-pisgiu' },
 { vote: 0, rate: 0, rate_max: 0, cycle: "5 minuti Canto Basso, 30 minuti Canto Alto", zone: 'sorisole', name: 'Salita Nese, Canto Basso, Canto Alto', kind: 'up', file: 'Sorisole_SalitaNeseCantoAlto.gpx', link: '2019/06/canto-alto-prati-parini-sedrina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'sorisole, giongo', name: 'Salita Petosino, Forcella di Rua', kind: 'up', file: 'Sorisole_SalitaPetosinoForcellaDiRua_EBIKE.gpx', link: '2023/04/giongo' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'sorisole, giongo', name: 'Salita Petosino, Ca del Latte, Forcellino', kind: 'up', file: 'Sorisole_SalitaPetosinoForcellaSorrisoForcellino_EBIKE.gpx', link: '2024/04/giongo-hard' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'sorisole', name: 'Salita Petosino, Ca del Latte, Forcellino', kind: 'up', file: 'Sorisole_SalitaPetosinoForcellaSorrisoForcellino_EBIKE.gpx', link: '2024/04/giongo-hard' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Ranica, Pozza del Colle', kind: 'up', file: 'Maresana_SalitaRanicaPozzaDelColle_EBIKE.gpx', link: '2018/11/salite-maresana' },
@@ -655,11 +656,12 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 3, rate: 2, rate_max: 3, cycle: 3, zone: 'bassa_brembana', name: 'Monte Castello, Mosche, Ambria, Zogno', kind: 'down', file: 'Brembana_MonteCastelloMoscheZogno.gpx', link: '2023/11/castello-mosche' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Monte Castello, Passata, Endenna, Zogno', kind: 'down', file: 'Brembana_MonteCastelloPassataEndennaZogno.gpx', link: '2023/11/giro-castello' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Monte Castello, Val Pagana, Strada Birocciabile', kind: 'down', file: 'Brembana_MonteCastelloValPaganaBirocciabile.gpx', link: '2023/11/pagana-birocciabile' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_brembana', name: 'Stalla Fopp, Poscante, Zogno', kind: 'down', file: 'Brembana_StallaFoppPoscante.gpx', link: '2024/04/poscante-back' },
 
 // trek
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Vie del Passato', kind: 'trek', file: 'Brembana_VieDelPassato.gpx', link: '2023/08/passato' },
 
-// climp
+// climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: 'bassa_brembana', name: 'Salita da S. Antonio Abbandonato a Ca del C\u00E8co', kind: 'up', file: 'Brembana_SalitaSantAntonioCeco_EBIKE.gpx', link: '2021/06/ceco-sonzogno-pernice' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana, pradai', name: 'Salita da Spettino alla Panchina Gigante', kind: 'up', file: 'Brembana_SalitaSpettinoPanchinaGigante_EBIKE.gpx', link: '2021/06/panchina-gigante-pradai-frasnadello' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'Brembana_SalitaZognoSAntonio_EBIKE.gpx', link: '2020/07/casarielli' },
@@ -671,6 +673,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'bassa_brembana', name: 'Salita San Giovanni Bianco, S. S. Trinit\u00E0, Monte Vaccareggio', kind: 'up', file: 'Brembana_SalitaSanGiovanniBiancoVaccareggio_EBIKE.gpx', link: '2023/10/vaccareggio-bianco' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita da Zogno al Monte Castello diretta', kind: 'up', file: 'Brembana_SalitaZognoMonteCastello_EBIKE.gpx', link: '2023/11/castello-mosche' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita da Zogno al Monte Castello con periplo', kind: 'up', file: 'Brembana_SalitaZognoGiroMonteCastello_EBIKE.gpx', link: '2023/11/giro-castello' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita Zogno, Valico di Salmezza, Stalla Fopp', kind: 'up', file: 'Brembana_SalitaZognoStallaFopp_EBIKE.gpx', link: '2024/04/poscante-back' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: '', name: 'Salita da Salvarizza alla Forcella della Valcumina', kind: 'up', file: 'Brembana_SalvarizzaForcellaValcumina_EBIKE.gpx', link: '2021/05/valcumina' },
@@ -829,4 +832,3 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
-
