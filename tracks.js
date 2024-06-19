@@ -431,10 +431,6 @@ var TRACKS = [
 { vote: 5, rate: 1, rate_max: 0, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Percorso Vita, Valbona', kind: 'down', file: 'Seriana_LonnoPercorsoVita.gpx', link: '2019/04/lonno' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Percorso Vita, Luio', kind: 'down', file: 'Seriana_LonnoPercorsoVitaLuio.gpx', link: '2019/04/lonno' },
 { vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Colle Bastia, Percorso Vita, Viana', kind: 'down', file: 'Seriana_LonnoColleBastia.gpx', link: '2019/04/lonno' },
-/*
-removed because duplicate
-{ vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: '534 / Salmezza', kind: 'down', file: 'Seriana_534Salmezza.gpx', link: '2019/04/534-salmezza' },
-*/
 { vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salmezza, Lonno, Percorso Vita', kind: 'down', file: 'Seriana_SalmezzaLonnoVita.gpx', link: '2024/06/salmezza-vita' },
 //Seriana_SalmezzaLonnoVita.gpx
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salmezza, 533, Forcella di Nese', kind: 'down', file: 'Seriana_Salmezza533ForcellaNese.gpx', link: '2019/05/salmezza-533-forcella-di-nese' },
