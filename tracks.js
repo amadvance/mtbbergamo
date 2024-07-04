@@ -116,7 +116,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'sorisole', name: 'Salita Galus\u00F9', kind: 'up', file: 'Sorisole_SalitaGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole' },
 //{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'sorisole', name: 'Salita Giongo', kind: 'up', file: 'Sorisole_SalitaGiongo.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 4, zone: 'sorisole', name: 'Salita Sedrina, Prati Parini, Canto Alto', kind: 'up', file: 'Sorisole_SalitaSedrinaCantoAlto_EBIKE.gpx', link: '2023/04/canto-alto-catene-dh' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'sorisole,bassa_brembana', name: 'Salita Ponti di Sedrina, Cava, Canto Alto', kind: 'up', file: 'Sorisole_SalitaPontiSedrinaCavaCantoAlto_EBIKE.gpx', link: '2023/05/canto-alto-forcellino' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'sorisole', name: 'Salita Ponti di Sedrina, Cava, Canto Alto', kind: 'up', file: 'Sorisole_SalitaPontiSedrinaCavaCantoAlto_EBIKE.gpx', link: '2023/05/canto-alto-forcellino' },
 { vote: 0, rate: 0, rate_max: 0, cycle: "10 minuti Canto Basso, 30 minuti Canto Alto", zone: 'sorisole', name: 'Salita Ponteranica, Canto Alto', kind: 'up', file: 'Sorisole_SalitaPonteranicaCantoAlto.gpx', link: '2019/06/canto-alto-forcella-di-cambli-pisgiu' },
 { vote: 0, rate: 0, rate_max: 0, cycle: "5 minuti Canto Basso, 30 minuti Canto Alto", zone: 'sorisole', name: 'Salita Nese, Canto Basso, Canto Alto', kind: 'up', file: 'Sorisole_SalitaNeseCantoAlto.gpx', link: '2019/06/canto-alto-prati-parini-sedrina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'sorisole, giongo', name: 'Salita Petosino, Forcella di Rua', kind: 'up', file: 'Sorisole_SalitaPetosinoForcellaDiRua_EBIKE.gpx', link: '2023/04/giongo' },
@@ -663,8 +663,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_brembana', name: 'Stalla Fopp, Poscante, Zogno', kind: 'down', file: 'Brembana_StallaFoppPoscante.gpx', link: '2024/04/poscante-back' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Canto Basso, Poscante, Zogno', kind: 'down', file: 'Brembana_CantoBassoPoscanteZogno.gpx', link: '2024/05/canto-basso-poscante' },
 { vote: 2, rate: 3, rate_max: 0, cycle: 5, zone: 'bassa_brembana', name: 'Canto Alto, 507A, Zogno', kind: 'down', file: 'Brembana_CantoAlto507AZogno.gpx', link: '2024/06/canto-alto-507a' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_brembana', name: 'Pizzo di Spino, Pregaroldi, Ambria', kind: 'down', file: 'Brembana_PizzoSpinoPregaroldiAmbria.gpx' },
-{ vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Pizzo Grande, Bocchetta Ronco, San Giovanni Bianco', kind: 'down', file: 'Brembana_PizzoGrandeBocchettaRoncoSanGIovanniBianco.gpx' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_brembana', name: 'Pizzo di Spino, Pregaroldi, Ambria', kind: 'down', file: 'Brembana_PizzoSpinoPregaroldiAmbria.gpx', link: '2024/06/spino-ambria' },
+{ vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Pizzo Grande, Bocchetta Ronco, San Giovanni Bianco', kind: 'down', file: 'Brembana_PizzoGrandeBocchettaRoncoSanGiovanniBianco.gpx' },
 
 // trek
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Vie del Passato', kind: 'trek', file: 'Brembana_VieDelPassato.gpx', link: '2023/08/passato' },
@@ -674,7 +674,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana, pradai', name: 'Salita da Spettino alla Panchina Gigante', kind: 'up', file: 'Brembana_SalitaSpettinoPanchinaGigante_EBIKE.gpx', link: '2021/06/panchina-gigante-pradai-frasnadello' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita da Zogno a S. Antonio Abbandonato', kind: 'up', file: 'Brembana_SalitaZognoSAntonio_EBIKE.gpx', link: '2020/07/casarielli' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 8, zone: 'bassa_brembana', name: 'Salita da San Pellegrino al Pizzo di Spino', kind: 'up', file: 'Brembana_SalitaSantaCrocePizzoSpino_EBIKE.gpx', link: '2020/11/pizzo-spino' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 8, zone: 'bassa_brembana', name: 'Salita Ambria, Frerola, Pizzo di Spino', kind: 'up', file: 'Brembana_SalitaAmbriaPizzoSpino_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 5, zone: 'bassa_brembana', name: 'Salita Ambria, Frerola, Pizzo di Spino', kind: 'up', file: 'Brembana_SalitaAmbriaPizzoSpino_EBIKE.gpx', link: '2024/06/spino-ambria' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita da San Pellegrino alla Forcella di Spettino', kind: 'up', file: 'Brembana_SalitaForcellaSpettino_EBIKE.gpx', link: '2021/02/forcella-di-spettino-molini' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana, frasnito', name: 'Salita da San Pellegrino a Frasnito e Sussia', kind: 'up', file: 'Brembana_SalitaFrasnitoSussia_EBIKE.gpx', link: '2021/03/sussia-frasnito' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'bassa_brembana', name: 'Salita da San Giovanni Bianco al Monte Molinasco', kind: 'up', file: 'Brembana_SalitaMolinasco_EBIKE.gpx', link: '2021/03/monte-molinasco' },
@@ -684,7 +684,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita da Zogno al Monte Castello con periplo', kind: 'up', file: 'Brembana_SalitaZognoGiroMonteCastello_EBIKE.gpx', link: '2023/11/giro-castello' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita Zogno, Valico di Salmezza, Stalla Fopp', kind: 'up', file: 'Brembana_SalitaZognoStallaFopp_EBIKE.gpx', link: '2024/04/poscante-back' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita Zogno, Valico di Salmezza, Stalla Fopp', kind: 'up', file: 'Brembana_SalitaZognoPoscanteCantoBasso_EBIKE.gpx', link: '2024/05/canto-basso-poscante' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita Zogno, Prati Parini, Canto Alto', kind: 'up', file: 'Brembana_SalitaZognoPariniCantoAlto_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita Zogno, Prati Parini, Canto Alto', kind: 'up', file: 'Brembana_SalitaZognoPariniCantoAlto_EBIKE.gpx', link: '2024/06/canto-alto-507a' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: 'bassa_brembana', name: 'Salita San Giovanni Bianco. Bocchetta Roco, Pizzo Grande', kind: 'up', file: 'Brembana_SalitaSanGiovanniBiancoBocchettaRoncoPizzoGrande_EBIKE.gpx' },
 
 // overlapping
