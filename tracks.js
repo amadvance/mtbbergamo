@@ -273,6 +273,7 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'imagna, ubione, sopracorna', name: 'Roccoli Passata, Final, Valle Mori', kind: 'down', file: 'Imagna_FinalValleMori.gpx', link: '2020/05/sopracorna' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'imagna, ubione', name: 'Corna Marcia, Coyote Scamburtit, Ca Bonor\u00E8', kind: 'down', file: 'Imagna_CoyoteScamburtit.gpx', link: '2019/09/coyote-scamburtit' },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'imagna, ubione', name: 'Monte Ubiale, Ubiale', kind: 'down', file: 'Imagna_MonteUbialeClanezzo.gpx', link: '2023/05/monte-ubiale'  },
+{ vote: 4, rate: 3, rate_max: 4, cycle: 0, zone: 'imagna, ubione', name: 'Fiori, Sopracorna', kind: 'down', file: 'Imagna_FioriSopracorna.gpx', link: '2024/07/fiori'  },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna, ubione', name: 'Salita ciclabile del Chito, Corna Marcia', kind: 'up', file: 'Imagna_SalitaChitoBottaCornaMarcia_EBIKE.gpx', link: '2019/09/coyote-scamburtit' },
@@ -282,7 +283,8 @@ var TRACKS = [
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'ubione, sopracorna', name: 'Salita Clanezzo, Roccoli Passata', kind: 'up', file: 'Imagna_SalitaClanezzoRoccoliPassata_EBIKE.gpx', link: '2018/12/salite-imagna' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita diretta ciclabile del Chito, Passo del Canto', kind: 'up', file: 'Imagna_SalitaChitoCantoDiretta_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'ubione', name: 'Salita diretta ciclabile del Chito, Passo del Canto', kind: 'up', file: 'Imagna_SalitaChitoCantoDiretta_EBIKE.gpx', link: '2018/12/salite-imagna' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'ubione', name: 'Salita Clanezzo, Roccoli Passata, Fiori', kind: 'up', file: 'Imagna_SalitaClanezzoFiori_EBIKE.gpx', link: '2024/07/fiori' },
 //Imagna_MalanotteFoppo.gpx
 
 //
