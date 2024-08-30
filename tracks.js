@@ -384,7 +384,7 @@ var TRACKS = [
 { vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'canto', name: 'Crocione, California 2', kind: 'down', file: 'Canto_CrocioneCalifornia2.gpx', link: '2023/04/crocione-california-2' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 0, zone: 'canto', name: 'Tronchi, Canyon', kind: 'down', file: 'Canto_Canyon.gpx', link: '2021/05/canyon' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: 'canto', name: 'Traliccio', kind: 'down', file: 'Canto_Traliccio.gpx', link: '2021/05/traliccio' },
-{ vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'canto', name: 'Radici, Genestaro', kind: 'down', file: 'Canto_RadiciGenestaro.gpx', link: '2020/03/radici-genestaro' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'canto', name: 'Radici, Genestaro / Scorbutico', kind: 'down', file: 'Canto_RadiciGenestaro.gpx', link: '2020/03/radici-genestaro' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'canto', name: 'Crocione, Guendalina', kind: 'down', file: 'Canto_CrocioneGuendalina.gpx', link: '2020/02/crocione-guendalina' },
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'canto', name: 'Biglietto da Visita', kind: 'down', file: 'Canto_BigliettoDaVisita.gpx', link: '2020/02/biglietto-da-visita' },
 { vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'canto', name: 'Kompressor', kind: 'down', file: 'Canto_Kompressor.gpx', link: '2019/02/kompressor' },
