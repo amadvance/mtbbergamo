@@ -489,8 +489,7 @@ removed su richiesta del CAI Albino
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita Gazzaniga, Ganda', kind: 'up', file: 'Seriana_SalitaGazzanigaGanda_EBIKE.gpx', link: '2019/05/521' },
 
 // trek
-{ vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_seriana', name: 'Anello del Misma', kind: 'trek', file: 'Seriana_SantuarioForcellaAnelloDelMisma.gpx' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita Nembro, Cava, Forcella di Pradalunga', kind: 'up', file: 'Seriana_SalitaNembroCavaSantuarioForcella_EBIKE.gpx' },
+{ vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_seriana', name: 'Anello del Misma', kind: 'trek', file: 'Seriana_AnelloDelMisma_EBIKE.gpx' },
 
 // sud
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana, 520', name: 'Ciclabile Valle Seriana', kind: 'up', file: 'Seriana_CiclabileValleSeriana.gpx', link: '2019/03/salite-valle-seriana' },
@@ -856,3 +855,4 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
+
