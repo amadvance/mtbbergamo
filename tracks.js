@@ -742,8 +742,8 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'serina, brembana', name: 'Salita Molino, Rigosa, Selvino, Perello, Monte Castello', kind: 'up', file: 'Serina_SalitaMolinoPerelloMonteCastello_EBIKE.gpx', link: '2024/08/sambusita' },
 
 // overlapping
-{ vote: 0, rate: 0, rate_max: 0, cycle: 12, zone: '', name: 'Salita Zambla Alta, Plassa, Capanna 2000', kind: 'up', file: 'Serina_SalitaZamblaCapanna2000_EBIKE.gpx', link: '2024/09/capana-2000-zambla' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 12, zone: '', name: 'Salita Oltre il Colle, Zambla Bassa, Plassa, Capanna 2000', kind: 'up', file: 'Serina_SalitaOltreIlColleZamblaBassaCapanna2000_EBIKE.gpx', link: '2024/09/capanna-2000-oltreilcolle' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Zambla Alta, Plassa, Capanna 2000', kind: 'up', file: 'Serina_SalitaZamblaCapanna2000_EBIKE.gpx', link: '2024/09/capana-2000-zambla' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Oltre il Colle, Zambla Bassa, Plassa, Capanna 2000', kind: 'up', file: 'Serina_SalitaOltreIlColleZamblaBassaCapanna2000_EBIKE.gpx', link: '2024/09/capanna-2000-oltreilcolle' },
 
 //
 // ALTA BREMBANA
