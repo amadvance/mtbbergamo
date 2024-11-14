@@ -55,7 +55,7 @@ FILTER_CONTRAST='normalize=blackpt=black:whitept=white:smoothing=60:strength=1.0
 FILTER_DARK='curves=all=\'0/0 0.5/0.65 1/1\',normalize=blackpt=black:whitept=white:smoothing=60:strength=1.0,eq=contrast=1.1:saturation=1.5,unsharp=7:7:1.2'
 ENCODE='-preset veryfast -codec:v libx264 -crf 24 -maxrate 90M -bufsize 30M -pix_fmt yuvj420p -codec:a aac -b:a 192k'
 
-FILTER=FILTER_SUMMER
+FILTER=FILTER_WINTER
 
 print >>cmd, ffmpeg, "-y", input_list, "-filter_complex \"" + filter_list + ";[v]" + FILTER + "[v]\" -map \"[v]\" -map \"[a]\"", ENCODE, output_mp4
 
