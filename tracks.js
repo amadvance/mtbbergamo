@@ -466,7 +466,7 @@ removed su richiesta del CAI Albino
 { vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Rena, Bomba Trail, Albino', kind: 'down', file: 'Seriana_RenaBombaAlbino.gpx', link: '2022/12/rena-bomba' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Monte Poieto, Amora, Petello', kind: 'down', file: 'Seriana_PoeitoAmoraAlbino.gpx', link: '2023/01/amora' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Tribulina di Ganda, 522, Gazzaniga', kind: 'down', file: 'Seriana_TribulinaGanda522Gazzaniga.gpx', link: '2023/01/522' },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Rena, Croce San Luigi, Desenzano', kind: 'down', file: 'Seriana_RenaLuigiDesenzano.gpx' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Rena, Croce San Luigi, Desenzano', kind: 'down', file: 'Seriana_RenaLuigiDesenzano.gpx', link: '2023/01/luigi' },
 
 // removed for not so relevant
 /*
@@ -728,7 +728,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'serina, brembana', name: 'Monte Castello, Sambusita, Molino', kind: 'down', file: 'Serina_MonteCastelloSambusitaMolino.gpx', link: '2024/08/sambusita' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 1, zone: 'serina, brembana', name: 'Capanna 2000, Zambla Alta', kind: 'down', file: 'Serina_Capanna2000Zambla.gpx', link: '2024/09/capana-2000-zambla' },
 { vote: 5, rate: 3, rate_max: 3, cycle: 0, zone: 'serina, brembana', name: 'Capanna 2000, Cattedrale Vegetale, Oltre il colle', kind: 'down', file: 'Serina_Capanna2000CattedraleVegetaleOltreIlColle.gpx', link: '2024/09/capanna-2000-oltreilcolle' },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'serina, brembana', name: 'Baita Zuccone, Plassa, Oltre il colle', kind: 'down', file: 'Serina_BaitaZucconePlassaOltreIlColle.gpx' },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 2, zone: 'serina, brembana', name: 'Baita Zuccone, Plassa, Oltre il colle', kind: 'down', file: 'Serina_BaitaZucconePlassaOltreIlColle.gpx', link: '2024/11/zuccone-plassa' },
 { vote: 2, rate: 3, rate_max: 4, cycle: 2, zone: 'serina, brembana', name: 'Capanna 2000, Val Vedra (fondovalle), Oltre il colle', kind: 'down', file: 'Serina_Capanna2000ValVedraFondovalle.gpx' },
 
 // climb
@@ -744,7 +744,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: 'serina, brembana', name: 'Salita Algua, Ambriola, Via Mercatorum, Aviatico, Forca di Aviatico, Forcellino', kind: 'up', file: 'Serina_SalitaAlguaMercatorumAviaticoForcellino_EBIKE.gpx', link: '2023/10/trafficanti-mercatorum' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'serina, brembana', name: 'Salita Rigosa, Molino, Monte Castello, Valico di Salmezza', kind: 'up', file: 'Serina_SalitaRigosaMonteCastelloValicoSalmezza_EBIKE.gpx', link: '2023/12/perello' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'serina, brembana', name: 'Salita Molino, Rigosa, Selvino, Perello, Monte Castello', kind: 'up', file: 'Serina_SalitaMolinoPerelloMonteCastello_EBIKE.gpx', link: '2024/08/sambusita' },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'serina, brembana', name: 'Salita Oltre il Colle, Plassa, Baita Zuccone', kind: 'up', file: 'Serina_SalitaOltreIlCollePlassaBaitaZuccone_EBIKE.gpx' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'serina, brembana', name: 'Salita Oltre il Colle, Plassa, Baita Zuccone', kind: 'up', file: 'Serina_SalitaOltreIlCollePlassaBaitaZuccone_EBIKE.gpx', link: '2024/11/zuccone-plassa' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Zambla Alta, Plassa, Capanna 2000', kind: 'up', file: 'Serina_SalitaZamblaCapanna2000_EBIKE.gpx', link: '2024/09/capana-2000-zambla' },
