@@ -546,6 +546,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'media_seriana, 530', name: '530 George', kind: 'down', file: 'Seriana_530George.gpx', link: '2023/03/530-george' },
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'media_seriana, 530', name: '530 Original', kind: 'down', file: 'Seriana_530Original.gpx', link: '2023/03/530-george' },
 { vote: 5, rate: 3, rate_max: 4, cycle: 0, zone: 'media_seriana', name: 'Cima Vaccaro Freeride', kind: 'down', file: 'Seriana_CimaVaccaroFreeRide.gpx', link: '2023/03/cima-vaccaro-freeride' },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'media_seriana', name: 'Colle di Zambla, Madonna del Frassino', kind: 'down', file: 'Seriana_ColleDiZamblaFrassinoSantuarioSantissimo.gpx' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'media_seriana', name: 'Salita Parre, Rifugio Vaccaro, Forcella', kind: 'up', file: 'Seriana_SalitaParreVaccaroForcella_EBIKE.gpx', link: '2021/11/vaccaro-forcella' },
@@ -553,6 +554,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'media_seriana', name: 'Salita Vertova, Bondo, Cavlera, Baita Garda', kind: 'up', file: 'Seriana_SalitaVertovaBondoCavleraGarda_EBIKE.gpx', link: '2021/12/528-special' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 5, zone: 'media_seriana', name: 'Salita Ponte Nossa, Barbata, Cima di Tisa', kind: 'up', file: 'Seriana_SalitaPonteNossaBarbataTisa_EBIKE.gpx', link: '2022/01/monte-tisa-518-bondo' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 23, zone: 'media_seriana', name: 'Salita Parre, Cima Vaccaro', kind: 'up', file: 'Seriana_SalitaCimaVaccaro_EBIKE.gpx', link: '2023/03/cima-vaccaro-freeride' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'media_seriana', name: 'Salita Santuario Santissimo, Colle di Zambla', kind: 'up', file: 'Seriana_SalitaSantuarioSantissimoColleDiZambla_EBIKE.gpx'},
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '530', name: 'Salita Vertova, Rifugio Cavlera', kind: 'up', file: 'Seriana_SalitaVertovaCavlera_EBIKE.gpx', link: '2023/03/530-george' },
@@ -871,4 +873,3 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno' },
 ];
-
