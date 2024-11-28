@@ -53,7 +53,7 @@ FILTER_SUMMER='normalize=blackpt=black:whitept=white:smoothing=60:strength=1.0,e
 FILTER_WINTER='normalize=blackpt=black:whitept=white:smoothing=60:strength=1.0,eq=contrast=1.1:saturation=1.5,curves=blue=\'0/0 0.5/0.45 1/1\',unsharp=7:7:1.2'
 FILTER_CONTRAST='normalize=blackpt=black:whitept=white:smoothing=60:strength=1.0,eq=contrast=1.2:saturation=1.5,curves=blue=\'0/0 0.5/0.45 1/1\',unsharp=7:7:1.2'
 FILTER_DARK='curves=all=\'0/0 0.5/0.65 1/1\',normalize=blackpt=black:whitept=white:smoothing=60:strength=1.0,eq=contrast=1.1:saturation=1.5,unsharp=7:7:1.2'
-ENCODE='-preset veryfast -codec:v libx264 -crf 24 -maxrate 90M -bufsize 30M -pix_fmt yuvj420p -codec:a aac -b:a 192k'
+ENCODE='-preset veryfast -codec:v libx264 -crf 24 -maxrate 90M -bufsize 30M -pix_fmt yuv420p -codec:a aac -b:a 192k'
 
 FILTER=FILTER_WINTER
 
