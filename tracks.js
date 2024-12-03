@@ -513,6 +513,8 @@ removed su richiesta del CAI Albino
 { vote: 3, rate: 3, rate_max: 4, cycle: 0, zone: 'bassa_seriana, bastia', name: 'Bastia, Gianino', kind: 'down', file: 'Seriana_BastiaGianino.gpx', link: '2021/04/scanzorosciate' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana, bastia', name: 'Bastia, Valbona', kind: 'down', file: 'Seriana_BastiaValbona.gpx', link: '2021/04/scanzorosciate' },
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Monte Altino, Prati Moletti, Cene', kind: 'down', file: 'Seriana_MonteAltinoPratiMolettiCene.gpx', link: '2024/11/altino' },
+{ vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Altino, Canfer, Cene', kind: 'down', file: 'Seriana_MonteAltinoCanfer.gpx', link: '2024/11/altino-canfer' },
+{ vote: 5, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Altino, Vall Alta, Cene', kind: 'down', file: 'Seriana_MonteAltinoVallAlta.gpx' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'Seriana_SalitaMismaRipetitori_EBIKE.gpx', link: '2021/04/misma-santa-maria-cenate-sopra' },
@@ -529,6 +531,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita alla Val Coler', kind: 'up', file: 'Seriana_SalitaTribulinaColer_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita da Cornale, Pradale', kind: 'up', file: 'Seriana_SalitaCornalePradale_EBIKE.gpx', link: '2019/03/salite-valle-seriana' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita Cene, Monte Altino', kind: 'up', file: 'Seriana_SalitaCeneMonteAltino_EBIKE.gpx', link: '2024/11/altino' },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita Cene, Santuario di Altino, Monte Altino', kind: 'up', file: 'Seriana_SalitaCeneSantuarioMonteAltino_EBIKE.gpx', link: '2024/11/altino-canfer' },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita da Ganda al Monte Poieto', kind: 'up', file: 'Seriana_SalitaGandaPoieto.gpx', link: '2019/03/salite-valle-seriana' },
