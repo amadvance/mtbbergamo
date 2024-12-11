@@ -2,7 +2,7 @@
 <?xml-stylesheet href="https://www.blogger.com/styles/atom.css" type="text/css"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/" xmlns:gd="http://schemas.google.com/g/2005" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:georss="http://www.georss.org/georss">
   <id>tag:blogger.com,1999:blog-1188434606630302835.archive</id>
-  <updated>2024-09-05T09:15:59.142+02:00</updated>
+  <updated>2024-12-06T00:01:24.076+01:00</updated>
   <title type="text">MTB Bergamo</title>
   <link rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/archive"/>
   <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/archive"/>
@@ -18,7 +18,7 @@
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.layout</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#template"/>
     <title type="text">Modello: MTB Bergamo</title>
     <content type="text">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
@@ -723,7 +723,11 @@ body.mobile  {
           gapi.iframes.getContext().openChild({
               url: &amp;#39;https://www.blogger.com/navbar.g?targetBlogID\x3d1188434606630302835\x26blogName\x3dMTB+Bergamo\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dDISABLED\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttp://www.mtbbergamo.it/search\x26blogLocale\x3dit\x26v\x3d2\x26homepageUrl\x3dhttp://www.mtbbergamo.it/\x26vt\x3d-1690034122334966779&amp;#39;,
               where: document.getElementById(&amp;quot;navbar-iframe-container&amp;quot;),
-              id: &amp;quot;navbar-iframe&amp;quot;
+              id: &amp;quot;navbar-iframe&amp;quot;,
+              messageHandlersFilter: gapi.iframes.CROSS_ORIGIN_IFRAMES_FILTER,
+              messageHandlers: {
+                &amp;#39;blogger-ping&amp;#39;: function() {}
+              }
           });
         }
       });
@@ -2221,7 +2225,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_PUBLISHING_MODE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di pubblicazione eseguita per questo blog.</title>
     <content type="text">PUBLISH_MODE_HOSTED</content>
@@ -2237,7 +2241,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ADMIN_PERMISSION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">L'elenco di email degli amministratori per il blog.</title>
     <content type="text">amadvance@gmail.com</content>
@@ -2253,7 +2257,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ADULT_CONTENT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog contiene contenuti per adulti</title>
     <content type="text">false</content>
@@ -2269,7 +2273,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ANALYTICS_ACCOUNT_NUMBER</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero dell'account Google Analytics del blog</title>
     <content type="text">UA-21967501-5</content>
@@ -2285,7 +2289,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ARCHIVE_DATE_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il numero del formato data dell'indice di archivio</title>
     <content type="text">9</content>
@@ -2301,7 +2305,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ARCHIVE_FREQUENCY</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Frequenza di archiviazione del blog</title>
     <content type="text">MONTHLY</content>
@@ -2317,7 +2321,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_AUTHOR_PERMISSION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">L'elenco di email degli autori autorizzati a pubblicare.</title>
     <content type="text"/>
@@ -2333,7 +2337,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_BY_POST_ARCHIVING</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale creazione di una pagina archivio per ogni post</title>
     <content type="text">true</content>
@@ -2349,7 +2353,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_ACCESS</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Chi può inserire commenti</title>
     <content type="text">TEAM</content>
@@ -2365,7 +2369,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_CAPTCHA</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale richiesta di commentatori per completare un Captcha</title>
     <content type="text">false</content>
@@ -2381,7 +2385,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_EMAIL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Elenco di indirizzi email a cui inviare notifiche di nuovi commenti</title>
     <content type="text"/>
@@ -2397,7 +2401,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_FEED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di feed da fornire per i commenti del blog</title>
     <content type="text">FULL</content>
@@ -2413,7 +2417,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_FORM_LOCATION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Posizione modulo dei commenti del blog</title>
     <content type="text">EMBEDDED_IFRAME</content>
@@ -2429,7 +2433,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MESSAGE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Messaggio di commento blog</title>
     <content type="text"/>
@@ -2445,7 +2449,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MODERATION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale attivazione della moderazione dei commenti</title>
     <content type="text">ENABLED</content>
@@ -2461,7 +2465,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MODERATION_DELAY</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero di giorni dopo i quali i nuovi commenti possono essere sottoposti a una moderazione</title>
     <content type="text">14</content>
@@ -2477,7 +2481,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MODERATION_EMAIL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Indirizzo email a cui inviare notifiche di nuovi commenti che richiedono una moderazione</title>
     <content type="text"/>
@@ -2493,7 +2497,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_PROFILE_IMAGES</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale visualizzazione di immagini profilo nei commenti</title>
     <content type="text">true</content>
@@ -2509,7 +2513,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENTS_ALLOWED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare commenti</title>
     <content type="text">false</content>
@@ -2525,7 +2529,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENTS_TIME_STAMP_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero del formato ora del commento</title>
     <content type="text">29</content>
@@ -2541,7 +2545,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ADS_TXT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">I contenuti del file ads.txt personalizzato del blog forniti ai motori di ricerca degli annunci.</title>
     <content type="text"/>
@@ -2557,7 +2561,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ADS_TXT_ENABLED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Indica se questo blog fornirà o meno i contenuti del file ads.txt personalizzato ai motori di ricerca degli annunci.</title>
     <content type="text">false</content>
@@ -2573,7 +2577,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_PAGE_NOT_FOUND</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">I contenuti visualizzati quando non viene trovato il post o la pagina.</title>
     <content type="text"/>
@@ -2589,7 +2593,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ROBOTS_TXT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">I contenuti del file robots.txt personalizzato inseriti nei motori di ricerca.</title>
     <content type="text"/>
@@ -2605,7 +2609,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ROBOTS_TXT_ENABLED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog visualizza contenuti di file robots.txt personalizzati per i motori di ricerca.</title>
     <content type="text">false</content>
@@ -2621,7 +2625,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_DATE_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero del formato dell'intestazione della data</title>
     <content type="text">26</content>
@@ -2637,7 +2641,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_DEFAULT_COMMENTS_MODE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Modalità commenti predefinita per i post</title>
     <content type="text">DEFAULT_HAVE_COMMENTS</content>
@@ -2653,7 +2657,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_DESCRIPTION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Una descrizione del blog</title>
     <content type="text">Percorsi in Mountain Bike nella provincia di Bergamo</content>
@@ -2669,7 +2673,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_EMAIL_POST_LINKS</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare un link agli utenti che vogliono inviare post via email</title>
     <content type="text">false</content>
@@ -2685,7 +2689,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_FEED_REDIRECT_URL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">URL a cui reindirizzare richieste di feed post</title>
     <content type="text"/>
@@ -2701,7 +2705,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_FLOAT_ALIGNMENT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se l'allineamento mobile è abilitato per il blog</title>
     <content type="text">true</content>
@@ -2717,7 +2721,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_LOCALE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Lingua del blog</title>
     <content type="text">it</content>
@@ -2733,7 +2737,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_MAX_NUM</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero massimo di elementi da mostrare nella pagina principale"</title>
     <content type="text">1</content>
@@ -2749,7 +2753,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_MAX_UNIT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Elementi da mostrare nella pagina principale</title>
     <content type="text">POSTS</content>
@@ -2765,7 +2769,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_META_DESCRIPTION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">La meta descrizione del blog fornita ai motori di ricerca.</title>
     <content type="text">Percorsi in Mountain Bike Enduro e All Mountain in provincia di Bergamo</content>
@@ -2781,7 +2785,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_META_DESCRIPTION_ENABLED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog è pubblicato con meta descrizioni.</title>
     <content type="text">true</content>
@@ -2797,7 +2801,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_NAME</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Nome del blog</title>
     <content type="text">MTB Bergamo</content>
@@ -2813,7 +2817,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_PER_POST_FEED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di feed da fornire per i commenti per ogni post</title>
     <content type="text">FULL</content>
@@ -2829,7 +2833,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_POST_FEED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di feed da fornire per i post del blog</title>
     <content type="text">FULL</content>
@@ -2845,7 +2849,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_POST_FEED_FOOTER</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Piè di pagina da aggiungere alla fine di ogni voce nel feed del post</title>
     <content type="text"/>
@@ -2861,7 +2865,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_POST_TEMPLATE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Modello dei post del blog</title>
     <content type="text"/>
@@ -2877,7 +2881,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_QUICK_EDITING</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se Quick Edit è attivato</title>
     <content type="text">true</content>
@@ -2893,7 +2897,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_READ_ACCESS_MODE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di accesso per i lettori del blog.</title>
     <content type="text">PUBLIC</content>
@@ -2909,7 +2913,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_READER_PERMISSION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">L'elenco di email per gli utenti che sono autorizzati a leggere il blog.</title>
     <content type="text"/>
@@ -2925,7 +2929,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_SEARCHABLE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog deve essere indicizzato dai motori di ricerca</title>
     <content type="text">true</content>
@@ -2941,7 +2945,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_SEND_EMAIL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Elenco di indirizzi email separati da virgole a cui inviare nuovi post del blog</title>
     <content type="text"/>
@@ -2957,7 +2961,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_SHOW_URL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare una casella con link correlato nel compositore di post</title>
     <content type="text">false</content>
@@ -2973,7 +2977,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_TIME_STAMP_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il numero del formato ora</title>
     <content type="text">27</content>
@@ -2989,7 +2993,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_TIME_ZONE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il fuso orario del blog</title>
     <content type="text">Europe/Rome</content>
@@ -3005,7 +3009,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_USE_LIGHTBOX</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2024-09-05T09:15:59.142+02:00</updated>
+    <updated>2024-12-06T00:01:24.076+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare le immagini in lightbox quando è selezionata l'impostazione</title>
     <content type="text">false</content>
@@ -3020,8 +3024,8 @@ head.appendChild(script);
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-5410033916728342168</id>
-    <published>2024-09-02T06:00:00.000+02:00</published>
-    <updated>2024-09-04T12:03:47.589+02:00</updated>
+    <published>2024-11-29T06:00:00.000+01:00</published>
+    <updated>2024-12-03T10:28:44.652+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Benvenuti a MTB Bergamo</title>
     <content type="html">&lt;p&gt;
@@ -3040,7 +3044,7 @@ Per rimanere sempre aggiornato su ogni nuovo video, iscriviti al &lt;a href="htt
 A differenza di altre guide, distinguiamo chiaramente le tracce in salita e in discesa. È consigliato l'uso di un dispositivo GPS (o del tuo cellulare) per seguire la traccia, quindi le nostre descrizioni non forniscono indicazioni esaustive, ma si limitano a integrare la traccia GPS con informazioni aggiuntive.
 &lt;/p&gt;  
 &lt;p&gt;
-Tutte le tracce sono registrate e curate personalmente per garantire la massima precisione. Le informazioni, come il &lt;a href="http://www.mtbbergamo.it/p/difficolta.html"&gt;grado di difficoltà&lt;/a&gt;, sono anche visualizzabili su &lt;a href="https://www.openstreetmap.org/#map=12/45.7436/9.6632"&gt;OpenStreetMap&lt;/a&gt;, la base di tutte le &lt;a href="http://www.mtbbergamo.it/p/mappe.html"&gt;mappe dei sentieri&lt;/a&gt; online e nelle app per smartphone.
+Tutte le tracce sono registrate e curate personalmente per garantire la massima precisione. Le informazioni, come il &lt;a href="http://www.mtbbergamo.it/p/difficolta.html"&gt;grado di difficoltà&lt;/a&gt;, sono anche aggiunte su &lt;a href="https://www.openstreetmap.org/#map=12/45.7436/9.6632"&gt;OpenStreetMap&lt;/a&gt;, la base di tutte le &lt;a href="http://www.mtbbergamo.it/p/mappe.html"&gt;mappe dei sentieri&lt;/a&gt; online e nelle app per smartphone.
 &lt;/p&gt;  
 &lt;p&gt;
 Per ulteriori dettagli sui percorsi, puoi chiedere nei forum dedicati alla zona di Bergamo, come &lt;a href="https://www.mtb-mag.com/forum/threads/b%C3%A8rgh%C3%A9m-point-buon-2019-a-tutti-gli-fdp.283101/"&gt;MTB Forum&lt;/a&gt; ed &lt;a href="https://www.ebike-mag.com/forum/t/e-biker-bergamo-qui.1668/"&gt;E-BIKE Forum&lt;/a&gt;.
@@ -3069,6 +3073,423 @@ document.getElementById("num_pages").textContent = count_pages();
       <email>noreply@blogger.com</email>
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
     </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-1730576551248741624</id>
+    <published>2024-11-28T10:12:00.032+01:00</published>
+    <updated>2024-12-03T10:35:49.369+01:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S3"/>
+    <title type="text">Santuario di Altino, Monte Altino, Canfer</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle Seriana&lt;/a&gt; dalla cima del &lt;i&gt;Monte Altino&lt;/i&gt; a &lt;i&gt;Canfer&lt;/i&gt;.
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Sentiero tecnico S3 con molti tornanti.
+&lt;/p&gt;
+&lt;p&gt;
+Si sale da &lt;i&gt;Cene&lt;/i&gt; su asfalto fino al &lt;i&gt;Santuario di Altino&lt;/i&gt;, per poi proseguire su sentieri fino alla cima del &lt;i&gt;Monte Altino&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+La discesa inizia sul prato, evitando il primo tratto di sentiero nel bosco, e si riconnette al sentiero ai primi alberi. È un sentiero tecnico S3 con vari tornanti, fino a raggiungere il sentiero &lt;b&gt;512&lt;/b&gt;, che percorre il periplo del &lt;i&gt;Monte Altino&lt;/i&gt;. Si prosegue sul facile periplo S1, seguendo sempre il &lt;b&gt;512&lt;/b&gt;. Dopo la &lt;i&gt;Cascina Colombera&lt;/i&gt;, si affronta ancora un tratto in costa, per poi continuare la discesa tra sterrate e baite.
+&lt;/p&gt;
+&lt;p&gt;
+A una curva a destra della cementata, si prosegue dritto per il tratto finale della discesa. Si tratta sempre di un tecnico S3 con vari tornanti stretti, ma fattibili senza necessità di nose-press. La discesa si conclude in &lt;i&gt;Via Canfer&lt;/i&gt;, da cui, tramite sentieri e strade secondarie, si ritorna a &lt;i&gt;Cene&lt;/i&gt;.
+&lt;/p&gt;
+
+  
+&lt;div class="videotitle"&gt;
+Monte Altino, Canfer
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/sI8J39Kkzg4?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div class="videotitle"&gt;
+Santuario di Altino, Monte Altino
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/Io_kheYjYvQ?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+&lt;div id="AltinoCanfer" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('AltinoCanfer');
+  var page_control = create_control(page_map);
+  create_down(page_map, page_control, 'Seriana_MonteAltinoCanfer.gpx');
+  create_up(page_map, page_control, 'Seriana_SalitaCeneSantuarioMonteAltino_EBIKE.gpx');
+&lt;/script&gt;
+</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/1730576551248741624"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/1730576551248741624"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2024/11/altino-canfer.html" title="Santuario di Altino, Monte Altino, Canfer"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/sI8J39Kkzg4/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-1243080294671862273</id>
+    <published>2024-11-24T09:50:00.005+01:00</published>
+    <updated>2024-11-28T09:56:48.291+01:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <title type="text">Colle di Zambla, Madonna del Frassino, Chignolo d'Oneta</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/media-valle-seriana.html"&gt;Val Seriana&lt;/a&gt; dal Colle di Zambla alla Madonna del Frassino e Chignolo d'Oneta.
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Discesa su sentiero S2 con punte S3 fino alla &lt;i&gt;Madonna del Frassino&lt;/i&gt;, seguita da facili sterrate e mulattiere. La discesa su sentiero è bella ma poca, questa è la ragione di un giudizio relativamente basso.
+&lt;/p&gt;
+&lt;p&gt;
+La partenza è da &lt;i&gt;Ponte Nossa&lt;/i&gt; o da uno dei parcheggi all'inizio della &lt;i&gt;Val del Riso&lt;/i&gt;. Si sale lungo la strada asfaltata fino al &lt;i&gt;Colle di Zambla&lt;/i&gt;, seguito da un breve tratto di salita su sterrata. La discesa inizia al &lt;i&gt;Passo della Crocetta&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Dopo un breve tratto di sterrata, un bel sentiero S2 con punte S3 conduce alla &lt;i&gt;Madonna del Frassino&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Da qui, una lunga sterrata con saliscendi, con una variante che attraversa &lt;i&gt;Miradol&lt;/i&gt;, offrendo un ottimo panorama sulla &lt;i&gt;Val del Riso&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Prima di &lt;i&gt;Chignolo d'Oneta&lt;/i&gt; c'è una risalita su sentiero. Con una MTB muscolare, è consigliabile rimanere sulla sterrata per risalire da lì; i due percorsi si ricongiungono poco prima del paese.
+&lt;/p&gt;
+&lt;p&gt;
+Dal paese, una serie di mulattiere e sentieri tagliano più volte la strada asfaltata, portando alla frazione &lt;i&gt;Riso&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Infine, si prende la ciclabile di fondovalle che scende fino a &lt;i&gt;Ponte Nossa&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Alla &lt;i&gt;Madonna del Frassino&lt;/i&gt; c'è una fontanella.
+&lt;/p&gt;
+
+&lt;div class="videotitle"&gt;
+Colle di Zambla, Madonna del Frassino, Chignolo, Riso
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/khmvg8Kljfk" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div id="Frassino" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('Frassino');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Seriana_ColleDiZamblaFrassinoSantuarioSantissimo.gpx');
+  create_up(page_map, page_control, 'Seriana_SalitaSantuarioSantissimoColleDiZambla_EBIKE.gpx');
+&lt;/script&gt;
+</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/1243080294671862273"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/1243080294671862273"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2024/11/frassino.html" title="Colle di Zambla, Madonna del Frassino, Chignolo d'Oneta"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/khmvg8Kljfk/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-1746955857270184093</id>
+    <published>2024-11-16T15:06:00.005+01:00</published>
+    <updated>2024-11-20T15:17:45.309+01:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <title type="text">Monte Altino, Prati Moletti</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle Seriana&lt;/a&gt; dalla cima del &lt;i&gt;Monte Altino&lt;/i&gt; a &lt;i&gt;Cene&lt;/i&gt;.
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Sentiero con tratti tecnici di difficoltà S2, ma principalmente classificato come S1.
+&lt;/p&gt;
+&lt;p&gt;
+Si sale da &lt;i&gt;Cene&lt;/i&gt; su tratti di asfalto e cementati, con solo l'ultima parte che attraversa prati. Si raggiunge prima l'anticima, caratterizzata dalla presenza di una croce, per poi proseguire verso la vera cima del &lt;i&gt;Monte Altino&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+La discesa ha inizio su un prato, privo di una traccia definita di sentiero. Si affrontano tratti ripidi di difficoltà S2, passando accanto a due capanni, fino a congiungersi con il sentiero che percorre il periplo del monte. Qui si continua in costa con difficoltà S1 fino a raggiungere i &lt;i&gt;Prati Moletti&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+In questa zona, la difficoltà aumenta a S2 con alcune punte di S3. Prestate attenzione a imboccare la svolta a sinistra per lasciare il sentiero principale: l'incrocio è poco visibile. Dopo la svolta, il sentiero diventa un facile S1, fino a una breve risalita finale su sterrata e sentiero che porta appena sopra &lt;i&gt;Cene&lt;/i&gt;.
+&lt;/p&gt;
+
+  
+&lt;div class="videotitle"&gt;
+Monte Altino, Prati Moletti, Cene
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/8kMKyrAw2Sk?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div class="videotitle"&gt;
+Salita Cene, Monte Altino
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/g98tYrNAAo8?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+&lt;div id="Altino" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('Altino');
+  var page_control = create_control(page_map);
+  create_down(page_map, page_control, 'Seriana_MonteAltinoPratiMolettiCene.gpx');
+  create_up(page_map, page_control, 'Seriana_SalitaCeneMonteAltino_EBIKE.gpx');
+&lt;/script&gt;
+</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/1746955857270184093"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/1746955857270184093"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2024/11/altino.html" title="Monte Altino, Prati Moletti"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/8kMKyrAw2Sk/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-4510467299198913746</id>
+    <published>2024-11-02T17:38:00.062+01:00</published>
+    <updated>2024-11-14T19:37:36.601+01:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S3"/>
+    <title type="text">Baita Zuccone, Plassa, Oltre il Colle</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/val-serina.html"&gt;Val Serina&lt;/a&gt; dalla Baita Zuccone (appena sotto Capanna 2000) a Oltre il Colle
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Discesa tecnica S3 nella prima parte e più scorrevole S1 nella seconda &lt;i&gt;Plassa&lt;/i&gt;.
+&lt;p&gt;
+Si parte da &lt;i&gt;Oltre il Colle&lt;/i&gt; e, tramite asfalto, si raggiunge &lt;i&gt;Zambla Alta&lt;/i&gt; e, a seguire, &lt;i&gt;Plassa&lt;/i&gt;.  
+Da &lt;i&gt;Plassa&lt;/i&gt; inizia la salita per la &lt;i&gt;Capanna 2000&lt;/i&gt;; questa versione segue la mulattiera invece della strada cementata.  
+La salita presenta un tratto molto ripido, più indicato per E-Bike. Nel caso di bici muscolare, è meglio seguire la strada cementata.
+&lt;/p&gt;
+&lt;p&gt;
+Prima di &lt;i&gt;Capanna 2000&lt;/i&gt;, si scende lungo una sterrata per raggiungere la &lt;i&gt;Baita Zuccone&lt;/i&gt;, dove inizia un primo tratto di discesa.
+&lt;/p&gt;
+&lt;p&gt;
+Si prosegue con vari saliscendi, seguendo il sentiero che porta alla &lt;i&gt;Cima di Grem&lt;/i&gt;, fino all'incrocio con il sentiero &lt;b&gt;238&lt;/b&gt; che conduce verso &lt;i&gt;Zambla Alta&lt;/i&gt;.  
+Qui inizia la discesa, che subito presenta un breve tratto tecnico S3. Si continua sul sentiero S2 fino a una brusca svolta a destra che porta sull'altro versante.  
+È necessario attraversare un torrente in una valletta stretta, spingendo la bici per un paio di minuti sia in discesa che in salita.
+&lt;/p&gt;
+&lt;p&gt;
+Superata la valletta, inizia un ottimo tratto tecnico S3 che vale tutta la gita. Sul finale, il percorso diventa un veloce S1 fino a &lt;i&gt;Plassa&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Si attraversa &lt;i&gt;Plassa&lt;/i&gt; su asfalto e si riprende la discesa verso &lt;i&gt;Oltre il Colle&lt;/i&gt; lungo facili sentieri S1 e S2.  
+Si arriva sotto al paese e si risale su asfalto.
+&lt;/p&gt;
+
+&lt;div class="videotitle"&gt;
+Baita Zuccone, Plassa, Oltre il Colle
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/GgQ3mnhaf9c?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div class="videotitle"&gt;
+Salita Plassa (parcheggio), Baita Zuccone
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/yhXAGOHBxJM?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div id="BaitaZucconePlassa" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('BaitaZucconePlassa');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Serina_BaitaZucconePlassaOltreIlColle.gpx');
+  create_up(page_map, page_control, 'Serina_SalitaOltreIlCollePlassaBaitaZuccone_EBIKE.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/4510467299198913746"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/4510467299198913746"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2024/11/zuccone-plassa.html" title="Baita Zuccone, Plassa, Oltre il Colle"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/GgQ3mnhaf9c/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-4595180951370721522</id>
+    <published>2024-10-13T14:30:00.003+02:00</published>
+    <updated>2024-11-06T15:26:12.638+01:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <title type="text">Fogna</title>
+    <content type="html">&lt;p&gt;
+Discesa nei &lt;a href="http://www.mtbbergamo.it/p/colli-di-bergamo.html"&gt;colli di Bergamo&lt;/a&gt; dal Castagneta verso Valverde
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+  Sentiero flow con alcune difficolta S2. Anche chiamato &lt;i&gt;Sentiero dei Rospi&lt;/i&gt; o &lt;i&gt;Sentiero dei Sacc&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Da &lt;i&gt;Castagneta&lt;/i&gt;, nei pressi della &lt;i&gt;Chiesa San Rocco&lt;/i&gt; ci si immette in uno stretto sentiero che percorre il limitare di alcune proprietà.
+E' molto flow, ma presenta alcune caratteristiche S2.  
+&lt;/p&gt;
+&lt;p&gt;
+Esposto a Nord e richiede tempo per asciugarsi.
+&lt;/p&gt;
+
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" src="https://www.youtube.com/embed/kbziGIB1AjA?start=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div id="Fogna" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('Fogna');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Colli_Fogna.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/4595180951370721522"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/4595180951370721522"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2024/10/fogna.html" title="Fogna"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/kbziGIB1AjA/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-9060476181144015046</id>
+    <published>2024-09-15T09:59:00.062+02:00</published>
+    <updated>2024-09-18T10:16:16.060+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S3"/>
+    <title type="text">Capanna 2000, Cattedrale Vegetale, Oltre il Colle</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/val-serina.html"&gt;Val Serina&lt;/a&gt; dal Rifugio Capanna 2000 a Oltre il Colle
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Discesa panoramica, principalmente S3 con qualche punto S4.
+&lt;/p&gt;
+&lt;p&gt;
+Si parte da &lt;i&gt;Oltre il Colle&lt;/i&gt; e, tramite sterrate e mulattiere, si raggiungono prima &lt;i&gt;Zambla Bassa&lt;/i&gt; e poi &lt;i&gt;Zambla Alta&lt;/i&gt;, dove si riprende la strada asfaltata per &lt;i&gt;Plassa&lt;/i&gt;.
+Questo tratto di mulattiere è più indicato per E-Bike, data l'elevata pendenza. Con bici muscolari, è probabilmente meglio seguire la normale strada asfaltata per &lt;i&gt;Zambla Alta&lt;/i&gt;.
+Da &lt;i&gt;Plassa&lt;/i&gt; inizia la salita per la &lt;i&gt;Capanna 2000&lt;/i&gt;, prima su strada asfaltata e, dal parcheggio, su strada cementata.
+&lt;/p&gt;
+&lt;p&gt;
+Dalla &lt;i&gt;Capanna 2000&lt;/i&gt; si scende lungo lo stesso fronte fatto per la salita, ma seguendo il sentiero principale, molto panoramico. È un S3 decisamente bello.
+Dopo il parcheggio, il sentiero diventa meno evidente e presenta un paio di punti S4. Il sentiero termina a un tornante della salita; si risale fino al tornante successivo per raggiungere la &lt;i&gt;Cattedrale Vegetale&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Si svolta a destra e inizia la discesa verso l'inizio della &lt;i&gt;Val Vedra&lt;/i&gt;. Nel tratto iniziale il sentiero è un po' stretto, ma poi diventa un agevole S2 fino a &lt;i&gt;Pian Bracca&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Si continua lungo il sentiero di fondovalle, un facile e veloce S1, fino ad arrivare sotto a &lt;i&gt;Oltre il Colle&lt;/i&gt;. Si risale su asfalto fino al paese.
+&lt;/p&gt;
+
+&lt;div class="videotitle"&gt;
+Capanna 2000, Cattedrale Vegetale, Oltre il Colle
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/vHosx3ozjJE?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div class="videotitle"&gt;
+Salita Oltre il Colle, Zambla Alta
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/9RTAxYyIAKs?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div class="videotitle"&gt;
+Salita Plassa (parcheggio), Capanna 2000
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/tyQ5JaPbmUU?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+&lt;div id="Capanna2kOltreilColle" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('Capanna2kOltreilColle');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Serina_Capanna2000CattedraleVegetaleOltreIlColle.gpx');
+  create_up(page_map, page_control, 'Serina_SalitaOltreIlColleZamblaBassaCapanna2000_EBIKE.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/9060476181144015046"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/9060476181144015046"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2024/09/capanna-2000-oltreilcolle.html" title="Capanna 2000, Cattedrale Vegetale, Oltre il Colle"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/vHosx3ozjJE/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-2750255807504022977</id>
+    <published>2024-09-07T14:59:00.040+02:00</published>
+    <updated>2024-09-11T15:09:20.065+02:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <title type="text">Capana 2000, Zambla Alta</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/val-serina.html"&gt;Val Serina&lt;/a&gt; dal Rifugio Capanna 2000 a Zambla Alta
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Discesa principalmente S2 con alcuni brevi tratti S3. Molti sali e scendi e poca discesa.
+&lt;/p&gt;
+&lt;p&gt;
+Si parte da &lt;i&gt;Zambla Alta&lt;/i&gt; e tramite asfaltata si raggiunge &lt;i&gt;Plassa&lt;/i&gt; dove inizia la salita per la &lt;i&gt;Capanna 2000&lt;/i&gt;, prima su asfaltata, e dal parcheggio su cementata. 
+&lt;/p&gt;
+&lt;p&gt;
+Dalla &lt;i&gt;Capanna 2000&lt;/i&gt; c'è un breve tratto di discesa con alcuni metri non ciclabili. Si continua con un bel traverso, sali e scendi, che porta prima alla &lt;i&gt;Baita Zuccone&lt;/i&gt; dove ci si immette sul sentiero &lt;b&gt;237&lt;/b&gt;. 
+Si risale fino a prendere una devizione a destra poco visibile e non segnata, che scende nella valletta e si immette nel sentiero &lt;b&gt;238&lt;/b&gt;.  
+&lt;/p&gt;
+&lt;p&gt;
+Qui inizia la discesa S2, con punti S3. Nel finale il sentiero presenta molti sali e scendi, fino alla baita &lt;i&gt;Alpe Zambla&lt;/i&gt;. Si continua per sterrate e tratti di sentiero fino a raggiungere &lt;i&gt;Zambla&lt;/i&gt;.
+&lt;/p&gt;  
+
+&lt;div class="videotitle"&gt;
+Capanna 2000, Zambla
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/SvCvuDhGbzA?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div id="Capanna2kZambla" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('Capanna2kZambla');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Serina_Capanna2000Zambla.gpx');
+  create_up(page_map, page_control, 'Serina_SalitaZamblaCapanna2000_EBIKE.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/2750255807504022977"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/2750255807504022977"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/2024/09/capana-2000-zambla.html" title="Capana 2000, Zambla Alta"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/SvCvuDhGbzA/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-2620546482982135359</id>
@@ -5233,8 +5654,8 @@ Salita Val del Grù, Monte Poieto
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-5954375439794986093</id>
-    <published>2023-08-29T09:05:00.062+02:00</published>
-    <updated>2023-08-30T09:38:40.910+02:00</updated>
+    <published>2023-08-29T09:05:00.063+02:00</published>
+    <updated>2024-10-16T14:18:31.863+02:00</updated>
     <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Camerata Cornello, Monte Vaccareggio</title>
@@ -5243,32 +5664,33 @@ Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-brembana.html"&gt;Val Br
 &lt;/p&gt;
 &lt;div id="info_header"&gt;&lt;/div&gt;
 &lt;p&gt;
-Ottima discesa, alcuni punti esposti iniziali in cresta con un breve tratto tecnico S3, a seguire un lungo S2, e facile finale S1 per la &lt;i&gt;Via Mercatorum&lt;/i&gt;.
+Ottima discesa, con alcuni punti esposti iniziali in cresta, dove si affronta un breve tratto tecnico S3, seguito da un lungo S2 e un facile finale S1 lungo la &lt;i&gt;Via Mercatorum&lt;/i&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-Si parte da &lt;i&gt;Costa Cornello&lt;/i&gt; salendo su asfalto per &lt;i&gt;Portiera&lt;/i&gt; e alle &lt;i&gt;Miniere di Dossena&lt;/i&gt;. Si continua per sterrate e cemenentate fino all'uscita delle miniere dove riprende la salita in asfalto che porta a &lt;i&gt;Lavaggio&lt;/i&gt;. Si continua a salire per sterrate  fin sotto il &lt;i&gt;Monte Vaccareggio&lt;/i&gt;.  
-L'ultimo tratto è un sentiero ciclabile in salita solo a pezzi. 
-&lt;/p&gt;  
-&lt;p&gt;
-Sulla cima si può vedere la croce dedicata a &lt;a href="https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/lalta-valle-piange-claudio-busi-camera-ardente-nella-casa-del-cai-lunedi-i-funerali/"&gt;Claudio Busi&lt;/a&gt;.
-&lt;/p&gt;  
-&lt;p&gt;
-Dalla cima si scende dalla parte opposta della salita con un breve tratto in cresta con punti esposti. Alcune difficoltà S3 fino al capanno, dove inizia un bel sentiero S2 nel bosco.
-Nel finale il sentiero diventa un veloce flow S1, fino ad un tratto in salita per ritornare a &lt;i&gt;Lavaggio&lt;/i&gt;.  
+La partenza è da &lt;i&gt;Costa Cornello&lt;/i&gt;, salendo su asfalto verso &lt;i&gt;Portiera&lt;/i&gt; e le &lt;i&gt;Miniere di Dossena&lt;/i&gt;. Si prosegue su strade sterrate e cementate fino all'uscita delle miniere, dove riprende la salita su asfalto che conduce a &lt;i&gt;Lavaggio&lt;/i&gt;. Da lì, si continua a salire su sterrato fin sotto il &lt;i&gt;Monte Vaccareggio&lt;/i&gt;.
+L'ultimo tratto è un sentiero ciclabile in salita, pedalabile solo a tratti.
 &lt;/p&gt;
 &lt;p&gt;
-Si segue il sentiero &lt;b&gt;599&lt;/b&gt; che con tratti S2 e S1 porta a &lt;i&gt;Costa Villa&lt;/i&gt; per prendere la &lt;i&gt;Via Mercatorum&lt;/i&gt;.
-La traccia include alcune varianti alla &lt;i&gt;Via Mercatorum&lt;/i&gt; ufficiale per minimizzare i tratti in asfalto.
-&lt;/p&gt;  
-&lt;p&gt;
-Si termina ai piedi del &lt;i&gt;Cornello dei Tasso&lt;/i&gt;. Si prende la ciclabile per tornare a &lt;i&gt;Camerata Cornello&lt;/i&gt;.
+Sulla cima è possibile ammirare la croce dedicata a &lt;a href="https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/lalta-valle-piange-claudio-busi-camera-ardente-nella-casa-del-cai-lunedi-i-funerali/"&gt;Claudio Busi&lt;/a&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-La &lt;i&gt;Via Mercatorum&lt;/i&gt; ufficiale con la contiuazione per il &lt;i&gt;Cornello dei Tasso&lt;/i&gt; e &lt;i&gt;Oneta&lt;/i&gt; la trovate nelle &lt;a href="http://www.mtbbergamo.it/2023/08/passato.html"&gt;Vie del Passato&lt;/a&gt;.
-&lt;/p&gt;  
-&lt;p&gt;
-A &lt;i&gt;Costa Villa&lt;/i&gt; e sulla ciclabile finale ci sono fontanelle.
+La discesa dalla cima procede dal lato opposto rispetto alla salita, con un breve tratto in cresta e alcuni punti esposti. Le difficoltà S3 si incontrano fino al capanno, dove inizia un bel sentiero S2 nel bosco.
+Nella parte finale, il sentiero era un veloce flow S1, seguito da un tratto in salita per ritornare a &lt;i&gt;Lavaggio&lt;/i&gt; (come si può vedere nel video). Tuttavia, nel 2023 è stato trasformato in una sterrata.
 &lt;/p&gt;
+&lt;p&gt;
+Seguendo il sentiero &lt;b&gt;599&lt;/b&gt;, che alterna tratti S2 e S1, si arriva a &lt;i&gt;Costa Villa&lt;/i&gt;, per poi imboccare la &lt;i&gt;Via Mercatorum&lt;/i&gt;.
+La traccia include alcune varianti alla &lt;i&gt;Via Mercatorum&lt;/i&gt; ufficiale per ridurre i tratti su asfalto.
+&lt;/p&gt;
+&lt;p&gt;
+Il percorso termina ai piedi del &lt;i&gt;Cornello dei Tasso&lt;/i&gt;. Da qui, si segue la ciclabile per tornare a &lt;i&gt;Camerata Cornello&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Per la &lt;i&gt;Via Mercatorum&lt;/i&gt; ufficiale, proseguendo verso il &lt;i&gt;Cornello dei Tasso&lt;/i&gt; e &lt;i&gt;Oneta&lt;/i&gt;, si può consultare il percorso su &lt;a href="http://www.mtbbergamo.it/2023/08/passato.html"&gt;Vie del Passato&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+A &lt;i&gt;Costa Villa&lt;/i&gt; e lungo la ciclabile finale sono presenti fontanelle.
+&lt;/p&gt;
+
 
 &lt;div class="videotitle"&gt;
 Monte Vaccareggio, Via Mercatorum, Camerata Cornello
@@ -10658,8 +11080,8 @@ Salita Vigano, Corna Clima
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-3265679646174532233</id>
-    <published>2022-03-01T17:02:00.027+01:00</published>
-    <updated>2023-08-13T09:40:23.174+02:00</updated>
+    <published>2022-03-01T17:02:00.030+01:00</published>
+    <updated>2024-09-05T09:37:00.253+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <category scheme="http://www.blogger.com/atom/ns#" term="S1"/>
     <title type="text">Grandi Alberi</title>
@@ -10668,32 +11090,33 @@ Percorso tra la &lt;a href="http://www.mtbbergamo.it/p/valle-imagna.html"&gt;Val
 &lt;/p&gt;
 &lt;div id="info_header"&gt;&lt;/div&gt;
 &lt;p&gt;
-Percorso con doppia discesa di difficoltà S1 con qualche punta S2. Segue l'anello principale del sentiero dei &lt;i&gt;Grandi Alberi&lt;/i&gt;. Un variante la trovi nel percorso &lt;a href="http://www.mtbbergamo.it/2022/04/foo-di-valmana.html"&gt;Foo di Valmana&lt;/a&gt;.
+Percorso con doppia discesa di difficoltà S1, con qualche tratto S2. Segue l'anello principale del sentiero dei &lt;i&gt;Grandi Alberi&lt;/i&gt;. Una variante si trova nel percorso &lt;a href="http://www.mtbbergamo.it/2022/04/foo-di-valmana.html"&gt;Foo di Valmana&lt;/a&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-Si parte da &lt;i&gt;Fuipiano&lt;/i&gt; salendo fino al &lt;i&gt;Passo del Palio&lt;/i&gt;. E' proposta una nuova salita, interamente pedalabile, che evita buona parte della classica strada sterrata, utilizzano nuovi collegamenti realizzati nel 2020.
-Una alternativa che elimina anche il primo tratto in asfalto, ma più ripida, la trovate nel percorso &lt;a href="http://www.mtbbergamo.it/2022/04/foo-di-valmana.html"&gt;Foo di Valmana&lt;/a&gt;.
+Si parte da &lt;i&gt;Fuipiano&lt;/i&gt; salendo fino al &lt;i&gt;Passo del Palio&lt;/i&gt;. È proposta una nuova salita, interamente pedalabile, che evita buona parte della classica strada sterrata, utilizzando nuovi collegamenti realizzati nel 2020.
+Un'alternativa che elimina anche il primo tratto di asfalto, ma più ripida, si trova nel percorso &lt;a href="http://www.mtbbergamo.it/2022/04/foo-di-valmana.html"&gt;Foo di Valmana&lt;/a&gt;.
 &lt;/p&gt;
 &lt;div class="separator" style="clear: both;"&gt;&lt;a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-CA_VdeeveoeG9reLS-pKlIh0WpYsBFQ4PSmYydwpJp9l1j89ouUykW7kJjAlge7vFir2dC2tzHjjjva3oPeSwMF0bVUSfz52rk11OBFmqIKu1qPVCrZppYBvIJzaAR7ALRm1Ald-BFxgqLhxh3zzdVSk4Q0zIdshQ_rqaOPx9jBzDN1LpmG6CGn3Nw/s4000/328_grande_faggio.jpg" style="display: block; padding: 1em 0; text-align: center; clear: right; float: right;"&gt;&lt;img alt="" border="0" height="320" data-original-height="4000" data-original-width="3000" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-CA_VdeeveoeG9reLS-pKlIh0WpYsBFQ4PSmYydwpJp9l1j89ouUykW7kJjAlge7vFir2dC2tzHjjjva3oPeSwMF0bVUSfz52rk11OBFmqIKu1qPVCrZppYBvIJzaAR7ALRm1Ald-BFxgqLhxh3zzdVSk4Q0zIdshQ_rqaOPx9jBzDN1LpmG6CGn3Nw/s320/328_grande_faggio.jpg"/&gt;&lt;/a&gt;&lt;/div&gt;
 &lt;p&gt;
-Dal passo si sale il ripido panettone erboso sulla destra (tenendo il Resegone alle spalle) fino a ricongiungersi alla strada che porta all'&lt;i&gt;Agriturismo Costa del Palio&lt;/i&gt;. Inizia qui la discesa per il sentiero dei &lt;i&gt;Grandi Alberi&lt;/i&gt; che permette di ammirare imponenti faggi secolari. Il sentiero è ben marcato con il simbolo &lt;b&gt;GA&lt;/b&gt; ed è un semplice S1.
+Dal passo si sale il ripido panettone erboso sulla destra (tenendo il Resegone alle spalle) fino a ricongiungersi alla strada che porta all'&lt;i&gt;Agriturismo Costa del Palio&lt;/i&gt;. Inizia qui la discesa lungo il sentiero dei &lt;i&gt;Grandi Alberi&lt;/i&gt;, che permette di ammirare imponenti faggi secolari. Il sentiero è ben marcato con il simbolo &lt;b&gt;GA&lt;/b&gt; ed è di difficoltà S1.
 &lt;/p&gt;
 &lt;p&gt;
-Raggiunto il bel borgo di &lt;i&gt;Frasnida&lt;/i&gt;, tipico per i tetti a &lt;i&gt;piode&lt;/i&gt; della zona, si lascia il sentiero dei &lt;i&gt;Grandi Alberi&lt;/i&gt;, che continua via sterrata per &lt;i&gt;Morterone&lt;/i&gt;, e si segue invece il sentiero &lt;b&gt;M2&lt;/b&gt; che porta anch'esso a &lt;i&gt;Morterone&lt;/i&gt;.
+Raggiunto il bel borgo di &lt;i&gt;Frasnida&lt;/i&gt;, tipico per i tetti a &lt;i&gt;piode&lt;/i&gt; della zona, si lascia il sentiero dei &lt;i&gt;Grandi Alberi&lt;/i&gt;, che prosegue su sterrata verso &lt;i&gt;Morterone&lt;/i&gt;, e si segue invece il sentiero &lt;b&gt;M2&lt;/b&gt;, che porta anch'esso a &lt;i&gt;Morterone&lt;/i&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-Si risale tramite strada, inizialmente asfaltata, e a seguire sterrata fino a ritornare al &lt;i&gt;Passo del Palio&lt;/i&gt;. Fate attenzione ai numerosi faggi secolari che incontrerete.
+Si risale tramite strada, inizialmente asfaltata e poi sterrata, fino a ritornare al &lt;i&gt;Passo del Palio&lt;/i&gt;. Fate attenzione ai numerosi faggi secolari lungo il percorso.
 &lt;/p&gt;
 &lt;p&gt;
-Dal passo si sale per la linea di massima pendenza fino alla &lt;a href="https://www.sottoaltraquota.it/altre-quote/installazione/"&gt;porta in legno&lt;/a&gt;. E' un bella sfida riuscirci senza mettere il piede a terra. 
-Si continua per facili prati, fino alla &lt;i&gt;Bocchetta di Palio&lt;/i&gt; dove si scende verso il &lt;i&gt;Rifugio Grande Faggio&lt;/i&gt;. Difficoltà S1, con punte S2. Appena prima del rifugio si può ammirare il &lt;i&gt;Grande Faggio&lt;/i&gt; che ne da il nome.
+Dal passo si sale lungo la linea di massima pendenza fino alla &lt;a href="https://commons.wikimedia.org/wiki/File%3A20221112-explo_resegone-051.jpg"&gt;porta in legno&lt;/a&gt;. È una bella sfida riuscirci senza mettere il piede a terra. 
+Si continua poi per facili prati fino alla &lt;i&gt;Bocchetta di Palio&lt;/i&gt;, dove si scende verso il &lt;i&gt;Rifugio Grande Faggio&lt;/i&gt;. Difficoltà S1, con qualche tratto S2. Appena prima del rifugio si può ammirare il &lt;i&gt;Grande Faggio&lt;/i&gt;, da cui il rifugio prende il nome.
 &lt;/p&gt;
 &lt;p&gt;
-Raggiunta la strada sterrata, si risale per poco, fino a riconnettersi al percorso della salita che si percorre al contrario per un bel tratto. Sul finire la discesa lascia il percorso della salita, e passa per le caratteristiche  località di &lt;i&gt;Fontana Città&lt;/i&gt;, &lt;i&gt;Capione&lt;/i&gt; e la famosa &lt;i&gt;Arnosto&lt;/i&gt;.
+Raggiunta la strada sterrata, si risale per un breve tratto, fino a riconnettersi al percorso della salita che si percorre in senso contrario per un bel pezzo. Alla fine, la discesa si discosta dal percorso della salita e attraversa le caratteristiche località di &lt;i&gt;Fontana Città&lt;/i&gt;, &lt;i&gt;Capione&lt;/i&gt; e la famosa &lt;i&gt;Arnosto&lt;/i&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-Il lato in Val Taleggio è esposto a Nord e richiede tempo per asciugarsi. A &lt;i&gt;Frasnida&lt;/i&gt; e &lt;i&gt;Morterone&lt;/i&gt; ci sono fontanelle.
+Il lato della Val Taleggio è esposto a Nord e richiede tempo per asciugarsi. A &lt;i&gt;Frasnida&lt;/i&gt; e &lt;i&gt;Morterone&lt;/i&gt; ci sono fontanelle.
 &lt;/p&gt;
+
 
 &lt;div class="videotitle"&gt;
 Sentiero dei Grandi Alberi
