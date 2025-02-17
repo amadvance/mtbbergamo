@@ -1,4 +1,4 @@
-all: css js zip redux
+all: css js redux
 
 css:
 	cat leaflet.css Control.FullScreen.css custom.css > www/all.css
@@ -8,30 +8,13 @@ js:
 
 GPX = $(wildcard www/gpx/*.gpx)
 
-ZIP = $(patsubst www/gpx/%.gpx,www/zip/%.zip,$(GPX))
-
 REDUX = $(patsubst www/gpx/%.gpx,www/redux/%.gpx,$(GPX))
-
-www/zip/%.zip : www/gpx/%.gpx
-	zip -j $@ $<
 
 www/redux/%.gpx : www/gpx/%.gpx
 	gpx-cmd-tools/gpxsimplify -d 2 -o $@ $<
 
-zip: $(ZIP)
-
 redux: $(REDUX)
-
-up: all
-	cp -u www/all.js ftp/www/all.js
-	cp -u www/all.css ftp/www/all.css
-
-rm:
-	rm ftp/www/all.js
-
-ov: rm up
 
 xml:
 	xmllint --format archive/blog.xml > blog.tmp
 	mv blog.tmp archive/blog.xml
-
