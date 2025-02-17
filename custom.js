@@ -9,7 +9,10 @@
  */
 
 var WEB = 'http://www.mtbbergamo.it/';
-var ARCHIVE = 'https://raw.githubusercontent.com/amadvance/mtbbergamo/master/www/';
+/* use the raw interface */
+/* var ARCHIVE = 'https://raw.githubusercontent.com/amadvance/mtbbergamo/master/www/'; */
+/* use the github pages interface */
+var ARCHIVE = 'https://amadvance.github.io/mtbbergamo/www/';
 
 /*
  * Allow cross-domain download
