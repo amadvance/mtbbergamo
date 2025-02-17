@@ -14,9 +14,9 @@
   gtag(&#39;config&#39;, &#39;G-5C4NT86EHK&#39;);
 </script>
 
-    <link href='http://ftp.mtbbergamo.it/favicon-192x192.png' rel='icon' sizes='192x192' type='image/png'/>
-    <link href='http://ftp.mtbbergamo.it/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'/>
-    <link href='http://ftp.mtbbergamo.it/favicon-96x96.png' rel='icon' sizes='96x96' type='image/png'/>
+    <link href='https://amadvance.github.io/mtbbergamo/www/favicon-192x192.png' rel='icon' sizes='192x192' type='image/png'/>
+    <link href='https://amadvance.github.io/mtbbergamo/www/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'/>
+    <link href='https://amadvance.github.io/mtbbergamo/www/favicon-96x96.png' rel='icon' sizes='96x96' type='image/png'/>
         <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
@@ -675,8 +675,8 @@ body.mobile  {
 
     <b:include data='blog' name='google-analytics'/>
     <meta content='h5i5Di5GbNo179bnuGejrBVvRPnPfytX4Jyu6gQhuUQ' name='google-site-verification'/>
-    <link href='http://ftp.mtbbergamo.it/all.css' rel='stylesheet'/>
-    <script src='http://ftp.mtbbergamo.it/all.js'/>
+    <link href='https://amadvance.github.io/mtbbergamo/www/all.css' rel='stylesheet'/>
+    <script src='https://amadvance.github.io/mtbbergamo/www/all.js'/>
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -785,7 +785,7 @@ head.appendChild(script);
       <b:section class='header' id='header' maxwidgets='1' name='Header' showaddelement='no'>
         <b:widget id='Header1' locked='true' title='MTB Bergamo (Intestazione)' type='Header'>
           <b:widget-settings>
-            <b:widget-setting name='displayUrl'>https://raw.githubusercontent.com/amadvance/mtbbergamo/master/www/img/title.jpg</b:widget-setting>
+            <b:widget-setting name='displayUrl'>https://amadvance.github.io/mtbbergamo/www/img/title.jpg</b:widget-setting>
             <b:widget-setting name='displayHeight'>151</b:widget-setting>
             <b:widget-setting name='sectionWidth'>752</b:widget-setting>
             <b:widget-setting name='useImage'>true</b:widget-setting>
