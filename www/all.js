@@ -2761,7 +2761,7 @@ var RENAME = {
  * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
  */
 
-var WEB = 'http://www.mtbbergamo.it/';
+var WEB = 'https://www.mtbbergamo.it/';
 var ARCHIVE = 'https://amadvance.github.io/mtbbergamo/www/';
 
 /*
