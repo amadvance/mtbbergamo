@@ -1814,7 +1814,7 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'martino, coldara', name: 'Coldara, Val Bratta, Torre de Busi', kind: 'down', file: 'Martino_ColdaraValBratta.gpx', link: '2020/01/coldara' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'coldara', name: 'Coldara, Col Fopa, Opreno', kind: 'down', file: 'Martino_ColdaraColFopaOpreno.gpx', link: '2020/01/coldara' },
 { vote: 5, rate: 1, rate_max: 2, cycle: 0, zone: 'martino, valcava, pedrino', name: 'Kavast\u00F2poi (Cavatappi)', kind: 'down', file: 'Martino_Kavastopoi.gpx', link: '2023/02/kavastopoi' },
-{ vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'martino, valcava', name: 'Valcavast\u00F2poi', kind: 'down', file: 'Martino_Valcavastopoi.gpx', link: '2023/04/valcavastopoi' },
+{ vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'martino, valcava', name: 'Sommaskio Trail', kind: 'down', file: 'Martino_SommaskioTrail.gpx', link: '2023/04/valcavastopoi' },
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: 'martino, valcava', name: 'Linzone, Monte Piacca, Cava Col Pedrino, Ca Muracca, Burligo', kind: 'down', file: 'Martino_LinzoneAlbenzaCavaBurligo.gpx', link: '2023/10/linzone-cava-pedrino' },
 { vote: 5, rate: 3, rate_max: 4, cycle: 0, zone: 'martino, valcava', name: 'Valcava, Vekkia Miniera, Burligo', kind: 'down', file: 'Martino_ValcavaVekkiaMiniera.gpx', link: '2025/02/vekkia-miniera' },
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'martino, valcava', name: 'Cava, Faidello DH, Opreno, Burligo', kind: 'down', file: 'Martino_FaidelloDH.gpx', link: '2025/02/faidello' },
