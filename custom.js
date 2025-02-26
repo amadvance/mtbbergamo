@@ -66,26 +66,11 @@ function get_track_gpx(index)
 	return url;
 }
 
-function get_track_zip(index)
-{
-	var url = get_track_gpx(index);
-
-	/* replace both dir and extension from gpx to zip */
-	var zip = url.replace(/gpx/g,"zip");
-
-	return zip;
-}
-
-function get_track_anchor_zip(index, text)
-{
-	return "<a href=\"" + get_track_zip(index) + "\" download>" + text + "</a>"
-}
-
 function get_track_anchor_blob(index, text)
 {
 	var gpx = get_track_gpx(index);
 
-	return "<a href=\"/gpx/" + TRACKS[index].file + "\" onclick=\"trigger_download('" + gpx + "'); return false;\">" + text + "</a>";
+	return "<a href=\"" + get_track_gpx(index) + "\" onclick=\"trigger_download('" + gpx + "'); return false;\">" + text + "</a>";
 }
 
 function get_track_anchor(index, text)
