@@ -1991,7 +1991,7 @@ removed su richiesta del CAI Albino
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Altino, Grumelduro, Cene', kind: 'down', file: 'Seriana_MonteAltinoGrumelduro.gpx', link: '2025/01/altino-grumelduro' },
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Altino, Abbazia', kind: 'down', file: 'Seriana_MonteAltinoAbbazia.gpx', link: '2025/01/altino-abbazia' },
 { vote: 5, rate: 1, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Beio DH, Cene', kind: 'down', file: 'Seriana_MonteBeioDHCene.gpx', link: '2025/02/beio-dh' },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Monte Bue, Monte Croce, Monte Beio, Cene', kind: 'down', file: 'Seriana_MonteBueCroceBeioCene_EBIKE.gpx' },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Monte Bue, Monte Croce, Monte Beio, Cene', kind: 'down', file: 'Seriana_MonteBueCroceBeioCene_EBIKE.gpx', link: '2025/03/bo-croce-beio' },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'Seriana_SalitaMismaRipetitori_EBIKE.gpx', link: '2021/04/misma-santa-maria-cenate-sopra' },
