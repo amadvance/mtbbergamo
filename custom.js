@@ -80,10 +80,13 @@ function get_track_elevation(index)
 	// search for a up trak, it must be only one
 	var down_index = -1;
 	for (i = 0; i < TRACKS.length; i++) {
-		if (TRACKS[index].kind != 'up')
+		if (TRACKS[i].kind != 'up')
 			continue;
 
-		if (('link' in TRACKS[i]) && (TRACKS[i].link == TRACKS[index].link)) {
+		if (!('link' in TRACKS[i]))
+			continue;
+
+		if (TRACKS[i].link == TRACKS[index].link) {
 			if (down_index == -1) {
 				down_index = i;
 			} else {
@@ -92,7 +95,7 @@ function get_track_elevation(index)
 			}
 		}
 	}
-	if (down_index == -1)
+	if (down_index < 0)
 		return TRACKS[index].elevation_loss;
 	else
 		return TRACKS[down_index].elevation_loss + TRACKS[index].elevation_loss;
