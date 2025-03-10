@@ -2824,7 +2824,34 @@ function get_track_gpx(index)
 
 function get_track_elevation(index)
 {
-	return TRACKS[index].elevation_loss;
+	if (TRACKS[index].kind == 'trek')
+		return TRACKS[index].elevation_gain;
+
+	if (TRACKS[index].kind == 'up')
+		return TRACKS[index].elevation_gain;
+
+	if (!('link' in TRACKS[index]))
+		return TRACKS[index].elevation_loss;
+
+	// search for a up trak, it must be only one
+	var down_index = -1;
+	for (i = 0; i < TRACKS.length; i++) {
+		if (TRACKS[index].kind != 'up')
+			continue;
+
+		if (('link' in TRACKS[i]) && (TRACKS[i].link == TRACKS[index].link)) {
+			if (down_index == -1) {
+				down_index = i;
+			} else {
+				down_index = -1;
+				break;
+			}
+		}
+	}
+	if (down_index == -1)
+		return TRACKS[index].elevation_loss;
+	else
+		return TRACKS[down_index].elevation_loss + TRACKS[index].elevation_loss;
 }
 
 function get_track_anchor_blob(index, text)
