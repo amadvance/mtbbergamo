@@ -376,7 +376,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'martino, valcava, martinella', name: 'Salita da Torre De Busi alla Corna Martinella', kind: 'up', file: 'Martino_SalitaBusiCornaMartinella_EBIKE.gpx', link: '2018/12/salite-san-martino', elevation_gain: 427, elevation_loss: 86 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'martino, valcava, coldara', name: 'Salita da Torre De Busi ad Opreno', kind: 'up', file: 'Martino_SalitaBusiOpreno_EBIKE.gpx', link: '2018/12/salite-san-martino', elevation_gain: 249, elevation_loss: 56 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'martino, valcava', name: 'Salita da Palazzago alla Cava', kind: 'up', file: 'Martino_SalitaPalazzagoCava.gpx', link: '2018/12/salite-san-martino', elevation_gain: 987, elevation_loss: 4 },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita da Almenno al Monte Lizone', kind: 'up', file: 'Martino_SalitaAlmennoPalazzagoLinzone_EBIKE.gpx', link: '2018/12/salite-san-martino', elevation_gain: 1188, elevation_loss: 137 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita da Almenno al Monte Linzone', kind: 'up', file: 'Martino_SalitaAlmennoPalazzagoLinzone_EBIKE.gpx', link: '2018/11/linzone-roncola', elevation_gain: 1188, elevation_loss: 137 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'martino, valcava, pedrino', name: 'Trasferimento da Opreno a Burligo', kind: 'up', file: 'Martino_OprenoBurligo.gpx', link: '2018/12/salite-san-martino', elevation_gain: 60, elevation_loss: 112 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'martino, valcava', name: 'Trasferimento da Opreno a Burligo', kind: 'up', file: 'Martino_OprenoBurligo.gpx', link: '2018/12/salite-san-martino', elevation_gain: 60, elevation_loss: 112 },
 
