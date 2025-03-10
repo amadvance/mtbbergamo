@@ -66,6 +66,11 @@ function get_track_gpx(index)
 	return url;
 }
 
+function get_track_elevation(index)
+{
+	return TRACKS[index].elevation_loss;
+}
+
 function get_track_anchor_blob(index, text)
 {
 	var gpx = get_track_gpx(index);
@@ -386,22 +391,25 @@ function create_gpx_info(map, control, gpx, url, index, link)
 	desc += "<br/>";
 	desc += "&harr; " + (gpx.get_distance() / 1000).toFixed(1) + " km";
 
-	if (gpx.get_elevation_gain() > 100) {
-		desc += ", &uarr; "+ Math.floor(gpx.get_elevation_gain()) + "m";
+	var elevation_gain = gpx.get_elevation_gain();
+	if (elevation_gain > 100) {
+		desc += ", &uarr; "+ Math.floor(elevation_gain) + "m";
 	}
-	if (gpx.get_elevation_loss() > 100) {
-		desc += ", &darr; "+ Math.floor(gpx.get_elevation_loss()) + "m";
+	var elevation_loss = gpx.get_elevation_loss();
+	if (elevation_loss > 100) {
+		desc += ", &darr; "+ Math.floor(elevation_loss) + "m";
 	}
-	if (gpx.get_moving_time() > 1000 * 60) {
-		desc += ", "+ Math.floor(gpx.get_moving_time() / (1000*60)) + "min";
+	var moving_time = gpx.get_moving_time();
+	if (moving_time > 1000 * 60) {
+		desc += ", "+ Math.floor(moving_time / (1000*60)) + "min";
 		if (url.indexOf("Salita") != -1) {
 			if (url.indexOf("_EBIKE") != -1)
 				desc += " (E-Bike)";
 			else
 				desc += " (muscolare)";
 			desc += ", VAM ";
-			desc += Math.floor(gpx.get_elevation_gain() / gpx.get_moving_time() * (1000*60*60));
-			desc += " m/h";
+			desc += Math.floor(elevation_gain / moving_time * (1000*60*60));
+			desc += "m/h";
 		}
 	}
 
@@ -956,6 +964,8 @@ function table_track(index)
 	html += get_track_vote(index);
 	html += '</td><td style="white-space:nowrap;padding-left:5px;padding-right:5px">';
 	html += get_track_rate(index) + get_track_rate_max(index);
+	html += '</td><td style="white-space:nowrap;padding-left:5px;padding-right:5px">';
+	html += "" + get_track_elevation(index);
 	html += "</td></tr>";
 
 	return html;
@@ -978,7 +988,7 @@ function table_zone(title, desc, header)
 		html += "<p><table>";
 		html += '<tr><th style="text-align:left;">';
 		html += title;
-		html += '</th><th style="text-align:left;">Giudizio</th><th style="text-align:left;">Difficolt\u00E0</th></tr>';
+		html += '</th><th style="text-align:left;">Giudizio</th><th style="text-align:left;">Difficolt\u00E0</th><th style="text-align:left;">Dislivello</th></tr>';
 
 		for (var i = 0; i < multi_down_set.length; ++i) {
 			var index = multi_down_set[i];

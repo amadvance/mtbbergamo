@@ -1,4 +1,7 @@
-all: css js redux
+all: ele css js redux
+
+ele:
+	python3 elevation.py
 
 css:
 	cat leaflet.css Control.FullScreen.css custom.css > www/all.css
