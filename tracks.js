@@ -523,8 +523,8 @@ removed su richiesta del CAI Albino
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Altino, Abbazia', kind: 'down', file: 'Seriana_MonteAltinoAbbazia.gpx', link: '2025/01/altino-abbazia', elevation_gain: 56, elevation_loss: 658 },
 { vote: 5, rate: 1, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Beio DH, Cene', kind: 'down', file: 'Seriana_MonteBeioDHCene.gpx', link: '2025/02/beio-dh', elevation_gain: 32, elevation_loss: 369 },
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Monte Bue, Monte Croce, Monte Beio, Cene', kind: 'down', file: 'Seriana_MonteBueCroceBeioCene_EBIKE.gpx', link: '2025/03/bo-croce-beio', elevation_gain: 1089, elevation_loss: 1002 },
-{ vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Pier, Rolling Stones, Val Rossa', kind: 'down', file: 'Seriana_MontePierRollingStonesValRossa.gpx', elevation_gain: 109, elevation_loss: 757 },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Pier, Peia, Monte Beio', kind: 'down', file: 'Seriana_MontePierPeiaMonteBeioCene.gpx', elevation_gain: 177, elevation_loss: 813 },
+{ vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Pier, Rolling Stones, Val Rossa', kind: 'down', file: 'Seriana_MontePierRollingStonesValRossa.gpx', link: '2025/03/rolling-stones', elevation_gain: 109, elevation_loss: 757 },
+{ vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Pier, Bretei Peia, Monte Beio', kind: 'down', file: 'Seriana_MontePierBreteiPeiaSanRoccoCavalliCene.gpx', link: '2025/03/bretei-cavalli', elevation_gain: 177, elevation_loss: 813 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'Seriana_SalitaMismaRipetitori_EBIKE.gpx', link: '2021/04/misma-santa-maria-cenate-sopra', elevation_gain: 839, elevation_loss: 13 },
