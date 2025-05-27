@@ -1905,7 +1905,11 @@ var TRACKS = [
 { vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Poieto, Slayer Lane, Vertova', kind: 'down', file: 'Seriana_PoietoSlayerVertova.gpx', link: '2023/09/slayer', elevation_gain: 26, elevation_loss: 935 },
 { vote: 2, rate: 2, rate_max: 3, cycle: 3, zone: 'bassa_seriana', name: 'C\u00E0 Donadoni, 524, Vertova', kind: 'down', file: 'Seriana_Donadoni524Vertova.gpx', link: '2023/09/donadoni', elevation_gain: 285, elevation_loss: 1049 },
 { vote: 3, rate: 3, rate_max: 4, cycle: 2, zone: 'bassa_seriana', name: 'Monte Poieto, 516, Val Vertova', kind: 'down', file: 'Seriana_Poieto516ValVertova.gpx', link: '2023/09/poieto-516', elevation_gain: 113, elevation_loss: 1023 },
-{ vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Pizzo di Lonno, Monte Ganda, Alzano', kind: 'down', file: 'Seriana_LonnoPizzoMonteGanda.gpx', link: '2019/04/lonno', elevation_gain: 111, elevation_loss: 530 },
+/* 
+rimosso perchè il primo tratto è troppo selvaggio ed il finale non è niete di che. Meglio l'alternativa che segue
+{ vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Pizzo di Lonno, Monte Ganda, Alzano Sopra', kind: 'down', file: 'Seriana_LonnoPizzoMonteGanda.gpx', link: '2019/04/lonno', elevation_gain: 111, elevation_loss: 530 }, 
+*/
+{ vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Pizzo di Lonno, Monte Ganda, Sentiero delle Corne, Alzano Sopra', kind: 'down', file: 'Seriana_PizzoDiLonnoMonteGandaSentieroDelleCorne.gpx', link: '2019/04/lonno', elevation_gain: 34, elevation_loss: 510 },
 { vote: 5, rate: 1, rate_max: 0, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Percorso Vita, Valbona', kind: 'down', file: 'Seriana_LonnoPercorsoVita.gpx', link: '2019/04/lonno', elevation_gain: 10, elevation_loss: 400 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Percorso Vita, Luio', kind: 'down', file: 'Seriana_LonnoPercorsoVitaLuio.gpx', link: '2019/04/lonno', elevation_gain: 4, elevation_loss: 417 },
 { vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Colle Bastia, Percorso Vita, Viana', kind: 'down', file: 'Seriana_LonnoColleBastia.gpx', link: '2019/04/lonno', elevation_gain: 26, elevation_loss: 448 },
