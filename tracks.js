@@ -591,15 +591,15 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'media_seriana, gandino', name: 'Pizzo Formico, Rifugio Parafulmine, Groaro, Gandino', kind: 'down', file: 'Gandino_FormicoParafulmineGroaroGandino.gpx', link: '2022/01/pizzo-formico-groaro', elevation_gain: 124, elevation_loss: 1225 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'media_seriana, gandino', name: 'Giro Val Gandino, Rifugio Parafulmine, Malga Lunga, Monte Sparavera', kind: 'down', file: 'Gandino_ParafulmineMalgaLungaSparavera547Gandino.gpx', link: '2022/01/giro-val-gandino', elevation_gain: 278, elevation_loss: 1294 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'media_seriana, gandino', name: 'Monte Sparavera, Leffe', kind: 'down', file: 'Gandino_SparaveraLeffe.gpx', link: '2022/02/leffe-malga-lunga', elevation_gain: 30, elevation_loss: 958 },
-{ vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'media_seriana, gandino', name: 'Rifugio Parafulmine, Guazza, Monte Farno, Pizzo di Casnigo', kind: 'down', file: 'Gandino_ParafulmineGuazzaFarnoPizzoCasnigo.gpx', elevation_gain: 101, elevation_loss: 1094 },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'media_seriana, gandino', name: 'Rifugio Parafulmine, Guazza, Monte Farno, Pizzo di Casnigo', kind: 'down', file: 'Gandino_ParafulmineGuazzaFarnoPizzoCasnigo.gpx', link: '2025/06/parafulmine-pizzo-casnigo', elevation_gain: 101, elevation_loss: 1094 },
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'media_seriana, gandino', name: 'Monte Farno, Cirano, Barzizza', kind: 'down', file: 'Gandino_MonteFarnoCiranoBarzizza.gpx', elevation_gain: 165, elevation_loss: 830 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: "6 minuti con ultimi 30m dislivello a spinta", zone: 'media_seriana, gandino', name: 'Salita Casnigo, Monte Farno, Pizzo Formico', kind: 'up', file: 'Gandino_SalitaCasnigoFarnoFormico_EBIKE.gpx', link: '2022/01/formico-543-casnigo', elevation_gain: 1146, elevation_loss: 17 },
 { vote: 0, rate: 0, rate_max: 0, cycle: "6 minuti con ultimi 30m dislivello a spinta", zone: 'media_seriana, gandino', name: 'Salita Gandino, Monte Farno, Pizzo Formico', kind: 'up', file: 'Gandino_SalitaGandinoFarnoFormico_EBIKE.gpx', link: '2022/01/pizzo-formico-groaro', elevation_gain: 1110, elevation_loss: 12 },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'media_seriana, gandino', name: 'Salita Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'Gandino_SalitaGandinoFarnoParafulmine_EBIKE.gpx', link: '2019/03/salite-valle-seriana', elevation_gain: 1056, elevation_loss: 38 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'media_seriana, gandino', name: 'Salita Gandino, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'Gandino_SalitaGandinoFarnoParafulmine_EBIKE.gpx', link: '2022/01/giro-val-gandino', elevation_gain: 1056, elevation_loss: 38 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'media_seriana, gandino', name: 'Salita Leffe, Malga Lunga, Monte Sparavera', kind: 'up', file: 'Gandino_SalitaLeffeMalgaLungaSparevera_EBIKE.gpx', link: '2022/02/leffe-malga-lunga', elevation_gain: 1058, elevation_loss: 55 },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'media_seriana, gandino', name: 'Salita Casnigo, Monte Farno, Pizzo Formico', kind: 'up', file: 'Gandino_SalitaCasnigoErbiaFarnoParafulmine_EBIKE.gpx', elevation_gain: 1163, elevation_loss: 150 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'media_seriana, gandino', name: 'Salita Casnigo, Erbia, Monte Farno, Rifugio Parafulmine', kind: 'up', file: 'Gandino_SalitaCasnigoErbiaFarnoParafulmine_EBIKE.gpx', link: '2025/06/parafulmine-pizzo-casnigo', elevation_gain: 1163, elevation_loss: 150 },
 
 //
 // VALSASSINA
