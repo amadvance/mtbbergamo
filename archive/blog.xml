@@ -2,7 +2,7 @@
 <?xml-stylesheet href="https://www.blogger.com/styles/atom.css" type="text/css"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/" xmlns:gd="http://schemas.google.com/g/2005" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:georss="http://www.georss.org/georss">
   <id>tag:blogger.com,1999:blog-1188434606630302835.archive</id>
-  <updated>2025-03-01T23:51:18.371+01:00</updated>
+  <updated>2025-06-30T11:27:28.009+02:00</updated>
   <title type="text">MTB Bergamo</title>
   <link rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/archive"/>
   <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/archive"/>
@@ -18,7 +18,7 @@
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.layout</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#template"/>
     <title type="text">Modello: MTB Bergamo</title>
     <content type="text">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
@@ -1749,8 +1749,8 @@ head.appendChild(script);
               &amp;&amp; comment.author.profileUrl == config.authorUrl;
           return matches ? 'true' : '';
         } else if ('deletelink' == key) {
-          return config.baseUri + '/delete-comment.g?blogID='
-               + config.blogId + '&amp;postID=' + comment.id;
+          return config.baseUri + '/comment/delete/'
+               + config.blogId + '/' + comment.id;
         } else if ('deleteclass' == key) {
           return comment.deleteclass;
         }
@@ -2004,6 +2004,36 @@ head.appendChild(script);
 &lt;/macro:includable&gt;
 
 &lt;b:section-contents id='sidebar-right-1'&gt;
+  &lt;b:widget id='BlogSearch1' locked='false' title='Cerca' type='BlogSearch'&gt;
+    &lt;b:includable id='main'&gt;
+    &lt;!-- only display title if it's non-empty --&gt;
+    &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+      &lt;h2 class='title'&gt;&lt;data:title/&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='widget-content'&gt;
+      &lt;div expr:id='data:widget.instanceId + &amp;quot;_form&amp;quot;'&gt;
+        &lt;form class='gsc-search-box' expr:action='data:blog.searchUrl'&gt;
+          &lt;b:attr cond='not data:view.isPreview' name='target' value='_top'/&gt;
+          &lt;table cellpadding='0' cellspacing='0' class='gsc-search-box'&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td class='gsc-input'&gt;
+                  &lt;input autocomplete='off' class='gsc-input' expr:value='data:view.isSearch ? data:view.search.query.escaped : &amp;quot;&amp;quot;' name='q' size='10' title='search' type='text'/&gt;
+                &lt;/td&gt;
+                &lt;td class='gsc-search-button'&gt;
+                  &lt;input class='gsc-search-button' expr:value='data:messages.search' title='search' type='submit'/&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/b:includable&gt;
+  &lt;/b:widget&gt;
   &lt;b:widget id='PageList1' locked='false' title='Zone' type='PageList'&gt;
     &lt;b:widget-settings&gt;
       &lt;b:widget-setting name='pageListJson'&gt;&lt;![CDATA[{"6890917005904254364":{"href":"https://www.mtbbergamo.it/p/valle-cavallina.html","position":12,"title":"Val Cavallina"},"8333227843128009505":{"href":"https://www.mtbbergamo.it/p/maresana.html","position":1,"title":"Maresana"},"8020907678493114285":{"href":"https://www.mtbbergamo.it/p/valle-brembana.html","position":7,"title":"Bassa Val Brembana"},"671321837611946696":{"href":"https://www.mtbbergamo.it/p/monte-canto.html","position":3,"title":"Monte Canto"},"4290629698892057325":{"href":"https://www.mtbbergamo.it/p/val-taleggio.html","position":6,"title":"Val Taleggio"},"6438529019463434628":{"href":"https://www.mtbbergamo.it/p/valle-seriana.html","position":10,"title":"Bassa Val Seriana"},"7456450945174822363":{"href":"https://www.mtbbergamo.it/p/colli-di-bergamo.html","position":0,"title":"Colli di Bergamo e dintorni"},"644484164600315902":{"href":"https://www.mtbbergamo.it/p/sorisole.html","position":2,"title":"Sorisole"},"2953803643475421410":{"href":"https://www.mtbbergamo.it/p/val-serina.html","position":9,"title":"Val Serina"},"5378927853840289375":{"href":"https://www.mtbbergamo.it/p/media-valle-seriana.html","position":11,"title":"Media Val Seriana"},"8996960218431449059":{"href":"https://www.mtbbergamo.it/p/valle-san-martino.html","position":4,"title":"Valle San Martino"},"8071814843114685363":{"href":"https://www.mtbbergamo.it/p/valle-imagna.html","position":5,"title":"Valle Imagna"},"6672595659076829759":{"href":"https://www.mtbbergamo.it/p/alta-valle-brembana.html","position":8,"title":"Alta Val Brembana"}}]]&gt;&lt;/b:widget-setting&gt;
@@ -2221,7 +2251,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_PUBLISHING_MODE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di pubblicazione eseguita per questo blog.</title>
     <content type="text">PUBLISH_MODE_HOSTED</content>
@@ -2237,7 +2267,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ADMIN_PERMISSION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">L'elenco di email degli amministratori per il blog.</title>
     <content type="text">amadvance@gmail.com</content>
@@ -2253,7 +2283,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ADULT_CONTENT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog contiene contenuti per adulti</title>
     <content type="text">false</content>
@@ -2269,7 +2299,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ANALYTICS_ACCOUNT_NUMBER</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero dell'account Google Analytics del blog</title>
     <content type="text">UA-21967501-5</content>
@@ -2285,7 +2315,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ARCHIVE_DATE_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il numero del formato data dell'indice di archivio</title>
     <content type="text">9</content>
@@ -2301,7 +2331,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_ARCHIVE_FREQUENCY</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Frequenza di archiviazione del blog</title>
     <content type="text">MONTHLY</content>
@@ -2317,7 +2347,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_AUTHOR_PERMISSION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">L'elenco di email degli autori autorizzati a pubblicare.</title>
     <content type="text"/>
@@ -2333,7 +2363,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_BY_POST_ARCHIVING</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale creazione di una pagina archivio per ogni post</title>
     <content type="text">true</content>
@@ -2349,7 +2379,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_ACCESS</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Chi può inserire commenti</title>
     <content type="text">TEAM</content>
@@ -2365,7 +2395,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_CAPTCHA</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale richiesta di commentatori per completare un Captcha</title>
     <content type="text">false</content>
@@ -2381,7 +2411,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_EMAIL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Elenco di indirizzi email a cui inviare notifiche di nuovi commenti</title>
     <content type="text"/>
@@ -2397,7 +2427,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_FEED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di feed da fornire per i commenti del blog</title>
     <content type="text">FULL</content>
@@ -2413,7 +2443,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_FORM_LOCATION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Posizione modulo dei commenti del blog</title>
     <content type="text">EMBEDDED_IFRAME</content>
@@ -2429,7 +2459,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MESSAGE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Messaggio di commento blog</title>
     <content type="text"/>
@@ -2445,7 +2475,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MODERATION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale attivazione della moderazione dei commenti</title>
     <content type="text">ENABLED</content>
@@ -2461,7 +2491,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MODERATION_DELAY</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero di giorni dopo i quali i nuovi commenti possono essere sottoposti a una moderazione</title>
     <content type="text">14</content>
@@ -2477,7 +2507,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_MODERATION_EMAIL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Indirizzo email a cui inviare notifiche di nuovi commenti che richiedono una moderazione</title>
     <content type="text"/>
@@ -2493,7 +2523,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENT_PROFILE_IMAGES</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Eventuale visualizzazione di immagini profilo nei commenti</title>
     <content type="text">true</content>
@@ -2509,7 +2539,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENTS_ALLOWED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare commenti</title>
     <content type="text">false</content>
@@ -2525,7 +2555,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_COMMENTS_TIME_STAMP_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero del formato ora del commento</title>
     <content type="text">29</content>
@@ -2541,7 +2571,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ADS_TXT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">I contenuti del file ads.txt personalizzato del blog forniti ai motori di ricerca degli annunci.</title>
     <content type="text"/>
@@ -2557,7 +2587,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ADS_TXT_ENABLED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Indica se questo blog fornirà o meno i contenuti del file ads.txt personalizzato ai motori di ricerca degli annunci.</title>
     <content type="text">false</content>
@@ -2573,7 +2603,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_PAGE_NOT_FOUND</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">I contenuti visualizzati quando non viene trovato il post o la pagina.</title>
     <content type="text"/>
@@ -2589,7 +2619,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ROBOTS_TXT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">I contenuti del file robots.txt personalizzato inseriti nei motori di ricerca.</title>
     <content type="text"/>
@@ -2605,7 +2635,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_CUSTOM_ROBOTS_TXT_ENABLED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog visualizza contenuti di file robots.txt personalizzati per i motori di ricerca.</title>
     <content type="text">false</content>
@@ -2621,7 +2651,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_DATE_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero del formato dell'intestazione della data</title>
     <content type="text">26</content>
@@ -2637,7 +2667,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_DEFAULT_COMMENTS_MODE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Modalità commenti predefinita per i post</title>
     <content type="text">DEFAULT_HAVE_COMMENTS</content>
@@ -2653,7 +2683,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_DESCRIPTION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Una descrizione del blog</title>
     <content type="text">Percorsi in Mountain Bike nella provincia di Bergamo</content>
@@ -2669,7 +2699,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_EMAIL_POST_LINKS</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare un link agli utenti che vogliono inviare post via email</title>
     <content type="text">false</content>
@@ -2685,7 +2715,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_FEED_REDIRECT_URL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">URL a cui reindirizzare richieste di feed post</title>
     <content type="text"/>
@@ -2701,7 +2731,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_FLOAT_ALIGNMENT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se l'allineamento mobile è abilitato per il blog</title>
     <content type="text">true</content>
@@ -2717,7 +2747,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_LOCALE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Lingua del blog</title>
     <content type="text">it</content>
@@ -2733,7 +2763,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_MAX_NUM</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Numero massimo di elementi da mostrare nella pagina principale"</title>
     <content type="text">1</content>
@@ -2749,7 +2779,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_MAX_UNIT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Elementi da mostrare nella pagina principale</title>
     <content type="text">POSTS</content>
@@ -2765,7 +2795,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_META_DESCRIPTION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">La meta descrizione del blog fornita ai motori di ricerca.</title>
     <content type="text">Percorsi in Mountain Bike Enduro e All Mountain in provincia di Bergamo</content>
@@ -2781,7 +2811,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_META_DESCRIPTION_ENABLED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog è pubblicato con meta descrizioni.</title>
     <content type="text">true</content>
@@ -2797,7 +2827,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_NAME</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Nome del blog</title>
     <content type="text">MTB Bergamo</content>
@@ -2813,7 +2843,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_PER_POST_FEED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di feed da fornire per i commenti per ogni post</title>
     <content type="text">FULL</content>
@@ -2829,7 +2859,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_POST_FEED</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di feed da fornire per i post del blog</title>
     <content type="text">FULL</content>
@@ -2845,7 +2875,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_POST_FEED_FOOTER</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Piè di pagina da aggiungere alla fine di ogni voce nel feed del post</title>
     <content type="text"/>
@@ -2861,7 +2891,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_POST_TEMPLATE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Modello dei post del blog</title>
     <content type="text"/>
@@ -2877,7 +2907,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_QUICK_EDITING</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se Quick Edit è attivato</title>
     <content type="text">true</content>
@@ -2893,7 +2923,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_READ_ACCESS_MODE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il tipo di accesso per i lettori del blog.</title>
     <content type="text">PUBLIC</content>
@@ -2909,7 +2939,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_READER_PERMISSION</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">L'elenco di email per gli utenti che sono autorizzati a leggere il blog.</title>
     <content type="text"/>
@@ -2925,7 +2955,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_SEARCHABLE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se questo blog deve essere indicizzato dai motori di ricerca</title>
     <content type="text">true</content>
@@ -2941,7 +2971,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_SEND_EMAIL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Elenco di indirizzi email separati da virgole a cui inviare nuovi post del blog</title>
     <content type="text"/>
@@ -2957,7 +2987,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_SHOW_URL</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare una casella con link correlato nel compositore di post</title>
     <content type="text">false</content>
@@ -2973,7 +3003,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_TIME_STAMP_FORMAT</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il numero del formato ora</title>
     <content type="text">27</content>
@@ -2989,7 +3019,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_TIME_ZONE</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Il fuso orario del blog</title>
     <content type="text">Europe/Rome</content>
@@ -3005,7 +3035,7 @@ head.appendChild(script);
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.settings.BLOG_USE_LIGHTBOX</id>
     <published>2018-11-20T14:26:18.629+01:00</published>
-    <updated>2025-03-01T23:51:18.371+01:00</updated>
+    <updated>2025-06-30T11:27:28.009+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#settings"/>
     <title type="text">Se mostrare le immagini in lightbox quando è selezionata l'impostazione</title>
     <content type="text">false</content>
@@ -3020,8 +3050,8 @@ head.appendChild(script);
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-5410033916728342168</id>
-    <published>2025-02-24T06:00:00.000+01:00</published>
-    <updated>2025-02-26T16:43:08.888+01:00</updated>
+    <published>2025-06-23T06:00:00.000+02:00</published>
+    <updated>2025-06-25T14:56:09.853+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Benvenuti a MTB Bergamo</title>
     <content type="html">&lt;p&gt;
@@ -3069,6 +3099,547 @@ document.getElementById("num_pages").textContent = count_pages();
       <email>noreply@blogger.com</email>
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
     </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-4781330722485558897</id>
+    <published>2025-06-22T14:40:00.061+02:00</published>
+    <updated>2025-06-25T14:57:39.898+02:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <title type="text">Monte Farno, Cirano, Barzizza</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/media-valle-seriana.html"&gt;Val Gandino&lt;/a&gt; dal Monte Farno a Cirano
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Discesa dal &lt;i&gt;Monte Farno&lt;/i&gt; per un bel sentiero tecnico S2, con un facile intermezzo S1 e conclusione tecnica S2 fino a &lt;i&gt;Cirano&lt;/i&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Si propone quella che è probabilmente la migliore salita al &lt;i&gt;Monte Farno&lt;/i&gt;, indicata però solo per E-Bike. Si parte da &lt;i&gt;Casnigo&lt;/i&gt; e, percorrendo strade e sentieri secondari, si raggiunge la chiesetta di &lt;i&gt;Cazzano&lt;/i&gt;. Da qui inizia una lunga e ripida salita su tratti cementati e sterrati, fino a raggiungere il sentiero &lt;b&gt;543&lt;/b&gt;. Si continua a salire lungo il sentiero, con tratti ripidi e un punto da affrontare a spinta, fino al parcheggio del &lt;i&gt;Monte Farno&lt;/i&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Si ridiscende per pochi metri su asfalto e si prende la prima sterrata a sinistra. Raggiunta la baita, inizia il sentiero: un ottimo S2 nel bosco. L'ultimo tratto, di pochi metri, è una cementata che incrocia la strada proveniente da &lt;i&gt;Gandino&lt;/i&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Si risale la strada per qualche minuto, poi si prosegue la discesa su un facile sentiero S1. Fate solo attenzione al gradone iniziale.
+&lt;/p&gt;
+
+&lt;p&gt;
+Si incrocia nuovamente la strada da &lt;i&gt;Gandino&lt;/i&gt;, ma si riprende subito la discesa su sentiero, questa volta più tortuoso, con vari tratti S2 e alcuni punti S3. L'ultimo tratto è un facile S1 che porta a &lt;i&gt;Cirano&lt;/i&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Da &lt;i&gt;Cirano&lt;/i&gt; si ritorna prima a &lt;i&gt;Barzizza&lt;/i&gt; e poi a &lt;i&gt;Casnigo&lt;/i&gt;, percorrendo sentieri e strade secondarie.
+&lt;/p&gt;
+
+
+&lt;div class="videotitle"&gt;
+Monte Farno, Cirano
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" src="https://www.youtube.com/embed/BV1dIbNUEV0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div id="Cirano" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('Cirano');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Gandino_MonteFarnoCiranoBarzizza.gpx');
+  create_up(page_map, page_control, 'Gandino_SalitaCasnigoMonteFarno_EBIKE.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/4781330722485558897"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/4781330722485558897"/>
+    <link rel="alternate" type="text/html" href="https://www.mtbbergamo.it/2025/06/farno-cirano.html" title="Monte Farno, Cirano, Barzizza"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/BV1dIbNUEV0/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-7689634705243097558</id>
+    <published>2025-06-14T11:54:00.035+02:00</published>
+    <updated>2025-06-25T15:00:13.550+02:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <title type="text">Rifugio Parafulmine, Pizzo di Casnigo</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/media-valle-seriana.html"&gt;Val Gandino&lt;/a&gt; dal Rifugio Parafulmine per il Monte Farno e il Pizzo di Casnigo
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Discesa dal &lt;i&gt;Rifugio Parafulmine&lt;/i&gt;, un flow tra i prati fino al &lt;i&gt;Monte Farno&lt;/i&gt; e conclusione tecnica S2 dal &lt;i&gt;Pizzo di Casnigo&lt;/i&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Da luglio 2022, il tratto sui sentieri &lt;b&gt;549&lt;/b&gt; e &lt;b&gt;549A&lt;/b&gt; è stato &lt;a href="http://www.mtbbergamo.it/p/divieti.html"&gt;&lt;span class="divieto"&gt;vietato alle biciclette&lt;/span&gt;&lt;/a&gt; con ordinanza comunale, anche se su questi sentieri  non sono presenti cartelli di divieto.
+&lt;/p&gt;
+
+&lt;p&gt;
+Si propone una salita alternativa alla strada asfaltata che porta al &lt;i&gt;Monte Farno&lt;/i&gt;, indicata solo per E-Bike. Si parte da &lt;i&gt;Casnigo&lt;/i&gt; e si risale su tratti cementati fino alla mulattiera che conduce al &lt;i&gt;Santuario della Madonna d'Erbia&lt;/i&gt;. Dopo un breve tratto su asfalto, tramite un lungo sentiero S1 si raggiunge una ripida cementata che sale in quota fino a raggiungere il sentiero 543. Si continua a salire lungo il sentiero, con tratti ripidi e un punto da affrontare a spinta, fino al parcheggio del &lt;i&gt;Monte Farno&lt;/i&gt;. Da qui si continua sulla facile sterrata che porta al &lt;i&gt;Rifugio Parafulmine&lt;/i&gt;.
+&lt;/p&gt;
+
+Da qui inizia una lunga e ripida salita su tratti cementati e sterrati, 
+
+&lt;p&gt;
+Dal rifugio parte un lungo flow S1 tra i prati, molto veloce. Dopo l’attraversamento della valletta del &lt;i&gt;torrente Fada&lt;/i&gt;, si raggiunge la &lt;i&gt;Tribulina Guazza&lt;/i&gt; tramite un altro sentiero S1. Si continua poi sul sentiero &lt;b&gt;549A&lt;/b&gt;, S1 in costa, che riporta nei pressi del &lt;i&gt;Monte Farno&lt;/i&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+La discesa prosegue sul sentiero &lt;b&gt;542&lt;/b&gt;, passando per il &lt;i&gt;Pizzo di Casnigo&lt;/i&gt;. Attenzione: dopo il primo incrocio c’è un tratto tecnico S3, breve ma intenso. Il resto del sentiero varia tra S1 e S2.
+&lt;/p&gt;
+
+&lt;p&gt;
+Giunti nei pressi del &lt;i&gt;Santuario della Santissima Trinità&lt;/i&gt;, si prosegue sulla strada a sinistra, fino a imboccare un sentiero S2 che conduce direttamente a &lt;i&gt;Casnigo&lt;/i&gt;.
+&lt;/p&gt;
+
+&lt;div class="videotitle"&gt;
+Rifugio Parafulmine, Guazza, Monte Farno, Pizzo di Casnigo
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" src="https://www.youtube.com/embed/FS_GmGGprog" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class="videotitle"&gt;
+Salita Casnigo, Erbia, Monte Farno
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" src="https://www.youtube.com/embed/VbLRndyOC3w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div id="ParaCasnigo" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('ParaCasnigo');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Gandino_ParafulmineGuazzaFarnoPizzoCasnigo.gpx');
+  create_up(page_map, page_control, 'Gandino_SalitaCasnigoErbiaFarnoParafulmine_EBIKE.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/7689634705243097558"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/7689634705243097558"/>
+    <link rel="alternate" type="text/html" href="https://www.mtbbergamo.it/2025/06/parafulmine-pizzo-casnigo.html" title="Rifugio Parafulmine, Pizzo di Casnigo"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/FS_GmGGprog/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-3761087443443543139</id>
+    <published>2025-06-08T12:28:00.004+02:00</published>
+    <updated>2025-06-11T12:51:48.879+02:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <title type="text">Era, Pianca, Cornello dei Tasso</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-brembana.html"&gt;Val Brembana&lt;/a&gt; dal Era a Pianca e Cornello dei Tasso.
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Discese tra S1 e S2, intervallate da 10 minuti di asfalto.
+&lt;/p&gt;
+&lt;p&gt;
+Dal parcheggio di &lt;i&gt;Camerata Cornello&lt;/i&gt; si prende la ciclabile per risalire la valle e, poco prima di &lt;i&gt;Scalvino&lt;/i&gt;, si imbocca una strada secondaria senza traffico che sale fino a &lt;i&gt;Era&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Appena prima del paese si prende la mulattiera con indicazione &lt;i&gt;Bruga&lt;/i&gt;. Il primo tratto è malmesso, con difficoltà S2, ma subito dopo il ponticello diventa un facile S1 fino alla sterrata che porta alla strada.  
+Si evita un tratto di strada con un sentiero secondario S2 che porta direttamente a &lt;i&gt;Bruga Bassa&lt;/i&gt;. Qui ci sono alcuni tornanti S3.
+&lt;/p&gt;
+&lt;p&gt;
+Si prende quindi la strada asfaltata per circa 10 minuti (con E-Bike, di più con muscolare per via della salita), fino a imboccare un sentiero saliscendi in costa che porta a &lt;i&gt;Pianca&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Qui c'è un bel sentiero S1 che conduce alle frazioni di &lt;i&gt;Bretto&lt;/i&gt;, &lt;i&gt;Tassi&lt;/i&gt; e infine al famoso &lt;i&gt;Cornello dei Tasso&lt;/i&gt;.
+&lt;/p&gt;
+
+&lt;div class="videotitle"&gt;
+Era, Bruga, Pianca, Cornello dei Tasso
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/lL3Boo2hlEY?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div id="EraPianca" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('EraPianca');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Brembana_EraPiancaCornelloDeiTasso.gpx');
+  create_up(page_map, page_control, 'Brembana_SalitaCamerataCornelloEra_EBIKE.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/3761087443443543139"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/3761087443443543139"/>
+    <link rel="alternate" type="text/html" href="https://www.mtbbergamo.it/2025/06/era-pianca.html" title="Era, Pianca, Cornello dei Tasso"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/lL3Boo2hlEY/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-609981254594657644</id>
+    <published>2025-05-30T11:14:00.023+02:00</published>
+    <updated>2025-06-05T11:32:53.169+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S3"/>
+    <title type="text">Monte Linzone, Giallo-Blu Ovest, Dusnale</title>
+    <content type="html">&lt;p&gt;
+Discese in &lt;a href="http://www.mtbbergamo.it/p/valle-san-martino.html"&gt;Valle San Martino&lt;/a&gt; dal Linzone a Dusnale per il percorso Giallo-Blu
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Sentieri tecnici S3, impegnativi ma di grande soddisfazione.
+&lt;/p&gt;
+&lt;p&gt;
+Si parte da &lt;i&gt;Burligo&lt;/i&gt;, ampio parcheggio sotto la chiesa, e si sale per la strada asfaltata, che prosegue nella &lt;i&gt;Cava di Valcava&lt;/i&gt;. Meglio evitare i giorni lavorativi, potrebbero fare storie. Il Sabato e la Domenica non ci sono problemi.
+&lt;/p&gt;
+&lt;p&gt;
+Dalla cima del &lt;i&gt;Monte Linzone&lt;/i&gt; si scende verso &lt;i&gt;Roncola&lt;/i&gt; ma poco dopo si svolta a destra per raggiungere il &lt;i&gt;Santuario della Sacra Famiglia di Nazareth&lt;/i&gt;. Si continua la discesa per facili S1 fino ai pressi della &lt;i&gt;Baita di Ca Bassa&lt;/i&gt;. Prima della baita si svolta a sinistra dove inizia un sentiero tecnico S3 fino alle pendici del &lt;i&gt;Monte Piacca&lt;/i&gt;. Nella traccia e nel video svolto a sinistra troppo presto e c'è un passaggio da fare a piedi, la svolta a sinistra successiva è meglio.
+&lt;/p&gt;  
+&lt;p&gt;
+Invece di salire al &lt;i&gt;Monte Piacca&lt;/i&gt; si svolda a destra nel prato seguendo le indicazioni &lt;i&gt;giallo blu&lt;/i&gt; per sentieri S2 immersi nei boschi. C'è qualche difficoltà S3.
+&lt;/p&gt;
+&lt;p&gt;
+Nei pressi del &lt;i&gt;Monte Spino&lt;/i&gt; la traccia lascia la marcatura giallo-blu e continua verso Ovet in direzione &lt;i&gt;Dusnale&lt;/i&gt;, questa è un discesa meno impegnativa S2, ma sempre con qualche passaggio S3.
+&lt;/p&gt;
+&lt;p&gt;
+Da &lt;i&gt;Dusnale&lt;/i&gt; si risale su asfalto fino a &lt;i&gt;Burligo&lt;/i&gt;.
+&lt;/p&gt;  
+&lt;p&gt;
+Nella discesa non ci sono fonti d'acqua. A &lt;i&gt;Burligo&lt;/i&gt;, di fronte alla chiesa c'è una fontanella.
+&lt;/p&gt;
+
+&lt;div class="videotitle"&gt;
+Linzone, Monte Piacca, Baita, Palazzago (traccia Est)
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/1myALindh8Y?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div id="GialloBluOvest" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('GialloBluOvest');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Martino_LinzoneGialloBluOvest.gpx');
+  create_up(page_map, page_control, 'Martino_SalitaBurligoCavaLinzone.gpx');
+&lt;/script&gt;
+</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/609981254594657644"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/609981254594657644"/>
+    <link rel="alternate" type="text/html" href="https://www.mtbbergamo.it/2025/05/giallo-blu-ovest.html" title="Monte Linzone, Giallo-Blu Ovest, Dusnale"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/1myALindh8Y/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-8699430744453022568</id>
+    <published>2025-05-01T17:26:00.004+02:00</published>
+    <updated>2025-05-04T17:43:45.244+02:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <title type="text">La Plazza</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle Seriana&lt;/a&gt; dalle pendici Monte Poieto, verso località Plazza e lunga la Val del Gru.
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Sentiero S2 tra i boschi, e discesa su sterrata lungo la &lt;i&gt;Val del Gru&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Si parte da &lt;i&gt;Gazzaniga&lt;/i&gt;, salendo per asfalto. Oltre &lt;i&gt;Orezzo&lt;/i&gt; e prima del del &lt;i&gt;Passo di Ganda&lt;/i&gt; si prende una strada secondaria che porta a &lt;i&gt;Coldrè&lt;/i&gt;. Si continua per cementare e sterrate per immettersi nella &lt;i&gt;Valle della Scapla&lt;/i&gt;. Si risale per sentiero e prato fino ad incrociare la sterrata che scende dalla &lt;i&gt;Forca&lt;/i&gt;. Con una E-Bike è pedalabile.
+&lt;/p&gt;
+&lt;p&gt; 
+Dopo un breve tratto di sterrata, inizia la discesa. Prima un tratto su prato, e poi nel bosco. La difficoltà è S2 fino ad uno spiazzo aperto chiamato &lt;i&gt;Plazza&lt;/i&gt;. Qui si gira verso sinistra, e la difficoltà scende ad S1, tranno l'ultimo breve tratto S3.
+&lt;/p&gt;  
+&lt;p&gt;
+La discesa termina nello spiazzo della &lt;i&gt;Val del Gru&lt;/i&gt;. Qui la traccia scende lungo la sterrata della valle, ma in alternativa si può risalire, ed effettuare un altra discesa come la &lt;a href="https://www.mtbbergamo.it/2023/09/poieto-gazzaniga.html"&gt;Monte Poieto, 523, Gazzaniga&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;div class="videotitle"&gt;
+La Plazza
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/Kt6tCaVcit8?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div class="videotitle"&gt;
+Salita Coldrè, Val del Gru
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/nlMcDEo316o?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div id="Plazza" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('Plazza');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Seriana_PlazzaGazzaniga.gpx');
+
+  create_up(page_map, page_control, 'Seriana_SalitaGazzanigaColdreGru_EBIKE.gpx');
+  
+&lt;/script&gt;
+</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/8699430744453022568"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/8699430744453022568"/>
+    <link rel="alternate" type="text/html" href="https://www.mtbbergamo.it/2025/05/plazza.html" title="La Plazza"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/Kt6tCaVcit8/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-10547445612014952</id>
+    <published>2025-04-03T15:09:00.030+02:00</published>
+    <updated>2025-04-07T15:37:03.226+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S3"/>
+    <title type="text">Antenne Valcava, Zuccherone, Faidello</title>
+    <content type="html">&lt;p&gt;
+Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-san-martino.html"&gt;Valle San Martino&lt;/a&gt; dalle antenne di Valcava a Burligo, passando per il crinale dello Zuccherone, e il nuovo Faidello.
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Sentiero nella prima parte ripido S3 per prati e boschi, al limite del freeride, e con difficoltà tecniche fino a &lt;i&gt;Coldara&lt;/i&gt;. Poi veloci sentieri S2 fino ad &lt;i&gt;Opreno&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Si parte dalle &lt;i&gt;antenne di Valcava&lt;/i&gt;, scendendo per il prato sottostante e immettendosi nel bosco. Questo è un tratto freeride, di difficoltà S1, senza sentiero da seguire fino all'incrocio con la sterrata in costa.  
+Si attraversa la sterrata e si continua lungo la mulattiera fino a raggiungere la zona di &lt;i&gt;Decollo Valcava&lt;/i&gt;, da dove partono i parapendii. Nel 2025 è presente una rete metallica all'altezza del parchetto che impedisce di seguire il crinale, ma è possibile passare dalla &lt;i&gt;Funivia&lt;/i&gt;, come indicato nella traccia.
+&lt;/p&gt;
+&lt;p&gt;
+La discesa prosegue lungo i prati del crinale dello Zuccherone, seguendo un vecchio sentiero, ancora visibile e segnato. Saranno necessari alcuni brevi tratti a piedi e un po' di orientamento, nel caso si perda la traccia. La direzione da seguire è sempre verso Ovest, lungo il crinale in direzione &lt;i&gt;Coldara&lt;/i&gt;. È indispensabile un navigatore GPS per seguire il percorso.  
+La pendenza è a tratti elevata e non mancano difficoltà tecniche di livello S3.
+&lt;/p&gt;
+&lt;p&gt;
+Arrivati a &lt;i&gt;Coldara&lt;/i&gt;, è possibile mangiare all’ottimo &lt;a href="https://www.agriturismocostadelcoldara.it/"&gt;Agriturismo Coldara&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Si riparte dall’agriturismo in direzione &lt;i&gt;Colle Pedrino&lt;/i&gt;, ma presto si svolta a destra per percorrere la parte finale del nuovo itinerario &lt;a href="https://www.mtbbergamo.it/2025/02/faidello.html"&gt;Faidello&lt;/a&gt;: un veloce sentiero con qualche passaggio di difficoltà S2, fino ad &lt;i&gt;Opreno&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+A &lt;i&gt;Opreno&lt;/i&gt; si svolta a sinistra e si prosegue verso la &lt;i&gt;Forcella di Burligo&lt;/i&gt;, lungo una facile sterrata, inizialmente in leggera discesa e con qualche rampa in salita verso la fine.  
+Dalla forcella si prende subito a destra, in discesa, un breve sentiero che conduce all’abitato di &lt;i&gt;Burligo&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Il sabato e la domenica si può salire dalla Cava (meglio evitare i giorni feriali, potrebbero esserci limitazioni), parcheggiando direttamente a &lt;i&gt;Burligo&lt;/i&gt;. Sotto la chiesa c’è un ampio parcheggio.
+&lt;/p&gt;
+
+&lt;div class="videotitle"&gt;
+Antenne di Valcava, Zuccherone, Faidello
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/vUG18mer-z4?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div id="ZuccheroneFaidello" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('ZuccheroneFaidello');
+  var page_control = create_control(page_map);
+
+  create_down(page_map, page_control, 'Martino_AntenneValcavaZuccheroneFaidelloBurligo.gpx');
+  create_up(page_map, page_control, 'N_SalitaBurligoCavaAntenneValcava_EBIKE.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/10547445612014952"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/10547445612014952"/>
+    <link rel="alternate" type="text/html" href="https://www.mtbbergamo.it/2025/04/zuccherone-faidello.html" title="Antenne Valcava, Zuccherone, Faidello"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/vUG18mer-z4/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-6819328401971993178</id>
+    <published>2025-03-16T09:32:00.004+01:00</published>
+    <updated>2025-03-24T09:57:36.315+01:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <title type="text">Monte Pier, Bretei, Peia, San Rocco, Cavalli</title>
+    <content type="html">&lt;p&gt;
+Doppia discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle Seriana&lt;/a&gt; dal Monte Pier a Peia e da San Rocco alla Val Rossa
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Doppia discesa tecnica S2: la prima, &lt;b&gt;Bretei&lt;/b&gt;, dal &lt;i&gt;Monte Pier&lt;/i&gt; a &lt;i&gt;Peia&lt;/i&gt;, e la seconda, chiamata &lt;b&gt;Cavalli&lt;/b&gt;, da &lt;i&gt;San Rocco&lt;/i&gt; alla &lt;i&gt;Val Rossa&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Si sale da &lt;i&gt;Cene&lt;/i&gt; per la strada asfaltata che porta quasi alla cima del &lt;i&gt;Monte Bò&lt;/i&gt;. Si prosegue per vari sentieri e strade secondarie seguendo la cresta montuosa del &lt;i&gt;Monte Croce&lt;/i&gt; e del &lt;i&gt;Monte Pier&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Dal &lt;i&gt;Monte Pier&lt;/i&gt; si prende la cementata in discesa, un tratto S1 di sentiero, poi si riprende la cementata. Al primo tornante inizia una bella discesa S2. Quando si incrocia la strada asfaltata, si prende la sterrata di fronte, e dopo poco si imbocca il sentiero &lt;i&gt;Bretei&lt;/i&gt; sulla destra. Anche questo è un tecnico S2, con un paio di passaggi S3.
+&lt;/p&gt;
+&lt;p&gt;
+Sul finire, il sentiero attraversa un torrente per terminare su una sterrata. In alternativa, è possibile — prima di attraversare il torrente — continuare per il prato, seguendo sempre il confine, ed evitare la sterrata finale.
+&lt;/p&gt;
+&lt;p&gt;
+Da &lt;i&gt;Peia&lt;/i&gt;, tramite strade secondarie e un tratto di mulattiera, si risale a &lt;i&gt;San Rocco&lt;/i&gt;, dopo un breve tratto di asfalto, inizia la seconda discesa.
+&lt;/p&gt;
+&lt;p&gt;
+Il primo tratto è un facile S1, che immette nella discesa S2 &lt;i&gt;Cavalli&lt;/i&gt;, la quale termina sulla strada della &lt;i&gt;Val Rossa&lt;/i&gt;, che si segue fino a &lt;i&gt;Cene&lt;/i&gt;.
+&lt;/p&gt;
+
+
+&lt;div class="videotitle"&gt;
+Monte Pier, Bretei, Peia, Cavalli
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/KzL7tvRPGtI?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div id="BreteiCavalli" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('BreteiCavalli');
+  var page_control = create_control(page_map);
+  create_down(page_map, page_control, 'Seriana_MontePierBreteiPeiaSanRoccoCavalliCene.gpx');
+  create_up(page_map, page_control, 'Seriana_SalitaCeneMonteBueCrocePier_EBIKE.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/6819328401971993178"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/6819328401971993178"/>
+    <link rel="alternate" type="text/html" href="https://www.mtbbergamo.it/2025/03/bretei-cavalli.html" title="Monte Pier, Bretei, Peia, San Rocco, Cavalli"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/KzL7tvRPGtI/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-8402784462541205819</id>
+    <published>2025-03-10T15:03:00.008+01:00</published>
+    <updated>2025-03-12T15:21:16.492+01:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S3"/>
+    <title type="text">Rolling Stones, Val Rossa</title>
+    <content type="html">&lt;p&gt;
+Discesa a cavallo tra la &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle Seriana&lt;/a&gt; e la &lt;a href="http://www.mtbbergamo.it/p/valle-cavallina.html"&gt;Val Cavallina&lt;/a&gt; dalla Forcella di Ranzanico alla Val Rossa
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Discesa tecnica, chiamata &lt;b&gt;Rolling Stones&lt;/b&gt; per le pietre smosse che la caratterizzano. La prima parte è S3, poi segue un tratto S2.
+&lt;/p&gt;
+&lt;p&gt;
+Si sale da &lt;i&gt;Cene&lt;/i&gt; per la strada asfaltata che porta quasi alla cima del &lt;i&gt;Monte Bò&lt;/i&gt;. Si prosegue per vari sentieri e strade secondarie seguendo la cresta montuosa del &lt;i&gt;Monte Croce&lt;/i&gt; e del &lt;i&gt;Monte Pier&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Dal &lt;i&gt;Monte Pier&lt;/i&gt; c'è un primo assaggio di discesa con un facile S1 che porta &lt;i&gt;Forcella di Ranzanico&lt;/i&gt; (non servono protezioni). Ancora un breve tratto di strada in salita ed inizia la vera discesa.
+&lt;/p&gt;  
+&lt;p&gt;
+Il primo tratto è un facile pratone, seguito da un tratto di sterrata che porta all'inizio della discesa &lt;b&gt;Rolling Stones&lt;/b&gt;. Da subito è un bel tecnico S3 che non dà tregua fino alla &lt;i&gt;Croce degli Alpini&lt;/i&gt;. Qui il percorso diventa un più semplice S2.
+&lt;/p&gt;
+&lt;p&gt;
+Si arriva nei pressi di &lt;i&gt;Bianzano&lt;/i&gt;, con ancora un breve tratto S3, e si conclude con un flow S1 fino ad arrivare all'ultimo tornante della strada della &lt;i&gt;Val Rossa&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Si risale per pochi metri su asfalto e si prende una lunga sterrata che discende la valle. Si termina seguendo la strada asfaltata fino a &lt;i&gt;Cene&lt;/i&gt;.
+&lt;/p&gt;
+
+&lt;div class="videotitle"&gt;
+Rolling Stones
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/WQEqUf36EQo?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div id="RollingStones" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('RollingStones');
+  var page_control = create_control(page_map);
+  create_down(page_map, page_control, 'Seriana_MontePierRollingStonesValRossa.gpx');
+  create_up(page_map, page_control, 'Seriana_SalitaCeneMonteBueCrocePier_EBIKE.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/8402784462541205819"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/8402784462541205819"/>
+    <link rel="alternate" type="text/html" href="https://www.mtbbergamo.it/2025/03/rolling-stones.html" title="Rolling Stones, Val Rossa"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/WQEqUf36EQo/default.jpg" height="72" width="72"/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.post-7742028849948762294</id>
+    <published>2025-03-03T18:16:00.004+01:00</published>
+    <updated>2025-03-06T18:19:27.986+01:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="S3"/>
+    <title type="text">Monte Bo, Monte Croce, Monte Beio, Valle Asinina</title>
+    <content type="html">Discese in &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle Seriana&lt;/a&gt; dalla cima del &lt;i&gt;Monte Bo&lt;/i&gt;, &lt;i&gt;Monte Croce&lt;/i&gt; e &lt;i&gt;Monte Beio&lt;/i&gt; con termine a &lt;i&gt;Fiorano&lt;/i&gt;.
+&lt;/p&gt;
+&lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+Tre discese tecniche. La prima dal &lt;i&gt;Monte Bo&lt;/i&gt; principalmente S2, con brevi passaggi S3. La seconda dal &lt;i&gt;Monte Croce&lt;/i&gt; con un lungo tratto S3 con pietre smosse, infine la terza, dal &lt;i&gt;Monte Beio&lt;/i&gt; per la &lt;i&gt;Valle Asinina&lt;/i&gt;, un S2 con un breve tratto nel fondo del torrente. Evitare dopo giorni di pioggia; in tal caso, seguire l'alternativa &lt;a href="https://www.mtbbergamo.it/2025/02/beio-dh.html"&gt;Beio DH&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Si sale da &lt;i&gt;Cene&lt;/i&gt; per la strada asfaltata che porta quasi alla cima del &lt;i&gt;Monte Bo&lt;/i&gt;. Un breve tratto di salita in un bel bosco e su prato, poi inizia la discesa. Prima un facile S1, con un tratto più tecnico S2 prima di incrociare la sterrata. Pochi metri e riprende la discesa con un breve tratto S3, a cui segue un lungo S2 fino alla strada della &lt;i&gt;Valle Rossa&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Si sale su asfalto e cementate fino alla vetta del &lt;i&gt;Monte Croce&lt;/i&gt;, dove inizia la seconda discesa. All'inizio un facile S1, seguito da un lungo tratto S3 con pietre smosse. 
+Il tratto termina in una cementata e, alla prima curva, si riprende il sentiero con un bel ripidone S4. Ancora un breve tratto di cementata, poi sulla destra riprende un sentiero S1, che costeggia il torrente fino alla fine della discesa. Tenere il torrente a sinistra e attraversarlo solo al ponticello.
+&lt;/p&gt;  
+&lt;p&gt;
+Si risale su asfalto e un breve tratto di sentiero fino ai pressi della cima del &lt;i&gt;Monte Beio&lt;/i&gt;. Con alcuni tratti di asfalto e sentiero si raggiunge la sterrata incrociata in precedenza e ci si immette nel sentiero di fondovalle della &lt;i&gt;Valle Asinina&lt;/i&gt;. È un lungo S2 con un breve tratto nel fondo del torrente. Evitare dopo giorni di pioggia.
+Sul finire, appena prima di arrivare alla strada asfaltata, c'è un breve tratto S3.
+&lt;/p&gt;
+&lt;p&gt;
+Si termina a &lt;i&gt;Fiorano&lt;/i&gt; e, tramite la ciclabile, si ritorna a &lt;i&gt;Cene&lt;/i&gt;.
+&lt;/p&gt;  
+
+&lt;div class="videotitle"&gt;
+Monte Bo, Monte Croce, Monte Beio, Valle Asinina
+&lt;/div&gt;
+&lt;div class="videobox"&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/h1-c19ntqQc?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div id="BoCroceBeio" class="mapbox"&gt;
+&lt;/div&gt;
+
+&lt;script type="application/javascript"&gt;
+  var page_map = create_map_track('BoCroceBeio');
+  var page_control = create_control(page_map);
+  create_down(page_map, page_control, 'Seriana_MonteBueCroceBeioCene_EBIKE.gpx');
+&lt;/script&gt;</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/7742028849948762294"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/posts/default/7742028849948762294"/>
+    <link rel="alternate" type="text/html" href="https://www.mtbbergamo.it/2025/03/bo-croce-beio.html" title="Monte Bo, Monte Croce, Monte Beio, Valle Asinina"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/h1-c19ntqQc/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-6662526486727649452</id>
@@ -3129,8 +3700,8 @@ Salita Cene, Monte Beio
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-6445443384795150318</id>
-    <published>2025-02-18T10:03:00.004+01:00</published>
-    <updated>2025-02-20T10:38:03.757+01:00</updated>
+    <published>2025-02-18T10:03:00.005+01:00</published>
+    <updated>2025-04-07T15:15:38.120+02:00</updated>
     <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">FaidelloDH</title>
@@ -3142,7 +3713,7 @@ Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-san-martino.html"&gt;Val
 Nuova combinazione di sentieri che dalla cava di &lt;i&gt;Valcava&lt;/i&gt; ad &lt;i&gt;Opreno&lt;/i&gt;. Principalmente S2 con un finale S1.
 &lt;/p&gt;
 &lt;p&gt;
-Il percorso parte dalla cava di &lt;i&gt;Valcava&lt;/i&gt; con un lungo tratto in mezza costa con vari sali e scendi per arrivare all'inizio della discesa. Si può facilmente collegare ad altre discese come il &lt;a href="https://www.mtbbergamo.it/2023/04/valcavastopoi.html"&gt;Sommaskio Trail&lt;/a&gt;, il &lt;a href="https://www.mtbbergamo.it/2019/01/funivia-coldara-colle-pedrino-opreno.html"&gt;Funiva&lt;/a&gt; o lo &lt;a href="https://www.mtbbergamo.it/2019/03/zuccherone-coldara-col-fopa-opreno.html"&gt;Zuccherone&lt;/a&gt; per evitare questo tratto.
+Il percorso parte dalla cava di &lt;i&gt;Valcava&lt;/i&gt; con un lungo tratto in mezza costa con vari sali e scendi per arrivare all'inizio della discesa. Si può facilmente collegare ad altre discese come il &lt;a href="https://www.mtbbergamo.it/2023/04/valcavastopoi.html"&gt;Sommaskio Trail&lt;/a&gt;, il &lt;a href="https://www.mtbbergamo.it/2019/01/funivia-coldara-colle-pedrino-opreno.html"&gt;Funiva&lt;/a&gt; o lo &lt;a href="https://www.mtbbergamo.it/2025/04/zuccherone-faidello.html"&gt;Zuccherone&lt;/a&gt; per evitare questo tratto.
 &lt;/p&gt;
 &lt;p&gt;
 La discesa inizia con un breve tratto S2, fino ad incrociare il sentiero che da &lt;i&gt;Coldara&lt;/i&gt; porta a &lt;i&gt;Colle Pedrino&lt;/i&gt;. Si svolta a sinistra, e dopo pochi metri c'è una deviazione a destra dove inizia il nuovo &lt;b&gt;FaidelloDH&lt;/b&gt;, marcato con bolli gialli, recuperato da vecchi sentieri da &lt;b&gt;lucabi&lt;/b&gt; e aiutanti nel 2024. È principalmente un S2 con un finale S1.
@@ -5860,8 +6431,8 @@ Salita Vertova, Val del Grù, Monte Poieto
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-71251803420791847</id>
-    <published>2023-09-17T14:12:00.005+02:00</published>
-    <updated>2023-09-26T17:10:06.581+02:00</updated>
+    <published>2023-09-17T14:12:00.006+02:00</published>
+    <updated>2025-04-04T00:12:18.812+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <category scheme="http://www.blogger.com/atom/ns#" term="S3"/>
     <title type="text">Monte Poieto, 516, Val Vertova</title>
@@ -5874,7 +6445,7 @@ Discesa tecnica su sentieri poco frequentati. Principalmente difficoltà S3 con 
 &lt;/p&gt;
 &lt;p&gt;
 Si parte da &lt;i&gt;Vertova&lt;/i&gt;, salendo per asfalto fino ad &lt;i&gt;Semonte&lt;/i&gt; dove una ripida cementata porta all'inizio della strada della &lt;i&gt;Val del Grù&lt;/i&gt;. 
-E' un lunga cementata che risale la valle. Da &lt;i&gt;Plazza GAV&lt;/i&gt; la pendenza aumenta, e dall'ultima baita c'è un tratto di salita su sentiero, ciclabile in E-Bike, ma meno in muscolare.
+E' un lunga cementata che risale la valle. Dopo la fontana la pendenza aumenta, e dall'ultima baita c'è un tratto di salita su sentiero, ciclabile in E-Bike, ma meno in muscolare.
 &lt;/p&gt;
 &lt;p&gt; 
 Si ritorna su strada cementata e sterrata fino ai prati sotto il &lt;i&gt;Monte Poieto&lt;/i&gt;. Un breve tratto ripido nel prato, e si continua su sterrata fino al ristorante sulla cima. Se avete una E-Bike potete evitare la sterrata finale e salire diretti dal prato.
@@ -5883,7 +6454,7 @@ Si ritorna su strada cementata e sterrata fino ai prati sotto il &lt;i&gt;Monte 
 La discesa inizia seguendo il sentiero &lt;b&gt;516&lt;/b&gt; dietro il ristorante. Fino alla &lt;i&gt;Forcella di Aviatico&lt;/i&gt; è un facile S1, con alcune curve S2. Dalla forcella inizia la difficoltà S3.
 &lt;/p&gt;  
 &lt;p&gt;
-L'ultima tratto di discesa lascia il sentiero &lt;b&gt;516&lt;/b&gt; per rientrare sulla strada fatta in salita. Attenzione che la continuazione del sentiero &lt;b&gt;516&lt;/b&gt; che scende da &lt;i&gt;Plazza GAV&lt;/i&gt; alla &lt;i&gt;Val Vertova&lt;/i&gt; non è ciclabile, occorre quindi fare questa variante.
+L'ultima tratto di discesa lascia il sentiero &lt;b&gt;516&lt;/b&gt; per rientrare sulla strada fatta in salita. Attenzione che la continuazione del sentiero &lt;b&gt;516&lt;/b&gt; che scende alla &lt;i&gt;Val Vertova&lt;/i&gt; non è ciclabile, occorre quindi fare questa variante.
 &lt;/p&gt;
 &lt;p&gt;
 Si risale ancora fino al termine della strada, ma invece di prendere il sentiero in salita, si tiene la sinistra. Facile sentiero di collegamento S1, con tratti S2 fino a rientrare alla &lt;i&gt;Strada della Val del Grù&lt;/i&gt;.
@@ -6006,8 +6577,8 @@ Salita Vertova, Val del Grù, Forcella di Aviatico, Cà Donadoni
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-8792199841009492354</id>
-    <published>2023-09-04T07:42:00.011+02:00</published>
-    <updated>2023-09-26T17:13:37.769+02:00</updated>
+    <published>2023-09-04T07:42:00.012+02:00</published>
+    <updated>2025-05-04T17:25:50.623+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <category scheme="http://www.blogger.com/atom/ns#" term="S1"/>
     <title type="text">Monte Poieto, 523, Gazzaniga</title>
@@ -6019,7 +6590,7 @@ Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle S
 Facile sentiero tra prati, mulattierie e boschi, che scende lungo il crinale con difficoltà tra S1 ed S2, con un solo brevissimo tratto S3. E' una discesa simile alla &lt;a href="http://www.mtbbergamo.it/2023/09/slayer.html"&gt;Monte Poieto, Slayer Lane, Vertova&lt;/a&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-Si parte da &lt;i&gt;Gazzaniga&lt;/i&gt;, salendo per asfalto fino ad &lt;i&gt;Orezzo&lt;/i&gt; dove iniziano le sterrate che portano alla strada della &lt;i&gt;Val del Grù&lt;/i&gt;. E' un lunga cementata che risale la valle. Da &lt;i&gt;Plazza GAV&lt;/i&gt; la pendenza aumenta, e dall'ultima baita c'è un tratto di salita su sentiero, ciclabile in E-Bike, ma meno in muscolare.
+Si parte da &lt;i&gt;Gazzaniga&lt;/i&gt;, salendo per asfalto fino ad &lt;i&gt;Orezzo&lt;/i&gt; dove iniziano le sterrate che portano alla strada della &lt;i&gt;Val del Grù&lt;/i&gt;. E' un lunga cementata che risale la valle. Dapo lo spiazzo con fontana la pendenza aumenta, e dall'ultima baita c'è un tratto di salita su sentiero, ciclabile in E-Bike, ma meno in muscolare.
 &lt;/p&gt;
 &lt;p&gt; 
 Si ritorna su strada cementata e sterrata fino ai prati sotto il &lt;i&gt;Monte Poieto&lt;/i&gt;. Un ripido tratto nel prato per riprendere una salita più leggera fino alla vettà. In E-Bike è anche possibile salire direttamente dal prato.
@@ -11839,8 +12410,8 @@ Giro Leffe, Malga Longa, Monte Sparavera, Leffe
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-202051724261076632</id>
-    <published>2022-01-31T17:40:00.014+01:00</published>
-    <updated>2022-12-29T10:04:53.553+01:00</updated>
+    <published>2022-01-31T17:40:00.015+01:00</published>
+    <updated>2025-06-18T11:54:15.728+02:00</updated>
     <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <category scheme="http://www.blogger.com/atom/ns#" term="DivietoPerBici"/>
@@ -11850,25 +12421,30 @@ Discesa in &lt;a href="http://www.mtbbergamo.it/p/media-valle-seriana.html"&gt;V
 &lt;/p&gt;
 &lt;div id="info_header"&gt;&lt;/div&gt;
 &lt;p&gt;
-Discesa tecnica dal &lt;i&gt;Pizzo Formico&lt;/i&gt; dal lato Est, risalita al Rifugio Parafulmine, un lungo flow per prati e una conclusione tecnica. 
-Alternativa è la &lt;a href="http://www.mtbbergamo.it/2022/01/formico-543-casnigo.html"&gt;discesa dal lato Ovest&lt;/a&gt;.
+Discesa tecnica dal &lt;i&gt;Pizzo Formico&lt;/i&gt; sul versante Est, risalita al &lt;i&gt;Rifugio Parafulmine&lt;/i&gt;, un lungo flow tra i prati e una conclusione tecnica. 
+In alternativa, si può optare per la &lt;a href="http://www.mtbbergamo.it/2022/01/formico-543-casnigo.html"&gt;discesa dal lato Ovest&lt;/a&gt;.
 &lt;/p&gt;
+
 &lt;p&gt;
-Dal Luglio 2022 il tratto sul sentiero &lt;b&gt;549&lt;/b&gt; è stato &lt;a href="http://www.mtbbergamo.it/p/divieti.html"&gt;&lt;span class="divieto"&gt;vietato alle biciclette&lt;/span&gt;&lt;/a&gt;. Sfortunatamente non ci sono alternative per quel tratto.
+Da luglio 2022 il tratto sul sentiero &lt;b&gt;549&lt;/b&gt; è stato &lt;a href="http://www.mtbbergamo.it/p/divieti.html"&gt;&lt;span class="divieto"&gt;vietato alle biciclette&lt;/span&gt;&lt;/a&gt; con ordinanza comunale, ma sul sentiero non ci sono cartelli di divieto. 
 &lt;/p&gt;
+
 &lt;p&gt;
-Si parte da &lt;i&gt;Gandino&lt;/i&gt; salendo per facile asfalto al &lt;i&gt;Monte Farno&lt;/i&gt;. Si prosegue per la classica salita fino al &lt;i&gt;Pizzo Formico&lt;/i&gt; quasi interamente pedalabile con un E-Bike a parte gli ultimi 100m di dislivello che si devono fare a spinta.
+Si parte da &lt;i&gt;Gandino&lt;/i&gt;, salendo su asfalto facile fino al &lt;i&gt;Monte Farno&lt;/i&gt;. Si prosegue con la classica salita verso il &lt;i&gt;Pizzo Formico&lt;/i&gt;, quasi interamente pedalabile con una E-Bike, tranne gli ultimi 100 m di dislivello che richiedono spinta a mano.
 &lt;/p&gt;
+
 &lt;p&gt;
-Si scende dal versante opposto con una difficoltà iniziale S3. Dopo circa 200m di dislivello la difficoltà scende ad S2 fino alla &lt;i&gt;Forcella Larga&lt;/i&gt;.
-Si prosegue per un facile S1 in costa fino all' &lt;i&gt;Alpe Montagnina&lt;/i&gt; dove si risale fino al &lt;i&gt;Rifugio Parafulmine&lt;/i&gt;
+La discesa avviene sul versante opposto, con una difficoltà iniziale S3. Dopo circa 200 m di dislivello la difficoltà scende a S2, fino alla &lt;i&gt;Forcella Larga&lt;/i&gt;.
+Si prosegue con un facile S1 in costa fino all'&lt;i&gt;Alpe Montagnina&lt;/i&gt;, da cui si risale fino al &lt;i&gt;Rifugio Parafulmine&lt;/i&gt;.
 &lt;/p&gt;
+
 &lt;p&gt;
-Dal rifugio inizia un lungo flow S1 per prati molto veloce. Dopo l'attraversamento della valletta del &lt;i&gt;torrente Fada&lt;/i&gt; si raggiunge il &lt;i&gt;Bivacco Baroncelli&lt;/i&gt; tramite un altro sentiero S1.
+Dal rifugio parte un lungo flow S1 tra i prati, molto veloce. Dopo l’attraversamento della valletta del &lt;i&gt;torrente Fada&lt;/i&gt;, si raggiunge il &lt;i&gt;Bivacco Baroncelli&lt;/i&gt; tramite un altro sentiero S1.
 &lt;/p&gt;
+
 &lt;p&gt;
-Dal bivacco si prosegue per il sentiero &lt;b&gt;549&lt;/b&gt; tecnico S2 fino a &lt;i&gt;Groaro&lt;/i&gt;. Qui la traccia scende direttamente dal sentiero nel ghiaione, un vertical S3 impegnativo.
-Volendo lo si può evitare seguendo la strada sempre per il ghiaione, o ritornando su asfalto.
+Dal bivacco si prosegue sul sentiero &lt;b&gt;549&lt;/b&gt;, tecnico S2, fino a &lt;i&gt;Groaro&lt;/i&gt;. Qui la traccia scende direttamente nel ghiaione con un tratto vertical S3 impegnativo.
+Volendo, si può evitare seguendo la strada nel ghiaione o rientrando su asfalto.
 &lt;/p&gt;
 
 &lt;div class="videotitle"&gt;
@@ -15074,8 +15650,8 @@ Scabla
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-3263886732304866808</id>
-    <published>2021-03-31T11:23:00.003+02:00</published>
-    <updated>2021-04-04T11:40:38.857+02:00</updated>
+    <published>2021-03-31T11:23:00.004+02:00</published>
+    <updated>2025-06-30T11:27:27.995+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <category scheme="http://www.blogger.com/atom/ns#" term="Principianti"/>
     <category scheme="http://www.blogger.com/atom/ns#" term="S1"/>
@@ -15085,7 +15661,10 @@ Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle S
 &lt;/p&gt;
 &lt;div id="info_header"&gt;&lt;/div&gt;
 &lt;p&gt;
-Facile sentiero panoramico S1. Segue la cresta della Val Coler con qualche saliscendi.Si termina con una bella discesa S1 a &lt;i&gt;Gavarno Rinnovata&lt;/i&gt;.
+Facile sentiero panoramico S1. Segue la cresta della Val Coler con qualche saliscendi. Si termina con una bella discesa S1 a &lt;i&gt;Gavarno Rinnovata&lt;/i&gt;.
+&lt;/p&gt;
+&lt;p class="nota"&gt;
+ATTENZIONE Segnalati alberi caduti che richiedono deviazioni (Giugno 2025).
 &lt;/p&gt;
 &lt;p&gt;
 E' particolarmente &lt;span class="principianti"&gt;indicato per principianti&lt;/span&gt;.
@@ -18379,8 +18958,8 @@ La combinazione &lt;b&gt;Corna Martinella, 822, 801A&lt;/b&gt; è una facile dis
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-727540803915195914</id>
-    <published>2020-01-05T22:55:00.005+01:00</published>
-    <updated>2022-08-27T11:54:37.366+02:00</updated>
+    <published>2020-01-05T22:55:00.007+01:00</published>
+    <updated>2025-06-09T11:46:20.783+02:00</updated>
     <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <title type="text">Coldara</title>
@@ -18411,7 +18990,7 @@ Sono percorsi esposti a Ovest e prendono poco sole d'inverno. L'unica fonte d'ac
 Coldara, Col Fopa, Opreno
 &lt;/div&gt;
 &lt;div class="videobox"&gt;
-&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/ofPgiR9SuqE?t=798" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/ofPgiR9SuqE?start=788" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;
 La &lt;b&gt;Coldara, Col Fopa, Opreno&lt;/b&gt; è un' ottima discesa S2, che alterna tratti flow, a parti più tecniche e spacca forcelle. A Col Fopa si può decidere se proseguire ad Opreno o dirigersi invece a Torre de Busi.
@@ -18422,7 +19001,7 @@ Tipicamente è fatta in combinazione con la discesa &lt;a href="http://www.mtbbe
 Coldara, Val Bratta, Torre de Busi
 &lt;/div&gt;
 &lt;div class="videobox"&gt;
-&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/2H5mKc-Iar4?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/2H5mKc-Iar4?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 &lt;p&gt;
 La &lt;b&gt;Coldara, Val Bratta&lt;/b&gt; è un'ottima discesa S2, che si insinua nella Val Bratta su sentieri ben tenuti.
 A Col Fopa segue per un tratto il sentiero 801B, ma ad un certo punto svolta a sinistra per dirigersi a &lt;i&gt;Ca Martinone&lt;/i&gt; con un bel flow.
@@ -18432,7 +19011,7 @@ A Col Fopa segue per un tratto il sentiero 801B, ma ad un certo punto svolta a s
 Coldara, San Marco, Torre de Busi
 &lt;/div&gt;
 &lt;div class="videobox"&gt;
-&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/4nOwdUBDk6I?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/4nOwdUBDk6I?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;
 La &lt;b&gt;Coldara, San Marco,&lt;/b&gt; è una buona discesa S2, che scende attraverso sentieri e percorsi pedonali tagliando più volte la strada che sale da Torre de Busi. Raggiunta la chiesa di San Marco raggiunge con un tratto in costa il sentiero 801B a Col Fopa dove si prosegue fino a Torre de Busi.
@@ -18443,7 +19022,7 @@ Dietro la chiesa di &lt;i&gt;San Marco&lt;/i&gt; si può notare il vecchio pilon
 Coldara, Pizzo Pec, Torre de Busi
 &lt;/div&gt;
 &lt;div class="videobox"&gt;
-&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/QzvBdkSkgGw?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/QzvBdkSkgGw?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;
 La &lt;b&gt;Coldara, Pizzo Pec&lt;/b&gt; è una discreta discesa che aggira il monte sul lato sud. Questo tratto è un facile S1, con qualche leggero sali scendi fino al Col Fopa. Da qui si prosegue lungo l'ottimo sentiero 801B di difficoltà S2 fino a Torre de Busi.
@@ -18453,7 +19032,7 @@ La &lt;b&gt;Coldara, Pizzo Pec&lt;/b&gt; è una discreta discesa che aggira il m
 Panorama da Costa del Coldara
 &lt;/div&gt;
 &lt;div class="videobox"&gt;
-&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/MUVHM3ly9Ns?start=0&amp;feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/MUVHM3ly9Ns?start=0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;script type="application/javascript"&gt;
   var page_map = create_map_track('Coldara');
@@ -19462,8 +20041,8 @@ Tre faggi, 580, Disdiroli, Selino
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-5083258251486619095</id>
-    <published>2019-06-28T22:16:00.003+02:00</published>
-    <updated>2020-08-10T17:12:59.735+02:00</updated>
+    <published>2019-06-28T22:16:00.007+02:00</published>
+    <updated>2025-03-23T21:28:47.537+01:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <category scheme="http://www.blogger.com/atom/ns#" term="Principianti"/>
     <category scheme="http://www.blogger.com/atom/ns#" term="S1"/>
@@ -19472,6 +20051,9 @@ Tre faggi, 580, Disdiroli, Selino
 Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-imagna.html"&gt;Valle Imagna&lt;/a&gt; dalla Forcella Alta, per la mulattiera 573, fino a Selino.
 &lt;/p&gt;
 &lt;div id="info_header"&gt;&lt;/div&gt;
+&lt;p&gt;
+&lt;span class="nota"&gt;ATTENZIONE! Segnalata vegetazione e inagibilità nella parte alta della discesa (03/2025)&lt;/span&gt;
+&lt;/p&gt;  
 &lt;p&gt;
 Semplice mulattiera. Ben tenuta, con fondo abbastanza regolare. In qualche punto l'erosione rende la difficoltà S2, ma è quasi sempre abbastanza facile e &lt;span class="principianti"&gt;indicato per principianti&lt;/span&gt;.
 &lt;/p&gt;
@@ -20469,8 +21051,8 @@ Il sentiero è esposto a sud e si asciuga in fretta. Non ci sono fonti d'acqua l
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-428345048942123246</id>
-    <published>2019-04-19T21:10:00.002+02:00</published>
-    <updated>2020-06-10T19:04:18.133+02:00</updated>
+    <published>2019-04-19T21:10:00.006+02:00</published>
+    <updated>2025-06-04T19:40:16.085+02:00</updated>
     <category scheme="http://www.blogger.com/atom/ns#" term="S2"/>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <category scheme="http://www.blogger.com/atom/ns#" term="AsciugaInFretta"/>
@@ -20480,87 +21062,98 @@ Il sentiero è esposto a sud e si asciuga in fretta. Non ci sono fonti d'acqua l
     <content type="html">&lt;p&gt;
 Discese in &lt;a href="http://www.mtbbergamo.it/p/valle-seriana.html"&gt;Valle Seriana&lt;/a&gt; che partono da Lonno.
 &lt;/p&gt;
+
 &lt;div id="info_header"&gt;&lt;/div&gt;
+
 &lt;p&gt;
-Lonno è una frazione del comune di Nembro, di circa 400 abitanti a 700 metri di quota.
-Si trova su una terrazza naturale che gli permette di godere di un ottima vista panoramica della Valle Seriana.
+Lonno è una frazione del comune di Nembro, con circa 400 abitanti a 700 metri di quota.
+Si trova su una terrazza naturale che gli permette di godere di un'ottima vista panoramica sulla Valle Seriana.
 &lt;/p&gt;
+
 &lt;p&gt;
 Lonno si può raggiungere dalla salita Nembro-Selvino, seguendo le indicazioni stradali. C'è però una seconda salita da Alzano Lombardo, completamente asfaltata e chiusa al traffico. Presenta un breve tratto al 17%, ma è decisamente consigliata per evitare il traffico automobilistico.
 &lt;/p&gt;
+
 &lt;p&gt;
 Davanti alla chiesa, nella piazza, c'è una fontanella.
 &lt;/p&gt;
+
 &lt;p&gt;
-Da Lonno partono varie discese che terminano tutte sul fondo valle tra Alzano e Nembro.
+Da Lonno partono varie discese che terminano tutte sul fondovalle tra Alzano e Nembro.
 &lt;/p&gt;
 
-&lt;div id="Lonno" class="mapbox"&gt;
-&lt;/div&gt;
+&lt;div id="Lonno" class="mapbox"&gt;&lt;/div&gt;
 
 &lt;div class="videotitle"&gt;
 Percorso Vita, Valbona
 &lt;/div&gt;
 &lt;div class="videobox"&gt;
-&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/f5jD-1GifZc?feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/f5jD-1GifZc?feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
+
 &lt;p&gt;
-Il &lt;b&gt;Percorso Vita&lt;/b&gt; è una semplice discesa che parte dalla piazza di Lonno, ed inizialmente segue il selciato S0 della vecchia mulattiera che porta al santuario della Madonna dello Zuccarello.
-L'unica difficoltà è una breve &lt;a href="https://www.youtube.com/watch?v=f5jD-1GifZc&amp;start=108"&gt;scalinata di pietra&lt;/a&gt; che è meglio fare a piedi se bagnata.
-A circa meta della mulattiera si svolta a destra, seguendo le indicazioni del percorso vita, dove inizia un sentiero flow S1 che porta in località Valbona di Nembro. Con la Ciclovia delle Rogge si rientra a Bergamo.
-Fate attenzione che sia la mulattiera che il percorso vita possono essere molto frequentati da escursionisti, specialmente nei giorni festivi.
+Il &lt;b&gt;Percorso Vita&lt;/b&gt; è una semplice discesa che parte dalla piazza di Lonno e inizialmente segue il selciato S0 della vecchia mulattiera che porta al santuario della Madonna dello Zuccarello.
+L'unica difficoltà è una breve &lt;a href="https://www.youtube.com/watch?v=f5jD-1GifZc&amp;start=108"&gt;scalinata di pietra&lt;/a&gt;, che è meglio fare a piedi se bagnata.
+A circa metà della mulattiera si svolta a destra, seguendo le indicazioni del Percorso Vita, dove inizia un sentiero flow S1 che porta in località Valbona di Nembro. Con la Ciclovia delle Rogge si rientra a Bergamo.
+Fate attenzione: sia la mulattiera che il Percorso Vita possono essere molto frequentati da escursionisti, specialmente nei giorni festivi.
 &lt;/p&gt;
+
 &lt;p&gt;
-E' una discesa che asciuga in fretta ed è particolarmente &lt;span class="principianti"&gt;indicata per principianti&lt;/span&gt;.
+È una discesa che asciuga in fretta ed è particolarmente &lt;span class="principianti"&gt;indicata per principianti&lt;/span&gt;.
 &lt;/p&gt;
 
 &lt;div class="videotitle"&gt;
 Colle Bastia, Percorso Vita, Viana
 &lt;/div&gt;
 &lt;div class="videobox"&gt;
-&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/g0LEWHodjhE?feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/g0LEWHodjhE?feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;
-La &lt;b&gt;Colle Bastia, Percorso Vita, Viana&lt;/b&gt; aggiunge la brevissima salita al colle Bastia, si ricongiunge al Percorso Vita con ripido tratto S2, ma devia a destra con una variante prima S1 e poi S2 che porta in località Viana.
+La &lt;b&gt;Colle Bastia, Percorso Vita, Viana&lt;/b&gt; aggiunge la brevissima salita al Colle Bastia, si ricongiunge al Percorso Vita con un ripido tratto S2, ma devia a destra con una variante prima S1 e poi S2 che porta in località Viana.
 &lt;/p&gt;
 
 &lt;div class="videotitle"&gt;
 Percorso Vita, Luio
 &lt;/div&gt;
 &lt;div class="videobox"&gt;
-&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/zqDEIGjXOEE?feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/zqDEIGjXOEE?feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;
-La &lt;b&gt;Percorso Vita, Luio&lt;/b&gt; è una ulteriore variante, che dopo il tratto in selciato, appena inizia il sentiero del Percorso Vita, svolta a destra, con sezioni tecniche S2. Termina in Val del Luio seguendo parallelo la strada lungo una sterrata, e termina in località Viana.
+La &lt;b&gt;Percorso Vita, Luio&lt;/b&gt; è un'ulteriore variante, che dopo il tratto in selciato, appena inizia il sentiero del Percorso Vita, svolta a destra, con sezioni tecniche S2. Termina in Val del Luio, seguendo parallelamente la strada lungo una sterrata, e termina in località Viana.
 &lt;/p&gt;
 
 &lt;div class="videotitle"&gt;
 Valle del Luio
 &lt;/div&gt;
 &lt;div class="videobox"&gt;
-&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/KKPE9V9359k?feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/KKPE9V9359k?feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;
-La &lt;b&gt;Valle del Luio&lt;/b&gt; è una discesa S1, inizialmente su cemento, ma che presto diventa un bel sentiero scorrevole con alcuni passaggi tecnici S2.
-Quando si incontra la cementata, alla prima curva a destra assicurarsi di proseguire dritto per prendere la continuazione del sentiero.
-Nell'ultimo tratto la sterrata non è evitabile.
+La &lt;b&gt;Valle del Luio&lt;/b&gt; è una discesa S1, inizialmente su cemento, che presto diventa un bel sentiero scorrevole con alcuni passaggi tecnici S2.
+Quando si incontra la cementata, alla prima curva a destra, assicurarsi di proseguire dritto per prendere la continuazione del sentiero.
+Nell'ultimo tratto, la sterrata non è evitabile.
 &lt;/p&gt;
 
 &lt;div class="videotitle"&gt;
 Pizzo di Lonno, Monte Ganda
 &lt;/div&gt;
 &lt;div class="videobox"&gt;
-&lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/dcMU8T_KBJA?feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe class="framebox YOUTUBE-iframe-video" frameborder="0" src="https://www.youtube.com/embed/Ujt8z9qmINo?feature=player_embedded" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;
-Il &lt;b&gt;Pizzo di Lonno, Monte Ganda&lt;/b&gt; è un percorso vario, che include tratti in salita, in costa, ed una bella discesa tecnica S2. Da Lonno occorre uno sforzo ulteriore per salire fino alla vetta del Pizzo di Lonno, dove inizia un ripido e selvatico sentiero S2. Meglio andare con maniche lunghe per evitare graffi! Questo tratto è evitabile seguendo il sentiero più basso che immette alla fine della discesa ripida.
-Da qui si prosegue con un tratto in saliscendi in costa con alcuni passaggi tecnici, fino ad una radura con un capanno, dove con una breve risalita si giunge alla vetta del Monte Ganda.
-Qui inizia una bella discesa S2 di soddisfazione che incrocia la strada in asfalto che sale da Alzano. Fino all'incrocio con la strada la discesa è più tecnica, dopo diventa più flow, con una slalom veloce tra alberi. Fate attenzione che ci sono passaggi a larghezza manubrio.
-Sul finire ci sono alcuni tratti in costa, con qualche punto esposto, fino ad Alzano.
+Il &lt;b&gt;Pizzo di Lonno, Monte Ganda, Sentiero delle Corne&lt;/b&gt; è un percorso vario, che include tratti veloci, salite su sentiero e tratti tecnici di difficoltà S2 e S3. Da Lonno è necessario uno sforzo ulteriore per salire fino alla vetta del Pizzo di Lonno. Si ridiscende dallo stesso versante della salita ma, giunti alle prime case, si prende un sentiero in costa che, con qualche passaggio a piedi, conduce a una radura con un capanno. Da qui, con una breve risalita, si raggiunge la vetta del &lt;i&gt;Monte Ganda&lt;/i&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Qui inizia una bella discesa tecnica (S3), molto soddisfacente, che incrocia la strada asfaltata che sale da &lt;i&gt;Alzano Lombardo&lt;/i&gt;. Si scende per pochi metri lungo la strada, fino a imboccare sulla sinistra il &lt;i&gt;Sentiero delle Corne&lt;/i&gt;, un bel tratto di difficoltà S2 che conduce fino ad &lt;i&gt;Alzano Sopra&lt;/i&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Attenzione: a un certo punto c’è una brusca svolta a destra (segnalata da un cartello), che permette di evitare una parte del sentiero bloccata da piante. Volendo, si può comunque passare.
 &lt;/p&gt;
 
 &lt;script type="application/javascript"&gt;
@@ -21516,8 +22109,8 @@ E' esposto a Sud, ma un poco infossato nella valle, richiede un po' di tempo per
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.post-9142085705499638953</id>
-    <published>2019-03-02T21:33:00.011+01:00</published>
-    <updated>2022-08-27T11:41:06.066+02:00</updated>
+    <published>2019-03-02T21:33:00.017+01:00</published>
+    <updated>2025-04-07T15:37:04.895+02:00</updated>
     <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#post"/>
     <category scheme="http://www.blogger.com/atom/ns#" term="S3"/>
     <title type="text">Valcava, Zuccherone, Coldara, Colle Pedrino, Opreno, Burligo</title>
@@ -21526,33 +22119,36 @@ Discesa in &lt;a href="http://www.mtbbergamo.it/p/valle-san-martino.html"&gt;Val
 &lt;/p&gt;
 &lt;div id="info_header"&gt;&lt;/div&gt;
 &lt;p&gt;
-Sentiero nella prima parte ripido per prati e boschi, al limite del Freeride, e con difficoltà tecniche fino a &lt;i&gt;Coldara&lt;/i&gt;. Poi facili mulattiere.
+Sentiero nella prima parte ripido S3 per prati e boschi, al limite del freeride, e con difficoltà tecniche fino a &lt;i&gt;Coldara&lt;/i&gt;. Poi facili mulattiere.
 &lt;/p&gt;
 &lt;p&gt;
-Si parte dalle &lt;i&gt;antenne di Valcava&lt;/i&gt;, scendendo per il prato sotto le antenne ed immettendosi nel bosco. Questo è un tratto freeride, ma S1, senza sentiero da seguire fino ad incrociare la sterrata in costa.
-Tagliare la sterrata e continuare per prati e mulattiere rimanendo sul crinale fino alla zona di &lt;i&gt;Decollo Valcava&lt;/i&gt; da dove partono i parapendi.
+Si parte dalle &lt;i&gt;antenne di Valcava&lt;/i&gt;, scendendo per il prato sotto le antenne e immettendosi nel bosco. Questo è un tratto freeride, ma di difficoltà S1, senza sentiero da seguire fino a incrociare la sterrata in costa.
 &lt;/p&gt;
 &lt;p&gt;
-La discesa prosegue seguendo i prati del crinale dello Zuccherone seguendo un vecchio sentiero quasi abbandonato, ma con ancora una traccia visibile. Saranno necessari un paio di passaggi a piedi, e di ricerca del sentiero nel caso lo si perda. La direzione da tenere è sempre Ovest lungo il crinale verso &lt;i&gt;Coldara&lt;/i&gt;. Una navigatore GPS è necessario per seguire la traccia.
-La pendenza è a tratti elevata e non mancano le difficoltà tecniche di livello S3.
+Si attraversa la sterrata e si prosegue lungo la mulattiera fino a raggiungere la zona di &lt;i&gt;Decollo Valcava&lt;/i&gt;, da dove partono i parapendii. Nel 2025 è presente una rete metallica all'altezza del parchetto, che impedisce di seguire il crinale. Si può però passare dalla &lt;i&gt;Funivia&lt;/i&gt;, come indicato nella traccia (quando è stato registrato il video, la rete non era ancora presente).
 &lt;/p&gt;
 &lt;p&gt;
-Arrivati a &lt;i&gt;Coldara&lt;/i&gt; è possibile mangiare all' ottimo &lt;a href="https://www.facebook.com/agriturismocoldara/"&gt;Agriturismo Coldara&lt;/a&gt;.
+La discesa prosegue seguendo i prati del crinale dello Zuccherone, lungo un vecchio sentiero che presenta ancora una traccia visibile e segnalata. Saranno necessari un paio di passaggi a piedi e un po' di attenzione per ritrovare il percorso in caso lo si perda. La direzione da mantenere è sempre verso Ovest, lungo il crinale in direzione &lt;i&gt;Coldara&lt;/i&gt;. È necessario un navigatore GPS per seguire la traccia.
+La pendenza è a tratti elevata e non mancano difficoltà tecniche di livello S3.
 &lt;/p&gt;
 &lt;p&gt;
-Si riparte dall' agriturismo in direzione &lt;i&gt;Colle Pedrino&lt;/i&gt;, con un breve tratto dove si dovrà scendere qualche volta dalla bici per superare qualche sasso.
-Subito dopo l'incrocio con il torrente incomincia un veloce tratto in leggera discesa verso &lt;i&gt;Colle Pedrino&lt;/i&gt;. Prima di giungere al paese si prende una variante che scende a destra, che evita di ricongiungersi con la strada della Cava, e ci porta direttamente all'inizio della mulattiera che arriva fino ad &lt;i&gt;Opreno&lt;/i&gt;. Un poco scassa forcelle, ma con dei bei tratti godibili, e abbastanza facile anche se rimangono difficoltà di livello S2.
+Arrivati a &lt;i&gt;Coldara&lt;/i&gt;, è possibile mangiare all’ottimo &lt;a href="https://www.agriturismocostadelcoldara.it/"&gt;Agriturismo Coldara&lt;/a&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-Ad &lt;i&gt;Opreno&lt;/i&gt; si svolta a sinistra e si procede verso la &lt;i&gt;Forcella di Burligo&lt;/i&gt; con una facile sterrata, prima in leggera discesa, e sul finire con qualche rampa in salita.
-Dalla forcella si prende subito sulla destra in discesa un breve sentiero che ci porta nell'abitato di &lt;i&gt;Burligo&lt;/i&gt;.
+Si riparte dall’agriturismo in direzione &lt;i&gt;Colle Pedrino&lt;/i&gt;, con un breve tratto in cui potrebbe essere necessario scendere dalla bici per superare alcuni sassi. 
+Subito dopo l’incrocio con il torrente inizia un veloce tratto in leggera discesa verso &lt;i&gt;Colle Pedrino&lt;/i&gt;. Prima di giungere al paese, si prende una variante che scende a destra, evitando di ricongiungersi con la strada della Cava e portando direttamente all’inizio della mulattiera che conduce fino a &lt;i&gt;Opreno&lt;/i&gt;. Un po’ scassa forcelle, ma con bei tratti godibili e relativamente facile, anche se con difficoltà di livello S2.
 &lt;/p&gt;
 &lt;p&gt;
-Nelle discesa non ci sono fonti d'acqua.
+A &lt;i&gt;Opreno&lt;/i&gt; si svolta a sinistra e si procede verso la &lt;i&gt;Forcella di Burligo&lt;/i&gt;, su una facile sterrata, inizialmente in leggera discesa e con qualche rampa in salita verso la fine.
+Dalla forcella si prende subito a destra, in discesa, un breve sentiero che conduce all’abitato di &lt;i&gt;Burligo&lt;/i&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-Il Sabato e la Domenica si può salire dalla Cava (meglio evitare i giorni lavorativi, potrebbero fare storie), parcheggiando direttamente a &lt;i&gt;Burligo&lt;/i&gt;. Sotto la chiesa c'è un ampio parcheggio.
+Nella discesa non ci sono fonti d’acqua.
 &lt;/p&gt;
+&lt;p&gt;
+Il sabato e la domenica si può salire dalla Cava (meglio evitare i giorni feriali, potrebbero esserci restrizioni), parcheggiando direttamente a &lt;i&gt;Burligo&lt;/i&gt;. Sotto la chiesa c’è un ampio parcheggio.
+&lt;/p&gt;
+
 &lt;p&gt;
 A &lt;a href="http://www.mtbbergamo.it/2019/04/colle-pedrino.html"&gt;Colle Pedrino&lt;/a&gt; si può prendere una delle molti varianti della discesa per fare sempre qualcosa di nuovo.
 &lt;/p&gt;
@@ -24003,6 +24599,228 @@ Non ha una ciclabilità del 100% per uno stretto passaggio tra due rocce dove oc
     <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://i.ytimg.com/vi/a_wrq1OxN30/default.jpg" height="72" width="72"/>
   </entry>
   <entry>
+    <id>tag:blogger.com,1999:blog-1188434606630302835.page-2866154159970207372</id>
+    <published>2022-12-28T08:39:00.000+01:00</published>
+    <updated>2025-06-09T17:56:47.767+02:00</updated>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
+    <title type="text">Divieti per biciclette nella Bergamasca</title>
+    <content type="html">&lt;p&gt;
+La circolazione delle biciclette sui sentieri della Bergamasca è regolata dal &lt;a href="https://normelombardia.consiglio.regione.lombardia.it/NormeLombardia/Accessibile/main.aspx?view=showdoc&amp;selnode=0&amp;iddoc=rr002017072800003" target="_blank"&gt;Regolamento Regionale del 28 luglio 2017, n. 3&lt;/a&gt;. Tale regolamento afferma che:
+&lt;/p&gt;
+
+&lt;pre&gt;
+La fruizione dei percorsi inseriti nella REL (Rete Escursionistica Lombarda)
+è consentita a piedi, in bicicletta, anche a pedalata assistita ad
+alimentazione elettrica, a cavallo o a dorso di altri animali da sella e
+da soma e con mezzi non motorizzati, fatte salve specifiche prescrizioni
+più restrittive di utilizzo disposte dagli enti territorialmente competenti.
+&lt;/pre&gt;
+
+&lt;p&gt;
+È quindi possibile percorrere in bicicletta i sentieri della REL, a meno che non sia presente un divieto esplicito, segnalato da un apposito cartello di divieto di transito per biciclette posto dal comune o altro ente ufficiale.
+&lt;/p&gt;
+
+&lt;p&gt; 
+Per sapere quali sentieri fanno parte della REL, è possibile consultare la &lt;a href="https://www.cartografia.servizirl.it/rel/" target="_blank"&gt;cartografia online&lt;/a&gt;. In generale, ne fanno parte tutti i principali sentieri, inclusi quelli CAI.  
+Per gli altri sentieri, se sono demaniali, si può supporre che valga lo stesso regolamento della REL. Per quelli non demaniali, decide il proprietario.
+&lt;/p&gt;
+
+&lt;div class="separator" style="clear: both;"&gt;&lt;a href="https://upload.wikimedia.org/wikipedia/commons/a/af/20200518-pista_dh_variante-6.jpg" style="display: block; padding: 1em 1em; text-align: center; clear: right; float: right;"&gt;&lt;img alt="" border="0" width="320" data-original-height="600" data-original-width="800" src="https://upload.wikimedia.org/wikipedia/commons/a/af/20200518-pista_dh_variante-6.jpg"/&gt;&lt;/a&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+Quello che segue è l'elenco dei divieti per biciclette nella Bergamasca, emessi dai relativi Comuni. Questa è invece una &lt;a href="https://overpass-turbo.eu/s/1ptA" target="_blank"&gt;query Overpass Turbo dei sentieri vietati nella Bergamasca&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p style="color:red"&gt;  
+Se sei a conoscenza di altri divieti, puoi avvisarmi scrivendo a &lt;b&gt;mtbbergamo@gmail.com&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;h3&gt;Maresana, Sentiero 533 (dalla Croce dei Morti a località Maresana)&lt;/h3&gt;
+
+&lt;p&gt;
+Il primo sentiero vietato alle MTB nella Bergamasca, dal 2016.
+&lt;/p&gt;  
+
+&lt;p&gt;
+&lt;!--  
+  http://www.orobievive.net/44_parcocolli/2016/maresana%20stop%20mountain%20bike%2010%20giugno%202016.pdf
+--&gt;
+L'Eco di Bergamo, &lt;a href="https://drive.google.com/file/d/1i15did3NaDBOdA178pLqe0snh1qXof-U/view?usp=drive_link"&gt;Maresana assediata dalle Mountain Bike. Ora arrivano i divieti&lt;/a&gt;, 10/6/2016
+&lt;br/&gt;
+L'Eco di Bergamo, &lt;a href="https://www.ecodibergamo.it/stories/Hinterland/maresana-assedio-di-mountain-bikerischio-incidenti-scattano-i-divieti_1187027_11/"&gt;Maresana, assedio di mountain bike «Rischio incidenti». Scattano i divieti&lt;/a&gt;, 10/6/2016
+&lt;!--  
+https://www.ecodibergamo.it/stories/Hinterland/maresana-assedio-di-mountain-bikerischio-incidenti-scattano-i-divieti_1187027_11/
+https://archive.ph/3DvD4
+https://web.archive.org/web/20221208211024/https://www.ecodibergamo.it/stories/Hinterland/maresana-assedio-di-mountain-bikerischio-incidenti-scattano-i-divieti_1187027_11/
+--&gt;
+&lt;br/&gt;  
+L'Eco di Bergamo, &lt;a href="https://www.ecodibergamo.it/stories/bergamo-citta/maresana-invasa-dalle-mountain-bikeproblema-di-sicurezza-sui-sentieri_1176898_11/"&gt;Maresana invasa dalle mountain bike «Problema di sicurezza sui sentieri»&lt;/a&gt;, 12/4/2016
+&lt;!--
+https://www.ecodibergamo.it/stories/bergamo-citta/maresana-invasa-dalle-mountain-bikeproblema-di-sicurezza-sui-sentieri_1176898_11/
+https://archive.is/pYBKC
+https://web.archive.org/web/20170527153855/https://www.ecodibergamo.it/stories/bergamo-citta/maresana-invasa-dalle-mountain-bikeproblema-di-sicurezza-sui-sentieri_1176898_11/
+--&gt;
+&lt;br/&gt;
+Comune di Ponteranica, &lt;a href="https://drive.google.com/file/d/1W5cRovAjJQ3pTSAPopeSlioJn7nXY5aR/view?usp=sharing"&gt;Ordinanza Nr. 23/16 Reg. Ord. P.L., 27/16 Reg. Gen. del 20/5/2016&lt;/a&gt;
+&lt;br/&gt;
+Vedi cartello ad &lt;a href="https://commons.wikimedia.org/wiki/File:20200518-pista_dh_variante-6.jpg"&gt;inizio sentiero&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="https://overpass-turbo.eu/s/1ptO"&gt;Mostra sentieri vietati&lt;/a&gt;
+&lt;/p&gt;  
+
+&lt;h3&gt;Mulattiera Albino-Selvino, Sentieri 550, 550A&lt;/h3&gt;
+
+&lt;p&gt;
+Il Giorno, &lt;a href="https://www.ilgiorno.it/bergamo/cronaca/la-mulattiera-selvino-albino-interdetta-a-bici-e-motocross-241eee7f"&gt;La mulattiera Selvino-Albino interdetta a bici e motocross&lt;/a&gt;, 22/7/2021
+&lt;!--
+https://www.ilgiorno.it/bergamo/cronaca/la-mulattiera-selvino-albino-interdetta-a-bici-e-motocross-241eee7f
+https://archive.ph/Tqkcc
+https://web.archive.org/web/20231214185726/https://www.ilgiorno.it/bergamo/cronaca/la-mulattiera-selvino-albino-interdetta-a-bici-e-motocross-241eee7f
+  --&gt;
+&lt;br/&gt;
+Comune di Selvino, &lt;a href="https://comunediselvino.it/notizie/479381/divieto-transito-mountain-bike-ed-motoveicoli"&gt;DIVIETO DI TRANSITO ALLE MOUNTAIN BIKE ED AI MOTOVEICOLI MOTOCROSS LUNGO LA MULATTIERA SELVINO-ALBINO&lt;/a&gt;, 12/7/2021
+&lt;br/&gt;
+Comune di Selvino, &lt;a href="https://bussola.s3.eu-west-1.amazonaws.com/883263/%7B659D41C5-4850-4449-8B16-AC3EE58E2C4A%7D.pdf"&gt;Ordinanza Nr. 17 del 7/7/2021&lt;/a&gt;
+&lt;br/&gt;
+Comune di Albino,  &lt;a href="https://albino.trasparenza-valutazione-merito.it/web/trasparenza/papca-ap?p_p_id=jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet&amp;p_p_lifecycle=2&amp;p_p_state=pop_up&amp;p_p_mode=view&amp;p_p_resource_id=downloadAllegato&amp;p_p_cacheability=cacheLevelPage&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_downloadSigned=true&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_id=11093847&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_action=mostraDettaglio&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_fromAction=recuperaDettaglio"&gt; Ordinanza Nr. 44 del 18/5/2021&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="https://overpass-turbo.eu/s/1ptM"&gt;Mostra sentieri vietati&lt;/a&gt;
+&lt;/p&gt;  
+
+&lt;h3&gt;Mulattiera Vall'Alta-Monte Altino, Sentiero 512&lt;/h3&gt;
+
+&lt;p&gt;
+Comune di Albino,  &lt;a href="https://albino.trasparenza-valutazione-merito.it/web/trasparenza/papca-ap?p_p_id=jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet&amp;p_p_lifecycle=2&amp;p_p_state=pop_up&amp;p_p_mode=view&amp;p_p_resource_id=downloadAllegato&amp;p_p_cacheability=cacheLevelPage&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_downloadSigned=false&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_id=17049782&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_action=mostraDettaglio&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_fromAction=recuperaDettaglio"&gt; Ordinanza Nr. 112 del 12/11/2024&lt;/a&gt;
+&lt;br/&gt;
+Vedi cartello ad &lt;a href="https://commons.wikimedia.org/wiki/File:20241231-altino_explo-026.jpg"&gt;inizio sentiero&lt;/a&gt;  
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="https://overpass-turbo.eu/s/1WOj"&gt;Mostra sentieri vietati&lt;/a&gt;
+&lt;/p&gt;  
+
+&lt;h3&gt;Capizzone, Tutti i sentieri comunali&lt;/h3&gt;
+
+&lt;p&gt;
+Comune di Capizzone, &lt;a href="https://www.comune.capizzone.bg.it/mc/mc_attachment.php?mc=2961"&gt;Ordinanza 2366 del 20/6/2017&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Nonostante l'ordinanza non c'è un solo cartello di divieto in tutto il Comune, non è quindi chiaro dove ci siano criticità.
+&lt;/p&gt;  
+
+&lt;h3&gt;Monte Farno, Sentieri 545, 549, 549A&lt;/h3&gt;
+
+&lt;p&gt;
+Comune di Gandino, &lt;a href="https://www.comune.gandino.bg.it/it/news/circolazione-delle-biciclette-sui-sentieri-montani-ordinanza"&gt;Circolazione delle biciclette sui sentieri montani&lt;/a&gt;
+&lt;br/&gt;
+Comune di Gandino, &lt;a href="https://gandino.trasparenza-valutazione-merito.it/web/trasparenza/papca-ap?p_p_id=jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet&amp;p_p_lifecycle=2&amp;p_p_state=pop_up&amp;p_p_mode=view&amp;p_p_resource_id=downloadAllegato&amp;p_p_cacheability=cacheLevelPage&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_downloadSigned=false&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_id=13077963&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_action=mostraDettaglio&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_fromAction=recuperaDettaglio"&gt;Ordinanza Nr. 23 del 22/7/2022&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;!--
+https://archive.ph/RrG9r
+--&gt;
+
+&lt;p&gt;
+Sul 545 ci sono cartelli di divieto. Sul 549 e 549A a Giugno 2025 non ci sono cartelli di divieto.
+&lt;p&gt;
+
+&lt;p&gt;
+&lt;a href="https://overpass-turbo.eu/s/1ptL"&gt;Mostra sentieri vietati&lt;/a&gt;
+&lt;/p&gt;  
+
+&lt;h3&gt;Val Brembilla, &lt;strike&gt;Tutti i sentieri comunali&lt;/strike&gt; Divieto Annullato&lt;/h3&gt;
+
+&lt;p&gt;
+Sul sentiero &lt;b&gt;592B&lt;/b&gt; ci sono da Luglio 2023 alcuni cartelli di divieto. Questi in località &lt;a href="https://www.google.com/maps/@45.8240665,9.6121566,3a,88.5y,335.25h,82.02t/data=!3m6!1e1!3m4!1swl73pzESj1UsUGegTeE8Mw!2e0!7i16384!8i8192?entry=ttu"&gt;Cà Donzelli&lt;/a&gt;, e &lt;a href="https://www.google.com/maps/@45.823819,9.6084124,3a,75y,43.34h,78.52t/data=!3m6!1e1!3m4!1s2ZkC1-h_uA0ZBt7lCo84OA!2e0!7i16384!8i8192?entry=ttu"&gt;Cerro Foppa&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+A Febbraio 2024 il comune ha ritirato l'ordinanza &lt;a href="https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/con-le-bike-sulle-mulattiere-brembilla-fa-dietrofront-via-il-divieto-ma-si-pedali-con-prudenza/"&gt;Con le bike sulle mulattiere, Brembilla fa dietrofront: via il divieto ma si pedali con “prudenza”&lt;/a&gt;. Ma al momento (Luglio 2024) alcuni cartelli di divieto ci sono ancora.
+&lt;/p&gt;  
+
+&lt;p&gt;
+Da guardare l'intervista a &lt;a href="https://www.orobie.it/articolo/2024/06/biker-ed-escursionisti-sentieri-da-condividere/49757/"&gt;Marcello Carminati, nuovo sindaco di Val Brembilla, Giovanni Battista Stefanoni, Presidente del Cai Alta Valle Brembana, Claudio Locatelli, Presidente delle Guide Mtb Val Brembana&lt;/a&gt;.
+&lt;/p&gt;
+&lt;!--
+https://www.youtube.com/watch?v=wQ_TuvsrSyY?start=0
+--&gt;
+
+&lt;p&gt;
+Comune di Val Brembilla, &lt;a href="https://valbrembilla.trasparenza-valutazione-merito.it/web/trasparenza/papca-ap/-/papca/display/2850092"&gt;Ordinanza 00028/2023 del 02/08/2023&lt;/a&gt;
+&lt;br/&gt;
+Val Brembana Web, &lt;a href="https://www.valbrembanaweb.com/redazionale/in-evidenza/val-brembilla-vieta-le-bici-sulle-mulattiere-protestano-le-guide-mtb-decisione-contro-il-turismo/"&gt;Val Brembilla vieta le bici sulle mulattiere. Protestano le Guide Mtb: decisione contro il turismo&lt;/a&gt;, 3/12/2023
+&lt;!--
+https://www.valbrembanaweb.com/redazionale/in-evidenza/val-brembilla-vieta-le-bici-sulle-mulattiere-protestano-le-guide-mtb-decisione-contro-il-turismo/
+https://web.archive.org/web/20240228222712/https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/val-brembilla-vieta-le-bici-sulle-mulattiere-protestano-le-guide-mtb-decisione-contro-il-turismo/
+--&gt;
+&lt;br/&gt;
+L'Eco di Bergamo, &lt;a href="https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-vieta-bici-sulle-mulattiere-rischio-pedoni-i-ciclisti-o_1857251_11/"&gt;Val Brembilla vieta le bici sulle mulattiere: «Rischio per i pedoni». I ciclisti: assurdo&lt;/a&gt;, 3/12/2023
+&lt;!--
+https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-vieta-bici-sulle-mulattiere-rischio-pedoni-i-ciclisti-o_1857251_11/
+https://archive.ph/nU3ck
+https://web.archive.org/web/20231204094637/https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-vieta-bici-sulle-mulattiere-rischio-pedoni-i-ciclisti-o_1857251_11/
+--&gt;
+&lt;br/&gt;
+&lt;a href="https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/con-le-bike-sulle-mulattiere-brembilla-fa-dietrofront-via-il-divieto-ma-si-pedali-con-prudenza/"&gt;Con le bike sulle mulattiere, Brembilla fa dietrofront: via il divieto ma si pedali con “prudenza”&lt;/a&gt;, 27/02/2024
+  
+&lt;br/&gt;
+L'Eco di Bergamo, &lt;a href="https://www.ecodibergamo.it/stories/premium/Cronaca/bici-sui-sentieri-cai-no-divieti-assoluti-o_1873442_11/"&gt;Bici sui sentieri, il CAI: no a divieti assoluti&lt;/a&gt;, 10/12/2023
+&lt;!--
+https://www.ecodibergamo.it/stories/premium/Cronaca/bici-sui-sentieri-cai-no-divieti-assoluti-o_1873442_11/
+https://archive.ph/ZbTZ2
+https://web.archive.org/web/20231210132420/https://www.ecodibergamo.it/stories/premium/Cronaca/bici-sui-sentieri-cai-no-divieti-assoluti-o_1873442_11/
+https://scontent.fmxp4-1.fna.fbcdn.net/v/t39.30808-6/409492506_677529111168275_8994445943207110687_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=dd5e9f&amp;_nc_ohc=zTu7wDXHgEIAX_H8x9T&amp;_nc_ht=scontent.fmxp4-1.fna&amp;oh=00_AfDbJ7h59xTIlNIKrBJ5jXwgKvSa8esuIiHZuWfOWE2_dw&amp;oe=657BD0CC
+--&gt;
+&lt;br/&gt;
+L'Eco di Bergamo, &lt;a href="https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-biciclette-vietate-sui-sentieri-verso-modifica-dellordinanza-o_1882715_11/"&gt;Val Brembilla: biciclette vietate sui sentieri. Verso una modifica dell’ordinanza&lt;/a&gt;, 14/12/2023
+&lt;!--
+https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-biciclette-vietate-sui-sentieri-verso-modifica-dellordinanza-o_1882715_11/
+https://archive.ph/LdRr8
+https://web.archive.org/web/20231214182525/https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-biciclette-vietate-sui-sentieri-verso-modifica-dellordinanza-o_1882715_11/
+--&gt;
+&lt;br/&gt;
+Val Brembana Web, &lt;a href="https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/con-le-bike-sulle-mulattiere-brembilla-fa-dietrofront-via-il-divieto-ma-si-pedali-con-prudenza/"&gt;Con le bike sulle mulattiere, Brembilla fa dietrofront: via il divieto ma si pedali con “prudenza”&lt;/a&gt;, 27/02/2024
+&lt;!--
+https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/con-le-bike-sulle-mulattiere-brembilla-fa-dietrofront-via-il-divieto-ma-si-pedali-con-prudenza/
+https://web.archive.org/web/20240228222209/https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/con-le-bike-sulle-mulattiere-brembilla-fa-dietrofront-via-il-divieto-ma-si-pedali-con-prudenza/
+--&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="https://overpass-turbo.eu/s/1Evc"&gt;Mostra sentieri vietati&lt;/a&gt;
+&lt;/p&gt;  
+
+&lt;h3&gt;Altri&lt;/h3&gt;
+  
+&lt;p&gt;
+Nel comune di &lt;a href="https://overpass-turbo.eu/s/1ptP"&gt;Mozzo&lt;/a&gt;, al monte Gussa, il sentiero che collega Mozzo e Villa Bagnada è stato vietato alle bici nel 2021. Vedi cartelli ad &lt;a href="https://www.openstreetmap.org/node/8176707302"&gt;inizio&lt;/a&gt; e &lt;a href="https://www.openstreetmap.org/node/8176707296"&gt;fine&lt;/a&gt; sentiero.
+&lt;br/&gt;
+  Nel comune di &lt;a href="https://overpass-turbo.eu/s/1ptQ"&gt;Bedulita&lt;/a&gt;, la mulattiera che porta alla Chiesa di San Michele è vietata alle bici.  
+&lt;br/&gt;
+Nel comune di &lt;a href="https://overpass-turbo.eu/s/1ptS"&gt;Strozza&lt;/a&gt;, praticamente tutti i sentieri nell'abitato hanno cartelli di divieto.
+&lt;br/&gt;
+Nel comune di &lt;a href="https://overpass-turbo.eu/s/1ptR"&gt;Blello&lt;/a&gt;, la mulattiera selciata che scende dal Municipio è vietata alle bici.
+&lt;br/&gt;
+Nel comune di &lt;a href="https://overpass-turbo.eu/s/1puy"&gt;Torre de' Busi&lt;/a&gt;, il tratto di mulattiera che arriva alla Chiesa di San Carlo è vietata alle bici.
+&lt;/p&gt;
+
+</content>
+    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/2866154159970207372"/>
+    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/2866154159970207372"/>
+    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/divieti.html" title="Divieti per biciclette nella Bergamasca"/>
+    <author>
+      <name>Andrea</name>
+      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
+      <email>noreply@blogger.com</email>
+      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
+    </author>
+  </entry>
+  <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.page-4801599335058919995</id>
     <published>2019-12-23T17:13:00.000+01:00</published>
     <updated>2025-02-27T15:21:29.660+01:00</updated>
@@ -24217,202 +25035,6 @@ https://www.youtube.com/watch?v=vqhatqpqILs
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
     </author>
     <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8KsIB_ZlLJLeWTM0Sba8oXrbziiJ0JMoNSXtNOSrTao-QGVp5YSqsxhNH4Og0qkea2MRf4VObyCNQE9mACvKl_TR94_Yc66NTF7z51KeKRi7KYljwLjA-_sdgwshJCzh7zav2Mz1JYpIM/s72-c/s0_1.jpg" height="72" width="72"/>
-  </entry>
-  <entry>
-    <id>tag:blogger.com,1999:blog-1188434606630302835.page-2866154159970207372</id>
-    <published>2022-12-28T08:39:00.000+01:00</published>
-    <updated>2025-02-27T11:11:19.801+01:00</updated>
-    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/blogger/2008/kind#page"/>
-    <title type="text">Divieti per biciclette nella Bergamasca</title>
-    <content type="html">&lt;div class="separator" style="clear: both;"&gt;&lt;a href="https://upload.wikimedia.org/wikipedia/commons/a/af/20200518-pista_dh_variante-6.jpg" style="display: block; padding: 1em 1em; text-align: center; clear: right; float: right;"&gt;&lt;img alt="" border="0" width="320" data-original-height="600" data-original-width="800" src="https://upload.wikimedia.org/wikipedia/commons/a/af/20200518-pista_dh_variante-6.jpg"/&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Elenco dei divieti per biciclette e MTB e nella Bergamasca. Per divieto si intende la presenza di un cartello stradale di divieto di transito per biciclette, o di una ordinanza comunale. 
-&lt;/p&gt;
-  
-&lt;p&gt;
-Questa è una &lt;a href="https://overpass-turbo.eu/s/1ptA"&gt;query overpassturbo dei sentieri vietati nella Bergamasca&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p style="color:red"&gt;  
-Se sei a conoscenza di altri divieti, puoi avvisarmi scrivendo a &lt;b&gt;mtbbergamo@gmail.com&lt;/b&gt;
-&lt;/p&gt;
-
-&lt;h3&gt;Maresana, Sentiero 533 (dalla Croce dei Morti a località Maresana)&lt;/h3&gt;
-
-&lt;p&gt;
-Il primo sentiero vietato alle MTB nella Bergamasca, dal 2016.
-&lt;/p&gt;  
-
-&lt;p&gt;
-&lt;!--  
-  http://www.orobievive.net/44_parcocolli/2016/maresana%20stop%20mountain%20bike%2010%20giugno%202016.pdf
---&gt;
-L'Eco di Bergamo, &lt;a href="https://drive.google.com/file/d/1i15did3NaDBOdA178pLqe0snh1qXof-U/view?usp=drive_link"&gt;Maresana assediata dalle Mountain Bike. Ora arrivano i divieti&lt;/a&gt;, 10/6/2016
-&lt;br/&gt;
-L'Eco di Bergamo, &lt;a href="https://www.ecodibergamo.it/stories/Hinterland/maresana-assedio-di-mountain-bikerischio-incidenti-scattano-i-divieti_1187027_11/"&gt;Maresana, assedio di mountain bike «Rischio incidenti». Scattano i divieti&lt;/a&gt;, 10/6/2016
-&lt;!--  
-https://www.ecodibergamo.it/stories/Hinterland/maresana-assedio-di-mountain-bikerischio-incidenti-scattano-i-divieti_1187027_11/
-https://archive.ph/3DvD4
-https://web.archive.org/web/20221208211024/https://www.ecodibergamo.it/stories/Hinterland/maresana-assedio-di-mountain-bikerischio-incidenti-scattano-i-divieti_1187027_11/
---&gt;
-&lt;br/&gt;  
-L'Eco di Bergamo, &lt;a href="https://www.ecodibergamo.it/stories/bergamo-citta/maresana-invasa-dalle-mountain-bikeproblema-di-sicurezza-sui-sentieri_1176898_11/"&gt;Maresana invasa dalle mountain bike «Problema di sicurezza sui sentieri»&lt;/a&gt;, 12/4/2016
-&lt;!--
-https://www.ecodibergamo.it/stories/bergamo-citta/maresana-invasa-dalle-mountain-bikeproblema-di-sicurezza-sui-sentieri_1176898_11/
-https://archive.is/pYBKC
-https://web.archive.org/web/20170527153855/https://www.ecodibergamo.it/stories/bergamo-citta/maresana-invasa-dalle-mountain-bikeproblema-di-sicurezza-sui-sentieri_1176898_11/
---&gt;
-&lt;br/&gt;
-Comune di Ponteranica, &lt;a href="https://drive.google.com/file/d/1W5cRovAjJQ3pTSAPopeSlioJn7nXY5aR/view?usp=sharing"&gt;Ordinanza Nr. 23/16 Reg. Ord. P.L., 27/16 Reg. Gen. del 20/5/2016&lt;/a&gt;
-&lt;br/&gt;
-Vedi cartello ad &lt;a href="https://commons.wikimedia.org/wiki/File:20200518-pista_dh_variante-6.jpg"&gt;inizio sentiero&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://overpass-turbo.eu/s/1ptO"&gt;Mostra sentieri vietati&lt;/a&gt;
-&lt;/p&gt;  
-
-&lt;h3&gt;Mulattiera Albino-Selvino, Sentieri 550, 550A&lt;/h3&gt;
-
-&lt;p&gt;
-Il Giorno, &lt;a href="https://www.ilgiorno.it/bergamo/cronaca/la-mulattiera-selvino-albino-interdetta-a-bici-e-motocross-241eee7f"&gt;La mulattiera Selvino-Albino interdetta a bici e motocross&lt;/a&gt;, 22/7/2021
-&lt;!--
-https://www.ilgiorno.it/bergamo/cronaca/la-mulattiera-selvino-albino-interdetta-a-bici-e-motocross-241eee7f
-https://archive.ph/Tqkcc
-https://web.archive.org/web/20231214185726/https://www.ilgiorno.it/bergamo/cronaca/la-mulattiera-selvino-albino-interdetta-a-bici-e-motocross-241eee7f
-  --&gt;
-&lt;br/&gt;
-Comune di Selvino, &lt;a href="https://comunediselvino.it/notizie/479381/divieto-transito-mountain-bike-ed-motoveicoli"&gt;DIVIETO DI TRANSITO ALLE MOUNTAIN BIKE ED AI MOTOVEICOLI MOTOCROSS LUNGO LA MULATTIERA SELVINO-ALBINO&lt;/a&gt;, 12/7/2021
-&lt;br/&gt;
-Comune di Selvino, &lt;a href="https://bussola.s3.eu-west-1.amazonaws.com/883263/%7B659D41C5-4850-4449-8B16-AC3EE58E2C4A%7D.pdf"&gt;Ordinanza Nr. 17 del 7/7/2021&lt;/a&gt;
-&lt;br/&gt;
-Comune di Albino,  &lt;a href="https://albino.trasparenza-valutazione-merito.it/web/trasparenza/papca-ap?p_p_id=jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet&amp;p_p_lifecycle=2&amp;p_p_state=pop_up&amp;p_p_mode=view&amp;p_p_resource_id=downloadAllegato&amp;p_p_cacheability=cacheLevelPage&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_downloadSigned=true&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_id=11093847&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_action=mostraDettaglio&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_fromAction=recuperaDettaglio"&gt; Ordinanza Nr. 44 del 18/5/2021&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://overpass-turbo.eu/s/1ptM"&gt;Mostra sentieri vietati&lt;/a&gt;
-&lt;/p&gt;  
-
-&lt;h3&gt;Mulattiera Vall'Alta-Monte Altino, Sentiero 512&lt;/h3&gt;
-
-&lt;p&gt;
-Comune di Albino,  &lt;a href="https://albino.trasparenza-valutazione-merito.it/web/trasparenza/papca-ap?p_p_id=jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet&amp;p_p_lifecycle=2&amp;p_p_state=pop_up&amp;p_p_mode=view&amp;p_p_resource_id=downloadAllegato&amp;p_p_cacheability=cacheLevelPage&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_downloadSigned=false&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_id=17049782&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_action=mostraDettaglio&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_fromAction=recuperaDettaglio"&gt; Ordinanza Nr. 112 del 12/11/2024&lt;/a&gt;
-&lt;br/&gt;
-Vedi cartello ad &lt;a href="https://commons.wikimedia.org/wiki/File:20241231-altino_explo-026.jpg"&gt;inizio sentiero&lt;/a&gt;  
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://overpass-turbo.eu/s/1WOj"&gt;Mostra sentieri vietati&lt;/a&gt;
-&lt;/p&gt;  
-
-&lt;h3&gt;Capizzone, Tutti i sentieri comunali&lt;/h3&gt;
-
-&lt;p&gt;
-Comune di Capizzone, &lt;a href="https://www.comune.capizzone.bg.it/mc/mc_attachment.php?mc=2961"&gt;Ordinanza 2366 del 20/6/2017&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Nonostante l'ordinanza non c'è un solo cartello di divieto in tutto il Comune, non è quindi chiaro dove ci siano criticità.
-&lt;/p&gt;  
-
-&lt;h3&gt;Monte Farno, Sentieri 545, 549, 549A&lt;/h3&gt;
-
-&lt;p&gt;
-Comune di Gandino, &lt;a href="https://www.comune.gandino.bg.it/it/news/circolazione-delle-biciclette-sui-sentieri-montani-ordinanza"&gt;Circolazione delle biciclette sui sentieri montani&lt;/a&gt;
-&lt;br/&gt;
-Comune di Gandino, &lt;a href="https://gandino.trasparenza-valutazione-merito.it/web/trasparenza/papca-ap?p_p_id=jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet&amp;p_p_lifecycle=2&amp;p_p_state=pop_up&amp;p_p_mode=view&amp;p_p_resource_id=downloadAllegato&amp;p_p_cacheability=cacheLevelPage&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_downloadSigned=false&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_id=13077963&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_action=mostraDettaglio&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_fromAction=recuperaDettaglio"&gt;Ordinanza Nr. 23 del 22/7/2022&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://overpass-turbo.eu/s/1ptL"&gt;Mostra sentieri vietati&lt;/a&gt;
-&lt;/p&gt;  
-
-&lt;h3&gt;Val Brembilla, &lt;strike&gt;Tutti i sentieri comunali&lt;/strike&gt; Divieto Annullato&lt;/h3&gt;
-
-&lt;p&gt;
-Sul sentiero &lt;b&gt;592B&lt;/b&gt; ci sono da Luglio 2023 alcuni cartelli di divieto. Questi in località &lt;a href="https://www.google.com/maps/@45.8240665,9.6121566,3a,88.5y,335.25h,82.02t/data=!3m6!1e1!3m4!1swl73pzESj1UsUGegTeE8Mw!2e0!7i16384!8i8192?entry=ttu"&gt;Cà Donzelli&lt;/a&gt;, e &lt;a href="https://www.google.com/maps/@45.823819,9.6084124,3a,75y,43.34h,78.52t/data=!3m6!1e1!3m4!1s2ZkC1-h_uA0ZBt7lCo84OA!2e0!7i16384!8i8192?entry=ttu"&gt;Cerro Foppa&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-A Febbraio 2024 il comune ha ritirato l'ordinanza &lt;a href="https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/con-le-bike-sulle-mulattiere-brembilla-fa-dietrofront-via-il-divieto-ma-si-pedali-con-prudenza/"&gt;Con le bike sulle mulattiere, Brembilla fa dietrofront: via il divieto ma si pedali con “prudenza”&lt;/a&gt;. Ma al momento (Luglio 2024) alcuni cartelli di divieto ci sono ancora.
-&lt;/p&gt;  
-
-&lt;p&gt;
-Da guardare l'intervista a &lt;a href="https://www.orobie.it/articolo/2024/06/biker-ed-escursionisti-sentieri-da-condividere/49757/"&gt;Marcello Carminati, nuovo sindaco di Val Brembilla, Giovanni Battista Stefanoni, Presidente del Cai Alta Valle Brembana, Claudio Locatelli, Presidente delle Guide Mtb Val Brembana&lt;/a&gt;.
-&lt;/p&gt;
-&lt;!--
-https://www.youtube.com/watch?v=wQ_TuvsrSyY?start=0
---&gt;
-
-&lt;p&gt;
-Comune di Val Brembilla, &lt;a href="https://valbrembilla.trasparenza-valutazione-merito.it/web/trasparenza/papca-ap/-/papca/display/2850092"&gt;Ordinanza 00028/2023 del 02/08/2023&lt;/a&gt;
-&lt;br/&gt;
-Val Brembana Web, &lt;a href="https://www.valbrembanaweb.com/redazionale/in-evidenza/val-brembilla-vieta-le-bici-sulle-mulattiere-protestano-le-guide-mtb-decisione-contro-il-turismo/"&gt;Val Brembilla vieta le bici sulle mulattiere. Protestano le Guide Mtb: decisione contro il turismo&lt;/a&gt;, 3/12/2023
-&lt;!--
-https://www.valbrembanaweb.com/redazionale/in-evidenza/val-brembilla-vieta-le-bici-sulle-mulattiere-protestano-le-guide-mtb-decisione-contro-il-turismo/
-https://web.archive.org/web/20240228222712/https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/val-brembilla-vieta-le-bici-sulle-mulattiere-protestano-le-guide-mtb-decisione-contro-il-turismo/
---&gt;
-&lt;br/&gt;
-L'Eco di Bergamo, &lt;a href="https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-vieta-bici-sulle-mulattiere-rischio-pedoni-i-ciclisti-o_1857251_11/"&gt;Val Brembilla vieta le bici sulle mulattiere: «Rischio per i pedoni». I ciclisti: assurdo&lt;/a&gt;, 3/12/2023
-&lt;!--
-https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-vieta-bici-sulle-mulattiere-rischio-pedoni-i-ciclisti-o_1857251_11/
-https://archive.ph/nU3ck
-https://web.archive.org/web/20231204094637/https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-vieta-bici-sulle-mulattiere-rischio-pedoni-i-ciclisti-o_1857251_11/
---&gt;
-&lt;br/&gt;
-&lt;a href="https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/con-le-bike-sulle-mulattiere-brembilla-fa-dietrofront-via-il-divieto-ma-si-pedali-con-prudenza/"&gt;Con le bike sulle mulattiere, Brembilla fa dietrofront: via il divieto ma si pedali con “prudenza”&lt;/a&gt;, 27/02/2024
-  
-&lt;br/&gt;
-L'Eco di Bergamo, &lt;a href="https://www.ecodibergamo.it/stories/premium/Cronaca/bici-sui-sentieri-cai-no-divieti-assoluti-o_1873442_11/"&gt;Bici sui sentieri, il CAI: no a divieti assoluti&lt;/a&gt;, 10/12/2023
-&lt;!--
-https://www.ecodibergamo.it/stories/premium/Cronaca/bici-sui-sentieri-cai-no-divieti-assoluti-o_1873442_11/
-https://archive.ph/ZbTZ2
-https://web.archive.org/web/20231210132420/https://www.ecodibergamo.it/stories/premium/Cronaca/bici-sui-sentieri-cai-no-divieti-assoluti-o_1873442_11/
-https://scontent.fmxp4-1.fna.fbcdn.net/v/t39.30808-6/409492506_677529111168275_8994445943207110687_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=dd5e9f&amp;_nc_ohc=zTu7wDXHgEIAX_H8x9T&amp;_nc_ht=scontent.fmxp4-1.fna&amp;oh=00_AfDbJ7h59xTIlNIKrBJ5jXwgKvSa8esuIiHZuWfOWE2_dw&amp;oe=657BD0CC
---&gt;
-&lt;br/&gt;
-L'Eco di Bergamo, &lt;a href="https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-biciclette-vietate-sui-sentieri-verso-modifica-dellordinanza-o_1882715_11/"&gt;Val Brembilla: biciclette vietate sui sentieri. Verso una modifica dell’ordinanza&lt;/a&gt;, 14/12/2023
-&lt;!--
-https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-biciclette-vietate-sui-sentieri-verso-modifica-dellordinanza-o_1882715_11/
-https://archive.ph/LdRr8
-https://web.archive.org/web/20231214182525/https://www.ecodibergamo.it/stories/premium/Cronaca/val-brembilla-biciclette-vietate-sui-sentieri-verso-modifica-dellordinanza-o_1882715_11/
---&gt;
-&lt;br/&gt;
-Val Brembana Web, &lt;a href="https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/con-le-bike-sulle-mulattiere-brembilla-fa-dietrofront-via-il-divieto-ma-si-pedali-con-prudenza/"&gt;Con le bike sulle mulattiere, Brembilla fa dietrofront: via il divieto ma si pedali con “prudenza”&lt;/a&gt;, 27/02/2024
-&lt;!--
-https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/con-le-bike-sulle-mulattiere-brembilla-fa-dietrofront-via-il-divieto-ma-si-pedali-con-prudenza/
-https://web.archive.org/web/20240228222209/https://www.valbrembanaweb.com/redazionale/notizie-dalla-val-brembana/con-le-bike-sulle-mulattiere-brembilla-fa-dietrofront-via-il-divieto-ma-si-pedali-con-prudenza/
---&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://overpass-turbo.eu/s/1Evc"&gt;Mostra sentieri vietati&lt;/a&gt;
-&lt;/p&gt;  
-
-&lt;h3&gt;Altri&lt;/h3&gt;
-  
-&lt;p&gt;
-Nel comune di &lt;a href="https://overpass-turbo.eu/s/1ptP"&gt;Mozzo&lt;/a&gt;, al monte Gussa, il sentiero che collega Mozzo e Villa Bagnada è stato vietato alle bici nel 2021. Vedi cartelli ad &lt;a href="https://www.openstreetmap.org/node/8176707302"&gt;inizio&lt;/a&gt; e &lt;a href="https://www.openstreetmap.org/node/8176707296"&gt;fine&lt;/a&gt; sentiero.
-&lt;br/&gt;
-  Nel comune di &lt;a href="https://overpass-turbo.eu/s/1ptQ"&gt;Bedulita&lt;/a&gt;, la mulattiera che porta alla Chiesa di San Michele è vietata alle bici.  
-&lt;br/&gt;
-Nel comune di &lt;a href="https://overpass-turbo.eu/s/1ptS"&gt;Strozza&lt;/a&gt;, praticamente tutti i sentieri nell'abitato hanno cartelli di divieto.
-&lt;br/&gt;
-Nel comune di &lt;a href="https://overpass-turbo.eu/s/1ptR"&gt;Blello&lt;/a&gt;, la mulattiera selciata che scende dal Municipio è vietata alle bici.
-&lt;br/&gt;
-Nel comune di &lt;a href="https://overpass-turbo.eu/s/1puy"&gt;Torre de' Busi&lt;/a&gt;, il tratto di mulattiera che arriva alla Chiesa di San Carlo è vietata alle bici.
-&lt;/p&gt;
-
-</content>
-    <link rel="edit" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/2866154159970207372"/>
-    <link rel="self" type="application/atom+xml" href="https://www.blogger.com/feeds/1188434606630302835/pages/default/2866154159970207372"/>
-    <link rel="alternate" type="text/html" href="http://www.mtbbergamo.it/p/divieti.html" title="Divieti per biciclette nella Bergamasca"/>
-    <author>
-      <name>Andrea</name>
-      <uri>https://www.blogger.com/profile/10311923148019903122</uri>
-      <email>noreply@blogger.com</email>
-      <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="32" height="32" src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSU3867tCkzZ62vkv-czAEWgqfS_U_bbD_rmMqFiDof3PbgNy3-FzhrUE8cBh3TdeWzRuRdLxiaCjG1DTfrmycFQBq27HH3OoLOkGmW_R3rVhOFv7LwZLicod99wbRVRo/s220/avatar_2014-2_256.png"/>
-    </author>
   </entry>
   <entry>
     <id>tag:blogger.com,1999:blog-1188434606630302835.page-6030940991691793295</id>
