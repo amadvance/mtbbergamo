@@ -816,6 +816,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'alta_brembana', name: 'Forcolino di Torcola, Branzi, Moio de Calvi', kind: 'down', file: 'Brembana_ForcolinoBranziMoio.gpx', link: '2023/10/forcolino', elevation_gain: 13, elevation_loss: 1231 },
 { vote: 3, rate: 2, rate_max: 5, cycle: 5, zone: 'alta_brembana', name: '125, Pusdosso, Moio de Calvi', kind: 'down', file: 'Brembana_125PusdossoMoio.gpx', link: '2023/10/pusdosso', elevation_gain: 4, elevation_loss: 1083 },
 { vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'alta_brembana', name: 'Passo San Simone, Costa Piana, Madonna delle Nevi', kind: 'down', file: 'Brembana_PassoSanSimoneCostaPiana.gpx', link: '2025/07/terzera-passo-san-simone', elevation_gain: 80, elevation_loss: 741 },
+{ vote: 3, rate: 3, rate_max: 4, cycle: 3, zone: 'alta_brembana', name: 'Rifugio Balicco, Madonna delle Nevi', kind: 'down', file: 'Brembana_BaliccoMadonnaDelleNevi.gpx', elevation_gain: 1, elevation_loss: 643 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'alta_brembana', name: 'Salita da Piazza Brembana al Monte Torcola', kind: 'up', file: 'Brembana_SalitaPiazzaBrembanaTorcola_EBIKE.gpx', link: '2020/09/monte-torcola-piazza-brembana', elevation_gain: 1231, elevation_loss: 30 },
@@ -836,6 +837,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'alta_brembana', name: 'Salita Lenna, Roncobello, Mezzeno', kind: 'up', file: 'Brembana_SalitaLennaRoncobelloMezzeno_EBIKE.gpx', link: '2022/09/mezzeno', elevation_gain: 1184, elevation_loss: 47 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'alta_brembana', name: 'Salita Lenna, Valsecca, Strada Piana, Porta delle Cornacchie', kind: 'up', file: 'Brembana_SalitaLennaValseccaPianaCornacchie_EBIKE.gpx', link: '2022/09/cornacchie', elevation_gain: 804, elevation_loss: 83 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'alta_brembana', name: 'Salita Madonna delle Nevi, Val Terzera, Passo San Simone', kind: 'up', file: 'Brembana_SalitaValTerzeraPassoSanSimone_EBIKE.gpx', link: '2025/07/terzera-passo-san-simone', elevation_gain: 727, elevation_loss: 5 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 10, zone: 'alta_brembana', name: 'Salita Madonna delle Nevi, Tornante 9, Rifugio Balicco', kind: 'up', file: 'Brembana_SalitaMadonnaDelleNeviTornante9Balicco_EBIKE.gpx', elevation_gain: 768, elevation_loss: 35 },
 
 // replaced
 { vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: '', name: 'Lago Moro, Rifugio Mirtillo, Carona', kind: 'down', file: 'Brembana_LagoMoroCarona.gpx', link: '2021/10/lago-moro', elevation_gain: 117, elevation_loss: 1508 },
@@ -909,3 +911,4 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina', elevation_gain: 1305, elevation_loss: 208 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno', elevation_gain: 827, elevation_loss: 41 },
 ];
+
