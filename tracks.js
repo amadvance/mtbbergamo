@@ -573,7 +573,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 5, rate: 3, rate_max: 4, cycle: 0, zone: 'media_seriana', name: 'Cima Vaccaro Freeride', kind: 'down', file: 'Seriana_CimaVaccaroFreeRide.gpx', link: '2023/03/cima-vaccaro-freeride', elevation_gain: 13, elevation_loss: 1352 },
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'media_seriana', name: 'Colle di Zambla, Madonna del Frassino', kind: 'down', file: 'Seriana_ColleDiZamblaFrassinoSantuarioSantissimo.gpx', link: '2024/11/frassino', elevation_gain: 171, elevation_loss: 924 },
 { vote: 3, rate: 1, rate_max: 0, cycle: 0, zone: 'media_seriana', name: 'Capanna Ilaria, Alpe Fogarolo, San Lucio, Clusone', kind: 'down', file: 'Seriana_CapannaIlariaAlpeFogaroloSanLucioClusone.gpx', elevation_gain: 182, elevation_loss: 990 },
-{ vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'media_seriana', name: 'Capanna Ilaria, San Lucio, Vogno', kind: 'down', file: 'Seriana_CapannaIlariaSanLucioVogno.gpx', elevation_gain: 54, elevation_loss: 913 },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'media_seriana', name: 'Capanna Ilaria, San Lucio, Vogno', kind: 'down', file: 'Seriana_CapannaIlariaSanLucioVogno.gpx', link: '2025/08/vogno-ilaria', elevation_gain: 54, elevation_loss: 913 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'media_seriana', name: 'Salita Parre, Rifugio Vaccaro, Forcella', kind: 'up', file: 'Seriana_SalitaParreVaccaroForcella_EBIKE.gpx', link: '2021/11/vaccaro-forcella', elevation_gain: 1209, elevation_loss: 101 },
@@ -583,7 +583,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 23, zone: 'media_seriana', name: 'Salita Parre, Cima Vaccaro', kind: 'up', file: 'Seriana_SalitaCimaVaccaro_EBIKE.gpx', link: '2023/03/cima-vaccaro-freeride', elevation_gain: 1368, elevation_loss: 30 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'media_seriana', name: 'Salita Santuario Santissimo, Colle di Zambla', kind: 'up', file: 'Seriana_SalitaSantuarioSantissimoColleDiZambla_EBIKE.gpx', link: '2024/11/frassino', elevation_gain: 824, elevation_loss: 0 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'media_seriana', name: 'Salita Clusone, Capanna Ilaria', kind: 'up', file: 'Seriana_SalitaClusoneCapannaIlaria_EBIKE.gpx', elevation_gain: 878, elevation_loss: 21 },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'media_seriana', name: 'Salita Vogno, Alpe Fogarolo, Capanna Ilaria', kind: 'up', file: 'Seriana_SalitaVognoAlpeFogaroloCapannaIlaria_EBIKE.gpx', elevation_gain: 971, elevation_loss: 83 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'media_seriana', name: 'Salita Vogno, Alpe Fogarolo, Capanna Ilaria', kind: 'up', file: 'Seriana_SalitaVognoAlpeFogaroloCapannaIlaria_EBIKE.gpx', link: '2025/08/vogno-ilaria', elevation_gain: 971, elevation_loss: 83 },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '530', name: 'Salita Vertova, Rifugio Cavlera', kind: 'up', file: 'Seriana_SalitaVertovaCavlera_EBIKE.gpx', link: '2023/03/530-george', elevation_gain: 773, elevation_loss: 5 },
