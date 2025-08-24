@@ -39,9 +39,9 @@ var TRACKS = [
 { vote: 2, rate: 2, rate_max: 0, cycle: 0, zone: 'colli,roccolone_sud', name: 'Torre', kind: 'down', file: 'Colli_Torre.gpx', link: '2019/01/roccolone-sud', elevation_gain: 2, elevation_loss: 109 },
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'colli,roccolone_nord', name: 'Fogna', kind: 'down', file: 'Colli_Fogna.gpx', link: '2024/10/fogna', elevation_gain: 0, elevation_loss: 80 },
 
-
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'colli', name: 'Salita da Astino', kind: 'up', file: 'Colli_SalitaAstino.gpx', link: '2018/12/salite-colli-bergamo', elevation_gain: 100, elevation_loss: 13 },
+// removed as vietata
 /*
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'colli,gussa', name: 'Salita al Monte Gussa', kind: 'up', file: 'Colli_SalitaGussaSud.gpx', link: '2019/01/monte-gussa', elevation_gain: 76, elevation_loss: 5 },
 */
@@ -49,7 +49,6 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'colli', name: 'Salita dalla Madonna del Bosco', kind: 'up', file: 'Colli_SalitaMadonnaDelBosco.gpx', link: '2018/12/salite-colli-bergamo', elevation_gain: 203, elevation_loss: 13 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'colli,roccolone_nord,roccolone_sud', name: 'Salita dal Roccolone', kind: 'up', file: 'Colli_SalitaRoccolone.gpx', link: '2018/12/salite-colli-bergamo', elevation_gain: 117, elevation_loss: 15 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'colli,roccolone_nord,roccolone_sud', name: 'Salita al Colle Roccolone', kind: 'up', file: 'Colli_SalitaCimaRoccolone.gpx', link: '2018/12/salite-colli-bergamo', elevation_gain: 15, elevation_loss: 0 },
-
 
 //
 // BERGAMO
@@ -83,12 +82,10 @@ var TRACKS = [
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: 'maresana, bassa_seriana', name: '532A, Olera', kind: 'down', file: 'Maresana_532A_Olera.gpx', link: '2019/03/532a-olera', elevation_gain: 4, elevation_loss: 235 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'maresana', name: 'Flying Dutchman', kind: 'down', file: 'Maresana_FlyingDutchman.gpx', link: '2019/01/flying-dutchman', elevation_gain: 0, elevation_loss: 193 },
 { vote: 3, rate: 1, rate_max: 3, cycle: 0, zone: 'maresana', name: 'Gaito', kind: 'down', file: 'Maresana_Gaito.gpx', link: '2021/03/gaito', elevation_gain: 1, elevation_loss: 199 },
-//{ vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'sorisole', name: 'Bacino', kind: 'down', file: 'Sorisole_Bacino.gpx' },
 { vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'sorisole, pisgiu_dh', name: 'Pista DH', kind: 'down', file: 'Sorisole_PistaDH.gpx', link: '2018/12/pista-downhill', elevation_gain: 3, elevation_loss: 308 },
 { vote: 3, rate: 3, rate_max: 4, cycle: 0, zone: 'sorisole, pisgiu_dh', name: 'Pista DH Hard', kind: 'down', file: 'Sorisole_PistaDHHard.gpx', link: '2018/12/pista-downhill', elevation_gain: 1, elevation_loss: 288 },
 { vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'maresana, sorisole, 229', name: 'Catene / 229', kind: 'down', file: 'Sorisole_Catene229.gpx', link: '2018/12/229', elevation_gain: 0, elevation_loss: 328 },
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: '229', name: 'Premerlino, 229', kind: 'down', file: 'Sorisole_Premerlino229.gpx', link: '2018/12/229', elevation_gain: 0, elevation_loss: 180 },
-{ vote: 2, rate: 1, rate_max: 0, cycle: 0, zone: 'sorisole', name: 'Sorisole, Ponteranica Alta', kind: 'down', file: 'Sorisole_SorisolePonteranicaAlta.gpx', elevation_gain: 2, elevation_loss: 54 },
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: 'sorisole, galusu', name: 'Galus\u00F9 Ovest', kind: 'down', file: 'Sorisole_GalusuOvest.gpx', link: '2018/12/galusu', elevation_gain: 0, elevation_loss: 81 },
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: 'sorisole, galusu', name: 'Galus\u00F9 Sud', kind: 'down', file: 'Sorisole_GalusuSud.gpx', link: '2018/12/galusu', elevation_gain: 0, elevation_loss: 75 },
 { vote: 5, rate: 2, rate_max: 0, cycle: 0, zone: 'sorisole, galusu', name: 'Galus\u00F9', kind: 'down', file: 'Sorisole_Galusu.gpx', link: '2018/12/galusu', elevation_gain: 0, elevation_loss: 178 },
@@ -101,10 +98,8 @@ var TRACKS = [
 { vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'sorisole', name: 'Canto Alto, Forcellino, 220, Pista DH', kind: 'down', file: 'Sorisole_CantoAltoForcellino220PistaDH.gpx', link: '2023/05/canto-alto-forcellino', elevation_gain: 123, elevation_loss: 957 },
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: 'sorisole', name: 'Forcellino, Forcella di Rua, Giongo Hard', kind: 'down', file: 'Sorisole_ForcellinoForcellaDiRuaGiongoHard.gpx', link: '2024/04/giongo-hard', elevation_gain: 313, elevation_loss: 949 },
 
-/*
-// abbandonato
-{ vote: 2, rate: 1, rate_max: 0, cycle: 0, zone: 'maresana', name: 'Luca West', kind: 'down', file: 'Maresana_LucaWest.gpx', link: '2018/11/lucawest', elevation_gain: 1, elevation_loss: 107 },
-*/
+// unlisted as used only for connection in sorisole
+{ vote: 2, rate: 1, rate_max: 0, cycle: 0, zone: 'sorisole', name: 'Sorisole, Ponteranica Alta', kind: 'down', file: 'Sorisole_SorisolePonteranicaAlta.gpx', elevation_gain: 2, elevation_loss: 54 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'maresana', name: 'Salita Ranica, Monte Zuccone', kind: 'up', file: 'Maresana_SalitaRanicaZuccone_EBIKE.gpx', link: '2018/11/salite-maresana', elevation_gain: 437, elevation_loss: 5 },
@@ -119,7 +114,6 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'pisgiu_dh', name: 'Salita Pontesecco, Pista DH', kind: 'up', file: 'Sorisole_SalitaPonteseccoPistaDH.gpx', link: '2019/06/salite-sorisole', elevation_gain: 376, elevation_loss: 12 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'galusu', name: 'Salita Pontesecco, Galus\u00F9', kind: 'up', file: 'Sorisole_SalitaPonteseccoGalusu_EBIKE.gpx', link: '2018/12/galusu', elevation_gain: 445, elevation_loss: 8 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'sorisole', name: 'Salita Galus\u00F9', kind: 'up', file: 'Sorisole_SalitaGalusu_EBIKE.gpx', link: '2019/06/salite-sorisole', elevation_gain: 80, elevation_loss: 3 },
-//{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'sorisole', name: 'Salita Giongo', kind: 'up', file: 'Sorisole_SalitaGiongo.gpx', link: '2019/06/salite-sorisole' },
 { vote: 0, rate: 0, rate_max: 0, cycle: 4, zone: 'sorisole', name: 'Salita Sedrina, Prati Parini, Canto Alto', kind: 'up', file: 'Sorisole_SalitaSedrinaCantoAlto_EBIKE.gpx', link: '2023/04/canto-alto-catene-dh', elevation_gain: 902, elevation_loss: 74 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'sorisole', name: 'Salita Ponti di Sedrina, Cava, Canto Alto', kind: 'up', file: 'Sorisole_SalitaPontiSedrinaCavaCantoAlto_EBIKE.gpx', link: '2023/05/canto-alto-forcellino', elevation_gain: 1068, elevation_loss: 209 },
 { vote: 0, rate: 0, rate_max: 0, cycle: "10 minuti Canto Basso, 30 minuti Canto Alto", zone: 'sorisole', name: 'Salita Ponteranica, Canto Alto', kind: 'up', file: 'Sorisole_SalitaPonteranicaCantoAlto.gpx', link: '2019/06/canto-alto-forcella-di-cambli-pisgiu', elevation_gain: 880, elevation_loss: 41 },
@@ -210,23 +204,11 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita (nuova) da Fuipiano, Capione al Palio', kind: 'up', file: 'Imagna_SalitaFuipianoCapioneCimaPalio_EBIKE.gpx', link: '2022/04/foo-di-valmana', elevation_gain: 426, elevation_loss: 39 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita da Brumano alle Cascine Zucchero', kind: 'up', file: 'Imagna_SalitaBrumanoCascineZucchero_EBIKE.gpx', link: '2018/12/salite-imagna', elevation_gain: 179, elevation_loss: 0 },
 
-// replaced
+// unlisted
 { vote: 3, rate: 2, rate_max: 3, cycle: 2, zone: '', name: 'Galzaniga, Orso, Chignolo, Ex Centrale Enel, Coegia, Selino', kind: 'down', file: 'Imagna_GalzanigaOrsoChignoloEnelCoegiaSelino.gpx', link: '2019/07/orso', elevation_gain: 41, elevation_loss: 676 },
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: '', name: 'Otto di Pagafone', kind: 'down', file: 'Imagna_PagafoneOtto.gpx', link: '2020/03/otto-pagafone', elevation_gain: 163, elevation_loss: 601 },
 
-// deleted
-/*
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna', name: 'Salita da Brumano al Passo Porta', kind: 'up', file: 'Imagna_SalitaBrumanoPassoPorta_EBIKE.gpx', link: '2018/12/salite-imagna', elevation_gain: 241, elevation_loss: 27 },
-{ vote: 5, rate: 3, rate_max: 4, cycle: 0, zone: 'imagna', name: 'Resegone, Bocchetta del Palio, Grande Faggio', kind: 'down', file: 'Imagna_ResegoneGrandeFaggio.gpx', link: '2019/06/resegone', elevation_gain: 2, elevation_loss: 627 },
-{ vote: 0, rate: 0, rate_max: 0, cycle: "40%, con ultimi 400m di dislivello a spalla", zone: 'imagna', name: 'Salita dal Passo del Palio al Resegone', kind: 'up', file: 'Imagna_SalitaPalioResegone.gpx', link: '2018/12/salite-imagna', elevation_gain: 502, elevation_loss: 18 },
-*/
-
-// removed for not so relevant
-/*
-{ vote: 3, rate: 1, rate_max: 0, cycle: 0, zone: 'imagna', name: 'Passo del Palio, Rifugio Resegone', kind: 'down', file: 'Imagna_PassoPalioBocchettaRifResegone_EBIKE.gpx', elevation_gain: 71, elevation_loss: 164 },
-*/
-
-// removed for request of the owner
+// removed on request of the owner
 /*
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna,costa_del_palio', name: 'Passo del Palio, 571 Basso, 579, Fuipiano', kind: 'down', file: 'Imagna_PassoPalio571Basso579Fuipiano.gpx', link: '2019/04/costa-del-palio-fuipiano', elevation_gain: 113, elevation_loss: 443 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna,zuc_de_valmana', name: 'Salita da Fuipiano allo Zuc De Valmana', kind: 'up', file: 'Imagna_SalitaZucDeValmana_EBIKE.gpx', link: '2018/12/salite-imagna', elevation_gain: 502, elevation_loss: 1 },
@@ -235,8 +217,6 @@ var TRACKS = [
 //
 // IMAGNA SUD
 //
-{ vote: 2, rate: 1, rate_max: 0, cycle: 0, zone: '', name: 'Valsecca, Fonti', kind: 'down', file: 'Imagna_ValseccaFonti.gpx', elevation_gain: 3, elevation_loss: 171 },
-{ vote: 2, rate: 2, rate_max: 0, cycle: 0, zone: '', name: 'Valsecca, Scuderia, Mazzoleni, Selino', kind: 'down', file: 'Imagna_ValseccaScuderiaMazzoleniSelino.gpx', elevation_gain: 84, elevation_loss: 292 },
 { vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'martino, imagna, valcava', name: 'Linzone, 571, Roncola, 571, Almenno', kind: 'down', file: 'Imagna_Linzone571Roncola571Almenno.gpx', link: '2018/11/linzone-roncola', elevation_gain: 26, elevation_loss: 1050 },
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'imagna, valcava', name: 'Valcava, 572, Selino', kind: 'down', file: 'Imagna_Valcava572Selino.gpx', link: '2020/07/valcava-cornabusa-selino', elevation_gain: 37, elevation_loss: 950 },
 { vote: 4, rate: 1, rate_max: 0, cycle: 0, zone: 'imagna, valcava', name: 'Forcella Alta, 573, Selino', kind: 'down', file: 'Imagna_ForcellaAlta573Selino.gpx', link: '2019/06/forcella-alta-573-selino', elevation_gain: 47, elevation_loss: 912 },
@@ -257,12 +237,6 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna', name: 'Ciclabile Valle Imagna', kind: 'up', file: 'Imagna_CiclabileValleImagna.gpx', link: '2018/12/salite-imagna', elevation_gain: 390, elevation_loss: 170 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna', name: 'Salita da Selino alla Forcella Alta', kind: 'up', file: 'Imagna_SalitaSelinoForcellaAlta_EBIKE.gpx', link: 'forcella-alta-574-valsecca', elevation_gain: 862, elevation_loss: 0 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna', name: 'Salita da Almenno a Costa Imagna e Valcava', kind: 'up', file: 'Imagna_SalitaAlmennoCostaValcava.gpx', link: '2018/12/salite-imagna', elevation_gain: 1076, elevation_loss: 49 },
-
-// removed as not significative
-/*
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'imagna', name: 'Salita da Almenno a Roncola e Valcava', kind: 'up', file: 'Imagna_SalitaAlmennoRoncolaValcava.gpx', link: '2018/12/salite-imagna', elevation_gain: 1074, elevation_loss: 37 },
-{ vote: 3, rate: 1, rate_max: 0, cycle: 0, zone: 'imagna, valcava, roncola', name: 'Roncola, Selino', kind: 'down', file: 'Imagna_RoncolaSelino.gpx', link: '2019/04/roncola', elevation_gain: 28, elevation_loss: 473 },
-*/
 
 //
 // UBIONE
@@ -288,7 +262,6 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'ubione, sopracorna', name: 'Salita Clanezzo, Roccoli Passata', kind: 'up', file: 'Imagna_SalitaClanezzoRoccoliPassata_EBIKE.gpx', link: '2020/05/sopracorna', elevation_gain: 475, elevation_loss: 12 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'ubione', name: 'Salita diretta ciclabile del Chito, Passo del Canto', kind: 'up', file: 'Imagna_SalitaChitoCantoDiretta_EBIKE.gpx', link: '2020/09/passo-canto-capizzone', elevation_gain: 513, elevation_loss: 53 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'ubione', name: 'Salita Clanezzo, Roccoli Passata, Fiori', kind: 'up', file: 'Imagna_SalitaClanezzoFiori_EBIKE.gpx', link: '2024/07/fiori', elevation_gain: 520, elevation_loss: 3 },
-//Imagna_MalanotteFoppo.gpx
 
 //
 // SAN MARTINO
@@ -349,7 +322,7 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'martino, valcava', name: 'Cava, Faidello DH, Opreno, Burligo', kind: 'down', file: 'Martino_FaidelloDH.gpx', link: '2025/02/faidello', elevation_gain: 55, elevation_loss: 529 },
 { vote: 4, rate: 3, rate_max: 0, cycle: 1, zone: 'martino, valcava', name: 'Antenne Valcava, Zuccherone, Faidello, Opreno, Burligo', kind: 'down', file: 'Martino_AntenneValcavaZuccheroneFaidelloBurligo.gpx', link: '2025/04/zuccherone-faidello', elevation_gain: 72, elevation_loss: 935 },
 
-// replaced
+// unlisted
 { vote: 4, rate: 3, rate_max: 0, cycle: 1, zone: '', name: 'Antenne Valcava, Zuccherone, Coldara, Colle Pedrino, Opreno, Burligo', kind: 'down', file: 'Martino_AntenneValcavaZuccheroneColPedrinoBurligo.gpx', link: '2019/03/zuccherone-coldara-col-fopa-opreno', elevation_gain: 74, elevation_loss: 986 },
 
 // climb
@@ -424,7 +397,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Ruderi, Crocione', kind: 'up', file: 'Canto_SalitaCrocione_EBIKE.gpx', link: '2019/02/salite-monte-canto', elevation_gain: 58, elevation_loss: 2 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Pontida, Santa Barbara', kind: 'up', file: 'Canto_SalitaPontida_EBIKE.gpx', link: '2019/02/salite-monte-canto', elevation_gain: 352, elevation_loss: 0 },
 
-// removed perch� trasformato in strada
+// unlisted
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: '', name: 'GEP', kind: 'down', file: 'Canto_GEP.gpx', link: '2021/05/gep', elevation_gain: 0, elevation_loss: 304 },
 
 //
@@ -433,29 +406,23 @@ var TRACKS = [
 // nord
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Canto Basso, 533, Forcella del Sorriso', kind: 'down', file: 'Seriana_CantoBassoForcellaSorriso.gpx', link: '2019/03/canto-basso-533-forcella-del-sorriso', elevation_gain: 3, elevation_loss: 143 },
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Val del Luio, Alzano', kind: 'down', file: 'Seriana_LonnoLuio.gpx', link: '2019/04/lonno', elevation_gain: 0, elevation_loss: 402 },
-/* { vote: 2, rate: 1, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Cavallo, Canto Basso', kind: 'down', file: 'Seriana_MonteCavallo.gpx' }, */
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Poieto, 523, Gazzaniga', kind: 'down', file: 'Seriana_Poieto523Gazzaniga.gpx', link: '2023/09/poieto-gazzaniga', elevation_gain: 8, elevation_loss: 944 },
 { vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Poieto, Slayer Lane, Vertova', kind: 'down', file: 'Seriana_PoietoSlayerVertova.gpx', link: '2023/09/slayer', elevation_gain: 26, elevation_loss: 935 },
 { vote: 2, rate: 2, rate_max: 3, cycle: 3, zone: 'bassa_seriana', name: 'C\u00E0 Donadoni, 524, Vertova', kind: 'down', file: 'Seriana_Donadoni524Vertova.gpx', link: '2023/09/donadoni', elevation_gain: 285, elevation_loss: 1049 },
 { vote: 3, rate: 3, rate_max: 4, cycle: 2, zone: 'bassa_seriana', name: 'Monte Poieto, 516, Val Vertova', kind: 'down', file: 'Seriana_Poieto516ValVertova.gpx', link: '2023/09/poieto-516', elevation_gain: 113, elevation_loss: 1023 },
-/* 
-rimosso perchè il primo tratto è troppo selvaggio ed il finale non è niete di che. Meglio l'alternativa che segue
-{ vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Pizzo di Lonno, Monte Ganda, Alzano Sopra', kind: 'down', file: 'Seriana_LonnoPizzoMonteGanda.gpx', link: '2019/04/lonno', elevation_gain: 111, elevation_loss: 530 }, 
-*/
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Pizzo di Lonno, Monte Ganda, Sentiero delle Corne, Alzano Sopra', kind: 'down', file: 'Seriana_PizzoDiLonnoMonteGandaSentieroDelleCorne.gpx', link: '2019/04/lonno', elevation_gain: 34, elevation_loss: 510 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Pizzo di Lonno, Brumano, Val Nesa', kind: 'down', file: 'Seriana_PizzoDiLonnoValNesa.gpx', elevation_gain: 79, elevation_loss: 560 },
 { vote: 5, rate: 1, rate_max: 0, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Percorso Vita, Valbona', kind: 'down', file: 'Seriana_LonnoPercorsoVita.gpx', link: '2019/04/lonno', elevation_gain: 10, elevation_loss: 400 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Percorso Vita, Luio', kind: 'down', file: 'Seriana_LonnoPercorsoVitaLuio.gpx', link: '2019/04/lonno', elevation_gain: 4, elevation_loss: 417 },
 { vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_seriana,lonno', name: 'Lonno, Colle Bastia, Percorso Vita, Viana', kind: 'down', file: 'Seriana_LonnoColleBastia.gpx', link: '2019/04/lonno', elevation_gain: 26, elevation_loss: 448 },
 { vote: 5, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salmezza, Lonno, Percorso Vita', kind: 'down', file: 'Seriana_SalmezzaLonnoVita.gpx', link: '2024/06/salmezza-vita', elevation_gain: 14, elevation_loss: 738 },
-//Seriana_SalmezzaLonnoVita.gpx
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salmezza, 533, Forcella di Nese', kind: 'down', file: 'Seriana_Salmezza533ForcellaNese.gpx', link: '2019/05/salmezza-533-forcella-di-nese', elevation_gain: 118, elevation_loss: 312 },
 { vote: 2, rate: 3, rate_max: 0, cycle: 2, zone: 'bassa_seriana', name: 'Salmezza, Baita GAP, Lonno', kind: 'down', file: 'Seriana_SalmezzaBaitaGAPLonno.gpx', link: '2019/05/salmezza-gap-lonno', elevation_gain: 26, elevation_loss: 376 },
 { vote: 2, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Forcella di Nese, 531, Nese', kind: 'down', file: 'Seriana_ForcellaNese531Nese.gpx', link: '2019/05/forcella-di-nese-531-nese', elevation_gain: 7, elevation_loss: 586 },
 { vote: 2, rate: 2, rate_max: 0, cycle: 1, zone: 'bassa_seriana, valtrusa', name: 'Selvino, 535, Lonno', kind: 'down', file: 'Seriana_535Lonno.gpx', link: '2019/05/monte-valtrusa', elevation_gain: 61, elevation_loss: 227 },
 { vote: 2, rate: 2, rate_max: 0, cycle: "3 minuti la salita al Valtrusa", zone: 'bassa_seriana, valtrusa', name: 'Selvino, 535, Monte Valtrusa, Lonno', kind: 'down', file: 'Seriana_535Valtrusa.gpx', link: '2019/05/monte-valtrusa', elevation_gain: 174, elevation_loss: 348 },
+// removed on request by CAI Albino
 /*
-removed su richiesta del CAI Albino
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Selvino, 550 / Mulattiera, Albino', kind: 'down', file: 'Seriana_550MulattieraAlbino.gpx', link: '2019/03/550-mulattiera', elevation_gain: 4, elevation_loss: 615 },
 */
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Selvino, Trevasco, Nembro', kind: 'down', file: 'Seriana_Trevasco.gpx', link: '2019/04/trevasco', elevation_gain: 105, elevation_loss: 737 },
@@ -477,11 +444,6 @@ removed su richiesta del CAI Albino
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Tribulina di Ganda, 522, Gazzaniga', kind: 'down', file: 'Seriana_TribulinaGanda522Gazzaniga.gpx', link: '2023/01/522', elevation_gain: 43, elevation_loss: 742 },
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Rena, Croce San Luigi, Desenzano', kind: 'down', file: 'Seriana_RenaLuigiDesenzano.gpx', link: '2023/01/luigi', elevation_gain: 107, elevation_loss: 927 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Plazza, Gazzaniga', kind: 'down', file: 'Seriana_PlazzaGazzaniga.gpx', link: '2025/05/plazza', elevation_gain: 72, elevation_loss: 779 },
-
-// removed for not so relevant
-/*
-{ vote: 2, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Rena, Albino', kind: 'down', file: 'Seriana_RenaAlbino.gpx', elevation_gain: 14, elevation_loss: 825 },
-*/
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Trasferimento dalla Forcella di Nese al Canto Basso', kind: 'up', file: 'Seriana_ForcellaNese533BCantoBasso.gpx', link: '2019/03/salite-valle-seriana', elevation_gain: 88, elevation_loss: 57 },
@@ -536,11 +498,6 @@ removed su richiesta del CAI Albino
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'Seriana_SalitaMismaRipetitori_EBIKE.gpx', link: '2021/04/misma-santa-maria-cenate-sopra', elevation_gain: 839, elevation_loss: 13 },
-/*
-removed as not significative
-Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegue per il 511, pedalabile fino all'incrocio con il sentiero per la Santa Maria di Misma. Da qui occorre spingere o spallare per 200 metri di dislivello.
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Morosini, 511, Monte Misma', kind: 'up', file: 'Seriana_SalitaMisma511.gpx', link: '2019/03/salite-valle-seriana', elevation_gain: 936, elevation_loss: 108 },
-*/
 { vote: 0, rate: 0, rate_max: 0, cycle: 6, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Forcella, Monte Misma', kind: 'up', file: 'Seriana_SalitaForcellaMisma_EBIKE.gpx', link: '2021/03/misma-pratolina', elevation_gain: 886, elevation_loss: 40 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Forcella, Ripetitori, Monte Misma', kind: 'up', file: 'Seriana_SalitaForcellaRipetitoriMisma_EBIKE.gpx', link: '2021/04/misma-santa-maria-cenate-sopra', elevation_gain: 873, elevation_loss: 55 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana, bastia', name: 'Salita al Monte Bastia', kind: 'up', file: 'Seriana_SalitaBastia_EBIKE.gpx', link: '2021/04/scanzorosciate', elevation_gain: 198, elevation_loss: 50 },
@@ -634,7 +591,6 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'taleggio, brembana', name: 'Salita, Ponte Becco, Sottochiesa, Piani di Artavaggio', kind: 'up', file: 'Taleggio_SalitaBeccoSottochiesaArtavaggio_EBIKE.gpx', link: '2022/03/artavaggio-gherardi-becco', elevation_gain: 1070, elevation_loss: 22 },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'taleggio, brembana', name: 'Salita Sottochiesa, Fraggio, Reggetto', kind: 'up', file: 'Taleggio_SalitaSottochiesaFraggio155Reggetto_EBIKE.gpx', elevation_gain: 332, elevation_loss: 163 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'taleggio, brembana', name: 'Salita Sottochiesa, Reggetto, Avolasio, Sella', kind: 'up', file: 'Taleggio_SalitaSottochiesaReggettoAvolasioSella_EBIKE.gpx', link:'2022/04/corno-zuccone', elevation_gain: 963, elevation_loss: 246 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 5, zone: 'taleggio, brembana', name: 'Salita San Giovanni Bianco, Pianca, Passo Grialeggio', kind: 'up', file: 'Taleggio_SalitaSGBiancoPiancaGrialeggio_EBIKE.gpx', link: '2022/05/grialeggio-ponte-becco', elevation_gain: 1276, elevation_loss: 1 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 5, zone: 'taleggio, brembana', name: 'Salita Peghera, Ponte Senesi, Vedeseta, Bocca del Grassello, Canti', kind: 'up', file: 'Taleggio_SalitaPegheraVedesetaCanti_EBIKE.gpx', link: '2022/05/canti-tre-faggi-corna-bianca', elevation_gain: 1075, elevation_loss: 325 },
@@ -684,8 +640,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'bassa_brembana, brembilla', name: 'Salita Brembilla, Catremerio, Zuccone dell\'Arco', kind: 'up', file: 'Brembilla_SalitaBrembillaCatremerioZucconeArco_EBIKE.gpx', link: '2024/01/zuccone-arco', elevation_gain: 990, elevation_loss: 61 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 13, zone: 'bassa_brembana, brembilla', name: 'Salita Zogno, Catremerio, Monte Zucco', kind: 'up', file: 'Brembana_SalitaZognoCatremerioZucco_EBIKE.gpx', link: '2024/03/monte-zucco', elevation_gain: 1114, elevation_loss: 193 },
 
-// replaced
-{ vote: 2, rate: 2, rate_max: 0, cycle: 0, zone: '', name: 'Castignola, 592A, Brembilla', kind: 'down', file: 'Brembilla_Castignola592ABrembilla.gpx', elevation_gain: 0, elevation_loss: 561 },
+// unlisted
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: '', name: 'Passo del Canto, Laxolo, Brembilla', kind: 'down', file: 'Brembilla_CantoLaxoloBrembilla.gpx', link: '2021/11/laxolo', elevation_gain: 1, elevation_loss: 461 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita dal Colle di Berbenno al Passo del Canto', kind: 'up', file: 'Brembilla_SalitaColleBerbennoCanto_EBIKE.gpx', link: '2021/11/laxolo', elevation_gain: 137, elevation_loss: 8 },
 
@@ -749,7 +704,7 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: '', name: 'Salita da Salvarizza alla Forcella della Valcumina', kind: 'up', file: 'Brembana_SalvarizzaForcellaValcumina_EBIKE.gpx', link: '2021/05/valcumina', elevation_gain: 772, elevation_loss: 115 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita da San Pellegrino a Salvarizza', kind: 'up', file: 'Brembana_SalitaSalvarizza_EBIKE.gpx', link: '2021/02/periplo-monte-gioco', elevation_gain: 666, elevation_loss: 0 },
 
-// replaced
+// unlisted
 { vote: 2, rate: 3, rate_max: 0, cycle: 3, zone: '', name: 'Monte Castello, Algua, Zogno', kind: 'down', file: 'Brembana_MonteCastelloAlguaZogno.gpx', link: '2021/06/monte-castello', elevation_gain: 359, elevation_loss: 1099 },
 
 //
@@ -771,7 +726,6 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 3, rate: 2, rate_max: 3, cycle: 1, zone: 'serina, brembana', name: 'Capanna 2000, Zambla Alta', kind: 'down', file: 'Serina_Capanna2000Zambla.gpx', link: '2024/09/capana-2000-zambla', elevation_gain: 95, elevation_loss: 818 },
 { vote: 5, rate: 3, rate_max: 3, cycle: 0, zone: 'serina, brembana', name: 'Capanna 2000, Cattedrale Vegetale, Oltre il colle', kind: 'down', file: 'Serina_Capanna2000CattedraleVegetaleOltreIlColle.gpx', link: '2024/09/capanna-2000-oltreilcolle', elevation_gain: 204, elevation_loss: 1119 },
 { vote: 4, rate: 3, rate_max: 0, cycle: 2, zone: 'serina, brembana', name: 'Baita Zuccone, Plassa, Oltre il colle', kind: 'down', file: 'Serina_BaitaZucconePlassaOltreIlColle.gpx', link: '2024/11/zuccone-plassa', elevation_gain: 214, elevation_loss: 970 },
-{ vote: 2, rate: 3, rate_max: 4, cycle: 2, zone: 'serina, brembana', name: 'Capanna 2000, Val Vedra (fondovalle), Oltre il colle', kind: 'down', file: 'Serina_Capanna2000ValVedraFondovalle.gpx', elevation_gain: 284, elevation_loss: 1205 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 12, zone: 'serina, brembana', name: 'Salita Zambla Alta, Plassa, Capanna 2000, Cima di Grem', kind: 'up', file: 'Serina_SalitaZamblaPlassaCapanna200CimaGrem_EBIKE.gpx', link: '2022/11/cima-di-grem', elevation_gain: 1178, elevation_loss: 353 },
@@ -847,18 +801,15 @@ Con una MTB conviene fare la salita alternativa, che passa da Fiobbio, e prosegu
 { vote: 0, rate: 0, rate_max: 0, cycle: 10, zone: 'alta_brembana', name: 'Salita Madonna delle Nevi, Tornante 9, Rifugio Balicco', kind: 'up', file: 'Brembana_SalitaMadonnaDelleNeviTornante9Balicco_EBIKE.gpx', link: '2025/07/balicco', elevation_gain: 768, elevation_loss: 35 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 10, zone: 'alta_brembana', name: 'Salita Madonna delle Nevi, Passo San Simone, Forcella Rossa', kind: 'up', file: 'Brembana_SalitaMadonnaDelleNeviForcellaRossa_EBIKE.gpx', link: '2025/08/forcella-rossa-piedivalle-casera-siltri', elevation_gain: 825, elevation_loss: 98 },
 
-// replaced
+// unlisted
 { vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: '', name: 'Lago Moro, Rifugio Mirtillo, Carona', kind: 'down', file: 'Brembana_LagoMoroCarona.gpx', link: '2021/10/lago-moro', elevation_gain: 117, elevation_loss: 1508 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Branzi, Foppolo, Lago Moro', kind: 'up', file: 'Brembana_SalitaFoppoloLagoMoro_EBIKE.gpx', link: '2021/10/lago-moro', elevation_gain: 1390, elevation_loss: 0 },
-
-// replaced
 { vote: 3, rate: 3, rate_max: 0, cycle: 2, zone: '', name: 'Incrocio 101, Acqua Nera, Diga Valmora, Caprile', kind: 'down', file: 'Brembana_Incrocio101AcquaNeraDigaValmoraCaprile.gpx', link: '2021/10/101-valmora', elevation_gain: 116, elevation_loss: 1280 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: '', name: 'Salita Santa Brigida, Piani dell\'Avaro, Incrocio 101', kind: 'up', file: 'Brembana_SalitaSantaBrigidaAvaroIncrocio101_EBIKE.gpx', link: '2021/10/101-valmora', elevation_gain: 1201, elevation_loss: 34 },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita da Olmo al Brembo ai Piani dell\'Avaro', kind: 'up', file: 'Brembana_SalitaOlmoAvaro_EBIKE.gpx', link: '2020/08/terza-avaro', elevation_gain: 1098, elevation_loss: 3 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Santa Brigida, Colle Maddalena', kind: 'up', file: 'Brembana_SalitaSantaBrigidaColleMaddalena_EBIKE.gpx', link: '2021/10/val-dinferno', elevation_gain: 420, elevation_loss: 0 },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Piazzatorre, Monte Torcola', kind: 'up', file: 'Brembana_SalitaPiazzatorreTorcola_EBIKE.gpx', elevation_gain: 917, elevation_loss: 0 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: '', name: 'Salita Moio de Calvi, Torcola, Forcolino di Torcola', kind: 'up', file: 'Brembana_SalitaMoioForcolino_EBIKE.gpx', link: '2023/10/forcolino', elevation_gain: 1413, elevation_loss: 167 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita Moio de Calvi, Pista da sci di Torcola, 125', kind: 'up', file: 'Brembana_SalitaMoioPistaTorcola125_EBIKE.gpx', link: '2023/10/pusdosso', elevation_gain: 1215, elevation_loss: 76 },
 
