@@ -232,6 +232,33 @@ function create_map_track(id) {
 	return mymap;
 }
 
+// create charging markers
+function create_charging(map, control)
+{
+	var ChargingIcon = L.Icon.extend({
+		options: {
+		iconSize:     [32, 32],
+		iconAnchor:   [16, 15],
+		popupAnchor:  [-3, -20]
+	}
+	});
+
+	var chargingIcon = new ChargingIcon({iconUrl: ARCHIVE + 'img/charging-icon.png'});
+
+	// Create a group to hold all markers
+	var chargingLayer = L.layerGroup();
+
+	for (var i = 0; i < CHARGING.length; i++) {
+		var p = CHARGING[i];
+		L.marker([p.lat, p.lng], {icon: chargingIcon}).addTo(chargingLayer);
+	}
+
+	// Add to layer control so user can toggle it
+	control.addOverlay(chargingLayer, "Ricariche E-Bike");
+
+	return chargingLayer;
+}
+
 function create_waymarkedtrails(map, control) {
 	var myhiking = L.tileLayer('https://tile.waymarkedtrails.org/{id}/{z}/{x}/{y}.png', {
 		id: 'hiking',
@@ -315,7 +342,11 @@ function create_control(map) {
 
 	create_base(map, control);
 
+	// add to map to have it shown by default
 	create_waymarkedtrails(map, control).addTo(map);
+
+	// do not add to map to have it hidden by default
+	create_charging(map, control);
 
 	var ret = {ct: control, gr: null};
 
@@ -328,6 +359,7 @@ function create_control_climb(map) {
 
 	create_base(map, control);
 
+	// do not add to map to have it hidden by default
 	create_waymarkedtrails(map, control);
 
 	var ret = {ct: control, gr: null};
@@ -348,6 +380,7 @@ function create_control_group(map) {
 
 	create_base(map, control);
 
+	// do not add to map to have it hidden by default
 	create_waymarkedtrails(map, control);
 
 	var group = [];

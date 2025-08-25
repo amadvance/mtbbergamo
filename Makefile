@@ -7,7 +7,7 @@ css:
 	cat leaflet.css Control.FullScreen.css custom.css > www/all.css
 
 js:
-	cat leaflet.js leaflet.hotline.js gpx.js Control.FullScreen.js Leaflet.Control.Custom.js tracks.js dict.js custom.js > www/all.js
+	cat leaflet.js leaflet.hotline.js gpx.js Control.FullScreen.js Leaflet.Control.Custom.js tracks.js dict.js charging.js custom.js > www/all.js
 
 GPX = $(wildcard www/gpx/*.gpx)
 

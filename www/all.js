@@ -2738,6 +2738,164 @@ var RENAME = {
 "S_Trote_REC.gpx" : "Seriana_Trote.gpx"
 };
 
+// 2025/08 from https://overpass-turbo.eu/s/2a5o
+
+var CHARGING = [
+    { lat:45.9886866, lng:9.7133109 },
+    { lat:45.9903851, lng:9.6807333 },
+    { lat:45.7319910, lng:9.5659171 },
+    { lat:45.6772000, lng:9.8274000 },
+    { lat:45.6304500, lng:9.7623300 },
+    { lat:45.7716000, lng:9.9081100 },
+    { lat:45.6498000, lng:9.5562000 },
+    { lat:45.8737000, lng:9.9043000 },
+    { lat:45.7164400, lng:9.5454200 },
+    { lat:45.5807817, lng:9.7062128 },
+    { lat:45.8827833, lng:10.0944306 },
+    { lat:45.7202262, lng:9.9003081 },
+    { lat:45.6250600, lng:9.7621600 },
+    { lat:45.6160300, lng:9.7607200 },
+    { lat:45.6770830, lng:9.8296110 },
+    { lat:45.8884120, lng:9.9550300 },
+    { lat:45.8886600, lng:9.9446700 },
+    { lat:45.8907140, lng:9.9851570 },
+    { lat:45.9326778, lng:10.0294417 },
+    { lat:45.9119700, lng:10.0439800 },
+    { lat:45.7146874, lng:9.7404786 },
+    { lat:45.7089768, lng:9.7600517 },
+    { lat:45.6964400, lng:9.7018500 },
+    { lat:45.9987940, lng:9.7589080 },
+    { lat:45.8305606, lng:9.7428085 },
+    { lat:45.7161000, lng:9.8797000 },
+    { lat:45.7144720, lng:9.8802500 },
+    { lat:45.5815000, lng:9.5956000 },
+    { lat:45.6188800, lng:9.7720000 },
+    { lat:45.7307800, lng:9.7288600 },
+    { lat:45.8668860, lng:9.9961440 },
+    { lat:45.7214000, lng:9.5508300 },
+    { lat:45.7175903, lng:9.7785845 },
+    { lat:45.8924000, lng:9.5669000 },
+    { lat:45.7910467, lng:9.8322378 },
+    { lat:45.7263000, lng:9.5264300 },
+    { lat:45.6890000, lng:9.5678890 },
+    { lat:45.7391644, lng:10.0388107 },
+    { lat:45.8179427, lng:9.9107980 },
+    { lat:45.8120467, lng:9.9004475 },
+    { lat:45.9531019, lng:9.6979439 },
+    { lat:45.5871200, lng:9.6009600 },
+    { lat:45.5275000, lng:9.7324000 },
+    { lat:45.9008630, lng:9.6538730 },
+    { lat:45.8967636, lng:9.6572962 },
+    { lat:45.9767802, lng:10.1022016 },
+    { lat:45.9718216, lng:9.7046421 },
+    { lat:45.9291700, lng:10.0967300 },
+    { lat:45.9748587, lng:10.0721286 },
+    { lat:45.6561670, lng:9.5008060 },
+    { lat:45.8850400, lng:9.9310270 },
+    { lat:46.0049390, lng:9.7603560 },
+    { lat:45.7885857, lng:9.9814482 },
+    { lat:45.8270075, lng:9.7349094 },
+    { lat:45.7733800, lng:9.9181800 },
+    { lat:45.7343900, lng:9.7245300 },
+    { lat:45.9888274, lng:9.7133697 },
+    { lat:45.7321000, lng:9.5659000 },
+    { lat:45.6245809, lng:9.6243591 },
+    { lat:45.7947600, lng:9.8293800 },
+    { lat:45.6921110, lng:9.5697780 },
+    { lat:45.8328432, lng:9.8993900 },
+    { lat:45.9491054, lng:9.7026111 },
+    { lat:45.6461000, lng:9.5472000 },
+    { lat:45.6978000, lng:9.6989000 },
+    { lat:45.7684000, lng:9.7143000 },
+    { lat:45.8116451, lng:9.9031754 },
+    { lat:45.7903000, lng:9.9653000 },
+    { lat:45.9742248, lng:10.0806882 },
+    { lat:45.8900950, lng:10.0114620 },
+    { lat:45.6621000, lng:9.9277000 },
+    { lat:45.5845000, lng:9.6010000 },
+    { lat:45.7258152, lng:9.8938624 },
+    { lat:45.7966869, lng:9.8348134 },
+    { lat:45.7164000, lng:9.8817000 },
+    { lat:45.8057000, lng:9.8231900 },
+    { lat:45.9888350, lng:9.6313240 },
+    { lat:45.7786636, lng:9.9430027 },
+    { lat:45.7201049, lng:9.5490284 },
+    { lat:45.8013200, lng:9.8306300 },
+    { lat:45.7965100, lng:9.8363100 },
+    { lat:45.9519136, lng:9.6988114 },
+    { lat:45.9485000, lng:10.1043000 },
+    { lat:45.7345000, lng:9.5680000 },
+    { lat:45.9263050, lng:9.6489080 },
+    { lat:45.7180930, lng:9.9031703 },
+    { lat:45.8800010, lng:9.9209800 },
+    { lat:45.7192200, lng:9.5579850 },
+    { lat:45.8917634, lng:9.9430978 },
+    { lat:45.7072182, lng:9.7566023 },
+    { lat:45.7027969, lng:9.7382126 },
+    { lat:45.7096176, lng:9.7274923 },
+    { lat:45.7243600, lng:9.8975400 },
+    { lat:45.7335091, lng:9.9057589 },
+    { lat:45.7257800, lng:9.8938600 },
+    { lat:45.8852800, lng:9.9482800 },
+    { lat:45.8907338, lng:9.9449812 },
+    { lat:45.7193031, lng:9.7603750 },
+    { lat:45.7878330, lng:9.9976670 },
+    { lat:45.7188860, lng:9.9013571 },
+    { lat:45.7891617, lng:9.9876442 },
+    { lat:45.7330800, lng:9.9550300 },
+    { lat:45.7181000, lng:9.8767000 },
+    { lat:45.7056120, lng:9.5463490 },
+    { lat:45.7278900, lng:9.9054300 },
+    { lat:45.6886501, lng:9.4708275 },
+    { lat:45.7121086, lng:9.7315588 },
+    { lat:45.7560000, lng:9.6913400 },
+    { lat:45.7740500, lng:9.9226900 },
+    { lat:45.6508330, lng:9.4993060 },
+    { lat:45.4990153, lng:9.7666439 },
+    { lat:45.8753000, lng:9.8936500 },
+    { lat:45.8738600, lng:9.8930100 },
+    { lat:45.8759000, lng:9.8917300 },
+    { lat:45.8945610, lng:10.0071720 },
+    { lat:45.8135880, lng:9.5689930 },
+    { lat:45.8534420, lng:9.5010220 },
+    { lat:45.8307550, lng:9.5440680 },
+    { lat:45.8032950, lng:9.5036820 },
+    { lat:45.8525040, lng:9.5285150 },
+    { lat:45.7685360, lng:9.5617810 },
+    { lat:45.8284630, lng:9.5189730 },
+    { lat:45.8759300, lng:9.8917600 },
+    { lat:45.8756660, lng:9.8894840 },
+    { lat:45.8742630, lng:9.8930460 },
+    { lat:45.8742390, lng:9.8929590 },
+    { lat:45.8742320, lng:9.8928500 },
+    { lat:45.5215000, lng:9.5805000 },
+    { lat:45.5509000, lng:9.5780000 },
+    { lat:45.5154850, lng:9.5882880 },
+    { lat:46.0320950, lng:10.0020940 },
+    { lat:45.6711400, lng:9.4942430 },
+    { lat:45.6740380, lng:9.4961990 },
+    { lat:45.7346898, lng:9.6370414 },
+    { lat:45.7910350, lng:9.8324015 },
+    { lat:45.6171242, lng:9.7579113 },
+    { lat:45.7316670, lng:9.7337590 },
+    { lat:45.7910350, lng:9.8324015 },
+    { lat:45.8108226, lng:9.8681493 },
+    { lat:45.4973713, lng:9.6437468 },
+    { lat:45.4973696, lng:9.6437350 },
+    { lat:46.0547000, lng:10.0098540 },
+    { lat:45.7067000, lng:9.8715000 },
+    { lat:45.6938000, lng:9.8807000 },
+    { lat:45.7431000, lng:9.6513000 },
+    { lat:45.7082000, lng:9.8760000 },
+    { lat:45.7347000, lng:9.6370000 },
+    { lat:45.8314000, lng:9.5117000 },
+    { lat:45.8284000, lng:9.5189000 },
+    { lat:45.5024410, lng:9.7689264 },
+    { lat:45.6669840, lng:9.9549197 },
+    { lat:45.7952584, lng:9.5634767 },
+    { lat:45.8906449, lng:9.7691267 },
+    { lat:45.8646602, lng:9.7731032 },
+];
 /*
  * MTB Bergamo (c) by Andrea Mazzoleni 2022
  *
@@ -2972,6 +3130,33 @@ function create_map_track(id) {
 	return mymap;
 }
 
+// create charging markers
+function create_charging(map, control)
+{
+	var ChargingIcon = L.Icon.extend({
+		options: {
+		iconSize:     [32, 32],
+		iconAnchor:   [16, 15],
+		popupAnchor:  [-3, -20]
+	}
+	});
+
+	var chargingIcon = new ChargingIcon({iconUrl: ARCHIVE + 'img/charging-icon.png'});
+
+	// Create a group to hold all markers
+	var chargingLayer = L.layerGroup();
+
+	for (var i = 0; i < CHARGING.length; i++) {
+		var p = CHARGING[i];
+		L.marker([p.lat, p.lng], {icon: chargingIcon}).addTo(chargingLayer);
+	}
+
+	// Add to layer control so user can toggle it
+	control.addOverlay(chargingLayer, "Ricariche E-Bike");
+
+	return chargingLayer;
+}
+
 function create_waymarkedtrails(map, control) {
 	var myhiking = L.tileLayer('https://tile.waymarkedtrails.org/{id}/{z}/{x}/{y}.png', {
 		id: 'hiking',
@@ -3055,7 +3240,11 @@ function create_control(map) {
 
 	create_base(map, control);
 
+	// add to map to have it shown by default
 	create_waymarkedtrails(map, control).addTo(map);
+
+	// do not add to map to have it hidden by default
+	create_charging(map, control);
 
 	var ret = {ct: control, gr: null};
 
@@ -3068,6 +3257,7 @@ function create_control_climb(map) {
 
 	create_base(map, control);
 
+	// do not add to map to have it hidden by default
 	create_waymarkedtrails(map, control);
 
 	var ret = {ct: control, gr: null};
@@ -3088,6 +3278,7 @@ function create_control_group(map) {
 
 	create_base(map, control);
 
+	// do not add to map to have it hidden by default
 	create_waymarkedtrails(map, control);
 
 	var group = [];
