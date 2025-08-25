@@ -981,6 +981,29 @@ function create_tree(map, control, pos_x, pos_y, msg)
 	L.marker([pos_x, pos_y], {icon: treeIcon}).addTo(map).bindPopup(msg);
 }
 
+// create charging markers
+function create_charging(map, control)
+{
+	var ChargingIcon = L.Icon.extend({
+		options: {
+		iconSize:     [32, 26],
+		iconAnchor:   [16, 13],
+		popupAnchor:  [-3, -20]
+	}
+	});
+
+	var chargingIcon = new ChargingIcon({iconUrl: ARCHIVE + 'img/pin-icon-wpt-50.png'});
+
+//	var bounds = map.getBounds();
+
+	for (var i = 0; i < CHARGING.length; i++) {
+		var p = CHARGING[i];
+//		if (bounds.contains([p.lat, p.lng])) {
+			L.marker([p.lat, p.lng], {icon: chargingIcon}).addTo(map).bindPopup("Ricarica E-Bike");
+//		}
+	}
+}
+
 function table_track(index)
 {
 	var html = "";
