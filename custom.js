@@ -259,6 +259,52 @@ function create_charging(map, control)
 	return chargingLayer;
 }
 
+// create drinking markers
+function create_drinking(map, control)
+{
+	var DrinkingIcon = L.Icon.extend({
+		options: {
+		iconSize:     [32, 32],
+		iconAnchor:   [16, 16],
+		popupAnchor:  [-3, -20]
+	}
+	});
+
+	var SpringIcon = L.Icon.extend({
+		options: {
+		iconSize:     [32, 32],
+		iconAnchor:   [16, 16],
+		popupAnchor:  [-3, -20]
+	}
+	});
+
+	var drinkingIcon = new DrinkingIcon({iconUrl: ARCHIVE + 'img/drinking-icon.png'});
+	var springIcon = new SpringIcon({iconUrl: ARCHIVE + 'img/spring-icon.png'});
+
+	// Create a group to hold all markers
+	var drinkingLayer = L.layerGroup();
+
+	for (var i = 0; i < DRINKING.length; i++) {
+		var p = DRINKING[i];
+		if (p.kind == "drinking") {
+			p_msg = "Punto acqua";
+			p_icon = drinkingIcon;
+		} else {
+			p_msg = "Sorgente";
+			p_icon = springIcon;
+		}
+		if ("wiki" in p)
+			p_msg += ` <a href="https://commons.wikimedia.org/wiki/File:${p.wiki}">con foto<br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/${p.hash}/${p.wiki}/320px-${p.wiki}"></a>`;
+		L.marker([p.lat, p.lng], {icon: p_icon}).addTo(drinkingLayer).bindPopup(p_msg);
+	}
+
+	// Add to layer control so user can toggle it
+	control.addOverlay(drinkingLayer, "Punti acqua");
+
+	return drinkingLayer;
+}
+
+
 function create_waymarkedtrails(map, control) {
 	var myhiking = L.tileLayer('https://tile.waymarkedtrails.org/{id}/{z}/{x}/{y}.png', {
 		id: 'hiking',
@@ -347,6 +393,7 @@ function create_control(map) {
 
 	// do not add to map to have it hidden by default
 	create_charging(map, control);
+	create_drinking(map, control);
 
 	var ret = {ct: control, gr: null};
 
