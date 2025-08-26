@@ -250,7 +250,7 @@ function create_charging(map, control)
 
 	for (var i = 0; i < CHARGING.length; i++) {
 		var p = CHARGING[i];
-		L.marker([p.lat, p.lng], {icon: chargingIcon}).addTo(chargingLayer);
+		L.marker([p.lat, p.lng], {icon: chargingIcon}).addTo(chargingLayer).bindPopup("Ricarica E-Bike " + p.brand);
 	}
 
 	// Add to layer control so user can toggle it

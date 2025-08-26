@@ -21,3 +21,8 @@ redux: $(REDUX)
 xml:
 	xmllint --format archive/blog.xml > blog.tmp
 	mv blog.tmp archive/blog.xml
+
+charging:
+	python3 charging.py
+
+sync: charging js
