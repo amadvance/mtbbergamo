@@ -17,7 +17,7 @@ with open(file) as f:
 name = os.path.splitext(os.path.basename(file))[0]
 output_mp4 = name + "-YOUTUBE.mp4"
 output_lst = name + ".lst";
-ffmpeg = "nice ../../ffmpeg-5.0.1-amd64-static/ffmpeg"
+ffmpeg = "nice ffmpeg5"
 
 # Sort the clips, they are in insertion order, not in position order
 clips = sorted(data["clips"], key=lambda clip: clip["position"])
