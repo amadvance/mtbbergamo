@@ -10,7 +10,16 @@ OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 # Overpass QL query
 query = """
 [out:json];
-area["boundary"="administrative"]["name"="Bergamo"]["admin_level"="6"]->.bergamo;
+
+(
+area["name"="Bergamo"]["admin_level"=6]; // province
+area["name"="Moggio"];
+area["name"="Morterone"];
+area["name"="Erve"];
+area["name"="Carenno"];
+area["name"="Lecco"]["admin_level"=8]; // city
+)->.bergamo;
+
 (
     node["amenity"="drinking_water"]["drinking_water:legal"!="no"]["drinking_water"!="no"](area.bergamo);
     node["natural"="spring"]["drinking_water"]["drinking_water"!="no"](area.bergamo);  
@@ -62,6 +71,9 @@ def save_direct(data, filename="drinking.js"):
                         kind_str = "spring";
                 wikimedia_commons = element.get("tags", {}).get("wikimedia_commons", "")
                 wikimedia_commons_str = wikimedia_commons.replace('"', '\\"')
+                # avoid Category: and other kinds
+                if not wikimedia_commons_str.startswith("File"):
+                        wikimedia_commons_str = "";
                 f.write(f'    {{ kind:"{kind_str}", lat:{element["lat"]}, lng:{element["lon"]}')
                 if wikimedia_commons_str:
                         f.write(f', wiki:"{commons_filename_to_name(wikimedia_commons_str)}", hash:"{commons_filename_to_hash(wikimedia_commons_str)}"')

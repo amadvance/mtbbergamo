@@ -8,7 +8,16 @@ OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 # Overpass QL query
 query = """
 [out:json];
-area["boundary"="administrative"]["name"="Bergamo"]["admin_level"="6"]->.bergamo;
+
+(
+area["name"="Bergamo"]["admin_level"=6]; // province
+area["name"="Moggio"];
+area["name"="Morterone"];
+area["name"="Erve"];
+area["name"="Carenno"];
+area["name"="Lecco"]["admin_level"=8]; // city
+)->.bergamo;
+
 (
   node["amenity"="charging_station"]["brand"~"Pradella",i](area.bergamo);
   node["amenity"="charging_station"]["bicycle"="yes"](area.bergamo);
