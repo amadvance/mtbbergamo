@@ -1478,7 +1478,7 @@ var DRINKING = [
     { kind:"drinking", lat:45.8642117, lng:9.3856589 },
     { kind:"drinking", lat:45.8131863, lng:9.8144609 },
     { kind:"drinking", lat:45.8283107, lng:9.4296343 },
-    { kind:"drinking", lat:46.0487051, lng:9.675542 },
+    { kind:"drinking", lat:46.0486919, lng:9.6755185, wiki:"20250831-lemma_terzera-108.jpg", hash:"f/f2" },
     { kind:"drinking", lat:45.8652838, lng:9.3857625 },
     { kind:"drinking", lat:45.7353924, lng:9.6345352 },
     { kind:"drinking", lat:45.735218, lng:9.6348995 },
@@ -1760,4 +1760,6 @@ var DRINKING = [
     { kind:"drinking", lat:46.0450438, lng:9.6780354, wiki:"20250812-forcella_rossa-080.jpg", hash:"f/f5" },
     { kind:"drinking", lat:46.0510773, lng:9.6775836, wiki:"20250812-forcella_rossa-033.jpg", hash:"7/79" },
     { kind:"drinking", lat:45.8925908, lng:9.9877097 },
+    { kind:"drinking", lat:45.5796817, lng:9.7107104 },
+    { kind:"drinking", lat:46.0410514, lng:9.6691147, wiki:"20250831-lemma_terzera-119.jpg", hash:"3/31" },
 ];
