@@ -2246,7 +2246,7 @@ var TRACKS = [
 { vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'alta_brembana', name: 'Passo San Simone, Costa Piana, Madonna delle Nevi', kind: 'down', file: 'Brembana_PassoSanSimoneCostaPiana.gpx', link: '2025/07/terzera-passo-san-simone', elevation_gain: 80, elevation_loss: 741 },
 { vote: 3, rate: 3, rate_max: 4, cycle: 3, zone: 'alta_brembana', name: 'Rifugio Balicco, Madonna delle Nevi', kind: 'down', file: 'Brembana_BaliccoMadonnaDelleNevi.gpx', link: '2025/07/balicco', elevation_gain: 1, elevation_loss: 643 },
 { vote: 4, rate: 2, rate_max: 3, cycle: 4, zone: 'alta_brembana', name: 'Forcella Rossa, Baita Piedivalle, Casera Siltri, Madonna delle Nevi', kind: 'down', file: 'Brembana_ForcellaRossaPiedivalleCavizzolaSiltri.gpx', link: '2025/08/forcella-rossa-piedivalle-casera-siltri', elevation_gain: 85, elevation_loss: 807 },
-{ vote: 5, rate: 2, rate_max: 3, cycle: 1, zone: 'alta_brembana', name: 'Passo Vallone, Baita Piedivalle, Casera Cavizzola, Casera Siltri, Passo San Simone, San Simone', kind: 'down', file: 'Brembana_PassoValloneCavizzolaSiltriPassoSanSimoneSanSimone.gpx', elevation_gain: 328, elevation_loss: 851 },
+{ vote: 5, rate: 2, rate_max: 3, cycle: 1, zone: 'alta_brembana', name: 'Passo Vallone, Baita Piedivalle, Casera Cavizzola, Casera Siltri, Passo San Simone, San Simone', kind: 'down', file: 'Brembana_PassoValloneCavizzolaSiltriPassoSanSimoneSanSimone.gpx', link: '2025/09/simone-vallone', elevation_gain: 328, elevation_loss: 851 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'alta_brembana', name: 'Salita da Piazza Brembana al Monte Torcola', kind: 'up', file: 'Brembana_SalitaPiazzaBrembanaTorcola_EBIKE.gpx', link: '2020/09/monte-torcola-piazza-brembana', elevation_gain: 1231, elevation_loss: 30 },
@@ -2269,7 +2269,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'alta_brembana', name: 'Salita Madonna delle Nevi, Val Terzera, Passo San Simone', kind: 'up', file: 'Brembana_SalitaValTerzeraPassoSanSimone_EBIKE.gpx', link: '2025/07/terzera-passo-san-simone', elevation_gain: 727, elevation_loss: 5 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 10, zone: 'alta_brembana', name: 'Salita Madonna delle Nevi, Tornante 9, Rifugio Balicco', kind: 'up', file: 'Brembana_SalitaMadonnaDelleNeviTornante9Balicco_EBIKE.gpx', link: '2025/07/balicco', elevation_gain: 768, elevation_loss: 35 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 10, zone: 'alta_brembana', name: 'Salita Madonna delle Nevi, Passo San Simone, Forcella Rossa', kind: 'up', file: 'Brembana_SalitaMadonnaDelleNeviForcellaRossa_EBIKE.gpx', link: '2025/08/forcella-rossa-piedivalle-casera-siltri', elevation_gain: 825, elevation_loss: 98 },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'alta_brembana', name: 'Salita San Simone, Passo di Lemma, Passo Vallone', kind: 'up', file: 'Brembana_SalitaSanSimonePassoLemmaPassoVallone_EBIKE.gpx', elevation_gain: 554, elevation_loss: 0 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'alta_brembana', name: 'Salita San Simone, Passo di Lemma, Passo Vallone', kind: 'up', file: 'Brembana_SalitaSanSimonePassoLemmaPassoVallone_EBIKE.gpx', link: '2025/09/simone-vallone', elevation_gain: 554, elevation_loss: 0 },
 
 // unlisted
 { vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: '', name: 'Lago Moro, Rifugio Mirtillo, Carona', kind: 'down', file: 'Brembana_LagoMoroCarona.gpx', link: '2021/10/lago-moro', elevation_gain: 117, elevation_loss: 1508 },
