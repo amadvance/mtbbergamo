@@ -228,7 +228,6 @@ var DRINKING = [
     { kind:"drinking", lat:45.7043137, lng:9.6600292 },
     { kind:"drinking", lat:45.809282, lng:9.8506111 },
     { kind:"drinking", lat:45.7054158, lng:9.6693459 },
-    { kind:"drinking", lat:45.9391035, lng:9.9717629 },
     { kind:"drinking", lat:45.9537134, lng:9.907244 },
     { kind:"drinking", lat:45.9329091, lng:9.4857839 },
     { kind:"drinking", lat:45.931526, lng:9.4836155 },
