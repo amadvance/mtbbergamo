@@ -550,10 +550,10 @@ var TRACKS = [
 //
 // ALTA SERIANA (Clusone)
 //
-{ vote: 4, rate: 3, rate_max: 0, cycle: 2, zone: 'alta_seriana', name: 'Baita Pagherola, Martitte Giganti, 311, Colle Palazzo Bricconi, Nasolino', kind: 'down', file: 'Seriana_PagherolaMarmitte311CollePalazzoBricconiNasolino.gpx', elevation_gain: 211, elevation_loss: 1154 },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 2, zone: 'alta_seriana', name: 'Baita Pegherola, Marmitte Giganti, 311, Colle Palazzo, Bricconi, Nasolino', kind: 'down', file: 'Seriana_PegherolaMarmitte311CollePalazzoBricconiNasolino.gpx', link: '2025/09/pegherola', elevation_gain: 211, elevation_loss: 1154 },
 
 // climb
-{ vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'alta_seriana', name: 'Salita Nasolino, 340, Baite Moschel, Baita Pagherola', kind: 'up', file: 'Seriana_SalitaNasolino340MoschelPagherola_EBIKE.gpx', elevation_gain: 1095, elevation_loss: 102 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'alta_seriana', name: 'Salita Nasolino, 340, Baite Moschel, Baite Pegherola', kind: 'up', file: 'Seriana_SalitaNasolino340MoschelPegherola_EBIKE.gpx', link: '2025/09/pegherola',elevation_gain: 1095, elevation_loss: 102 },
 
 //
 // GANDINO
