@@ -21,8 +21,12 @@ area["name"="Lecco"]["admin_level"=8]; // city
 )->.bergamo;
 
 (
+    // Drinking Water
     node["amenity"="drinking_water"]["drinking_water:legal"!="no"]["drinking_water"!="no"](area.bergamo);
-    node["natural"="spring"]["drinking_water"]["drinking_water"!="no"](area.bergamo);  
+    // Animal Watering Place
+    node["amenity"="watering_place"]["drinking_water"="yes"](area.bergamo);
+    // Spring
+    node["natural"="spring"]["drinking_water"]["drinking_water"!="no"](area.bergamo);
 );
 out center;
 """
