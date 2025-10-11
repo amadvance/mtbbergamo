@@ -4679,17 +4679,21 @@ var DRINKING = [
     { kind:"spring", lat:45.9357915, lng:9.9865509, wiki:"20250904-explo_moschel-196.jpg", hash:"6/67" },
     { kind:"drinking", lat:45.9191464, lng:9.946742, wiki:"20250904-explo_moschel-268.jpg", hash:"6/62" },
     { kind:"drinking", lat:45.9502059, lng:9.669155 },
-    { kind:"drinking", lat:45.9579175, lng:10.0315239, wiki:"20250906-pagherola-079.jpg", hash:"e/ec" },
+    { kind:"drinking", lat:45.9579282, lng:10.0315424, wiki:"20250906-pagherola-079.jpg", hash:"e/ec" },
     { kind:"drinking", lat:45.7848623, lng:9.5111466 },
     { kind:"drinking", lat:45.5841203, lng:9.708424 },
     { kind:"drinking", lat:45.9468451, lng:10.0028018, wiki:"20250906-pagherola-118.jpg", hash:"9/92" },
     { kind:"drinking", lat:45.8980628, lng:9.5663745, wiki:"20220927-pizzino_redo-004.jpg", hash:"2/26" },
     { kind:"drinking", lat:45.6501537, lng:9.5485208 },
     { kind:"drinking", lat:45.5878501, lng:9.7049133 },
-    { kind:"drinking", lat:45.9268221, lng:9.9704868 },
+    { kind:"drinking", lat:45.9268284, lng:9.9704989, wiki:"20250926-verzuda-024.jpg", hash:"b/b2" },
     { kind:"drinking", lat:45.5748769, lng:9.715603 },
     { kind:"drinking", lat:45.5761333, lng:9.7142185 },
     { kind:"drinking", lat:45.5746211, lng:9.7199449 },
+    { kind:"drinking", lat:45.9605545, lng:10.0092943, wiki:"20251007-verzuda2-009.jpg", hash:"9/93" },
+    { kind:"drinking", lat:45.9544086, lng:10.0090592, wiki:"20250926-verzuda-019.jpg", hash:"e/e7" },
+    { kind:"drinking", lat:45.5739157, lng:9.7167033 },
+    { kind:"drinking", lat:45.5735705, lng:9.7114524 },
 ];
 /*
  * MTB Bergamo (c) by Andrea Mazzoleni 2022
