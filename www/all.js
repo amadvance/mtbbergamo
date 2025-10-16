@@ -2019,9 +2019,11 @@ var TRACKS = [
 // ALTA SERIANA (Clusone)
 //
 { vote: 4, rate: 2, rate_max: 3, cycle: 2, zone: 'alta_seriana', name: 'Baita Pegherola, Marmitte Giganti, 311, Colle Palazzo, Bricconi, Nasolino', kind: 'down', file: 'Seriana_PegherolaMarmitte311CollePalazzoBricconiNasolino.gpx', link: '2025/09/pegherola', elevation_gain: 211, elevation_loss: 1154 },
+{ vote: 4, rate: 2, rate_max: 3, cycle: 2, zone: 'alta_seriana', name: 'Baite Verzuda, Baita Rigada, Colle Palazzo, Valzurio', kind: 'down', file: 'Seriana_VerzudaRigadaCollePalazzoValzurio.gpx', link: '2025/10/verzuda', elevation_gain: 152, elevation_loss: 1161 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'alta_seriana', name: 'Salita Nasolino, 340, Baite Moschel, Baite Pegherola', kind: 'up', file: 'Seriana_SalitaNasolino340MoschelPegherola_EBIKE.gpx', link: '2025/09/pegherola',elevation_gain: 1095, elevation_loss: 102 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'alta_seriana', name: 'Salita Valzurio, Baite Moschel, Baite Verzuda', kind: 'up', file: 'Seriana_SalitaValzurioMoschelVerzuda_EBIKE.gpx', link: '2025/10/verzuda', elevation_gain: 1089, elevation_loss: 8 },
 
 //
 // GANDINO
@@ -2348,6 +2350,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina', elevation_gain: 1305, elevation_loss: 208 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno', elevation_gain: 827, elevation_loss: 41 },
 ];
+
 var RENAME = {
 "A_ArgonPercorsoVita_REC.gpx" : "Cavallina_ArgonPercorsoVita.gpx",
 "A_ArgonPietraiaEremo_REC.gpx" : "Cavallina_ArgonPietraiaEremo.gpx",
