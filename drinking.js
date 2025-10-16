@@ -1781,4 +1781,9 @@ var DRINKING = [
     { kind:"drinking", lat:45.9544086, lng:10.0090592, wiki:"20250926-verzuda-019.jpg", hash:"e/e7" },
     { kind:"drinking", lat:45.5739157, lng:9.7167033 },
     { kind:"drinking", lat:45.5735705, lng:9.7114524 },
+    { kind:"drinking", lat:45.507073, lng:9.6400925 },
+    { kind:"drinking", lat:45.5072774, lng:9.6411178 },
+    { kind:"drinking", lat:45.5071893, lng:9.6406682 },
+    { kind:"drinking", lat:45.7276234, lng:9.6051216 },
+    { kind:"drinking", lat:45.7281207, lng:9.6067416 },
 ];
