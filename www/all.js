@@ -2021,11 +2021,13 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 3, cycle: 2, zone: 'alta_seriana', name: 'Baita Pegherola, Marmitte Giganti, 311, Colle Palazzo, Bricconi, Nasolino', kind: 'down', file: 'Seriana_PegherolaMarmitte311CollePalazzoBricconiNasolino.gpx', link: '2025/09/pegherola', elevation_gain: 211, elevation_loss: 1154 },
 { vote: 4, rate: 2, rate_max: 3, cycle: 2, zone: 'alta_seriana', name: 'Baite Verzuda, Baita Rigada, Colle Palazzo, Valzurio', kind: 'down', file: 'Seriana_VerzudaRigadaCollePalazzoValzurio.gpx', link: '2025/10/verzuda', elevation_gain: 152, elevation_loss: 1161 },
 { vote: 5, rate: 2, rate_max: 3, cycle: 2, zone: 'alta_seriana', name: 'Passo degli Agnelli, Sentiero delle Capre, Rifugio Cassinelli, Rusio', kind: 'down', file: 'Seriana_AgnelliCapreCassinelliPassoPresolanaDorgaRusio.gpx', link: '2025/10/agnelli', elevation_gain: 63, elevation_loss: 1078 },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 5, zone: 'alta_seriana', name: 'Monte Pora, Rifugio Magnolini, Colle Alto, Rifugio Pian di Pal\u00F9, Malghe, Colle Vareno, Sentiero dei Carbonai, Passo della Presolana', kind: 'down', file: 'Seriana_MontePoraMagnoliniColleAltoMalgheCarbonai.gpx', link: '2025/11/pora', elevation_gain: 495, elevation_loss: 1092 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'alta_seriana', name: 'Salita Nasolino, 340, Baite Moschel, Baite Pegherola', kind: 'up', file: 'Seriana_SalitaNasolino340MoschelPegherola_EBIKE.gpx', link: '2025/09/pegherola',elevation_gain: 1095, elevation_loss: 102 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'alta_seriana', name: 'Salita Valzurio, Baite Moschel, Baite Verzuda', kind: 'up', file: 'Seriana_SalitaValzurioMoschelVerzuda_EBIKE.gpx', link: '2025/10/verzuda', elevation_gain: 1089, elevation_loss: 8 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 10, zone: 'alta_seriana', name: 'Salita Rusio, Passo Olone, Rifugio Olmo, Passo degli Agnelli', kind: 'up', file: 'Seriana_SalitaRusioOloneOlmoAgnelli_EBIKE.gpx', link: '2025/10/agnelli', elevation_gain: 1062, elevation_loss: 47 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 10, zone: 'alta_seriana', name: 'Passo della Presolana, Colle Vareno, Monte Pora', kind: 'up', file: 'Seriana_SalitaPassoPresolanaMontePora_EBIKE.gpx', link: '2025/11/pora', elevation_gain: 661, elevation_loss: 60 },
 
 //
 // GANDINO
