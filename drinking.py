@@ -1,23 +1,40 @@
-# This script queries the Overpass API to fetch drinking_water in the province of Bergamo
+# -*- coding: utf-8 -*-
+# This script queries the Overpass API (from OpenStreetMap) to fetch locations of drinking water
+# sources in the province of Bergamo, Italy (including nearby towns such as Lecco, Erve, Carenno, etc.).
+# The data is then written to a JavaScript file ("drinking.js") in a structured array format
+# that can be directly used by web maps or visualization tools.
+# Compatible with both Python 2 and Python 3.
 
+from __future__ import print_function  # Ensures print() works in Python 2
 import requests
 import hashlib
-from urllib.parse import unquote
+import io
 
-# Overpass API endpoint
+# For compatibility between Python 2 and 3 (urllib.parse differs)
+try:
+    from urllib.parse import unquote
+except ImportError:  # Python 2 fallback
+    from urllib import unquote
+
+# Overpass API endpoint (used to query OpenStreetMap data)
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 
-# Overpass QL query
-query = """
+# Overpass QL query definition:
+# - Searches for nodes (points) within the province of Bergamo and nearby towns
+# - Includes:
+#   * Drinking water sources (amenity=drinking_water)
+#   * Animal watering places that provide drinkable water
+#   * Natural springs marked as drinkable
+query = u"""
 [out:json];
 
 (
-area["name"="Bergamo"]["admin_level"=6]; // province
+area["name"="Bergamo"]["admin_level"=6]; // Province of Bergamo
 area["name"="Moggio"];
 area["name"="Morterone"];
 area["name"="Erve"];
 area["name"="Carenno"];
-area["name"="Lecco"]["admin_level"=8]; // city
+area["name"="Lecco"]["admin_level"=8]; // City of Lecco
 )->.bergamo;
 
 (
@@ -31,60 +48,74 @@ area["name"="Lecco"]["admin_level"=8]; // city
 out center;
 """
 
-def commons_filename_to_name(file_param: str) -> str:
-    # Decodifico eventuali caratteri URL-encoded
+def commons_filename_to_name(file_param):
+    """
+    Convert a Wikimedia Commons file reference to a normalized filename.
+    Handles URL-encoded characters, removes 'File:' prefix, and replaces spaces with underscores.
+    Example: 'File:Mountain spring.jpg' → 'Mountain_spring.jpg'
+    """
     filename = unquote(file_param)
-
-    # Rimuovo il prefisso "File:" se presente
     if filename.startswith("File:"):
         filename = filename[len("File:"):]
-    
-    # Wikimedia sostituisce gli spazi con underscore
     return filename.replace(" ", "_")
 
-def commons_filename_to_hash(file_param: str) -> str:
+def commons_filename_to_hash(file_param):
+    """
+    Compute the path structure used by Wikimedia Commons for file storage.
+    Uses MD5 hash of the filename to generate a path such as 'a/ab'.
+    Example: 'Mountain_spring.jpg' → 'a/ab'
+    """
     filename = commons_filename_to_name(file_param)
-
-    # Calcolo l'MD5 del filename
     md5hash = hashlib.md5(filename.encode("utf-8")).hexdigest()
-
-    # Primi caratteri per il percorso
     first_char = md5hash[0]
     first_two = md5hash[:2]
-
-    # Costruisco l'URL diretto
-    return f"{first_char}/{first_two}"
-
+    return "{}/{}".format(first_char, first_two)
 
 def fetch_data():
-    print(f"Fetching...")
+    """Send the Overpass QL query and return the JSON response."""
+    print("Fetching data from Overpass API...")
     response = requests.post(OVERPASS_URL, data={"data": query})
     response.raise_for_status()
     return response.json()
 
 def save_direct(data, filename="drinking.js"):
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write("var DRINKING = [\n")
+    """
+    Save the retrieved data into a JavaScript file.
+    Each entry includes:
+      - kind: 'drinking' or 'spring'
+      - coordinates (lat, lng)
+      - optional Wikimedia Commons image reference (filename + hash path)
+    """
+    with io.open(filename, "w", encoding="utf-8") as f:
+        f.write(u"var DRINKING = [\n")
         count = 0
         for element in data.get("elements", []):
             if "lat" in element and "lon" in element:
-                amenity = element.get("tags", {}).get("amenity", "")
-                if amenity == "drinking_water":
-                        kind_str = "drinking";
-                else:
-                        kind_str = "spring";
-                wikimedia_commons = element.get("tags", {}).get("wikimedia_commons", "")
+                amenity = element.get("tags", {}).get("amenity", u"")
+                kind_str = "drinking" if amenity == "drinking_water" else "spring"
+
+                wikimedia_commons = element.get("tags", {}).get("wikimedia_commons", u"")
                 wikimedia_commons_str = wikimedia_commons.replace('"', '\\"')
-                # avoid Category: and other kinds
+
+                # Ignore categories or invalid references
                 if not wikimedia_commons_str.startswith("File"):
-                        wikimedia_commons_str = "";
-                f.write(f'    {{ kind:"{kind_str}", lat:{element["lat"]}, lng:{element["lon"]}')
+                    wikimedia_commons_str = u""
+
+                # Write base entry (kind, lat, lng)
+                f.write(u'    {{ kind:"{}", lat:{}, lng:{}'.format(
+                    kind_str, element["lat"], element["lon"]))
+
+                # If Wikimedia file is present, include extra info
                 if wikimedia_commons_str:
-                        f.write(f', wiki:"{commons_filename_to_name(wikimedia_commons_str)}", hash:"{commons_filename_to_hash(wikimedia_commons_str)}"')
-                f.write(f' }},\n')
+                    f.write(u', wiki:"{}", hash:"{}"'.format(
+                        commons_filename_to_name(wikimedia_commons_str),
+                        commons_filename_to_hash(wikimedia_commons_str)
+                    ))
+                f.write(u" },\n")
                 count += 1
-        f.write("];\n")
-    print(f"Saved {count} points to {filename}")
+
+        f.write(u"];\n")
+    print("Saved {} points to {}".format(count, filename))
 
 if __name__ == "__main__":
     data = fetch_data()

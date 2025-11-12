@@ -1,133 +1,168 @@
-# This script processes a list of dictionary-like strings stored in a text
-# file, where each line represents a route with attributes including a 'file'
-# field pointing to a GPX file.
-#
-# For each line starting with '{', it checks if an 'elevation' field exists.
-# If present, the line is copied unchanged.  If absent, it:
-# - Loads the specified GPX file and extracts elevation data.
-# - Applies a 7-point median filter to smooth the elevation data.
-# - Computes the total elevation gain and loss from the filtered data.
-# - Adds the sum of gain and loss as an integer 'elevation' to the line.
-#
-# The updated list is then written to an output file.
+# -*- coding: utf-8 -*-
+# This script processes a text file containing JavaScript-like dictionary entries, 
+# each describing a route with attributes (including a GPX filename).  
+# 
+# For each line that starts with '{', it checks whether the line already includes 
+# elevation information (elevation_gain, elevation_loss).  
+# 
+# If elevation data is missing:
+#   - It loads the corresponding GPX file (found in 'www/gpx/').
+#   - Extracts elevation data from all track points.
+#   - Applies a 7-point median filter to smooth the elevation profile.
+#   - Calculates the total elevation gain and loss.
+#   - Updates the line by appending 'elevation_gain' and 'elevation_loss' fields.
+# 
+# Finally, it writes the updated lines back to the same file (or a new output file).
+# 
+# This script is compatible with both Python 2 and Python 3.
 
+from __future__ import print_function  # ensures print() works in Python 2
 import gpxpy
 import gpxpy.gpx
 
-# Function to compute a 7-point median filter manually in pure Python
+# ----------------------------
+# Helper functions
+# ----------------------------
+
 def manual_median_filter(data, window_size=7):
+    """
+    Apply a simple median filter to a list of numbers.
+    It smooths out short-term fluctuations in elevation data.
+    """
     half_window = window_size // 2
     filtered_data = []
-    
     for i in range(len(data)):
-        # Define the window boundaries
+        # Define window boundaries
         start = max(0, i - half_window)
         end = min(len(data), i + half_window + 1)
-        
-        # Extract the window and compute the median
         window = sorted(data[start:end])
         median_idx = len(window) // 2
+        # Compute the median manually
         if len(window) % 2 != 0:
             median = window[median_idx]
         else:
-            median = (window[median_idx-1] + window[median_idx]) / 2
-        
+            median = (window[median_idx - 1] + window[median_idx]) / 2.0
         filtered_data.append(median)
-    
     return filtered_data
 
-# Function to calculate elevation gain and loss from a list of elevations
+
 def calculate_elevation_changes(elevations):
-    gain = 0
-    loss = 0
+    """
+    Compute total elevation gain and loss (in meters) from a sequence of elevations.
+    Gain = sum of all positive ascents, Loss = sum of all descents.
+    """
+    gain = 0.0
+    loss = 0.0
     for i in range(1, len(elevations)):
-        diff = elevations[i] - elevations[i-1]
+        diff = elevations[i] - elevations[i - 1]
         if diff > 0:
             gain += diff
         elif diff < 0:
             loss -= diff
     return gain, loss
 
-# Function to process a single GPX file and return gain+loss sum
+
 def process_gpx_file(file_path):
+    """
+    Parse a GPX file, extract elevation data, filter it, and calculate gain/loss.
+    Returns a tuple (gain, loss).
+    """
+    import io
     try:
-        with open("www/gpx/" + file_path, 'r') as gpx_file:
+        with io.open("www/gpx/" + file_path, 'r', encoding='utf-8') as gpx_file:
             gpx = gpxpy.parse(gpx_file)
-        
-        # Extract elevation data from GPX points
+
+        # Collect all elevation points from the GPX
         elevations = []
         for track in gpx.tracks:
             for segment in track.segments:
                 for point in segment.points:
                     if point.elevation is not None:
                         elevations.append(point.elevation)
-        
+
         if not elevations:
-            return 0, 0  # Return 0 if no elevation data
-        
-        # Apply manual 7-point median filter
-        filtered_elevations = manual_median_filter(elevations)
-        
-        # Calculate elevation gain and loss
-        return calculate_elevation_changes(filtered_elevations)
-    
+            return 0, 0  # No elevation data found
+
+        # Smooth the elevation data and compute gain/loss
+        filtered = manual_median_filter(elevations)
+        return calculate_elevation_changes(filtered)
+
     except Exception as e:
-        print(f"Error processing {file_path}: {e}")
+        print("Error processing {}: {}".format(file_path, e))
         return 0, 0
 
-# Function to manually parse the file field and check for elevation
+
 def extract_file_and_check_elevation(line):
-    # Remove leading '{', trailing '}', and split by commas
+    """
+    Extract the 'file' value from a line and check if elevation data is already present.
+    Returns a tuple: (filename, has_elevation_data).
+    """
     content = line.strip().strip('{},').split(',')
     file_value = None
     has_elevation = False
-    
+
     for item in content:
         item = item.strip()
         if 'file:' in item:
-            # Extract the value after 'file:'
             file_value = item.split('file:')[1].strip().strip("'\"")
         if 'elevation_gain:' in item:
             has_elevation = True
-    
+
     return file_value, has_elevation
 
-# Main script
+
+# ----------------------------
+# Main processing function
+# ----------------------------
+
 def process_list_file(input_file, output_file):
-    with open(input_file, 'r', encoding='utf-8', errors='replace') as f:
+    """
+    Read an input file line by line, compute missing elevation data,
+    and write the updated content to the output file.
+    """
+    import io
+
+    with io.open(input_file, 'r', encoding='utf-8', errors='replace') as f:
         lines = f.readlines()
-    
+
     output_lines = []
     for line in lines:
         stripped_line = line.strip()
         if stripped_line.startswith('{'):
             try:
-                # Extract the file field and check for elevation
                 gpx_file, has_elevation = extract_file_and_check_elevation(stripped_line)
+
                 if not gpx_file:
-                    raise ValueError("No 'file' field found in line")
-                
+                    raise ValueError("Missing 'file' field in line")
+
                 if has_elevation:
-                    # If elevation exists, keep the line as is
+                    # Keep the original line if elevation data already exists
                     output_lines.append(line)
                 else:
-                    # If no elevation, compute it and append
+                    # Compute gain/loss and append the new data
                     gain, loss = process_gpx_file(gpx_file)
-                    new_line = f"{stripped_line.rstrip(' },')}, elevation_gain: {int(gain)}, elevation_loss: {int(loss)} }},\n"
+                    new_line = "{}{}, elevation_gain: {}, elevation_loss: {} }},\n".format(
+                        stripped_line.rstrip(' },'), "", int(gain), int(loss)
+                    )
                     output_lines.append(new_line)
             except Exception as e:
-                print(f"Error processing line {line}: {e}")
-                output_lines.append(line)  # Keep original line if error occurs
+                print("Error processing line {}: {}".format(line, e))
+                output_lines.append(line)
         else:
-            output_lines.append(line)  # Keep non-dictionary lines unchanged
+            output_lines.append(line)
 
-    # Write the updated list to output file
-    with open(output_file, 'w', encoding='utf-8') as f:
+    # Write updated lines back to file
+    with io.open(output_file, 'w', encoding='utf-8') as f:
         for line in output_lines:
-            f.write(line)  # Write lines as-is, preserving trailing newlines
+            f.write(line)
 
+    print("List written to {}".format(output_file))
+
+
+# ----------------------------
+# Entry point
+# ----------------------------
 if __name__ == "__main__":
     input_file = 'tracks.js'
     output_file = 'tracks.js'
     process_list_file(input_file, output_file)
-    print(f"List written to {output_file}")
