@@ -18,12 +18,16 @@ query = u"""
 [out:json];
 
 (
-area["name"="Bergamo"]["admin_level"=6]; // Province of Bergamo
+// Bergamo
+area["name"="Bergamo"]["admin_level"=6]; // Province
+// Lecco
 area["name"="Moggio"];
 area["name"="Morterone"];
 area["name"="Erve"];
 area["name"="Carenno"];
-area["name"="Lecco"]["admin_level"=8]; // City of Lecco
+area["name"="Lecco"]["admin_level"=8]; // City
+// Brescia
+area["name"="Angolo Terme"];
 )->.bergamo;
 
 (
