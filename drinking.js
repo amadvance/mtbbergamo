@@ -282,7 +282,7 @@ var DRINKING = [
     { kind:"drinking", lat:45.7610451, lng:9.9975242, wiki:"20220327-sicolo-151.jpg", hash:"4/46" },
     { kind:"drinking", lat:45.756472, lng:9.4944289 },
     { kind:"drinking", lat:46.0404362, lng:9.666916 },
-    { kind:"drinking", lat:45.9402056, lng:10.04498 },
+    { kind:"drinking", lat:45.9401484, lng:10.045037, wiki:"20260103-latte-217.jpg", hash:"e/e6" },
     { kind:"drinking", lat:45.9344536, lng:10.039782 },
     { kind:"spring", lat:45.9429608, lng:10.0475484 },
     { kind:"drinking", lat:45.4826886, lng:9.6320556 },
@@ -1813,4 +1813,7 @@ var DRINKING = [
     { kind:"drinking", lat:45.8166894, lng:9.9077438 },
     { kind:"drinking", lat:45.5834481, lng:9.6995129 },
     { kind:"drinking", lat:45.9990327, lng:9.6406772 },
+    { kind:"drinking", lat:45.5790909, lng:9.7078441 },
+    { kind:"drinking", lat:45.7737794, lng:10.0378899 },
+    { kind:"drinking", lat:45.9256623, lng:10.0740565, wiki:"20260103-latte-072.jpg", hash:"3/36" },
 ];
