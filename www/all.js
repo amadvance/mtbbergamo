@@ -2023,6 +2023,7 @@ var TRACKS = [
 { vote: 5, rate: 2, rate_max: 3, cycle: 2, zone: 'alta_seriana', name: 'Passo degli Agnelli, Sentiero delle Capre, Rifugio Cassinelli, Rusio', kind: 'down', file: 'Seriana_AgnelliCapreCassinelliPassoPresolanaDorgaRusio.gpx', link: '2025/10/agnelli', elevation_gain: 63, elevation_loss: 1078 },
 { vote: 3, rate: 2, rate_max: 3, cycle: 3, zone: 'alta_seriana', name: 'Monte Pora, Rifugio Magnolini, Colle Alto, Rifugio Pian di Pal\u00F9, Malghe, Colle Vareno, Sentiero dei Carbonai, Passo della Presolana', kind: 'down', file: 'Seriana_MontePoraMagnoliniColleAltoMalgheCarbonai.gpx', link: '2025/11/pora', elevation_gain: 495, elevation_loss: 1092 },
 { vote: 4, rate: 1, rate_max: 2, cycle: 1, zone: 'alta_seriana', name: 'Cima Blum, Clusone', kind: 'down', file: 'Seriana_ChiesettaAlpiniCimaBlumClusoneConcaVerde.gpx', link: '2025/12/blum', elevation_gain: 179, elevation_loss: 845 },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 2, zone: 'alta_seriana', name: 'Pas del Soc, Via del Latte, Rusio', kind: 'down', file: 'Seriana_PasDelSocViaDelLatteRusio.gpx', link: '2026/01/latte', elevation_gain: 108, elevation_loss: 805 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'alta_seriana', name: 'Salita Nasolino, 340, Baite Moschel, Baite Pegherola', kind: 'up', file: 'Seriana_SalitaNasolino340MoschelPegherola_EBIKE.gpx', link: '2025/09/pegherola',elevation_gain: 1095, elevation_loss: 102 },
@@ -2030,6 +2031,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 10, zone: 'alta_seriana', name: 'Salita Rusio, Passo Olone, Rifugio Olmo, Passo degli Agnelli', kind: 'up', file: 'Seriana_SalitaRusioOloneOlmoAgnelli_EBIKE.gpx', link: '2025/10/agnelli', elevation_gain: 1062, elevation_loss: 47 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'alta_seriana', name: 'Salita Passo della Presolana, Colle Vareno, Monte Pora', kind: 'up', file: 'Seriana_SalitaPassoPresolanaMontePora_EBIKE.gpx', link: '2025/11/pora', elevation_gain: 661, elevation_loss: 60 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'alta_seriana', name: 'Salita Conca Verde, Rovetta, Chiesetta degli Alpini', kind: 'up', file: 'Seriana_SalitaConvaVerdeChiesettaAlpini_EBIKE.gpx', link: '2025/12/blum', elevation_gain: 741, elevation_loss: 17 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 15, zone: 'alta_seriana', name: 'Salita Rusio, Passo della Presolana, Via del Latte, Pas del Soc', kind: 'up', file: 'Seriana_SalitaRusioPassoPresolanaViaDelLattePasDelSoc_EBIKE.gpx', link: '2026/01/latte', elevation_gain: 744, elevation_loss: 91 },
 
 //
 // GANDINO
