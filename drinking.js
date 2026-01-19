@@ -1816,4 +1816,5 @@ var DRINKING = [
     { kind:"drinking", lat:45.5790909, lng:9.7078441 },
     { kind:"drinking", lat:45.7737794, lng:10.0378899 },
     { kind:"drinking", lat:45.9256623, lng:10.0740565, wiki:"20260103-latte-072.jpg", hash:"3/36" },
+    { kind:"drinking", lat:45.8080861, lng:9.8699522 },
 ];
