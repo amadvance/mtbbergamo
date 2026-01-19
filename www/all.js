@@ -2968,7 +2968,6 @@ var DRINKING = [
     { kind:"drinking", lat:45.8980759, lng:9.4633964 },
     { kind:"drinking", lat:45.8986566, lng:9.4617554 },
     { kind:"drinking", lat:45.89749, lng:9.4649277 },
-    { kind:"drinking", lat:45.9389466, lng:10.0419115 },
     { kind:"drinking", lat:45.7223792, lng:9.6204192 },
     { kind:"drinking", lat:45.8313282, lng:10.0751081 },
     { kind:"drinking", lat:45.8276082, lng:10.0449279, wiki:"20220602-colombina-247.jpg", hash:"3/35" },
