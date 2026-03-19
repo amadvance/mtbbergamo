@@ -1912,6 +1912,7 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Tribulina di Ganda, 522, Gazzaniga', kind: 'down', file: 'Seriana_TribulinaGanda522Gazzaniga.gpx', link: '2023/01/522', elevation_gain: 43, elevation_loss: 742 },
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Rena, Croce San Luigi, Desenzano', kind: 'down', file: 'Seriana_RenaLuigiDesenzano.gpx', link: '2023/01/luigi', elevation_gain: 107, elevation_loss: 927 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Plazza, Gazzaniga', kind: 'down', file: 'Seriana_PlazzaGazzaniga.gpx', link: '2025/05/plazza', elevation_gain: 72, elevation_loss: 779 },
+{ vote: 3, rate: 2, rate_max: 3, cycle: 2, zone: 'bassa_seriana', name: 'Monte Pranz\u00E0, Abbazia', kind: 'down', file: 'Seriana_PranzaAbbazia.gpx', link: '2026/03/pranza', elevation_gain: 6, elevation_loss: 619 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Trasferimento dalla Forcella di Nese al Canto Basso', kind: 'up', file: 'Seriana_ForcellaNese533BCantoBasso.gpx', link: '2019/03/salite-valle-seriana', elevation_gain: 88, elevation_loss: 57 },
@@ -1933,6 +1934,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'bassa_seriana', name: 'Salita Vertova, Val del Gr\u00F9, Monte Poieto', kind: 'up', file: 'Seriana_SalitaVertovaGruPoieto_EBIKE.gpx', link: '2023/09/poieto-516', elevation_gain: 1016, elevation_loss: 88 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita Gazzaniga, Ganda', kind: 'up', file: 'Seriana_SalitaGazzanigaGanda_EBIKE.gpx', link: '2019/05/521', elevation_gain: 720, elevation_loss: 23 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita Gazzaniga, Coldre, Val del Gru', kind: 'up', file: 'Seriana_SalitaGazzanigaColdreGru_EBIKE.gpx', link: '2025/05/plazza', elevation_gain: 800, elevation_loss: 78 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: 'bassa_seriana', name: 'Salita Colle Gallo, Monte Pranz\u00E0', kind: 'up', file: 'Seriana_SalitaColleGalloPranza_EBIKE.gpx', link: '2026/03/pranza', elevation_gain: 661, elevation_loss: 38 },
 
 // trek
 { vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_seriana', name: 'Anello del Misma', kind: 'trek', file: 'Seriana_AnelloDelMisma_EBIKE.gpx', link: '2024/09/anello-misma', elevation_gain: 867, elevation_loss: 862 },
