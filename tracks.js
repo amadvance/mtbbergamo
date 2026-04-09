@@ -310,7 +310,9 @@ var TRACKS = [
 { vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'martino, martinella', name: 'Corna Martinella, 822, 801A', kind: 'down', file: 'Martino_CornaMartinella822801A.gpx', link: '2020/01/corna-martinella', elevation_gain: 8, elevation_loss: 358 },
 { vote: 5, rate: 1, rate_max: 3, cycle: 0, zone: 'martinella', name: 'Corna Martinella, Classica', kind: 'down', file: 'Martino_CornaMartinellaClassica.gpx', link: '2020/01/corna-martinella', elevation_gain: 22, elevation_loss: 344 },
 { vote: 5, rate: 1, rate_max: 3, cycle: 0, zone: 'martinella', name: 'Corna Martinella, Cristai Super Flow', kind: 'down', file: 'Martino_CornaMartinellaCristaiSuperFlow.gpx', link: '2020/01/corna-martinella', elevation_gain: 12, elevation_loss: 332 },
-{ vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'martino, martinella', name: 'Santa Margherita, Pistino', kind: 'down', file: 'Martino_MargheritaPistino.gpx', link: '2020/01/corna-martinella', elevation_gain: 0, elevation_loss: 242 },
+{ vote: 3, rate: 1, rate_max: 2, cycle: 0, zone: 'martinella', name: 'Santa Margherita, Pistino', kind: 'down', file: 'Martino_MargheritaPistino.gpx', link: '2020/01/corna-martinella', elevation_gain: 0, elevation_loss: 242 },
+{ vote: 4, rate: 1, rate_max: 3, cycle: 0, zone: 'martinella', name: 'Corna Martinella, Brughetto', kind: 'down', file: 'Martino_CornaMartinellaBrughetto.gpx', link: '2020/01/corna-martinella', elevation_gain: 7, elevation_loss: 319 },
+{ vote: 4, rate: 1, rate_max: 1, cycle: 0, zone: 'martino, martinella', name: 'Santa Margherita, Pizza Margherita', kind: 'down', file: 'Martino_MargheritaPizzaMargherita.gpx', link: '2020/01/corna-martinella', elevation_gain: 4, elevation_loss: 244 },
 { vote: 2, rate: 1, rate_max: 2, cycle: 0, zone: 'martino, coldara', name: 'Coldara, PizzoPec, Torre de Busi', kind: 'down', file: 'Martino_ColdaraPizzoPec.gpx', link: '2020/01/coldara', elevation_gain: 4, elevation_loss: 488 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'martino, coldara', name: 'Coldara, San Marco, Torre de Busi', kind: 'down', file: 'Martino_ColdaraSanMarco.gpx', link: '2020/01/coldara', elevation_gain: 30, elevation_loss: 510 },
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'martino, coldara', name: 'Coldara, Val Bratta, Torre de Busi', kind: 'down', file: 'Martino_ColdaraValBratta.gpx', link: '2020/01/coldara', elevation_gain: 20, elevation_loss: 505 },
@@ -895,4 +897,3 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina', elevation_gain: 1305, elevation_loss: 208 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno', elevation_gain: 827, elevation_loss: 41 },
 ];
-
