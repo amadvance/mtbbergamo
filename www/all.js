@@ -1965,6 +1965,7 @@ var TRACKS = [
 { vote: 4, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_seriana', name: 'Monte Bue, Monte Croce, Monte Beio, Cene', kind: 'down', file: 'Seriana_MonteBueCroceBeioCene_EBIKE.gpx', link: '2025/03/bo-croce-beio', elevation_gain: 1089, elevation_loss: 1002 },
 { vote: 4, rate: 3, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Pier, Rolling Stones, Val Rossa', kind: 'down', file: 'Seriana_MontePierRollingStonesValRossa.gpx', link: '2025/03/rolling-stones', elevation_gain: 109, elevation_loss: 757 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Monte Pier, Bretei Peia, Monte Beio', kind: 'down', file: 'Seriana_MontePierBreteiPeiaSanRoccoCavalliCene.gpx', link: '2025/03/bretei-cavalli', elevation_gain: 177, elevation_loss: 813 },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_seriana', name: 'Prati Alti, Culi del Misma, Beata Morosini, Albino', kind: 'down', file: 'Seriana_PratiAltiCuliAbino.gpx', link: '2026/04/culi', elevation_gain: 131, elevation_loss: 645 },
 
 // climb
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana, misma', name: 'Salita da Pradalunga, Morosini, Ripetitori, Monte Misma', kind: 'up', file: 'Seriana_SalitaMismaRipetitori_EBIKE.gpx', link: '2021/04/misma-santa-maria-cenate-sopra', elevation_gain: 839, elevation_loss: 13 },
@@ -1980,6 +1981,8 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'bassa_seriana', name: 'Salita Abbazia, Prati Moletti, Santuario di Altino, Monte Altino', kind: 'up', file: 'Seriana_AbbaziaMolettiMonteAltino_EBIKE.gpx', link: '2025/01/altino-abbazia', elevation_gain: 722, elevation_loss: 36 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'bassa_seriana', name: 'Salita Cene, Monte Beio', kind: 'up', file: 'Seriana_SalitaCeneMonteBeio_EBIKE.gpx', link: '2025/02/beio-dh', elevation_gain: 411, elevation_loss: 55 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_seriana', name: 'Salita Cene, Monte Bue, Monte Croce, Monte Pier', kind: 'up', file: 'Seriana_SalitaCeneMonteBueCrocePier_EBIKE.gpx', link: '2025/03/rolling-stones', elevation_gain: 829, elevation_loss: 166 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: 'bassa_seriana', name: 'Salita Albino, Casale, Prati Alti', kind: 'up', file: 'Seriana_SalitaAlbinoCasalePratiAlti_EBIKE.gpx', link: '2026/05/culi', elevation_gain: 632, elevation_loss: 117 },
+
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita da Ganda al Monte Poieto', kind: 'up', file: 'Seriana_SalitaGandaPoieto.gpx', link: '2019/03/poieto-dh', elevation_gain: 293, elevation_loss: 11 },
@@ -2360,6 +2363,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina', elevation_gain: 1305, elevation_loss: 208 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno', elevation_gain: 827, elevation_loss: 41 },
 ];
+
 var RENAME = {
 "A_ArgonPercorsoVita_REC.gpx" : "Cavallina_ArgonPercorsoVita.gpx",
 "A_ArgonPietraiaEremo_REC.gpx" : "Cavallina_ArgonPietraiaEremo.gpx",
