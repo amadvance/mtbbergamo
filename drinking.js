@@ -1550,7 +1550,6 @@ var DRINKING = [
     { kind:"drinking", lat:45.8468066, lng:9.4910714, wiki:"20231129-pramagnone-039.jpg", hash:"7/78" },
     { kind:"drinking", lat:45.8027019, lng:10.0604318 },
     { kind:"drinking", lat:45.8520993, lng:9.5292987, wiki:"20231210-canti_neve-104.jpg", hash:"9/9d" },
-    { kind:"drinking", lat:45.7896143, lng:9.4815513 },
     { kind:"drinking", lat:45.9212483, lng:9.5010455 },
     { kind:"drinking", lat:45.9231664, lng:9.5059559 },
     { kind:"drinking", lat:45.8409482, lng:9.5121568, wiki:"20240112-explo_rota-075.jpg", hash:"5/58" },
