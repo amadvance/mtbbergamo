@@ -323,6 +323,7 @@ var TRACKS = [
 { vote: 5, rate: 3, rate_max: 4, cycle: 0, zone: 'martino, valcava', name: 'Valcava, Vekkia Miniera, Burligo', kind: 'down', file: 'Martino_ValcavaVekkiaMiniera.gpx', link: '2025/02/vekkia-miniera', elevation_gain: 58, elevation_loss: 946 },
 { vote: 4, rate: 2, rate_max: 0, cycle: 0, zone: 'martino, valcava', name: 'Cava, Faidello DH, Opreno, Burligo', kind: 'down', file: 'Martino_FaidelloDH.gpx', link: '2025/02/faidello', elevation_gain: 55, elevation_loss: 529 },
 { vote: 4, rate: 3, rate_max: 0, cycle: 1, zone: 'martino, valcava', name: 'Antenne Valcava, Zuccherone, Faidello, Opreno, Burligo', kind: 'down', file: 'Martino_AntenneValcavaZuccheroneFaidelloBurligo.gpx', link: '2025/04/zuccherone-faidello', elevation_gain: 72, elevation_loss: 935 },
+{ vote: 4, rate: 2, rate_max: 0, cycle: 1, zone: 'martino, valcava', name: 'Forcella Alta, Colle di Sogno, San Marco, San Michele', kind: 'down', file: 'Martino_PertusColleDiSognoSanMarcoSanMichele.gpx', link: '2026/05/valcava-traverso', elevation_gain: 154, elevation_loss: 1033 },
 
 // unlisted
 { vote: 5, rate: 1, rate_max: 3, cycle: 0, zone: '', name: 'Corna Martinella, Classica', kind: 'down', file: 'Martino_CornaMartinellaClassica.gpx', link: '2020/01/corna-martinella', elevation_gain: 22, elevation_loss: 344 },
@@ -350,6 +351,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'martino, valcava, martinella', name: 'Salita da Torre De Busi alla Corna Martinella', kind: 'up', file: 'Martino_SalitaBusiCornaMartinella_EBIKE.gpx', link: '2020/01/corna-martinella', elevation_gain: 427, elevation_loss: 86 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'martino, valcava', name: 'Salita da Palazzago alla Cava', kind: 'up', file: 'Martino_SalitaPalazzagoCava.gpx', link: '2018/12/salite-san-martino', elevation_gain: 987, elevation_loss: 4 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'martino, valcava', name: 'Salita Busi, Opreno, Burligo, Valcava', kind: 'up', file: 'Martino_SalitaBusiOprenoBurligoValcava_EBIKE.gpx', link: '2019/12/valcava-821-busi', elevation_gain: 1182, elevation_loss: 204 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'martino, valcava', name: 'Salita Busi, Valcava, Forcella Alta', kind: 'up', file: 'Martino_SalitaTorreDeBusiPertus_EBIKE.gpx', link: '2026/05/valcava-traverso', elevation_gain: 1026, elevation_loss: 110 },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'pedrino', name: 'Salita da Burligo a Colle Pedrino', kind: 'up', file: 'Martino_SalitaBurligoCollePedrino.gpx', link: '2019/04/colle-pedrino', elevation_gain: 282, elevation_loss: 0 },
