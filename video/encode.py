@@ -54,7 +54,7 @@ FILTER_DARK = "curves=all='0/0 0.5/0.65 1/1',normalize=blackpt=black:whitept=whi
 ENCODE = "-preset medium -codec:v libx264 -crf 24 -pix_fmt yuv420p -codec:a aac -b:a 192k"
 # -maxrate 90M -bufsize 30M
 
-FILTER = FILTER_WINTER
+FILTER = FILTER_SUMMER
 
 print(ffmpeg, "-y", input_list, "-filter_complex \"{};[v]{}[v]\" -map \"[v]\" -map \"[a]\"".format(filter_list, FILTER), ENCODE, output_mp4, file=cmd)
 
