@@ -36,13 +36,26 @@ area["name"="Angolo Terme"];
 );
 out center;
 """
-
+  
 def fetch_data():
     """Send the Overpass QL query and return the parsed JSON response."""
     print("Fetching data from Overpass API...")
-    response = requests.post(OVERPASS_URL, data={"data": query})
+    response = requests.post(
+        OVERPASS_URL,
+        data=query.encode("utf-8"),
+        headers={
+            "Content-Type": "text/plain; charset=utf-8",
+            "Accept": "application/json",
+            "User-Agent": "charging-map-script/1.0"
+        },
+        timeout=120
+    )
+    if not response.ok:
+        print("HTTP:", response.status_code)
+        print(response.text)
     response.raise_for_status()
     return response.json()
+    
 
 def save_direct(data, filename="charging.js"):
     """
