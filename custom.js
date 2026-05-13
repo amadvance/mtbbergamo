@@ -278,8 +278,17 @@ function create_drinking(map, control)
 	}
 	});
 
+	var VendingIcon = L.Icon.extend({
+		options: {
+		iconSize:     [32, 32],
+		iconAnchor:   [16, 16],
+		popupAnchor:  [-3, -20]
+	}
+	});
+
 	var drinkingIcon = new DrinkingIcon({iconUrl: ARCHIVE + 'img/drinking-icon.png'});
 	var springIcon = new SpringIcon({iconUrl: ARCHIVE + 'img/spring-icon.png'});
+	var vendingIcon = new VendingIcon({iconUrl: ARCHIVE + 'img/vending-icon.png'});
 
 	// Create a group to hold all markers
 	var drinkingLayer = L.layerGroup();
@@ -289,12 +298,15 @@ function create_drinking(map, control)
 		if (p.kind == "drinking") {
 			p_msg = "Punto acqua";
 			p_icon = drinkingIcon;
+		} else if (p.kind == "vending") {
+			p_msg = "Vendita acqua";
+			p_icon = vendingIcon;
 		} else {
 			p_msg = "Sorgente";
 			p_icon = springIcon;
 		}
 		if ("wiki" in p)
-			p_msg += ` <a href="https://commons.wikimedia.org/wiki/File:${p.wiki}">con foto<br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/${p.hash}/${p.wiki}/320px-${p.wiki}"></a>`;
+			p_msg += ` <a href="https://commons.wikimedia.org/wiki/File:${p.wiki}">con foto<br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/${p.hash}/${p.wiki}/250px-${p.wiki}"></a>`;
 		L.marker([p.lat, p.lng], {icon: p_icon}).addTo(drinkingLayer).bindPopup(p_msg);
 	}
 

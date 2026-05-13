@@ -44,6 +44,8 @@ area["name"="Angolo Terme"];
 (
     // Drinking Water
     node["amenity"="drinking_water"]["drinking_water:legal"!="no"]["drinking_water"!="no"](area.bergamo);
+    // Vending Machine
+    node["amenity"="vending_machine"]["vending"="water"](area.bergamo);
     // Animal Watering Place
     node["amenity"="watering_place"]["drinking_water"="yes"](area.bergamo);
     // Spring
@@ -108,7 +110,13 @@ def save_direct(data, filename="drinking.js"):
         for element in data.get("elements", []):
             if "lat" in element and "lon" in element:
                 amenity = element.get("tags", {}).get("amenity", u"")
-                kind_str = "drinking" if amenity == "drinking_water" else "spring"
+
+                if amenity == "drinking_water":
+                    kind_str = "drinking"
+                elif amenity == "vending_machine":
+                    kind_str = "vending"
+                else:
+                    kind_str = "spring"
 
                 wikimedia_commons = element.get("tags", {}).get("wikimedia_commons", u"")
                 wikimedia_commons_str = wikimedia_commons.replace('"', '\\"')
