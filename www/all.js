@@ -2172,6 +2172,7 @@ var TRACKS = [
 { vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'bassa_brembana', name: 'Pizzo Rabbioso, Pagliaro, Algua', kind: 'down', file: 'Brembana_PizzoRabbiosoPagliaroAlgua.gpx', link: '2024/07/rabbioso', elevation_gain: 10, elevation_loss: 700 },
 { vote: 4, rate: 3, rate_max: 4, cycle: 5, zone: 'bassa_brembana', name: 'Monte Sornadello, Monte Foldone, Bocchetta Ronco, CinguaDH', kind: 'down', file: 'Brembana_SornadelloFoldoneBocchettaRoncoCinguaDH.gpx', link: '2024/08/sornadello', elevation_gain: 130, elevation_loss: 1201 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Era, Pianca, Cornello Dei Tasso', kind: 'down', file: 'Brembana_EraPiancaCornelloDeiTasso.gpx', link: '2025/06/era-pianca', elevation_gain: 308, elevation_loss: 881 },
+{ vote: 3, rate: 3, rate_max: 4, cycle: 0, zone: 'bassa_brembana', name: 'Passo del Crosnello, Sentiero Del Berto, Valle Merlonga, San Pellegrino', kind: 'down', file: 'Brembana_CrosnelloSentieroDelBertoMerlongaSanPellegrino.gpx', link: '2025/05/berto', elevation_gain: 12, elevation_loss: 733 },
 
 // trek
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Vie del Passato', kind: 'trek', file: 'Brembana_VieDelPassato.gpx', link: '2023/08/passato', elevation_gain: 1141, elevation_loss: 1111 },
@@ -2196,6 +2197,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: 'bassa_brembana', name: 'Salita Algua, Bracca, Frerola, Pizzo Rabbioso', kind: 'up', file: 'Brembana_SalitaAlguaPizzoRabbioso_EBIKE.gpx', link: '2024/07/rabbioso', elevation_gain: 782, elevation_loss: 68 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: 'bassa_brembana', name: 'Salita San Giovanni Bianco. Bocchetta Roco, Passo Mercante del Ferro, Monte Sornadello', kind: 'up', file: 'Brembana_SalitaSanGiovanniBiancoPassoMercanteFerroSornadello_EBIKE.gpx', link: '2024/08/sornadello', elevation_gain: 1155, elevation_loss: 70 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita Camerata Cornello, Era', kind: 'up', file: 'Brembana_SalitaCamerataCornelloEra_EBIKE.gpx', link: '2025/06/era-pianca', elevation_gain: 637, elevation_loss: 3 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita San Pellegrino, Vetta, Sussia, Passo del Crosnello', kind: 'up', file: 'Brembana_SalitaSanPellegrinoVettaSussiaCrosnello_EBIKE.gpx*', link: '2026/05/berto', elevation_gain: 0, elevation_loss: 0 },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: '', name: 'Salita da Salvarizza alla Forcella della Valcumina', kind: 'up', file: 'Brembana_SalvarizzaForcellaValcumina_EBIKE.gpx', link: '2021/05/valcumina', elevation_gain: 772, elevation_loss: 115 },
@@ -2369,7 +2371,6 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina', elevation_gain: 1305, elevation_loss: 208 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno', elevation_gain: 827, elevation_loss: 41 },
 ];
-
 var RENAME = {
 "A_ArgonPercorsoVita_REC.gpx" : "Cavallina_ArgonPercorsoVita.gpx",
 "A_ArgonPietraiaEremo_REC.gpx" : "Cavallina_ArgonPietraiaEremo.gpx",
