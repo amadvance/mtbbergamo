@@ -1919,4 +1919,5 @@ var DRINKING = [
     { kind:"drinking", lat:45.8903076, lng:9.9615728 },
     { kind:"drinking", lat:45.8871116, lng:9.9543998 },
     { kind:"drinking", lat:45.8061085, lng:9.8233085 },
+    { kind:"drinking", lat:45.6958536, lng:9.6332503 },
 ];
