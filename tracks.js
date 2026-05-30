@@ -729,7 +729,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: 'bassa_brembana', name: 'Salita Algua, Bracca, Frerola, Pizzo Rabbioso', kind: 'up', file: 'Brembana_SalitaAlguaPizzoRabbioso_EBIKE.gpx', link: '2024/07/rabbioso', elevation_gain: 782, elevation_loss: 68 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 2, zone: 'bassa_brembana', name: 'Salita San Giovanni Bianco. Bocchetta Roco, Passo Mercante del Ferro, Monte Sornadello', kind: 'up', file: 'Brembana_SalitaSanGiovanniBiancoPassoMercanteFerroSornadello_EBIKE.gpx', link: '2024/08/sornadello', elevation_gain: 1155, elevation_loss: 70 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita Camerata Cornello, Era', kind: 'up', file: 'Brembana_SalitaCamerataCornelloEra_EBIKE.gpx', link: '2025/06/era-pianca', elevation_gain: 637, elevation_loss: 3 },
-{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita San Pellegrino, Vetta, Sussia, Passo del Crosnello', kind: 'up', file: 'Brembana_SalitaSanPellegrinoVettaSussiaCrosnello_EBIKE.gpx*', link: '2026/05/berto', elevation_gain: 0, elevation_loss: 0 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita San Pellegrino, Vetta, Sussia, Passo del Crosnello', kind: 'up', file: 'Brembana_SalitaSanPellegrinoVettaSussiaCrosnello_EBIKE.gpx', link: '2026/05/berto', elevation_gain: 781, elevation_loss: 8 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita S. Antonio Abbandonato, Passo del Crosnello', kind: 'up', file: 'Brembana_SalitaSAntonioCrosnello_EBIKE.gpx', link: '2020/08/crosnello-sussia-vettarola-san', elevation_gain: 193, elevation_loss: 52 },
 
 // overlapping
