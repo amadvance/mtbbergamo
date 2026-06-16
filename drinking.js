@@ -1758,7 +1758,7 @@ var DRINKING = [
     { kind:"drinking", lat:45.8809084, lng:9.4075113 },
     { kind:"vending", lat:45.7181525, lng:9.5818428 },
     { kind:"drinking", lat:45.8688477, lng:9.4028877 },
-    { kind:"drinking", lat:45.7361842, lng:9.7200854 },
+    { kind:"drinking", lat:45.7362041, lng:9.7200903, wiki:"20260616-bdc_monte_di_nese-20260614_120511.jpg", hash:"d/d9" },
     { kind:"drinking", lat:45.68479, lng:9.7341108 },
     { kind:"drinking", lat:45.6403909, lng:9.6845568 },
     { kind:"drinking", lat:45.6393433, lng:9.6863154 },
@@ -1937,4 +1937,9 @@ var DRINKING = [
     { kind:"drinking", lat:45.8360578, lng:9.6566573 },
     { kind:"drinking", lat:45.575738, lng:9.7750689 },
     { kind:"drinking", lat:45.8960536, lng:9.9978791 },
+    { kind:"drinking", lat:46.0370974, lng:9.9811436 },
+    { kind:"drinking", lat:45.9065218, lng:9.8557015 },
+    { kind:"drinking", lat:45.7589136, lng:9.7170926, wiki:"20260616-bdc_monte_di_nese-20260614_115302.jpg", hash:"f/fc" },
+    { kind:"drinking", lat:45.7658809, lng:9.7049121, wiki:"20260616-bdc_monte_di_nese-20260614_112643.jpg", hash:"7/71" },
+    { kind:"drinking", lat:45.768155, lng:9.7151655, wiki:"20260616-bdc_monte_di_nese-20260614_113421.jpg", hash:"e/e9" },
 ];
