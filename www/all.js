@@ -2173,6 +2173,7 @@ var TRACKS = [
 { vote: 4, rate: 3, rate_max: 4, cycle: 5, zone: 'bassa_brembana', name: 'Monte Sornadello, Monte Foldone, Bocchetta Ronco, CinguaDH', kind: 'down', file: 'Brembana_SornadelloFoldoneBocchettaRoncoCinguaDH.gpx', link: '2024/08/sornadello', elevation_gain: 130, elevation_loss: 1201 },
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Era, Pianca, Cornello Dei Tasso', kind: 'down', file: 'Brembana_EraPiancaCornelloDeiTasso.gpx', link: '2025/06/era-pianca', elevation_gain: 308, elevation_loss: 881 },
 { vote: 2, rate: 3, rate_max: 4, cycle: 5, zone: 'bassa_brembana', name: 'Passo del Crosnello, Sentiero Del Berto, Frasnito, San Pellegrino', kind: 'down', file: 'Brembana_CrosnelloSentieroDelBertoFrasnitoSanPellegrino.gpx', link: '2025/06/berto', elevation_gain: 21, elevation_loss: 737 },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Cappella Madreara, Grotte del Sogno, Paradiso, San Pellegrino', kind: 'down', file: 'Brembana_CappellaMadrearaGrotteDelSognoParadisoSanPellegrino.gpx', link: '2025/06/sogno', elevation_gain: 4, elevation_loss: 397 },
 
 // trek
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Vie del Passato', kind: 'trek', file: 'Brembana_VieDelPassato.gpx', link: '2023/08/passato', elevation_gain: 1141, elevation_loss: 1111 },
@@ -2203,6 +2204,7 @@ var TRACKS = [
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: '', name: 'Salita da Salvarizza alla Forcella della Valcumina', kind: 'up', file: 'Brembana_SalvarizzaForcellaValcumina_EBIKE.gpx', link: '2021/05/valcumina', elevation_gain: 772, elevation_loss: 115 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita da San Pellegrino a Salvarizza', kind: 'up', file: 'Brembana_SalitaSalvarizza_EBIKE.gpx', link: '2021/02/periplo-monte-gioco', elevation_gain: 666, elevation_loss: 0 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: '', name: 'Salita San Pellegrino, Vetta, Cappella Madrera', kind: 'up', file: 'Brembana_SalitaSanPellegrinoCappellaMadrera_EBIKE.gpx', link: '2026/06/sogno', elevation_gain: 429, elevation_loss: 3 },
 
 // unlisted
 { vote: 2, rate: 3, rate_max: 0, cycle: 3, zone: '', name: 'Monte Castello, Algua, Zogno', kind: 'down', file: 'Brembana_MonteCastelloAlguaZogno.gpx', link: '2021/06/monte-castello', elevation_gain: 359, elevation_loss: 1099 },
