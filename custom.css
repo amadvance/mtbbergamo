@@ -17,6 +17,12 @@
 	background: 0 !important;
 }
 
+.crisp-tile {
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+}
+
 .mapbox {
 	width: 100%;
 	min-height: 400px;

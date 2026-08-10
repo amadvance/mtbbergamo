@@ -184,7 +184,13 @@ function get_track_cycle(index)
 }
 
 function create_map(id) {
-	var mymap = L.map(id, { fullscreenControl: true } );
+	var mymap = L.map(id, {
+		fullscreenControl: true,
+		zoomSnap: 1,
+		zoomDelta: 1,
+		wheelPxPerZoomLevel: 120,
+		wheelDebounceTime: 100
+	});
 
 	// Create the renderer to use for hotlines
 	// To have multiple tracks clickable on the same map only one renderer for map must be used
@@ -320,6 +326,8 @@ function create_drinking(map, control)
 function create_waymarkedtrails(map, control) {
 	var myhiking = L.tileLayer('https://tile.waymarkedtrails.org/{id}/{z}/{x}/{y}.png', {
 		id: 'hiking',
+		maxNativeZoom: 18,
+		maxZoom: 19,
 		pointable: true,
 		attribution: '&copy; <a href="http://waymarkedtrails.org">Sarah Hoffmann</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
 	});
@@ -329,11 +337,32 @@ function create_waymarkedtrails(map, control) {
 	return myhiking;
 }
 
+function create_bergamoride(map, control) {
+	var opts = {
+		maxNativeZoom: 15,
+		maxZoom: 19,
+		className: 'crisp-tile',
+		attribution: '&copy; <a href="https://www.strava.com">Strava</a>'
+	};
+
+	var ne = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202607-NordEst.pmtiles'), opts);
+	var nw = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202607-NordOvest.pmtiles'), opts);
+	var se = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202607-SudEst.pmtiles'), opts);
+	var sw = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202607-SudOvest.pmtiles'), opts);
+
+	var bergamoride = L.layerGroup([ne, nw, se, sw]);
+
+	control.addOverlay(bergamoride, "Heatmap Bici");
+
+	return bergamoride;
+}
+
 function create_base(map, control) {
 	// More layers at https://leaflet-extras.github.io/leaflet-providers/preview/
 
 	var CyclOSM = new L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
 	{
+		maxNativeZoom: 18,
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="https://www.cyclosm.org/">CyclOSM</a> | <a href="https://www.cyclosm.org/legend.html" title="Legenda dei simboli grafici">Legenda</a>'
 	});
@@ -343,14 +372,16 @@ function create_base(map, control) {
 	control.addBaseLayer(CyclOSM, "CyclOSM");
 
 	var Tracestrack = L.tileLayer('https://tile.tracestrack.com/topo_it/{z}/{x}/{y}.png?key=8b3409d2713e8014e7ebe376a7a19a20', {
-		maxZoom: 17,
+		maxNativeZoom: 17,
+		maxZoom: 19,
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | &copy; <a href="https://www.tracestrack.com/">Tracestrack</a>)'
 	});
 
 	control.addBaseLayer(Tracestrack, "Tracestrack");
 
 	var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-		maxZoom: 17,
+		maxNativeZoom: 17,
+		maxZoom: 19,
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 	});
 
@@ -359,7 +390,8 @@ function create_base(map, control) {
 	var Thunderforest_OpenCycleMap = L.tileLayer('https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey={apikey}', {
 		attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 		apikey: 'b9a5e78a27a644dbbb109bc904b8919c',
-		maxZoom: 21
+		maxNativeZoom: 18,
+		maxZoom: 19
 	});
 
 	/*
@@ -372,13 +404,15 @@ function create_base(map, control) {
 	var Thunderforest_Outdoors = L.tileLayer('https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey={apikey}', {
 		attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 		apikey: 'b9a5e78a27a644dbbb109bc904b8919c',
-		maxZoom: 21
+		maxNativeZoom: 18,
+		maxZoom: 19
 	});
 
 	control.addBaseLayer(Thunderforest_Outdoors, "Outdoors");
 
 	var OpenStreetMap_Mapnik = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 	{
+		maxNativeZoom: 19,
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	});
@@ -388,6 +422,8 @@ function create_base(map, control) {
 	control.addBaseLayer(OpenStreetMap_Mapnik, "OpenStreetMap");
 
 	var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+		maxNativeZoom: 19,
+		maxZoom: 19,
 		attribution: '&copy; Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 	});
 
@@ -404,6 +440,7 @@ function create_control(map) {
 	create_waymarkedtrails(map, control).addTo(map);
 
 	// do not add to map to have it hidden by default
+	create_bergamoride(map, control);
 	create_charging(map, control);
 	create_drinking(map, control);
 
@@ -420,6 +457,7 @@ function create_control_climb(map) {
 
 	// do not add to map to have it hidden by default
 	create_waymarkedtrails(map, control);
+	create_bergamoride(map, control);
 
 	var ret = {ct: control, gr: null};
 
@@ -441,6 +479,7 @@ function create_control_group(map) {
 
 	// do not add to map to have it hidden by default
 	create_waymarkedtrails(map, control);
+	create_bergamoride(map, control);
 
 	var group = [];
 
