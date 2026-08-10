@@ -345,10 +345,10 @@ function create_bergamoride(map, control) {
 		attribution: '&copy; <a href="https://www.strava.com">Strava</a>'
 	};
 
-	var ne = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202607-NordEst.pmtiles'), opts);
-	var nw = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202607-NordOvest.pmtiles'), opts);
-	var se = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202607-SudEst.pmtiles'), opts);
-	var sw = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202607-SudOvest.pmtiles'), opts);
+	var ne = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202608-NordEst.pmtiles'), opts);
+	var nw = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202608-NordOvest.pmtiles'), opts);
+	var se = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202608-SudEst.pmtiles'), opts);
+	var sw = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202608-SudOvest.pmtiles'), opts);
 
 	var bergamoride = L.layerGroup([ne, nw, se, sw]);
 
