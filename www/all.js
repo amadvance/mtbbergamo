@@ -7019,6 +7019,8 @@ function create_control_climb(map) {
 	// do not add to map to have it hidden by default
 	create_waymarkedtrails(map, control);
 	create_bergamoride(map, control);
+	create_charging(map, control);
+	create_drinking(map, control);
 
 	var ret = {ct: control, gr: null};
 
@@ -7041,6 +7043,8 @@ function create_control_group(map) {
 	// do not add to map to have it hidden by default
 	create_waymarkedtrails(map, control);
 	create_bergamoride(map, control);
+	create_charging(map, control);
+	create_drinking(map, control);
 
 	var group = [];
 
