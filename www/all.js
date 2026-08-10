@@ -6898,7 +6898,7 @@ function create_waymarkedtrails(map, control) {
 	return myhiking;
 }
 
-function create_bergamoride(map, control) {
+function create_bergamo_heatmap(map, control, name, label) {
 	var opts = {
 		maxNativeZoom: 15,
 		maxZoom: 19,
@@ -6906,16 +6906,28 @@ function create_bergamoride(map, control) {
 		attribution: '&copy; <a href="https://www.strava.com">Strava</a>'
 	};
 
-	var ne = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202608-NordEst.pmtiles'), opts);
-	var nw = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202608-NordOvest.pmtiles'), opts);
-	var se = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202608-SudEst.pmtiles'), opts);
-	var sw = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/BergamoRide-202608-SudOvest.pmtiles'), opts);
+	var ne = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/' + name + '-NordEst.pmtiles'), opts);
+	var nw = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/' + name + '-NordOvest.pmtiles'), opts);
+	var se = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/' + name + '-SudEst.pmtiles'), opts);
+	var sw = pmtiles.leafletRasterLayer(new pmtiles.PMTiles(ARCHIVE + 'pmtiles/' + name + '-SudOvest.pmtiles'), opts);
 
 	var bergamoride = L.layerGroup([ne, nw, se, sw]);
 
-	control.addOverlay(bergamoride, "Heatmap Bici");
+	control.addOverlay(bergamoride, label);
 
 	return bergamoride;
+}
+
+function create_bergamoride(map, control) {
+	return create_bergamo_heatmap(map, control, 'BergamoRide-202608', 'Heatmap Tutte le Bici');
+}
+
+function create_bergamomountainbikeride(map, control) {
+	return create_bergamo_heatmap(map, control, 'BergamoMountainBikeRide-202608', 'Heatmap Mountain Bike');
+}
+
+function create_bergamoemountainbikeride(map, control) {
+	return create_bergamo_heatmap(map, control, 'BergamoEMountainBikeRide-202608', 'Heatmap E-Mountain Bike');
 }
 
 function create_base(map, control) {
@@ -7002,6 +7014,8 @@ function create_control(map) {
 
 	// do not add to map to have it hidden by default
 	create_bergamoride(map, control);
+	create_bergamomountainbikeride(map, control);
+	create_bergamoemountainbikeride(map, control);
 	create_charging(map, control);
 	create_drinking(map, control);
 
@@ -7019,6 +7033,8 @@ function create_control_climb(map) {
 	// do not add to map to have it hidden by default
 	create_waymarkedtrails(map, control);
 	create_bergamoride(map, control);
+	create_bergamomountainbikeride(map, control);
+	create_bergamoemountainbikeride(map, control);
 	create_charging(map, control);
 	create_drinking(map, control);
 
@@ -7043,6 +7059,8 @@ function create_control_group(map) {
 	// do not add to map to have it hidden by default
 	create_waymarkedtrails(map, control);
 	create_bergamoride(map, control);
+	create_bergamomountainbikeride(map, control);
+	create_bergamoemountainbikeride(map, control);
 	create_charging(map, control);
 	create_drinking(map, control);
 
