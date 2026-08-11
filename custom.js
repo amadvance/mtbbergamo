@@ -339,7 +339,7 @@ function create_waymarkedtrails(map, control) {
 
 function create_bergamo_heatmap(map, control, name, label) {
 	var opts = {
-		maxNativeZoom: 15,
+		maxNativeZoom: 16,
 		maxZoom: 19,
 		className: 'crisp-tile',
 		attribution: '&copy; <a href="https://www.strava.com">Strava</a>'
