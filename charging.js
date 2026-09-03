@@ -163,8 +163,9 @@ var CHARGING = [
     { lat:45.5019519, lng:9.6299041, brand:"" },
     { lat:45.5797792, lng:9.7077536, brand:"Pradella Sistemi" },
     { lat:45.5799937, lng:9.7074582, brand:"Pradella Sistemi" },
-    { lat:45.5799571, lng:9.7077356, brand:"Pradella Sistemi" },
     { lat:45.879621, lng:9.6982616, brand:"" },
     { lat:45.4922098, lng:9.6402663, brand:"" },
     { lat:45.4921933, lng:9.6402709, brand:"" },
+    { lat:45.8859569, lng:9.7968214, brand:"" },
+    { lat:46.0112771, lng:9.6650243, brand:"" },
 ];
