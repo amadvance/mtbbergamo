@@ -3832,6 +3832,7 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Era, Pianca, Cornello Dei Tasso', kind: 'down', file: 'Brembana_EraPiancaCornelloDeiTasso.gpx', link: '2025/06/era-pianca', elevation_gain: 308, elevation_loss: 881 },
 { vote: 2, rate: 3, rate_max: 4, cycle: 5, zone: 'bassa_brembana', name: 'Passo del Crosnello, Sentiero Del Berto, Frasnito, San Pellegrino', kind: 'down', file: 'Brembana_CrosnelloSentieroDelBertoFrasnitoSanPellegrino.gpx', link: '2025/06/berto', elevation_gain: 21, elevation_loss: 737 },
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Cappella Madreara, Grotte del Sogno, Paradiso, San Pellegrino', kind: 'down', file: 'Brembana_CappellaMadrearaGrotteDelSognoParadisoSanPellegrino.gpx', link: '2025/06/sogno', elevation_gain: 4, elevation_loss: 397 },
+{ vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Becco di Dossona, Via Mercatorum, San Giovanni Bianco', kind: 'down', file: 'Brembana_BeccoViaMercaturumSanGiovanniBianco.gpx', link: '2026/08/becco', elevation_gain: 52, elevation_loss: 796 },
 
 // trek
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Vie del Passato', kind: 'trek', file: 'Brembana_VieDelPassato.gpx', link: '2023/08/passato', elevation_gain: 1141, elevation_loss: 1111 },
@@ -3858,6 +3859,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita Camerata Cornello, Era', kind: 'up', file: 'Brembana_SalitaCamerataCornelloEra_EBIKE.gpx', link: '2025/06/era-pianca', elevation_gain: 637, elevation_loss: 3 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita San Pellegrino, Vetta, Sussia, Passo del Crosnello', kind: 'up', file: 'Brembana_SalitaSanPellegrinoVettaSussiaCrosnello_EBIKE.gpx', link: '2026/06/berto', elevation_gain: 781, elevation_loss: 8 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita S. Antonio Abbandonato, Passo del Crosnello', kind: 'up', file: 'Brembana_SalitaSAntonioCrosnello_EBIKE.gpx', link: '2020/08/crosnello-sussia-vettarola-san', elevation_gain: 193, elevation_loss: 52 },
+{ vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'bassa_brembana', name: 'Salita San Giovanni Bianco, Miniere, Becco di Dossena', kind: 'up', file: 'Brembana_SalitaSanGiovanniBiancoMiniereBecco_EBIKE.gpx', link: '2026/08/becco', elevation_gain: 805, elevation_loss: 62 },
 
 // overlapping
 { vote: 0, rate: 0, rate_max: 0, cycle: 1, zone: '', name: 'Salita da Salvarizza alla Forcella della Valcumina', kind: 'up', file: 'Brembana_SalvarizzaForcellaValcumina_EBIKE.gpx', link: '2021/05/valcumina', elevation_gain: 772, elevation_loss: 115 },
