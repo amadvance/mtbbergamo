@@ -1,0 +1,185 @@
+================================================================================
+STRAVA HEATMAP & PMTILES PIPELINE
+================================================================================
+
+This directory contains the scripts and tools needed to download heatmaps from
+Strava, generate georeferenced map files (GeoTIFF, VRT, JNX), and convert them
+into web-optimized PMTiles rasters integrated into the MTB Bergamo Leaflet map.
+
+
+--------------------------------------------------------------------------------
+1. WHY PMTILES ARE SPLIT INTO FOUR QUADRANTS (GITHUB LIMITS)
+--------------------------------------------------------------------------------
+
+The Bergamo heatmap .pmtiles files are generated split into 4 quadrants
+(NordOvest, NordEst, SudOvest, SudEst) due to the following technical reasons:
+
+- HARD GITHUB SINGLE FILE LIMIT (100 MB):
+  GitHub strictly rejects and blocks pushes containing any single file larger
+  than 100 MB (error: "GH001: Large files detected... exceeds file size limit of
+  100.00 MB"). In addition, it issues warnings for files over 50 MB.
+
+- HEATMAP FILE SIZE:
+  A single compressed PMTiles file for the entire Bergamo area
+  (BergamoRide-YYYYMM.pmtiles) would weigh around 190-200 MB, making it
+  impossible to commit and push to GitHub without using Git LFS.
+
+- THE FOUR-QUADRANT SPLIT:
+  By splitting the bounding box in half along both latitude and longitude,
+  even the densest and heaviest quadrant (SudOvest) stays at around 82 MB,
+  safely remaining below the 100 MB hard threshold.
+
+- CLIENT OPTIMIZATION AND GITHUB PAGES:
+  In the Leaflet frontend (custom.js), the four files are loaded as distinct
+  raster layers grouped into a single L.layerGroup.
+  The browser fetches tile chunks via HTTP range requests only for quadrants
+  currently visible within the map viewport, reducing memory usage and
+  bandwidth consumption (also helping keep traffic within GitHub Pages' 100 GB
+  monthly soft bandwidth limit).
+
+
+--------------------------------------------------------------------------------
+2. SCRIPT DESCRIPTIONS
+--------------------------------------------------------------------------------
+
+A) PROXY AND AUTHENTICATION (firefox/ directory):
+   Strava requires an authenticated session to download high-resolution
+   heatmap tiles (zoom level 15).
+
+   - firefox/PROXY.sh:
+     Bash script that launches Firefox with cookie logging enabled (MOZ_LOG).
+     Upon closing the browser, it automatically extracts session and CloudFront
+     cookies into cookies.txt and starts the local proxy.py server.
+   - firefox/cookies.txt:
+     Contains the session cookies and CloudFront tokens extracted by PROXY.sh,
+     required to authorize Strava heatmap tile requests.
+   - firefox/proxy.py:
+     Local HTTP proxy server (listening on http://localhost:8080) that
+     intercepts tile requests and injects valid Strava cookies and headers.
+   - firefox/README:
+     Summary of sport activity types, URL paths, and Strava color palettes.
+
+B) GEOTIFF DOWNLOAD AND GENERATION:
+   The scripts use the ./stitch binary executable to download tiles through the
+   local proxy and assemble them into a georeferenced GeoTIFF (zoom 15).
+
+   Bergamo area scripts:
+   - BergamoRide.sh:
+     All cycling activities combined (ride, hot palette).
+   - BergamoMountainBikeRide.sh:
+     Mountain Bike activities only (sport_MountainBikeRide, purple palette).
+   - BergamoEMountainBikeRide.sh:
+     E-Mountain Bike activities (sport_EMountainBikeRide, purple palette).
+   - BergamoRun.sh:
+     Running and trail activities (run, bluered palette).
+   - BergamoStrava.sh:
+     Generic/all-activities Strava heatmap.
+   - BergamoGoogle.sh:
+     Satellite / hybrid imagery from Google Maps.
+
+   Valle Imagna area scripts:
+   - ValleImagnaRide.sh, ValleImagnaRun.sh, ValleImagnaStrava.sh,
+     ValleImagnaGoogle.sh:
+     Same as above, but restricted to the Valle Imagna bounding box for lighter
+     maps tailored to Garmin GPS devices (.jnx).
+
+   Each download script automatically produces:
+   - ${NAME}.tif:  Tiled GeoTIFF (TILED=YES) with LZW compression.
+   - ${NAME}.vrt:  QGIS Virtual Raster with zoom pyramids (.vrt.ovr).
+   - ${NAME}.jnx:  Garmin BirdsEye raster map (created with qmt_map2jnx).
+
+C) PMTILES CONVERSION:
+   - tif2pmtiles-webp-4.sh (and symlink tif2pmtiles_split.sh):
+     Core script for the website.
+     Reads the .tif (or .vrt), calculates the bounding box and midpoints, then
+     crops and generates the 4 quadrants with WEBP compression (quality 80)
+     and pyramid overviews:
+       ${BASE_NAME}-NordOvest.pmtiles
+       ${BASE_NAME}-NordEst.pmtiles
+       ${BASE_NAME}-SudOvest.pmtiles
+       ${BASE_NAME}-SudEst.pmtiles
+   - tif2pmtiles-webp.sh:
+     Converts the entire area into a single WEBP-compressed .pmtiles file.
+   - tif2pmtiles.sh:
+     Converts the entire area into a single PNG .pmtiles file.
+
+D) BATCH SCRIPTS (all_*.sh):
+   - all_downwload.sh:
+     Runs all download scripts in sequence (Valle Imagna and Bergamo).
+     Requires the local proxy to be running on port 8080.
+   - all_pmtiles.sh:
+     Reads the current date (DATE=`date +%Y%m`) and runs tif2pmtiles-webp-4.sh
+     in sequence for the three primary layers used on the website:
+       BergamoEMountainBikeRide-$DATE
+       BergamoMountainBikeRide-$DATE
+       BergamoRide-$DATE
+
+
+--------------------------------------------------------------------------------
+3. OPERATIONAL GUIDE
+--------------------------------------------------------------------------------
+
+UPDATING WITH NEW STRAVA HEATMAPS
+
+1. Start PROXY.sh in a terminal:
+     cd strava/firefox
+     sh PROXY.sh
+   The script automatically opens Firefox with cookie logging enabled.
+
+2. In Firefox, log in to Strava and open/view the heatmap:
+   It is essential to pan and view the map so that Strava requests tiles and
+   issues the required CloudFront cookies.
+
+3. Close Firefox:
+   When the browser window is closed, PROXY.sh automatically extracts the
+   captured cookies into cookies.txt and starts the local proxy server on
+   http://localhost:8080 (keep this terminal open with the proxy running).
+
+4. In another terminal, download the maps:
+     cd strava
+     sh all_downwload.sh
+
+5. Generate the PMTiles split into 4 quadrants:
+     sh all_pmtiles.sh
+
+6. Move the generated PMTiles files to the web directory:
+     mv Bergamo*-Nord*.pmtiles Bergamo*-Sud*.pmtiles ../www/pmtiles/
+
+
+--------------------------------------------------------------------------------
+4. WEBSITE INTEGRATION
+--------------------------------------------------------------------------------
+
+In custom.js, the create_bergamo_heatmap function loads the four quadrants:
+  name + '-NordEst.pmtiles'
+  name + '-NordOvest.pmtiles'
+  name + '-SudEst.pmtiles'
+  name + '-SudOvest.pmtiles'
+
+When updating the map date (e.g. to BergamoRide-202611):
+1. Update layer names in the corresponding custom.js functions:
+   - create_bergamoride
+   - create_bergamomountainbikeride
+   - create_bergamoemountainbikeride
+2. From the repository root, rebuild the www/all.js bundle:
+     make js
+   (Note: Never edit www/all.js directly, as specified in AGENTS.md).
+
+
+--------------------------------------------------------------------------------
+5. REFERENCES, ARCHIVING & STRAVA DATA TRUNCATION
+--------------------------------------------------------------------------------
+
+- Technical analysis of Strava data truncation (GitHub issue):
+  https://github.com/julcnx/strava-heatmap-extension/issues/41#issuecomment-6182879086
+  Explains how Strava, with the introduction of new tiles (v=20), subtracted
+  the 12 lowest intensity levels pixel-by-pixel compared to legacy tiles:
+  grayscale = max(0, legacy - 12). This truncation dropped between 15% and
+  65% of visible heat data, wiping out faintly tracked forest trails and
+  rarely used paths that are vital for trail and MTB mapping.
+
+- Global heatmap archiving initiative by OSM (Reddit discussion):
+  https://www.reddit.com/r/openstreetmap/comments/1xmasb2/call_to_action_to_archive_the_strava_global/
+  OpenStreetMap community discussion on the critical need to archive and
+  preserve historical heatmaps before further access restrictions, API
+  closures, or deliberate data degradation by Strava.

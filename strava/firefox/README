@@ -1,0 +1,40 @@
+Examples of Strava tile requests
+
+All cycling sports -> ride
+https://content-a.strava.com/identified/globalheat/ride/grayscale/14/8637/5849@2x.png?v=20&missing=empty
+
+Mountain Bike -> sport_MountainBikeRide
+https://content-a.strava.com/identified/globalheat/sport_MountainBikeRide/grayscale/14/8629/5847@2x.png?v=20&missing=empty
+
+Road Cycling -> sport_Ride
+https://content-a.strava.com/identified/globalheat/sport_Ride/grayscale/14/8641/5852@2x.png?v=20&missing=empty
+
+E-Mountain Bike -> sport_EMountainBikeRide
+https://content-a.strava.com/identified/globalheat/sport_EMountainBikeRide/grayscale/14/8641/5850@2x.png?v=20&missing=empty
+
+All foot sports -> run
+https://content-a.strava.com/identified/globalheat/run/grayscale/14/8636/5849@2x.png?v=20&missing=empty
+
+Running -> sport_Run
+https://content-a.strava.com/identified/globalheat/sport_Run/grayscale/14/8636/5849@2x.png?v=20&missing=empty
+
+Trail Running -> sport_TrailRun
+https://content-a.strava.com/identified/globalheat/sport_TrailRun/grayscale/14/8637/5849@2x.png?v=20&missing=empty
+
+Walking -> sport_Walk
+https://content-a.strava.com/identified/globalheat/sport_Walk/grayscale/14/8637/5849@2x.png?v=20&missing=empty
+
+Hiking -> sport_Hike
+https://content-a.strava.com/identified/globalheat/sport_Hike/grayscale/14/8637/5849@2x.png?v=20&missing=empty
+
+
+COLORS:
+
+hot     Historical Strava classic thermal palette (red/orange to white/yellow
+        high-density gradient).
+orange  Monochrome orange profile introduced in newer versions of the Strava
+        web app.
+purple  Magenta / purple.
+blue    Cyan / blue.
+bluered Blue to red gradient.
+gray    High-contrast grayscale.

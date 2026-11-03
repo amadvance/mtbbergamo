@@ -1,0 +1,10 @@
+sh ValleImagnaRide.sh
+sh ValleImagnaRun.sh
+sh ValleImagnaStrava.sh
+sh BergamoEMountainBikeRide.sh
+sh BergamoMountainBikeRide.sh
+sh BergamoRide.sh
+sh BergamoRun.sh
+sh BergamoStrava.sh
+sh ValleImagnaGoogle.sh
+sh BergamoGoogle.sh
