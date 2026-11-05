@@ -29,3 +29,6 @@ gdalbuildvrt $NAME.vrt $NAME.tif
 # Create the VRT overlay (images at lower zoom levels)
 gdaladdo --config COMPRESS_OVERVIEW JPEG --config INTERLEAVE_OVERVIEW PIXEL $NAME.vrt
 
+# Remove unneded
+rm ${NAME}-RAW.tif
+rm ${NAME}-RAW.tfw
