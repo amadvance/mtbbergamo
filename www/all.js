@@ -3223,6 +3223,7 @@ var TRACKS = [
 { vote: 3, rate: 2, rate_max: 0, cycle: 0, zone: 'sorisole, giongo', name: 'Valle del Giongo, Monte Bastia', kind: 'down', file: 'Sorisole_ValleGiongoMonteBastia.gpx', link: '2023/04/giongo', elevation_gain: 399, elevation_loss: 745 },
 { vote: 5, rate: 2, rate_max: 3, cycle: 0, zone: 'sorisole', name: 'Canto Alto, Forcellino, 220, Pista DH', kind: 'down', file: 'Sorisole_CantoAltoForcellino220PistaDH.gpx', link: '2023/05/canto-alto-forcellino', elevation_gain: 123, elevation_loss: 957 },
 { vote: 3, rate: 3, rate_max: 0, cycle: 0, zone: 'sorisole', name: 'Forcellino, Forcella di Rua, Giongo Hard', kind: 'down', file: 'Sorisole_ForcellinoForcellaDiRuaGiongoHard.gpx', link: '2024/04/giongo-hard', elevation_gain: 313, elevation_loss: 949 },
+{ vote: 2, rate: 2, rate_max: 0, cycle: 3, zone: 'maresana', name: 'El Fitzcarraldo', kind: 'down', file: 'Maresana_ElFitzcarraldo.gpx', elevation_gain: 137, elevation_loss: 276 },
 
 // unlisted as used only for connection in sorisole
 { vote: 2, rate: 1, rate_max: 0, cycle: 0, zone: 'sorisole', name: 'Sorisole, Ponteranica Alta', kind: 'down', file: 'Sorisole_SorisolePonteranicaAlta.gpx', elevation_gain: 2, elevation_loss: 54 },
