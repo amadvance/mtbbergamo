@@ -3833,6 +3833,7 @@ var TRACKS = [
 { vote: 2, rate: 3, rate_max: 4, cycle: 5, zone: 'bassa_brembana', name: 'Passo del Crosnello, Sentiero Del Berto, Frasnito, San Pellegrino', kind: 'down', file: 'Brembana_CrosnelloSentieroDelBertoFrasnitoSanPellegrino.gpx', link: '2025/06/berto', elevation_gain: 21, elevation_loss: 737 },
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Cappella Madreara, Grotte del Sogno, Paradiso, San Pellegrino', kind: 'down', file: 'Brembana_CappellaMadrearaGrotteDelSognoParadisoSanPellegrino.gpx', link: '2025/06/sogno', elevation_gain: 4, elevation_loss: 397 },
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Becco di Dossona, Via Mercatorum, San Giovanni Bianco', kind: 'down', file: 'Brembana_BeccoViaMercaturumSanGiovanniBianco.gpx', link: '2026/08/becco', elevation_gain: 52, elevation_loss: 796 },
+{ vote: 3, rate: 4, rate_max: 0, cycle: 4, zone: 'bassa_brembana', name: 'Pizzo Grande, Bela Giuana, San Giovanni Bianco', kind: 'down', file: 'Brembana_PizzoGrandeBelaGiuanaSanGiovanniBianco.gpx', link: '2026/10/pizzo-grande-bela-giuana', elevation_gain: 36, elevation_loss: 1121 },
 
 // trek
 { vote: 4, rate: 1, rate_max: 2, cycle: 0, zone: 'bassa_brembana', name: 'Vie del Passato', kind: 'trek', file: 'Brembana_VieDelPassato.gpx', link: '2023/08/passato', elevation_gain: 1141, elevation_loss: 1111 },
@@ -4034,6 +4035,7 @@ var TRACKS = [
 { vote: 0, rate: 0, rate_max: 0, cycle: 3, zone: 'cavallina', name: 'Salita Sovere, Falecchio, Monte Colombia', kind: 'up', file: 'Cavallina_SalitaSovereFalecchioColombina_EBILE.gpx', link: '2022/06/monte-colombina', elevation_gain: 1305, elevation_loss: 208 },
 { vote: 0, rate: 0, rate_max: 0, cycle: 0, zone: 'cavallina', name: 'Salita Zandobbio, Grone, Valico San Fermo', kind: 'up', file: 'Cavallina_SalitaZandobbioGroneSanFermo_EBIKE.gpx', link: '2022/06/buca-del-corno', elevation_gain: 827, elevation_loss: 41 },
 ];
+
 var RENAME = {
 "A_ArgonPercorsoVita_REC.gpx" : "Cavallina_ArgonPercorsoVita.gpx",
 "A_ArgonPietraiaEremo_REC.gpx" : "Cavallina_ArgonPietraiaEremo.gpx",
